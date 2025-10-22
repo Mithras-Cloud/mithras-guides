@@ -48,6 +48,10 @@
           {
             "group": "Correos",
             "pages": []
+          },
+          {
+            "group": "Categoria Prueba",
+            "pages": []
           }
         ]
       },
