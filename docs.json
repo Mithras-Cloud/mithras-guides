@@ -47,7 +47,9 @@
           },
           {
             "group": "Correos",
-            "pages": []
+            "pages": [
+              "correos/conectar_cuenta_correo"
+            ]
           },
           {
             "group": "Prueba Categoria",
