@@ -54,8 +54,10 @@
             "pages": []
           },
           {
-            "group": "Habitaciones",
-            "pages": []
+            "group": "Tipo de Habitaciones",
+            "pages": [
+              "habitaciones/configurar_tipo_habitaciones"
+            ]
           }
         ]
       },
