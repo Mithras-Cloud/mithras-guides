@@ -52,6 +52,10 @@
           {
             "group": "Prueba Categoria",
             "pages": []
+          },
+          {
+            "group": "Habitaciones",
+            "pages": []
           }
         ]
       },
