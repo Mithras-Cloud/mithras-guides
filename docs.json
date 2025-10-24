@@ -50,7 +50,7 @@
             "pages": []
           },
           {
-            "group": "Categoria Prueba",
+            "group": "Categoria Prueba Tres",
             "pages": [
               "categoria_prueba/conectar_cuenta_correo"
             ]
