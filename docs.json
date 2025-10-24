@@ -52,8 +52,7 @@
           {
             "group": "Categoria Prueba Cuatro",
             "pages": [
-              "categoria_prueba/conectar_cuenta_correo",
-              "categoria_prueba_tres/informes_y_paneles"
+              "categoria_prueba/conectar_cuenta_correo"
             ]
           }
         ]
