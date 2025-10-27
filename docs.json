@@ -52,8 +52,7 @@
           {
             "group": "Prueba Categorias",
             "pages": [
-              "prueba_prueba/informes_y_paneles",
-              "prueba_categorias/conectar_cuenta_correo"
+              "prueba_prueba/informes_y_paneles"
             ]
           }
         ]
