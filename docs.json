@@ -59,6 +59,10 @@
           {
             "group": "Categoria Selector",
             "pages": []
+          },
+          {
+            "group": "Categoria Probando Selector",
+            "pages": []
           }
         ]
       },
