@@ -54,6 +54,10 @@
             "pages": [
               "prueba_prueba/informes_y_paneles"
             ]
+          },
+          {
+            "group": "Prueba Categoria",
+            "pages": []
           }
         ]
       },
