@@ -57,7 +57,9 @@
           },
           {
             "group": "Prueba Categoria",
-            "pages": []
+            "pages": [
+              "prueba_categoria/configurar_tipo_habitaciones"
+            ]
           }
         ]
       },
