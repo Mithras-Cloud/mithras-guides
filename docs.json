@@ -52,7 +52,8 @@
           {
             "group": "Prueba Categorias",
             "pages": [
-              "prueba_prueba/informes_y_paneles"
+              "prueba_prueba/informes_y_paneles",
+              "prueba_categorias/configurar_tipo_habitaciones"
             ]
           },
           {
