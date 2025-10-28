@@ -58,6 +58,10 @@
           {
             "group": "Categoria Selector",
             "pages": []
+          },
+          {
+            "group": "Prueba Mintlify",
+            "pages": []
           }
         ]
       },
