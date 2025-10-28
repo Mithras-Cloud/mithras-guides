@@ -47,7 +47,9 @@
           },
           {
             "group": "Correos",
-            "pages": []
+            "pages": [
+              "correos/configurar_tipo_habitaciones"
+            ]
           },
           {
             "group": "Prueba Categorias",
