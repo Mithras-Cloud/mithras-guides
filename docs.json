@@ -57,7 +57,9 @@
           },
           {
             "group": "Categoria Selector",
-            "pages": []
+            "pages": [
+              "categoria_selector/configurar_tipo_habitaciones"
+            ]
           }
         ]
       },
