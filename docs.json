@@ -52,8 +52,7 @@
           {
             "group": "Prueba Categorias",
             "pages": [
-              "prueba_prueba/informes_y_paneles",
-              "prueba_categorias/pasos_a_seguir_para_ingresar_a_la_plataforma"
+              "prueba_prueba/informes_y_paneles"
             ]
           },
           {
