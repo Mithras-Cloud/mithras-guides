@@ -24,7 +24,8 @@
           {
             "group": "Correos",
             "pages": [
-              "correos/informes_y_paneles"
+              "correos/informes_y_paneles",
+              "habitaciones/configurar_tipo_habitaciones"
             ]
           },
           {
@@ -37,9 +38,7 @@
           },
           {
             "group": "Habitaciones",
-            "pages": [
-              "habitaciones/configurar_tipo_habitaciones"
-            ]
+            "pages": []
           }
         ]
       },
