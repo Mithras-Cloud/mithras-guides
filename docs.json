@@ -37,7 +37,9 @@
           },
           {
             "group": "Habitaciones",
-            "pages": []
+            "pages": [
+              "habitaciones/configurar_tipo_habitaciones"
+            ]
           }
         ]
       },
