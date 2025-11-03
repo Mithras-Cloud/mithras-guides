@@ -23,13 +23,13 @@
           },
           {
             "group": "Correos",
-            "pages": []
-          },
-          {
-            "group": "Prueba Categorias",
             "pages": [
               "correos/informes_y_paneles"
             ]
+          },
+          {
+            "group": "Prueba Categorias",
+            "pages": []
           },
           {
             "group": "Categoria Selector",
