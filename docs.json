@@ -24,7 +24,8 @@
           {
             "group": "Correos",
             "pages": [
-              "correos/informes_y_paneles"
+              "correos/informes_y_paneles",
+              "correos/prueba"
             ]
           },
           {
