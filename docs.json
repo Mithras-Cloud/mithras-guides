@@ -38,6 +38,10 @@
           {
             "group": "Configuración Inicial",
             "pages": []
+          },
+          {
+            "group": "Configuracion Inicial",
+            "pages": []
           }
         ]
       },
