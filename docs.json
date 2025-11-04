@@ -23,7 +23,9 @@
           },
           {
             "group": "Correos",
-            "pages": []
+            "pages": [
+              "correos/informes_y_paneles"
+            ]
           },
           {
             "group": "Prueba Categorias",
