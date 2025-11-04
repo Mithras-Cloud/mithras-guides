@@ -32,6 +32,10 @@
           {
             "group": "Habitaciones",
             "pages": []
+          },
+          {
+            "group": "Configuración Inicial",
+            "pages": []
           }
         ]
       },
