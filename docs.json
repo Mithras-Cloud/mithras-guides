@@ -23,9 +23,7 @@
           },
           {
             "group": "Correos",
-            "pages": [
-              "correos/informes_y_paneles"
-            ]
+            "pages": []
           },
           {
             "group": "Habitaciones",
