@@ -36,6 +36,10 @@
           {
             "group": "Configuracion Inicial",
             "pages": []
+          },
+          {
+            "group": "Prueba",
+            "pages": []
           }
         ]
       },
