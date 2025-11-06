@@ -37,7 +37,9 @@
           },
           {
             "group": "Informes",
-            "pages": []
+            "pages": [
+              "informes/informes_y_paneles"
+            ]
           }
         ]
       },
