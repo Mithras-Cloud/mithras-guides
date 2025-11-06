@@ -28,6 +28,10 @@
           {
             "group": "Primeros Pasos",
             "pages": []
+          },
+          {
+            "group": "Configuracion",
+            "pages": []
           }
         ]
       },
