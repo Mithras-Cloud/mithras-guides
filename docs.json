@@ -24,6 +24,10 @@
           {
             "group": "Habitaciones",
             "pages": []
+          },
+          {
+            "group": "Primeros Pasos",
+            "pages": []
           }
         ]
       },
