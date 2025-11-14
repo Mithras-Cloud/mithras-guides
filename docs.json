@@ -72,6 +72,10 @@
           {
             "group": "Desconexión Por Baja",
             "pages": []
+          },
+          {
+            "group": "Central De Reservas",
+            "pages": []
           }
         ]
       },
