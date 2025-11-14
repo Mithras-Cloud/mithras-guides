@@ -56,6 +56,10 @@
           {
             "group": "Channel",
             "pages": []
+          },
+          {
+            "group": "Procesos",
+            "pages": []
           }
         ]
       },
