@@ -40,6 +40,10 @@
             "pages": [
               "informes/informes_y_paneles"
             ]
+          },
+          {
+            "group": "Configuración Inicial",
+            "pages": []
           }
         ]
       },
