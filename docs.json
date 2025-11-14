@@ -80,6 +80,10 @@
           {
             "group": "Conversaciones",
             "pages": []
+          },
+          {
+            "group": "Generales",
+            "pages": []
           }
         ]
       },
