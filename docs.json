@@ -48,6 +48,10 @@
           {
             "group": "Pms",
             "pages": []
+          },
+          {
+            "group": "Sales",
+            "pages": []
           }
         ]
       },
