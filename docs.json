@@ -88,6 +88,10 @@
           {
             "group": "Marketplace",
             "pages": []
+          },
+          {
+            "group": "Preguntas Frecuentes",
+            "pages": []
           }
         ]
       },
