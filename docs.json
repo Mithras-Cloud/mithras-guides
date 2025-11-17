@@ -89,7 +89,9 @@
           },
           {
             "group": "Preguntas Frecuentes",
-            "pages": []
+            "pages": [
+              "preguntas_frecuentes/como_crear_un_nuevo_usuario"
+            ]
           },
           {
             "group": "Tarifas Y Disponibilidad",
