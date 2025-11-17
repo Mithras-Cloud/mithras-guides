@@ -103,7 +103,9 @@
           },
           {
             "group": "Prueba",
-            "pages": []
+            "pages": [
+              "prueba/pasos_a_seguir_para_ingresar_a_la_plataforma"
+            ]
           }
         ]
       },
