@@ -35,9 +35,7 @@
           },
           {
             "group": "Informes",
-            "pages": [
-              "informes/informes_y_paneles"
-            ]
+            "pages": []
           },
           {
             "group": "Internas De Pxsol",
