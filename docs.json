@@ -27,9 +27,7 @@
           },
           {
             "group": "Primeros Pasos",
-            "pages": [
-              "primeros_pasos/pasos_a_seguir_para_ingresar_a_la_plataforma"
-            ]
+            "pages": []
           },
           {
             "group": "Configuracion",
