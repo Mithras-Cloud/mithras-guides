@@ -31,7 +31,9 @@
           },
           {
             "group": "Configuracion",
-            "pages": []
+            "pages": [
+              "configuracion/como_generar_una_firma_en_el_perfil"
+            ]
           },
           {
             "group": "Informes",
