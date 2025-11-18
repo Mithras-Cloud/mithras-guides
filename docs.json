@@ -4,8 +4,8 @@
   "name": "Guias",
   "colors": {
     "primary": "#D20A11",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#D20A11",
+    "dark": "#D20A11"
   },
   "favicon": "/favicon.svg",
   "navigation": {
