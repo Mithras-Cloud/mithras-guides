@@ -3,7 +3,7 @@
   "theme": "mint",
   "name": "Guias",
   "search": {
-    "placeholder": "Buscar..."
+    "prompt": "Buscar..."
   },
   "colors": {
     "primary": "#D20A11",
