@@ -2,9 +2,6 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Guias",
-  "search": {
-    "prompt": "Buscar..."
-  },
   "colors": {
     "primary": "#D20A11",
     "light": "#D20A11",
@@ -65,7 +62,10 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
-  },  
+  },
+  "search": {
+    "prompt": "Buscar..."
+  },
   "navbar": {
     "links": [
       {
