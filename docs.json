@@ -64,7 +64,7 @@
     "dark": "/logo/dark.svg"
   },
   "search": {
-    "placeholder": "Buscar..."
+    "prompt": "Buscar..."
   },
   "navbar": {
     "links": [
