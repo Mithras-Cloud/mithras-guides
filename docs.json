@@ -24,6 +24,10 @@
           {
             "group": "Motor",
             "pages": []
+          },
+          {
+            "group": "Pms",
+            "pages": []
           }
         ]
       },
