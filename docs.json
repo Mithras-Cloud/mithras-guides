@@ -42,7 +42,19 @@
             "pages": []
           },
           {
+            "group": "Desconexion por baja",
+            "pages": []
+          },
+          {
+            "group": "Conexiones",
+            "pages": []
+          },
+          {
             "group": "Central De Reservas",
+            "pages": []
+          },
+          {
+            "group": "Operaciones",
             "pages": []
           },
           {
