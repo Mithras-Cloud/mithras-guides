@@ -69,13 +69,13 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
+        "label": "Soporte",
         "href": "mailto:hi@mintlify.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Panel",
       "href": "https://dashboard.mintlify.com"
     }
   },
