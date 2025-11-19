@@ -28,6 +28,10 @@
           {
             "group": "Pms",
             "pages": []
+          },
+          {
+            "group": "Channel",
+            "pages": []
           }
         ]
       },
