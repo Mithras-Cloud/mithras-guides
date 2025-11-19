@@ -63,6 +63,9 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "search": {
+    "placeholder": "Buscar..."
+  },
   "navbar": {
     "links": [
       {
