@@ -14,7 +14,7 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Getting started ",
+            "group": "Empezando",
             "pages": [
               "index",
               "quickstart",
@@ -47,7 +47,7 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
+          "anchor": "Documentación",
           "href": "https://mintlify.com/docs",
           "icon": "book-open-cover"
         },
