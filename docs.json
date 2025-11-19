@@ -64,6 +64,10 @@
           {
             "group": "Tarifas Y Disponibilidad",
             "pages": []
+          },
+          {
+            "group": "Inbox",
+            "pages": []
           }
         ]
       },
