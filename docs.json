@@ -168,12 +168,7 @@
         "label": "Soporte",
         "href": "mailto:equipo@pxsol.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Panel",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
