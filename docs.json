@@ -125,6 +125,7 @@
       },
       {
         "tab": "API reference",
+        "hidden": true,
         "groups": [
           {
             "group": "API documentation",
@@ -147,11 +148,6 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentación",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Blog",
           "href": "https://mintlify.com/blog",
           "icon": "newspaper"
@@ -170,7 +166,7 @@
     "links": [
       {
         "label": "Soporte",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:equipo@pxsol.com"
       }
     ],
     "primary": {
@@ -181,21 +177,13 @@
   },
   "contextual": {
     "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "copy"
     ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "youtube": "https://www.youtube.com/@PxsolSoftwareHotelero",
+      "instagram": "https://www.instagram.com/pxsol/?hl=es"
     }
   }
 }
