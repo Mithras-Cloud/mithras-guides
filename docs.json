@@ -23,7 +23,9 @@
           },
           {
             "group": "Primeros Pasos",
-            "pages": []
+            "pages": [
+              "primeros_pasos/prueba"
+            ]
           },
           {
             "group": "Configuración Inicial",
