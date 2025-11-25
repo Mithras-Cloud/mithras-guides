@@ -23,13 +23,13 @@
           },
           {
             "group": "Primeros Pasos",
-            "pages": []
-          },
-          {
-            "group": "Configuración Inicial",
             "pages": [
               "configuración_inicial/como_eliminar_un_usuario"
             ]
+          },
+          {
+            "group": "Configuración Inicial",
+            "pages": []
           },
           {
             "group": "Motor",
