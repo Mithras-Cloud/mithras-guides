@@ -27,7 +27,9 @@
           },
           {
             "group": "Configuración Inicial",
-            "pages": []
+            "pages": [
+              "configuración_inicial/mconverter_eu_scraper_de_contenido_de_hoteles_sobre_booking_com_(1)_(1)"
+            ]
           },
           {
             "group": "Motor",
