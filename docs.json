@@ -131,7 +131,9 @@
           },
           {
             "group": "Inbox",
-            "pages": []
+            "pages": [
+              "inbox/titulo_de_la_guia_de_prueba"
+            ]
           }
         ]
       },
