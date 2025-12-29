@@ -51,7 +51,9 @@
           },
           {
             "group": "Pms",
-            "pages": []
+            "pages": [
+              "pms/como_emitir_facturas_de_venta_con_percepciones_o_impuestos_adicionales_argentina"
+            ]
           },
           {
             "group": "Channel",
