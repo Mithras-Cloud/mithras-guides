@@ -133,7 +133,9 @@
           },
           {
             "group": "Inbox",
-            "pages": []
+            "pages": [
+              "inbox/como_actualizar_la_firma_de_mi_usuario_para_el_envio_de_correos"
+            ]
           }
         ]
       },
