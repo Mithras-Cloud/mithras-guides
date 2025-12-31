@@ -23,7 +23,9 @@
           },
           {
             "group": "Primeros Pasos",
-            "pages": []
+            "pages": [
+              "primeros_pasos/como_cambiar_la_contrasena_de_mi_usuario"
+            ]
           },
           {
             "group": "Configuración Inicial",
