@@ -23,10 +23,7 @@
           },
           {
             "group": "Primeros Pasos",
-            "pages": [
-              "primeros_pasos/como_cambiar_la_contrasena_de_mi_usuario",
-              "primeros_pasos/pasos_a_seguir_para_ingresar_a_la_plataforma"
-            ]
+            "pages": []
           },
           {
             "group": "Configuración Inicial",
