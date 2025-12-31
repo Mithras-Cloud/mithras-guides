@@ -73,7 +73,9 @@
           },
           {
             "group": "Administración",
-            "pages": []
+            "pages": [
+              "administración/como_subir_el_comprobante_de_pago_para_habilitar_el_sistema"
+            ]
           },
           {
             "group": "Arion",
