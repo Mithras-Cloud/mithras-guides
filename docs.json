@@ -36,7 +36,8 @@
               "primeros_pasos/proceso_4__gestion_de_reservas",
               "primeros_pasos/como_utilizar_el_buscador_de_pxsol",
               "primeros_pasos/como_visualizar_el_centro_de_ayuda_de_pxsol",
-              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta"
+              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta",
+              "primeros_pasos/proceso_5__visualizacion_de_reporte_de_reservas"
             ]
           },
           {
@@ -89,7 +90,8 @@
               "configuración_inicial/como_dar_o_quitar_permiso_a_un_usuario_para_que_visualice_una_cuenta_de_correo_del_inbox",
               "configuración_inicial/cambiar_colores_de_referencia_para_los_estados_de_las_habitaciones",
               "configuración_inicial/como_cargar_la_foto_que_aparece_en_los_presupuestos",
-              "configuración_inicial/como_habilitar_aplicaciones_de_configuracion_a_usuarios"
+              "configuración_inicial/como_habilitar_aplicaciones_de_configuracion_a_usuarios",
+              "configuración_inicial/como_dar_a_un_usuario_permiso_o_restringir_el_acceso_a_determinados_puntos_de_venta"
             ]
           },
           {
@@ -139,7 +141,8 @@
               "motor/como_impulsar_el_paso_de_cambios_del_tarifario_madre_a_los_otros_tarifarios",
               "motor/como_visualizar_la_aplicacion_tipos_de_habitaciones",
               "motor/como_crear_habitaciones_utilizando_la_funcion_duplicar",
-              "motor/como_borrar_una_politica_de_cancelacion"
+              "motor/como_borrar_una_politica_de_cancelacion",
+              "motor/recomendaciones_promociones"
             ]
           },
           {
@@ -185,7 +188,8 @@
               "crm/guia_como_activar_las_notificaciones_de_la_aplicacion_conversaciones_en_tu_celular",
               "crm/aplicacion_de_plantillas",
               "crm/conexion_de_facebook__interno_pxsoleros",
-              "crm/como_pasar_varias_transacciones_a_la_carpeta_de_no_venta"
+              "crm/como_pasar_varias_transacciones_a_la_carpeta_de_no_venta",
+              "crm/como_crear_plantilla_de_correo_utilizando_la_funcion_duplicar"
             ]
           },
           {
@@ -322,7 +326,8 @@
               "pms/visualizar_y_aceptar_o_rechazar_solicitudes_de_acuerdo_de_usuarios_logueados_en_tu_web",
               "pms/como_borrar_comprobantes_emitidos",
               "pms/como_visualizar_y_ver_informacion_sobre_las_habitaciones_desde_la_aplicacion_estado_de_habitaciones",
-              "pms/como_cambiar_el_estado_de_una_mesa"
+              "pms/como_cambiar_el_estado_de_una_mesa",
+              "pms/como_vincular_un_huesped_a_un_folio"
             ]
           },
           {
@@ -383,7 +388,9 @@
               "procesos/etapas_del_ciclo_de_vida_de_una_reserva",
               "procesos/movimientos_de_consultas",
               "procesos/como_desactivar_el_envio_automatico_del_aviso_de_web_check_in_",
-              "procesos/proceso__configuracion_mercado_pago"
+              "procesos/proceso__configuracion_mercado_pago",
+              "procesos/gestion_de_reservas",
+              "procesos/proceso__configuracion_de_campanas"
             ]
           },
           {
