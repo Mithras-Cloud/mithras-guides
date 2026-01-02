@@ -433,7 +433,8 @@
               "conversaciones/como_armar_y_personalizar_un_grupo_dentro_del_chat_de_la_aplicacion_conversaciones",
               "conversaciones/como_ver_si_el_chat_con_un_cliente_dentro_de_conversaciones_ya_tiene_una_consulta_o_reserva_asociada",
               "conversaciones/como_configurar_la_redireccion_del_bot_de_conversaciones_hacia_un_motor_externo_distinto_al_de_pxsol",
-              "conversaciones/como_activar_o_desactivar_las_respuestas_automaticas_generadas_por_la_ai_en_la_aplicacion_conversaciones"
+              "conversaciones/como_activar_o_desactivar_las_respuestas_automaticas_generadas_por_la_ai_en_la_aplicacion_conversaciones",
+              "conversaciones/como_asignar_la_conversacion_a_un_equipo"
             ]
           },
           {
