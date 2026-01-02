@@ -526,7 +526,8 @@
               "integraciones/como_realizar_la_integracion_con_stripe",
               "integraciones/como_configurar_el_medio_de_pago_stripe",
               "integraciones/stripe_gestion_de_credenciales_de_pasarelas_de_pago",
-              "integraciones/stripe_comportamiento_y_visualizacion_en_la_reserva"
+              "integraciones/stripe_comportamiento_y_visualizacion_en_la_reserva",
+              "integraciones/stripe_como_efectuar_una_devolucion_parcial_o_total"
             ]
           },
           {
