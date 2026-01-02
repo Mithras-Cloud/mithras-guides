@@ -106,7 +106,9 @@
           },
           {
             "group": "Conversaciones",
-            "pages": []
+            "pages": [
+              "conversaciones/como_generar_base_de_conocimiento_para_la_ai_del_bot_de_conversaciones"
+            ]
           },
           {
             "group": "Agencias B2B",
