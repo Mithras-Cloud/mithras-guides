@@ -1,0 +1,107 @@
+---
+title: "¿Cómo configurar una sucursal para poder Facturar?"
+description: "En esta guía explicaremos cómo poder configurar una sucursal que me permita emitir comprobantes dentro del sistema."
+---
+
+
+<Note>
+La configuración de la sucursal permitirá emitir comprobantes no fiscales. En caso de necesitar emitir comprobantes fiscales, deberán realizar configuraciones extras:
+<ul>
+<li>Para Argentina: En AFIP, seguir los pasos de la siguiente guía: <a href="https://ayuda.pxsol.com/como-realizar-la-vinculacion-de-facturacion" target="_blank" rel="noopener">¿Cómo realizar la vinculación de facturación?</a></li>
+<li>Para Uruguay: Solo se podrán emitir documentos fiscales con la integración de Factura Lista o GNS.</li>
+<li>Para el Resto del mundo: Por el momento no se podrán emitir comprobantes fiscales</li>
+</ul>
+</Note>
+
+<Steps>
+<Step title="Iniciar sesión y navegar a Facturación">
+1.  Accede a <a href="https://pms.pxsol.com" target="_blank" rel="noopener noreferrer">pms.pxsol.com</a> con tus credenciales.<br>2.  Dirígete a la sección <strong>Administración</strong> y luego selecciona <strong>Facturación</strong>.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-21-2024-10-48-11-2658-PM.png" alt="Captura de pantalla de la sección Facturación en Administración" />
+</Frame>
+</Step>
+
+<Step title="Gestionar Sucursales">
+En la ventana de Facturación, selecciona <strong>Acciones</strong> y luego <strong>Gestionar Sucursales</strong>.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-21-2024-11-13-19-9008-PM.png" alt="Captura de pantalla mostrando la opción Gestionar Sucursales" />
+</Frame>
+</Step>
+
+<Step title="Crear Nueva Sucursal">
+Haz clic en el botón <strong>Nueva Sucursal</strong>.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-21-2024-11-14-26-2594-PM.png" alt="Captura de pantalla del botón Nueva Sucursal" />
+</Frame>
+</Step>
+
+<Step title="Completar el Formulario de Sucursal">
+Completa los datos requeridos en el formulario. La selección del país determinará los campos específicos a llenar.
+
+<h3>Para Argentina</h3>
+<ul>
+<li><strong>Nombre o Razón Social</strong></li>
+<li><strong>Departamento Fiscal</strong></li>
+<li><strong>Domicilio Fiscal</strong></li>
+<li><strong>Tipo de Persona</strong></li>
+<li><strong>Condición Fiscal</strong></li>
+<li><strong>Ingresos Brutos</strong></li>
+<li><strong>Fecha de Inicio de Actividades</strong></li>
+<li><strong>Número de Establecimiento:</strong> Ingresa '0' si no emites comprobantes fiscales. Si configuraste la emisión de comprobantes fiscales en AFIP y estás usando un Punto de Venta de tipo RECE Aplicativo para WebService, ingresa ese número.</li>
+<li><strong>Número de Identificación:</strong> CUIT</li>
+</ul>
+
+<h3>Para Uruguay</h3>
+<p>Selecciona el <strong>Proveedor de facturación</strong>: Factura Lista o GNS.</p>
+<ul>
+<li><strong>Para Factura Lista:</strong>
+<ul>
+<li><strong>Domicilio Fiscal</strong></li>
+<li><strong>Nombre o Razón social</strong></li>
+<li><strong>Departamento Fiscal</strong></li>
+<li><strong>Tipo Documento</strong></li>
+<li><strong>Número de Identificación:</strong> RUT</li>
+<li><strong>Email</strong></li>
+<li><strong>Clave:</strong> Clave de Factura Lista</li>
+<li><strong>Código Postal</strong></li>
+<li><strong>Usuario:</strong> Usuario de Factura Lista</li>
+</ul>
+<Note>Los campos Usuario y Clave son necesarios para la integración con Factura Lista.</Note>
+<p>Para la integración con GNS, es importante activar las credenciales desde la sección de Integraciones: <a href="https://ayuda.pxsol.com/es/c%C3%B3mo-realizar-la-integraci%C3%B3n-con-gns-uruguay" target="_blank" rel="noopener noreferrer">¿Cómo realizar la integración con GNS?</a></p>
+</li>
+<li><strong>Para GNS:</strong>
+<ul>
+<li><strong>Credencial del Proveedor:</strong> Selecciona la credencial configurada en la sección de Integraciones.</li>
+<li><strong>Domicilio Fiscal</strong></li>
+<li><strong>Nombre o Razón social</strong></li>
+<li><strong>Departamento Fiscal</strong></li>
+<li><strong>Tipo Documento</strong></li>
+<li><strong>Número de Identificación:</strong> RUT o identificación</li>
+<li><strong>Email</strong></li>
+<li><strong>Código Postal</strong></li>
+</ul>
+</li>
+</ul>
+
+<h3>Para el Resto del Mundo</h3>
+<ul>
+<li><strong>Domicilio Fiscal</strong></li>
+<li><strong>Nombre o Razón social</strong></li>
+<li><strong>Departamento Fiscal</strong></li>
+<li><strong>Número de Identificación:</strong> Documento, RUT, CUIT, etc.</li>
+</ul>
+
+<Warning>
+Después de crear la sucursal de facturación, recuerda editarla para definir los tipos de comprobantes habilitados y los puntos de venta que la utilizarán.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-27-58-9888-PM.png" alt="Captura de pantalla indicando la necesidad de editar la sucursal" />
+</Frame>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-28-19-4103-PM.png" alt="Captura de pantalla mostrando opciones de configuración de sucursal" />
+</Frame>
+</Warning>
+</Step>
+</Steps>
