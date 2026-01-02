@@ -1,0 +1,181 @@
+---
+title: "Contenido dinámico para plantillas de correos"
+description: "Resumen de los contenidos dinámicos disponibles para crear plantillas de correo personalizadas en e-Commerce."
+---
+
+
+El <strong>contenido dinámico</strong> se refiere a la información que se adapta automáticamente a las características específicas de cada reserva. Este tipo de contenido utiliza variables que se completan con datos relevantes y personalizados.
+
+El contenido dinámico es especialmente útil para <strong>personalizar</strong> las plantillas de las notificaciones de confirmación y cancelación eCommerce. En la configuración de las plantillas, encontrarán una sección llamada "Contenido dinámico". Al hacer clic en esta opción, podrán ver una lista de los diversos tipos disponibles y seleccionar aquellos que deseen incluir en el cuerpo del correo electrónico.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-21-2025-09-02-49-2089-PM.png" alt="Captura de pantalla mostrando la sección 'Contenido dinámico' en la configuración de plantillas de correo." />
+</Frame>
+
+A continuación, se presenta una lista de los diferentes tipos de contenidos dinámicos disponibles:
+
+*   <strong>Saludo:</strong> `[var_saludo]`
+
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-37-27-8701-PM.png" alt="Ejemplo visual de la variable de saludo." />
+    </Frame>
+*   <strong>Nombre:</strong> `[var_nombre]`
+
+    Dato ingresado en el campo Nombre del titular de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-37-52-7507-PM.png" alt="Ejemplo visual de la variable de nombre." />
+    </Frame>
+*   <strong>Apellido:</strong> `[var_apellido]`
+
+    Dato ingresado en el campo Apellido del titular de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-38-14-6902-PM.png" alt="Ejemplo visual de la variable de apellido." />
+    </Frame>
+*   <strong>N° de reserva:</strong> `[var_reserva_num]`
+
+    Número de identificación de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-38-41-7574-PM.png" alt="Ejemplo visual de la variable de número de reserva." />
+    </Frame>
+*   <strong>Fecha consulta:</strong> `[var_fechaconsulta]`
+
+    Fecha en la que se efectúa la consulta y/o se confirma la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-39-12-9249-PM.png" alt="Ejemplo visual de la variable de fecha de consulta." />
+    </Frame>
+*   <strong>Fecha in:</strong> `[var_fechain]`
+
+    Fecha de check-in confirmada para la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-39-30-1166-PM.png" alt="Ejemplo visual de la variable de fecha de check-in." />
+    </Frame>
+*   <strong>Fecha out:</strong> `[var_fechaout]`
+
+    Fecha de check-out confirmada para la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-39-46-2458-PM.png" alt="Ejemplo visual de la variable de fecha de check-out." />
+    </Frame>
+*   <strong>Noches:</strong> `[var_noches]`
+
+    Incluye la cantidad total de noches confirmadas en la reserva, sumando las noches de cada habitación. Por ejemplo, si se confirma una reserva de 2 habitaciones por 2 noches, el total se mostrará como 4 (2 habitaciones x 2 noches cada una).
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-41-42-4842-PM.png" alt="Ejemplo visual de la variable de noches." />
+    </Frame>
+*   <strong>Nombre del Hotel:</strong> `[var_hotel_nombre]`
+
+    Nombre del establecimiento donde se ha confirmado la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-42-35-5128-PM.png" alt="Ejemplo visual de la variable de nombre del hotel." />
+    </Frame>
+*   <strong>Link Confirmación de Reserva:</strong> `[var_confirmation]`
+
+    Enlace para acceder al presupuesto proporcionado al completar la reserva, donde se puede revisar nuevamente lo confirmado y, si se desea, imprimirlo.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-23-2025-08-25-38-8692-PM.png" alt="Ejemplo visual del enlace de confirmación de reserva." />
+    </Frame>
+*   <strong>Link cancelación de reserva:</strong> `[var_cancel_booking]`
+
+    Enlace para cancelar la reserva, siempre que dicha acción esté permitida según las políticas establecidas al momento de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-52-15-0144-PM.png" alt="Ejemplo visual del enlace de cancelación de reserva." />
+    </Frame>
+*   <strong>Estadía (Largo de Estadía):</strong> `[var_estadia]`
+
+    Incluye el total de noches confirmadas en la reserva, considerando la fecha de check-in y check-out establecidas. Este dato se refiere a la duración total de la estadía, sin desglosar la cantidad de noches por cada habitación, sino en función de la reserva completa.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-53-25-7489-PM.png" alt="Ejemplo visual de la variable de estadía." />
+    </Frame>
+*   <strong>Presupuesto Agencias Compra:</strong> `[var_presupuestos_agencias_compra]`
+
+    Representa el presupuesto de compra, mostrando el valor neto de la reserva. Este importe indica el costo total antes de añadir el margen de ganancia.
+
+    En este apartado se incluye la dirección y el número de teléfono del hotel, así como los detalles de la reserva, que abarcan la categoría de la habitación, la tarifa aplicada, la cantidad de pasajeros, las fechas de check-in y check-out, el régimen de comidas confirmado, los costos de la reserva y la política correspondiente que se aplica.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-47-09-4409-PM.png" alt="Ejemplo visual del presupuesto de compra para agencias." />
+    </Frame>
+*   <strong>Presupuesto Agencias Ventas:</strong> `[var_presupuestos_agencias_venta]`
+
+    Representa el presupuesto de venta, el cual muestra el valor comisionable de la reserva, es decir, el costo que se ofrecerá al cliente final. Este monto refleja el total de la reserva una vez que se ha aplicado el margen de ganancia correspondiente.
+
+    En esta sección también se proporciona la dirección y el número de teléfono del hotel, junto con los detalles específicos de la reserva. Estos detalles incluyen la categoría de la habitación, la tarifa aplicada, la cantidad de pasajeros, fechas de check-in y check-out, el régimen de comidas confirmado, así como los costos asociados a la reserva y la política que se aplica a la misma.
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-02-57-36-7384-PM.png" alt="Ejemplo visual del presupuesto de venta para agencias." />
+    </Frame>
+*   <strong>Email del titular de la reserva:</strong> `[var_lead_guest_email]`
+
+    Correo electrónico proporcionado durante el proceso de confirmación de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-03-03-32-5756-PM.png" alt="Ejemplo visual del email del titular de la reserva." />
+    </Frame>
+*   <strong>Teléfono del titular de la reserva:</strong> `[var_lead_guest_phone]`
+
+    Número de contacto telefónico proporcionado durante el proceso de confirmación de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-03-04-39-1810-PM.png" alt="Ejemplo visual del teléfono del titular de la reserva." />
+    </Frame>
+*   <strong>Documento del titular:</strong> `[var_lead_guest_identification]`
+
+    Dato ingresado en el campo Documento del titular de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-04-02-35-6902-PM.png" alt="Ejemplo visual del documento del titular." />
+    </Frame>
+*   <strong>Dirección del titular:</strong> `[var_lead_guest_address]`
+
+    Dato ingresado en el campo Dirección del titular de la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-29-2025-04-02-03-3123-PM.png" alt="Ejemplo visual de la dirección del titular." />
+    </Frame>
+*   <strong>Categoria/huespedes/regimen/política:</strong> `[var_budget]`
+
+    Este conjunto de información ofrece detalles sobre las habitaciones reservadas, que incluyen el nombre del tipo de habitación, descripción de la habitación, la cantidad de huéspedes confirmados, régimen de comida correspondiente, tarifa y política aplicada.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-21-2025-02-34-20-3920-PM.png" alt="Ejemplo visual detallado de categoría, huéspedes, régimen y política." />
+    </Frame>
+*   <strong>Categoria/huespedes/regimen:</strong> `[var_budget_without_policy]`
+
+    Este conjunto de información ofrece detalles sobre las habitaciones reservadas, que incluyen el nombre del tipo de habitación, descripción de la habitación, la cantidad de huéspedes confirmados y el régimen de comidas correspondiente. A diferencia del contenido dinámico "Categoria/huespedes/regimen/política: [var_budget]", este no proporciona información sobre la política aplicable a la reserva.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-21-2025-02-31-44-5368-PM.png" alt="Ejemplo visual de categoría, huéspedes y régimen sin política." />
+    </Frame>
+*   <strong>Información del Establecimiento:</strong> `[var_hotel_info]`
+
+    Este campo proporciona información detallada sobre el establecimiento reservado, incluyendo su nombre, dirección, número de teléfono, así como los horarios de check-in y check-out.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-23-2025-08-39-30-4880-PM.png" alt="Ejemplo visual de la información del establecimiento." />
+    </Frame>
+*   <strong>Información del huésped principal:</strong> `[var_lead_guest_info]`
+
+    Esta variable ofrece información completa sobre el huésped que realiza la reserva, incluyendo su nombre y apellido, número de documento de identidad, correo electrónico y número de teléfono de contacto.
+    Ejemplo:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-23-2025-08-43-03-4484-PM.png" alt="Ejemplo visual de la información del huésped principal." />
+    </Frame>
+*   <strong>Cabecera del contacto:</strong> `[var_contact_header]` - SOLO VOUCHERS
+
+    Esta variable es especialmente útil en los vouchers, ya que permite que el logo del contacto que realiza la reserva aparezca en la cabecera del documento. De esta manera, el contacto puede compartir el voucher directamente con su cliente.
+*   <strong>Tabla de importes:</strong> `[var_prices]`
+
+    Esta variable proporciona un desglose detallado de los precios, incluyendo el valor total con impuestos, así como el monto neto antes de impuestos y el importe correspondiente a los mismos.
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-23-2025-08-50-45-7816-PM.png" alt="Ejemplo visual de la tabla de importes." />
+    </Frame>
