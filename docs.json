@@ -129,7 +129,9 @@
           },
           {
             "group": "Integraciones",
-            "pages": []
+            "pages": [
+              "integraciones/payway_comportamiento_y_visualizacion_en_la_reserva"
+            ]
           },
           {
             "group": "Tarifas Y Disponibilidad",
