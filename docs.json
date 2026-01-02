@@ -95,7 +95,8 @@
               "pms/como_visualizar_las_cuentas_corrientes",
               "pms/como_emitir_una_factura_e_de_exportacion_argentina",
               "pms/como_visualizar_el_lote_y_cupon_de_un_pago_con_tarjeta_de_credito",
-              "pms/como_vincular_cuentas_recaudadoras_a_puntos_de_venta"
+              "pms/como_vincular_cuentas_recaudadoras_a_puntos_de_venta",
+              "pms/como_crear_cuentas_recaudadoras"
             ]
           },
           {
