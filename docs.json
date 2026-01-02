@@ -144,7 +144,9 @@
           },
           {
             "group": "Marketplace",
-            "pages": []
+            "pages": [
+              "marketplace/como_realizar_la_integracion_con_tra"
+            ]
           },
           {
             "group": "Plano De Mesa",
