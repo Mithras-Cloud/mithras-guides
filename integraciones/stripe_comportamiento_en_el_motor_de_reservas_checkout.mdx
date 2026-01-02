@@ -1,0 +1,46 @@
+---
+title: "Stripe: Comportamiento en el Motor de Reservas (Check-out)"
+description: "En esta guía se muestra cómo impacta la integración de Stripe en el motor de reservas."
+---
+
+<Info>
+Una vez que el método de pago asociado a la pasarela está completamente configurado y activo, estará visible como una opción durante el proceso de check-out en el motor de reservas.
+</Info>
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-13-57-6325-PM.png" alt="Opción de pago Stripe visible en el proceso de check-out." />
+</Frame>
+
+<Warning>
+**Impacto en Inventario:** Independientemente de si el pago es exitoso o rechazado, la reserva ingresará al sistema y se descontará la disponibilidad (inventario) de la habitación.
+</Warning>
+
+### Comunicación al Huésped
+
+<Info>
+La plantilla de correo electrónico enviada al huésped variará según el resultado del pago (pre-reserva más confirmación de pago exitoso o notificación de pago rechazado/error) de acuerdo a lo configurado en el medio de pago.
+</Info>
+
+La página de respuesta en el check-out también cambiará:
+
+<Tabs>
+<Tab title="Pago Exitoso">
+Se mostrará la reserva confirmada y el mensaje "Muchas gracias por su compra”.
+
+Link de ejemplo: `https://ppxsol.hoteldemo.com.ar/neo_checkout/payment_status.php?CID=9898004&budget_id=9187494`
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-13-58-2180-PM.png" alt="Página de confirmación de pago exitoso en el motor de reservas." />
+</Frame>
+</Tab>
+
+<Tab title="Pago Rechazado">
+Se mostrará el mismo presupuesto pero indicando el error en el pago y solicitando comunicarse con el hotel.
+
+Link de ejemplo: `https://ppxsol.hoteldemo.com.ar/neo_checkout/payment_status.php?CID=9895939&budget_id=9185106`
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-13-57-9082-PM.png" alt="Página de pago rechazado en el motor de reservas." />
+</Frame>
+</Tab>
+</Tabs>
