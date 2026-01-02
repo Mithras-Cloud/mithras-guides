@@ -121,7 +121,9 @@
           },
           {
             "group": "Plano De Mesa",
-            "pages": []
+            "pages": [
+              "plano_de_mesa/monitor_de_cocina_kds__aplicacion_plano_de_mesa"
+            ]
           },
           {
             "group": "Preguntas Frecuentes",
