@@ -1,0 +1,59 @@
+---
+title: "Plantillas de Correo para Integración con Pasarelas de Pago"
+description: "Ejemplos de plantillas de correo electrónico para la configuración de medios de pago, incluyendo pre-confirmación, confirmación exitosa y notificación de pago rechazado."
+---
+
+
+<p>Las plantillas que se detallan a continuación son ejemplos orientativos. Cada cliente puede configurar sus propias plantillas de acuerdo con sus procesos, estilo de comunicación y necesidades específicas.</p>
+
+<p><strong>1 - Pre-book. Plantilla que se enviará automáticamente al cliente al confirmar una reserva con este medio de pago, antes de que se procese el pago.</strong></p>
+
+<p>Asunto:</p>
+<p>Pre-confirmación de reserva en PXSOL HOTEL. Estamos procesando tu pago.</p>
+
+<p>Cuerpo del mail:</p>
+<p>Hola&nbsp;<strong>[var_nombre]</strong>,</p>
+<p>¡Gracias por elegir&nbsp;<strong>[var_hotel_nombre]</strong>! Hemos recibido tu solicitud de pre-reserva y&nbsp;<strong>estamos en proceso de validar tu pago</strong> a través del medio de pago seleccionado. En breve te informaremos sobre el estado de la transacción y el resultado final de tu reserva.</p>
+<p>Presupuesto:</p>
+<p>[var_presupuestos]</p>
+<p>Agradecemos tu paciencia y confianza en nosotros. Si surgen dudas o necesitas asistencia mientras tanto, no dudes en ponerte en contacto.</p>
+<p>¡Esperamos darte la bienvenida muy pronto!</p>
+<p>Atentamente,</p>
+<p><strong>PXSOL HOTEL</strong></p>
+<p>reservas@hotel.com</p>
+<p>+56 9 XXXX-XXXX</p>
+
+<p><strong>2 - Plantilla de correo para informar sobre la confirmación de reserva tras un pago exitoso realizado a través de WebPay.</strong></p>
+
+<p>Asunto:</p>
+<p>¡Confirmación de reserva en PXSOL HOTEL!</p>
+
+<p>Cuerpo del mail:</p>
+<p>Hola&nbsp;<strong>[var_nombre]</strong>,</p>
+<p>¡Agradecemos que haya elegido<strong>&nbsp;[var_hotel_nombre]</strong> para su próxima estancia!</p>
+<p>Nos complace informarle que su reserva Nº&nbsp;<strong>[var_reserva_num]</strong>&nbsp;ha sido confirmada exitosamente.</p>
+<p>Le recomendamos revisar detenidamente la información de su reserva y no dude en contactarnos si necesita cualquier tipo de asistencia.</p>
+<p>Detalles de su reserva - presupuesto:</p>
+<p>[var_presupuestos]</p>
+<p><strong>Método de pago:</strong>&nbsp;Alojamiento prepago - extras a cargo del pasajero.</p>
+<p>Estamos a su entera disposición y esperamos con ansias su llegada.</p>
+<p>Saludos cordiales,</p>
+<p><strong>PXSOL HOTEL</strong></p>
+<p>reservas@hotel.com</p>
+<p>+56 9 XXXX-XXXX</p>
+
+<p><strong>3 - Plantilla de correo para notificar al cliente sobre un inconveniente al procesar el pago mediante WebPay,&nbsp;</strong><strong>detallando la situación y los pasos a seguir para completar la reserva.</strong></p>
+
+<p>Asunto:</p>
+<p>Pago rechazado – Su reserva en PXSOL HOTEL no está garantizada</p>
+
+<p>Cuerpo del mail:</p>
+<p>Hola&nbsp;<strong>[var_nombre]</strong>,</p>
+<p>Lamentamos informarle que ha ocurrido un inconveniente durante el proceso de pago para su reserva en&nbsp;<strong>[var_hotel_nombre]</strong>.</p>
+<p>Actualmente, su reserva no está garantizada y existe la posibilidad de que se cancele si no se completa el pago en breve.</p>
+<p>Si desea finalizar la reserva utilizando otro método de pago, le invitamos a contactarnos lo antes posible para brindarle la asistencia necesaria. Tenga en cuenta que la disponibilidad de habitaciones no está garantizada y puede cambiar sin previo aviso.</p>
+<p>Estamos aquí para ayudarle a resolver este inconveniente y completar su reserva.</p>
+<p>Saludos cordiales,</p>
+<p><strong>PXSOL HOTEL</strong></p>
+<p>reservas@hotel.com</p>
+<p>+56 9 XXXX-XXXX</p>
