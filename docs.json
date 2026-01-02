@@ -81,7 +81,8 @@
               "pms/como_cargar_notas_de_credito_en_proveedores",
               "pms/como_editar_mi_vista_personalizada_de_lista_de_reservas",
               "pms/como_realizar_el_check_out_de_una_habitacion",
-              "pms/como_cargar_consumos_items_en_inventario"
+              "pms/como_cargar_consumos_items_en_inventario",
+              "pms/como_facturar_desde_el_modulo_facturacion"
             ]
           },
           {
