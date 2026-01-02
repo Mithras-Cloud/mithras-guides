@@ -73,7 +73,8 @@
               "pms/folios__como_imprimir_un_folio",
               "pms/acceder_a_una_reserva_o_a_un_contacto_desde_la_aplicacion_estado_de_habitaciones",
               "pms/como_emitir_facturas_de_venta_con_percepciones_o_impuestos_adicionales_argentina",
-              "pms/como_visualizar_la_aplicacion_inventario"
+              "pms/como_visualizar_la_aplicacion_inventario",
+              "pms/como_cargar_notas_de_credito_en_proveedores"
             ]
           },
           {
