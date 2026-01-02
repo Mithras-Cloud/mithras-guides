@@ -1,0 +1,179 @@
+---
+title: "IMAP en Gmail + Contraseña de aplicación — Guía rápida"
+description: "En esta guía aprenderás a habilitar IMAP y generar una Contraseña de Aplicación (App Password) para conectar Gmail con Pxsol."
+---
+
+
+<Info>
+Antes de empezar, ten en cuenta lo siguiente:
+<Bullet>
+<BulletItem>IMAP debe estar habilitado en tu cuenta de Gmail.</BulletItem>
+<BulletItem>La Verificación en 2 pasos (2FA) es obligatoria.</BulletItem>
+<BulletItem>Debes generar una Contraseña de aplicación (16 caracteres) desde <Link href="https://myaccount.google.com/apppasswords">aquí</Link>.</BulletItem>
+<BulletItem>Para cuentas personales (@gmail.com), tú como usuario realizas toda la configuración.</BulletItem>
+<BulletItem>Para cuentas de Google Workspace (dominio propio), el <strong>administrador</strong> de la cuenta debe habilitar la 2FA y las Contraseñas de aplicación.</BulletItem>
+</Bullet>
+</Info>
+
+<h4>Cuentas personales vs Workspace</h4>
+<p><em>Explora las diferencias de configuración según tu tipo de cuenta.</em></p>
+
+<Table>
+<TableHead>
+<TableRow>
+<TableCell>Tipo de cuenta</TableCell>
+<TableCell>Quién actúa</TableCell>
+<TableCell>2FA</TableCell>
+<TableCell>Contraseñas de aplicación</TableCell>
+<TableCell>Nota</TableCell>
+</TableRow>
+</TableHead>
+<TableBody>
+<TableRow>
+<TableCell>@gmail.com (personal)</TableCell>
+<TableCell>Usuario</TableCell>
+<TableCell>Requerido</TableCell>
+<TableCell>Disponible tras 2FA</TableCell>
+<TableCell>Sigue los pasos de esta guía.</TableCell>
+</TableRow>
+<TableRow>
+<TableCell>Google Workspace</TableCell>
+<TableCell>Usuario + <strong>Admin</strong></TableCell>
+<TableCell>Requerido</TableCell>
+<TableCell>El <strong>Admin</strong> debe permitir</TableCell>
+<TableCell>Si no aparece, solicita al Admin habilitarlo.</TableCell>
+</TableRow>
+</TableBody>
+</Table>
+<hr />
+
+<h4>Requisitos</h4>
+<p><em>Verifica estas condiciones previas para continuar.</em></p>
+<ul>
+<li aria-level="1">Acceso a <Link href="https://mail.google.com">mail.google.com</Link> y <Link href="https://myaccount.google.com/security">myaccount.google.com/security</Link>.</li>
+<li aria-level="1"><strong>2FA activado</strong> (sin 2FA, la opción “Contraseñas de aplicación” no aparecerá).</li>
+<li aria-level="1">En <strong>Google Workspace</strong>, asegúrate de que el <strong>administrador</strong> haya permitido la 2FA, las Contraseñas de aplicación y el acceso IMAP.</li>
+</ul>
+<hr />
+
+<h4>Habilitar IMAP en Gmail</h4>
+<p><em>Este paso es necesario para que las aplicaciones puedan leer tus correos.</em></p>
+
+<Steps>
+<Step title="Accede a Gmail">
+Abre <Link href="https://mail.google.com">mail.google.com</Link>.
+</Step>
+<Step title="Ve a Configuración">
+Haz clic en el ícono del engranaje (⚙️) y selecciona <strong>Ver todos los ajustes</strong>.
+</Step>
+<Step title="Navega a la pestaña correcta">
+Dirígete a la pestaña <strong>Reenvío y correo POP/IMAP</strong>.
+</Step>
+<Step title="Habilita IMAP">
+En la sección <strong>Acceso IMAP</strong>, verifica si el acceso ya está habilitado. Si no, selecciona <strong>Habilitar IMAP</strong> y haz clic en <strong>Guardar cambios</strong>.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-45-52-8024-PM.png" alt="Captura de pantalla de Gmail mostrando la configuración de IMAP" />
+</Frame>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-46-20-3273-PM.png" alt="Captura de pantalla de Gmail mostrando la opción de habilitar IMAP" />
+</Frame>
+</Step>
+</Steps>
+<hr />
+
+<h4>Activar Verificación en 2 pasos (2FA)</h4>
+<p><em>Este es un requisito indispensable para poder generar las Contraseñas de aplicación.</em></p>
+
+<Steps>
+<Step title="Accede a tu cuenta de Google">
+Abre <Link href="https://myaccount.google.com/security">https://myaccount.google.com/security</Link>.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-46-42-2127-PM.png" alt="Captura de pantalla de la página de seguridad de la cuenta de Google" />
+</Frame>
+</Step>
+<Step title="Configura la Verificación en 2 pasos">
+En la sección <strong>Acceso a Google</strong>, haz clic en <strong>Verificación en dos pasos</strong> y luego en <strong>Activar</strong>. Sigue las instrucciones en pantalla para completar el proceso.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-47-06-1231-PM.png" alt="Captura de pantalla mostrando la opción de Verificación en 2 pasos" />
+</Frame>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-47-18-3348-PM.png" alt="Captura de pantalla del botón para activar la Verificación en 2 pasos" />
+</Frame>
+</Step>
+</Steps>
+<hr />
+
+<h4>Crear App Password (IMAP/SMTP)</h4>
+<p><em>Generarás una contraseña específica de 16 caracteres para usarla con Pxsol.</em></p>
+
+<Steps>
+<Step title="Accede a la página de App Passwords">
+Visita <Link href="https://myaccount.google.com/apppasswords">https://myaccount.google.com/apppasswords</Link>.
+</Step>
+<Step title="Verifica tu identidad">
+Confirma tu identidad ingresando tu contraseña o mediante el proceso de 2FA si se te solicita.
+</Step>
+<Step title="Introduce el nombre de la aplicación">
+En el campo <strong>Seleccionar aplicación</strong>, escribe <code>Pxsol</code>.
+</Step>
+<Step title="Genera y copia la contraseña">
+Haz clic en <strong>Crear</strong>. Se generará una contraseña de 16 caracteres. Cópiala completa, sin espacios, y guárdala en un lugar seguro.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-47-58-6238-PM.png" alt="Captura de pantalla mostrando cómo seleccionar la aplicación en la generación de App Password" />
+</Frame>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-19-2025-03-48-15-8675-PM.png" alt="Captura de pantalla de la Contraseña de aplicación generada" />
+</Frame>
+</Step>
+</Steps>
+<p><em>Utiliza esta <strong>App Password</strong> como la contraseña en tu configuración de Pxsol. Tu <strong>usuario</strong> será tu <strong>dirección de correo electrónico completa</strong> de Gmail.</em></p>
+<hr />
+
+<h4>Pasos a seguir para Administradores (Google Workspace)</h4>
+<ul>
+<li aria-level="1">En la <strong>Consola de administración</strong> de Google, navega a <strong>Seguridad</strong> y habilita la <strong>Verificación en 2 pasos</strong>. Asegúrate también de permitir las <strong>Contraseñas de aplicaciones</strong>.</li>
+<li aria-level="1">Ve a <strong>Aplicaciones</strong> → <strong>Google Workspace</strong> → <strong>Gmail</strong> → <strong>Configuración del usuario</strong>. Confirma que <strong>IMAP</strong> esté habilitado para los usuarios.</li>
+</ul>
+<hr />
+
+<h4>Configurar Pxsol</h4>
+<p><em>Estos son los valores típicos de servidor para configurar Pxsol con tu cuenta de Gmail.</em></p>
+
+<AccordionGroup>
+<Accordion title="Configuración IMAP (lectura)">
+<ul>
+<li aria-level="1"><strong>Servidor:</strong> <code>imap.gmail.com</code></li>
+<li aria-level="1"><strong>Puerto:</strong> <code>993</code></li>
+<li aria-level="1"><strong>Seguridad:</strong> <strong>SSL/TLS</strong></li>
+<li aria-level="1"><strong>Usuario:</strong> tu <strong>email completo</strong> de Gmail</li>
+<li aria-level="1"><strong>Contraseña:</strong> la <strong>App Password</strong> generada (16 caracteres)</li>
+</ul>
+</Accordion>
+<Accordion title="Configuración SMTP (envío)">
+<ul>
+<li aria-level="1"><strong>Servidor:</strong> <code>smtp.gmail.com</code></li>
+<li aria-level="1"><strong>Puerto:</strong> <code>465</code> (SSL) o <code>587</code> (STARTTLS)</li>
+<li aria-level="1"><strong>Usuario:</strong> tu <strong>email completo</strong> de Gmail</li>
+<li aria-level="1"><strong>Contraseña:</strong> la <strong>App Password</strong> generada (16 caracteres)</li>
+</ul>
+</Accordion>
+</AccordionGroup>
+<hr />
+
+<h4>Solución de problemas</h4>
+<p><em>Encuentra rápidas soluciones para errores comunes.</em></p>
+<ul>
+<li aria-level="1"><strong>El apartado “Contraseñas de aplicación” no aparece</strong>: Asegúrate de tener la <strong>2FA activa</strong>. Si usas Google Workspace, solicita a tu <strong>administrador</strong> que habilite las Contraseñas de aplicación.</li>
+<li aria-level="1"><strong>Mensaje de “Contraseña incorrecta”</strong>: Verifica que estés copiando la <strong>contraseña de 16 caracteres exacta</strong>, sin espacios al principio ni al final. Si es necesario, genera una nueva contraseña de aplicación.</li>
+</ul>
+<hr />
+
+<h4>Checklist final</h4>
+<p><em>Asegúrate de haber completado todos los pasos.</em></p>
+<ul>
+<li aria-level="1">IMAP habilitado en Gmail.</li>
+<li aria-level="1">2FA activado.</li>
+<li aria-level="1">(Si usas Workspace) El administrador ha permitido 2FA, Contraseñas de aplicación e IMAP.</li>
+<li aria-level="1">Has generado y copiado correctamente una App Password.</li>
+<li aria-level="1">Pxsol está configurado con tu dirección de Gmail completa y la App Password.</li>
+</ul>
