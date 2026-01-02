@@ -215,7 +215,8 @@
               "integraciones/conexion_pxsol_como_ota__precios_por_habitacion_o_por_ocupacion",
               "integraciones/integracion_con_la_rm_tool_de_bens",
               "integraciones/payway_gestion_de_credenciales_de_pasarelas_de_pago",
-              "integraciones/payway_como_efectuar_una_devolucion_parcial_o_total"
+              "integraciones/payway_como_efectuar_una_devolucion_parcial_o_total",
+              "integraciones/informacion_general_de_mercado_pago"
             ]
           },
           {
