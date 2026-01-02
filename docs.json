@@ -394,7 +394,8 @@
               "agencias_b2b/agencia_hoteles_disponibles_para_acuerdos",
               "agencias_b2b/agencias_como_activar_el_mapeo_automatico_de_politicas",
               "agencias_b2b/agencias_aplicacion_mapeo_de_politicas",
-              "agencias_b2b/agencia__reserva_directo_usuario__mis_reservas"
+              "agencias_b2b/agencia__reserva_directo_usuario__mis_reservas",
+              "agencias_b2b/como_puedo_ver_las_reglas_de_negocio_que_se_han_aplicado_a_una_reserva"
             ]
           },
           {
