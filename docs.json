@@ -160,7 +160,8 @@
               "pms/como_visualizar_caja_diaria",
               "pms/como_personalizar_mi_lista_de_reservas",
               "pms/como_generar_el_archivo_de_las_facturas_emitidas",
-              "pms/como_registrar_un_ingreso_desde_caja_diaria"
+              "pms/como_registrar_un_ingreso_desde_caja_diaria",
+              "pms/como_confeccionar_un_comprobante_de_compra"
             ]
           },
           {
