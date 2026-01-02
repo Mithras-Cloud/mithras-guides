@@ -1,0 +1,69 @@
+---
+title: "¿Cómo delegar su dominio comprado en Wiroos a nuestro hosting de Cloudflare?"
+description: "En esta guía explicaremos cómo delegar su dominio comprado en Wiroos a nuestro hosting de Cloudflare"
+---
+
+
+<Note>
+**IMPORTANTE:** No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte o con su ejecutivo de CSM
+</Note>
+
+Pasos para hacer el cambio de NS (name servers):
+
+<Steps>
+<Step title="Acceda a su cuenta de Wiroos">
+  Ingrese a su cuenta de Wiroos en el siguiente enlace: <a href="https://clientes.wiroos.com/clientarea.php" target="_blank" rel="noopener">https://clientes.wiroos.com/clientarea.php</a>
+</Step>
+
+<Step title="Inicie sesión">
+  Inicie sesión con su nombre de usuario y contraseña.
+</Step>
+
+<Step title="Navegue a la sección Dominios">
+  En el menú superior, diríjase al apartado **Dominios** y haga clic en **Mis Dominios**.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-23-2024-10-41-28-2486-PM.png" alt="Captura de pantalla del menú Dominios en Wiroos" />
+  </Frame>
+</Step>
+
+<Step title="Gestione los Nameservers">
+  Haga clic en el desplegable **Editar** a la derecha del dominio que desea delegar y seleccione **Gestionar Nameservers**.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-23-2024-10-42-45-9803-PM.png" alt="Captura de pantalla para gestionar Nameservers de un dominio" />
+  </Frame>
+</Step>
+
+<Step title="Seleccione Nameservers personalizados">
+  Haga clic en la opción **Usar nameservers personalizados**.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-23-2024-10-46-23-6657-PM.png" alt="Captura de pantalla seleccionando la opción de nameservers personalizados" />
+  </Frame>
+</Step>
+
+<Step title="Ingrese los nuevos Nameservers">
+  Introduzca los NS que le haya indicado el área de servicio técnico de Web en PXSOL. Estos pueden ser:
+  <ul>
+    <li>grace.ns.cloudflare.com</li>
+    <li>merlin.ns.cloudflare.com</li>
+  </ul>
+  O también:
+  <ul>
+    <li>henry.ns.cloudflare.com</li>
+    <li>mona.ns.cloudflare.com</li>
+  </ul>
+  Una vez ingresados, haga clic en el botón **Cambiar Nameservers**.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-23-2024-10-46-50-2461-PM.png" alt="Captura de pantalla ingresando los nuevos nameservers" />
+  </Frame>
+  <Check>
+  Verá un mensaje confirmando que el cambio de Nameservers se ha realizado correctamente.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-23-2024-10-47-44-8044-PM.png" alt="Mensaje de confirmación del cambio de Nameservers" />
+  </Frame>
+  </Check>
+</Step>
+
+<Step title="Notifique a nuestro equipo">
+  Una vez completado el cambio de NS, por favor, informe por correo electrónico a equipo@pxsol.com. Esto permitirá a nuestro equipo de soporte dar seguimiento a la propagación y a la correcta configuración.
+</Step>
+</Steps>

@@ -68,7 +68,8 @@
             "group": "Web",
             "pages": [
               "web/como_delegar_su_dominio_comprado_en_google_a_nuestro_hosting_de_cloudflare",
-              "web/instalacion_de_tu_web_con_pxsol"
+              "web/instalacion_de_tu_web_con_pxsol",
+              "web/como_delegar_su_dominio_comprado_en_wiroos_a_nuestro_hosting_de_cloudflare"
             ]
           },
           {
