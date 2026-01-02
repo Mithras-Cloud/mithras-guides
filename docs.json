@@ -40,7 +40,8 @@
               "motor/como_encontrar_un_reserva_desde_el_listado_de_reservas",
               "motor/edicion_multiple_por_ocupacion_en_tarifas_y_disponibilidad_v8",
               "motor/como_anadir_comidas_y_sus_correspondientes_tarifas_a_un_plan_tarifario_v8",
-              "motor/como_acceder_al_historial_de_modificaciones_de_promociones_yo_vouchers"
+              "motor/como_acceder_al_historial_de_modificaciones_de_promociones_yo_vouchers",
+              "motor/como_crear_una_promocion_manual"
             ]
           },
           {
