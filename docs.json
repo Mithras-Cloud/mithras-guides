@@ -42,7 +42,8 @@
           {
             "group": "Informes",
             "pages": [
-              "informes/como_realizar_graficos_en_informes"
+              "informes/como_realizar_graficos_en_informes",
+              "informes/informe_sire__migracion_colombia"
             ]
           },
           {
