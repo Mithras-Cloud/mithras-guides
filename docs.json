@@ -103,7 +103,8 @@
               "pms/como_vincular_cuentas_recaudadoras_a_puntos_de_venta",
               "pms/como_crear_cuentas_recaudadoras",
               "pms/pms_externos",
-              "pms/recomendaciones_inventario"
+              "pms/recomendaciones_inventario",
+              "pms/como_emitir_una_nota_de_debito_dentro_de_una_reserva"
             ]
           },
           {
