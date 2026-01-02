@@ -152,7 +152,9 @@
           },
           {
             "group": "Tarifas Y Disponibilidad",
-            "pages": []
+            "pages": [
+              "tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios"
+            ]
           },
           {
             "group": "Marca Blanca",
