@@ -126,7 +126,8 @@
               "pms/como_obtener_el_usuario_api_o_api_access_key_de_siigo_para_realizar_la_integracion_de_facturacion",
               "pms/como_visualizar_los_desayunos_desde_estado_de_habitaciones",
               "pms/como_leer_estado_de_habitaciones",
-              "pms/como_agregar_observaciones_para_reporte_hsk"
+              "pms/como_agregar_observaciones_para_reporte_hsk",
+              "pms/como_visualizar_y_aplicar_un_escenario_desde_tarifas_y_disponibilidad"
             ]
           },
           {
