@@ -216,7 +216,8 @@
               "pms/como_activar_la_integracion_con_mercado_pago_desde_una_reserva",
               "pms/como_generar_informe_comprobantes_de_ventas_comprobantes_de_ventas_fiscales",
               "pms/como_cambiar_el_estado_de_limpieza_de_las_habitaciones",
-              "pms/como_filtrar_mi_lista_de_reservas"
+              "pms/como_filtrar_mi_lista_de_reservas",
+              "pms/como_cambiar_el_estado_de_limpieza_de_una_habitacion_desde_una_reserva"
             ]
           },
           {
