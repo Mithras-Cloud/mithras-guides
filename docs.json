@@ -109,7 +109,8 @@
               "pms/como_crear_cuentas_recaudadoras",
               "pms/pms_externos",
               "pms/recomendaciones_inventario",
-              "pms/como_emitir_una_nota_de_debito_dentro_de_una_reserva"
+              "pms/como_emitir_una_nota_de_debito_dentro_de_una_reserva",
+              "pms/archivos__como_subir_archivos_dentro_de_una_reserva"
             ]
           },
           {
