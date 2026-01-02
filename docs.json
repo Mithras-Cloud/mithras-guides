@@ -105,7 +105,8 @@
               "motor/como_editar_los_textos_de_mi_establecimiento",
               "motor/como_cargar_tarifas_y_disponibilidad_por_habitacion_v8",
               "motor/como_impulsar_el_paso_de_cambios_del_tarifario_madre_a_los_otros_tarifarios",
-              "motor/como_visualizar_la_aplicacion_tipos_de_habitaciones"
+              "motor/como_visualizar_la_aplicacion_tipos_de_habitaciones",
+              "motor/como_crear_habitaciones_utilizando_la_funcion_duplicar"
             ]
           },
           {
