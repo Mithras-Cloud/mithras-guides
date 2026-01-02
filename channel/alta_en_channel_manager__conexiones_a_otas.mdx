@@ -1,0 +1,80 @@
+---
+title: "Alta de Propiedad en Channel Manager y Conexión a OTAs"
+description: "Guía completa sobre las consideraciones al dar de alta una propiedad en Channex y el proceso de conexión con diversas Agencias de Viajes Online (OTAs)."
+---
+
+
+#### <span style="text-decoration: underline;"><strong>Channel Manager: Alta de propiedad</strong></span>
+
+### Channex
+
+*   Configura la zona horaria según la ubicación de la propiedad.
+    Ruta: Propiedades > Acciones > Editar > Localización > Zona horaria.
+*   Disponibilidad automática: Desactiva el cambio de disponibilidad automática para las cancelaciones.
+    Ruta: Propiedades > Acciones > Editar > Ajustes > Configuración de disponibilidad > Desmarca "Modified booking" y "Cancelled booking".
+*   Si creas <strong>tarifas hijas</strong> en Channex, es esencial realizar un proceso de "Re-Sincronización" en Pxsol.
+    Para ello, navega a Canales de venta > Channex > Acciones ... > "Re-Sincronizar".
+    <Warning>
+    Si no ejecutas este paso, cualquier reserva registrada bajo una tarifa hija de Channex aparecerá en Pxsol como "Tarifa Desconocida", lo que puede causar problemas en la descarga de reservas al PMS.
+    </Warning>
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Sep-16-2024-10-32-48-6036-PM.png" alt="Captura de pantalla de la configuración de Channex" />
+    </Frame>
+*   Channex utiliza el tipo de cambio del BANCO CENTRAL EUROPEO para las conversiones (consultado con Evan).
+    Más información: https://www.ecb.europa.eu/home/html/index.es.html
+
+<Note>
+Los cambios en la configuración de disponibilidad pueden requerir una resincronización para aplicarse correctamente en Pxsol.
+</Note>
+
+### <span style="text-decoration: underline;"><strong>OTAs</strong></span>
+
+<h4>Almundo:</h4>
+<p><strong>Channel Manager:</strong> Parity Rate</p>
+<p><strong>Para conectar:</strong> Solicita la conexión enviando un correo a soporte@ip-hoteles.com, detallando el ID de la propiedad, usuario XML y contraseña XML.</p>
+
+<h4>Amichi</h4>
+<p><strong>Channel Manager:</strong> Parity Rate</p>
+<p><strong>Para conectar:</strong> Solicita la conexión enviando un correo a soporte@ip-hoteles.com, detallando el ID de la propiedad, usuario XML y contraseña XML.</p>
+
+<h4>Airbnb</h4>
+<p><strong>Channel Manager:</strong> Channex</p>
+<p><strong>Para conectar:</strong> Airbnb permite un solo proveedor de conectividad por cuenta.</p>
+
+<h4>Booking.com</h4>
+<p><strong>Channel Manager:</strong> Channex</p>
+
+<h4>Despegar:</h4>
+<p><strong>Channel Manager:</strong> Pxsol o Channex</p>
+
+<h4>Expedia:</strong></h4>
+<p><strong>Channel Manager:</strong> Channex</p>
+<p><strong>Para conectar:</strong> Sigue las instrucciones en https://jam.dev/c/20a23cf3-4edb-4fd8-9a99-3eeb9d56f635</p>
+
+<h4>Hotelbeds:</h4>
+<p><strong>Channel Manager:</strong> Channex (siempre que la conexión sea por tarifas por habitación. Channex no soporta tarifas por ocupación con este canal).</p>
+<p><strong>Para conectar:</strong> Envía un correo a hotelconnect.connectivity@hotelbeds.com solicitando las credenciales de conexión. Debes detallar el ID de la propiedad en Hotelbeds.</p>
+
+<h4>Hyperguest:</strong></h4>
+<p><strong>Channel Manager:</strong> Channex</p>
+<p><strong>Para conectar:</strong> Es necesario que Hyperguest habilite la conexión desde su lado con Channex. Una vez confirmado, se puede avanzar con el mapeo desde Channex.</p>
+<p><strong>Contacto:</strong> support@hyperguest.com</p>
+<p><strong>Más información:</strong> https://docs.channex.io/channel-mapping-guides/hyperguest</p>
+
+<h4>Pricetravel:</strong></h4>
+<p><strong>Channel Manager:</strong> Channex</p>
+<p><strong>Consideraciones:</strong> Channex consulta a la OTA cada 5 minutos por reservas.</p>
+
+<h4>Roibos:</strong></h4>
+<p><strong>Channel Manager:</strong> Channex</p>
+<p><strong>Para conectar:</strong> Solicita a la OTA que habilite la conexión con Channex. Una vez habilitada, la OTA proporcionará las credenciales: ID, Usuario y Contraseña XML.</p>
+
+<h4>Información extra:</h4>
+<p><strong>1 - Reenviar reserva de Channex a Pxsol</strong></p>
+<p>Ubica la reserva en Channex, selecciona la opción "Ver" y luego "Suscriptores". Finalmente, elige la opción "Resend the latest revision" para reenviar la reserva a Pxsol.</p>
+<Frame>
+<img class="hs-image-align-none" height="281" style="height: auto; width: 688px;" src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Sep-02-2024-02-20-49-7714-PM.png" width="688" loading="lazy" alt="Captura de pantalla para reenviar reserva en Channex" />
+</Frame>
+<Tip>
+Siempre verifica que la "Re-Sincronización" se haya completado correctamente después de cualquier cambio importante en las tarifas o configuraciones en Channex.
+</Tip>
