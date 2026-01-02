@@ -534,7 +534,8 @@
               "integraciones/stripe_gestion_de_credenciales_de_pasarelas_de_pago",
               "integraciones/stripe_comportamiento_y_visualizacion_en_la_reserva",
               "integraciones/stripe_como_efectuar_una_devolucion_parcial_o_total",
-              "integraciones/stripe_preguntas_frecuentes"
+              "integraciones/stripe_preguntas_frecuentes",
+              "integraciones/guia_interna_turbosuite"
             ]
           },
           {
