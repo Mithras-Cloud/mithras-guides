@@ -381,7 +381,8 @@
           {
             "group": "Marketplace",
             "pages": [
-              "marketplace/como_realizar_la_integracion_con_tra"
+              "marketplace/como_realizar_la_integracion_con_tra",
+              "marketplace/como_configurar_la_integracion_con_webpay_plus"
             ]
           },
           {
