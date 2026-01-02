@@ -425,7 +425,8 @@
           {
             "group": "Central De Reservas",
             "pages": [
-              "central_de_reservas/solicitar_acuerdos__central_de_reservas"
+              "central_de_reservas/solicitar_acuerdos__central_de_reservas",
+              "central_de_reservas/reserva_directo_usuario__mis_reservas"
             ]
           },
           {
