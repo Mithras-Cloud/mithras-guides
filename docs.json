@@ -35,7 +35,9 @@
           },
           {
             "group": "Crm",
-            "pages": []
+            "pages": [
+              "crm/como_marcar_como_revisada_una_reserva"
+            ]
           },
           {
             "group": "Informes",
