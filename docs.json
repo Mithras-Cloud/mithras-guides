@@ -115,7 +115,8 @@
               "crm/como_eliminar_un_contacto",
               "crm/central_de_reservas_y_marketplace_como_agregar_una_preventa_o_consulta_desde_presupuestar",
               "crm/como_saber_si_un_huesped_ya_se_ha_alojado_en_mi_hotel",
-              "crm/como_enviar_un_mail_dentro_de_una_reserva"
+              "crm/como_enviar_un_mail_dentro_de_una_reserva",
+              "crm/guia_interna_como_crear_reglas_para_email_marketing_automation"
             ]
           },
           {
