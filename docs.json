@@ -179,7 +179,8 @@
             "pages": [
               "integraciones/payway_comportamiento_y_visualizacion_en_la_reserva",
               "integraciones/como_obtener_la_api_key_y_permisos_necesarios_para_configurar_stripe",
-              "integraciones/payway_preguntas_frecuentes"
+              "integraciones/payway_preguntas_frecuentes",
+              "integraciones/conexion_pxsol_como_ota__precios_por_habitacion_o_por_ocupacion"
             ]
           },
           {
