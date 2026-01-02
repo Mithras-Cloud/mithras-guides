@@ -405,7 +405,9 @@
           },
           {
             "group": "Inbox",
-            "pages": []
+            "pages": [
+              "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida"
+            ]
           }
         ]
       },
