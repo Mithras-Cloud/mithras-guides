@@ -1,0 +1,114 @@
+---
+title: "¿Cómo emitir una factura E de Exportación? (Argentina)"
+description: "En esta guía explicaremos como emitir una Factura E de Exportación desde Pxsol para los clientes de Argentina que tienen integración con ARCA (ex AFIP)"
+---
+
+<Note>
+Las facturas de exportación clase "E" son comprobantes que se utilizan para documentar la venta de bienes o servicios al extranjero, cumpliendo con las normas de la Administración Federal de Ingresos Públicos (AFIP). Son obligatorias para quienes realizan actividades exportadoras, incluyendo trabajadores autónomos, freelancers y contractors que brindan servicios a clientes en el exterior.
+Pueden tener que generarse cuando el receptor es de Tierra del Fuego, ya que se trata de un área aduanera diferente al Territorio Nacional Continental.
+</Note>
+
+<Steps>
+<Step title="Acceder a Pxsol y navegar a Facturación">
+1.  Inicia sesión en `pms.pxsol.com` con tus credenciales.
+2.  Dirígete a la sección **Administración** y luego selecciona **Facturación**.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-26-2025-11-52-54-0099-AM.png" alt="Captura de pantalla del menú de Facturación en Pxsol." />
+    </Frame>
+</Step>
+
+<Step title="Crear un Nuevo Comprobante">
+En la ventana de facturación, selecciona **Nuevo Comprobante**.
+
+<Frame>
+<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-Jan-05-2024-06-01-36-1263-PM.png?width=216&height=53&name=image-png-Jan-05-2024-06-01-36-1263-PM.png" alt="Botón para crear un nuevo comprobante." />
+</Frame>
+</Step>
+
+<Step title="Configurar los Datos del Comprobante">
+Completa los siguientes campos:
+
+**TIPO DE COMPROBANTE Y SUCURSAL:**
+*   Selecciona la sucursal de facturación. Debe estar vinculada a un punto de venta en AFIP habilitado para Factura E de Exportación (tipo “Comprobantes de exportación – Factura en línea” en ARCA).
+
+<Note>
+La sucursal seleccionada deberá estar vinculada a un punto de venta en AFIP habilitado para emitir este tipo de comprobantes (Factura E de Exportación). El punto de venta en ARCA se debe ser de tipo “Comprobantes de exportación – Factura en línea”.
+</Note>
+
+*   Selecciona el **Tipo de comprobante** como Factura E de Exportación.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-26-2025-12-03-04-4326-PM.png" alt="Selección del tipo de comprobante." />
+</Frame>
+
+**DATOS DEL COMPROBANTE:**
+*   **Moneda:** Selecciona la moneda para los montos.
+*   **Fecha del comprobante:** Se autocompleta con la fecha del día; es obligatorio.
+*   **Estado actual del comprobante:** Elige entre "A cobrar" o "Cobrado".
+*   **Asociar Reserva:** Opcional, vincula el comprobante a una reserva por su número.
+*   **Condición de venta:** Selecciona cómo se acreditan los movimientos de dinero.
+*   **Observaciones:** Añade información adicional que se mostrará en el comprobante.
+*   **Período facturado:** Completa el período facturado. Ten en cuenta que solo permite facturar hasta 10 días anteriores a la fecha actual.
+
+**DATOS DEL RECEPTOR:**
+
+<Note>
+Si ingresas el CUIT del destinatario, el sistema automáticamente recuperará los datos asociados desde AFIP.
+<Frame>
+<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-May-12-2022-05-38-08-49-PM.png?width=688&height=83&name=image-png-May-12-2022-05-38-08-49-PM.png" alt="Campos de CUIT del receptor." />
+</Frame>
+</Note>
+
+Para generar un comprobante tipo E de Exportación, completa los siguientes datos del receptor:
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-26-2025-12-10-27-0025-PM.png" alt="Datos del receptor para Factura E." />
+</Frame>
+
+*   **Condición frente al IVA:** Selecciona "Cliente Extranjero".
+*   **Tipo de Persona:** Selecciona "Persona Jurídica".
+*   **Tipo de Documento:** Utiliza la opción CUIT. Debes cargar el CUIT del país del receptor.
+*   **Número de Documento:** Ingresa el CUIT del país correspondiente. Puedes obtenerlo del siguiente PDF: [https://www.afip.gob.ar/inversiones-bienes-uso/documentos/CUIT-pais.pdf](https://www.afip.gob.ar/inversiones-bienes-uso/documentos/CUIT-pais.pdf)
+*   **ID Impositivo:** Número de identificación tributaria del cliente en su país (no obligatorio si ya se cargó el CUIT país).
+*   **Nombre y Apellido o Razón Social:** Nombre completo o razón social del receptor.
+*   **País del Cliente:** Debe ser distinto de Argentina (Tierra del Fuego puede seleccionarse como país).
+*   **Dirección:** Dirección completa del cliente.
+*   **Ciudad, Código postal, Email:** Campos adicionales (no obligatorios).
+
+**CONCEPTOS DEL COMPROBANTE:**
+*   Ingresa los datos de los conceptos: Código, Descripción, Cantidad, Precio Unitario y Alícuota.
+*   Puedes agregar más conceptos haciendo clic en **AGREGAR OTRO CONCEPTO +**.
+
+<Note>
+Es obligatorio que cada concepto tenga Descripción y Precio.
+</Note>
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-26-2025-12-28-34-3111-PM.png" alt="Ingreso de conceptos del comprobante." />
+</Frame>
+
+Si los importes son correctos, haz clic en **GUARDAR CAMBIOS**.
+
+<Frame>
+<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-May-12-2022-05-46-32-63-PM.png?width=189&height=57&name=image-png-May-12-2022-05-46-32-63-PM.png" alt="Botón Guardar Cambios." />
+</Frame>
+</Step>
+
+<Step title="Emitir el Comprobante">
+Una vez guardado, tendrás tres opciones:
+*   **Vista Previa:** Para visualizar la factura antes de emitirla.
+*   **Guardar Cambios:** Guarda la factura sin emitirla.
+*   **Emitir Comprobante:** Para emitir formalmente la factura.
+
+<Frame>
+<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-May-12-2022-05-49-14-53-PM.png?width=688&height=75&name=image-png-May-12-2022-05-49-14-53-PM.png" alt="Opciones post-guardado: Vista Previa, Guardar Cambios, Emitir Comprobante." />
+</Frame>
+
+Al seleccionar **Emitir Comprobante**, se abrirá una nueva pestaña en tu navegador con la factura emitida.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-26-2025-12-30-22-7038-PM.png" alt="Factura de exportación emitida." />
+</Frame>
+</Step>
+</Steps>
