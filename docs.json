@@ -376,7 +376,8 @@
               "integraciones/payway_comportamiento_en_el_motor_de_reservas_checkout",
               "integraciones/turbosuite",
               "integraciones/como_realizar_la_integracion_con_payway",
-              "integraciones/integraciones_con_pasarelas_y_procesadores_de_pago_ejemplos_de_plantillas_de_correo_sugeridas_para_la_configuracion_del_medio_de_pago"
+              "integraciones/integraciones_con_pasarelas_y_procesadores_de_pago_ejemplos_de_plantillas_de_correo_sugeridas_para_la_configuracion_del_medio_de_pago",
+              "integraciones/como_realizar_la_integracion_con_gns_uruguay"
             ]
           },
           {

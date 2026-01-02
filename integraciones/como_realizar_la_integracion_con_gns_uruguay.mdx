@@ -1,0 +1,74 @@
+---
+title: "¿Cómo realizar la integración con GNS? (Uruguay)"
+description: "En esta guía explicaremos cómo realizar la integración con GNS para generar las facturas desde Pxsol y que se emitan en DGI a través de esta integración."
+---
+
+
+md
+1. Ingresa a la aplicación desde **Configuración - Integraciones**.
+
+<Frame>
+<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-Dec-13-2024-07-23-12-0563-PM.png?width=331&amp;height=895&amp;name=image-png-Dec-13-2024-07-23-12-0563-PM.png" alt="Configuración - Integraciones">
+</Frame>
+
+2. En la tarjeta de GNS, selecciona **Instalar**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-46-41-8538-PM.png" alt="Tarjeta GNS - Instalar">
+</Frame>
+
+Luego, confirma haciendo clic en **Sí, Instalar**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-46-59-5278-PM.png" alt="Confirmar instalación de GNS">
+</Frame>
+
+3. Selecciona **Añadir credencial**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-47-26-0200-PM.png" alt="Añadir credencial GNS">
+</Frame>
+
+4. Se abrirá un formulario donde deberás completar los datos de la integración:
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-06-08-47-5688-PM.png" alt="Formulario de datos de integración GNS">
+</Frame>
+
+*   **Nombre de credencial:** Permite identificar con un nombre estas credenciales que se utilizarán. Solo sirve de etiqueta.
+    Ej: Integración de prueba con GNS.
+*   **API Key:** Se deben solicitar al Proveedor GNS para realizar la conexión.
+    Ej: `qC6VrtpPn4gEpBFw`
+*   **API Secret:** Se deben solicitar al Proveedor GNS para realizar la conexión.
+    Ej: `pZl6mOh0lFg3mVw0r8ibnSGoavKyqkb2`
+*   **Entorno:** Sirve para etiquetar si las credenciales colocadas están en Producción o Pruebas. Es solamente una etiqueta, ya que se debe solicitar a GNS que las credenciales brindadas generen comprobante en DGI o no.
+*   **Establecimiento:** Selecciona el Punto de venta que utilizará estas credenciales.
+*   **Producto:** Selecciona el Establecimiento que utilizará estas credenciales.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-11-59-5622-PM.png" alt="Seleccionar Establecimiento y Producto">
+</Frame>
+
+5. Selecciona **Añadir**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-12-46-9975-PM.png" alt="Botón Añadir credencial">
+</Frame>
+
+<Tip>
+Puedes realizar una prueba de credenciales para confirmar que la información es correcta. Para ello, selecciona la **credencial configurada** y luego **Probar credencial**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-14-51-6232-PM.png" alt="Probar credencial GNS">
+</Frame>
+
+Para confirmar que las credenciales se cargaron correctamente, deberá aparecer el siguiente aviso:
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-15-42-8283-PM.png" alt="Aviso de credenciales correctas">
+</Frame>
+</Tip>
+
+6. Realiza la creación y configuración de la sucursal de Facturación utilizando las credenciales cargadas en esta guía. Para ello, sigue los pasos de la siguiente guía:
+
+### [¿Cómo configurar una sucursal para poder Facturar?](https://ayuda.pxsol.com/es/c%C3%B3mo-configurar-una-sucursal-para-poder-facturar)
