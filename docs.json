@@ -438,7 +438,8 @@
               "agencias_b2b/agencias_reglas_de_negocio",
               "agencias_b2b/como_dar_de_alta_el_acuerdo_con_roomfares",
               "agencias_b2b/como_visualizar_a_que_hotel_han_sido_generadas_las_reservas_b2b_agencia",
-              "agencias_b2b/agencia_mis_reservas_configuracion_del_voucher"
+              "agencias_b2b/agencia_mis_reservas_configuracion_del_voucher",
+              "agencias_b2b/agencias_como_realizar_un_mapeo_manual_de_politicas"
             ]
           },
           {
