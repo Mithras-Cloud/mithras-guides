@@ -27,9 +27,7 @@
           },
           {
             "group": "Configuración Inicial",
-            "pages": [
-              "configuración_inicial/mconverter_eu_scraper_de_contenido_de_hoteles_sobre_booking_com_(1)_(1)"
-            ]
+            "pages": []
           },
           {
             "group": "Motor",
@@ -42,7 +40,6 @@
           {
             "group": "Informes",
             "pages": [
-              "informes/como_realizar_graficos_en_informes",
               "informes/informe_sire__migracion_colombia"
             ]
           },
@@ -72,9 +69,7 @@
           },
           {
             "group": "Administración",
-            "pages": [
-              "administración/como_subir_el_comprobante_de_pago_para_habilitar_el_sistema"
-            ]
+            "pages": []
           },
           {
             "group": "Arion",
