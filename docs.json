@@ -34,7 +34,8 @@
           {
             "group": "Motor",
             "pages": [
-              "motor/como_configurar_el_motor_para_que_todas_las_reservas_se_confirmen_en_usd_independientemente_de_la_moneda_utilizada_en_la_busqueda"
+              "motor/como_configurar_el_motor_para_que_todas_las_reservas_se_confirmen_en_usd_independientemente_de_la_moneda_utilizada_en_la_busqueda",
+              "motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
             ]
           },
           {
