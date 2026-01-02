@@ -1,0 +1,187 @@
+json
+{
+  "title": "¿Cómo emitir facturas de Venta con Percepciones o Impuestos adicionales? (Argentina)",
+  "description": "En esta guía explicaremos cómo adicionar Impuestos adicionales a las facturas de venta para poder emitir facturas con Percepciones o algún impuesto adicional que aplique sobre el total de la factura.",
+  "content": [
+    {
+      "type": "Note",
+      "value": "Las facturas se podrán emitir desde la aplicación Facturación o desde una reserva. Para conocer los pasos para cada una de estas acciones podrán seguir las siguientes guías:",
+      "list": [
+        {
+          "type": "listItem",
+          "value": "Enlace externo a \"¿Cómo facturar desde el módulo Facturación?\""
+        },
+        {
+          "type": "listItem",
+          "value": "Enlace externo a \"¿Cómo facturar desde una reserva?\""
+        }
+      ]
+    },
+    {
+      "type": "Warning",
+      "value": "Los tipos de Comprobantes que podrán utilizar estos impuestos adicionales (en Argentina), son comprobantes A, B y T con sus respectivas Notas de crédito."
+    },
+    {
+      "type": "heading",
+      "depth": 3,
+      "value": "Confección del Comprobante con Percepciones"
+    },
+    {
+      "type": "heading",
+      "depth": 4,
+      "value": "TIPO DE COMPROBANTE Y SUCURSAL"
+    },
+    {
+      "type": "list",
+      "listType": "unordered",
+      "items": [
+        {
+          "type": "listItem",
+          "value": "Seleccionar la sucursal de facturación (podrá seleccionar entre las que tiene vinculadas en Pxsol a su establecimiento)"
+        },
+        {
+          "type": "listItem",
+          "value": "Seleccionar el Tipo de comprobante que quiere emitir: Por el momento, solo podrán aplicarse impuestos adicionales y percepciones a Comprobantes Factura A"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "depth": 4,
+      "value": "DATOS DEL COMPROBANTE"
+    },
+    {
+      "type": "list",
+      "listType": "unordered",
+      "items": [
+        {
+          "type": "listItem",
+          "value": "Moneda: colocar la moneda en la que colocaremos los montos del comprobante."
+        },
+        {
+          "type": "listItem",
+          "value": "Fecha del comprobante: Se completará automáticamente con la fecha del día que están creando el comprobante. Es un campo obligatorio"
+        },
+        {
+          "type": "listItem",
+          "value": "Estado actual del comprobante: A cobrar o Cobrado"
+        },
+        {
+          "type": "listItem",
+          "value": "Asociar Reserva: Permite vincular el comprobante a una reserva colocando el número de la reserva."
+        },
+        {
+          "type": "listItem",
+          "value": "Condición de venta: seleccionar la forma en la que se acreditan los movimientos de dinero."
+        },
+        {
+          "type": "listItem",
+          "value": "Observaciones: Cualquier informaicón adicional que se quiera mostrar en el comprobante"
+        },
+        {
+          "type": "listItem",
+          "value": "Colocar el período facturado. Tener en cuenta que sólo permite hacer facturas hasta 10 días anteriores al día de la fecha"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "depth": 4,
+      "value": "DATOS DEL RECEPTOR"
+    },
+    {
+      "type": "Note",
+      "value": "Si en el campo colocan el cuit al que quieren facturar, automáticamente trae desde AFIP todos los datos asociados a ese cuit"
+    },
+    {
+      "type": "list",
+      "listType": "unordered",
+      "items": [
+        {
+          "type": "listItem",
+          "value": "Dependiendo del tipo de comprobante que quieran generar, mostrará los campos necesarios para ese tipo de comprobante. Para Factura A"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "depth": 4,
+      "value": "CONCEPTOS DEL COMPROBANTE"
+    },
+    {
+      "type": "list",
+      "listType": "unordered",
+      "items": [
+        {
+          "type": "listItem",
+          "value": "Colocar los datos de los conceptos: Código - Descripción - Cantidad - Precio Unitario - Alicuota"
+        },
+        {
+          "type": "listItem",
+          "value": "Si necesita, puede agregar otros conceptos desde el botón AGREGAR OTRO CONCEPTO +"
+        }
+      ]
+    },
+    {
+      "type": "Note",
+      "value": "Es obligatorio que cada concepto tenga Descripción y Precio"
+    },
+    {
+      "type": "heading",
+      "depth": 4,
+      "value": "Impuestos Adicionales"
+    },
+    {
+      "type": "text",
+      "value": "Seleccionar el impuesto correspondiente que aplicará a la Factura y no a los items de la misma"
+    },
+    {
+      "type": "Warning",
+      "value": "En caso de no encontrar el impuesto a aplicar en el listado revisar la aplicación Impuestos para verificar que este impuesto esté activo o solicitar el Impuesto para que sea agregado",
+      "list": [
+        {
+          "type": "listItem",
+          "value": "Enlace externo a \"¿Cómo activar o desactivar impuestos en su hotel?\""
+        },
+        {
+          "type": "listItem",
+          "value": "Enlace externo a \"¿Cómo solicitar un nuevo impuesto para mi hotel?\""
+        }
+      ]
+    },
+    {
+      "type": "Note",
+      "value": "El valor de la percepción se debe calcular sobre el importe neto gravado de la factura."
+    },
+    {
+      "type": "text",
+      "value": "Si los importes mostrados son correctos, hacer click en el botón GUARDAR CAMBIOS"
+    },
+    {
+      "type": "text",
+      "value": "5- Una vez guardado aparecerán 3 opciones:"
+    },
+    {
+      "type": "list",
+      "listType": "unordered",
+      "items": [
+        {
+          "type": "listItem",
+          "value": "Vista Previa: podrán visualizar la factura en una nueva ventana para verificar el correcto contenido de la misma."
+        },
+        {
+          "type": "listItem",
+          "value": "Guardar Cambios: quedará la factura guardada pero no emitida."
+        },
+        {
+          "type": "listItem",
+          "value": "Emitir Comprobante: Se emite el comprobante."
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "value": "6- Una vez facturado, abre una pestaña en el navegador con la factura emitida."
+    }
+  ]
+}
