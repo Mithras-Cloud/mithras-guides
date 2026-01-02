@@ -456,7 +456,8 @@
           {
             "group": "Tarifas Y Disponibilidad",
             "pages": [
-              "tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios"
+              "tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios",
+              "tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad"
             ]
           },
           {
