@@ -207,7 +207,8 @@
               "pms/como_facturar_una_reserva_parcialmente",
               "pms/como_visualizar_las_reservas_generadas_b2b_hotel",
               "pms/como_activar_la_integracion_con_mercado_pago_desde_una_reserva",
-              "pms/como_generar_informe_comprobantes_de_ventas_comprobantes_de_ventas_fiscales"
+              "pms/como_generar_informe_comprobantes_de_ventas_comprobantes_de_ventas_fiscales",
+              "pms/como_cambiar_el_estado_de_limpieza_de_las_habitaciones"
             ]
           },
           {
