@@ -1,0 +1,45 @@
+---
+title: "Integración con la RM Tool de BENS"
+description: "Guía detallada para la integración con la RM Tool de BENS."
+---
+
+
+La herramienta de <strong data-start="159" data-end="167">Bens</strong> se conecta a nuestro sistema para consultar el <strong>"Informe por noche".</strong>
+
+Actualmente, este informe está disponible en la API de Pxsol a través del endpoint: <strong data-start="325" data-end="351">company/report/nightly</strong>.
+
+<Info>
+<strong>Documentación:</strong> <a href="https://developers.pxsol.com/#284d93a3-d383-4519-b5c9-a1538da433a3" target="_new" rel="noopener">https://developers.pxsol.com/#284d93a3-d383-4519-b5c9-a1538da433a3</a>
+</Info>
+
+<p><span style="text-decoration: underline;"><strong>Flujo de integración</strong></span></p>
+
+<Steps>
+<Step title="Solicitud de acceso">
+Bens debe realizar un pedido formal por correo para acceder a la API de Pxsol. Pueden escribir directamente a <a rel="noopener" data-start="682" data-end="695">api@pxsol.com</a>.
+</Step>
+
+<Step title="Habilitación del endpoint">
+Nuestro equipo de <strong data-start="753" data-end="761">Tech</strong> activa el acceso correspondiente al endpoint <strong data-start="807" data-end="833">company/report/nightly</strong>.
+
+<Check>
+Acceso habilitado para el endpoint company/report/nightly.
+</Check>
+</Step>
+
+<Step title="Entrega de credenciales">
+Una vez generada la <strong data-start="889" data-end="900">API key</strong>, se comparte con Bens.
+
+<Tip>
+Almacenar la API key de forma segura para evitar accesos no autorizados.
+</Tip>
+</Step>
+
+<Step title="Conexión">
+Con el acceso habilitado y las credenciales proporcionadas, Bens puede avanzar con la integración de su herramienta para consumir el informe por noche.
+
+<Check>
+La integración se ha completado exitosamente y Bens puede consumir el informe.
+</Check>
+</Step>
+</Steps>
