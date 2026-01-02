@@ -383,7 +383,8 @@
               "procesos/movimientos_de_consultas",
               "procesos/como_desactivar_el_envio_automatico_del_aviso_de_web_check_in_",
               "procesos/proceso__configuracion_mercado_pago",
-              "procesos/gestion_de_reservas"
+              "procesos/gestion_de_reservas",
+              "procesos/proceso__configuracion_de_campanas"
             ]
           },
           {
