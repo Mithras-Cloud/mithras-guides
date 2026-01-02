@@ -1,0 +1,59 @@
+---
+title: "Conceptos generales sobre Dominio y Hosting"
+description: En esta guía explicaremos conceptos generales sobre qué es un dominio y qué es un hosting
+---
+
+<h3>¿Qué es el dominio web?</h3>
+<p>Es el nombre único que identifica a un sitio web en Internet.</p>
+<p>Por ej:</p>
+<p>diplomatichotel.com.ar</p>
+<p>hotelmendoza.com</p>
+<p>laresdechacras.com</p>
+<Frame>
+<img src="https://lh5.googleusercontent.com/_YpVel_54ea93vtA5sk8SMdnyBTmukX8isfSMh2UtIVWtKKn2i0WbTSVeo0vCSusfCymueHv63jaMlOEcfBTf-CiI9Bvx4AICN-_ru8Kdv0tJm8oUuGKXjvx8zcBqpvUZO4sKfuI" alt="Dominios web" />
+</Frame>
+<p>El dominio es sólo un nombre, para poder asociar datos (web, correos, etc) al dominio el mismo tiene que delegarse a algún servidor de nombre (NS) donde va a estar la información relacionada a ese dominio.</p>
+<br>
+<p><strong><em>Apuntar o Delegar&nbsp; </em>los servidores de nombre</strong> significa poner un dato que hace referencia al lugar donde tiene que ir a buscar información.</p>
+<br>
+<p>Ej: dentro de godaddy que es un lugar donde puedo comprar dominios, selecciono el dominio que he comprado y le digo que la información la vaya a buscar a un servidor determinado.</p>
+<Frame>
+<img src="https://lh3.googleusercontent.com/gIC1v9Kg9djV8DiNfzXHRAsNjvfhuKeAAWDndcjiZwoMcfgif6uWTtLi9Y6wIWyNGPSwKN224M9CtYgMyEPXmSKEmlkvv5j8LOEkmLpFTSwBLBRZ78St940TzLGy5TBV_HxqrX04" alt="Delegación de dominio" />
+</Frame>
+<p>Esos servidores de nombre (NS) a los que <strong>apunté o delegué </strong>el dominio son los que le indican al dominio dónde ir a buscar la información y archivos que vamos a vincular a ese dominio.</p>
+<br><br>
+<h3>¿Qué es el hosting?</h3>
+<p>Es un servicio que provee a los usuarios un sistema para poder almacenar información, imágenes, vídeo, emails o cualquier contenido que vayan a asociar a su dominio.</p>
+<br>
+<p>Por ejemplo: los correos están llenos de emails, eso es información; las webs están formadas por códigos, imágenes, videos, etc… Todo ese material, tiene que estar almacenado en algún lugar para que cuando el hotel por ejemplo quiera buscar un email que le enviaron, o un usuario cualquiera pone el dominio del hotel en su buscador traiga toda la info que arma la web, con sus fotos, videos, etc.. El hosting es el que provee ese espacio para que se almacene toda esa información y datos. (es como si fuera un disco duro en la nube).</p>
+<br>
+<p>Esta información y archivos que queremos vincular al dominio y que va a almacenar el hosting, están agrupados dependiendo del servicio al que corresponden, por ejemplo: todos los archivos de mail en un lugar, todos los archivos de la web en otro lugar.</p>
+<br>
+<p>En el hosting o en el servidor al que se ha DELEGADO el dominio, hay una tabla (que se llama tabla de DNS) que indica dónde encontrar la información por grupos. Por ejemplo le dice los archivos de la web buscalos en este lugar, los correos buscalos en este otro lugar. De esta forma permite que alguno de estos grupos pueda no estar dentro de su espacio de almacenamiento, sino que estén en otro lugar (otro hosting o servidor) y buscarlos en el lugar donde indique esta tabla.</p>
+<br>
+<p>Recordemos que el dominio puede estar vinculado sólo a un lugar y lo que hace es ir al hosting que vinculamos y buscar dentro de la tabla de DNS del hosting dónde está la información de cada grupo.</p>
+<br>
+<p>Ejemplo de tabla de DNS:</p>
+<Frame>
+<img src="https://lh3.googleusercontent.com/m6iT0yhk2ELADIc17B_UxUsNKSh1ymsZUDPps0kgxEfiCox1t0-1LgvWnW3BsNcVcFDyIMJFcODnK7mp6bp8TkqUcP3HM9LQseg5rh_lzKu6qsdNhWK3duCDYyhJMN-OpoMRVDIC" alt="Tabla DNS" />
+</Frame>
+<br>
+<p>Veamos casos concretos de ejemplo con los dos grupos que nos importan a nosotros, archivos de web y archivos mail:</p>
+<br>
+<h3>Servidor Web</h3>
+<p>En PXSOL, todos los archivos de web son almacenados en nuestros servidores de Amazon por lo tanto, no importa a qué hosting esté apuntando el dominio, siempre en la tabla de DNS, vamos a indicarle al registro CNAME www (que es el de la web), que los archivos no están en el hosting, sino que tiene que ir a buscarlos a nuestro servidor de Amazon.</p>
+<br>
+<Frame>
+<img src="https://lh3.googleusercontent.com/esMsKlEa78EewajAFgUSHg0k9DGFn1yfb6B-QH2OkKOoBTOdsXGVUK4hTozjvhtk8YoEHvvoS4ZNx5kI_InLmtSI13zVvfbmD15FDn7ZehCS4jJdXsOjNH-P2Y_TgB4RcpK1niyZ" alt="Registros CNAME www" />
+</Frame>
+<br>
+<p>De esta forma, cuando el dominio entra a la tabla de DNS del hosting encuentra que los archivos que tiene que traer cuando la gente ponga <a href="http://www.granhotelmendoza.com/">www.granhotelmendoza.com</a> los tiene que ir a buscar a secure.pxsol.com que es nuestro servidor de amazon</p>
+<br>
+<Frame>
+<img src="https://lh5.googleusercontent.com/22HP1Ck7FLcv4xcjovM56q2ABHG7bnmWSNiJPGHNMkVz-XwpeRiDXoQui3vhklw3mSFo-IUbLAnEJjPDkJRdAdZcqm72qRCQ33hWOlk18D7lFQNzdtNWJ5I5F3UVtnTpx5YuSz5P" alt="Resolución web" />
+</Frame>
+<p>&nbsp;</p>
+<h3>Servidor Correos</h3>
+<p>En PXSOL, ya no damos servicio de correo, por lo tanto dentro de la tabla de DNS, todos los registros que indican a dónde buscar el correo (dependen de cada hosting pero generalmente son registros A, MX y TXT), van a decirle al dominio a qué hosting tienen que ir a buscar los correos.</p>
+<p>Los de GSuite (ahora Google Workspace) son genéricos, siempre que tienen éste servicio de correo, los registros de correo que hay que colocar en la tabla de DNS son los mismos.</p>
+<p>El resto de los hostings cada uno tiene sus registros particulares. Si cuando se delega el dominio, los correos no le funcionan, o si el cliente contrata hosting de correo posterior a la delegación, deberá solicitar a su hosting estos registros para que nosotros los coloquemos en la tabla de DNS.</p>
