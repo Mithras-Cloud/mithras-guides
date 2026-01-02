@@ -120,7 +120,8 @@
               "pms/como_realizar_ajustes_de_ingresos_en_cuentas_corrientes",
               "pms/como_cargar_pagos_en_plano_de_spa",
               "pms/como_crear_o_modificar_las_habitaciones_del_plano_de_ocupacion",
-              "pms/como_obtener_el_usuario_api_o_api_access_key_de_siigo_para_realizar_la_integracion_de_facturacion"
+              "pms/como_obtener_el_usuario_api_o_api_access_key_de_siigo_para_realizar_la_integracion_de_facturacion",
+              "pms/como_visualizar_los_desayunos_desde_estado_de_habitaciones"
             ]
           },
           {
