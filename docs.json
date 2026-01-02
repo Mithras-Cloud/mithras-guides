@@ -57,7 +57,8 @@
           {
             "group": "Pms",
             "pages": [
-              "pms/folios__como_imprimir_un_folio"
+              "pms/folios__como_imprimir_un_folio",
+              "pms/acceder_a_una_reserva_o_a_un_contacto_desde_la_aplicacion_estado_de_habitaciones"
             ]
           },
           {
