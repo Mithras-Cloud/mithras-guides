@@ -197,7 +197,8 @@
               "informes/como_exportar_un_informe",
               "informes/como_adquirir_informes_extra_a_los_disponibles_por_el_plan",
               "informes/como_visualizar_un_informe",
-              "informes/informe_de_reservas"
+              "informes/informe_de_reservas",
+              "informes/como_dar_permiso_o_excluir_usuarios_de_un_informe"
             ]
           },
           {
