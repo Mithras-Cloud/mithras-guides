@@ -208,7 +208,8 @@
               "informes/informe_de_reservas",
               "informes/como_dar_permiso_o_excluir_usuarios_de_un_informe",
               "informes/informe_de_ocupacion_adr_y_revpar",
-              "informes/informe_ingresos_por_categoria"
+              "informes/informe_ingresos_por_categoria",
+              "informes/como_gestionar_mis_informes_desde_la_lista_de_informes"
             ]
           },
           {
