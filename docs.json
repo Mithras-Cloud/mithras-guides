@@ -350,7 +350,8 @@
               "channel/conexion_autogestionable_con_el_canal_pricetravel",
               "channel/como_obtener_las_credenciales_de_conexion_de_booking",
               "channel/conexiones_de_otas_directas_con_pxsol",
-              "channel/como_desconectarse_de_booking"
+              "channel/como_desconectarse_de_booking",
+              "channel/como_enviar_una_reserva_que_no_se_sincronizo_con_arion"
             ]
           },
           {
