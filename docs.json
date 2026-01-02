@@ -57,7 +57,9 @@
           },
           {
             "group": "Web",
-            "pages": []
+            "pages": [
+              "web/como_delegar_su_dominio_comprado_en_google_a_nuestro_hosting_de_cloudflare"
+            ]
           },
           {
             "group": "Pms",
