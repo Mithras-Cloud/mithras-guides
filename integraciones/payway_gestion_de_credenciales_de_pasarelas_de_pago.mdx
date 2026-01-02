@@ -1,0 +1,83 @@
+---
+title: "Payway: Gestión de Credenciales de Pasarelas de Pago"
+description: "En esta guía se detalla cómo editar o eliminar una credencial, así como configurar cuotas con o sin interés."
+---
+
+
+Una vez vinculada una credencial, podrás:
+
+**A - Vincularla a un medio de pago.**
+* Desde la misma aplicación cuentas con un enlace directo a la sección "Medios de Pago".
+
+**B - Editar.**
+* Para visualizar o modificar la información de una credencial, desde la misma, haciendo clic en el botón ACCIONES, se desplegará la opción Editar.
+
+**C - Borrar.**
+* **Importante:** El eliminar una credencial solo será posible si **no está asociada a ningún medio de pago**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-55-6569-PM.png" alt="Imagen de gestión de credenciales" />
+</Frame>
+
+* **Borrar credencial sin vinculación:**
+Al intentar eliminar una credencial no vinculada, se mostrará un mensaje de re-confirmación: "¿Desea eliminar esta credencial?".
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-55-1951-PM.png" alt="Mensaje de confirmación para eliminar credencial" />
+</Frame>
+
+* **Borrar credencial con vinculación:**
+Si la credencial está en uso en un medio de pago, no se podrá eliminar. Se mostrará un mensaje informando: "Esta credencial no puede ser eliminada porque está actualmente vinculada a un medio de pago”, más botón con acceso directo a la aplicación “Medios de pago”.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-55-4080-PM.png" alt="Mensaje de error al intentar eliminar credencial vinculada" />
+</Frame>
+
+Una vez desvinculada de todos los medios de pago, se podrá finalmente borrar la credencial.
+
+**D - Cuotas.**
+* De forma predeterminada, la integración permite recibir pagos en una sola cuota sin interés.
+En caso de querer habilitar otras opciones, como una cuota con interés o dos o más cuotas con o sin interés, podrás gestionarlo desde esta sección.
+
+Esta configuración se realiza **de manera individual para cada credencial.**
+
+<Note>
+La opción de cuotas se muestra en el motor únicamente cuando la moneda seleccionada es pesos argentinos (ARS). En cualquier otra moneda, las cuotas no estarán disponibles.
+</Note>
+
+Podes acceder a ella desde la Credencial > **Acciones** > **Cuotas**.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-55-9235-PM.png" alt="Acceso a configuración de cuotas" />
+</Frame>
+
+Se abrirá una nueva ventana lateral para **configurar las cuotas correspondientes.**
+
+Es importante que la configuración que realices aquí **coincida con lo establecido en Payway y con las tarjetas aceptadas en tu punto de venta.**
+
+Al ingresar, podrás visualizar que por defecto **todas las tarjetas** están configuradas con **1 cuota sin interés**.
+Para añadir otras opciones, hacé clic en **“Añadir cuota”**. Se abrirá una ventana emergente donde deberás completar la configuración seleccionando:
+
+*   **Tipo de tarjeta:** por ejemplo, *Todas*, *VISA* o *Mastercard*.
+*   **Cuotas:** cantidad de cuotas disponibles.
+*   **Coeficiente:** valor que representa el **recargo total** aplicado sobre el precio original.
+
+Luego, hacé clic en **“Guardar”** para aplicar los cambios.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-56-5662-PM.png" alt="Configuración de cuotas y coeficiente" />
+</Frame>
+
+Se visualizarán todas las opciones configuradas, las cuales podes modificar o eliminar en cualquier momento.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-56-7885-PM.png" alt="Opciones de cuotas configuradas" />
+</Frame>
+
+**Importante:** en caso de existir una configuración general (aplicable a todas las tarjetas), y posteriormente se configure una opción particular para una tarjeta específica, **esta última tendrá prioridad sobre la general**.
+
+La configuración de las tarjetas se mostrará en el motor de la siguiente manera, solo cuando la búsqueda se realice en pesos argentinos:
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-31-56-2554-PM.png" alt="Visualización de cuotas en el motor de búsqueda" />
+</Frame>
