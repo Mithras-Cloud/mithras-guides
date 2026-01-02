@@ -414,7 +414,8 @@
               "conversaciones/como_puedo_abrir_una_conversacion",
               "conversaciones/como_visualizar_estadisticas_de_conversaciones",
               "conversaciones/como_activar_el_workflow_de_primera_respuesta_y_ausencia",
-              "conversaciones/como_armar_y_personalizar_un_grupo_dentro_del_chat_de_la_aplicacion_conversaciones"
+              "conversaciones/como_armar_y_personalizar_un_grupo_dentro_del_chat_de_la_aplicacion_conversaciones",
+              "conversaciones/como_ver_si_el_chat_con_un_cliente_dentro_de_conversaciones_ya_tiene_una_consulta_o_reserva_asociada"
             ]
           },
           {
