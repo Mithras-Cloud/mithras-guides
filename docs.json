@@ -55,7 +55,9 @@
           },
           {
             "group": "Pms",
-            "pages": []
+            "pages": [
+              "pms/folios__como_imprimir_un_folio"
+            ]
           },
           {
             "group": "Channel",
