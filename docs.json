@@ -107,7 +107,8 @@
               "crm/como_gestionar_una_consulta_que_ingreso_por_llamado_telefonico_o_personalmente_en_el_hotel",
               "crm/como_importar_reservas_al_sistema",
               "crm/asociar_un_contacto_tipo_persona_a_un_contacto_empresa",
-              "crm/como_agregar_plantillas_en_chats_a_traves_de_un_atajo"
+              "crm/como_agregar_plantillas_en_chats_a_traves_de_un_atajo",
+              "crm/como_eliminar_un_contacto"
             ]
           },
           {
