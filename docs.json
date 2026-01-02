@@ -185,7 +185,9 @@
           },
           {
             "group": "Administración",
-            "pages": []
+            "pages": [
+              "administración/como_cancelar_el_saldo_a_traves_de_mercado_pago"
+            ]
           },
           {
             "group": "Arion",
