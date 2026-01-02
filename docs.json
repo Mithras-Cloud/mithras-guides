@@ -208,7 +208,9 @@
           },
           {
             "group": "Central De Reservas",
-            "pages": []
+            "pages": [
+              "central_de_reservas/solicitar_acuerdos__central_de_reservas"
+            ]
           },
           {
             "group": "Operaciones",
