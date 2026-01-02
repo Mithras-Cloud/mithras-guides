@@ -1,0 +1,35 @@
+---
+title: "Preguntas Frecuentes - Instalación Web"
+description: "Preguntas frecuentes sobre la instalación de su página web desarrollada por PXSOL"
+---
+
+
+<p><strong>¿Tenemos que comprar un nuevo dominio o la web va a funcionar sobre el dominio que tengo actualmente?</strong></p>
+<p>La web debe funcionar en el dominio que tiene actualmente, porque es el que ya está indexado en los buscadores. Colocar otro y dar de baja el anterior, implica trabajar desde cero el posicionamiento orgánico del nuevo dominio, lo que demora mucho tiempo.&nbsp;</p>
+<p>Colocar otro y dejar online su web anterior, es peor, porque además de que su web anterior ya tiene un posicionamiento orgánico, va a competir contra la web nueva y hará que el tráfico de la nueva web (y por lo tanto de las reservas directas) sea muchísimo menor.</p>
+<br>
+<p><strong>¿Puedo mantener mi hosting actual y apuntar sólo la parte de la web a sus servidores?</strong></p>
+<p>Lamentablemente ya no podemos hacer esto, ya que necesitamos manejar el dominio completo desde Cloudflare para poder emitir certificado de seguridad, hacer redireccionamientos y contar con las herramientas de optimización que Cloudflare nos prevee</p>
+<br>
+<p><strong>¿Ustedes dan hosting de correos?</strong></p>
+<p>Ya no damos hosting de correos en ninguno de nuestros planes</p>
+<br>
+<p><strong>¿Entonces qué pasará con mis correos que tengo vinculados al dominio (por ej </strong><a href="mailto:info@dominiodelhotel.com"><strong>info@dominiodelhotel.com</strong></a><strong>) ?</strong></p>
+<p>Los correos seguirán funcionando en el hosting donde los tienen actualmente, ya que nosotros clonamos dentro de Cloudflare su tabla de DNS completa y dentro de la misma sólamente se modificará el registro web, los correos seguirán apuntando a su hosting anterior.</p>
+<br>
+<p><strong>¿Puedo dejar de pagar mi dominio una vez que esté con pxsol?</strong></p>
+<p>No, el dominio sigue siendo propiedad del cliente y por lo tanto debe seguirlo renovando anualmente en su entidad registrante (donde compró el dominio)</p>
+<br><br>
+<p><strong>¿Puedo dejar de pagar mi hosting una vez que esté con pxsol?</strong></p>
+<p><span style="font-size: 1rem;">Si tiene correos asociados al dominio en ese hosting NO PUEDE DEJAR DE PAGARLO porque dejarán de funcionar sus correos.<br>Si no tienen correos vinculados al dominio, por ejemplo usan @gmail o&nbsp; @hotmail, etc… no hay problema, pueden dar de baja su dominio.<br></span><span style="font-size: 1rem;">También si usan algún hosting de correo externo como Google Workspace, Microsoft 365 etc, ahí seguirán pagando ese servicio de correos, pero podrán dar de baja el hosting desde donde gestionaban el dominio.</span></p>
+<br><br>
+<p><strong>¿Cómo hago si ya tengo la web con ustedes y después compro un hosting de correos para vincular mi dominio?</strong></p>
+<p>En este caso deberá solicitar al hosting de correos que compró que le pase los datos para conectar el hosting de correos en la tabla de DNS</p>
+<p>Generalmente son:</p>
+<p>Una IP al que apunta mail.sudominio.com</p>
+<p>Uno o 2 registros MX</p>
+<p>Uno o 2 registros TXT</p>
+<p>Esos datos, deberá pasarlos por mail a <a href="mailto:equipo@pxsol.com">equipo@pxsol.com</a> para que los agreguemos a su tabla de DNS en Cloudflare</p>
+<br>
+<p><strong>¿Tengo acceso a mi panel de cloudflare?</strong></p>
+<p>Lamentablemente por un tema de seguridad, no podemos dar acceso al panel de cloudflare para que puedan manejarlo ustedes mismos. Cualquier cambio que necesiten en la tabla de DNS lo pueden solicitar por mail a equipo@pxsol.com y realizaremos el cambio de forma inmediata.</p>
