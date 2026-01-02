@@ -91,7 +91,8 @@
               "pms/como_cambiar_la_asignacion_de_una_habitacion_fisica_en_una_reserva__v1",
               "pms/como_vincular_un_huesped_a_una_habitacion__v1",
               "pms/recomendaciones__plano_de_ocupacion",
-              "pms/como_visualizar_las_cuentas_corrientes"
+              "pms/como_visualizar_las_cuentas_corrientes",
+              "pms/como_emitir_una_factura_e_de_exportacion_argentina"
             ]
           },
           {
