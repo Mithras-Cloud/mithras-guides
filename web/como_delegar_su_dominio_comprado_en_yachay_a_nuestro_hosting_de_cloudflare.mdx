@@ -1,0 +1,67 @@
+---
+title: "¿Cómo delegar su dominio comprado en Yachay a nuestro hosting de Cloudflare?"
+description: "En esta guía explicaremos cómo delegar su dominio comprado en Yachay a nuestro hosting de Cloudflare"
+---
+
+
+<Note>
+<strong>IMPORTANTE:</strong> No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte o con su ejecutivo de CSM
+</Note>
+
+<p>Pasos para hacer el cambio de NS (name servers):</p>
+
+<Steps>
+<Step title="Iniciar sesión en su cuenta de Yachay">
+Acceda a su cuenta de Yachay en el siguiente enlace: <a href="https://yachay.lat/login" target="_blank" rel="noopener">https://yachay.lat/login</a>.
+
+Ingrese su nombre de usuario y contraseña.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-21-2023-09-22-35-5777-PM.png" alt="Captura de pantalla del inicio de sesión de Yachay" />
+</Frame>
+</Step>
+
+<Step title="Navegar a la sección de Dominios">
+En el menú principal, diríjase a <strong>Mis Servicios</strong> y luego haga clic en <strong>Mis Dominios</strong>.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-21-2023-09-25-27-8994-PM.png" alt="Captura de pantalla del menú Mis Servicios y Mis Dominios" />
+</Frame>
+</Step>
+
+<Step title="Gestionar Nameservers del dominio">
+En la sección donde se listan sus dominios, localice el dominio que desea delegar. Haga clic en los <strong>tres puntos verticales</strong> a la derecha del dominio y seleccione <strong>Gestionar Nameservers</strong>.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-21-2023-09-27-10-0800-PM.png" alt="Captura de pantalla para gestionar Nameservers" />
+</Frame>
+</Step>
+
+<Step title="Configurar DNS personalizados">
+Dentro del administrador de Nameservers, active la opción <strong>Usar Servidores DNS personalizados</strong>.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-21-2023-09-29-22-3179-PM.png" alt="Captura de pantalla para activar DNS personalizados" />
+</Frame>
+</Step>
+
+<Step title="Ingresar los nuevos Nameservers">
+Reemplace los servidores de nombre actuales por los NS proporcionados por el área de soporte técnico de PXSOL. Estos pueden ser:
+<ul>
+  <li><strong>grace.ns.cloudflare.com</strong></li>
+  <li><strong>merlin.ns.cloudflare.com</strong></li>
+</ul>
+o alternativamente:
+<ul>
+  <li><strong>henry.ns.cloudflare.com</strong></li>
+  <li><strong>mona.ns.cloudflare.com</strong></li>
+</ul>
+A continuación, haga clic en el botón <strong>Cambiar Servidores DNS</strong>.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-21-2023-09-30-43-9753-PM.png" alt="Captura de pantalla para ingresar nuevos Nameservers" />
+</Frame>
+</Step>
+
+<Step title="Notificar al soporte técnico">
+Una vez que haya completado el cambio de NS, por favor, envíe un correo electrónico a equipo@pxsol.com para informar a nuestro equipo de soporte. Ellos darán seguimiento a la propagación y a la correcta configuración de su dominio.
+<Check>
+Una vez notificado, nuestro equipo de soporte confirmará la propagación y configuración de su dominio.
+</Check>
+</Step>
+</Steps>
