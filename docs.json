@@ -166,7 +166,8 @@
               "pms/como_generar_el_archivo_de_las_facturas_emitidas",
               "pms/como_registrar_un_ingreso_desde_caja_diaria",
               "pms/como_confeccionar_un_comprobante_de_compra",
-              "pms/como_configurar_una_sucursal_para_poder_facturar_nuevo"
+              "pms/como_configurar_una_sucursal_para_poder_facturar_nuevo",
+              "pms/como_vincular_facturacion_de_un_cliente_con_pxsol_dentro_de_arca"
             ]
           },
           {
