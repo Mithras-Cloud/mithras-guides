@@ -525,7 +525,9 @@
           },
           {
             "group": "Generales",
-            "pages": []
+            "pages": [
+              "generales/como_borrar_el_historial_de_navegacion_en_google_chrome"
+            ]
           },
           {
             "group": "Marketplace",
