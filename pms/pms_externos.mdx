@@ -1,0 +1,56 @@
+---
+title: "PMS Externos"
+description: "Información sobre conexión a PMS externos."
+---
+
+
+### PXSOL
+
+Permite cargar inventario desde la fecha hasta un máximo de 3 años. Según estadísticas, el 99,99% de las búsquedas se realizan dentro del presente y hasta 18 meses en el futuro.
+
+### Arion
+
+*   **Medio:** Directo con Pxsol
+*   **Conexiones disponibles:** Una vía y doble vía.
+*   **Link:** Este se arma con la primer parte: `https://apidevsm.pxsol.com/px/arion.php?hotel=` y luego agregando el P ID de un establecimiento.
+*   Desde este link se puede obtener información sobre:
+    *   Los Organizations ID a configurar en mutadores (cambian según el hotel, esta configuración sirve para que Arion pueda identificar por qué canal llegó la reserva).
+    *   Tipo de conexión: 1 o 2 vías.
+    *   Visualización y comparativa de inventario.
+*   **Ejemplo:** Diplomatic Hotel C81 - P260 (1 vía) y Selvataje Tandem C1618 - P3165 (2 vías).
+
+<Note>
+La integración no reconoce valores negativos. Por lo tanto, todo valor negativo en Arion será considerado como 0 (cero) en Pxsol.
+</Note>
+
+### CMNet / TOTVs
+
+*   **Medio:** RoomCloud
+*   **Conexiones disponibles:** Una vía (descarga de reservas).
+*   Por cada canal se debe configurar el Source Of Business en mutadores lo que permite al PMS identificar el medio por el cuál se confirmó la reserva. [Ver Source Of Business](https://docs.google.com/spreadsheets/d/1M14xslx6syJ95sQ2EjOUYeWOCDMT3jemgRtJOhnkvIg/edit?gid=897215517#gid=897215517).
+
+<Note>
+Los Source Of Business pueden variar por propiedad.
+</Note>
+
+*   **Ejemplo:** Amérian Buenos Aires Park Hotel
+
+### CQR
+
+*   **Medio:** RoomCloud
+*   **Conexiones disponibles:** Una vía (descarga de reservas).
+*   **Ejemplo:** Constitución Palace
+
+### FuturWeb
+
+*   **Medio:** RoomCloud
+*   **Conexiones disponibles:** Una vía (descarga de reservas).
+
+<Note>
+En RoomCloud el PMS para conectar se denomina Futurhot.
+<Frame>
+<img src="https://prnt.sc/ykxgEnGqB1Ym" alt="Captura de pantalla de Futurhot en RoomCloud" />
+</Frame>
+</Note>
+
+*   **Ejemplo:** NO
