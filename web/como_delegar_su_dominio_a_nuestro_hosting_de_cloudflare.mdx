@@ -1,0 +1,45 @@
+---
+title: "¿Cómo delegar su dominio a nuestro hosting de Cloudflare?"
+description: "En esta guía explicaremos cómo delegar su dominio a nuestro hosting de Cloudflare para que pueda aprovechar al máximo nuestros servicios."
+---
+
+<Note>
+<strong>IMPORTANTE:</strong> No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com).
+</Note>
+
+<p>A continuación, se detallan los pasos para realizar el cambio de servidores de nombres (NS - Name Server) de su dominio:</p>
+
+<Steps>
+<Step title="Acceda a su registrador de dominios">
+  Ingrese con su usuario y contraseña al <strong>registrador donde compró el dominio</strong>. Si desconoce dónde lo adquirió, puede consultarlo en <a href="https://lookup.icann.org/" rel="noopener">https://lookup.icann.org/</a>.
+</Step>
+
+<Step title="Administre su dominio">
+  Una vez dentro de su cuenta, navegue hasta la sección de sus dominios y seleccione la opción para <strong>administrar</strong> el dominio en cuestión.
+</Step>
+
+<Step title="Edite los Servidores de Nombre (NS)">
+  Localice la sección donde se configuran los <strong>Servidores de nombre</strong> (NS - Name Server) de su dominio.
+</Step>
+
+<Step title="Reemplace los registros NS">
+  Borre los registros NS existentes y reemplácelos por los siguientes servidores de nombres proporcionados por el área de servicio técnico Web en PXSOL:
+  <ul>
+    <li>grace.ns.cloudflare.com</li>
+    <li>merlin.ns.cloudflare.com</li>
+  </ul>
+  O alternativamente:
+  <ul>
+    <li>henry.ns.cloudflare.com</li>
+    <li>mona.ns.cloudflare.com</li>
+  </ul>
+  <strong>IMPORTANTE:</strong> Asegúrese de <strong>guardar los cambios</strong> realizados.
+  <Warning>
+  Si tiene dificultades para encontrar la opción de cambio de NS, contacte al soporte técnico de su registrador de dominios y solicite su asistencia para realizar la modificación.
+  </Warning>
+</Step>
+</Steps>
+
+<Tip>
+Una vez que haya completado el cambio de los NS, notifíquelo enviando un correo electrónico a equipo@pxsol.com. Esto permitirá que nuestro equipo de soporte realice el seguimiento de la propagación y la correcta configuración de su dominio.
+</Tip>
