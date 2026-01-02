@@ -337,7 +337,8 @@
             "group": "Operaciones",
             "pages": [
               "operaciones/nuevo_panel_de_bienvenida",
-              "operaciones/como_configurar_las_tareas_programadas"
+              "operaciones/como_configurar_las_tareas_programadas",
+              "operaciones/como_personalizar_mi_lista_de_tareas"
             ]
           },
           {
