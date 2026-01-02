@@ -27,7 +27,9 @@
           },
           {
             "group": "Configuración Inicial",
-            "pages": []
+            "pages": [
+              "configuración_inicial/como_cambiar_mi_pin_si_olvide_el_pin_actual"
+            ]
           },
           {
             "group": "Motor",
