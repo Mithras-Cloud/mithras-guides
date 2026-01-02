@@ -1,0 +1,103 @@
+---
+title: "¿Cómo realizar la integración con Payway?"
+description: "En esta guía se detallan los pasos para integrar Payway al motor de Pxsol, con los requisitos esenciales, pasos básicos de configuración y funcionamiento de los cobros dentro del motor de reservas."
+---
+
+
+<Tip>
+Antes de avanzar es importante que hayas leído la siguiente información:
+<a href="https://ayuda.pxsol.com/es/integracion-con-payway-consideraciones-a-tener-en-cuenta" target="_blank" rel="noopener">Integración con Payway: Consideraciones a tener en cuenta</a>
+</Tip>
+
+Para llevar a cabo la configuración de la integración con Payway, siga los pasos a continuación:
+
+<Steps>
+<Step title="Ingresar a la aplicación Integraciones">
+  Ingresa a la aplicación "Integraciones".
+</Step>
+
+<Step title="Ubicar e instalar Payway">
+  Ubica la tarjeta correspondiente a Payway y haz clic en “Instalar”.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-26-5719-PM.png" alt="Instalación de Payway" />
+  </Frame>
+  Se abrirá una ventana lateral desde la cual podrás vincular las credenciales deseadas.
+
+  <Info>
+  En caso de que ya existan credenciales configuradas, se mostrará una tabla con las existentes. Es posible añadir múltiples credenciales por empresa.
+  </Info>
+
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-25-9618-PM.png" alt="Ventana lateral sin credenciales" />
+  </Frame>
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-25-6084-PM.png" alt="Ventana lateral con credenciales" />
+  </Frame>
+</Step>
+
+<Step title="Añadir credencial">
+  Haz clic en "Añadir credencial".
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-26-3257-PM.png" alt="Botón añadir credencial" />
+  </Frame>
+  Se abrirá una ventana lateral a la derecha, donde deberás completar los siguientes campos:
+  
+  <ParamField path="Punto de venta" type="select">
+  Selecciona el punto de venta bajo el cual se está creando la credencial.
+  </ParamField>
+  
+  <ParamField path="Nombre de la credencial" type="string" required>
+  Identificador que te permitirá reconocerla al momento de configurarla en el medio de pago, especialmente si trabajas con varias credenciales.
+  </ParamField>
+  
+  <ParamField path="API Key Publica" type="string" required>
+  Token proporcionado por Payway.
+  </ParamField>
+  
+  <ParamField path="API Key Privada" type="string" required>
+  Token proporcionado por Payway.
+  </ParamField>
+  
+  Una vez completados los campos, confirma la acción haciendo clic en el botón “Añadir”.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-23-4839-PM.png" alt="Ventana añadir credencial" />
+  </Frame>
+  Se visualizará luego de la siguiente manera:
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-28-1885-PM.png" alt="Credencial añadida" />
+  </Frame>
+</Step>
+
+<Step title="Validar credencial">
+  Antes de avanzar con la configuración del medio de pago, es importante validar la credencial. Para ello, sigue estos pasos:
+  
+  1.  Una vez guardada la credencial, dirígete a **ACCIONES > Validar credencial**.
+  2.  Para completar la validación, deberás utilizar los datos de una **tarjeta real**. Se realizará un cobro y, de manera inmediata, una devolución del mismo monto.
+  
+  <Warning>
+  Si la validación se procesa correctamente, la credencial quedará habilitada para continuar con la configuración. En caso contrario, verifica si las credenciales fueron configuradas correctamente. Si persiste el inconveniente, puedes contactar a equipo@pxsol.com para revisarlo.
+  </Warning>
+  
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-24-1059-PM.png" alt="Validación de credencial" />
+  </Frame>
+  
+  Una vez validada la credencial, se visualizará de la siguiente manera. Además, la opción “Validar credencial” ya no estará disponible en el menú de Acciones.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-27-4418-PM.png" alt="Credencial validada" />
+  </Frame>
+</Step>
+
+<Step title="Crear medio de pago">
+  Dirígete a la aplicación “Medios de Pago” y crea un nuevo medio con la categoría Payway.
+  <a href="https://docs.google.com/document/d/1uxVrkYyLEyWtkxygGFls200Q2ZgJTdLRqU0Ca5Fnths/edit?tab=t.no96bc71pot3#bookmark=kix.mxyssok87z29">¿Cómo crear el medio de pago para Payway?</a>
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-03-20-23-8316-PM.png" alt="Creación de medio de pago" />
+  </Frame>
+</Step>
+</Steps>
+
+<Info>
+Si en algún momento necesitas modificar la credencial, eliminarla o configurar cuotas, puedes consultar la siguiente guía:
+<a href="https://ayuda.pxsol.com/es/payway-gestion-de-credenciales-de-pasarelas-de-pago" target="_blank" rel="noopener">Payway: Gestión de Credenciales de Pasarelas de Pago</a>
+</Info>
