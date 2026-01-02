@@ -433,7 +433,9 @@
           },
           {
             "group": "Preguntas Frecuentes",
-            "pages": []
+            "pages": [
+              "preguntas_frecuentes/hay_posibilidad_de_poner_cuantas_personas_son_cuando_hacemos_la_reserva"
+            ]
           },
           {
             "group": "Integraciones",
