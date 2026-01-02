@@ -66,7 +66,8 @@
               "motor/cargar_y_modificar_tarifas_en_la_aplicacion_tarifas_y_disponibilidad__v8",
               "motor/como_colocar_descripciones_en_tipos_de_habitaciones",
               "motor/como_cambiar_la_politica_para_un_rango_de_fechas",
-              "motor/como_activardesactivar_comprobar_fondos"
+              "motor/como_activardesactivar_comprobar_fondos",
+              "motor/como_configurar_los_porcentajes_de_early_check_in_y_late_check_out"
             ]
           },
           {
