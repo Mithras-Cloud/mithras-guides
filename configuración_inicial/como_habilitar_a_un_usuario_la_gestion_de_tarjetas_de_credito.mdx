@@ -1,0 +1,125 @@
+---
+title: "¿Cómo habilitar la gestión de tarjetas de crédito para un usuario?"
+description: "Aprende a otorgar a un usuario los permisos necesarios para gestionar las tarjetas de crédito de los huéspedes dentro del sistema, incluyendo la configuración de autenticación multifactor."
+---
+
+
+<Note>
+Solo los usuarios con permisos de administrador pueden habilitar aplicaciones para otros usuarios. Si no tienes permisos de administrador, solicita acceso a un usuario que sí los tenga.
+</Note>
+
+### Habilitar el permiso de gestión de tarjetas de crédito
+
+Sigue estos pasos para habilitar el permiso de gestión de tarjetas de crédito para un usuario:
+
+<Steps>
+<Step title="Accede a la aplicación Usuarios">
+  Ingresa a la aplicación **Usuarios** a través del Omnibox.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Sep-03-2024-01-41-00-4753-AM.png" alt="Captura de pantalla de la pantalla de inicio de la aplicación Usuarios." />
+  </Frame>
+</Step>
+
+<Step title="Selecciona el usuario y edítalo">
+  En el listado de usuarios, haz clic en el menú de acciones a la derecha del usuario que deseas editar y selecciona la opción **Editar**.
+  
+  <Frame>
+  <img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-Sep-05-2022-03-34-38-70-PM.png?width=330&name=image-png-Sep-05-2022-03-34-38-70-PM.png" alt="Captura de pantalla del menú de acciones de un usuario." />
+  </Frame>
+</Step>
+
+<Step title="Navega a la sección Permisos">
+  En la ventana que se despliega, desplázate hacia abajo hasta encontrar la sección **Permisos**.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-31-2023-02-28-54-0286-PM.png" alt="Captura de pantalla de la sección Permisos en la edición de usuario." />
+  </Frame>
+  
+  Busca el ítem que dice **Habilitar Gestión de Tarjetas**.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-31-2023-02-30-23-1071-PM.png" alt="Captura de pantalla del ítem Habilitar Gestión de Tarjetas." />
+  </Frame>
+</Step>
+
+<Step title="Activa el permiso">
+  Utiliza el interruptor (`switch`) de la derecha para habilitar o deshabilitar esta opción para el usuario que estás editando.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-31-2023-02-37-57-0301-PM.png" alt="Captura de pantalla del interruptor para habilitar la gestión de tarjetas." />
+  </Frame>
+</Step>
+
+<Step title="Guarda los cambios">
+  Haz clic en el botón **Guardar Cambios**.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-31-2023-04-35-11-4438-PM.png" alt="Captura de pantalla del botón Guardar Cambios." />
+  </Frame>
+</Step>
+</Steps>
+
+### Configurar la autenticación multifactor (WhatsApp)
+
+Una vez guardados los cambios, debes configurar la autenticación multifactor para que el usuario pueda visualizar los datos de las tarjetas de crédito.
+
+<Steps>
+<Step title="Reingresa y edita al usuario">
+  Vuelve a la sección de usuarios y edita al mismo usuario. Ahora deberías ver un bloque para la doble validación de WhatsApp.
+</Step>
+
+<Step title="Habilita la autenticación">
+  Haz clic en el botón **HABILITAR AUTENTICACIÓN MULTIFACTOR**.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-30-2022-12-56-33-3802-PM.png" alt="Captura de pantalla del botón HABILITAR AUTENTICACIÓN MULTIFACTOR." />
+  </Frame>
+</Step>
+
+<Step title="Ingresa el número de WhatsApp y envía el código">
+  Introduce el número de WhatsApp en el campo correspondiente y haz clic en **ENVIAR CÓDIGO DE SEGURIDAD**.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-30-2022-01-01-38-2796-PM.png" alt="Captura de pantalla para ingresar el número de WhatsApp y enviar código." />
+  </Frame>
+  
+  <Note>
+  La validación del número de WhatsApp (doble factor) solo se realiza una vez. Sin embargo, deberás solicitar el PIN para ver los datos de las tarjetas de crédito cada hora o cada 10 visualizaciones de tarjetas, lo que ocurra primero.
+  </Note>
+  
+  <Warning>
+  WhatsApp ha implementado medidas de seguridad que restringen la visualización de códigos de seguridad a dispositivos principales. Los códigos no se pueden ver en versiones de escritorio o web de WhatsApp. Para recibir códigos correctamente, debes tener acceso al teléfono con la aplicación WhatsApp instalada. Estas políticas son establecidas por Meta (WhatsApp).
+  
+  Para más detalles, visita: https://faq.whatsapp.com/372839278914311
+  </Warning>
+</Step>
+
+<Step title="Valida los códigos">
+  Ahora, coloca los códigos que recibiste en tu correo electrónico y WhatsApp en los campos correspondientes para activar la doble validación.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-30-2022-06-03-53-3095-PM.png" alt="Captura de pantalla para ingresar los códigos de verificación." />
+  </Frame>
+  
+  <Note>
+  Si no has recibido los códigos, verifica que tu correo electrónico y número de WhatsApp sean correctos y haz clic en **VOLVER A ENVIAR CÓDIGOS**.
+  </Note>
+</Step>
+
+<Step title="Confirmación de validación">
+  Si los códigos son validados correctamente, aparecerá el siguiente mensaje de confirmación.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-30-2022-06-10-02-0117-PM.png" alt="Captura de pantalla confirmando la validación de códigos." />
+  </Frame>
+</Step>
+
+<Step title="Finaliza la configuración">
+  Una vez que la configuración de doble validación sea exitosa, haz clic en el botón **Guardar y cerrar**.
+  
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-31-2023-04-41-21-5518-PM.png" alt="Captura de pantalla del botón Guardar y cerrar." />
+  </Frame>
+</Step>
+</Steps>
