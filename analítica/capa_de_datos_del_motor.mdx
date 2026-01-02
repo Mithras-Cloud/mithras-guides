@@ -1,0 +1,110 @@
+---
+title: "Capa de datos del motor: Verificación del evento no_inventory"
+description: "Guía para validar el registro correcto del evento 'no_inventory' cuando no hay disponibilidad de alojamiento."
+---
+
+
+Esta guía detalla el procedimiento para validar que el sistema registre correctamente la ausencia de disponibilidad, lo cual es fundamental para analizar el comportamiento del usuario y optimizar la conversión.
+
+El objetivo de esta prueba es confirmar que el evento de seguimiento se activa de forma precisa cuando un usuario realiza una consulta y no se encuentran resultados de alojamiento.
+
+### Paso 1: Simulación de Búsqueda sin Disponibilidad
+
+Para realizar una prueba efectiva, es necesario forzar al motor de reservas a no mostrar resultados:
+
+*   **Acceder al Motor de Reservas:** Inicia en la página principal del hotel donde se encuentra el formulario de búsqueda.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-30-2025-08-18-52-1794-PM.png" alt="Página principal del motor de reservas" />
+    </Frame>
+
+*   **Seleccionar Fechas Futuras:** Utiliza el calendario para elegir una fecha de llegada y salida muy lejanas en el futuro (por ejemplo, mayo de 2026). Esto garantiza que no existan tarifas cargadas o inventario disponible.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-30-2025-08-19-51-7827-PM.png" alt="Selección de fechas futuras en el calendario" />
+    </Frame>
+
+*   **Ejecutar la Consulta:** Haz clic en el botón **"VER TARIFAS"** para iniciar la búsqueda.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-30-2025-08-20-10-4909-PM.png" alt="Botón 'VER TARIFAS' en el motor de reservas" />
+    </Frame>
+
+*   **Confirmar el Mensaje**: Verifica que en la pantalla del motor de reservas aparezca un mensaje indicando que no hay disponibilidad para el periodo seleccionado.
+
+### Paso 2: Análisis Técnico en la Herramienta de Seguimiento
+
+Una vez que el motor de reservas confirme la falta de resultados, debemos verificar la comunicación interna del Data Layer:
+
+<Steps>
+<Step title="Abrir Tag Assistant">
+  Cambia a la pestaña de la herramienta de seguimiento (Google Tag Assistant).
+</Step>
+<Step title="Identificar Hits Enviados">
+  En el resumen de la izquierda, revisa la sección **"Hits enviados"**.
+
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-30-2025-08-21-59-6742-PM.png" alt="Resumen de 'Hits enviados' en Tag Assistant" />
+  </Frame>
+</Step>
+<Step title="Localizar el Evento">
+  Busca en la lista el evento específico llamado `no_inventory`. Este nombre indica que la búsqueda no arrojó resultados.
+
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-30-2025-08-22-12-9676-PM.png" alt="Evento 'no_inventory' en Tag Assistant" />
+  </Frame>
+</Step>
+</Steps>
+
+### Paso 3: Validación de Parámetros en la Capa de Datos
+
+Para que la medición sea útil en GTM, los datos dentro del evento deben ser correctos. Selecciona el evento `no_inventory` y entra en la pestaña **"Capa de datos"** (Data Layer):
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-30-2025-08-22-56-2501-PM.png" alt="Pestaña 'Capa de datos' del evento 'no_inventory'" />
+</Frame>
+
+### Valores Críticos a Confirmar
+
+Deberás verificar que el objeto de datos contenga los siguientes parámetros con sus respectivos valores:
+
+<table style="border-collapse: collapse; table-layout: fixed; margin-left: auto; margin-right: auto; border: 1px solid #99acc2;">
+<thead>
+<tr>
+<td><strong>Parámetro</strong></td>
+<td><strong>Valor Esperado</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>event</code></td>
+<td><code>"no_inventory"</code></td>
+</tr>
+<tr>
+<td><code>no_inventory</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>start_date</code></td>
+<td>La fecha de llegada seleccionada en la prueba.</td>
+</tr>
+<tr>
+<td><code>end_date</code></td>
+<td>La fecha de salida seleccionada en la prueba.</td>
+</tr>
+<tr>
+<td><code>search_id</code></td>
+<td>El identificador único generado para esa búsqueda.</td>
+</tr>
+<tr>
+<td><code>adults</code> / <code>children</code></td>
+<td>El número de pasajeros que ingresaste en el formulario.</td>
+</tr>
+</tbody>
+</table>
+
+---
+
+Resultado de la Verificación:
+
+Si todos estos parámetros coinciden con tu prueba, el evento se está registrando correctamente. En caso de que el evento no aparezca o los datos sean erróneos, se debe revisar la implementación técnica del script en el motor de reservas.

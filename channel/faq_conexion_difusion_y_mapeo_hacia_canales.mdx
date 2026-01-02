@@ -1,0 +1,77 @@
+---
+title: "Preguntas Frecuentes: Conexión, Difusión y Mapeo hacia Canales"
+description: "Esta guía explica cómo conectar y mapear tarifas, categorías y restricciones hacia los canales. Incluye buenas prácticas para actualizar y sincronizar la información correctamente."
+---
+
+# Preguntas Frecuentes: Conexión, Difusión y Mapeo hacia Canales
+
+Esta guía explica cómo conectar y mapear tarifas, categorías y restricciones hacia los canales. Incluye buenas prácticas para actualizar y sincronizar la información correctamente.
+
+## 1. ¿Qué debo hacer antes de conectar un canal?
+
+Lo primero que debes hacer es crear las tarifas y categorías en la extranet del canal. Se recomienda configurarlas en dicho canal inicialmente con disponibilidad en 0 y/o con una tarifa elevada por defecto, para evitar que se generen reservas en caso de que queden publicadas automáticamente a la venta antes de avanzar con la conexión.
+
+<Info>
+Existen dos tipos de canales, cada uno con un procedimiento de conexión:
+</Info>
+
+*   Si el canal es **autogestionable**, puedes avanzar con la conexión y el mapeo desde la **aplicación de canales de venta**, donde encontrarás una guía específica para cada canal.
+*   Si el canal **no es autogestionable**, por favor contacta a nuestro equipo de soporte para coordinar la conexión. En este caso es fundamental que nos indiques cómo debe realizarse el mapeo, indicando el nombre de la categoría o tarifa en Pxsol.
+
+## 2. ¿Qué pasa si modifico o creo nuevos planes tarifarios o categorías en la extranet (OTA)?
+
+Cada vez que realices cambios en la extranet, es fundamental **actualizar los mapeos desde el channel manager** para que la información quede sincronizada.
+
+*   Si el canal es **autogestionable**, podrás realizar la actualización directamente desde la aplicación de canales de venta.
+*   Si el canal **no es autogestionable**, contacta a nuestro equipo de soporte para que realice la actualización del mapeo.
+
+## 3. ¿Qué tipos de planes tarifarios se pueden conectar?
+
+Generalmente las OTAS (canales de venta) permiten conectar solo los planes tarifarios **independientes**. Los planes **vinculados** deben administrarse desde la extranet del canal.
+
+## 4. ¿Cómo debo mapear si trabajo con precios por ocupación?
+
+Debes identificar la **tarifa madre** (ocupación base que se envía desde el channel manager).
+
+*   Ejemplo: si la categoría permite hasta 8 personas, pero en la extranet solo es editable el precio base doble, se debe mapear esa ocupación. Las demás se calculan según las reglas del portal.
+
+## 5. ¿Es posible mapear todas las ocupaciones?
+
+Sí, si el canal lo permite. En ese caso, cada ocupación debe mapearse con su equivalente en el channel manager.
+
+## 6. ¿Qué debo hacer cada vez que agrego o modifico un mapeo?
+
+Realizar un **push completo de información** desde el channel manager para que el canal quede actualizado.
+
+*   Siempre verifica que los datos lleguen correctamente **en la extranet del canal**, no en el sitio de venta.
+
+## 7. ¿Qué precaución debo tener con las tarifas vinculadas?
+
+Siempre revisa cuál es la tarifa conectada al channel, ya que los planes vinculados pueden depender de ella.
+
+## 8. ¿Dónde se gestionan las ofertas y promociones?
+
+Las ofertas se administran en la extranet de cada portal. Desde el channel manager solo se pueden enviar:
+
+*   Tarifas
+*   Disponibilidad
+*   Restricciones
+*   Cierres
+
+## 9. ¿Qué restricciones aceptan los canales?
+
+La mayoría acepta restricciones como **mínimo de noches**, pero no todos soportan restricciones más específicas como **COA (Close on Arrival)** o **COD (Close on Departure)**.
+
+## 10. ¿Qué debo revisar si mis tarifas no coinciden con las del portal?
+
+*   Verifica que el **mapeo con el canal esté correctamente configurado**. Desde la aplicación de canales de venta puedes revisar y ajustar el mapeo si el canal es autogestionable.
+*   Si el canal no es autogestionable, contacta a nuestro equipo de soporte.
+*   Si el mapeo está correcto, realiza un **envío desde el sistema** para actualizar la información en los canales.
+*   Siempre revisa la información en la **extranet del canal**, nunca en el sitio de venta.
+
+<Note>
+Consideraciones importantes:
+*   El canal puede tener **tarifas vinculadas**.
+*   Puede haber **precios por ocupación** con reglas internas del portal.
+*   Algunos portales aplican **descuentos o reglas internas** que afectan el precio final publicado.
+</Note>

@@ -1,0 +1,75 @@
+---
+title: "¿Cómo configurar la integración con WebPay Plus?"
+description: "En esta guía explicaremos cómo agregar, al motor de reservas, la opción de pago a través de WebPay para clientes de Chile."
+---
+
+
+<Warning>
+La integración se podrá llevar a cabo siempre que el hotel cuente con WebPay Plus y se realizará para reservas con moneda CLP (Pesos Chilenos). No se aceptarán transacciones en divisas distintas.
+</Warning>
+
+<Note>
+<p><strong>¿Qué es Webpay Plus?</strong><br>Es la pasarela de pago de Transbank para realizar transacciones en línea con tarjetas de débito, prepago y crédito (con y sin cuotas) de manera eficaz y segura.</p>
+</Note>
+
+<p>Para llevar a cabo la configuración de la integración con <strong>WebPay Plus</strong>, siga los pasos a continuación:</p>
+<Steps>
+<Step title="Navegar a la sección de Integraciones">
+<p>1 - Desde al menú lateral ingresar a <strong>"Configuración"</strong>, luego <strong>"Integraciones"</strong>.</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-12-2025-09-42-33-0398-PM.png" alt="Menú de configuración e integraciones" />
+</Frame>
+</Step>
+
+<Step title="Instalar la aplicación WebPay">
+<p>2 - En la tarjeta correspondiente a <strong>WebPay</strong>, haga clic en la opción <strong>"Instalar"</strong>.</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-12-2025-09-48-38-4136-PM.png" alt="Tarjeta de WebPay con botón 'Instalar'" />
+</Frame>
+<p>3 - Aparecerá una nueva ventana en la que deberán hacer clic en la opción "<strong>Sí, Instalar</strong>".</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-12-2025-09-49-56-3132-PM.png" alt="Confirmación de instalación de WebPay" />
+</Frame>
+</Step>
+
+<Step title="Completar el formulario de solicitud">
+<p>4 - En la actualidad, la instalación no puede ser gestionada de forma autónoma. Por lo tanto, una vez que haya completado la instalación de la aplicación, le pedimos que llene el formulario que aparecerá en la ventana emergente, para que podamos proceder con la configuración necesaria.</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Sep-06-2024-07-00-54-9406-PM.png" alt="Formulario de solicitud de configuración de WebPay" />
+</Frame>
+</Step>
+
+<Step title="Esperar la configuración y certificación">
+<p>5 - Una vez que hayan completado el formulario, deberán esperar a que un implementador se comunique con ustedes para finalizar el proceso de conexión. El implementador llevará a cabo la certificación necesaria; si Transbank aprueba el proceso, recibirán una API Key que deberán proporcionar al implementador para concluir la integración.</p>
+<p>El correo electrónico que recibirán de parte de WebPay podría tener el siguiente formato:</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-19-2025-06-52-06-1162-PM.png" alt="Ejemplo de correo electrónico de WebPay" />
+</Frame>
+</Step>
+
+<Step title="Finalizar la integración con pago de prueba">
+<p>6 - Una vez que haya proporcionado la API Key al implementador, este procederá con las configuraciones restantes. Al finalizar el proceso, le notificará que la integración ya está activa y le solicitará realizar un pago real de 50 CLP, un requisito adicional establecido por Transbank para completar la integración.</p>
+</Step>
+</Steps>
+
+<p>Consideraciones importantes:</p>
+<Warning>
+<p>Una vez que la pasarela de pagos esté integrada al motor de reservas, es fundamental tener en cuenta dos escenarios posibles al momento de que un cliente realice una reserva:</p>
+<p><strong>1.1</strong> - Si la reserva es confirmada y <strong>el pago se procesa correctamente</strong>, el monto se acreditará automáticamente en la sección de pagos de la reserva.</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-20-2025-01-33-29-5613-PM.png" alt="Reserva confirmada con pago exitoso" />
+</Frame>
+<p><strong>1.2 -</strong> Si <strong>el pago se procesa correctamente</strong>, se incluirá también un <strong>mensaje informativo en el Historial </strong>de la reserva.</p>
+<Frame>
+<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeOUEQXc3qLuHfQGQya3x5_yA3z1Tz7euKCX-li-iPDBsaYn1T6I7MwJIPw2MdxXVpri_RB-JqEKDKY9zLaygCbhDc4dbJXpADaheiNMbKVxyJxr2-NRjYnIFNRWIMWLOgKMMAZ?key=DXDyEYWBZPgLXfsB4iJtT6ho" alt="Historial de reserva con mensaje de pago exitoso" />
+</Frame>
+<p><strong>2.1</strong> - Si la reserva es confirmada pero <strong>el pago es rechazado</strong>, la reserva se registrará en nuestro sistema, aunque el pago no aparecerá reflejado. En este caso, será necesario decidir cómo proceder: se puede optar por cancelar la reserva debido a la falta de acreditación del pago o contactar al cliente para explorar otras opciones de pago, en ambos casos recomendamos informar dicha política en el mail de confirmación automático que se envía al cliente.</p>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-20-2025-01-36-40-2011-PM.png" alt="Reserva confirmada con pago rechazado" />
+</Frame>
+<p>2.2 - En el <strong>Historial</strong> de la reserva, se registrará el detalle del pago, indicando que ha ocurrido un <strong>ERROR</strong>.</p>
+<Frame>
+<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfWubVnfzOtYlUTwUOcDWuP1g5lP7q4wNSteQ6ZmkQtRW6uUPBQ_UBAJH0hxZNTmZNw4_680riGZ8djtgConcuSUBV34u19ntHng2nuYkP8R-H5rxGICvOdUuS2dqo6llqIXe9W?key=DXDyEYWBZPgLXfsB4iJtT6ho" alt="Historial de reserva con error de pago" />
+</Frame>
+</Warning>
+<p>&nbsp;</p>
