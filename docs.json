@@ -85,7 +85,8 @@
               "pms/como_realizar_el_check_out_de_una_habitacion",
               "pms/como_cargar_consumos_items_en_inventario",
               "pms/como_facturar_desde_el_modulo_facturacion",
-              "pms/como_cambiar_la_asignacion_de_una_habitacion_fisica_en_una_reserva__v1"
+              "pms/como_cambiar_la_asignacion_de_una_habitacion_fisica_en_una_reserva__v1",
+              "pms/como_vincular_un_huesped_a_una_habitacion__v1"
             ]
           },
           {
