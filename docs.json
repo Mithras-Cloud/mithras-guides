@@ -185,7 +185,8 @@
               "pms/como_generar_informe_citirg_3685",
               "pms/como_anular_una_operacion_de_una_cuenta_corriente",
               "pms/como_realizar_la_vinculacion_de_facturacion_de_pxsol_con_arca_ex_afip",
-              "pms/como_activar_o_desactivar_impuestos_en_su_hotel"
+              "pms/como_activar_o_desactivar_impuestos_en_su_hotel",
+              "pms/pagos__como_firmar_un_pago_dentro_de_una_reserva"
             ]
           },
           {
