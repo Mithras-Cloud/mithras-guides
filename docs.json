@@ -551,7 +551,9 @@
           },
           {
             "group": "Marca Blanca",
-            "pages": []
+            "pages": [
+              "marca_blanca/marca_blanca__reservadirecto"
+            ]
           },
           {
             "group": "Inbox",
