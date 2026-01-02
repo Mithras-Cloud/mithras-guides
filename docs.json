@@ -410,7 +410,8 @@
             "group": "Conexiones",
             "pages": [
               "conexiones/como_ver_las_solicitudes_de_acuerdos_de_agencias",
-              "conexiones/como_solicitar_la_conexion_a_the_hotel_network"
+              "conexiones/como_solicitar_la_conexion_a_the_hotel_network",
+              "conexiones/como_dar_de_alta_un_acuerdo_con_una_agencia_determinada"
             ]
           },
           {
