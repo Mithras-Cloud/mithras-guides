@@ -53,7 +53,9 @@
           },
           {
             "group": "Channel",
-            "pages": []
+            "pages": [
+              "channel/conexion_autogestionable_con_el_canal_booking"
+            ]
           },
           {
             "group": "Procesos",
