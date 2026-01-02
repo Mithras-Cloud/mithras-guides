@@ -180,7 +180,8 @@
               "pms/como_vincular_facturacion_de_un_cliente_con_pxsol_dentro_de_arca",
               "pms/como_cargar_proveedores",
               "pms/como_registrar_un_pago_de_una_factura_de_proveedor",
-              "pms/como_generar_informe_citirg_3685"
+              "pms/como_generar_informe_citirg_3685",
+              "pms/como_anular_una_operacion_de_una_cuenta_corriente"
             ]
           },
           {
