@@ -23,7 +23,9 @@
           },
           {
             "group": "Primeros Pasos",
-            "pages": []
+            "pages": [
+              "primeros_pasos/proceso_de_implementacion_u_onboarding"
+            ]
           },
           {
             "group": "Configuración Inicial",
