@@ -1,0 +1,47 @@
+---
+title: "¿Cómo configurar la redirección del bot de Conversaciones hacia un motor externo distinto al de Pxsol?"
+description: "En esta guía, se detallan los pasos necesarios para configurar la redirección de un motor externo diferente a Pxsol en el bot de Conversaciones."
+---
+
+
+A continuación, se describen los pasos que debes seguir para llevar a cabo esta vinculación de manera exitosa:
+
+1.  Accede a la aplicación "Usuarios" y busca el usuario asociado al BOT. Una vez localizado, elige la opción "ACCIONES" y después selecciona "Editar".
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-23-2025-02-08-08-1091-PM.png" alt="Captura de pantalla mostrando cómo editar el usuario del BOT en la aplicación Usuarios." />
+    </Frame>
+
+2.  Se abrirá una ventana lateral. En esta ventana, deberás desplazarte hacia abajo hasta encontrar la sección "Habilidades del agente" y luego "Motor de búsqueda de tarifas y disponibilidad". En esta sección, podrás configurar a qué motor debe redireccionar el bot al momento de que el huésped consulte sobre tarifas y disponibilidad. Puede ser Pxsol, o si utilizas un motor externo, tienes la opción de redirigir las consultas a este.
+
+    Actualmente, la integración con motores externos como "TravelClick", "Hilton" y "RoomCloud", se realiza mediante una redirección al motor de reservas, donde se toman en cuenta parámetros como fechas y número de personas, generando una URL que permite al usuario realizar la reserva directamente.
+
+    <Note>
+    A diferencia de lo que sucede con el motor Pxsol, en este caso no se proporcionan tarifas ni disponibilidad en tiempo real a través del chat.
+    </Note>
+
+    Para configurar alguno de estos motores externos, simplemente selecciona el que corresponda. A continuación, se mostrará un nuevo campo en el que deberás ingresar el ID correspondiente de la propiedad.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-23-2025-02-12-38-4951-PM.png" alt="Captura de pantalla mostrando la configuración del motor de búsqueda de tarifas y disponibilidad." />
+    </Frame>
+
+    Si estás utilizando un motor externo diferente o no dispones de un motor de reservas, puedes seleccionar la opción "Otros / Desactivado". Al hacerlo, aparecerá un nuevo campo donde podrás establecer instrucciones que indiquen qué información debe proporcionar el bot en respuesta a las consultas sobre tarifas y disponibilidad. Por ejemplo, tienes la opción de incluir una URL de otro motor de reservas que redireccione a los usuarios para avanzar con su consulta y/o reservas.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-23-2025-02-27-06-4304-PM.png" alt="Captura de pantalla mostrando la opción 'Otros / Desactivado' y el campo para instrucciones adicionales." />
+    </Frame>
+
+3.  Una vez que hayas realizado todas las configuraciones necesarias, haz clic en "GUARDAR CAMBIOS" para asegurar que se apliquen correctamente.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-23-2025-02-36-03-8126-PM.png" alt="Captura de pantalla del botón 'GUARDAR CAMBIOS'." />
+    </Frame>
+
+4.  Te recomendamos que realices algunas consultas de prueba para verificar que la configuración realizada funcione correctamente. Asegúrate de que las respuestas del bot se estén gestionando de manera adecuada y, si configuraste una URL, comprueba que esta redireccione correctamente a los usuarios.
+
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-23-2025-02-39-50-7860-PM.png" alt="Captura de pantalla mostrando un ejemplo de consulta de prueba." />
+    </Frame>
+
+Al seguir estos pasos, podrás integrar de manera efectiva un motor externo diferente a Pxsol en tu bot de conversaciones, lo que ampliará sus capacidades y mejorará la interacción con los usuarios.
