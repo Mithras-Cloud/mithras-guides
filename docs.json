@@ -308,7 +308,8 @@
               "procesos/inbox",
               "procesos/proceso__web_check_in",
               "procesos/como_gestionar_una_reserva",
-              "procesos/como_gestionar_una_consulta"
+              "procesos/como_gestionar_una_consulta",
+              "procesos/como_gestionar_una_reserva_que_esta_cumpliendo_su_estadia"
             ]
           },
           {
