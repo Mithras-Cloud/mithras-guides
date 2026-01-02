@@ -196,7 +196,8 @@
               "pms/pagos__como_firmar_un_pago_dentro_de_una_reserva",
               "pms/como_agregar_o_retirar_fondos_de_una_cuenta_recaudadora",
               "pms/gestionar_tareas_desde_las_reservas",
-              "pms/como_modificar_la_estadia_de_una_reserva"
+              "pms/como_modificar_la_estadia_de_una_reserva",
+              "pms/como_facturar_una_reserva_parcialmente"
             ]
           },
           {
