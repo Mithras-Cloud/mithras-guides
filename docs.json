@@ -173,7 +173,9 @@
           },
           {
             "group": "Conexiones",
-            "pages": []
+            "pages": [
+              "conexiones/como_ver_las_solicitudes_de_acuerdos_de_agencias"
+            ]
           },
           {
             "group": "Central De Reservas",
