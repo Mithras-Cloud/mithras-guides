@@ -1,0 +1,43 @@
+---
+title: "Cómo obtener la API Key y permisos necesarios para configurar Stripe"
+description: "Esta guía detalla cómo obtener la API Key y los permisos necesarios para integrar Stripe como medio de pago. Incluye los pasos para acceder al panel, copiar la clave y solicitar el acceso a la API de datos de tarjetas sin procesar."
+---
+
+
+#### **1 - Ingreso al panel de Stripe**
+
+Accede a tu cuenta de **Stripe**.
+Si aún no tienes una cuenta, puedes crearla rápidamente desde [aquí](https://dashboard.stripe.com/register).
+
+***
+
+#### **2 - Solicitud de acceso a la API de datos de tarjetas sin procesar**
+
+Stripe requiere habilitar el permiso **“Access to raw card data APIs”** para procesar datos de tarjeta directamente. Puedes consultar más información [en este enlace](https://support.stripe.com/questions/enabling-access-to-raw-card-data-apis).
+
+Para solicitarlo, debes **contactar al soporte de Stripe** y enviar una **solicitud de habilitación**.
+En el mensaje, incluye que necesitas habilitar el acceso a la API de datos de tarjeta sin procesar para integrarte con un proveedor externo.
+
+Deberás adjuntar un documento que puedes solicitar al **equipo de Pxsol** escribiendo a [equipo@pxsol.com](mailto:equipo@pxsol.com).
+
+Stripe te confirmará por correo cuando el acceso haya sido aprobado, para que puedas continuar con la configuración.
+
+***
+
+#### **3 - Obtención de la API Key**
+
+Puedes encontrar tu **Secret key** en el panel de control de Stripe, en **Developers > API Keys**, puedes acceder rápidamente desde [aquí](https://dashboard.stripe.com/test/apikeys)
+
+<Note>
+🔑 **Nota:** asegúrate de usar la **clave secreta**, que comienza con `sk`.
+⚠️ No debes estar en modo de prueba.
+</Note>
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-07-2025-06-17-53-1627-PM.png" alt="Panel de API Keys de Stripe con la clave secreta resaltada." />
+</Frame>
+
+***
+
+#### **4 - Configuración en el panel de credenciales**
+Una vez que tengas la **API Key** y el **permiso habilitado**, podrás continuar con la configuración en **Pxsol**.
