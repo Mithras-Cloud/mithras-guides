@@ -60,7 +60,9 @@
           },
           {
             "group": "Procesos",
-            "pages": []
+            "pages": [
+              "procesos/como_gestionar_reenvio_de_tarifas__disponibilidad_y_restricciones_hacia_las_otas_ejemplo_booking_despegar_expedia_airbnb_etc"
+            ]
           },
           {
             "group": "Analítica",
