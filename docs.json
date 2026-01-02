@@ -80,7 +80,8 @@
               "motor/como_cambiar_tipo_de_cambio",
               "motor/recomendaciones_servicios",
               "motor/como_configurar_los_formularios_del_motor_de_reservas",
-              "motor/como_agregar_y_editar_un_nuevo_tipo_de_cambio"
+              "motor/como_agregar_y_editar_un_nuevo_tipo_de_cambio",
+              "motor/como_borrar_un_medio_de_pago"
             ]
           },
           {
