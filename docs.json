@@ -28,7 +28,8 @@
           {
             "group": "Configuración Inicial",
             "pages": [
-              "configuración_inicial/como_cambiar_mi_pin_si_olvide_el_pin_actual"
+              "configuración_inicial/como_cambiar_mi_pin_si_olvide_el_pin_actual",
+              "configuración_inicial/aplicacion_configuracion_punto_de_venta"
             ]
           },
           {
