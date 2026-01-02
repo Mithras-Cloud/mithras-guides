@@ -334,7 +334,8 @@
               "procesos/como_gestionar_una_consulta",
               "procesos/como_gestionar_una_reserva_que_esta_cumpliendo_su_estadia",
               "procesos/como_habilitar_el_escaneo_inteligente_de_documentos",
-              "procesos/proceso__configuracion_pagos"
+              "procesos/proceso__configuracion_pagos",
+              "procesos/como_realizar_la_carga_de_datos_del_web_check_in"
             ]
           },
           {
