@@ -1,0 +1,198 @@
+---
+title: "Diccionario de Eventos del Data Layer de Pxsol"
+description: "Documentación técnica detallada de los eventos del Data Layer de Pxsol para integración con GA4 y GTM, cubriendo el seguimiento del comportamiento del usuario desde la búsqueda hasta la confirmación de la reserva."
+---
+
+
+Este documento detalla los eventos disparados en el Data Layer de Pxsol, diseñados para la integración con GA4 y GTM. Estos eventos permiten rastrear el comportamiento del usuario desde la búsqueda inicial hasta la confirmación de la reserva.
+
+### 1. Eventos de Contexto
+
+Estos eventos establecen y actualizan la información global de la sesión, como el punto de venta (POS) y los datos del producto.
+
+<table style="border-collapse: collapse; table-layout: fixed; margin-left: auto; margin-right: auto; border: 1px solid #99acc2;">
+<thead>
+<tr>
+<td><strong>Evento</strong></td>
+<td><strong>Significado</strong></td>
+<td><strong>Cuándo se dispara</strong></td>
+<td><strong>Parámetros Principales</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>px_context</strong></td>
+<td>Establece el contexto global inicial de la sesión.</td>
+<td>En cada carga de página (una vez por página).</td>
+<td>pos, product_id, product_name, search_id, start_date, end_date, adults, children, rooms, session_id, page_url</td>
+</tr>
+<tr>
+<td><strong>px_context_update</strong></td>
+<td>Actualiza dinámicamente los parámetros del contexto cuando hay cambios.</td>
+<td>Al actualizar fechas, pasajeros o habitaciones tras una búsqueda; al encontrar disponibilidad o en la página de agradecimiento.</td>
+<td>search_id, start_date, end_date, adults, children, rooms, transaction_id, value, currency, session_id</td>
+</tr>
+<tr>
+<td><strong>px_layer_ready</strong></td>
+<td>Indica que el Data Layer está listo y funcionando.</td>
+<td>Una vez al cargar la página.</td>
+<td>session_id, page_url, pos, product_id, search_id, ts (timestamp)</td>
+</tr>
+<tr>
+<td><strong>user_data_update</strong></td>
+<td>Actualización de datos del usuario de forma segura.</td>
+<td>Cuando se actualizan datos de perfil o privacidad.</td>
+<td>Datos de usuario anonimizados/protegidos</td>
+</tr>
+</tbody>
+</table>
+
+### 2. Eventos de Búsqueda
+
+Rastrea la interacción del usuario con el motor de búsqueda y la disponibilidad de resultados.
+
+<table style="border-collapse: collapse; table-layout: fixed; margin-left: auto; margin-right: auto; border: 1px solid #99acc2;">
+<thead>
+<tr>
+<td><strong>Evento</strong></td>
+<td><strong>Significado</strong></td>
+<td><strong>Cuándo se dispara</strong></td>
+<td><strong>Parámetros Principales</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>search_open</strong></td>
+<td>El usuario tiene disponible el formulario de búsqueda.</td>
+<td>Al cargar la página si se detecta un contenedor de búsqueda válido en el DOM.</td>
+<td>page_url</td>
+</tr>
+<tr>
+<td><strong>search_modify</strong></td>
+<td>El usuario modifica los parámetros de búsqueda.</td>
+<td>Al cambiar fechas, adultos, niños o habitaciones (máximo 1 vez por segundo).</td>
+<td>start_date, end_date, rooms, adults, children, pos, hotel_id, search_id, session_id</td>
+</tr>
+<tr>
+<td><strong>no_inventory</strong></td>
+<td>No hay resultados disponibles para la búsqueda realizada.</td>
+<td>Al detectar mensajes de "Sin resultados" en la página o manualmente vía script.</td>
+<td>no_inventory (true), start_date, end_date, rooms, adults, children, pos, search_id, session_id</td>
+</tr>
+<tr>
+<td><strong>has_inventory</strong></td>
+<td>Existen resultados de disponibilidad para la búsqueda.</td>
+<td>Cuando se detectan productos con disponibilidad mayor a cero.</td>
+<td>has_availability (true), availability (total unidades), product_count, search_id, start_date, end_date</td>
+</tr>
+</tbody>
+</table>
+
+### 3. Eventos de Formularios
+
+Monitorea el progreso del usuario a través de los formularios de contacto o checkout.
+
+<table style="border-collapse: collapse; table-layout: fixed; margin-left: auto; margin-right: auto; border: 1px solid #99acc2;">
+<thead>
+<tr>
+<td><strong>Evento</strong></td>
+<td><strong>Significado</strong></td>
+<td><strong>Cuándo se dispara</strong></td>
+<td><strong>Parámetros Principales</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>form_view</strong></td>
+<td>El usuario visualiza un formulario.</td>
+<td>Al cargar la página de checkout o hacer scroll hasta el formulario.</td>
+<td>form_id (ej: "formCheckoutSubmit"), page_url</td>
+</tr>
+<tr>
+<td><strong>form_interaction</strong></td>
+<td>Interacción con un campo específico del formulario.</td>
+<td>Al hacer foco, escribir o seleccionar opciones (adultos/niños).</td>
+<td>form_id, field_name (ej: "email", "party_adults"), page_url</td>
+</tr>
+<tr>
+<td><strong>form_submit</strong></td>
+<td>Intento de envío del formulario.</td>
+<td>Al hacer click en enviar, antes de la validación del servidor.</td>
+<td>form_id, fields_status, email_provided (booleano), phone_provided (booleano), session_id</td>
+</tr>
+<tr>
+<td><strong>form_success</strong></td>
+<td>Envío exitoso del formulario.</td>
+<td>En la página de agradecimiento tras procesar la reserva o lead.</td>
+<td>form_id, lead_id, transaction_id</td>
+</tr>
+</tbody>
+</table>
+
+### 4. Eventos de Chat
+
+Registra la actividad en el widget de atención al cliente.
+
+<table style="border-collapse: collapse; table-layout: fixed; margin-left: auto; margin-right: auto; border: 1px solid #99acc2;">
+<thead>
+<tr>
+<td><strong>Evento</strong></td>
+<td><strong>Significado</strong></td>
+<td><strong>Cuándo se dispara</strong></td>
+<td><strong>Parámetros Principales</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>chat_open</strong></td>
+<td>Apertura del widget de chat.</td>
+<td>Al hacer click en el botón del chat o detectarse su apertura.</td>
+<td>chat_session_id, session_id, search_id, pos, hotel_id, page_url</td>
+</tr>
+<tr>
+<td><strong>chat_message</strong></td>
+<td>Mensaje enviado por el usuario.</td>
+<td>Al enviar un mensaje (máximo 1 vez por segundo).</td>
+<td>chat_session_id, message_type ("user"), duration_sec, pos, page_url</td>
+</tr>
+<tr>
+<td><strong>chat_close</strong></td>
+<td>Cierre del widget de chat.</td>
+<td>Al cerrar manualmente o si el widget se oculta.</td>
+<td>chat_session_id, duration_sec (duración total abierto), pos, session_id</td>
+</tr>
+</tbody>
+</table>
+
+### 5. Eventos de E-commerce
+
+Eventos críticos para la medición de ingresos y conversiones.
+
+<table style="border-collapse: collapse; table-layout: fixed; margin-left: auto; margin-right: auto; border: 1px solid #99acc2;">
+<thead>
+<tr>
+<td><strong>Evento</strong></td>
+<td><strong>Significado</strong></td>
+<td><strong>Cuándo se dispara</strong></td>
+<td><strong>Parámetros Principales</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>add_to_cart</strong></td>
+<td>El usuario agrega un producto al carrito.</td>
+<td>Tras seleccionar una habitación o servicio.</td>
+<td>product_id, value, currency (basado en el contexto de búsqueda)</td>
+</tr>
+<tr>
+<td><strong>purchase</strong></td>
+<td>Compra o reserva completada exitosamente.</td>
+<td>En la página de confirmación tras validarse el pago/reserva.</td>
+<td>transaction_id, value, tax, currency, items (array con detalles de SKU, nombre y precio), start_date, end_date, search_id</td>
+</tr>
+</tbody>
+</table>
+
+<Note>
+Pxsol no envía Información de Identificación Personal (PII) directamente. Los datos sensibles como emails o teléfonos se transmiten como banderas booleanas (true/false) para proteger la privacidad del usuario.
+</Note>

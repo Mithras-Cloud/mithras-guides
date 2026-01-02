@@ -1,0 +1,38 @@
+---
+title: "Stripe: Gestión de credenciales de pasarelas de pago"
+description: "En esta guía se detalla cómo validar, editar o eliminar una credencial de Stripe."
+---
+
+
+Una vez que hayas vinculado una credencial de Stripe, tendrás las siguientes opciones:
+
+*   **A - Vincularla a un medio de pago.**
+    *   Dentro de la misma aplicación, encontrarás un enlace directo a la sección "Medios de Pago" para realizar esta acción.
+*   **B - Validar credencial.**
+    *   Esta función te permite verificar que las credenciales configuradas sean correctas y que aún estén vigentes.
+*   **C - Editar.**
+    *   Para visualizar o modificar la información de una credencial, haz clic en el botón "ACCIONES". Se desplegará un menú donde podrás seleccionar la opción "Editar".
+*   **D - Borrar.**
+    *   <Warning>
+        Es importante tener en cuenta que solo podrás eliminar una credencial si esta **no está asociada a ningún medio de pago**.
+        </Warning>
+
+***
+
+### Borrar credencial sin vinculación
+
+Si intentas eliminar una credencial que no está vinculada a ningún medio de pago, aparecerá un mensaje de confirmación: "¿Desea eliminar esta credencial?".
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-13-12-0301-PM.png" alt="Mensaje de confirmación para eliminar credencial sin vinculación" />
+</Frame>
+
+### Borrar credencial con vinculación
+
+Si la credencial está siendo utilizada por algún medio de pago, no podrás eliminarla. Se mostrará un mensaje indicando: "Esta credencial no puede ser eliminada porque está actualmente vinculada a un medio de pago". Este mensaje incluirá un botón con acceso directo a la aplicación "Medios de pago" para que puedas desvincularla.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-13-12-2465-PM.png" alt="Mensaje de error al intentar eliminar credencial vinculada a un medio de pago" />
+</Frame>
+
+Una vez que hayas desvinculado la credencial de todos los medios de pago asociados, podrás proceder a eliminarla.

@@ -1,0 +1,61 @@
+---
+title: "Stripe: Cómo efectuar una devolución parcial o total"
+description: "Esta guía explica cómo realizar devoluciones totales o parciales de pagos procesados con Stripe, detallando los pasos para acceder a la reserva, seleccionar el pago, completar la información requerida y confirmar la operación con el PIN del usuario."
+---
+
+<p>A continuación se detallan los pasos para realizar una devolución (parcial o total) de un pago procesado a través de Stripe.</p>
+
+<Steps>
+<Step title="1. Acceder a la reserva">
+  Dirígete a la reserva donde se encuentra acreditado el pago que deseas devolver.
+</Step>
+
+<Step title="2. Ir a la solapa de pagos">
+  Dentro de la reserva, ubícate en la sección o solapa de Pagos.
+</Step>
+
+<Step title="3. Efectuar devolución">
+  Sobre el pago ya acreditado, haz clic en “Acciones” y elige “Efectuar devolución”.
+
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-43-09-5710-PM.png" alt="Interfaz para efectuar una devolución en Stripe" />
+  </Frame>
+</Step>
+
+<Step title="4. Completar datos de la devolución">
+  Esto abrirá una nueva ventana donde deberás completar los datos de la devolución:
+  <ul>
+    <li>Motivo de la devolución</li>
+    <li>Tipo de devolución:
+      <ul>
+        <li><strong>Total:</strong> El sistema mostrará automáticamente el importe total del pago.</li>
+        <li><strong>Parcial:</strong> Se habilitará un campo adicional para que indiques el monto que deseas devolver.</li>
+      </ul>
+    </li>
+  </ul>
+</Step>
+
+<Step title="5. Ingresar el PIN del usuario">
+  Para confirmar la devolución, el sistema solicitará el PIN del usuario. Cualquier usuario puede efectuar devoluciones, siempre y cuando tenga un PIN configurado. Ingresar este PIN validará y autorizará la operación.
+
+  <Frame caption="Ventana de ingreso de PIN para confirmación de devolución">
+  <img 
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-43-09-2623-PM.png" 
+    alt="Ingreso de PIN para confirmación de devolución" 
+    style="width: 368px; margin-left: auto; margin-right: auto; display: block; max-width: 100%;"
+  />
+  </Frame>
+</Step>
+
+<Step title="6. Confirmación y registro de la devolución">
+  Una vez confirmada, el sistema generará una nueva línea en los movimientos de pago con el importe devuelto y el detalle del usuario que realizó la devolución.
+
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-43-09-9283-PM.png" alt="Registro de movimiento de devolución en Stripe" />
+  </Frame>
+
+  <Check>
+  La devolución ha sido registrada exitosamente.
+  </Check>
+</Step>
+</Steps>
