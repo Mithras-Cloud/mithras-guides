@@ -217,7 +217,8 @@
               "integraciones/payway_gestion_de_credenciales_de_pasarelas_de_pago",
               "integraciones/payway_como_efectuar_una_devolucion_parcial_o_total",
               "integraciones/informacion_general_de_mercado_pago",
-              "integraciones/payway_comportamiento_en_el_motor_de_reservas_checkout"
+              "integraciones/payway_comportamiento_en_el_motor_de_reservas_checkout",
+              "integraciones/turbosuite"
             ]
           },
           {
