@@ -117,7 +117,8 @@
           {
             "group": "Conversaciones",
             "pages": [
-              "conversaciones/como_generar_base_de_conocimiento_para_la_ai_del_bot_de_conversaciones"
+              "conversaciones/como_generar_base_de_conocimiento_para_la_ai_del_bot_de_conversaciones",
+              "conversaciones/como_asignar_uno_o_mas_responsables_a_un_chat_con_clientes_en_la_aplicacion_conversaciones"
             ]
           },
           {
