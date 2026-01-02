@@ -268,7 +268,8 @@
           {
             "group": "Administración",
             "pages": [
-              "administración/como_cancelar_el_saldo_a_traves_de_mercado_pago"
+              "administración/como_cancelar_el_saldo_a_traves_de_mercado_pago",
+              "administración/como_vincular_o_actualizar_una_tarjeta_de_credito_para_abonar_pxsol"
             ]
           },
           {
