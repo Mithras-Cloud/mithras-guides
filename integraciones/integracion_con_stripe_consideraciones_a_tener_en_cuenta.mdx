@@ -1,0 +1,32 @@
+---
+title: "Integración con Stripe: consideraciones a tener en cuenta"
+description: "Este documento detalla los puntos a considerar antes de avanzar con la integración con Stripe."
+---
+
+
+<p><strong>Consideraciones a tener en cuenta</strong></p>
+<ul>
+<li aria-level="1">La integración con Stripe está disponible para todos los clientes que cuenten con una cuenta activa en Stripe. Si aún no poseen una, pueden crearla desde el siguiente enlace: 👉<a href="https://dashboard.stripe.com/register"> https://dashboard.stripe.com/register</a>. Nuestro servicio se conecta únicamente con cuentas ya existentes; <strong>no gestionamos el alta ni la administración de las cuentas de Stripe</strong>.</li>
+<li aria-level="1">Actualmente, la integración<strong> permite procesar pagos exclusivamente desde el motor de reservas.</strong></li>
+<li aria-level="1">La integración tiene un costo adicional del <strong>0,5% por cada transacción efectivizada</strong>. Para avanzar, es necesario contar con el contrato correspondiente ya activado.</li>
+<li aria-level="1">Para avanzar con la integración, se requiere:
+<ul>
+<li aria-level="2"><ParamField path="api_key" type="string" required>API Key</ParamField></li>
+<li aria-level="2"><strong>Habilitar los permisos correspondientes</strong> y <strong>presentar a Stripe la documentación necesaria</strong>, la cual se ofrece únicamente bajo solicitud a equipo@pxsol.com.</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li aria-level="1">Stripe acepta pagos<strong> desde el extranjero</strong>.</li>
+<li aria-level="1">
+<h4><strong>Gestión del inventario: </strong>Toda reserva generada <strong>descontará inventario</strong> y quedará registrada en el sistema, independientemente de si el pago resulta exitoso o rechazado.</h4>
+</li>
+</ul>
+<ul>
+<li aria-level="1">
+<h4><strong>Si el pago es exitoso:</strong><strong><br></strong> La reserva se mostrará como <strong>pagada</strong>, ya sea total o parcialmente según corresponda. En caso de ser necesario, desde la misma reserva se podrán realizar <strong>devoluciones totales o parciales</strong>, sin necesidad de acceder a Payway.</h4>
+</li>
+<li aria-level="1">
+<h4><strong>Si el pago es rechazado:</strong><strong><br></strong>La reserva igualmente ingresará al sistema, pero quedará con <strong>saldo pendiente</strong>. Será necesario gestionarla activamente (contactar al huésped para solicitar otro medio de pago o cancelarla según las políticas del hotel) para <strong>liberar el inventario</strong>.</h4>
+</li>
+</ul>
