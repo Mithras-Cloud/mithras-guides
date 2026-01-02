@@ -102,7 +102,9 @@
           },
           {
             "group": "Agencias B2B",
-            "pages": []
+            "pages": [
+              "agencias_b2b/pxsol_b2b__integracion_con_distribuidores_del_sector_turistico"
+            ]
           },
           {
             "group": "Generales",
