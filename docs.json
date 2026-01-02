@@ -102,7 +102,9 @@
           },
           {
             "group": "Operaciones",
-            "pages": []
+            "pages": [
+              "operaciones/nuevo_panel_de_bienvenida"
+            ]
           },
           {
             "group": "Conversaciones",
