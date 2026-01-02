@@ -1,0 +1,202 @@
+---
+title: "Creación de Panel Personalizado"
+description: "Aprende a crear y personalizar tu propio panel con gráficos para visualizar información de manera rápida y eficiente."
+---
+
+
+# Creación de panel personalizado
+
+La aplicación de Informes y Paneles permite crear y personalizar tu propio panel con los gráficos que prefieras para visualizar información de manera rápida y eficiente.
+
+<h4><strong>¿Cómo crear mi panel?</strong></h4>
+<p>Para configurar un nuevo panel, sigue estos pasos:</p>
+<Steps>
+<Step title={<strong>1. Accede a la aplicación y presiona "Nuevo panel"</strong>}>
+  Accede a la aplicación Informes y Paneles y presiona "Nuevo panel".
+
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-23-2025-04-46-16-8321-PM.png" alt="Interfaz de la aplicación para crear un nuevo panel" />
+  </Frame>
+</Step>
+
+<Step title={<strong>2. Configura las opciones generales del panel</strong>}>
+  En el margen derecho, selecciona:
+  <ul>
+    <li><strong>Título del panel</strong></li>
+    <li><strong>Descripción</strong></li>
+    <li><strong>Paleta de colores</strong> para la visualización de los gráficos</li>
+    <li><strong>Período a visualizar</strong> en la configuración</li>
+  </ul>
+
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-23-2025-04-54-26-5006-PM.png" alt="Opciones de configuración general del panel" />
+  </Frame>
+</Step>
+</Steps>
+
+<p>En el margen izquierdo encontrarás los componentes disponibles para construir tu panel.</p>
+
+<p><strong>Estructura:</strong></p>
+<ul>
+  <li>
+    <p><strong >Columnas:</strong> Sirven para organizar el panel en distintas secciones. Es necesario agregar al menos una columna al arrastrarla hacia el panel, ya que esto habilita la posibilidad de insertar gráficos posteriormente.</p>
+  </li>
+  <li>
+    <p><strong >Caja contenedora:</strong> Permite insertar un recuadro dentro de una columna para agrupar y estructurar mejor los elementos.</p>
+  </li>
+</ul>
+
+<p><strong>Gráficos</strong>:</p>
+<p  > - Puedes elegir entre gráficos de torta, barras, líneas o combinados (barra y línea).</p>
+
+<p><strong>Otros</strong>:</p>
+<div><strong> - Datos</strong>: Incluyen KPI, totales, tabla y contadores.</div>
+
+<Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-23-2025-04-55-13-2535-PM.png" alt="Componentes de datos disponibles para el panel" />
+</Frame>
+
+<h3 >Construcción del Panel</h3>
+<Steps>
+  <Step title={<strong>1. Estructura el panel con columnas</strong>}>
+    Arrastra y suelta las columnas deseadas para estructurar el panel.
+  </Step>
+  <Step title={<strong>2. Agrega y configura gráficos</strong>}>
+    Agrega y configura los gráficos según tus necesidades.
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-23-2025-04-56-11-4374-PM.png" alt="Arrastrar y soltar un gráfico en el panel" />
+    </Frame>
+  </Step>
+  <Step title={<strong>3. Selecciona el informe a utilizar</strong>}>
+    Haz clic sobre el recuadro del gráfico y, en el margen derecho, selecciona "Elegir informe a utilizar".
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-03-2025-02-37-22-6893-PM.png" alt="Seleccionar informe para el gráfico" />
+    </Frame>
+  </Step>
+  <Step title={<strong>4. Elige el informe</strong>}>
+    Selecciona el informe que deseas visualizar en el gráfico.
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-03-2025-02-37-43-4100-PM.png" alt="Lista de informes disponibles para visualizar" />
+    </Frame>
+  </Step>
+  <Step title={<strong>5. Personaliza variables</strong>}>
+    Personaliza cada gráfico utilizando diferentes variables.
+  </Step>
+</Steps>
+
+<h3 >Configuración de Gráficos</h3>
+
+<h4><strong>Gráfico de Torta</strong></h4>
+<ul>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación.</li>
+  <li><strong>Agrupar por</strong>: Criterio para organizar la información.</li>
+  <li><strong>Radio interno</strong>: Personaliza la visualización.</li>
+  <li><strong>Mostrar leyenda</strong>: Habilita la visualización de segmentos.</li>
+  <li><strong>Número máximo de valores</strong>: Limita la cantidad de datos mostrados.</li>
+  <li><strong>Altura máxima</strong>: Define el alto del gráfico.</li>
+  <li><strong>Columna a filtrar</strong>: Permite establecer un filtro en el gráfico.</li>
+  <li><strong>Filtrar por</strong>: Campo obligatorio con la variable a visualizar en caso de seleccionar columna a filtrar.</li>
+  <li><strong>Tipo de fecha:</strong> permite determina que variable de fecha se utilizará para mostrar el grafico (al igual que sucede en el informe).</li>
+</ul>
+
+<h4 ><strong>Gráfico de Barras</strong></h4>
+<ul>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación.</li>
+  <li><strong>Agrupar por</strong>: Criterio para organizar la información.</li>
+  <li><strong>Barras</strong>: Permite configurar las barras que se mostrarán en el gráfico. Incluye:
+    <ul>
+      <li><em>Columna: </em>Selecciona la columna de datos que se utilizará para generar las barras.</li>
+      <li><em>Tipo de agregación: </em>Determina cómo se procesarán los datos. Opciones: Suma o Conteo.</li>
+      <li><em>Filtro: </em>Aplica un filtro adicional para limitar los datos.</li>
+    </ul>
+  </li>
+  <li><strong>Mostrar leyenda:</strong> Habilita la visualización de segmentos.</li>
+  <li><strong>Número máximo de valores</strong>: Limita la cantidad de datos mostrados.</li>
+  <li><strong>Altura máxima</strong>: Define el alto del gráfico.</li>
+  <li><strong>Columna a filtrar</strong>: Permite establecer un filtro en el gráfico.</li>
+  <li><strong>Filtrar por</strong>: Campo obligatorio con la variable a visualizar en caso de seleccionar columna a filtrar.</li>
+</ul>
+
+<h4 ><strong>Gráfico de Líneas</strong></h4>
+<ul>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación.</li>
+  <li><strong>Eje X</strong>.</li>
+  <li><strong>Líneas:</strong> Permite configurar las líneas que se mostrarán en el gráfico. Incluye:
+    <ul>
+      <li><em>Columna: </em>Selecciona la columna de datos que se utilizará para generar las líneas.</li>
+      <li><em>Tipo de agregación: </em>Determina cómo se procesarán los datos. Opciones: Suma o Conteo.</li>
+    </ul>
+  </li>
+  <li><em>Filtro: </em>Aplica un filtro adicional para limitar los datos.</li>
+  <li><strong>Número máximo de valores</strong>: Limita la cantidad de datos mostrados.</li>
+  <li><strong>Columna a filtrar</strong>: Permite establecer un filtro en el gráfico.</li>
+  <li><strong>Altura máxima</strong>: Define el alto del gráfico.</li>
+  <li><strong>Ordenar</strong>: Ascendente o descendente.</li>
+  <li><strong>Filtrar por</strong>: Campo obligatorio con la variable a visualizar.</li>
+</ul>
+
+<h4 ><strong>Gráfico Compuesto</strong></h4>
+<ul>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación.</li>
+  <li><strong>Agrupar por</strong>: Criterio para organizar la información.</li>
+  <li><strong>Gráficos</strong>: Permite configurar los gráficos que se mostrarán. Incluye:
+    <ul>
+      <li>Columna: Selecciona la columna de datos que se utilizará para generar los gráficos.</li>
+      <li>Tipo de agregación: Opciones: Suma o Conteo.</li>
+      <li>Filtro: Aplica un filtro adicional.</li>
+    </ul>
+  </li>
+  <li><strong>Número máximo de valores</strong>: Limita la cantidad de datos mostrados.</li>
+  <li><strong>Columna a filtrar</strong>: Permite establecer un filtro en el gráfico.</li>
+  <li><strong>Altura máxima</strong>: Define el alto del gráfico.</li>
+  <li><strong>Filtrar por</strong>: Campo obligatorio con la variable a visualizar.</li>
+</ul>
+
+<h4><strong>KPI</strong></h4>
+<ul>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación del gráfico.</li>
+</ul>
+
+<h4><strong>Total</strong></h4>
+<ul>
+  <li><strong>Tipo de agregación</strong>: Método utilizado para calcular el dato.</li>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación del gráfico.</li>
+  <li><strong>Prefijo</strong>: Texto opcional que se mostrará antes del valor.</li>
+  <li><strong>Sufijo</strong>: Texto opcional que se mostrará después del valor.</li>
+</ul>
+
+<h4><strong>Tabla</strong></h4>
+<ul>
+  <li><strong>Número máximo de valores a mostrar:</strong> Limita la cantidad de datos mostrados.</li>
+  <li><strong>Columnas a mostrar:</strong> Permite seleccionar los datos del informe que se desean visualizar en la tabla.</li>
+  <li><strong>Columna de filtro</strong>: Campo utilizado para filtrar los datos.</li>
+  <li><strong>Valor del filtro</strong>: Criterio aplicado para filtrar la información.</li>
+</ul>
+
+<h4><strong>Contador</strong></h4>
+<ul>
+  <li><strong>Título</strong>: Nombre del gráfico.</li>
+  <li><strong>Descripción</strong>: Breve explicación del gráfico.</li>
+  <li><strong>Ícono:</strong> Permite agregar un ícono al título.</li>
+  <li><strong>Color del texto:</strong> Permite seleccionar un color para los datos mostrados.</li>
+  <li><strong>Columna:</strong> Permite seleccionar los datos del informe que se desean visualizar en el contador.</li>
+  <li><strong>Tipo de comparación:</strong> Permite seleccionar un valor fijo de comparación o bien otro dato seleccionado columna de comparación.</li>
+  <li><strong>Tipo de agregación</strong>: Método utilizado para calcular el dato.</li>
+  <li><strong>Columna de filtro</strong>: Campo utilizado para filtrar los datos.</li>
+  <li><strong>Valor del filtro</strong>: Criterio aplicado para filtrar la información.</li>
+</ul>
+
+<h3 >Finalización</h3>
+<p>Una vez configurados todos los gráficos, haz clic en el botón "Crear panel" para guardarlo.</p>
+<Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-26-2025-08-41-52-0749-PM.png" alt="Botón para crear panel" />
+</Frame>

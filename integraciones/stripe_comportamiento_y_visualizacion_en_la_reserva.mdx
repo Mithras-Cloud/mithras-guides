@@ -1,0 +1,87 @@
+---
+title: "Stripe: Comportamiento y Visualización en la Reserva"
+description: "En esta guía se detalla cómo identificar el estado de los pagos con Stripe dentro de una reserva (pagos exitosos y rechazados)."
+---
+
+
+La información del pago (o intento de pago) se reflejará detalladamente dentro de la reserva creada en el sistema.
+
+Toda reserva presenta:
+
+*   **Cabecera de la Reserva:** donde se muestra el método de pago seleccionado, el importe total de la reserva, el monto efectivamente pagado y el saldo pendiente.
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-48-5197-PM.png" alt="Cabecera de la reserva mostrando detalles del pago" />
+</Frame>
+
+De acuerdo al estado del pago con Stripe:
+
+*   **Reserva con Pago Exitoso:**
+    *   **Encabezado:** Indicará el medio de pago (nombre ingresado en la aplicación medio de pago), el importe total, el monto pagado bajo el concepto "PAGADO" y el saldo pendiente (que será cero si se cobró el 100%, o un valor restante si se cobró una garantía parcial).
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-48-8105-PM.png" alt="Cabecera de reserva con pago exitoso" />
+</Frame>
+
+    *   **Historial:** Se registrará un evento con el detalle del **pago exitoso**, incluyendo el **estado**, el **número de operación** y cualquier otra información relevante.
+
+Se visualizará también el **envío del correo de pre-reserva** y del **correo de confirmación** correspondiente.
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-48-2070-PM.png" alt="Historial de reserva mostrando evento de pago exitoso" />
+</Frame>
+
+    *   **Pestaña Pagos:** El pago se reflejará como acreditado en esta sección.
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-49-4993-PM.png" alt="Pestaña Pagos mostrando pago acreditado" />
+</Frame>
+
+**Reserva con Pago Rechazado o Erróneo:**
+
+    *   **Encabezado:** Indicará el intento de pago a través de la pasarela, el importe total de la reserva, el monto pagado figurará como $0 y el saldo pendiente reflejará el total de la reserva.
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-48-5197-PM.png" alt="Cabecera de reserva con pago rechazado" />
+</Frame>
+
+    *   **Historial:** Se registrará un evento detallando el estado del pago (rechazado, anulado, error) y el envío del correo de notificación de pre-reserva y el mail correspondiente a pago rechazado.
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-47-2464-PM.png" alt="Historial de reserva mostrando evento de pago rechazado" />
+</Frame>
+
+    *   **Pestaña Pagos:** No se registrará ningún pago acreditado en esta sección.
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-41-47-5427-PM.png" alt="Pestaña Pagos sin pagos acreditados" />
+</Frame>
+
+En resumen:
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-49-1310-PM.png" alt="Resumen visual de estados de pago con Stripe" />
+</Frame>
+
+**Estado del pago con Stripe:**
+
+Estos estados se detallan en el **historial** de cada reserva:
+
+*   **Pago rechazado:**
+
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-47-2464-PM.png" alt="Historial indicando pago rechazado" />
+</Frame>
+
+Mensaje:
+ERROR: La transacción con el ID Externo #12317635cac93f29996a2c354cc7054e23aba6c285beae609abb8d2f8559e904 no se ha podido pagar con el proveedor Stripe. Motivo: La transacción fue rechazada. Autor: API
+
+*   **Pago Exitoso:**
+
+Visual:
+<Frame>
+  <img src="https://7398646.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-41-47-0298-PM.png" alt="Historial indicando pago exitoso" />
+</Frame>
+
+Mensaje:
+La transacción con el ID Externo #pi_3Seii9IANsAijvA51TpmdptS fue pagada exitosamente con Stripe usando la tarjeta Mastercard (BIN: 521876). Monto total: 84.70
