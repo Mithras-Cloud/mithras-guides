@@ -3,68 +3,126 @@ title: "¿Cómo importar Datos del Hotel desde Booking.com?"
 description: "Importación de Datos de Hotel desde Booking.com"
 ---
 
-
 <div dir="ltr">
-<p style="font-size: 1.375rem; font-weight: bold; text-decoration-line: inherit;">🏨 Importación de Datos de Hotel desde Booking.com</p>
-<blockquote data-path-to-node="3">
-<p data-path-to-node="3,0">Aprende a importar <strong>automáticamente</strong> la información de tu hotel desde Booking.com, incluyendo datos generales, habitaciones, fotos, servicios y reseñas, para una configuración inicial <strong>rápida y eficiente</strong>.</p>
-</blockquote>
-<hr data-path-to-node="4">
-<h4>⚙️ Importación de Datos de Hotel</h4>
-<p data-path-to-node="6">Esta funcionalidad te permite importar automáticamente la información de tu establecimiento desde su perfil público en Booking.com. El proceso extrae datos como información general, categorías de habitaciones, fotos, servicios, distancias a puntos de interés y reseñas, agilizando significativamente la <strong>configuración inicial</strong> del hotel en el sistema. Los datos importados pueden ser <strong>revisados y editados</strong> antes de ser guardados de forma definitiva.</p>
-<h3 data-path-to-node="7">Pasos para la Importación:</h3>
-<Steps>
-<Step title="Accede a la Herramienta de Importación">
-Navega hasta el menú lateral izquierdo y selecciona la opción <strong>"Configuración"</strong>.
-Se desplegará un submenú con diversas opciones de configuración del sistema.
-</Step>
-<Step title="Inicia la Importación desde Booking.com">
-Dentro del submenú de "Configuración", haz clic en la opción <strong>"Importar desde Booking"</strong>.
-Se abrirá una ventana modal titulada "Importar datos desde Booking", que te guiará a través del proceso de extracción en tres pasos: <strong>"Busca tu hotel"</strong>, <strong>"Extrae el contenido"</strong> y <strong>"Revisa los cambios"</strong>.
-<Frame>
-<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_1_6930902c28426.jpg" alt="Ventana modal 'Importar datos desde Booking' mostrando el primer paso." loading="lazy" />
-</Frame>
-</Step>
-<Step title="Busca tu Hotel">
-En el primer paso, "Busca tu hotel", escribe el nombre del establecimiento en el campo de búsqueda <strong>"Buscar por nombre de hotel..."</strong>.
-<Tip>A medida que escribes, el sistema buscará coincidencias en Booking.com y mostrará los resultados en tiempo real.</Tip>
-Una vez que aparecen los resultados, identifica y <strong>selecciona el hotel correcto</strong> de la lista.
-Cada resultado muestra el nombre del hotel, su ubicación y un enlace a su perfil en Booking.com para verificación.
-Marca la casilla de radio correspondiente al hotel deseado.
-<Frame>
-<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_3_6930902c6cd50.jpg" alt="Lista de resultados de búsqueda para el hotel, con una opción seleccionada." loading="lazy" />
-</Frame>
-</Step>
-<Step title="Extrae los Datos del Hotel">
-Con el hotel correcto seleccionado, haz clic en el botón <strong>"Extraer datos"</strong>, ubicado en la esquina inferior derecha de la ventana modal.
-Esta acción inicia el proceso de <em>scraping</em>, durante el cual el sistema recopila toda la <strong>información pública</strong> del perfil del hotel.
-<Frame>
-<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_5_6930902cac44a.jpg" alt="Pantalla de revisión con la información extraída organizada en secciones desplegables." loading="lazy" />
-</Frame>
-</Step>
-<Step title="Revisa y Edita la Información">
-Una vez finalizada la extracción, el sistema avanza al tercer paso, <strong>"Revisa los cambios"</strong>. En esta pantalla se muestra toda la información extraída, organizada en secciones desplegables como <strong>"Datos generales"</strong>, <strong>"Habitaciones"</strong>, <strong>"Fotos"</strong>, <strong>"Servicios del establecimiento"</strong>, <strong>"Distancias a atractivos"</strong> y <strong>"Reseñas positivas"</strong>.
-<Info>Es posible <strong>revisar y editar</strong> la información antes de guardarla.</Info>
-Por ejemplo, al desplegar la sección "Habitaciones", puedes modificar los nombres, añadir descripciones o agregar nuevas características (<em>amenities</em>) escribiéndolas en el campo correspondiente y <strong>separándolas por comas</strong>.
-<Frame>
-<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_6_6930902cd53f3.jpg" alt="Sección de edición de una habitación, agregando las características 'Netflix' y 'Cafetera Nespresso'." loading="lazy" />
-</Frame>
-</Step>
-<Step title="Confirma los Cambios">
-Después de revisar y realizar todas las modificaciones necesarias en las distintas secciones, haz clic en el botón <strong>"Confirmar cambios"</strong> para guardar toda la información importada en el sistema.
-<Warning>Aparecerá una ventana de confirmación advirtiendo que esta acción <strong>reemplazará la información actual</strong> del hotel y <strong>no se puede deshacer</strong>.</Warning>
-<Frame>
-<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790317_8_6930902d23132.jpg" alt="Ventana emergente de confirmación y clic en el botón 'Confirmar'." loading="lazy" />
-</Frame>
-Para proceder, haz clic en el botón <strong>"Confirmar"</strong>.
-El sistema comenzará a guardar los datos.
-</Step>
-<Step title="Verifica la Importación">
-Una vez que los cambios han sido guardados, el sistema muestra una notificación indicando que el proceso fue <strong>exitoso</strong>.
-Para verificar el contenido, puedes visitar las distintas aplicaciones donde ha sido guardado: <strong>"Biblioteca de Archivos"</strong>, <strong>"Categorías de Habitaciones"</strong>, <strong>"Políticas de cancelación"</strong>, <strong>"Planes Tarifarios"</strong>, etc.
-<Check>
-El proceso de importación ha sido completado exitosamente.
-</Check>
-</Step>
-</Steps>
+  <p style="font-size: 1.375rem; font-weight: bold; text-decoration-line: inherit;">
+    🏨 Importación de Datos de Hotel desde Booking.com
+  </p>
+  <blockquote data-path-to-node="3">
+    <p data-path-to-node="3,0">
+      Aprende a importar <strong>automáticamente</strong> la información de tu hotel desde
+      Booking.com, incluyendo datos generales, habitaciones, fotos, servicios y reseñas, para una
+      configuración inicial <strong>rápida y eficiente</strong>.
+    </p>
+  </blockquote>
+  <hr data-path-to-node="4" />
+  <h4>⚙️ Importación de Datos de Hotel</h4>
+  <p data-path-to-node="6">
+    Esta funcionalidad te permite importar automáticamente la información de tu establecimiento
+    desde su perfil público en Booking.com. El proceso extrae datos como información general,
+    categorías de habitaciones, fotos, servicios, distancias a puntos de interés y reseñas,
+    agilizando significativamente la <strong>configuración inicial</strong> del hotel en el sistema.
+    Los datos importados pueden ser <strong>revisados y editados</strong> antes de ser guardados de
+    forma definitiva.
+  </p>
+  <h3 data-path-to-node="7">Pasos para la Importación:</h3>
+  <Steps>
+    <Step title="Accede a la Herramienta de Importación">
+      Navega hasta el menú lateral izquierdo y selecciona la opción <strong>"Configuración"</strong>.
+      Se desplegará un submenú con diversas opciones de configuración del sistema.
+    </Step>
+    <Step title="Inicia la Importación desde Booking.com">
+      Dentro del submenú de "Configuración", haz clic en la opción{" "}
+      <strong>"Importar desde Booking"</strong>. Se abrirá una ventana modal titulada "Importar
+      datos desde Booking", que te guiará a través del proceso de extracción en tres pasos:{" "}
+      <strong>"Busca tu hotel"</strong>, <strong>"Extrae el contenido"</strong> y{" "}
+      <strong>"Revisa los cambios"</strong>.
+      <Frame>
+        <img
+          src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_1_6930902c28426.jpg"
+          alt="Ventana modal 'Importar datos desde Booking' mostrando el primer paso."
+          loading="lazy"
+        />
+      </Frame>
+    </Step>
+    <Step title="Busca tu Hotel">
+      En el primer paso, "Busca tu hotel", escribe el nombre del establecimiento en el campo de
+      búsqueda <strong>"Buscar por nombre de hotel..."</strong>.
+      <Tip>
+        A medida que escribes, el sistema buscará coincidencias en Booking.com y mostrará los
+        resultados en tiempo real.
+      </Tip>
+      Una vez que aparecen los resultados, identifica y <strong>
+        selecciona el hotel correcto
+      </strong> de la lista. Cada resultado muestra el nombre del hotel, su ubicación y un enlace a su
+      perfil en Booking.com para verificación. Marca la casilla de radio correspondiente al hotel deseado.
+      <Frame>
+        <img
+          src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_3_6930902c6cd50.jpg"
+          alt="Lista de resultados de búsqueda para el hotel, con una opción seleccionada."
+          loading="lazy"
+        />
+      </Frame>
+    </Step>
+    <Step title="Extrae los Datos del Hotel">
+      Con el hotel correcto seleccionado, haz clic en el botón <strong>"Extraer datos"</strong>,
+      ubicado en la esquina inferior derecha de la ventana modal. Esta acción inicia el proceso de{" "}
+      <em>scraping</em>, durante el cual el sistema recopila toda la{" "}
+      <strong>información pública</strong> del perfil del hotel.
+      <Frame>
+        <img
+          src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_5_6930902cac44a.jpg"
+          alt="Pantalla de revisión con la información extraída organizada en secciones desplegables."
+          loading="lazy"
+        />
+      </Frame>
+    </Step>
+    <Step title="Revisa y Edita la Información">
+      Una vez finalizada la extracción, el sistema avanza al tercer paso,{" "}
+      <strong>"Revisa los cambios"</strong>. En esta pantalla se muestra toda la información
+      extraída, organizada en secciones desplegables como <strong>"Datos generales"</strong>,{" "}
+      <strong>"Habitaciones"</strong>, <strong>"Fotos"</strong>,{" "}
+      <strong>"Servicios del establecimiento"</strong>, <strong>"Distancias a atractivos"</strong> y{" "}
+      <strong>"Reseñas positivas"</strong>.
+      <Info>
+        Es posible <strong>revisar y editar</strong> la información antes de guardarla.
+      </Info>
+      Por ejemplo, al desplegar la sección "Habitaciones", puedes modificar los nombres, añadir descripciones
+      o agregar nuevas características (<em>amenities</em>) escribiéndolas en el campo correspondiente
+      y <strong>separándolas por comas</strong>
+      <Frame>
+        <img
+          src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790316_6_6930902cd53f3.jpg"
+          alt="Sección de edición de una habitación, agregando las características 'Netflix' y 'Cafetera Nespresso'."
+          loading="lazy"
+        />
+      </Frame>
+    </Step>
+    <Step title="Confirma los Cambios">
+      Después de revisar y realizar todas las modificaciones necesarias en las distintas secciones,
+      haz clic en el botón <strong>"Confirmar cambios"</strong> para guardar toda la información
+      importada en el sistema.
+      <Warning>
+        Aparecerá una ventana de confirmación advirtiendo que esta acción{" "}
+        <strong>reemplazará la información actual</strong> del hotel y{" "}
+        <strong>no se puede deshacer</strong>.
+      </Warning>
+      <Frame>
+        <img
+          src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2025/12/03/screenshot_1764790317_8_6930902d23132.jpg"
+          alt="Ventana emergente de confirmación y clic en el botón 'Confirmar'."
+          loading="lazy"
+        />
+      </Frame>
+      Para proceder, haz clic en el botón <strong>"Confirmar"</strong>. El sistema comenzará a guardar
+      los datos.
+    </Step>
+    <Step title="Verifica la Importación">
+      Una vez que los cambios han sido guardados, el sistema muestra una notificación indicando que
+      el proceso fue <strong>exitoso</strong>. Para verificar el contenido, puedes visitar las
+      distintas aplicaciones donde ha sido guardado: <strong>"Biblioteca de Archivos"</strong>,{" "}
+      <strong>"Categorías de Habitaciones"</strong>, <strong>"Políticas de cancelación"</strong>,{" "}
+      <strong>"Planes Tarifarios"</strong>, etc.
+      <Check>El proceso de importación ha sido completado exitosamente.</Check>
+    </Step>
+  </Steps>
 </div>
