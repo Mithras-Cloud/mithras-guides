@@ -3,12 +3,11 @@ title: "Cómo importar reservas al sistema"
 description: "En esta guía explicaremos cómo importar reservas a Pxsol que están en formato Excel."
 ---
 
-
 Es muy importante que sigan todos los pasos y recomendaciones de esta guía al realizar la carga de reservas, para que el sistema lo cargue de manera correcta. Recordar que si el hay algún error de formato en el archivo a cargar, no podrán cargarlas y deberán realizar todo el proceso nuevamente.
 
 <Tip>
-Novedad: Ahora se puede descargar la plantilla de excel desde el sitema, completar los datos y luego cargar las reservas de forma masiva
-{% video_player "embed_player" overrideable=False, type='scriptV4', hide_playlist=True, viral_sharing=False, embed_button=False, autoplay=False, hidden_controls=False, loop=False, muted=False, full_width=False, width='688', height='387', player_id='70329749526', style='' %}
+  Novedad: Ahora se puede descargar la plantilla de excel desde el sitema, completar los datos y
+  luego cargar las reservas de forma masiva
 </Tip>
 
 Para cargar el archivo en Pxsol seguir los siguiente pasos:
@@ -18,77 +17,90 @@ Para cargar el archivo en Pxsol seguir los siguiente pasos:
 **2-** Dirigirse al **omnibox** que está en la parte superior de la plataforma y hacer click para comenzar
 
 <Frame>
-<img src="/images/guide/omnibox.png" alt="Omnibox en la parte superior de la plataforma" />
+  <img src="/images/guide/omnibox.png" alt="Omnibox en la parte superior de la plataforma" />
 </Frame>
 
 **3-** En la búsqueda poner **Importar Reservas** y luego hacer click en la aplicación **Importar Reservas**
 
 <Frame>
-<img src="/images/guide/importar_reservas_app.png" alt="Aplicación Importar Reservas en Pxsol" />
+  <img src="/images/guide/importar_reservas_app.png" alt="Aplicación Importar Reservas en Pxsol" />
 </Frame>
 
 **4-** Seleccionar Google Sheet para abrir un archivo con el formato necesario para Importar las reservas
 
 <Frame>
-<img src="/images/guide/google_sheet_template.png" alt="Opción para abrir plantilla de Google Sheet" />
+  <img
+    src="/images/guide/google_sheet_template.png"
+    alt="Opción para abrir plantilla de Google Sheet"
+  />
 </Frame>
 
 **5-** Seleccionar **Hacer una Copia**
 
 <Frame>
-<img src="/images/guide/hacer_una_copia.png" alt="Opción para hacer una copia de la plantilla" />
+  <img src="/images/guide/hacer_una_copia.png" alt="Opción para hacer una copia de la plantilla" />
 </Frame>
 
 **6-** Completar la planilla con los datos de cada una de las reservas que deseamos importar al sistema.
 
 <Tip>
-Cada línea de la planilla corresponde a una habitación en una reserva. No se podrá importar 1 reserva con varias habitaciones. En caso de reservas de grupo recomendamos cargarlas manualmente desde Cargar Reservas para que en su check out se pueda realizar una sola factura a todas las habitaciones sin tener que fusionar las reservas.
+  Cada línea de la planilla corresponde a una habitación en una reserva. No se podrá importar 1
+  reserva con varias habitaciones. En caso de reservas de grupo recomendamos cargarlas manualmente
+  desde Cargar Reservas para que en su check out se pueda realizar una sola factura a todas las
+  habitaciones sin tener que fusionar las reservas.
 </Tip>
 
-*   **Código Externo:** Este campo no es obligatorio. Sirve para indicar el número de la reserva si pertenece a otro sistema.
+- **Código Externo:** Este campo no es obligatorio. Sirve para indicar el número de la reserva si pertenece a otro sistema.
 
 <Warning>
-No pueden haber dos o más números repetidos. Cada número externo corresponderá a una reserva. En caso de repetirse la información de las dos filas se copiarán en la misma reserva. La información de una fila pisará la información de la otra.
+  No pueden haber dos o más números repetidos. Cada número externo corresponderá a una reserva. En
+  caso de repetirse la información de las dos filas se copiarán en la misma reserva. La información
+  de una fila pisará la información de la otra.
 </Warning>
 
-*   **Nombre del Huésped:** Permite visualizar el nombre del huésped en la reserva.
-*   **Apellido del Huésped:** No es un campo obligatorio. Permite visualizar el apellido del huésped en la reserva. Es muy importante para la utilización del Web check in que este campo esté correcto. Recomendamos separa el nombre del apellido del huésped a la hora de importar reservas.
-*   **Cantidad de pasajeros:** Cantidad de huéspedes que alojará esta reserva en esta habitación:
-*   **Email:** No es un campo obligatorio. Correo del huésped titular. Importante para los envíos de correos automáticos del CRM.
-*   **Teléfono:** No es un campo obligatorio. Teléfono del huésped titular.
-*   **Fecha de Ingreso:** Fecha de check in de la reserva. Es importante utilizar el formato que se muestra en la planilla de ejemplo que se abrió
-*   **Fecha de Egreso:** Fecha de check out de la reserva. Es importante utilizar el formato que se muestra en la planilla de ejemplo que se abrió
-*   **N° de Hab:** Indique el número de habitación reservada, de la misma forma que fue configurado dentro del PLANO DE OCUPACIÓN. Debe colocarse el nombre de la habitación física.
-*   **Código Tipo Hab:** Cargar el código de la categoría de habitación reservada. Dicha categoría deberá existir en la configuración de su plataforma en Pxsol y tener ese código.
-*   **Moneda:** Moneda con el que se cargará el monto total de la reserva.
-*   **Pago Total:** Monto total de la reserva. Puede cargarse con impuestos incluidos o no. En la carga del archivo se aclarará si los montos son Netos o Finales
-*   **Fuente:** Canal de venta que generó la reserva. Ejemplo OTA (Agencia Online de Viajes)
-*   **Medio:** Medio del canal que generó la reserva si aplica. Ej: Fuente: OTA, Medio: Booking.com
-*   **Memo:** Aclaraciones y comentarios que deseamos que aparezcan en la reserva para visualización interna del hotel.
+- **Nombre del Huésped:** Permite visualizar el nombre del huésped en la reserva.
+- **Apellido del Huésped:** No es un campo obligatorio. Permite visualizar el apellido del huésped en la reserva. Es muy importante para la utilización del Web check in que este campo esté correcto. Recomendamos separa el nombre del apellido del huésped a la hora de importar reservas.
+- **Cantidad de pasajeros:** Cantidad de huéspedes que alojará esta reserva en esta habitación:
+- **Email:** No es un campo obligatorio. Correo del huésped titular. Importante para los envíos de correos automáticos del CRM.
+- **Teléfono:** No es un campo obligatorio. Teléfono del huésped titular.
+- **Fecha de Ingreso:** Fecha de check in de la reserva. Es importante utilizar el formato que se muestra en la planilla de ejemplo que se abrió
+- **Fecha de Egreso:** Fecha de check out de la reserva. Es importante utilizar el formato que se muestra en la planilla de ejemplo que se abrió
+- **N° de Hab:** Indique el número de habitación reservada, de la misma forma que fue configurado dentro del PLANO DE OCUPACIÓN. Debe colocarse el nombre de la habitación física.
+- **Código Tipo Hab:** Cargar el código de la categoría de habitación reservada. Dicha categoría deberá existir en la configuración de su plataforma en Pxsol y tener ese código.
+- **Moneda:** Moneda con el que se cargará el monto total de la reserva.
+- **Pago Total:** Monto total de la reserva. Puede cargarse con impuestos incluidos o no. En la carga del archivo se aclarará si los montos son Netos o Finales
+- **Fuente:** Canal de venta que generó la reserva. Ejemplo OTA (Agencia Online de Viajes)
+- **Medio:** Medio del canal que generó la reserva si aplica. Ej: Fuente: OTA, Medio: Booking.com
+- **Memo:** Aclaraciones y comentarios que deseamos que aparezcan en la reserva para visualización interna del hotel.
 
 **7-** Descargar el archivo en CSV
 
 <Frame>
-<img src="/images/guide/descargar_csv.png" alt="Opción para descargar el archivo en formato CSV" />
+  <img
+    src="/images/guide/descargar_csv.png"
+    alt="Opción para descargar el archivo en formato CSV"
+  />
 </Frame>
 
 **8-** Seleccionar el archivo que hemos descargado en formato CSV.
 
 <Frame>
-<img src="/images/guide/seleccionar_archivo_csv.png" alt="Seleccionar el archivo CSV para subir" />
+  <img
+    src="/images/guide/seleccionar_archivo_csv.png"
+    alt="Seleccionar el archivo CSV para subir"
+  />
 </Frame>
 
 **5-** Corroborar que se haya elegido el archivo correcto y seleccionar Subir.
 
 <Frame>
-<img src="/images/guide/subir_archivo.png" alt="Botón para subir el archivo CSV" />
+  <img src="/images/guide/subir_archivo.png" alt="Botón para subir el archivo CSV" />
 </Frame>
 
-**6-** Se desplegará una lista de campos:
-    *   **Información acerca de nuestro hotel**: no hay que modificar ni agregar ningún dato.
+**6-** Se desplegará una lista de campos: \* **Información acerca de nuestro hotel**: no hay que modificar ni agregar ningún dato.
 
 <Frame>
-<img src="/images/guide/informacion_hotel.png" alt="Sección de información del hotel" />
+  <img src="/images/guide/informacion_hotel.png" alt="Sección de información del hotel" />
 </Frame>
 
     *   **Impuesto**: Ingresar el valor del impuesto que se aplica en porcentaje. Por ejemplo: 21.
@@ -97,55 +109,64 @@ No pueden haber dos o más números repetidos. Cada número externo corresponder
     *   **Selección de Columnas**: Deberá vincular cada campo con la columna correspondiente del archivo subido. Si el archivo cargado es el correcto y tiene el formato correcto, en cada campo aparecerán todas las columnas que se pueden elegir.
 
 <Frame>
-<img src="/images/guide/seleccion_columnas.png" alt="Vincular campos con columnas del archivo" />
+  <img src="/images/guide/seleccion_columnas.png" alt="Vincular campos con columnas del archivo" />
 </Frame>
 
 **7-** Una vez finalizada la carga, seleccionar Importar.
 
 <Frame>
-<img src="/images/guide/importar_datos.png" alt="Botón para importar los datos" />
+  <img src="/images/guide/importar_datos.png" alt="Botón para importar los datos" />
 </Frame>
 
 **8-** Les mostrará una visualización de la información cargada. Si es correcta seleccionar Comenzar Importación.
 
 <Frame>
-<img src="/images/guide/visualizacion_carga.png" alt="Visualización de la información cargada" />
+  <img src="/images/guide/visualizacion_carga.png" alt="Visualización de la información cargada" />
 </Frame>
 
 <Frame>
-<img src="/images/guide/comenzar_importacion.png" alt="Botón para comenzar la importación" />
+  <img src="/images/guide/comenzar_importacion.png" alt="Botón para comenzar la importación" />
 </Frame>
 
 **9-** Visualizará que las reservas cargadas estarán Pendientes y sin un número de reserva asignado. Deberá esperar unos minutos.
 
 <Frame>
-<img src="/images/guide/reservas_pendientes.png" alt="Reservas en estado pendiente" />
+  <img src="/images/guide/reservas_pendientes.png" alt="Reservas en estado pendiente" />
 </Frame>
 
 <Frame>
-<img src="/images/guide/sin_numero_reserva.png" alt="Reservas sin número de reserva asignado" />
+  <img src="/images/guide/sin_numero_reserva.png" alt="Reservas sin número de reserva asignado" />
 </Frame>
 
 **10-** Luego de unos minutos, seleccionar Comprobar Importación, las reservas pasarán a estado Importada y con un número de reserva asignado.
 
 <Frame>
-<img src="/images/guide/comprobar_importacion.png" alt="Botón para comprobar la importación" />
+  <img src="/images/guide/comprobar_importacion.png" alt="Botón para comprobar la importación" />
 </Frame>
 
 <Frame>
-<img src="/images/guide/reservas_importadas.png" alt="Reservas con estado importada y número asignado" />
+  <img
+    src="/images/guide/reservas_importadas.png"
+    alt="Reservas con estado importada y número asignado"
+  />
 </Frame>
 
 **11-** Para importar más reservas deberá eliminar el historial de reservas importadas. Para esto seleccionar el botón Eliminar Reservas. La función de este botón es solamente limpiar el historial, no modificará el estado de las reservas.
 
 <Frame>
-<img src="/images/guide/eliminar_historial.png" alt="Botón para eliminar el historial de reservas importadas" />
+  <img
+    src="/images/guide/eliminar_historial.png"
+    alt="Botón para eliminar el historial de reservas importadas"
+  />
 </Frame>
 
 **12-** Todas las reservas cargadas estarán en **Reservas - Todas las Reservas**.
 
 <Frame>
-<img src="/images/guide/todas_las_reservas.png" alt="Listado de todas las reservas en el sistema" />
+  <img
+    src="/images/guide/todas_las_reservas.png"
+    alt="Listado de todas las reservas en el sistema"
+  />
 </Frame>
 
 **Formato del archivo a subir, si no lo van a hacer mediante las plantillas de pxsol**
@@ -154,34 +175,36 @@ Primero vamos a ver el formato y la información que debe contener el archivo Ex
 [Planilla para Importar Reservas a Pxsol](https://docs.google.com/spreadsheets/d/1n9pPx3x_bztnyfydMy0qYe84P5iffsf9D3NFUzwK8cE/edit#gid=0)
 
 <Note>
-**IMPORTANTE!**
-Cada habitación debe representar una fila (Ejemplo una reserva de un grupo de 3 habitaciones ocupará 3 filas). Las notas en los títulos de cada columna lo ayudarán a comprender el contenido que debe completar. Los campos con \* son obligatorios.
+  **IMPORTANTE!** Cada habitación debe representar una fila (Ejemplo una reserva de un grupo de 3
+  habitaciones ocupará 3 filas). Las notas en los títulos de cada columna lo ayudarán a comprender
+  el contenido que debe completar. Los campos con \* son obligatorios.
 </Note>
 
-*   **Columnas Check in y Check out**: deberá ingresar las fechas con el siguiente formato:
+- **Columnas Check in y Check out**: deberá ingresar las fechas con el siguiente formato:
 
 YYYY-MM-DD
 
 AÑO-MES-DÍA
 Ejemplo: 2020-06-18
 
-*   **Columna Tipo de habitación**: deberá ingresar el nombre exacto del código del tipo de habitación.
-*   **Columna Nº de habitación**: Deberá ingresar el Nombre o Número de la habitación exacto (como aparece en el Plano de Ocupación).
-*   **Moneda**: Ingresar el código que identifica a esa moneda. A continuación detallamos los códigos de las monedas utilizadas dentro del sistema:
-    *   Dólares = USD
-    *   Pesos argentinos = ARS
-    *   Pesos chilenos = CLP
-    *   Reales = BRL
-    *   Euro = EUR
-    *   Pesos uruguayos = UYU
-    *   Pesos mexicanos = MXN
-    *   Pesos bolivianos = BOB
+- **Columna Tipo de habitación**: deberá ingresar el nombre exacto del código del tipo de habitación.
+- **Columna Nº de habitación**: Deberá ingresar el Nombre o Número de la habitación exacto (como aparece en el Plano de Ocupación).
+- **Moneda**: Ingresar el código que identifica a esa moneda. A continuación detallamos los códigos de las monedas utilizadas dentro del sistema:
 
-*   **Tarifa**: Deben cargar el valor total de la estadía. Todas las tarifas que carguen deberán corresponder a tarifas Netas o a Finales. Todas las filas deben coincidir en el tipo de Tarifa. El número que se agregue en esta columna deberá tener los decimales separados por un punto y NO por una coma.
+  - Dólares = USD
+  - Pesos argentinos = ARS
+  - Pesos chilenos = CLP
+  - Reales = BRL
+  - Euro = EUR
+  - Pesos uruguayos = UYU
+  - Pesos mexicanos = MXN
+  - Pesos bolivianos = BOB
+
+- **Tarifa**: Deben cargar el valor total de la estadía. Todas las tarifas que carguen deberán corresponder a tarifas Netas o a Finales. Todas las filas deben coincidir en el tipo de Tarifa. El número que se agregue en esta columna deberá tener los decimales separados por un punto y NO por una coma.
 
 **Recomendaciones**
 
-*   Una vez cargada la planilla seleccionar todas las filas que estén en blanco (sin cargar reservas) y eliminarlas. Esto hará que el archivo CSV sea mas liviano y facilitará la carga.
+- Una vez cargada la planilla seleccionar todas las filas que estén en blanco (sin cargar reservas) y eliminarlas. Esto hará que el archivo CSV sea mas liviano y facilitará la carga.
 
 Una vez que tengan la planilla cargada con toda la información correspondiente deberán descargar el archivo en formato CSV, es decir separados por comas.
 Le recomendamos que, luego de la descarga, abra el archivo y corrobore que todas las columnas estén separadas por comas (,) y no por punto y coma (;).
