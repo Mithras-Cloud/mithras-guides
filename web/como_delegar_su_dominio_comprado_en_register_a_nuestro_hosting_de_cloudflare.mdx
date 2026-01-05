@@ -3,18 +3,16 @@ title: "¿Cómo delegar su dominio comprado en Register a nuestro hosting de Clo
 description: "En esta guía explicaremos cómo delegar su dominio a nuestro hosting de Cloudflare."
 ---
 
-
 <Note>
-<strong>IMPORTANTE:</strong>&nbsp;No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com)
+  **IMPORTANTE:** No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de
+  soporte web ([equipo@pxsol.com](mailto:equipo@pxsol.com))
 </Note>
 
-<p>&nbsp;</p>
-
-<p>Pasos para hacer el cambio de NS (name servers):</p>
+Pasos para hacer el cambio de NS (name servers):
 
 <Steps>
 <Step title="Acceder a su cuenta en Register.com">
-  1. Diríjase a <a href="https://www.register.com/my-account/login" target="_blank" rel="noopener">https://www.register.com/my-account/login</a>.
+  1. Diríjase a [https://www.register.com/my-account/login](https://www.register.com/my-account/login).
   2. Ingrese su nombre de usuario y contraseña.
 
   <Frame>
@@ -23,7 +21,7 @@ description: "En esta guía explicaremos cómo delegar su dominio a nuestro host
 </Step>
 
 <Step title="Navegar a la sección de Dominios">
-  En el menú de la izquierda, seleccione <strong>Domain Name</strong>.
+  En el menú de la izquierda, seleccione **Domain Name**.
 
   <Frame>
   <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-09-2023-02-45-41-5208-PM.png" alt="Captura de pantalla del menú de dominios en Register.com" />
@@ -31,8 +29,8 @@ description: "En esta guía explicaremos cómo delegar su dominio a nuestro host
 </Step>
 
 <Step title="Gestionar Nameservers">
-  1. Desplácese hacia abajo hasta la sección <strong>Advanced Tools</strong> y expándala haciendo clic en la flecha.
-  2. En la columna <strong>Nameservers</strong>, haga clic en <strong>MANAGE</strong>.
+  1. Desplácese hacia abajo hasta la sección **Advanced Tools** y expándala haciendo clic en la flecha.
+  2. En la columna **Nameservers**, haga clic en **MANAGE**.
 
   <Frame>
   <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-09-2023-02-47-59-8896-PM.png" alt="Captura de pantalla de la sección Advanced Tools y Nameservers en Register.com" />
@@ -42,28 +40,29 @@ description: "En esta guía explicaremos cómo delegar su dominio a nuestro host
 <Step title="Actualizar los Servidores de Nombre (NS)">
   1. Elimine los servidores de nombres existentes para su dominio.
   2. Reemplace los servidores de nombres actuales con los NS proporcionados por el equipo de soporte web de PXSOL. Estos pueden ser:
-     * <code>grace.ns.cloudflare.com</code>
-     * <code>merlin.ns.cloudflare.com</code>
+     - `grace.ns.cloudflare.com`
+     - `merlin.ns.cloudflare.com`
+     
      O también:
-     * <code>henry.ns.cloudflare.com</code>
-     * <code>mona.ns.cloudflare.com</code>
-  3. Haga clic en el botón <strong>Save</strong> para guardar los cambios.
+     - `henry.ns.cloudflare.com`
+     - `mona.ns.cloudflare.com`
+  3. Haga clic en el botón **Save** para guardar los cambios.
 
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-09-2023-02-50-20-7373-PM.png" alt="Captura de pantalla de la interfaz para editar nameservers en Register.com" />
-  </Frame>
+{" "}
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-09-2023-02-50-20-7373-PM.png"
+    alt="Captura de pantalla de la interfaz para editar nameservers en Register.com"
+  />
+</Frame>
 
   <Check>
-  Los servidores de nombre (NS) han sido actualizados exitosamente.</Check>
+  Los servidores de nombre (NS) han sido actualizados exitosamente.
+  </Check>
 </Step>
 
 <Step title="Notificar al equipo de soporte">
-  Una vez que haya realizado el cambio de NS, por favor, envíe un correo electrónico a equipo@pxsol.com. Esto permitirá a nuestro equipo de soporte dar seguimiento a la propagación de los cambios y asegurar la correcta configuración de su dominio con Cloudflare.
+  Una vez que haya realizado el cambio de NS, por favor, envíe un correo electrónico a [equipo@pxsol.com](mailto:equipo@pxsol.com). Esto permitirá a nuestro equipo de soporte dar seguimiento a la propagación de los cambios y asegurar la correcta configuración de su dominio con Cloudflare.
 </Step>
 </Steps>
-
-<Note>
-Una vez realizado el cambio en los NS informe por mail a equipo@pxsol.com, para que nuestro equipo de soporte pueda dar seguimiento a la propagación y correcta configuración.
-</Note>
-
-<p>&nbsp;</p>
