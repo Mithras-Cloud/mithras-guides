@@ -3,20 +3,20 @@ title: "¿Cómo delegar su dominio comprado en Nic.cl a nuestro hosting de Cloud
 description: "En esta guía explicaremos cómo delegar su dominio comprado en nic.cl a nuestro hosting de Cloudflare"
 ---
 
+<Warning>
+  **IMPORTANTE:** No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de
+  soporte web ([equipo@pxsol.com](mailto:equipo@pxsol.com))
+</Warning>
 
-<Tip>
-<p><strong>IMPORTANTE:</strong>&nbsp;No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com)</p>
-</Tip>
-
-<p>Pasos para hacer el cambio de NS (name servers):</p>
+Pasos para hacer el cambio de NS (name servers):
 
 <Steps>
 <Step title="Acceder a nic.cl">
-  1. Diríjase a <a href="https://nic.cl/" target="_blank" rel="noopener">https://nic.cl/</a>.
-  2. Haga clic en el botón <strong>Ingresar</strong> ubicado en la esquina superior derecha.
-  
+  1. Diríjase a [https://nic.cl/](https://nic.cl/).
+  2. Haga clic en el botón **Ingresar** ubicado en la esquina superior derecha.
+
   <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-32-55-14-PM.png" alt="Botón Ingresar en nic.cl">
+  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-32-55-14-PM.png" alt="Botón Ingresar en nic.cl" />
   </Frame>
 </Step>
 
@@ -24,7 +24,7 @@ description: "En esta guía explicaremos cómo delegar su dominio comprado en ni
   Ingrese con su nombre de usuario y contraseña.
 
   <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-34-22-03-PM.png" alt="Ventana de inicio de sesión en nic.cl">
+  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-34-22-03-PM.png" alt="Ventana de inicio de sesión en nic.cl" />
   </Frame>
 </Step>
 
@@ -32,53 +32,56 @@ description: "En esta guía explicaremos cómo delegar su dominio comprado en ni
   En la sección "Mis Dominios", haga clic sobre el dominio que desea modificar.
 
   <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-35-51-13-PM.png" alt="Sección Mis Dominios mostrando un dominio">
+  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-35-51-13-PM.png" alt="Sección Mis Dominios mostrando un dominio" />
   </Frame>
   <Frame>
-  <img src="https://ayuda.pxsol.com/hubfs/image-png-Feb-18-2021-04-44-41-41-PM.png" alt="Detalle del dominio seleccionado">
+  <img src="https://ayuda.pxsol.com/hubfs/image-png-Feb-18-2021-04-44-41-41-PM.png" alt="Detalle del dominio seleccionado" />
   </Frame>
 </Step>
 
 <Step title="Configurar servidores de nombre">
-  1. Diríjase al punto <strong>4. Configuración Técnica</strong>.
+  1. Diríjase al punto **4. Configuración Técnica**.
   2. Localice la sección de servidores de nombre (NS).
-  
+
   <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-37-16-22-PM.png" alt="Sección Configuración Técnica con servidores de nombre">
+  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-37-16-22-PM.png" alt="Sección Configuración Técnica con servidores de nombre" />
   </Frame>
 </Step>
 
 <Step title="Reemplazar los servidores de nombre">
   Reemplace los servidores de nombre actuales por los que le proporcione el equipo de soporte técnico Web de PXSOL. Estos pueden ser:
 
-  *   <code>grace.ns.cloudflare.com</code>
-  *   <code>merlin.ns.cloudflare.com</code>
+- `grace.ns.cloudflare.com`
+- `merlin.ns.cloudflare.com`
 
-  O alternativamente:
+O alternativamente:
 
-  *   <code>henry.ns.cloudflare.com</code>
-  *   <code>mona.ns.cloudflare.com</code>
+- `henry.ns.cloudflare.com`
+- `mona.ns.cloudflare.com`
 
-  <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-38-25-44-PM.png" alt="Campo de servidores de nombre con los nuevos NS de Cloudflare">
+    <Frame>
+  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-38-25-44-PM.png" alt="Campo de servidores de nombre con los nuevos NS de Cloudflare" />
   </Frame>
 </Step>
 
 <Step title="Actualizar datos del dominio">
-  Baje hasta el final de la página y haga clic en el botón <strong>Actualizar datos de dominio</strong>.
+  Baje hasta el final de la página y haga clic en el botón **Actualizar datos de dominio**.
 
   <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-39-18-03-PM.png" alt="Botón Actualizar datos de dominio">
+  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-39-18-03-PM.png" alt="Botón Actualizar datos de dominio" />
   </Frame>
 </Step>
 
 <Step title="Confirmar el cambio">
   Aparecerá un mensaje confirmando que el cambio de servidores de nombre ha sido realizado exitosamente.
 
-  <Frame>
-  <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-40-17-93-PM.png" alt="Mensaje de confirmación de actualización de dominio">
-  </Frame>
-  
+<Frame>
+  <img
+    src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Mar-17-2022-08-40-17-93-PM.png"
+    alt="Mensaje de confirmación de actualización de dominio"
+  />
+</Frame>
+
   <Check>
   Los datos de su dominio han sido actualizados con los nuevos servidores de nombre.
   </Check>
@@ -86,5 +89,7 @@ description: "En esta guía explicaremos cómo delegar su dominio comprado en ni
 </Steps>
 
 <Note>
-Una vez realizado el cambio en los NS, por favor, informe por correo electrónico a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y configuración correcta.
+  Una vez realizado el cambio en los NS, por favor, informe por correo electrónico a
+  [equipo@pxsol.com](mailto:equipo@pxsol.com) para que nuestro equipo de soporte pueda dar
+  seguimiento a la propagación y configuración correcta.
 </Note>
