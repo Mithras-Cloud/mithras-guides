@@ -3,73 +3,112 @@ title: "¿Cómo obtener el Usuario API o API Access Key de SIIGO para realizar l
 description: "En esta guía explicaremos cómo obtener los códigos necesarios para activar la integración de Pxsol con SIIGO, dentro de SIIGO."
 ---
 
-
 <Warning>
-Para poder solicitar la integración de Pxsol con SIIGO deben tener alguno de los siguientes planes en su cuenta de SIIGO:</br>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-28-24-7970-PM.png" alt="Planes de SIIGO requeridos" width="688" loading="lazy"/>
-</br>
+Para poder solicitar la integración de Pxsol con SIIGO deben tener alguno de los siguientes planes en su cuenta de SIIGO:
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-28-24-7970-PM.png"
+    alt="Planes de SIIGO requeridos"
+  />
+</Frame>
+
 El usuario que generará la integración deberá tener los siguientes permisos en SIIGO:
-<ul>
-<li>Permiso Administrador</li>
-<li>Permiso Alianzas</li>
-<li>Todos los permisos de Terceros</li>
-</ul>
-Video explicativo para la creación de Roles con permisos o agregado de permisos a Roles para el usuario que se utilizará para integrar con Pxsol:
-<a href="https://jam.dev/c/c73a9269-4780-4402-a332-c8a52b5f653b" target="_blank" rel="noopener">Video aquí</a>
-Guías de SIIGO:
-<a href="https://siigonube.portaldeclientes.siigo.com/adicionar-usuarios-administradores/" target="_blank" rel="noopener">https://siigonube.portaldeclientes.siigo.com/adicionar-usuarios-administradores/</a>
+
+- Permiso Administrador
+- Permiso Alianzas
+- Todos los permisos de Terceros
+
+Video explicativo para la creación de Roles con permisos o agregado de permisos a Roles para el usuario que se utilizará para integrar con Pxsol: [Video aquí](https://jam.dev/c/c73a9269-4780-4402-a332-c8a52b5f653b)
+
+Guías de SIIGO: [https://siigonube.portaldeclientes.siigo.com/adicionar-usuarios-administradores/](https://siigonube.portaldeclientes.siigo.com/adicionar-usuarios-administradores/)
+
 </Warning>
 
 <Info>
-Por el momento, esta integración está disponible sólo para clientes de Colombia y México. La integración sirve para optimizar el trabajo operativo utilizando la información de la reserva que está en Pxsol para generar el comprobante en SIIGO. No será necesario utilizar la integración para generar comprobantes en todas sus reservas.
+  Por el momento, esta integración está disponible sólo para clientes de Colombia y México. La
+  integración sirve para optimizar el trabajo operativo utilizando la información de la reserva que
+  está en Pxsol para generar el comprobante en SIIGO. No será necesario utilizar la integración para
+  generar comprobantes en todas sus reservas.
 </Info>
 
 <Steps>
 <Step title="Ingresar a SIIGO y dirigirse a Alianzas">
-  1. Ingresar a <a href="https://siigonube.siigo.com/" target="_blank" rel="noopener"><strong>https://siigonube.siigo.com/</strong></a> y registrarse con su usuario y contraseña. </br>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-30-46-8100-PM.png" alt="Inicio de sesión en SIIGO" width="395" loading="lazy"/>
-  2. Ingresar a la sección de **Alianzas** o desde **Configuración Alianzas e integraciones - Credenciales de integración a plataformas digitales (Siigo API)**.
-     Puede acceder de las siguientes maneras:
-     <br/>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-32-50-1001-PM.png" alt="Sección Alianzas en SIIGO" width="237" loading="lazy"/>
-     o
-     <br/>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-21-2025-05-19-53-6698-PM.png" alt="Configuración de Alianzas en SIIGO" width="688" loading="lazy"/>
+  1. Ingresar a [https://siigonube.siigo.com/](https://siigonube.siigo.com/) y registrarse con su usuario y contraseña.
+
+{" "}
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-30-46-8100-PM.png"
+    alt="Inicio de sesión en SIIGO"
+  />
+</Frame>
+
+2. Ingresar a la sección de **Alianzas** o desde **Configuración Alianzas e integraciones - Credenciales de integración a plataformas digitales (Siigo API)**.
+
+Puede acceder de las siguientes maneras:
+
+{" "}
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-32-50-1001-PM.png"
+    alt="Sección Alianzas en SIIGO"
+  />
+</Frame>
+
+o
+
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-21-2025-05-19-53-6698-PM.png" alt="Configuración de Alianzas en SIIGO" />
+  </Frame>
 </Step>
 
 <Step title="Seleccionar Mi Credencial API">
   3. Seleccionar **Mi Credencial API** en la sección superior derecha.
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-33-28-9813-PM.png" alt="Mi Credencial API en SIIGO" width="183" loading="lazy"/>
+
+  <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-33-28-9813-PM.png" alt="Mi Credencial API en SIIGO" />
+  </Frame>
 </Step>
 
 <Step title="Completar datos para generar el Token">
   4. Completar los datos solicitados para obtener el Token:
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-35-57-9340-PM.png" alt="Formulario de generación de Token" width="688" loading="lazy"/>
-     <ul>
-       <li><strong>Nombre:</strong> Nombre de la persona encargada de la cuenta.</li>
-       <li><strong>Correo Electrónico: </strong>Correo de la cuenta que se integrará.</li>
-       <li><strong>Celular: </strong>Celular de la persona encargada de la cuenta. No debe incluir el código de país.</li>
-       <li><strong>Tipo de Aplicación a Integrar:</strong> Seleccionar "Otro".</li>
-       <li><strong>Tipo de Aplicación:</strong> PMS.</li>
-     </ul>
-     <Warning>
-     El correo electrónico utilizado para obtener el Token debe ser de un usuario que tenga permiso de Administrador, permiso de Alianzas y Permisos de Terceros en SIIGO. Para asignar los permisos necesarios al usuario, recomendamos ver el siguiente video:
-     <a href="https://jam.dev/c/c73a9269-4780-4402-a332-c8a52b5f653b" target="_blank" rel="noopener">Video aquí</a>
-     </Warning>
+
+{" "}
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-35-57-9340-PM.png"
+    alt="Formulario de generación de Token"
+  />
+</Frame>
+
+- **Nombre:** Nombre de la persona encargada de la cuenta.
+- **Correo Electrónico:** Correo de la cuenta que se integrará.
+- **Celular:** Celular de la persona encargada de la cuenta. No debe incluir el código de país.
+- **Tipo de Aplicación a Integrar:** Seleccionar "Otro".
+- **Tipo de Aplicación:** PMS.
+
+    <Warning>
+  El correo electrónico utilizado para obtener el Token debe ser de un usuario que tenga permiso de Administrador, permiso de Alianzas y Permisos de Terceros en SIIGO. Para asignar los permisos necesarios al usuario, recomendamos ver el siguiente video: [Video aquí](https://jam.dev/c/c73a9269-4780-4402-a332-c8a52b5f653b)
+  </Warning>
 </Step>
 
 <Step title="Generar y copiar credenciales">
   5. Seleccionar **Generar Token**.
   6. Copiar los datos generados:
-     <ul>
-       <li>Usuario API</li>
-       <li>Access Key</li>
-     </ul>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-40-02-1048-PM.png" alt="Usuario API y Access Key generados" width="535" loading="lazy"/>
+
+- Usuario API
+- Access Key
+
+    <Frame>
+  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2024-09-40-02-1048-PM.png" alt="Usuario API y Access Key generados" />
+  </Frame>
 </Step>
 
 <Step title="Configurar la integración en Pxsol">
-  7. Configurar la integración desde Pxsol siguiendo los pasos de la siguiente guía:
-     <a href="https://ayuda.pxsol.com/es/c%C3%B3mo-realizar-la-integraci%C3%B3n-de-siigo-para-facturar-desde-pxsol" target="_blank" rel="noopener">¿Cómo realizar la integración de SIIGO para facturar desde Pxsol?</a>
+  7. Configurar la integración desde Pxsol siguiendo los pasos de la siguiente guía: [¿Cómo realizar la integración de SIIGO para facturar desde Pxsol?](https://ayuda.pxsol.com/es/c%C3%B3mo-realizar-la-integraci%C3%B3n-de-siigo-para-facturar-desde-pxsol)
 </Step>
 </Steps>
