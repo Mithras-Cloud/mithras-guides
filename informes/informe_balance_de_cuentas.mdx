@@ -3,283 +3,98 @@ title: "Informe Balance de Cuentas"
 description: "El Informe de Balance de Cuentas muestra todos los movimientos de dinero (entradas y salidas) de sus cuentas corrientes y sus cuentas recaudadoras en el período seleccionado. Es como un "extracto bancario" detallado de todas sus cuentas."
 ---
 
-<h4>📋 ¿Qué es este informe?</h4>
-<p>
-  El <strong>Informe de Balance de Cuentas</strong> muestra todos los movimientos de dinero
-  (entradas y salidas) de sus cuentas corrientes y sus cuentas recaudadoras en el período
-  seleccionado. Es como un "extracto bancario" detallado de todas sus cuentas, con información
-  completa de cada movimiento.
-</p>
-<hr />
-<h4>🎯 ¿Para qué sirve?</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Controlar flujo de caja</strong>: Ver entradas y salidas de dinero por cuenta
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Seguir el saldo</strong>: Monitorear la evolución día a día del balance de cada cuenta
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Entender movimientos</strong>: Identificar de dónde viene o a dónde va el dinero
-      (cuenta contraparte)
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Control de facturación</strong>: Verificar estado de comprobantes, vencimientos y
-      pagos parciales
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Trazabilidad completa</strong>: Relacionar cada movimiento con su reserva/operación
-      original
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Gestión de cobranzas</strong>: Identificar pagos pendientes, vencidos y parciales
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Análisis comercial</strong>: Ver movimientos por Agente u Organización
-    </p>
-  </li>
-</ul>
-<hr />
-<h4>📊 Qué información muestra por cada movimiento</h4>
-<h4>Información básica del movimiento</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Fecha</strong>: Cuándo ocurrió el movimiento
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Cuenta</strong>: Nombre de la cuenta afectada
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Tipo de cuenta</strong>: Cuentas Recaudadoras, Cuentas Corrientes o Proveedor
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Descripción</strong>: Detalle del movimiento
-    </p>
-  </li>
-</ul>
-<h4>Importes&nbsp;</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Cargos</strong>: Egresos/salidas de dinero de la cuenta
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Créditos</strong>: Ingresos/entradas de dinero a la cuenta
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Saldo</strong>: Balance acumulado después del movimiento en la cuenta corriente o
-      cuenta recaudadora.
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Moneda</strong>: Moneda original del movimiento
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Tipo de cambio</strong>: Conversión a la moneda del informe
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Moneda del informe</strong>: Moneda en la que visualiza los importes
-    </p>
-  </li>
-</ul>
-<h4>Operación y flujo de dinero</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Tipo de movimiento</strong>: Cobro, Pago, Transferencia, Ajuste, etc.
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Origen</strong>: La cuenta contraparte (de dónde viene o a dónde va el dinero)
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>ID de Operación</strong>: Agrupa movimientos de la misma operación
-    </p>
-  </li>
-</ul>
-<h4>Medio de cobro/pago</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Tipo de pago</strong>: Efectivo, Tarjeta de Crédito, Transferencia Bancaria, Cheque,
-      etc.
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Tipo de tarjeta</strong>: Visa, Mastercard, Amex, etc. (si es pago con tarjeta)
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Numero de tarjeta: </strong>muestra el detalle cargado en el movimiento.{" "}
-      <em>Se recomienda cargar solo los últimos 4 dígitos.</em>
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Lote</strong>: Lote de procesamiento
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Cupón</strong>: Cupón de la transacción
-    </p>
-  </li>
-</ul>
-<h4>Información de facturación y pagos</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Estado de la factura</strong>:&nbsp; muestra si hay comprobante emitido
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Comprobante asociado</strong>: Número del comprobante/factura vinculado
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Facturado sobre el folio: </strong>Si / No
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Vencimiento para el pago</strong>: Cuándo vence el pago
-    </p>
-  </li>
-</ul>
-<h4>Datos de la reserva/transacción</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Reserva</strong>: Código de la reserva asociada
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Empresa de la reserva</strong>: Cliente/empresa facturada
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Empresa de la transacción</strong>: Empresa que generó la operación
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Estableciimiento de la reserva</strong>: Establecimiento/hotel
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Punto de venta de la reserva</strong>: Punto de venta
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Check-in</strong>: Fecha de entrada de la reserva
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Check-out</strong>: Fecha de salida de la reserva
-    </p>
-  </li>
-</ul>
-<h4>Control y auditoría</h4>
-<ul>
-  <li>
-    <p>
-      <strong>Usuario</strong>: Quién registró el movimiento
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Estado</strong>: Activo o Eliminado
-    </p>
-  </li>
-  <li>
-    <p>
-      <strong>Mes</strong>: Para agrupar por período
-    </p>
-  </li>
-</ul>
-<h4>⚠️ Consideraciones</h4>
-<p>
-  <strong>Conversión de moneda</strong>
-</p>
-<p>
-  <strong>Importante</strong>: Todos los importes se convierten a la{" "}
-  <strong>moneda del informe</strong> seleccionada.
-</p>
-<ul>
-  <li>
-    <p>✅ El tipo de cambio aplicado se muestra en cada fila</p>
-  </li>
-  <li>
-    <p>✅ Puede ver la moneda original en la columna "Moneda"</p>
-  </li>
-  <li>
-    <p>⚠️ Diferencias menores pueden ocurrir por redondeo</p>
-  </li>
-</ul>
-<p>
-  <strong>Recomendación</strong>: Use la misma moneda del informe que usa su contabilidad para
-  evitar confusiones.
-</p>
-<p>
-  <strong>Movimientos entre cuentas (Filtro de cuenta específica)</strong>
-</p>
-<p>
-  Cuando selecciona una <strong>cuenta específica</strong>, el sistema:
-</p>
-<ul>
-  <li>
-    <p>✅ Muestra todos los movimientos de esa cuenta</p>
-  </li>
-  <li>
-    <p>
-      ✅ <strong>Incluye movimientos de cuentas contrapartida</strong> (mismo OperationID)
-    </p>
-  </li>
-</ul>
-<div>
-  <strong>Saldo total</strong>
-  <br />
-  El valor que se muestra como total al pie del informe no es el total de los movimientos de las
-  cuentas; es solo la suma de todas las celdas de la columna.
-</div>
+## 📋 ¿Qué es este informe?
+
+El **Informe de Balance de Cuentas** muestra todos los movimientos de dinero (entradas y salidas) de sus cuentas corrientes y sus cuentas recaudadoras en el período seleccionado. Es como un "extracto bancario" detallado de todas sus cuentas, con información completa de cada movimiento.
+
+---
+
+## 🎯 ¿Para qué sirve?
+
+- **Controlar flujo de caja**: Ver entradas y salidas de dinero por cuenta
+- **Seguir el saldo**: Monitorear la evolución día a día del balance de cada cuenta
+- **Entender movimientos**: Identificar de dónde viene o a dónde va el dinero (cuenta contraparte)
+- **Control de facturación**: Verificar estado de comprobantes, vencimientos y pagos parciales
+- **Trazabilidad completa**: Relacionar cada movimiento con su reserva/operación original
+- **Gestión de cobranzas**: Identificar pagos pendientes, vencidos y parciales
+- **Análisis comercial**: Ver movimientos por Agente u Organización
+
+---
+
+## 📊 Qué información muestra por cada movimiento
+
+### Información básica del movimiento
+
+- **Fecha**: Cuándo ocurrió el movimiento
+- **Cuenta**: Nombre de la cuenta afectada
+- **Tipo de cuenta**: Cuentas Recaudadoras, Cuentas Corrientes o Proveedor
+- **Descripción**: Detalle del movimiento
+
+### Importes
+
+- **Cargos**: Egresos/salidas de dinero de la cuenta
+- **Créditos**: Ingresos/entradas de dinero a la cuenta
+- **Saldo**: Balance acumulado después del movimiento en la cuenta corriente o cuenta recaudadora.
+- **Moneda**: Moneda original del movimiento
+- **Tipo de cambio**: Conversión a la moneda del informe
+- **Moneda del informe**: Moneda en la que visualiza los importes
+
+### Operación y flujo de dinero
+
+- **Tipo de movimiento**: Cobro, Pago, Transferencia, Ajuste, etc.
+- **Origen**: La cuenta contraparte (de dónde viene o a dónde va el dinero)
+- **ID de Operación**: Agrupa movimientos de la misma operación
+
+### Medio de cobro/pago
+
+- **Tipo de pago**: Efectivo, Tarjeta de Crédito, Transferencia Bancaria, Cheque, etc.
+- **Tipo de tarjeta**: Visa, Mastercard, Amex, etc. (si es pago con tarjeta)
+- **Numero de tarjeta**: muestra el detalle cargado en el movimiento. _Se recomienda cargar solo los últimos 4 dígitos._
+- **Lote**: Lote de procesamiento
+- **Cupón**: Cupón de la transacción
+
+### Información de facturación y pagos
+
+- **Estado de la factura**: muestra si hay comprobante emitido
+- **Comprobante asociado**: Número del comprobante/factura vinculado
+- **Facturado sobre el folio**: Si / No
+- **Vencimiento para el pago**: Cuándo vence el pago
+
+### Datos de la reserva/transacción
+
+- **Reserva**: Código de la reserva asociada
+- **Empresa de la reserva**: Cliente/empresa facturada
+- **Empresa de la transacción**: Empresa que generó la operación
+- **Establecimiento de la reserva**: Establecimiento/hotel
+- **Punto de venta de la reserva**: Punto de venta
+- **Check-in**: Fecha de entrada de la reserva
+- **Check-out**: Fecha de salida de la reserva
+
+### Control y auditoría
+
+- **Usuario**: Quién registró el movimiento
+- **Estado**: Activo o Eliminado
+- **Mes**: Para agrupar por período
+
+## ⚠️ Consideraciones
+
+### Conversión de moneda
+
+**Importante**: Todos los importes se convierten a la **moneda del informe** seleccionada.
+
+- ✅ El tipo de cambio aplicado se muestra en cada fila
+- ✅ Puede ver la moneda original en la columna "Moneda"
+- ⚠️ Diferencias menores pueden ocurrir por redondeo
+
+**Recomendación**: Use la misma moneda del informe que usa su contabilidad para evitar confusiones.
+
+### Movimientos entre cuentas (Filtro de cuenta específica)
+
+Cuando selecciona una **cuenta específica**, el sistema:
+
+- ✅ Muestra todos los movimientos de esa cuenta
+- ✅ **Incluye movimientos de cuentas contrapartida** (mismo OperationID)
+
+### Saldo total
+
+El valor que se muestra como total al pie del informe no es el total de los movimientos de las cuentas; es solo la suma de todas las celdas de la columna.
