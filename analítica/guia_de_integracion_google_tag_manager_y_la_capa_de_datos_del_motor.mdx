@@ -3,44 +3,59 @@ title: "Guía de Integración: Google Tag Manager y la Capa de Datos del motor"
 description: "Aprende cómo el Datalayer de Pxsol, integrado con Google Tag Manager, mejora la medición de ingresos, la detección de demanda insatisfecha y el remarketing inteligente para potenciar tus reservas directas."
 ---
 
+Si alguna vez te has preguntado cómo sabe Facebook que alguien reservó una habitación para mostrarle un anuncio, o cómo sabe Google Analytics cuántos ingresos exactos generó tu motor ayer, la respuesta está en una herramienta invisible llamada **Datalayer** (o Capa de Datos).
 
-<p>Si alguna vez te has preguntado cómo sabe Facebook que alguien reservó una habitación para mostrarle un anuncio, o cómo sabe Google Analytics cuántos ingresos exactos generó tu motor ayer, la respuesta está en una herramienta invisible llamada <strong>Datalayer</strong> (o Capa de Datos).</p>
-<p>En esta guía te explicamos de forma sencilla qué es, cómo funciona en tu motor <strong>Pxsol</strong> y por qué es vital para tu estrategia de marketing.</p>
-<h4><strong>¿Qué es el Datalayer del motor Pxsol?</strong></h4>
-<p>Imagina que el motor de reservas es una tienda física y el <strong>Datalayer</strong> es un asistente muy observador que toma notas en una libreta cada vez que un cliente hace algo importante.</p>
-<p>Este "asistente" no guarda las notas para sí mismo, sino que las deja listas en un formato estándar para que otras herramientas (como Google o Facebook) puedan leerlas.</p>
-<p>El motor de reservas <strong>Pxsol</strong> viene configurado para escribir en esta "pizarra digital" eventos muy específicos que ocurren durante la visita de un huésped. Algunos ejemplos reales de lo que registra el motor son:</p>
-<ul>
-<li><strong>Búsquedas:</strong> Anota qué fechas, cuántos adultos y cuántos niños están buscando los usuarios.</li>
-<li><strong>Sin Disponibilidad:</strong> Si un usuario busca fechas donde tu hotel está lleno, el Datalayer emite un aviso especial (no_inventory), permitiéndote saber cuánta demanda estás perdiendo.</li>
-<li><strong>Interacción:</strong> Registra si el usuario abre el chat o empieza a completar sus datos personales en el formulario.</li>
-<li><strong>Venta Confirmada:</strong> Cuando se finaliza la reserva, anota el valor total, la moneda y el número de confirmación.</li>
-</ul>
-<h4><strong>¿Qué significa que esté "Integrado con Google Tag Manager"?</strong></h4>
-<p>El Datalayer por sí solo es solo información técnica en el código de tu web. Para que sea útil, necesita un mensajero que lleve esa información a tus plataformas de publicidad. Ese mensajero es <strong>Google Tag Manager (GTM)</strong>.</p>
-<p>Tu motor <strong>Pxsol</strong> ya tiene la estructura lista (los llamados "Payloads") para comunicarse fluidamente con GTM.</p>
-<ol>
-<li><strong>El Motor Pxsol (Datalayer):</strong> Dice <em>"El usuario acaba de reservar por 500 USD"</em> (Evento form_success).</li>
-<li><strong>Google Tag Manager:</strong> Escucha ese mensaje y automáticamente le avisa a Google Analytics 4 y a tus campañas de Ads: <em>"¡Anoten una conversión de 500 USD!"</em>.</li>
-</ol>
-<p>Sin esta integración, tus herramientas de marketing estarían "ciegas" ante el valor real de lo que sucede dentro del proceso de reserva.</p>
-<h4><strong>¿De qué te sirve esta integración?</strong></h4>
-<p>Utilizar el Datalayer de <strong>Pxsol</strong> te permite activar "superpoderes" de medición que aumentan tus reservas directas:</p>
-<h3><strong>1. Medición Exacta de Ingresos (ROI)</strong></h3>
-<p>No solo sabrás "cuántas" reservas tuviste, sino el <strong>valor exacto</strong> de cada una. El motor envía parámetros precisos como el value (monto) y currency (moneda). Esto permite que algoritmos como los de Google Ads busquen automáticamente a personas dispuestas a gastar más en tu hotel (pujas por ROAS).</p>
-<h3><strong>2. Detectar Demanda Insatisfecha</strong></h3>
-<p>El motor tiene una función única llamada no_inventory. Esto envía un dato cuando alguien quiere reservar pero no tienes habitaciones.</p>
-<ul>
-<li><strong>¿La utilidad?</strong> Puedes ver en tus informes: <em>"Perdí 50 clientes que querían reservar para el fin de semana largo"</em>. Esto es vital para ajustar tus tarifas o gestionar bloqueos.</li>
-</ul>
-<h3><strong>3. Remarketing Inteligente</strong></h3>
-<p>Como el Datalayer registra las fechas de búsqueda (start_date y end_date) <sup>1</sup>, puedes crear audiencias para perseguir con anuncios a los indecisos: <em>"¿Sigues buscando para diciembre? Termina tu reserva hoy"</em>.</p>
-<hr>
-<h4><strong>Artículos Relacionados y Documentación</strong></h4>
-<p>Para profundizar en la configuración técnica y ejemplos prácticos, consulta los siguientes recursos:</p>
-<ul>
-<li><a href="/es/documentaci%C3%B3n-data-layer" rel="noopener">Documentación Técnica: Diccionario de Eventos del DataLayer de Pxsol</a> – <em>Lista completa de variables y métodos disponibles para desarrolladores.</em></li>
-<li><a href="https://support.google.com/tagmanager/answer/7679219?hl=es">Guía de Google: Configuración de eventos personalizados</a> – <em>Ayuda oficial de Google sobre cómo capturar estos datos.</em></li>
-<li>Caso de Uso 1: Próximamente</li>
-<li>Caso de Uso 2: Próximamente</li>
-</ul>
+En esta guía te explicamos de forma sencilla qué es, cómo funciona en tu motor **Pxsol** y por qué es vital para tu estrategia de marketing.
+
+### ¿Qué es el Datalayer del motor Pxsol?
+
+Imagina que el motor de reservas es una tienda física y el **Datalayer** es un asistente muy observador que toma notas en una libreta cada vez que un cliente hace algo importante.
+
+Este "asistente" no guarda las notas para sí mismo, sino que las deja listas en un formato estándar para que otras herramientas (como Google o Facebook) puedan leerlas.
+
+El motor de reservas **Pxsol** viene configurado para escribir en esta "pizarra digital" eventos muy específicos que ocurren durante la visita de un huésped. Algunos ejemplos reales de lo que registra el motor son:
+
+- **Búsquedas:** Anota qué fechas, cuántos adultos y cuántos niños están buscando los usuarios.
+- **Sin Disponibilidad:** Si un usuario busca fechas donde tu hotel está lleno, el Datalayer emite un aviso especial (`no_inventory`), permitiéndote saber cuánta demanda estás perdiendo.
+- **Interacción:** Registra si el usuario abre el chat o empieza a completar sus datos personales en el formulario.
+- **Venta Confirmada:** Cuando se finaliza la reserva, anota el valor total, la moneda y el número de confirmación.
+
+### ¿Qué significa que esté "Integrado con Google Tag Manager"?
+
+El Datalayer por sí solo es solo información técnica en el código de tu web. Para que sea útil, necesita un mensajero que lleve esa información a tus plataformas de publicidad. Ese mensajero es **Google Tag Manager (GTM)**.
+
+Tu motor **Pxsol** ya tiene la estructura lista (los llamados "Payloads") para comunicarse fluidamente con GTM.
+
+1. **El Motor Pxsol (Datalayer):** Dice _"El usuario acaba de reservar por 500 USD"_ (Evento `form_success`).
+2. **Google Tag Manager:** Escucha ese mensaje y automáticamente le avisa a Google Analytics 4 y a tus campañas de Ads: _"¡Anoten una conversión de 500 USD!"_.
+
+Sin esta integración, tus herramientas de marketing estarían "ciegas" ante el valor real de lo que sucede dentro del proceso de reserva.
+
+### ¿De qué te sirve esta integración?
+
+Utilizar el Datalayer de **Pxsol** te permite activar "superpoderes" de medición que aumentan tus reservas directas:
+
+#### 1. Medición Exacta de Ingresos (ROI)
+
+No solo sabrás "cuántas" reservas tuviste, sino el **valor exacto** de cada una. El motor envía parámetros precisos como el `value` (monto) y `currency` (moneda). Esto permite que algoritmos como los de Google Ads busquen automáticamente a personas dispuestas a gastar más en tu hotel (pujas por ROAS).
+
+#### 2. Detectar Demanda Insatisfecha
+
+El motor tiene una función única llamada `no_inventory`. Esto envía un dato cuando alguien quiere reservar pero no tienes habitaciones.
+
+- **¿La utilidad?** Puedes ver en tus informes: _"Perdí 50 clientes que querían reservar para el fin de semana largo"_. Esto es vital para ajustar tus tarifas o gestionar bloqueos.
+
+#### 3. Remarketing Inteligente
+
+Como el Datalayer registra las fechas de búsqueda (`start_date` y `end_date`), puedes crear audiencias para perseguir con anuncios a los indecisos: _"¿Sigues buscando para diciembre? Termina tu reserva hoy"_.
+
+---
+
+### Artículos Relacionados y Documentación
+
+Para profundizar en la configuración técnica y ejemplos prácticos, consulta los siguientes recursos:
+
+- [Documentación Técnica: Diccionario de Eventos del DataLayer de Pxsol](/es/documentación-data-layer) – _Lista completa de variables y métodos disponibles para desarrolladores._
+- [Guía de Google: Configuración de eventos personalizados](https://support.google.com/tagmanager/answer/7679219?hl=es) – _Ayuda oficial de Google sobre cómo capturar estos datos._
+- Caso de Uso 1: Próximamente
+- Caso de Uso 2: Próximamente
