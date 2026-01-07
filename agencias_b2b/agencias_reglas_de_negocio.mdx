@@ -1,204 +1,152 @@
 ---
 title: "Agencias: Reglas de negocio"
-description: "En esta guía se detalla cómo acceder a la aplicación 'Reglas de Negocio' y cómo es el proceso para crear, modificar o eliminar una regla de negocio."
+description: "Aprende a gestionar las reglas de negocio para automatizar y controlar la aplicación de tarifas y condiciones comerciales."
 ---
 
+Las reglas de negocio permiten automatizar el comportamiento de tus tarifas según proveedores, puntos de venta o clientes específicos.
+
 <Info>
-El orden de las reglas de negocio es fundamental, ya que determina la secuencia en la que se aplicarán. La regla que se encuentra más arriba en la tabla se aplicará primero, antes que las demás que se encuentren debajo.
+  **Importante:** El orden de las reglas es jerárquico. El sistema aplica primero la regla que se
+  encuentra en la parte superior de la lista y continúa hacia abajo.
 </Info>
 
-Aquí se detalla cómo acceder a la aplicación "Reglas de Negocio":
+### Cómo acceder a Reglas de Negocio
+
+Puedes acceder a la configuración de dos maneras:
 
 <Tabs>
-<Tab title="Búsqueda">
-Utiliza la barra de búsqueda situada en la parte superior de la interfaz.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-06-2024-07-59-39-6979-PM.png" alt="Barra de búsqueda para acceder a Reglas de Negocio" />
-</Frame>
-</Tab>
-<Tab title="Menú Lateral">
-Accede a través de la barra lateral, seleccionando primero el hub "Reservas" y luego haciendo clic en "Regla de negocio".
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-06-2024-08-02-38-1909-PM.png" alt="Menú lateral para acceder a Reglas de Negocio" />
-</Frame>
-</Tab>
+  <Tab title="Búsqueda rápida">
+    Utiliza la barra de búsqueda (Omnibox) en la parte superior de la interfaz e ingresa "Reglas de
+    negocio".
+    <Frame>
+      <img
+        src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-06-2024-07-59-39-6979-PM.png"
+        alt="Barra de búsqueda para acceder a Reglas de Negocio"
+      />
+    </Frame>
+  </Tab>
+  <Tab title="Menú lateral">
+    Ve al hub de **Reservas** en el menú de la izquierda y selecciona la opción **Regla de
+    negocio**.
+    <Frame>
+      <img
+        src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-06-2024-08-02-38-1909-PM.png"
+        alt="Menú lateral para acceder a Reglas de Negocio"
+      />
+    </Frame>
+  </Tab>
 </Tabs>
 
-Una vez dentro de la aplicación, podrás crear, modificar o eliminar reglas de negocio.
+---
 
 ### Crear una Regla de Negocio
 
-Sigue estos pasos para crear una nueva regla de negocio:
+Para configurar una nueva regla, sigue estos pasos:
 
 <Steps>
-<Step title="Iniciar la creación">
-Haz clic en el botón "+ Nueva regla de negocio".
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-34-34-2316-PM.png" alt="Botón para crear una nueva regla de negocio" />
-</Frame>
-</Step>
-<Step title="Configurar opciones">
-Aparecerá un panel lateral con las siguientes opciones:
-<ul>
-<li>
-<strong>Nombre de la regla de negocio:</strong> Ingresa un nombre conciso y descriptivo. Este campo es obligatorio.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-38-35-8060-PM.png" alt="Campo para el nombre de la regla de negocio" />
-</Frame>
-</li>
-<li>
-<strong>Tipo de regla</strong>:
-<ul>
-<li><strong>General: </strong>Se aplica a todos los usuarios.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-44-37-9125-PM.png" alt="Selección de tipo de regla: General" />
-</Frame>
-</li>
-<li>
-<strong>Específica:</strong> Se aplica a usuarios seleccionados. Al elegir esta opción, podrás seleccionar contactos registrados en la aplicación "Contactos".
+  <Step title="Iniciar nueva regla">
+    Haz clic en el botón **+ Nueva regla de negocio**.
+    
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-34-34-2316-PM.png" alt="Botón para crear una nueva regla de negocio" />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar identificación y alcance">
+    Completa los datos básicos de la regla en el panel lateral:
+
+    *   **Nombre de la regla**: Asigna un nombre descriptivo (ej: "Descuento Especial Agencias").
+    *   **Tipo de regla**:
+        *   **General**: Se aplica a todos los usuarios.
+        *   **Específica**: Se aplica solo a los contactos que selecciones.
+
+    <Warning>
+      Si un usuario tiene asignada una **Regla específica**, esta anulará cualquier **Regla general** que pudiera afectarle.
+    </Warning>
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-38-35-8060-PM.png" alt="Configuración de nombre y tipo" />
+    </Frame>
+
+  </Step>
+
+  <Step title="Definir origen y destino">
+    Selecciona los canales y propiedades afectados:
+
+    *   **Proveedor**: Selecciona los proveedores externos que aplicarán esta regla.
+    *   **Punto de venta**: Indica los puntos de venta donde se activará la regla.
+    *   **Hotel**:
+        *   **Todos**: Aplica a todas tus propiedades.
+        *   **Solo**: Selecciona hoteles específicos.
+        *   **Todos menos**: Excluye propiedades puntuales.
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-53-44-2661-PM.png" alt="Selección de proveedores y hoteles" />
+    </Frame>
+
+  </Step>
+
+  <Step title="Seleccionar planes tarifarios">
+    Elige qué tarifas se verán modificadas por esta regla. Si seleccionas varios hoteles, puedes entrar en cada uno para ajustar los planes individualmente.
+
+    <Note>
+      Los planes tarifarios que no selecciones mantendrán su comportamiento base sin alteraciones.
+    </Note>
+
+    <Frame caption="Puedes desmarcar planes específicos por hotel si lo necesitas">
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-05-2025-06-52-04-9204-PM.png" alt="Selección de planes tarifarios" />
+    </Frame>
+
+  </Step>
+
+  <Step title="Configurar vigencia y cálculos">
+    Define cuándo y cómo se aplica la regla:
+
+    *   **Vigencia**: Establece rangos de fechas por estadía o por fecha de venta.
+    *   **Cálculo**: Define si se aplica por noche, habitación o reserva, y si el cálculo base es sobre el importe neto o el total.
+    *   **Modificador**: Indica el porcentaje o monto fijo (USD) que se aplicará sobre la tarifa base.
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-03-52-05-7785-PM.png" alt="Configuración de vigencia y modificadores" />
+    </Frame>
+
+  </Step>
+
+  <Step title="Guardar la regla">
+    Haz clic en **Crear regla** para finalizar. Verás la nueva regla en el listado general.
+
+    <Check>
+      Una vez creada, la regla comenzará a aplicarse inmediatamente según los criterios establecidos.
+    </Check>
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-05-2025-06-58-19-7776-PM.png" alt="Listado de Reglas de Negocio activas" />
+    </Frame>
+
+  </Step>
+</Steps>
+
+---
+
+### Gestionar reglas existentes
+
+Puedes administrar tus reglas desde el botón **Acciones** al final de cada fila en la tabla:
+
+- **Editar**: Abre el panel lateral para modificar cualquier parámetro de la regla.
+- **Eliminar**: Borra la regla de forma permanente.
+
 <Warning>
-Si existe una regla específica aplicable, la regla general no tendrá efecto.
+  La eliminación de una regla es **irreversible**. Asegúrate antes de confirmar la acción.
 </Warning>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-52-00-9052-PM.png" alt="Selección de tipo de regla: Específica y selección de contactos" />
-</Frame>
-</li>
-</ul>
-</li>
-<li>
-<strong>Proveedor:</strong> Selecciona al menos un proveedor. Este campo es obligatorio.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-53-44-2661-PM.png" alt="Campo para seleccionar proveedor" />
-</Frame>
-</li>
-<li>
-<strong>Punto de venta:</strong> Selecciona al menos un punto de venta. Este campo es obligatorio.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-08-55-50-1105-PM.png" alt="Campo para seleccionar punto de venta" />
-</Frame>
-</li>
-<li>
-<strong>Hotel:</strong>
-<ul>
-<li><strong>Todos</strong>: La regla se aplica a todas las propiedades disponibles.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-09-11-53-8239-PM.png" alt="Selección de hoteles: Todos" />
-</Frame>
-</li>
-<li><strong>Solo</strong>: La regla aplica únicamente a las propiedades que selecciones.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-09-26-53-7223-PM.png" alt="Selección de hoteles: Solo" />
-</Frame>
-</li>
-<li><strong>Todos menos</strong>: La regla se aplica a todas las propiedades, excepto a las que hayas seleccionado.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-09-27-13-0652-PM.png" alt="Selección de hoteles: Todos menos" />
-</Frame>
-</li>
-</ul>
-</li>
-<li>
-<strong>Planes tarifarios</strong>: Selecciona los planes tarifarios que se incluirán en la aplicación de la regla. Aquellos que no estén seleccionados no serán aplicables.
-<Note>
-Al seleccionar múltiples hoteles, puedes hacer clic en cada uno para ver y desmarcar planes tarifarios específicos.
-</Note>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-05-2025-06-52-04-9204-PM.png" alt="Selección de planes tarifarios" />
-</Frame>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-09-35-14-5232-PM.png" alt="Ejemplo de selección de planes tarifarios" />
-</Frame>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-04-2025-09-36-09-7991-PM.png" alt="Otro ejemplo de selección de planes tarifarios" />
-</Frame>
-</li>
-<li>
-<strong>Vigencia:</strong> Configura opcionalmente la vigencia de la regla por fecha de estadía o fecha de venta. Las fechas de inicio y fin son inclusivas. Agrega rangos haciendo clic en "Añadir rango".
-<Info>
-Si se establece un rango de fechas, deberás crear una regla adicional para las fechas no incluidas.
-</Info>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-03-52-05-7785-PM.png" alt="Configuración de vigencia de la regla" />
-</Frame>
-</li>
-<li>
-<strong>Configuración del cálculo de la regla:</strong> Define si el cálculo se realizará por noche, por habitación o por reserva, y si será sobre el importe neto o total.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-03-55-23-4841-PM.png" alt="Configuración del cálculo de la regla" />
-</Frame>
-</li>
-<li>
-<strong>Modificador:</strong> Aplica un porcentaje o monto fijo en USD que se sumará al precio base (tarifa neta).
-<Info>
-Si necesitas aplicar varios modificadores, crea reglas separadas para cada uno. El orden en la tabla determina la secuencia de aplicación.
-</Info>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-03-57-12-7688-PM.png" alt="Configuración del modificador" />
-</Frame>
-</li>
-</ul>
-</Step>
-<Step title="Finalizar creación">
-Haz clic en el botón "Crear regla".
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-04-00-54-0641-PM.png" alt="Botón para crear regla" />
-</Frame>
-<Check>
-La regla creada se mostrará en el listado de Reglas de Negocio.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-05-2025-06-58-19-7776-PM.png" alt="Listado de Reglas de Negocio" />
-</Frame>
-</Check>
-</Step>
-</Steps>
 
-### Modificar una Regla de Negocio
+<Tip>
+  Si solo necesitas pausar una regla temporalmente, utiliza el **interruptor** en la tabla. El color
+  verde indica que está activa y el gris que está pausada.
+</Tip>
 
-Para modificar una regla existente:
-
-<Steps>
-<Step title="Editar regla">
-Dirígete a la regla correspondiente, haz clic en "Acciones" y selecciona "Editar".
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-04-03-25-8443-PM.png" alt="Botón para editar una regla" />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-05-2025-07-30-52-2053-PM.png"
+    alt="Interruptor de activación de reglas"
+  />
 </Frame>
-</Step>
-<Step title="Guardar cambios">
-Realiza las modificaciones necesarias en el panel lateral y haz clic en "Guardar cambios".
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-04-04-35-9495-PM.png" alt="Panel lateral para editar reglas y botón Guardar cambios" />
-</Frame>
-</Step>
-</Steps>
-
-### Eliminar una Regla de Negocio
-
-Para eliminar una regla:
-
-<Steps>
-<Step title="Eliminar regla">
-Localiza la regla en la lista, haz clic en "Acciones" y selecciona "Eliminar".
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-04-05-09-8359-PM.png" alt="Botón para eliminar una regla" />
-</Frame>
-</Step>
-<Step title="Confirmar eliminación">
-Confirma la acción en la ventana emergente haciendo clic en "Borrar". Ten en cuenta que esta acción es irreversible.
-<Warning>
-La eliminación de una regla es irreversible.
-</Warning>
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jul-21-2025-04-06-11-6678-PM.png" alt="Ventana de confirmación para eliminar regla" />
-</Frame>
-<Check>
-La tabla se actualizará y la regla ya no estará disponible.
-</Check>
-</Step>
-</Steps>
-
-<Info>
-Si no estás seguro de eliminar una regla, puedes desactivarla temporalmente usando el interruptor correspondiente en la tabla. Si está en verde, está activa; si está en gris, está desactivada.
-<Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Feb-05-2025-07-30-52-2053-PM.png" alt="Interruptor para activar/desactivar una regla" />
-</Frame>
-</Info>
