@@ -1,136 +1,212 @@
 ---
-title: "¿Cómo configurar el medio de pago Payway en el motor de reservas?"
-description: "Este documento detalla cómo configurar Payway como medio de pago disponible en el motor de reservas."
+title: "Cómo configurar el medio de pago Payway en el motor de reservas"
+description: "Guía paso a paso para configurar Payway como medio de pago disponible en el motor de reservas de Pxsol."
 ---
 
+Para habilitar Payway como método de pago en el motor de reservas, es esencial contar con al menos una credencial de conexión previamente configurada.
 
 <Note>
 Es importante que antes de avanzar con esta guía hayas completado los pasos detallados en la siguiente guía:
-<a href="https://ayuda.pxsol.com/es/como-realizar-la-integracion-con-payway" target="_blank" rel="noopener">¿Cómo realizar la integración con Payway?</a>
+
+[¿Cómo realizar la integración con Payway?](https://ayuda.pxsol.com/es/como-realizar-la-integracion-con-payway)
+
 </Note>
 
-<p>Para habilitar Payway como método de pago en el motor de reservas, es esencial contar con al menos una credencial de conexión previamente configurada. Si ya dispones de una credencial de Payway configurada, puedes proceder con los siguientes pasos para habilitar este método de pago en el motor de reservas:</p>
+## Requisitos previos
+
+- Credencial de Payway configurada y validada
+- Acceso a la aplicación "Medios de pago"
+- Cuenta recaudadora en ARS (pesos argentinos) o permisos para crearla
+
+## Pasos para configurar Payway
 
 <Steps>
-<Step title="1 - Acceder a la aplicación 'Medios de pago'">
-  Al ingresar a la aplicación, selecciona el botón <strong>"Nuevo medio de pago"</strong> que se encuentra en la esquina superior derecha. Alternativamente, si deseas modificar un medio de pago ya existente, puedes hacerlo desde el menú de acciones ubicado a la derecha del medio de pago que desees editar.
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-52-6672-PM.jpeg" alt="Botón Nuevo medio de pago o menú de acciones" />
-  </Frame>
+<Step title="Acceder a la aplicación Medios de pago">
+Al ingresar a la aplicación, selecciona el botón **Nuevo medio de pago** que se encuentra en la esquina superior derecha. Alternativamente, si deseas modificar un medio de pago ya existente, puedes hacerlo desde el menú de acciones ubicado a la derecha del medio de pago que desees editar.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-52-6672-PM.jpeg" alt="Vista de la aplicación Medios de pago mostrando el botón Nuevo medio de pago" />
+</Frame>
 </Step>
 
-<Step title="2 - Ingresar la información requerida para la configuración">
-  Se abrirá un panel lateral en el que podrás ingresar la información requerida para la configuración:
+<Step title="Configurar la categoría de medio de pago">
+Se abrirá un panel lateral en el que podrás ingresar la información requerida. En este primer paso, configura los siguientes aspectos:
 
-  <SubSteps>
-  <SubStep title="2.1 - Categoría de medio de pago">
-    En este primer paso, configura los siguientes aspectos:
-    <ul>
-    <li aria-level="1"><strong>Categoría:</strong> despliega el listado de las alternativas disponibles y selecciona la opción de <strong>Payway</strong>.
-    <Note>La categoría <strong>Payway</strong> estará disponible únicamente si se cuenta con al menos una credencial configurada; de lo contrario, esta opción no aparecerá en el listado.</Note>
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-5744-PM.png" alt="Seleccionar categoría Payway" />
-    </Frame>
-    </li>
-    <li aria-level="1"><strong>Nombre único:</strong> nombre con el que el huésped verá este medio de pago durante el proceso de reserva en el motor.
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-8653-PM.png" alt="Nombre único del medio de pago" />
-    </Frame>
-    </li>
-    </ul>
-  </SubStep>
+**Categoría:** Despliega el listado de las alternativas disponibles y selecciona la opción de **Payway**.
 
-  <SubStep title="2.2 - Configuración de cuenta recaudadora">
-    A continuación, deberás elegir la cuenta recaudadora donde se procesarán los pagos realizados a través de esta pasarela de pagos. Solo se mostrarán las cuentas recaudadoras que estén configuradas en la moneda ARS (pesos argentinos). Si aún no cuentas con una, tienes la opción de seleccionar "Crear nueva cuenta recaudadora automáticamente" para generarla de forma instantánea.
-    <Info>Es fundamental configurar una cuenta recaudadora para garantizar que los pagos se reflejen correctamente en las reservas.</Info>
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-56-3588-PM.png" alt="Configuración de cuenta recaudadora" />
-    </Frame>
-  </SubStep>
+<Note>
+  La categoría **Payway** estará disponible únicamente si se cuenta con al menos una credencial
+  configurada; de lo contrario, esta opción no aparecerá en el listado.
+</Note>
 
-  <SubStep title="2.3 - Configuración de credencial">
-    Si tienes una o más de una credencial de Payway configurada, podrás vincular el nuevo medio de pago a la credencial correspondiente.
-    <Warning>Solo será posible configurarla si ya fue validada; en caso contrario, deberás completar la validación antes de continuar.</Warning>
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-7348-PM.jpeg" alt="Configuración de credencial Payway" />
-    </Frame>
-  </SubStep>
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-5744-PM.png"
+    alt="Lista desplegable mostrando la opción Payway en categorías"
+  />
+</Frame>
 
-  <SubStep title="2.4 / 2.5 / 2.6 - Configuración de plantilla de correo automático">
-    En este paso, podrás asociar las plantillas de correo electrónico al método de pago. Tendrás la opción de configurar el envío de un correo para la pre-confirmación de la reserva, así como un segundo correo que diferencie entre un pago exitoso y otro que haya sido rechazado o que presente algún error. Tienes la opción de seleccionar una plantilla que ya hayas creado anteriormente o bien, crear una nueva directamente desde esta sección.
-    <Info>Te recomendamos diseñar plantillas específicas para cada estado del pago, lo que ayudará a mantener una comunicación clara y efectiva con tus huéspedes.</Info>
-    Puedes revisar ejemplos de plantillas de correo electrónico correspondientes a los distintos estados de la transacción haciendo clic en este <a href="https://ayuda.pxsol.com/es/ejemplos-de-plantillas-de-correo-sugeridas-para-la-configuracion-del-medio-de-pago" target="_blank" rel="noopener">enlace</a>.
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-4766-PM.png" alt="Configuración de plantilla de correo automático (parte 1)" />
-    </Frame>
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-4300-PM.png" alt="Configuración de plantilla de correo automático (parte 2)" />
-    </Frame>
-  </SubStep>
+**Nombre único:** Nombre con el que el huésped verá este medio de pago durante el proceso de reserva en el motor.
 
-  <SubStep title="2.6 - Política asociada">
-    En este apartado, se mostrarán las políticas que ya están configuradas para su establecimiento. Deberá seleccionar una o más de estas políticas para que apliquen a este medio de pago.
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-9997-PM.png" alt="Política asociada al medio de pago" />
-    </Frame>
-  </SubStep>
-
-  <SubStep title="2.7 - Definir la moneda para el medio de pago">
-    Selecciona la moneda bajo la cual, al realizar la búsqueda en el motor, este medio de pago estará disponible. La integración con <strong>Payway acepta cobros exclusivamente en ARS (pesos argentinos)</strong>. En caso de confirmar una reserva en otra moneda, se realizará la conversión correspondiente al momento del cobro. El tipo de cambio utilizado será el configurado en la aplicación <strong>“Cambio de moneda”</strong> en Pxsol.
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-1142-PM.png" alt="Definir moneda para el medio de pago" />
-    </Frame>
-  </SubStep>
-
-  <SubStep title="2.8 - Establecer si este medio de pago aplicará algún tipo de descuento o recargo">
-    <ul>
-    <li aria-level="1">Recargo porcentual: puedes establecer un incremento porcentual que se aplicará al elegir este medio de pago.</li>
-    <li aria-level="1">Descuento porcentual: puedes definir un descuento porcentual que se aplicará al seleccionar esta opción de pago.</li>
-    <li aria-level="1">Cobrar solo un porcentaje: si deseas que el pago corresponda a un porcentaje específico del total.</li>
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-7518-PM.jpeg" alt="Definir recargo o descuento para el medio de pago" />
-    </Frame>
-    </ul>
-  </SubStep>
-
-  <SubStep title="2.9 - Ventana de reserva">
-    Establece el intervalo de días entre la fecha en que se realiza la compra y la fecha de llegada del huésped al hotel.
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-52-9050-PM.jpeg" alt="Ventana de reserva" />
-    </Frame>
-  </SubStep>
-
-  <SubStep title="2.10 - Definir el punto de venta">
-    Si cuentas con un único punto de venta, el medio de pago se aplicará automáticamente a este. En caso de tener varios puntos de venta configurados, podrás seleccionar uno o más de ellos para que el medio de pago esté disponible.
-    <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-9362-PM.jpeg" alt="Definir punto de venta" />
-    </Frame>
-  </SubStep>
-  </SubSteps>
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-8653-PM.png" alt="Campo para ingresar el nombre único del medio de pago" />
+</Frame>
 </Step>
 
-<Step title="3 - Guardar cambios">
-  Finalmente, haz clic en el botón "Guardar cambios" para completar la configuración del medio de pago.
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-3660-PM.png" alt="Botón Guardar cambios" />
-  </Frame>
+<Step title="Configurar cuenta recaudadora">
+A continuación, deberás elegir la cuenta recaudadora donde se procesarán los pagos realizados a través de esta pasarela de pagos. Solo se mostrarán las cuentas recaudadoras que estén configuradas en la moneda ARS (pesos argentinos). Si aún no cuentas con una, tienes la opción de seleccionar "Crear nueva cuenta recaudadora automáticamente" para generarla de forma instantánea.
+
+<Info>
+  Es fundamental configurar una cuenta recaudadora para garantizar que los pagos se reflejen
+  correctamente en las reservas.
+</Info>
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-56-3588-PM.png" alt="Sección para seleccionar o crear cuenta recaudadora" />
+</Frame>
+</Step>
+
+<Step title="Vincular credencial de Payway">
+Si tienes una o más de una credencial de Payway configurada, podrás vincular el nuevo medio de pago a la credencial correspondiente.
+
+<Warning>
+  Solo será posible configurarla si ya fue validada; en caso contrario, deberás completar la
+  validación antes de continuar.
+</Warning>
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-7348-PM.jpeg" alt="Campo para seleccionar la credencial de Payway a vincular" />
+</Frame>
+</Step>
+
+<Step title="Configurar plantillas de correo automático">
+En este paso, podrás asociar las plantillas de correo electrónico al método de pago. Tendrás la opción de configurar el envío de un correo para la pre-confirmación de la reserva, así como un segundo correo que diferencie entre un pago exitoso y otro que haya sido rechazado o que presente algún error. Tienes la opción de seleccionar una plantilla que ya hayas creado anteriormente o bien, crear una nueva directamente desde esta sección.
+
+<Info>
+  Te recomendamos diseñar plantillas específicas para cada estado del pago, lo que ayudará a
+  mantener una comunicación clara y efectiva con tus huéspedes.
+</Info>
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-4766-PM.png"
+    alt="Configuración de plantilla de correo para pre-confirmación"
+  />
+</Frame>
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-4300-PM.png"
+    alt="Configuración de plantilla de correo para pago exitoso o rechazado"
+  />
+</Frame>
+
+Puedes revisar ejemplos de plantillas de correo electrónico correspondientes a los distintos estados de la transacción en la siguiente guía:
+
+[Ejemplos de plantillas de correo sugeridas para la configuración del medio de pago](https://ayuda.pxsol.com/es/ejemplos-de-plantillas-de-correo-sugeridas-para-la-configuracion-del-medio-de-pago)
+
+</Step>
+
+<Step title="Asociar políticas">
+En este apartado, se mostrarán las políticas que ya están configuradas para tu establecimiento. Deberás seleccionar una o más de estas políticas para que apliquen a este medio de pago.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-9997-PM.png" alt="Lista de políticas disponibles para asociar al medio de pago" />
+</Frame>
+</Step>
+
+<Step title="Definir la moneda para el medio de pago">
+Selecciona la moneda bajo la cual, al realizar la búsqueda en el motor, este medio de pago estará disponible. La integración con **Payway acepta cobros exclusivamente en ARS (pesos argentinos)**. En caso de confirmar una reserva en otra moneda, se realizará la conversión correspondiente al momento del cobro. El tipo de cambio utilizado será el configurado en la aplicación **Cambio de moneda** en Pxsol.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-1142-PM.png" alt="Selector de moneda para el medio de pago" />
+</Frame>
+</Step>
+
+<Step title="Establecer descuentos o recargos">
+Puedes configurar opciones adicionales para este medio de pago:
+
+• **Recargo porcentual:** Puedes establecer un incremento porcentual que se aplicará al elegir este medio de pago  
+• **Descuento porcentual:** Puedes definir un descuento porcentual que se aplicará al seleccionar esta opción de pago  
+• **Cobrar solo un porcentaje:** Si deseas que el pago corresponda a un porcentaje específico del total
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-7518-PM.jpeg" alt="Opciones para configurar recargos o descuentos" />
+</Frame>
+</Step>
+
+<Step title="Configurar ventana de reserva">
+Establece el intervalo de días entre la fecha en que se realiza la compra y la fecha de llegada del huésped al hotel.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-52-9050-PM.jpeg" alt="Configuración de ventana de reserva con intervalo de días" />
+</Frame>
+</Step>
+
+<Step title="Definir el punto de venta">
+Si cuentas con un único punto de venta, el medio de pago se aplicará automáticamente a este. En caso de tener varios puntos de venta configurados, podrás seleccionar uno o más de ellos para que el medio de pago esté disponible.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-9362-PM.jpeg" alt="Selector de puntos de venta para el medio de pago" />
+</Frame>
+</Step>
+
+<Step title="Guardar cambios">
+Finalmente, haz clic en el botón **Guardar cambios** para completar la configuración del medio de pago.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-53-3660-PM.png" alt="Botón Guardar cambios para finalizar la configuración" />
+</Frame>
 </Step>
 </Steps>
 
-<p>Una vez que hayas configurado el medio de pago, en las búsquedas de tarifas dentro del motor de reservas, podrás visualizar el o los medios de pago que has creado:</p>
+## Visualización en el motor de reservas
+
+Una vez que hayas configurado el medio de pago, en las búsquedas de tarifas dentro del motor de reservas, podrás visualizar el o los medios de pago que has creado:
+
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-1231-PM.png" alt="Medios de pago disponibles en la búsqueda de tarifas" />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-55-1231-PM.png"
+    alt="Vista de búsqueda de tarifas mostrando los medios de pago disponibles"
+  />
 </Frame>
 
-<p>En el check-out del motor, el medio de pago Payway se visualizará de la siguiente manera:</p>
+En el check-out del motor, el medio de pago Payway se visualizará de la siguiente manera:
+
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-1383-PM.png" alt="Visualización de Payway en el check-out del motor de reservas" />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-30-54-1383-PM.png"
+    alt="Pantalla de check-out mostrando Payway como opción de pago"
+  />
 </Frame>
-<p><strong>Payway</strong> solicita como obligatorio la ubicación, por eso al integrar estos datos se suman por defecto en el check-out del motor de reservas.</p>
+
+<Info>
+  **Payway** solicita como obligatorio la ubicación, por eso al integrar estos datos se suman por
+  defecto en el check-out del motor de reservas.
+</Info>
+
+## Guías relacionadas
 
 <Tip>
-Una vez completado este proceso, recomendamos revisar las guías adicionales para comprender cómo funciona la integración, cómo impacta en la confirmación y en la reserva, y cómo realizar devoluciones de pagos procesados con Payway.
-<a href="https://ayuda.pxsol.com/es/comportamiento-en-el-motor-de-reservas-check-out" target="_blank" rel="noopener">Payway: Comportamiento en el Motor de Reservas (Check-out)</a>
-<a href="https://ayuda.pxsol.com/es/payway-comportamiento-y-visualizaci%C3%B3n-en-la-reserva" target="_blank" rel="noopener">Payway: Comportamiento y Visualización en la Reserva</a>
-<a href="https://ayuda.pxsol.com/es/payway-como-efectuar-una-devolucion-parcial-o-total" target="_blank" rel="noopener">Payway: Cómo efectuar una devolución parcial o total</a>
+  Una vez completado este proceso, recomendamos revisar las guías adicionales para comprender cómo
+  funciona la integración, cómo impacta en la confirmación y en la reserva, y cómo realizar
+  devoluciones de pagos procesados con Payway.
 </Tip>
+
+<CardGroup cols={2}>
+<Card title="Comportamiento en el Motor de Reservas (Check-out)" icon="credit-card" href="https://ayuda.pxsol.com/es/comportamiento-en-el-motor-de-reservas-check-out">
+Entiende cómo funciona Payway durante el proceso de check-out
+</Card>
+
+<Card
+  title="Comportamiento y Visualización en la Reserva"
+  icon="eye"
+  href="https://ayuda.pxsol.com/es/payway-comportamiento-y-visualizaci%C3%B3n-en-la-reserva"
+>
+  Aprende cómo se visualiza Payway en las reservas creadas
+</Card>
+
+<Card title="Cómo efectuar una devolución parcial o total" icon="arrow-rotate-left" href="https://ayuda.pxsol.com/es/payway-como-efectuar-una-devolucion-parcial-o-total">
+Guía para realizar devoluciones de pagos procesados con Payway
+</Card>
+</CardGroup>
