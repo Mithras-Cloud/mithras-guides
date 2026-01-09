@@ -1,32 +1,56 @@
 ---
 title: "Payway: Comportamiento en el Motor de Reservas (Check-out)"
-description: "En esta guía se muestra cómo impacta la integración de Payway en el motor de reservas."
+description: "Conoce cómo se visualiza y comporta Payway durante el proceso de check-out en el motor de reservas."
 ---
 
-
-<p>Una vez que el método de pago asociado a la pasarela está completamente configurado y activo, estará visible como una opción durante el proceso de check-out en el motor de reservas.</p>
+Una vez que el método de pago asociado a la pasarela Payway está configurado y activo, aparecerá como opción durante el proceso de check-out en el motor de reservas.
 
 <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-33-19-7574-PM.png" alt="Proceso de check-out en el motor de reservas mostrando opciones de pago." />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-18-2025-04-33-19-7574-PM.png"
+    alt="Pantalla de check-out del motor de reservas mostrando Payway como opción de pago"
+  />
 </Frame>
 
-<Info>
-  <strong>IMPORTANTE!</strong>
-</Info>
+## Impacto en el inventario
 
-<p><strong>Impacto en Inventario:</strong> Independientemente de si el pago es exitoso o rechazado, la reserva ingresará al sistema y se descontará la disponibilidad (inventario) de la habitación.</p>
+<Warning>
+  Independientemente de si el pago es exitoso o rechazado, la reserva ingresará al sistema y se
+  descontará la disponibilidad (inventario) de la habitación.
+</Warning>
 
-<p><strong>Comunicación al Huésped:</strong></p>
-<ul>
-  <li>La plantilla de correo electrónico enviada al huésped variará según el resultado del pago (pre-reserva más confirmación de pago exitoso o notificación de pago rechazado/error), de acuerdo a lo configurado en el medio de pago.</li>
-  <li>La página de respuesta en el check-out también cambiará:
-    <ul>
-      <li><strong>Pago Exitoso:</strong> Se mostrará la reserva confirmada y el mensaje "Muchas gracias por su compra”.</li>
-    </ul>
-  </li>
-</ul>
-<p><a href="https://ppxsol.hoteldemo.com.ar/neo_checkout/payment_status.php?CID=9898004&amp;budget_id=9187494" target="_blank" rel="noopener">Abrir link de ejemplo de pago exitoso.</a></p>
-<ul>
-  <li><strong>Pago Rechazado:</strong> Se mostrará el mismo presupuesto pero indicando el error en el pago y solicitando comunicarse con el hotel.</li>
-</ul>
-<p><a href="https://ppxsol.hoteldemo.com.ar/neo_checkout/payment_status.php?CID=9895939&amp;budget_id=9185106" target="_blank" rel="noopener">Abrir link de ejemplo de pago rechazado.</a></p>
+## Comunicación al huésped
+
+La plantilla de correo electrónico enviada al huésped variará según el resultado del pago, de acuerdo a lo configurado en el medio de pago:
+
+- **Pago exitoso**: Se envía confirmación de reserva con comprobante de pago
+- **Pago rechazado**: Se notifica el error y se solicita contactar al hotel
+
+## Páginas de respuesta en el check-out
+
+La página que ve el huésped después del intento de pago cambia según el resultado:
+
+<Tabs>
+<Tab title="Pago exitoso">
+Se muestra la reserva confirmada con el mensaje "Muchas gracias por su compra".
+
+<Check>
+  El huésped recibe confirmación visual inmediata de que su reserva fue procesada correctamente.
+</Check>
+
+[Ver ejemplo de pago exitoso](https://ppxsol.hoteldemo.com.ar/neo_checkout/payment_status.php?CID=9898004&budget_id=9187494)
+
+</Tab>
+
+<Tab title="Pago rechazado">
+Se muestra el mismo presupuesto indicando el error en el pago y solicitando comunicarse con el hotel.
+
+<Note>
+  La reserva queda registrada en el sistema aunque el pago haya fallado, permitiendo al huésped
+  completar el pago posteriormente.
+</Note>
+
+[Ver ejemplo de pago rechazado](https://ppxsol.hoteldemo.com.ar/neo_checkout/payment_status.php?CID=9895939&budget_id=9185106)
+
+</Tab>
+</Tabs>
