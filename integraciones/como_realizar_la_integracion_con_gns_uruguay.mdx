@@ -1,74 +1,118 @@
 ---
-title: "¿Cómo realizar la integración con GNS? (Uruguay)"
-description: "En esta guía explicaremos cómo realizar la integración con GNS para generar las facturas desde Pxsol y que se emitan en DGI a través de esta integración."
+title: "Cómo realizar la integración con GNS (Uruguay)"
+description: "Guía paso a paso para integrar GNS con Pxsol y generar facturas que se emitan automáticamente en DGI."
 ---
 
+Esta guía te explica cómo realizar la integración con GNS para generar facturas desde Pxsol que se emitan automáticamente en DGI a través de esta integración.
 
-md
-1. Ingresa a la aplicación desde **Configuración - Integraciones**.
+## Requisitos previos
+
+- Acceso a la aplicación de configuración
+- Credenciales de API (API Key y API Secret) proporcionadas por GNS
+- Punto de venta y Establecimiento configurados en Pxsol
+
+## Pasos para la integración
+
+<Steps>
+<Step title="Acceder a la aplicación de integraciones">
+Ingresa a la aplicación desde **Configuración - Integraciones**.
 
 <Frame>
-<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-Dec-13-2024-07-23-12-0563-PM.png?width=331&amp;height=895&amp;name=image-png-Dec-13-2024-07-23-12-0563-PM.png" alt="Configuración - Integraciones">
+<img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-Dec-13-2024-07-23-12-0563-PM.png?width=331&height=895&name=image-png-Dec-13-2024-07-23-12-0563-PM.png" alt="Vista de la sección Configuración - Integraciones en Pxsol" />
 </Frame>
+</Step>
 
-2. En la tarjeta de GNS, selecciona **Instalar**.
+<Step title="Instalar la integración GNS">
+En la tarjeta de GNS, selecciona **Instalar**.
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-46-41-8538-PM.png" alt="Tarjeta GNS - Instalar">
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-46-41-8538-PM.png"
+    alt="Tarjeta de GNS mostrando el botón Instalar"
+  />
 </Frame>
 
 Luego, confirma haciendo clic en **Sí, Instalar**.
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-46-59-5278-PM.png" alt="Confirmar instalación de GNS">
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-46-59-5278-PM.png" alt="Ventana de confirmación para instalar la integración GNS" />
 </Frame>
+</Step>
 
-3. Selecciona **Añadir credencial**.
+<Step title="Añadir credencial">
+Selecciona **Añadir credencial**.
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-47-26-0200-PM.png" alt="Añadir credencial GNS">
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-05-47-26-0200-PM.png" alt="Botón para añadir una nueva credencial de GNS" />
 </Frame>
+</Step>
 
-4. Se abrirá un formulario donde deberás completar los datos de la integración:
+<Step title="Completar el formulario de credenciales">
+Se abrirá un formulario donde deberás completar los siguientes datos:
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-06-08-47-5688-PM.png" alt="Formulario de datos de integración GNS">
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-19-2025-06-08-47-5688-PM.png"
+    alt="Formulario completo para configurar credenciales de GNS"
+  />
 </Frame>
 
-*   **Nombre de credencial:** Permite identificar con un nombre estas credenciales que se utilizarán. Solo sirve de etiqueta.
-    Ej: Integración de prueba con GNS.
-*   **API Key:** Se deben solicitar al Proveedor GNS para realizar la conexión.
-    Ej: `qC6VrtpPn4gEpBFw`
-*   **API Secret:** Se deben solicitar al Proveedor GNS para realizar la conexión.
-    Ej: `pZl6mOh0lFg3mVw0r8ibnSGoavKyqkb2`
-*   **Entorno:** Sirve para etiquetar si las credenciales colocadas están en Producción o Pruebas. Es solamente una etiqueta, ya que se debe solicitar a GNS que las credenciales brindadas generen comprobante en DGI o no.
-*   **Establecimiento:** Selecciona el Punto de venta que utilizará estas credenciales.
-*   **Producto:** Selecciona el Establecimiento que utilizará estas credenciales.
+**Nombre de credencial:** Permite identificar con un nombre estas credenciales que se utilizarán. Solo sirve de etiqueta.  
+Ejemplo: Integración de prueba con GNS
+
+**API Key:** Se deben solicitar al Proveedor GNS para realizar la conexión.  
+Ejemplo: `qC6VrtpPn4gEpBFw`
+
+**API Secret:** Se deben solicitar al Proveedor GNS para realizar la conexión.  
+Ejemplo: `pZl6mOh0lFg3mVw0r8ibnSGoavKyqkb2`
+
+**Entorno:** Sirve para etiquetar si las credenciales colocadas están en Producción o Pruebas. Es solamente una etiqueta, ya que se debe solicitar a GNS que las credenciales brindadas generen comprobante en DGI o no.
+
+**Establecimiento:** Selecciona el Punto de venta que utilizará estas credenciales.
+
+**Producto:** Selecciona el Establecimiento que utilizará estas credenciales.
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-11-59-5622-PM.png" alt="Seleccionar Establecimiento y Producto">
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-11-59-5622-PM.png" alt="Campos para seleccionar Establecimiento y Producto en el formulario" />
 </Frame>
+</Step>
 
-5. Selecciona **Añadir**.
+<Step title="Guardar la credencial">
+Selecciona **Añadir** para guardar la credencial configurada.
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-12-46-9975-PM.png" alt="Botón Añadir credencial">
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-12-46-9975-PM.png" alt="Botón Añadir para guardar la credencial de GNS" />
 </Frame>
+</Step>
+</Steps>
+
+## Verificar la configuración
 
 <Tip>
 Puedes realizar una prueba de credenciales para confirmar que la información es correcta. Para ello, selecciona la **credencial configurada** y luego **Probar credencial**.
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-14-51-6232-PM.png" alt="Probar credencial GNS">
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-14-51-6232-PM.png"
+    alt="Opción para probar la credencial de GNS configurada"
+  />
 </Frame>
 
 Para confirmar que las credenciales se cargaron correctamente, deberá aparecer el siguiente aviso:
 
 <Frame>
-<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-15-42-8283-PM.png" alt="Aviso de credenciales correctas">
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-26-2025-12-15-42-8283-PM.png" alt="Mensaje de confirmación indicando que las credenciales son correctas" />
 </Frame>
 </Tip>
 
-6. Realiza la creación y configuración de la sucursal de Facturación utilizando las credenciales cargadas en esta guía. Para ello, sigue los pasos de la siguiente guía:
+## Siguiente paso
 
-### [¿Cómo configurar una sucursal para poder Facturar?](https://ayuda.pxsol.com/es/c%C3%B3mo-configurar-una-sucursal-para-poder-facturar)
+Una vez completada la integración, deberás realizar la creación y configuración de la sucursal de Facturación utilizando las credenciales cargadas.
+
+<Card
+  title="Configurar sucursal para facturar"
+  icon="file-invoice"
+  href="https://ayuda.pxsol.com/es/c%C3%B3mo-configurar-una-sucursal-para-poder-facturar"
+>
+  Guía completa para configurar una sucursal y comenzar a facturar con GNS
+</Card>
