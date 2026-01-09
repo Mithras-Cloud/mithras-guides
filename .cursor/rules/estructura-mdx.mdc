@@ -399,7 +399,58 @@ description: "Concise description explaining page purpose and value"
 - Use **Accordions** for progressive disclosure of information
 - Use **RequestExample/ResponseExample** specifically for API endpoint documentation
 - Use **ParamField** for API parameters, **ResponseField** for API responses
-- Use **Expandable** for nested object properties or hierarchical information---
-  alwaysApply: true
+- Use **Expandable** for nested object properties or hierarchical information
+
+## List formatting rules
+
+### Lists within Steps components
+
+**IMPORTANT**: When creating lists inside `<Step>` components, use bullet points (`•`) instead of markdown list syntax (`-` or `1.`) to avoid parsing errors with the linter.
+
+**Correct format:**
+
+```
+<Step title="Example">
+Complete the following:
+
+• First item
+• Second item
+• Third item
+</Step>
+```
+
+**Incorrect format (causes linter errors):**
+
+```
+<Step title="Example">
+Complete the following:
+
+- First item
+- Second item
+- Third item
+</Step>
+```
+
+**Avoid nested lists**: Nested lists within Steps can cause parsing issues. If you need to show sub-items, reformat them as inline text or separate bullet points.
+
+**Example with nested content (reformatted):**
+
+```
+<Step title="Example">
+Complete the following:
+
+• First item: Description with sub-options (Option A or Option B)
+• Second item
+• Third item
+</Step>
+```
+
+### Lists outside Steps components
+
+For lists outside of Steps components, you can use standard markdown list syntax (`-` for unordered lists, `1.` for ordered lists).
+
+---
+
+alwaysApply: true
 
 ---
