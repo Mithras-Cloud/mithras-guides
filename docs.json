@@ -328,7 +328,8 @@
               "pms/como_visualizar_y_ver_informacion_sobre_las_habitaciones_desde_la_aplicacion_estado_de_habitaciones",
               "pms/como_cambiar_el_estado_de_una_mesa",
               "pms/como_vincular_un_huesped_a_un_folio",
-              "pms/como_activar_early_check_in_y_late_check_out_en_una_reserva"
+              "pms/como_activar_early_check_in_y_late_check_out_en_una_reserva",
+              "pms/como_vincular_un_huesped_a_una_habitacion"
             ]
           },
           {
