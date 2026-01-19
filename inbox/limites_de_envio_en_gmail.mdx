@@ -1,0 +1,111 @@
+---
+title: "Límites de envío en Gmail"
+description: "Entiende por qué recibes errores de rebote y cómo funcionan los límites de envío en Google Workspace"
+---
+
+Si has intentado enviar un correo electrónico y has recibido un mensaje de error indicando que has alcanzado un límite, tu cuenta ha sido restringida temporalmente para proteger la reputación del dominio y evitar el spam.
+
+Esta guía explica las causas comunes, los límites específicos y cómo restablecer tu capacidad de envío.
+
+## El mensaje de error
+
+Generalmente, cuando alcanzas el límite, verás un mensaje de rebote (bounce) con el siguiente texto:
+
+<Warning>
+"Ha alcanzado el límite de envío de correo. Su mensaje no se ha enviado."
+</Warning>
+
+Esto significa que no podrás enviar nuevos correos hasta que transcurra el periodo de restricción, aunque **sí podrás seguir recibiendo correos entrantes**.
+
+## Causas principales
+
+Existen tres razones principales por las que Google aplica estas restricciones a tu cuenta:
+
+<CardGroup cols={2}>
+  <Card title="Volumen de destinatarios" icon="users">
+    Has enviado correos a más de 2.000 destinatarios (o 500 en cuentas de prueba) en un periodo de 24 horas.
+  </Card>
+  <Card title="Correos rechazados" icon="ban">
+    Una gran cantidad de los correos que enviaste fueron marcados como "no entregables" (direcciones inexistentes).
+  </Card>
+  <Card title="Marcado como Spam" icon="shield-xmark">
+    Los destinatarios han marcado tus correos como spam o tus mensajes tienen características de correo no deseado.
+  </Card>
+  <Card title="Uso de clientes externos" icon="desktop">
+    El uso de clientes como Outlook o Apple Mail vía IMAP/POP reduce los límites disponibles.
+  </Card>
+</CardGroup>
+
+## Entendiendo los límites numéricos
+
+Es crucial entender cómo Google cuenta los envíos. No se trata solo del número de correos, sino del número de destinatarios.
+
+<Info>
+  **Matemática de los envíos:**
+  Si envías **1 correo** a **10 personas** (ya sea en Para, CC o CCO), cuenta como **10 envíos** contra tu límite diario.
+</Info>
+
+A continuación se detallan los límites según el tipo de cuenta y método de envío:
+
+<AccordionGroup>
+  <Accordion title="Cuentas de Google Workspace (Pago)">
+    *   **Límite diario:** 2.000 destinatarios por día.
+    *   **Límite vía SMTP/IMAP:** Si usas clientes externos, el límite puede ser inferior.
+    *   **Restablecimiento:** Los límites se reinician 24 horas después de alcanzar el tope.
+  </Accordion>
+
+  <Accordion title="Cuentas en periodo de prueba (Trial)">
+    *   **Límite diario:** 500 destinatarios por día.
+    *   **Conversión:** El límite aumenta automáticamente a 2.000 cuando la cuenta de prueba se convierte en una cuenta de pago y han pasado al menos 60 días o se ha realizado un pago manual equivalente.
+  </Accordion>
+
+  <Accordion title="Dispositivos móviles y Sincronización">
+    Si utilizas Google Sync o aplicaciones móviles, el límite puede ser de 500 mensajes externos.
+  </Accordion>
+</AccordionGroup>
+
+## Cómo solucionar el problema
+
+Si tu cuenta está bloqueada, sigue estos pasos para restaurar el servicio y prevenir futuros bloqueos.
+
+<Steps>
+  <Step title="Detener los envíos inmediatamente">
+    No intentes reenviar el correo. Cada intento fallido puede contar contra tu límite o extender el tiempo de bloqueo. Espera entre **1 a 24 horas**.
+  </Step>
+
+  <Step title="Verificar actividad sospechosa">
+    Revisa tu carpeta de **Enviados**. Si ves correos que tú no enviaste, es posible que tu cuenta esté comprometida.
+    
+    <Check>
+      Cambia tu contraseña inmediatamente y activa la verificación en dos pasos si detectas actividad inusual.
+    </Check>
+  </Step>
+
+  <Step title="Limpiar listas de distribución">
+    Si envías correos masivos, elimina las direcciones que rebotan. Enviar correos repetidamente a direcciones inexistentes daña la reputación de tu dominio.
+  </Step>
+
+  <Step title="Usar Google Groups para comunicaciones masivas">
+    Para enviar mensajes a grandes grupos de personas, utiliza **Google Groups**.
+    
+    *   Enviar un correo a la dirección del grupo cuenta como **1 solo envío**, independientemente de cuántos miembros tenga el grupo.
+  </Step>
+</Steps>
+
+## Mejores prácticas
+
+Para evitar llegar al límite en el futuro, considera las siguientes recomendaciones:
+
+<Tip>
+  Si necesitas enviar boletines comerciales o marketing a más de 2.000 personas, no utilices tu cuenta de Gmail estándar. Integra un servicio de terceros especializado en Email Marketing (como Mailchimp, SendGrid o HubSpot) que cumpla con las normativas de SPAM.
+</Tip>
+
+### Resumen de reglas
+
+*   **No compres listas de correos:** Esto garantiza altas tasas de rebote y bloqueos.
+*   **Escalona los envíos:** Si tienes que enviar 1.000 correos manualmente, divídelos en lotes a lo largo de varios días.
+*   **Verifica la configuración SMTP:** Si usas impresoras o escáneres ("Scan to Email"), asegúrate de que no estén enviando correos en bucle.
+
+<Card title="Más información" icon="google" href="https://support.google.com/a/answer/166852">
+  Ver documentación oficial de Google sobre límites de envío
+</Card>
