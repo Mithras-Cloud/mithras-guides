@@ -500,7 +500,8 @@
               "conversaciones/como_asociar_una_reserva_o_consulta_al_chat_de_conversaciones",
               "conversaciones/como_generar_una_reserva_o_consulta_al_chat_de_conversaciones",
               "conversaciones/buscador_general_de_conversaciones",
-              "conversaciones/archivar_conversaciones"
+              "conversaciones/archivar_conversaciones",
+              "conversaciones/reintento_manual_de_mensajes_fallidos"
             ]
           },
           {
