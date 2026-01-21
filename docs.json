@@ -326,7 +326,8 @@
               "pms/como_visualizar_cuentas_recaudadoras",
               "pms/como_cargar_pagos_en_una_mesa",
               "pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol",
-              "pms/como_crear_bloqueos_desde_el_plano_de_ocupacion"
+              "pms/como_crear_bloqueos_desde_el_plano_de_ocupacion",
+              "pms/como_asignarle_una_habitacion_a_un_huesped"
             ]
           },
           {
