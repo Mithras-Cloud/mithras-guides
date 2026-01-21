@@ -417,7 +417,8 @@
               "pms/como_solicitar_un_nuevo_impuesto_para_mi_hotel",
               "pms/como_registrar_un_ingreso_de_alguien_que_no_esta_hospedado",
               "pms/como_visualizar_comprobantes_emitidos_dentro_de_afip",
-              "pms/como_modificar_el_nombre_de_un_folio"
+              "pms/como_modificar_el_nombre_de_un_folio",
+              "pms/como_crear_un_nuevo_folio_dentro_de_una_reserva__v1"
             ]
           },
           {
