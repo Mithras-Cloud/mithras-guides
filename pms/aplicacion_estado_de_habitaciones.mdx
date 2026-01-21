@@ -1,0 +1,27 @@
+---
+title: "Aplicación: Estado de habitaciones"
+description: "Descripción detallada de las funcionalidades disponibles de la aplicación 'Estado de habitaciones', junto a información complementaria relevante."
+---
+
+
+<h1>Estado de Habitaciones</h1>
+
+Esta aplicación detalla las funcionalidades de la aplicación "Estado de Habitaciones", junto con información complementaria relevante.
+
+<h2>Automatizaciones</h2>
+
+Existen las siguientes automatizaciones en la aplicación:
+
+<ul>
+  <li>
+    Los cambios manuales son necesarios para actualizar los estados de las habitaciones como: limpia e inspeccionada, limpia, sucia, bloqueada por mantenimiento o fuera de servicio. Al finalizar una reserva, el sistema permite marcar la habitación como sucia o seleccionar otro estado.
+  </li>
+  <li>
+    La instancia de la habitación física (libre u ocupada) se determina según la instancia de la reserva:
+    <ul>
+      <li>Si la reserva está en instancia: "Nueva" o "Confirmada", la habitación se considera "Libre".</li>
+      <li>Si la reserva está en instancia: "Check-in", "In-house" o "Check-out", la habitación física se clasifica como "Ocupada".</li>
+      <li>Una vez que la reserva se pasa a instancia "Finalizada", la habitación física vuelve a estar "Libre".</li>
+    </ul>
+  </li>
+</ul>
