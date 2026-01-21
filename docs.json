@@ -257,7 +257,8 @@
               "crm/como_filtrar_las_cancelaciones_no_ventas_de_un_periodo",
               "crm/como_registrar_llamadas",
               "crm/como_asignar_un_mail_a_un_agente_o_responsable",
-              "crm/gestion_del_correo_no_deseado_spam"
+              "crm/gestion_del_correo_no_deseado_spam",
+              "crm/mutadores_como_crear_un_nuevo_mutador"
             ]
           },
           {
