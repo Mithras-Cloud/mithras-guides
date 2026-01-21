@@ -373,7 +373,8 @@
               "pms/como_borrar_la_asignacion_de_una_reserva",
               "pms/como_facturar_desde_el_modulo_neo_facturacion_uruguay",
               "pms/folios__como_cargar_consumos_en_una_reserva",
-              "pms/folios__como_fusionar_dos_folios"
+              "pms/folios__como_fusionar_dos_folios",
+              "pms/como_crear_depositos_para_la_aplicacion_inventario"
             ]
           },
           {
