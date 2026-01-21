@@ -1,0 +1,60 @@
+---
+title: "¿Cómo delegar su dominio comprado en ToWebs a nuestro hosting de Cloudflare?"
+description: "En esta guía explicaremos cómo delegar su dominio comprado en ToWebs a nuestro hosting de Cloudflare."
+---
+
+
+<Note>
+<strong>IMPORTANTE:</strong>&nbsp;No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com)
+</Note>
+
+<p>Pasos para hacer el cambio de NS (name servers):</p>
+
+<Steps>
+<Step title="Accede a la gestión de tu dominio">
+1. Ingresa a [https://manage.opensrs.net/index.cgi](https://manage.opensrs.net/index.cgi)
+2. Inicia sesión con tu dominio, usuario y contraseña.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-25-2022-09-57-27-7128-PM.png" alt="Captura de pantalla de inicio de sesión en opensrs">
+</Frame>
+</Step>
+
+<Step title="Gestiona tus Name Servers">
+1. En el listado de propiedades que aparecen, haz clic en <strong>Manage Name Servers</strong>.
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Nov-25-2022-09-58-22-9267-PM.png" alt="Captura de pantalla para gestionar Name Servers">
+</Frame>
+</Step>
+
+<Step title="Reemplaza los Name Servers">
+1. Una vez dentro, dirígete a la sección de <strong>Servidores de nombres (Server Hostname)</strong>.
+2. Reemplaza los servidores de nombres existentes por los que te indique pxsol. Pueden ser:
+    <ul>
+        <li><code>grace.ns.cloudflare.com</code></li>
+        <li><code>merlin.ns.cloudflare.com</code></li>
+    </ul>
+    o
+    <ul>
+        <li><code>henry.ns.cloudflare.com</code></li>
+        <li><code>mona.ns.cloudflare.com</code></li>
+    </ul>
+3. Haz clic en el botón <strong>Save Configuration</strong>.
+
+<Warning>
+Todos los servidores de nombres que no sean los de Cloudflare deben ser eliminados de tu lista.
+</Warning>
+
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Nov-25-2022-09-59-59-1638-PM.png" alt="Captura de pantalla para reemplazar Name Servers">
+</Frame>
+</Step>
+
+<Step title="Confirma el cambio">
+<p>Una vez realizado el cambio en los NS, informa por correo electrónico a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y correcta configuración.</p>
+<Check>
+Hemos recibido tu solicitud y estamos trabajando en la propagación de los cambios.
+</Check>
+</Step>
+</Steps>
