@@ -432,7 +432,8 @@
               "pms/como_modificar_el_nombre_de_un_folio",
               "pms/como_crear_un_nuevo_folio_dentro_de_una_reserva__v1",
               "pms/como_actualizar_plano_de_ocupacion",
-              "pms/como_visualizar_comprobantes_recibidos"
+              "pms/como_visualizar_comprobantes_recibidos",
+              "pms/como_facturar_desde_plano_de_mesas"
             ]
           },
           {
