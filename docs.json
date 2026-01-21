@@ -152,7 +152,8 @@
               "motor/como_guardar_los_datos_de_la_tarjeta",
               "motor/edicion_multiple_por_habitacion_en_tarifas_y_disponibilidad_v8",
               "motor/como_crear_un_voucher",
-              "motor/aplicacion_promociones_vouchers_y_anuncios"
+              "motor/aplicacion_promociones_vouchers_y_anuncios",
+              "motor/como_desvincularse_de_mercado_pago"
             ]
           },
           {
