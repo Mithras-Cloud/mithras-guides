@@ -3897,10 +3897,6 @@
     {
       "source": "/workflows-para-ia",
       "destination": "/conversaciones/workflows_para_ia"
-    },
-    {
-      "source": "/test-pxsol",
-      "destination": "/agencias_b2b/agencia_contenido_dinamico_para_plantillas_de_correos"
     }
   ]
 }
