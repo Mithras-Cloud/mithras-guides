@@ -16,81 +16,30 @@
           {
             "group": "Empezando",
             "pages": [
-              "index"
+              "index",
+              "quickstart",
+              "development "
             ]
           },
           {
             "group": "Primeros Pasos",
             "pages": [
               "primeros_pasos/proceso_de_implementacion_u_onboarding",
-              "primeros_pasos/proceso_1_configuracion_inicial",
-              "primeros_pasos/proceso_2_optimizacion_del_motor_de_busquedas",
+              "primeros_pasos/proceso_1__configuracion_inicial",
+              "primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas",
               "primeros_pasos/como_instalar_la_web_app_de_pxsol_en_tu_telefono_celular",
               "primeros_pasos/como_acceder_al_centro_de_ayuda_desde_pxsol",
               "primeros_pasos/como_cambiar_la_contrasena_de_mi_usuario",
               "primeros_pasos/como_crear_un_ticket_desde_el_sistema_al_soporte_de_pxsol",
-              "primeros_pasos/proceso_3_gestion_de_consultas",
+              "primeros_pasos/proceso_3__gestion_de_consultas",
               "primeros_pasos/pasos_a_seguir_para_ingresar_a_la_plataforma",
-              "primeros_pasos/proceso_4_gestion_de_reservas",
-              "primeros_pasos/como_utilizar_el_buscador_de_pxsol",
-              "primeros_pasos/como_visualizar_el_centro_de_ayuda_de_pxsol",
-              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta",
-              "primeros_pasos/proceso_5_visualizacion_de_reporte_de_reservas"
+              "primeros_pasos/proceso_4__gestion_de_reservas",
+              "primeros_pasos/como_utilizar_el_buscador_de_pxsol"
             ]
           },
           {
             "group": "Configuración Inicial",
-            "pages": [
-              "configuración_inicial/como_cambiar_mi_pin_si_olvide_el_pin_actual",
-              "configuración_inicial/aplicacion_configuracion_punto_de_venta",
-              "configuración_inicial/configuracion_punto_de_venta__tipo_web",
-              "configuración_inicial/como_crear_un_nuevo_usuario",
-              "configuración_inicial/como_dar_a_un_usuario_permiso_o_restringir_el_acceso_a_determinados_establecimientos",
-              "configuración_inicial/que_es_y_para_que_sirve_promociones",
-              "configuración_inicial/configuracion_punto_de_venta__tipo_agencia",
-              "configuración_inicial/como_crear_usuarios_masivamente",
-              "configuración_inicial/como_puedo_configurar_la_zona_horaria_de_mi_propiedad",
-              "configuración_inicial/que_es_y_para_que_sirve_establecimientos",
-              "configuración_inicial/configuracion_punto_de_venta__tipo_motor",
-              "configuración_inicial/como_otorgar_acceso_a_una_cuenta_de_proveedores_a_un_usuario_con_permiso_basico",
-              "configuración_inicial/como_gestionar_los_roles_de_usuario",
-              "configuración_inicial/como_configurar_notificaciones",
-              "configuración_inicial/como_generar_un_pin_para_un_usuario",
-              "configuración_inicial/como_puedo_configurar_la_zona_horaria_de_mi_usuario",
-              "configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario",
-              "configuración_inicial/recomendaciones_usuarios",
-              "configuración_inicial/configuracion_punto_de_venta__tipo_multihotel",
-              "configuración_inicial/como_crear_equipos_para_organizar_las_operaciones",
-              "configuración_inicial/como_cargar_fotos_y_archivos_en_mi_biblioteca_de_archivos",
-              "configuración_inicial/configuracion_de_housekeeping",
-              "configuración_inicial/configurar_los_dias_para_cambio_de_sabanas",
-              "configuración_inicial/configuracion_punto_de_venta__tipo_marketplace",
-              "configuración_inicial/como_importar_datos_del_hotel_desde_booking",
-              "configuración_inicial/como_cambiar_el_numero_de_whatsapp_al_que_llega_el_pin_para_validar_tarjetas_de_credito",
-              "configuración_inicial/como_desactivar_las_notificaciones",
-              "configuración_inicial/como_eliminar_un_usuario",
-              "configuración_inicial/cambio_de_moneda_guia_para_configurar_el_tipo_de_cambio_y_aplicar_incrementos_automaticos",
-              "configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito",
-              "configuración_inicial/como_cambiar_de_empresa_con_usuario_multipropiedad",
-              "configuración_inicial/como_otorgar_permiso_de_administrador_a_un_usuario",
-              "configuración_inicial/como_dar_o_quitar_permiso_a_un_usuario_para_que_pueda_instalar_informes",
-              "configuración_inicial/que_es_y_para_que_sirve_tipos_de_habitaciones",
-              "configuración_inicial/personalizar_mi_motor_de_reservas",
-              "configuración_inicial/como_modificar_el_pin_de_un_usuario",
-              "configuración_inicial/como_dar_o_quitar_permiso_a_un_usuario_para_que_pueda_borrar_tareas",
-              "configuración_inicial/que_es_y_para_que_sirve_politicas",
-              "configuración_inicial/que_es_y_para_que_sirve_medios_de_pago",
-              "configuración_inicial/como_bloquear_la_visualizacion_de_reservas_a_un_usuario",
-              "configuración_inicial/como_generar_un_usuario_clonando_los_permisos_de_otro",
-              "configuración_inicial/como_desvincular_un_usuario_de_una_cuenta_de_correo",
-              "configuración_inicial/que_es_y_para_que_sirve_plantillas_de_correo",
-              "configuración_inicial/como_dar_o_quitar_permiso_a_un_usuario_para_que_visualice_una_cuenta_de_correo_del_inbox",
-              "configuración_inicial/cambiar_colores_de_referencia_para_los_estados_de_las_habitaciones",
-              "configuración_inicial/como_cargar_la_foto_que_aparece_en_los_presupuestos",
-              "configuración_inicial/como_habilitar_aplicaciones_de_configuracion_a_usuarios",
-              "configuración_inicial/como_dar_a_un_usuario_permiso_o_restringir_el_acceso_a_determinados_puntos_de_venta",
-              "configuración_inicial/como_realizar_un_curso_en_la_academia_de_pxsol"
-            ]
+            "pages": "configuración_inicial/como_cambiar_mi_pin_si_olvide_el_pin_actual, configuración_inicial/aplicacion_configuracion_punto_de_venta, configuración_inicial/configuracion_punto_de_venta__tipo_web, configuración_inicial/como_crear_un_nuevo_usuario, configuración_inicial/como_dar_a_un_usuario_permiso_o_restringir_el_acceso_a_determinados_establecimientos, configuración_inicial/que_es_y_para_que_sirve_promociones, configuración_inicial/configuracion_punto_de_venta__tipo_agencia, configuración_inicial/como_crear_usuarios_masivamente, configuración_inicial/como_puedo_configurar_la_zona_horaria_de_mi_propiedad, configuración_inicial/que_es_y_para_que_sirve_establecimientos, configuración_inicial/configuracion_punto_de_venta__tipo_motor, configuración_inicial/como_otorgar_acceso_a_una_cuenta_de_proveedores_a_un_usuario_con_permiso_basico, configuración_inicial/como_gestionar_los_roles_de_usuario, configuración_inicial/como_configurar_notificaciones, configuración_inicial/como_generar_un_pin_para_un_usuario, configuración_inicial/como_puedo_configurar_la_zona_horaria_de_mi_usuario, configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario, configuración_inicial/recomendaciones_usuarios, configuración_inicial/configuracion_punto_de_venta__tipo_multihotel, configuración_inicial/como_crear_equipos_para_organizar_las_operaciones, configuración_inicial/como_cargar_fotos_y_archivos_en_mi_biblioteca_de_archivos, configuración_inicial/configuracion_de_housekeeping, configuración_inicial/configurar_los_dias_para_cambio_de_sabanas, configuración_inicial/configuracion_punto_de_venta__tipo_marketplace, configuración_inicial/como_importar_datos_del_hotel_desde_booking, configuración_inicial/como_cambiar_el_numero_de_whatsapp_al_que_llega_el_pin_para_validar_tarjetas_de_credito, configuración_inicial/como_desactivar_las_notificaciones, configuración_inicial/como_eliminar_un_usuario, configuración_inicial/cambio_de_moneda_guia_para_configurar_el_tipo_de_cambio_y_aplicar_incrementos_automaticos, configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito, configuración_inicial/como_cambiar_de_empresa_con_usuario_multipropiedad, configuración_inicial/como_otorgar_permiso_de_administrador_a_un_usuario, configuración_inicial/como_dar_o_quitar_permiso_a_un_usuario_para_que_pueda_instalar_informes, configuración_inicial/que_es_y_para_que_sirve_tipos_de_habitaciones, configuración_inicial/personalizar_mi_motor_de_reservas, configuración_inicial/como_modificar_el_pin_de_un_usuario, configuración_inicial/como_dar_o_quitar_permiso_a_un_usuario_para_que_pueda_borrar_tareas, configuración_inicial/que_es_y_para_que_sirve_politicas, configuración_inicial/que_es_y_para_que_sirve_medios_de_pago, configuración_inicial/configuracion_del_motor_de_reservas, configuración_inicial/configuracion_del_motor_de_reservas"
           },
           {
             "group": "Motor",
@@ -139,9 +88,7 @@
               "motor/como_impulsar_el_paso_de_cambios_del_tarifario_madre_a_los_otros_tarifarios",
               "motor/como_visualizar_la_aplicacion_tipos_de_habitaciones",
               "motor/como_crear_habitaciones_utilizando_la_funcion_duplicar",
-              "motor/como_borrar_una_politica_de_cancelacion",
-              "motor/recomendaciones_promociones",
-              "motor/como_configurar_temporada_alta_en_el_tarifario"
+              "motor/como_borrar_una_politica_de_cancelacion"
             ]
           },
           {
@@ -187,10 +134,7 @@
               "crm/guia_como_activar_las_notificaciones_de_la_aplicacion_conversaciones_en_tu_celular",
               "crm/aplicacion_de_plantillas",
               "crm/conexion_de_facebook__interno_pxsoleros",
-              "crm/como_pasar_varias_transacciones_a_la_carpeta_de_no_venta",
-              "crm/como_crear_plantilla_de_correo_utilizando_la_funcion_duplicar",
-              "crm/como_imprimir_una_reserva",
-              "crm/activar_correos_google_workspace_posterior_a_la_instalacion_web"
+              "crm/como_pasar_varias_transacciones_a_la_carpeta_de_no_venta"
             ]
           },
           {
@@ -216,15 +160,7 @@
               "informes/como_adquirir_informes_extra_a_los_disponibles_por_el_plan",
               "informes/como_visualizar_un_informe",
               "informes/informe_de_reservas",
-              "informes/como_dar_permiso_o_excluir_usuarios_de_un_informe",
-              "informes/informe_de_ocupacion_adr_y_revpar",
-              "informes/informe_ingresos_por_categoria",
-              "informes/como_gestionar_mis_informes_desde_la_lista_de_informes",
-              "informes/como_crear_una_vista_personalizada_en_mi_lista_de_informes",
-              "informes/como_buscar_un_informe",
-              "informes/como_ver_el_resultado_de_la_fuente_de_trafico",
-              "informes/como_emitir_el_archivo_txt_de_iva_compras",
-              "informes/informe_comprobantes_de_venta_y_comprobantes_de_venta_fiscales"
+              "informes/como_dar_permiso_o_excluir_usuarios_de_un_informe"
             ]
           },
           {
@@ -233,6 +169,8 @@
               "web/como_delegar_su_dominio_comprado_en_google_a_nuestro_hosting_de_cloudflare",
               "web/instalacion_de_tu_web_con_pxsol",
               "web/como_delegar_su_dominio_comprado_en_wiroos_a_nuestro_hosting_de_cloudflare",
+              "web/guias_autoadministrables_template_nova",
+              "web/guias_autoadministrables_template_seren",
               "web/como_integrar_el_motor_de_roomcloud_en_el_sitio_web_del_hotel",
               "web/guia_interna",
               "web/como_delegar_su_dominio_comprado_en_yachay_a_nuestro_hosting_de_cloudflare",
@@ -258,9 +196,7 @@
               "web/como_delegar_su_dominio_comprado_en_nic",
               "web/descripcion_del_establecimiento",
               "web/guias_autoadministrables_template_desland",
-              "web/modulo_web__imagen_o_galeria_principal_home_y_secciones",
-              "web/como_descargar_el_codigo_de_los_certificados_de_tripadvisor",
-              "web/recomendaciones"
+              "web/modulo_web__imagen_o_galeria_principal_home_y_secciones"
             ]
           },
           {
@@ -327,10 +263,7 @@
               "pms/visualizar_y_aceptar_o_rechazar_solicitudes_de_acuerdo_de_usuarios_logueados_en_tu_web",
               "pms/como_borrar_comprobantes_emitidos",
               "pms/como_visualizar_y_ver_informacion_sobre_las_habitaciones_desde_la_aplicacion_estado_de_habitaciones",
-              "pms/como_cambiar_el_estado_de_una_mesa",
-              "pms/como_vincular_un_huesped_a_un_folio",
-              "pms/como_activar_early_check_in_y_late_check_out_en_una_reserva",
-              "pms/como_vincular_un_huesped_a_una_habitacion"
+              "pms/como_cambiar_el_estado_de_una_mesa"
             ]
           },
           {
@@ -354,15 +287,13 @@
               "channel/conexion_autogestionable_con_el_canal_roombeast",
               "channel/en_que_consiste_la_integracion_con_el_pms_arion",
               "channel/conexion_autogestionable_con_el_canal_hotelbeds",
+              "channel/como_activar_o_desactivar_un_canal_de_venta",
               "channel/faq_conexion_difusion_y_mapeo_hacia_canales",
               "channel/conexion_autogestionable_con_el_canal_hyperguest",
               "channel/conexion_autogestionable_del_canal_airbnb",
               "channel/conexion_autogestionable_con_el_canal_pricetravel",
               "channel/como_obtener_las_credenciales_de_conexion_de_booking",
-              "channel/conexiones_de_otas_directas_con_pxsol",
-              "channel/como_desconectarse_de_booking",
-              "channel/como_enviar_una_reserva_que_no_se_sincronizo_con_arion",
-              "channel/sobre_el_servicio_de_gds"
+              "channel/conexiones_de_otas_directas_con_pxsol"
             ]
           },
           {
@@ -376,6 +307,7 @@
               "procesos/como_cargar_una_reserva_al_no_contar_con_plano_de_ocupacion",
               "procesos/proceso__registrar_un_pago_y_facturar",
               "procesos/como_enviar_enlace_para_web_check_in_manualmente",
+              "procesos/inbox",
               "procesos/proceso__web_check_in",
               "procesos/como_gestionar_una_reserva",
               "procesos/como_gestionar_una_consulta",
@@ -385,13 +317,7 @@
               "procesos/como_realizar_la_carga_de_datos_del_web_check_in",
               "procesos/como_borrar_cache_y_cookies",
               "procesos/como_enviar_una_reserva_a_postventa",
-              "procesos/que_reservas_podran_realizar_web_check_in",
-              "procesos/etapas_del_ciclo_de_vida_de_una_reserva",
-              "procesos/movimientos_de_consultas",
-              "procesos/como_desactivar_el_envio_automatico_del_aviso_de_web_check_in_",
-              "procesos/proceso__configuracion_mercado_pago",
-              "procesos/gestion_de_reservas",
-              "procesos/proceso__configuracion_de_campanas"
+              "procesos/que_reservas_podran_realizar_web_check_in"
             ]
           },
           {
@@ -402,11 +328,7 @@
               "analítica/recomendaciones_busquedas_en_el_motor",
               "analítica/recomendaciones_reservas_directas",
               "analítica/como_insertar_el_codigo_de_seguimiento_de_google_analytics_en_pxsol",
-              "analítica/pxsol_ads",
-              "analítica/documentacion_tecnica_diccionario_de_eventos_del_data_layer_de_pxsol",
-              "analítica/capa_de_datos_del_motor",
-              "analítica/guia_de_integracion_google_tag_manager_y_la_capa_de_datos_del_motor",
-              "analítica/como_administrar_usuarios_en_google_analytics"
+              "analítica/pxsol_ads"
             ]
           },
           {
@@ -420,17 +342,12 @@
               "administración/como_vincular_o_actualizar_una_tarjeta_de_credito_para_abonar_pxsol",
               "administración/como_desvincular_un_pago_de_una_factura_en_cuentas_corrientes",
               "administración/como_visualizar_el_estado_de_cuenta_de_su_hotel_con_pxsol",
-              "administración/plan_one_resumen_y_preguntas_frecuentes",
-              "administración/cambiar_o_agregar_tarjeta_de_credito_para_pagar_pxsol_via_stripe",
-              "administración/como_visualizar_los_datos_para_realizar_un_pago_a_pxsol_a_traves_de_una_transferencia_bancaria",
-              "administración/como_subir_el_comprobante_de_pago_para_habilitar_el_sistema"
+              "administración/plan_one_resumen_y_preguntas_frecuentes"
             ]
           },
           {
             "group": "Arion",
-            "pages": [
-              "arion/como_hacer_que_se_vea_la_ota_de_la_que_proviene_la_reserva_en_arion"
-            ]
+            "pages": []
           },
           {
             "group": "Desconexión por baja",
@@ -440,16 +357,13 @@
             "group": "Conexiones",
             "pages": [
               "conexiones/como_ver_las_solicitudes_de_acuerdos_de_agencias",
-              "conexiones/como_solicitar_la_conexion_a_the_hotel_network",
-              "conexiones/como_dar_de_alta_un_acuerdo_con_una_agencia_determinada",
-              "conexiones/como_acceder_al_panel_de_the_hotel_network_desde_pxsol"
+              "conexiones/como_solicitar_la_conexion_a_the_hotel_network"
             ]
           },
           {
             "group": "Central De Reservas",
             "pages": [
-              "central_de_reservas/solicitar_acuerdos__central_de_reservas",
-              "central_de_reservas/reserva_directo_usuario__mis_reservas"
+              "central_de_reservas/solicitar_acuerdos__central_de_reservas"
             ]
           },
           {
@@ -459,9 +373,7 @@
               "operaciones/como_configurar_las_tareas_programadas",
               "operaciones/como_personalizar_mi_lista_de_tareas",
               "operaciones/como_cargar_y_asignar_tareas_en_la_aplicacion_tareas_del_sistema",
-              "operaciones/como_editar_tareas_programadas",
-              "operaciones/como_asignar_borrar_y_cambiar_el_estado_de_tareas_de_forma_masiva",
-              "operaciones/como_borrar_tareas_programadas"
+              "operaciones/como_editar_tareas_programadas"
             ]
           },
           {
@@ -493,14 +405,7 @@
               "conversaciones/como_configurar_la_redireccion_del_bot_de_conversaciones_hacia_un_motor_externo_distinto_al_de_pxsol",
               "conversaciones/como_activar_o_desactivar_las_respuestas_automaticas_generadas_por_la_ai_en_la_aplicacion_conversaciones",
               "conversaciones/como_asignar_la_conversacion_a_un_equipo",
-              "conversaciones/workflows_para_ia",
-              "conversaciones/guia_interna_asociacion_de_un_usuario_a_un_contacto_en_conversaciones",
-              "conversaciones/como_compartir_un_presupuesto_a_una_consulta_por_whatsapp",
-              "conversaciones/como_asociar_una_reserva_o_consulta_al_chat_de_conversaciones",
-              "conversaciones/buscador_general_de_conversaciones",
-              "conversaciones/archivar_conversaciones",
-              "conversaciones/reintento_manual_de_mensajes_fallidos",
-              "conversaciones/"
+              "conversaciones/workflows_para_ia"
             ]
           },
           {
@@ -514,7 +419,7 @@
               "agencias_b2b/agencia_hoteles_disponibles_para_acuerdos",
               "agencias_b2b/agencias_como_activar_el_mapeo_automatico_de_politicas",
               "agencias_b2b/agencias_aplicacion_mapeo_de_politicas",
-              "agencias_b2b/agencia_reserva_directo_usuario_mis_reservas",
+              "agencias_b2b/agencia__reserva_directo_usuario__mis_reservas",
               "agencias_b2b/como_puedo_ver_las_reglas_de_negocio_que_se_han_aplicado_a_una_reserva",
               "agencias_b2b/pms_agencias_lista_de_reservas",
               "agencias_b2b/agencia_contenido_dinamico_para_plantillas_de_correos",
@@ -522,17 +427,12 @@
               "agencias_b2b/como_dar_de_alta_el_acuerdo_con_roomfares",
               "agencias_b2b/como_visualizar_a_que_hotel_han_sido_generadas_las_reservas_b2b_agencia",
               "agencias_b2b/agencia_mis_reservas_configuracion_del_voucher",
-              "agencias_b2b/agencias_como_realizar_un_mapeo_manual_de_politicas",
-              "agencias_b2b/como_configurar_medios_de_pagos_propios_en_un_punto_de_venta_tipo_marketplace__agencia",
-              "agencias_b2b/herramienta_para_verificar_la_aplicacion_de_reglas_de_negocio_en_crear_reserva",
-              "agencias_b2b/configuracion_de_la_lista_de_hoteles_recomendados_en_el_marketplace"
+              "agencias_b2b/agencias_como_realizar_un_mapeo_manual_de_politicas"
             ]
           },
           {
             "group": "Generales",
-            "pages": [
-              "generales/como_borrar_el_historial_de_navegacion_en_google_chrome"
-            ]
+            "pages": []
           },
           {
             "group": "Marketplace",
@@ -574,38 +474,25 @@
               "integraciones/como_realizar_la_integracion_con_gns_uruguay",
               "integraciones/stripe_comportamiento_en_el_motor_de_reservas_checkout",
               "integraciones/integracion_con_payway_consideraciones_a_tener_en_cuenta",
-              "integraciones/como_configurar_el_medio_de_pago_payway_en_el_motor_de_reservas",
-              "integraciones/integracion_con_stripe_consideraciones_a_tener_en_cuenta",
-              "integraciones/como_realizar_la_integracion_con_stripe",
-              "integraciones/como_configurar_el_medio_de_pago_stripe",
-              "integraciones/stripe_gestion_de_credenciales_de_pasarelas_de_pago",
-              "integraciones/stripe_comportamiento_y_visualizacion_en_la_reserva",
-              "integraciones/stripe_como_efectuar_una_devolucion_parcial_o_total",
-              "integraciones/stripe_preguntas_frecuentes",
-              "integraciones/guia_interna_turbosuite"
+              "integraciones/como_configurar_el_medio_de_pago_payway_en_el_motor_de_reservas"
             ]
           },
           {
             "group": "Tarifas Y Disponibilidad",
             "pages": [
               "tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios",
-              "tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad",
-              "tarifas_y_disponibilidad/como_crear_una_promocion_para_moviles_"
+              "tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad"
             ]
           },
           {
             "group": "Marca Blanca",
-            "pages": [
-              "marca_blanca/marca_blanca__reservadirecto"
-            ]
+            "pages": []
           },
           {
             "group": "Inbox",
             "pages": [
               "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida",
-              "inbox/actualizacion_bandeja_de_entrada",
-              "inbox/limites_de_envio_en_gmail",
-              "inbox/"
+              "inbox/actualizacion_bandeja_de_entrada"
             ]
           }
         ]
