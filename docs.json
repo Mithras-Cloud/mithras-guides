@@ -495,7 +495,8 @@
               "pms/como_cargar_una_factura_clonando_otra_en_proveedores",
               "pms/como_registrar_un_egreso_desde_caja_diaria",
               "pms/como_filtrar_movimientos_en_cuenta_recaudadoras",
-              "pms/aplicacion_estado_de_habitaciones"
+              "pms/aplicacion_estado_de_habitaciones",
+              "pms/como_realizar_el_check_in_de_los_huespedes_que_llegan_al_establciemiento"
             ]
           },
           {
