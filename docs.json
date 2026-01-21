@@ -273,7 +273,8 @@
               "crm/como_importar_contactos_a_partir_de_archivo_csv",
               "crm/como_mover_una_reserva_a_instancia_finalizadas",
               "crm/como_agregar_contenido_dinamico_a_tus_conversaciones_de_chat",
-              "crm/como_migrar_los_registros_de_una_reserva_donde_no_se_visualizan"
+              "crm/como_migrar_los_registros_de_una_reserva_donde_no_se_visualizan",
+              "crm/como_eliminar_una_campana_de_email_marketing_automation"
             ]
           },
           {
