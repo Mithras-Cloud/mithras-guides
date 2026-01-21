@@ -532,7 +532,8 @@
               "pms/como_facturar_desde_una_reserva",
               "pms/como_asignar_una_habitacion_a_una_reserva",
               "pms/como_realizar_el_check_out_de_un_huesped",
-              "pms/como_establecer_o_modificar_una_regla_de_tarifas_entre_diferentes_planes_tarifarios"
+              "pms/como_establecer_o_modificar_una_regla_de_tarifas_entre_diferentes_planes_tarifarios",
+              "pms/como_anadir_una_habitacion_en_una_reserva__v1"
             ]
           },
           {
