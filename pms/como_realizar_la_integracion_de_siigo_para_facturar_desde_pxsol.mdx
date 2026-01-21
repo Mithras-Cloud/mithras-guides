@@ -1,0 +1,134 @@
+---
+title: "¿Cómo realizar la integración de SIIGO para facturar desde Pxsol?"
+description: "En esta guía explicaremos los pasos necesarios para activar la integración Pxsol - SIIGO y permitir la emisión de facturas desde Pxsol."
+---
+
+
+<Note>
+Para llevar a cabo la integración, deberás obtener los siguientes códigos dentro de SIIGO y agregarlos en Pxsol:
+<ul>
+<li>Usuario API</li>
+<li>API access key</li>
+</ul>
+Puedes obtenerlos siguiendo los pasos de esta guía: <a href="https://ayuda.pxsol.com/es/c%C3%B3mo-solicitar-la-integraci%C3%B3n-de-siigo-con-pxsol" target="_blank" rel="noopener">¿Cómo obtener el Usuario API o API Access Key de SIIGO para realizar la integración de Facturación?</a>
+</Note>
+
+<Info>
+Esta integración está disponible únicamente para clientes de Colombia y México.
+</Info>
+
+<Warning>
+Después de realizar la integración, es crucial asegurar que todos los <strong>Impuestos</strong> que el cliente utilizará y que están creados en SIIGO, también estén creados en Pxsol <strong>con el mismo nombre</strong>. Esto evitará errores al enviar facturas. Sigue los pasos de la guía para la creación de Impuestos: <a href="https://ayuda.pxsol.com/es/c%C3%B3mo-crear-un-impuesto-nuevo-en-eva" target="_blank" rel="noopener">¿Cómo crear Impuestos en EVA?</a>
+
+Para visualizar los nombres de los impuestos en SIIGO, accede a: <strong>Ajustes - Contabilidad - Impuestos</strong>.
+
+<Frame>
+<img src="/images/siigo-tax-view.png" alt="Vista de la sección de Impuestos en SIIGO" />
+</Frame>
+</Warning>
+
+<Steps>
+<Step title="Acceder a Integraciones">
+  Desde la barra lateral, ve a <strong>Configuración</strong> y luego selecciona <strong>Integraciones</strong>.
+
+  <Frame>
+  <img src="/images/pxsol-settings-integrations.png" alt="Captura de pantalla de la sección Integraciones en Pxsol" />
+  </Frame>
+</Step>
+
+<Step title="Instalar SIIGO nube">
+  Sobre la tarjeta de <strong>SIIGO nube</strong>, selecciona <strong>Instalar</strong> y confirma con <strong>Sí, Instalar</strong>.
+
+  <Frame>
+  <img src="/images/siigo-nube-install.png" alt="Captura de pantalla mostrando la opción de instalar SIIGO nube" />
+  </Frame>
+  <Frame>
+  <img src="/images/siigo-nube-confirm-install.png" alt="Confirmación de instalación para SIIGO nube" />
+  </Frame>
+</Step>
+
+<Step title="Agregar Credencial">
+  Selecciona <strong>Agregar Credencial</strong>.
+
+  <Frame>
+  <img src="/images/add-credential.png" alt="Botón para agregar credencial de integración" />
+  </Frame>
+</Step>
+
+<Step title="Completar Datos del Formulario">
+  Llena todos los campos solicitados en la ventana que aparece. Los datos se obtienen de SIIGO siguiendo las guías mencionadas al inicio.
+
+  <ul>
+  <li><strong>Usuario API</strong></li>
+  <li><strong>API access key</strong></li>
+  </ul>
+
+  <Frame>
+  <img src="/images/siigo-credentials-form.png" alt="Formulario para ingresar credenciales de SIIGO" />
+  </Frame>
+</Step>
+
+<Step title="Guardar Credenciales">
+  Selecciona <strong>Guardar</strong>.
+
+  <Frame>
+  <img src="/images/save-credentials.png" alt="Botón para guardar las credenciales de la integración" />
+  </Frame>
+</Step>
+
+<Step title="Navegar a Configuración de Facturación">
+  Dirígete a la sección <strong>Administración</strong> y luego selecciona <strong>Facturación</strong>.
+
+  <Frame>
+  <img src="/images/billing-section-pxsol.png" alt="Sección de Facturación en Pxsol" />
+  </Frame>
+</Step>
+
+<Step title="Gestionar Sucursales">
+  En la ventana de Facturación, selecciona <strong>Acciones</strong> y luego <strong>Gestionar Sucursales</strong>.
+
+  <Frame>
+  <img src="/images/manage-branches.png" alt="Opción para gestionar sucursales de facturación" />
+  </Frame>
+</Step>
+
+<Step title="Crear Nueva Sucursal">
+  Selecciona <strong>Nueva Sucursal</strong>.
+
+  <Frame>
+  <img src="/images/new-branch-button.png" alt="Botón para crear una nueva sucursal" />
+  </Frame>
+</Step>
+
+<Step title="Completar Formulario de Nueva Sucursal">
+  Completa los datos del formulario. La selección del país afectará los campos disponibles.
+
+  <ul>
+  <li><strong>País de la sucursal de facturación:</strong> Selecciona Colombia o México.</li>
+  <li><strong>Domicilio Fiscal</strong></li>
+  <li><strong>Nombre o Razón social</strong></li>
+  <li><strong>Departamento Fiscal</strong></li>
+  <li><strong>Número de Identificación</strong></li>
+  <li><strong>Tipo de Documento</strong></li>
+  <li><strong>Email</strong></li>
+  <li><strong>Proveedor de facturación:</strong> Selecciona Siigo</li>
+  <li><strong>Puntos de venta asociados</strong></li>
+  </ul>
+</Step>
+
+<Step title="Guardar Sucursal">
+  Selecciona <strong>Guardar</strong>.
+
+  <Frame>
+  <img src="/images/save-branch.png" alt="Botón para guardar la información de la sucursal" />
+  </Frame>
+
+  <Note>
+  Después de crear la sucursal, recuerda personalizarla agregando el Logo, comprobantes por defecto y comprobantes habilitados. Accede a <strong>Acciones - Editar</strong> sobre la sucursal creada para realizar estas configuraciones.
+
+  <Frame>
+  <img src="/images/edit-branch.png" alt="Opción para editar una sucursal existente" />
+  </Frame>
+  </Note>
+</Step>
+</Steps>
