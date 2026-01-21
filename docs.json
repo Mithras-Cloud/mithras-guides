@@ -364,7 +364,8 @@
               "pms/como_firmar_un_movimiento_dentro_de_caja_diaria",
               "pms/como_eliminar_un_bloqueo",
               "pms/como_registrar_una_devolucion_en_cuenta_corriente",
-              "pms/como_visualizar_el_plano_de_ocupacion"
+              "pms/como_visualizar_el_plano_de_ocupacion",
+              "pms/como_borrar_la_asignacion_de_una_reserva"
             ]
           },
           {
