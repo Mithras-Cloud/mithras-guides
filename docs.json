@@ -239,7 +239,8 @@
               "crm/como_desprogramar_recordatorios",
               "crm/como_reiniciar_una_reserva",
               "crm/como_agregar_un_huesped_a_mi_reserva",
-              "crm/como_gestionar_una_reserva_que_ingreso_desde_motor_o_channel"
+              "crm/como_gestionar_una_reserva_que_ingreso_desde_motor_o_channel",
+              "crm/como_gestionar_un_llamado_telefonico"
             ]
           },
           {
