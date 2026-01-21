@@ -156,7 +156,8 @@
               "motor/como_desvincularse_de_mercado_pago",
               "motor/como_agregar_condiciones_a_un_voucher",
               "motor/aplicacion_distancias_como_borrar_lugares_cercanos_cargados",
-              "motor/como_editar_los_servicios_que_aparecen_en_mi_motor_de_reservas_y_pagina_web"
+              "motor/como_editar_los_servicios_que_aparecen_en_mi_motor_de_reservas_y_pagina_web",
+              "motor/como_ocultar_o_visualizar_tarifarios_vinculados"
             ]
           },
           {
