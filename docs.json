@@ -385,7 +385,8 @@
               "pms/como_agregar_consumos",
               "pms/como_realizar_el_check_in_de_una_habitacion",
               "pms/que_informacion_visualizo_en_la_cabecera_de_reservas",
-              "pms/como_anular_o_auditar_varios_movimientos_en_cuentas_recaudadoras"
+              "pms/como_anular_o_auditar_varios_movimientos_en_cuentas_recaudadoras",
+              "pms/como_realizar_la_integracion_con_factura_lista_para_facturacion_en_uruguay"
             ]
           },
           {
