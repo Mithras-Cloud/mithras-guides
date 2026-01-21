@@ -388,7 +388,8 @@
               "pms/que_informacion_visualizo_en_la_cabecera_de_reservas",
               "pms/como_anular_o_auditar_varios_movimientos_en_cuentas_recaudadoras",
               "pms/como_realizar_la_integracion_con_factura_lista_para_facturacion_en_uruguay",
-              "pms/como_registrar_un_pago_de_varias_facturas_de_proveedor"
+              "pms/como_registrar_un_pago_de_varias_facturas_de_proveedor",
+              "pms/como_crear_cuentas_corrientes"
             ]
           },
           {
