@@ -376,7 +376,8 @@
               "pms/folios__como_cargar_consumos_en_una_reserva",
               "pms/folios__como_fusionar_dos_folios",
               "pms/como_crear_depositos_para_la_aplicacion_inventario",
-              "pms/como_agregar_consumos"
+              "pms/como_agregar_consumos",
+              "pms/como_realizar_el_check_in_de_una_habitacion"
             ]
           },
           {
