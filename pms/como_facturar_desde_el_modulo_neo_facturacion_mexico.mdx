@@ -1,0 +1,96 @@
+---
+title: "¿Cómo facturar desde el módulo Neo Facturación? (México)"
+description: "En esta guía explicaremos cómo confeccionar un comprobante de venta desde el módulo de Facturación (Beta para México)."
+---
+
+
+<Warning>
+La emisión de <strong>Notas de crédito</strong> se puede realizar desde Pxsol, pero deberán <strong>timbrarlas</strong> desde <strong>SIIGO</strong>. La visualización de Notas de crédito en SIIGO puede demorar unos minutos, luego de emitirlas en Pxsol. Una vez visibles en SIIGO pueden realizar el timbrado y envío por mail.
+</Warning>
+
+<Steps>
+<Step title="Acceder a Neo Facturación">
+1. Inicie sesión en pms.pxsol.com con su usuario correspondiente.
+2. Navegue a la sección **Administración**.
+3. Seleccione **Facturación**.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Dec-30-2024-02-30-17-1497-PM.png" alt="Captura de pantalla del módulo de facturación en Pxsol" />
+</Frame>
+</Step>
+
+<Step title="Crear un nuevo comprobante">
+1. En la ventana que se abre, seleccione **Nuevo Comprobante**.
+<Frame>
+<img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-05-2024-06-01-36-1263-PM.png" alt="Botón para crear un nuevo comprobante" />
+</Frame>
+</Step>
+
+<Step title="Configurar el comprobante">
+1.  **TIPO DE COMPROBANTE Y SUCURSAL:**
+    *   Seleccione la sucursal de facturación entre las vinculadas a su establecimiento en Pxsol.
+    *   Elija el Tipo de comprobante que desea emitir.
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-21-2025-12-25-11-3923-PM.png" alt="Configuración de tipo de comprobante y sucursal" />
+    </Frame>
+2.  **DATOS DEL COMPROBANTE:**
+    *   **Moneda:** Seleccione la moneda para el comprobante.
+    *   **Fecha del comprobante:** Automáticamente se establece la fecha actual; es editable y obligatoria.
+    *   **Estado actual del Comprobante:** Elija entre "Cobrado" o "A Cobrar".
+    *   **Asociar Reserva:** Opcionalmente, vincule el comprobante a una reserva ingresando su número.
+    *   **Código de uso CFDI:** Seleccione la clave que describe el uso de la factura para deducciones personales.
+    *   **Condición de pago:** Elija la opción que corresponda a la forma de pago.
+    *   **Método de Pago:** Seleccione PUE (Pago en una Exhibición) si el pago se realiza al emitir, o PPD (Pago en Parcialidades o Diferido) si el pago se liquidará posteriormente. Si elige PPD, deberá completar el vencimiento del pago.
+    *   **Vencimiento para el pago:** Solo requerido si el método de pago es PPD.
+    *   **Régimen Fiscal:** Seleccione la actividad correspondiente.
+    *   **Observaciones:** Añada cualquier información adicional que desee mostrar en el comprobante.
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-21-2025-12-33-26-1031-PM.png" alt="Configuración de datos del comprobante" />
+    </Frame>
+3.  **DATOS DEL RECEPTOR:**
+    <Note>Puede buscar un contacto existente en la base de datos de Pxsol para autocompletar los campos con la información guardada:</Note>
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-05-2024-06-11-22-0062-PM.png" alt="Búsqueda de contacto para autocompletar datos del receptor" />
+    </Frame>
+    *   Complete los datos del Receptor.
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-21-2025-12-34-50-7009-PM.png" alt="Formulario de datos del receptor" />
+    </Frame>
+4.  **CONCEPTOS DEL COMPROBANTE:**
+    *   Ingrese los datos de los conceptos: Fecha - Código - Clave SAT - Descripción - Cantidad - Precio Unitario - Descuentos o recargos - Alicuota.
+    *   Si necesita añadir más conceptos, utilice el botón **AGREGAR OTRO CONCEPTO +**.
+    <Note>Es obligatorio que cada concepto tenga Descripción, Precio y Clave SAT.</Note>
+    <Frame>
+    <img src="https://ayuda.pxsol.com/hubfs/image-png-May-12-2022-05-43-09-36-PM.png" alt="Configuración de conceptos del comprobante" />
+    </Frame>
+5.  Si los importes mostrados son correctos, haga clic en el botón **GUARDAR CAMBIOS**.
+    <Frame>
+    <img src="https://ayuda.pxsol.com/hs-fs/hubfs/image-png-May-12-2022-05-46-32-63-PM.png?width=189&name=image-png-May-12-2022-05-46-32-63-PM.png" alt="Botón Guardar Cambios" />
+    </Frame>
+</Step>
+
+<Step title="Opciones posteriores a guardar">
+Una vez guardado, aparecerán las siguientes opciones:
+<Frame>
+<img src="https://ayuda.pxsol.com/hubfs/image-png-May-12-2022-05-49-14-53-PM.png" alt="Opciones de Vista Previa, Guardar Cambios y Emitir Comprobante" />
+</Frame>
+*   **Vista Previa:** Visualice la factura en una nueva ventana para verificar su contenido.
+*   **Guardar Cambios:** Guarde la factura sin emitirla.
+*   **Emitir Comprobante:** Emita el comprobante.
+</Step>
+
+<Step title="Comprobantes Invoice/Recibo X y Fiscales">
+*   Si el comprobante es **Invoice o Recibo X**, al ser facturado, se abrirá una pestaña en el navegador con la factura emitida.
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Jan-21-2025-12-37-20-9685-PM.png" alt="Factura emitida para Invoice o Recibo X" />
+    </Frame>
+*   Si el comprobante es **Fiscal y se envía a SIIGO**, no se generará un PDF. El comprobante emitido se encontrará en SIIGO. El PDF generado en SIIGO se enviará automáticamente al receptor por correo electrónico (a la dirección indicada en el campo "mail" de la factura).
+    <Warning>El correo que recibirá el receptor será similar a este:</Warning>
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-23-2025-07-43-06-3081-PM.png" alt="Ejemplo de correo electrónico enviado al receptor" />
+    </Frame>
+    Dentro de SIIGO podrá ver el estado de envío del correo al receptor:
+    <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-May-23-2025-07-43-50-6238-PM.png" alt="Estado de envío de correo en SIIGO" />
+    </Frame>
+</Step>
+</Steps>
