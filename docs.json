@@ -433,7 +433,8 @@
               "pms/como_crear_un_nuevo_folio_dentro_de_una_reserva__v1",
               "pms/como_actualizar_plano_de_ocupacion",
               "pms/como_visualizar_comprobantes_recibidos",
-              "pms/como_facturar_desde_plano_de_mesas"
+              "pms/como_facturar_desde_plano_de_mesas",
+              "pms/como_anular_un_movimiento_dentro_de_caja_diaria"
             ]
           },
           {
