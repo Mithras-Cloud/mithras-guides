@@ -518,7 +518,8 @@
               "pms/como_registrar_el_pago_de_varias_facturas_en_una_cuenta_corriente",
               "pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva",
               "pms/como_configurar_el_plano",
-              "pms/como_crear_centros_de_costo"
+              "pms/como_crear_centros_de_costo",
+              "pms/como_regenerar_comprobantes_emitidos"
             ]
           },
           {
