@@ -445,7 +445,8 @@
               "pms/como_crear_subgrupos_para_los_centros_de_costo",
               "pms/como_editar_un_bloqueo",
               "pms/como_editar_datos_de_un_huesped",
-              "pms/como_realizar_un_cierre_de_turno_en_la_caja_diaria"
+              "pms/como_realizar_un_cierre_de_turno_en_la_caja_diaria",
+              "pms/como_ver_informacion_de_cierre_de_turnos_historicos"
             ]
           },
           {
