@@ -466,7 +466,8 @@
               "pms/que_visualizar_dentro_del_plano_de_ocupacion",
               "pms/como_ordenar_las_categorias_e_items_de_mi_menu",
               "pms/como_cargar_una_reserva",
-              "pms/folios__como_transferir_consumos_de_un_folio_a_otro"
+              "pms/folios__como_transferir_consumos_de_un_folio_a_otro",
+              "pms/como_cambiar_asignacion_de_una_reserva"
             ]
           },
           {
