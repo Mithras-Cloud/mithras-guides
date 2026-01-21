@@ -482,7 +482,8 @@
               "pms/pagos__como_hacer_una_devolucion_de_un_pago",
               "pms/folios__como_borrar_un_folio_dentro_de_una_reserva",
               "pms/archivos__como_escanear_un_documento_en_una_reserva",
-              "pms/como_eliminar_un_huesped_cargado"
+              "pms/como_eliminar_un_huesped_cargado",
+              "pms/como_eliminar_una_cuenta_recaudadora"
             ]
           },
           {
