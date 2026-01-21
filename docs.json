@@ -499,7 +499,8 @@
               "pms/aplicacion_estado_de_habitaciones",
               "pms/como_realizar_el_check_in_de_los_huespedes_que_llegan_al_establciemiento",
               "pms/como_cargar_una_reserva_desde_el_plano_de_ocupacion",
-              "pms/como_regenerar_comprobantes_recibidos"
+              "pms/como_regenerar_comprobantes_recibidos",
+              "pms/como_imprimir_informacion_de_caja_diaria"
             ]
           },
           {
