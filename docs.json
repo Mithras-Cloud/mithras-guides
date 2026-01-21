@@ -357,7 +357,8 @@
               "pms/como_ver_un_comprobante_emitido_dentro_de_la_reserva",
               "pms/folios__como_cambiar_impuestos_en_un_folio",
               "pms/como_importar_clientes_de_siigo_a_pxsol_para_la_facturacion_colombia",
-              "pms/como_imprimir_la_ficha_de_check_in"
+              "pms/como_imprimir_la_ficha_de_check_in",
+              "pms/como_firmar_un_movimiento_dentro_de_caja_diaria"
             ]
           },
           {
