@@ -485,7 +485,8 @@
               "pms/como_eliminar_un_huesped_cargado",
               "pms/como_eliminar_una_cuenta_recaudadora",
               "pms/como_auditar_una_cuenta_proveedor",
-              "pms/como_registrar_deudas_en_cuenta_corriente"
+              "pms/como_registrar_deudas_en_cuenta_corriente",
+              "pms/como_cargar_consumos_en_una_reserva__v1"
             ]
           },
           {
