@@ -16,9 +16,7 @@
           {
             "group": "Empezando",
             "pages": [
-              "index",
-              "quickstart",
-              "development "
+              "index"
             ]
           },
           {
@@ -90,7 +88,10 @@
               "motor/como_crear_habitaciones_utilizando_la_funcion_duplicar",
               "motor/como_borrar_una_politica_de_cancelacion",
               "motor/como_crear_y_editar_politicas_de_cancelacion",
-              "motor/como_configurar_medios_de_pago"
+              "motor/como_configurar_medios_de_pago",
+              "motor/como_modificar_la_ubicacion_de_mi_hotel",
+              "motor/aplicacion_distancias_como_agregar_o_eliminar_lugares_cercanos_a_mi_hotel",
+              "motor/recomendaciones_ubicacion_y_distancias"
             ]
           },
           {
@@ -497,26 +498,11 @@
               "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida",
               "inbox/actualizacion_bandeja_de_entrada"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "hidden": true,
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
           },
           {
-            "group": "Endpoint",
+            "group": "Facturación",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia"
             ]
           }
         ]
@@ -557,5 +543,11 @@
       "youtube": "https://www.youtube.com/@PxsolSoftwareHotelero",
       "instagram": "https://www.instagram.com/pxsol/?hl=es"
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/cómo-importar-ciudades-de-siigo-a-pxsol-para-la-facturación-colombia",
+      "destination": "/facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia"
+    }
+  ]
 }
