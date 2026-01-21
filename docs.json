@@ -16,9 +16,7 @@
           {
             "group": "Empezando",
             "pages": [
-              "index",
-              "quickstart",
-              "development "
+              "index"
             ]
           },
           {
@@ -496,27 +494,6 @@
             "pages": [
               "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida",
               "inbox/actualizacion_bandeja_de_entrada"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "hidden": true,
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
             ]
           }
         ]
