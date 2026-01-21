@@ -1,0 +1,83 @@
+---
+title: "¿Cómo delegar su dominio .com.ar a nuestro hosting de Cloudflare?"
+description: "En esta guía explicaremos cómo delegar su dominio .com.ar a nuestro hosting de Cloudflare"
+---
+
+
+<Tip>
+<p><strong>IMPORTANTE:</strong> No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com)</p>
+</Tip>
+
+<p>Pasos para hacer el cambio de NS (name servers) en nic:</p>
+
+<Steps>
+<Step title="Acceder a nic.ar">
+  Visite el sitio web de NIC Argentina: <a href="https://nic.ar/">https://nic.ar/</a>.
+</Step>
+
+<Step title="Administrar dominios">
+  Desplácese hacia abajo hasta la sección <strong>DOMINIOS</strong> y haga clic en <strong>ADMINISTRAR DOMINIOS</strong>.
+  <Frame>
+    <img src="https://lh5.googleusercontent.com/Vzh8zPQzdk0tO9AFUIfRBD-HdwNrVbKMk1FmjRu3KuOV9ZlKrAFS4gFJZPZy0YkeN7MufraPAt14WLpLEDx1Q3ev5gAIyB9lSrZu5nV0vLNwwtgr7pFs781QcAsf_KnK-tq_FP-s" alt="Captura de pantalla de la sección 'Administrar Dominios' en nic.ar" />
+  </Frame>
+</Step>
+
+<Step title="Ingresar credenciales">
+  Ingrese su número de <strong>CUIT/CUIL</strong> y luego su <strong>clave fiscal</strong> correspondiente.
+  <Frame>
+    <img src="https://lh5.googleusercontent.com/fRYsSz9uMLFCK6tL-ldByv2AUuqYpyzSNTKeCoo0YzC8dAsagfz0rD6sUTEUDvo16E9wBcBiMtsiUgo0u56LnMjUdJbu_SGY0QxOKBoxW21L3WokXMFc9smob15FSZTIHAYWdlUJ" alt="Captura de pantalla del inicio de sesión con CUIT/CUIL y clave fiscal" />
+  </Frame>
+</Step>
+
+<Step title="Delegar el dominio">
+  Se mostrará un listado de los dominios asociados a su CUIT. Haga clic en el botón <strong>DELEGAR</strong> junto al dominio que desea modificar.
+  <Frame>
+    <img src="https://lh3.googleusercontent.com/zHQVVEyqZIpAAKqt0pwaz5fliGwPXnPGYr6ZOZvCYknQqQUtKJAL1HThnwmlbZJ3NJ80wxP0qCvptZPIbHB-iChZVvUQG200bis2_9hymfpF5twOgoVAaaqbaAGgP2BMPVu8wZnV" alt="Captura de pantalla del botón 'DELEGAR' en el listado de dominios" />
+  </Frame>
+</Step>
+
+<Step title="Configurar Name Servers (NS)">
+  En la sección de direcciones de host, haga clic en el ícono de editar (lápiz) para cada uno de los NS existentes. Ingrese los Name Servers proporcionados por el equipo de soporte técnico Web de PXSOL. Estos pueden ser:
+  <ul>
+    <li><code>grace.ns.cloudflare.com</code></li>
+    <li><code>merlin.ns.cloudflare.com</code></li>
+  </ul>
+  o
+  <ul>
+    <li><code>henry.ns.cloudflare.com</code></li>
+    <li><code>mona.ns.cloudflare.com</code></li>
+  </ul>
+  Si no hay ninguna delegación configurada, haga clic en <strong>Agregar una nueva delegación</strong> y añada los NS de Cloudflare mencionados anteriormente.
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Apr-26-2022-07-58-31-52-PM.png" alt="Captura de pantalla de la configuración de Name Servers" />
+  </Frame>
+  <Warning>
+  <p><strong>MUY IMPORTANTE: </strong>Elimine todos los servidores de nombre que no pertenezcan a Cloudflare de su lista.</p>
+  </Warning>
+  <p>Debe crear una delegación para cada Name Server, tal como se muestra en el siguiente video:</p>
+  <iframe
+    className="w-full aspect-video rounded-xl"
+    src="https://www.youtube.com/embed/72011710253"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
+  <Note>
+  <p><strong>IMPORTANTE: </strong>Una vez que haya realizado los cambios en cada campo, haga clic en el ícono de guardar (disquete) ubicado a la derecha.</p>
+  <Frame>
+    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Mar-28-2022-04-39-51-65-PM.png" alt="Captura de pantalla del botón de guardar cambios" style="width: 272px;" />
+  </Frame>
+  </Note>
+</Step>
+
+<Step title="Ejecutar cambios">
+  Finalmente, haga clic en el botón <strong>EJECUTAR CAMBIOS</strong> para aplicar todas las modificaciones realizadas.
+  <Frame>
+    <img src="https://lh5.googleusercontent.com/8qW7Z65k8tCwqsVG4NeBM0PH4EFgIqzGq4jk-PsvJX1t7u19AlBgupocppg47vPdnAE2J0BSuq-GX-YPe9n3HDB1SvzhgCBoqX2Vsg0LvIZftDXTEzZlKDQV2y7SiKesi_-kzlXH" alt="Captura de pantalla del botón 'EJECUTAR CAMBIOS'" style="width: 206px;" />
+  </Frame>
+  <Check>
+  Sus cambios se aplicarán y su dominio estará delegando a Cloudflare. La propagación de DNS puede tardar un tiempo.
+  </Check>
+</Step>
+</Steps>
