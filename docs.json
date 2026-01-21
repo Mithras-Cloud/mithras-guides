@@ -510,7 +510,8 @@
               "pms/como_transferir_fondos_de_una_cuenta_recaudadora_a_otra",
               "pms/como_visualizar_comprobantes_emitidos",
               "pms/como_generar_el_archivo_turiva",
-              "pms/como_configurar_alertas_de_falta_de_stock_de_mi_inventario"
+              "pms/como_configurar_alertas_de_falta_de_stock_de_mi_inventario",
+              "pms/como_hacer_el_cierre_de_mesa"
             ]
           },
           {
