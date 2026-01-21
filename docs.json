@@ -368,7 +368,8 @@
               "pms/como_registrar_una_devolucion_en_cuenta_corriente",
               "pms/como_visualizar_el_plano_de_ocupacion",
               "pms/como_borrar_la_asignacion_de_una_reserva",
-              "pms/como_facturar_desde_el_modulo_neo_facturacion_uruguay"
+              "pms/como_facturar_desde_el_modulo_neo_facturacion_uruguay",
+              "pms/folios__como_cargar_consumos_en_una_reserva"
             ]
           },
           {
