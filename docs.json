@@ -495,6 +495,12 @@
               "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida",
               "inbox/actualizacion_bandeja_de_entrada"
             ]
+          },
+          {
+            "group": "Facturación",
+            "pages": [
+              "facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia"
+            ]
           }
         ]
       }
