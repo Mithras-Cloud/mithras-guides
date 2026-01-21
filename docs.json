@@ -443,7 +443,8 @@
               "pms/como_anular_un_movimiento_dentro_de_caja_diaria",
               "pms/como_visualizar_los_datos_de_huespedes_en_tra_luego_de_la_integracion_con_pxsol",
               "pms/como_crear_subgrupos_para_los_centros_de_costo",
-              "pms/como_editar_un_bloqueo"
+              "pms/como_editar_un_bloqueo",
+              "pms/como_editar_datos_de_un_huesped"
             ]
           },
           {
