@@ -350,7 +350,8 @@
               "pms/que_significa_que_la_asignacion_de_una_habitacion_este_en_conflicto",
               "pms/como_facturar_desde_el_modulo_facturacion_nuevo",
               "pms/como_modificar_fecha_de_estadia_de_una_reserva_desde_el_plano_de_ocupacion",
-              "pms/como_ver_un_comprobante_emitido_dentro_de_la_reserva"
+              "pms/como_ver_un_comprobante_emitido_dentro_de_la_reserva",
+              "pms/folios__como_cambiar_impuestos_en_un_folio"
             ]
           },
           {
