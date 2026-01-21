@@ -484,7 +484,8 @@
               "pms/archivos__como_escanear_un_documento_en_una_reserva",
               "pms/como_eliminar_un_huesped_cargado",
               "pms/como_eliminar_una_cuenta_recaudadora",
-              "pms/como_auditar_una_cuenta_proveedor"
+              "pms/como_auditar_una_cuenta_proveedor",
+              "pms/como_registrar_deudas_en_cuenta_corriente"
             ]
           },
           {
