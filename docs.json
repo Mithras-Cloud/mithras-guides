@@ -525,7 +525,8 @@
               "pms/como_configurar_el_plano",
               "pms/como_crear_centros_de_costo",
               "pms/como_regenerar_comprobantes_emitidos",
-              "pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva"
+              "pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva",
+              "pms/como_facturar_desde_una_reserva"
             ]
           },
           {
