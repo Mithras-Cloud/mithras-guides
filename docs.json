@@ -308,7 +308,8 @@
               "pms/visualizar_y_aceptar_o_rechazar_solicitudes_de_acuerdo_de_usuarios_logueados_en_tu_web",
               "pms/como_borrar_comprobantes_emitidos",
               "pms/como_visualizar_y_ver_informacion_sobre_las_habitaciones_desde_la_aplicacion_estado_de_habitaciones",
-              "pms/como_cambiar_el_estado_de_una_mesa"
+              "pms/como_cambiar_el_estado_de_una_mesa",
+              "pms/como_borrar_comprobantes_recibidos"
             ]
           },
           {
