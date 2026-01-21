@@ -452,7 +452,8 @@
               "pms/como_realizar_un_cierre_de_turno_en_la_caja_diaria",
               "pms/como_ver_informacion_de_cierre_de_turnos_historicos",
               "pms/como_agregar_consumos_a_una_mesa",
-              "pms/como_visualizar_el_informe_de_housekeeping_desde_estado_de_habitaciones"
+              "pms/como_visualizar_el_informe_de_housekeeping_desde_estado_de_habitaciones",
+              "pms/pagos__como_anular_un_pago_dentro_de_una_reserva"
             ]
           },
           {
