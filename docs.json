@@ -140,7 +140,8 @@
               "motor/como_visualizar_la_aplicacion_tipos_de_habitaciones",
               "motor/como_crear_habitaciones_utilizando_la_funcion_duplicar",
               "motor/como_borrar_una_politica_de_cancelacion",
-              "motor/recomendaciones_promociones"
+              "motor/recomendaciones_promociones",
+              "motor/como_configurar_temporada_alta_en_el_tarifario"
             ]
           },
           {
@@ -375,7 +376,6 @@
               "procesos/como_cargar_una_reserva_al_no_contar_con_plano_de_ocupacion",
               "procesos/proceso__registrar_un_pago_y_facturar",
               "procesos/como_enviar_enlace_para_web_check_in_manualmente",
-              "procesos/inbox",
               "procesos/proceso__web_check_in",
               "procesos/como_gestionar_una_reserva",
               "procesos/como_gestionar_una_consulta",
@@ -499,7 +499,8 @@
               "conversaciones/como_asociar_una_reserva_o_consulta_al_chat_de_conversaciones",
               "conversaciones/como_generar_una_reserva_o_consulta_al_chat_de_conversaciones",
               "conversaciones/buscador_general_de_conversaciones",
-              "conversaciones/archivar_conversaciones"
+              "conversaciones/archivar_conversaciones",
+              "conversaciones/reintento_manual_de_mensajes_fallidos"
             ]
           },
           {
@@ -588,7 +589,8 @@
             "group": "Tarifas Y Disponibilidad",
             "pages": [
               "tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios",
-              "tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad"
+              "tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad",
+              "tarifas_y_disponibilidad/como_crear_una_promocion_para_moviles_"
             ]
           },
           {
@@ -602,7 +604,8 @@
             "pages": [
               "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida",
               "inbox/actualizacion_bandeja_de_entrada",
-              "inbox/limites_de_envio_en_gmail"
+              "inbox/limites_de_envio_en_gmail",
+              "inbox/"
             ]
           }
         ]

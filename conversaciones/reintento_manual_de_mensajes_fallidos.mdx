@@ -1,0 +1,40 @@
+---
+title: "Reintento Manual de Mensajes Fallidos"
+description: "Esta guía detalla cómo identificar mensajes fallidos y cómo reintentar su envío dentro de los límites definidos por el sistema."
+---
+
+Esta guía detalla cómo puedes identificar mensajes que no se enviaron correctamente y cómo reintentar su envío de forma manual.
+
+## Reintentar un Mensaje Fallido
+
+Sigue estos pasos para reenviar un mensaje que no se pudo entregar.
+
+<Steps>
+  <Step title="Identifica el mensaje fallido">
+    Ingresa a la conversación y localiza el mensaje que muestra el estado **fallido** o un indicador de error.
+  </Step>
+
+  <Step title="Inicia el reintento">
+    Haz clic en la opción **Reintentar envío** que aparece junto al mensaje. El sistema intentará enviar el mensaje de nuevo.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/22996286261b35e45665d835d955afc1e860e3066ca.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260120T213817Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=24caad3c9a171f6c34ce0c500bada98a0c831f1ebb2b32f528128ea096dcf1a4" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Verifica el resultado">
+    <Check>
+      Espera la respuesta del sistema. Si el reintento es exitoso, el estado del mensaje cambiará de "fallido" a "entregado" o "leído".
+    </Check>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14151560880bdad008fb03c44f36615b447d02a0eb8.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260120%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260120T213830Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=f3db8255dfe9f899b88059a336b8edb4efb630fa6b3776c5e4128ed73ea42400" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Límite de Reintentos
+
+<Info>
+  El sistema permite reintentar manualmente el envío de un mensaje hasta **3 veces**. Cada vez que seleccionas "Reintentar envío", el sistema contabiliza el intento de forma automática.
+</Info>
