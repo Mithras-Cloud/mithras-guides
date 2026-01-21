@@ -337,7 +337,8 @@
               "pms/como_registrar_facturas_y_pagos_en_cuenta_corriente",
               "pms/como_filtrar_movimientos_en_cuenta_corriente",
               "pms/como_vincular_cuentas_recaudadoras_a_usuarios",
-              "pms/como_facturar_desde_el_modulo_neo_facturacion_colombia"
+              "pms/como_facturar_desde_el_modulo_neo_facturacion_colombia",
+              "pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1"
             ]
           },
           {
