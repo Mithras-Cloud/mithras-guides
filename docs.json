@@ -314,7 +314,8 @@
               "pms/como_clonar_movimientos_en_cuentas_corrientes",
               "pms/como_emitir_una_factura_t",
               "pms/como_vincular_un_contacto_a_una_cuenta_proveedor",
-              "pms/como_anular_un_movimiento_en_una_cuenta_proveedor"
+              "pms/como_anular_un_movimiento_en_una_cuenta_proveedor",
+              "pms/como_visualizar_detalles_de_pago_y_facturacion"
             ]
           },
           {
