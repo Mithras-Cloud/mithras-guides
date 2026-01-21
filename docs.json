@@ -446,7 +446,8 @@
               "pms/como_editar_un_bloqueo",
               "pms/como_editar_datos_de_un_huesped",
               "pms/como_realizar_un_cierre_de_turno_en_la_caja_diaria",
-              "pms/como_ver_informacion_de_cierre_de_turnos_historicos"
+              "pms/como_ver_informacion_de_cierre_de_turnos_historicos",
+              "pms/como_agregar_consumos_a_una_mesa"
             ]
           },
           {
