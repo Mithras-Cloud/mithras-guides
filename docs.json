@@ -493,7 +493,8 @@
               "pms/como_registrar_deudas_en_cuenta_corriente",
               "pms/como_cargar_consumos_en_una_reserva__v1",
               "pms/como_cargar_una_factura_clonando_otra_en_proveedores",
-              "pms/como_registrar_un_egreso_desde_caja_diaria"
+              "pms/como_registrar_un_egreso_desde_caja_diaria",
+              "pms/como_filtrar_movimientos_en_cuenta_recaudadoras"
             ]
           },
           {
