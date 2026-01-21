@@ -542,7 +542,8 @@
               "pms/como_anadir_una_habitacion_en_una_reserva__v1",
               "pms/recomendaciones_de_pagos",
               "pms/como_colocar_a_un_huesped_como_titular",
-              "pms/como_crear_un_impuesto"
+              "pms/como_crear_un_impuesto",
+              "pms/como_autoasignar_una_habitacion_en_una_reserva"
             ]
           },
           {
