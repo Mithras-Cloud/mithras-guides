@@ -342,7 +342,8 @@
               "pms/como_facturar_desde_el_modulo_neo_facturacion_colombia",
               "pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1",
               "pms/como_emitir_una_factura_t_a_una_agencia",
-              "pms/como_solicitar_la_integracion_con_sifactura"
+              "pms/como_solicitar_la_integracion_con_sifactura",
+              "pms/como_emitir_un_comprobante_desde_una_reserva"
             ]
           },
           {
