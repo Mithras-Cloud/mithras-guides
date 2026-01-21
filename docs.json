@@ -317,7 +317,8 @@
               "pms/como_anular_un_movimiento_en_una_cuenta_proveedor",
               "pms/como_visualizar_detalles_de_pago_y_facturacion",
               "pms/como_regenerar_un_comprobante",
-              "pms/como_realizar_la_integracion_de_siigo_para_facturar_desde_pxsol"
+              "pms/como_realizar_la_integracion_de_siigo_para_facturar_desde_pxsol",
+              "pms/como_vincular_cuentas_corrientes_a_usuarios"
             ]
           },
           {
