@@ -344,7 +344,8 @@
               "pms/como_emitir_una_factura_t_a_una_agencia",
               "pms/como_solicitar_la_integracion_con_sifactura",
               "pms/como_emitir_un_comprobante_desde_una_reserva",
-              "pms/que_significa_que_la_asignacion_de_una_habitacion_este_en_conflicto"
+              "pms/que_significa_que_la_asignacion_de_una_habitacion_este_en_conflicto",
+              "pms/como_facturar_desde_el_modulo_facturacion_nuevo"
             ]
           },
           {
