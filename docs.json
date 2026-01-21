@@ -434,7 +434,8 @@
               "pms/como_actualizar_plano_de_ocupacion",
               "pms/como_visualizar_comprobantes_recibidos",
               "pms/como_facturar_desde_plano_de_mesas",
-              "pms/como_anular_un_movimiento_dentro_de_caja_diaria"
+              "pms/como_anular_un_movimiento_dentro_de_caja_diaria",
+              "pms/como_visualizar_los_datos_de_huespedes_en_tra_luego_de_la_integracion_con_pxsol"
             ]
           },
           {
