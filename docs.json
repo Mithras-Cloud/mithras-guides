@@ -271,7 +271,8 @@
               "crm/como_fusionar_contactos_repetidos",
               "crm/como_cambiar_de_punto_de_venta",
               "crm/como_importar_contactos_a_partir_de_archivo_csv",
-              "crm/como_mover_una_reserva_a_instancia_finalizadas"
+              "crm/como_mover_una_reserva_a_instancia_finalizadas",
+              "crm/como_agregar_contenido_dinamico_a_tus_conversaciones_de_chat"
             ]
           },
           {
