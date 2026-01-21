@@ -454,7 +454,8 @@
               "pms/como_ver_informacion_de_cierre_de_turnos_historicos",
               "pms/como_agregar_consumos_a_una_mesa",
               "pms/como_visualizar_el_informe_de_housekeeping_desde_estado_de_habitaciones",
-              "pms/pagos__como_anular_un_pago_dentro_de_una_reserva"
+              "pms/pagos__como_anular_un_pago_dentro_de_una_reserva",
+              "pms/que_es_autodisponibilidad"
             ]
           },
           {
