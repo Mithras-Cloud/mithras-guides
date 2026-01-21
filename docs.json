@@ -219,7 +219,8 @@
               "crm/como_actualizar_la_firma_de_mi_usuario_para_el_envio_de_correos",
               "crm/como_fusionar_reservas",
               "crm/como_mover_una_reserva_a_las_distintas_instancias",
-              "crm/como_activar_las_notificaciones_para_la_aplicacion_de_conversaciones"
+              "crm/como_activar_las_notificaciones_para_la_aplicacion_de_conversaciones",
+              "crm/como_editar_la_tabla_de_las_transacciones_al_ingresar_a_las_instancias"
             ]
           },
           {
