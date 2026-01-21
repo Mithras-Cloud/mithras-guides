@@ -322,7 +322,8 @@
               "pms/como_vincular_cuentas_corrientes_a_usuarios",
               "pms/como_facturar_desde_el_modulo_neo_facturacion_mexico",
               "pms/como_visualizar_la_aplicacion_plano_de_mesas",
-              "pms/como_modificar_la_moneda_en_una_reserva"
+              "pms/como_modificar_la_moneda_en_una_reserva",
+              "pms/como_visualizar_cuentas_recaudadoras"
             ]
           },
           {
