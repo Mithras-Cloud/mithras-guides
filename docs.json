@@ -150,7 +150,8 @@
               "motor/como_cerrar_fechas_para_dias_en_check_in_o_check_out",
               "motor/como_editar_la_informacion_de_mi_establecimiento",
               "motor/como_guardar_los_datos_de_la_tarjeta",
-              "motor/edicion_multiple_por_habitacion_en_tarifas_y_disponibilidad_v8"
+              "motor/edicion_multiple_por_habitacion_en_tarifas_y_disponibilidad_v8",
+              "motor/como_crear_un_voucher"
             ]
           },
           {
