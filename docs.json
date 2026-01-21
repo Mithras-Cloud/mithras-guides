@@ -468,7 +468,8 @@
               "pms/como_ordenar_las_categorias_e_items_de_mi_menu",
               "pms/como_cargar_una_reserva",
               "pms/folios__como_transferir_consumos_de_un_folio_a_otro",
-              "pms/como_cambiar_asignacion_de_una_reserva"
+              "pms/como_cambiar_asignacion_de_una_reserva",
+              "pms/folios__como_borrar_consumos_de_un_folio"
             ]
           },
           {
