@@ -208,7 +208,8 @@
               "crm/como_marcar_un_chat_como_lista_negra_en_conversaciones",
               "crm/como_gestionar_instancias_de_las_reservas",
               "crm/como_buscar_y_enviar_una_plantilla_por_correo_desde_una_reserva",
-              "crm/como_eliminar_varios_mails_o_a_la_vez"
+              "crm/como_eliminar_varios_mails_o_a_la_vez",
+              "crm/como_convertir_un_contacto_tipo_persona_en_contacto_tipo_empresa"
             ]
           },
           {
