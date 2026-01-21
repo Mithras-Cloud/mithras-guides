@@ -399,7 +399,8 @@
               "pms/como_crear_cuentas_corrientes",
               "pms/como_anular_una_operacion_de_una_cuenta_recaudadora",
               "pms/como_solicitar_la_integracion_con_tarjeta_de_registro_en_colombia",
-              "pms/como_recuperar_comprobantes_fiscales_manual_o_automaticamente"
+              "pms/como_recuperar_comprobantes_fiscales_manual_o_automaticamente",
+              "pms/como_acceder_al_informe_desde_cuentas_corrientes"
             ]
           },
           {
