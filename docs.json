@@ -247,7 +247,8 @@
               "crm/como_gestionar_una_preventa_que_ingreso_por_un_llamado_o_personalmente_en_el_hotel",
               "crm/que_muestra_la_pestana_presupuestos_de_una_reserva",
               "crm/que_muestra_la_pestana_avanzado_de_una_reserva",
-              "crm/que_muestra_la_pestana_historial_de_una_reserva"
+              "crm/que_muestra_la_pestana_historial_de_una_reserva",
+              "crm/como_filtrar_las_cancelaciones_no_ventas_de_un_periodo"
             ]
           },
           {
