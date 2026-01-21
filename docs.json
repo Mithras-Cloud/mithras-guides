@@ -475,7 +475,8 @@
               "pms/como_cambiar_asignacion_de_una_reserva",
               "pms/folios__como_borrar_consumos_de_un_folio",
               "pms/recomendaciones",
-              "pms/pagos__como_hacer_una_devolucion_de_un_pago"
+              "pms/pagos__como_hacer_una_devolucion_de_un_pago",
+              "pms/folios__como_borrar_un_folio_dentro_de_una_reserva"
             ]
           },
           {
