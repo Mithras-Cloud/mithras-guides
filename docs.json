@@ -332,7 +332,8 @@
               "pms/como_crear_bloqueos_desde_el_plano_de_ocupacion",
               "pms/como_asignarle_una_habitacion_a_un_huesped",
               "pms/como_registrar_un_pago_en_una_reserva",
-              "pms/como_agrupar_datos_en_la_aplicacion_proveedores"
+              "pms/como_agrupar_datos_en_la_aplicacion_proveedores",
+              "pms/como_modificar_el_contacto_a_facturar_en_una_reserva"
             ]
           },
           {
