@@ -498,7 +498,9 @@
           },
           {
             "group": "Facturación",
-            "pages": []
+            "pages": [
+              "facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia"
+            ]
           }
         ]
       }
