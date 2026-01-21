@@ -764,7 +764,8 @@
           {
             "group": "Performance",
             "pages": [
-              "performance/que_es_y_para_que_sirve"
+              "performance/que_es_y_para_que_sirve",
+              "performance/como_observar_las_recomendaciones_para_mejorar_mi_performance"
             ]
           }
         ]
