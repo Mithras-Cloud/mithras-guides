@@ -505,7 +505,8 @@
               "pms/como_regenerar_comprobantes_recibidos",
               "pms/como_imprimir_informacion_de_caja_diaria",
               "pms/como_transferir_fondos_de_una_cuenta_recaudadora_a_otra",
-              "pms/como_visualizar_comprobantes_emitidos"
+              "pms/como_visualizar_comprobantes_emitidos",
+              "pms/como_generar_el_archivo_turiva"
             ]
           },
           {
