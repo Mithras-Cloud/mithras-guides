@@ -145,7 +145,8 @@
               "motor/como_abrir_o_cerrar_a_la_venta_una_habitacion_para_un_determinado_periodo_de_forma_masiva_v8",
               "motor/como_cobrar_por_mercado_pago_con_tc_nueva",
               "motor/como_visualizar_los_datos_de_tarjetas_de_credito",
-              "motor/como_cargar_tarifas_por_habitacion_en_fechas_extendidas_v8"
+              "motor/como_cargar_tarifas_por_habitacion_en_fechas_extendidas_v8",
+              "motor/como_cobrar_por_mercado_pago_con_tc_existente"
             ]
           },
           {
