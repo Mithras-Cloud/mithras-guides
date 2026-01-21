@@ -550,7 +550,8 @@
               "pms/como_crear_un_impuesto",
               "pms/como_autoasignar_una_habitacion_en_una_reserva",
               "pms/folios__como_cambiar_la_moneda_de_un_folio",
-              "pms/como_modificar_el_stock_de_un_articulo"
+              "pms/como_modificar_el_stock_de_un_articulo",
+              "pms/como_confeccionar_comprobantes_sobre_un_movimiento_dentro_de_cuentas_corrientes"
             ]
           },
           {
