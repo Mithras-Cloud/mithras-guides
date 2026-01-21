@@ -331,7 +331,8 @@
               "pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol",
               "pms/como_crear_bloqueos_desde_el_plano_de_ocupacion",
               "pms/como_asignarle_una_habitacion_a_un_huesped",
-              "pms/como_registrar_un_pago_en_una_reserva"
+              "pms/como_registrar_un_pago_en_una_reserva",
+              "pms/como_agrupar_datos_en_la_aplicacion_proveedores"
             ]
           },
           {
