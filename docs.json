@@ -136,7 +136,8 @@
               "motor/como_eliminar_un_tipo_de_cambio",
               "motor/como_eliminar_varias_fotos_a_la_vez",
               "motor/como_crear_y_configurar_una_campana_en_tripconnect",
-              "motor/que_muestra_la_pestana_historial_de_una_reserva"
+              "motor/que_muestra_la_pestana_historial_de_una_reserva",
+              "motor/que_funcion_cumple_el_registro_de_compra_abandonada"
             ]
           },
           {
