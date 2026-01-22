@@ -640,6 +640,18 @@
       "destination": "/configuración_inicial/aplicacion_configuracion_punto_de_venta"
     },
     {
+      "source": "/aplicacion-estado-de-habitaciones",
+      "destination": "/pms/aplicacion_estado_de_habitaciones"
+    },
+    {
+      "source": "/aplicación-seo",
+      "destination": "/web/aplicacion_seo"
+    },
+    {
+      "source": "/archivos-cómo-escanear-un-documento-en-una-reserva",
+      "destination": "/pms/archivos__como_escanear_un_documento_en_una_reserva"
+    },
+    {
       "source": "/asociar-un-contacto-tipo-persona-a-un-contacto-empresa",
       "destination": "/crm/asociar_un_contacto_tipo_persona_a_un_contacto_empresa"
     },
@@ -666,6 +678,14 @@
     {
       "source": "/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito",
       "destination": "/configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito"
+    },
+    {
+      "source": "/como-abrir-o-cerrar-un-tarifario",
+      "destination": "/motor/como_abrir_o_cerrar_un_tarifario"
+    },
+    {
+      "source": "/como-acceder-a-informe-desde-cuentas-corrientes",
+      "destination": "/pms/como_acceder_al_informe_desde_cuentas_corrientes"
     },
     {
       "source": "/como-acceder-a-informes",
@@ -712,6 +732,10 @@
       "destination": "/pms/como_activar_o_desactivar_impuestos_en_su_hotel"
     },
     {
+      "source": "/como-actualizar-plano-de-ocupacion",
+      "destination": "/pms/como_actualizar_plano_de_ocupacion"
+    },
+    {
       "source": "/como-adjuntar-un-mail-a-una-reserva",
       "destination": "/crm/como_adjuntar_un_mail_a_una_reserva"
     },
@@ -720,8 +744,28 @@
       "destination": "/analítica/como_administrar_usuarios_en_google_analytics"
     },
     {
+      "source": "/como-agendar-una-reserva",
+      "destination": "/crm/como_agendar_un_recordatorio_a_una_reserva"
+    },
+    {
+      "source": "/cómo-agregar-condiciones-a-un-voucher",
+      "destination": "/motor/como_agregar_condiciones_a_un_voucher"
+    },
+    {
       "source": "/cómo-agregar-condiciones-a-una-promoción",
       "destination": "/motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
+    },
+    {
+      "source": "/como-agregar-consumos",
+      "destination": "/pms/como_agregar_consumos"
+    },
+    {
+      "source": "/como-agregar-consumos-a-una-mesa",
+      "destination": "/pms/como_agregar_consumos_a_una_mesa"
+    },
+    {
+      "source": "/cómo-agregar-contenido-dinámico-a-tus-conversaciones-de-chat",
+      "destination": "/crm/como_agregar_contenido_dinamico_a_tus_conversaciones_de_chat"
     },
     {
       "source": "/como-agregar-el-código-de-seguimiento-de-google-tag-manager-a-pxsol",
@@ -730,6 +774,10 @@
     {
       "source": "/cómo-agregar-informes-a-tu-gestor-de-informes",
       "destination": "/informes/como_agregar_o_instalar_informes_a_tu_gestor_de_informes"
+    },
+    {
+      "source": "/como-agregar-lugares-cercanos-a-mi-hotel-vdf",
+      "destination": "/motor/aplicacion_distancias_como_agregar_o_eliminar_lugares_cercanos_a_mi_hotel"
     },
     {
       "source": "/como-agregar-o-retirar-fondos-de-una-cuenta-recaudadora",
@@ -748,6 +796,10 @@
       "destination": "/crm/como_agregar_plantillas_en_chats_a_traves_de_un_atajo"
     },
     {
+      "source": "/cómo-agregar-un-huésped-a-mi-reserva",
+      "destination": "/crm/como_agregar_un_huesped_a_mi_reserva"
+    },
+    {
       "source": "/como-agregar-un-nuevo-contacto",
       "destination": "/crm/como_agregar_un_nuevo_contacto"
     },
@@ -760,12 +812,44 @@
       "destination": "/crm/como_agregar_una_consulta_de_varias_habitaciones_desde_presupuestar"
     },
     {
+      "source": "/como-agregar-una-preventa-desde-presupuestar",
+      "destination": "/crm/como_agregar_una_preventa_o_consulta_desde_presupuestar"
+    },
+    {
+      "source": "/cómo-agrupar-datos-en-la-aplicación-proveedores",
+      "destination": "/pms/como_agrupar_datos_en_la_aplicacion_proveedores"
+    },
+    {
       "source": "/como-ajustar-el-ancho-de-las-columnas",
       "destination": "/informes/como_ajustar_el_ancho_de_las_columnas"
     },
     {
       "source": "/como-ajustar-para-que-el-motor-siempre-confirme-reservas-en-usd-sin-importar-la-moneda-en-la-cual-se-realiza-la-busqueda",
       "destination": "/motor/como_configurar_el_motor_para_que_todas_las_reservas_se_confirmen_en_usd_independientemente_de_la_moneda_utilizada_en_la_busqueda"
+    },
+    {
+      "source": "/como-anadir-una-habitacion-en-una-reserva",
+      "destination": "/pms/como_anadir_una_habitacion_en_una_reserva__v1"
+    },
+    {
+      "source": "/cómo-anular-o-auditar-varios-movimientos-en-cuentas-recaudadoras",
+      "destination": "/pms/como_anular_o_auditar_varios_movimientos_en_cuentas_recaudadoras"
+    },
+    {
+      "source": "/cómo-anular-un-movimiento-en-una-cuenta-proveedor",
+      "destination": "/pms/como_anular_un_movimiento_en_una_cuenta_proveedor"
+    },
+    {
+      "source": "/como-anular-un-pago-dentro-de-una-reserva",
+      "destination": "/pms/pagos__como_anular_un_pago_dentro_de_una_reserva"
+    },
+    {
+      "source": "/como-anular-un-un-movimiento-dentro-de-caja-diaria",
+      "destination": "/pms/como_anular_un_movimiento_dentro_de_caja_diaria"
+    },
+    {
+      "source": "/como-anular-una-operacion-de-una-cuenta-contable",
+      "destination": "/pms/como_anular_una_operacion_de_una_cuenta_recaudadora"
     },
     {
       "source": "/como-anular-una-operacion-de-una-cuenta-corriente",
@@ -784,8 +868,16 @@
       "destination": "/conversaciones/como_asignar_la_conversacion_a_un_equipo"
     },
     {
+      "source": "/como-asignar-un-mail",
+      "destination": "/crm/como_asignar_un_mail_a_un_agente_o_responsable"
+    },
+    {
       "source": "/como-asignar-un-mozo-a-la-mesa",
       "destination": "/plano_de_mesa/como_asignar_un_mozo_a_la_mesa"
+    },
+    {
+      "source": "/como-asignar-una-habitacion-a-una-reserva",
+      "destination": "/pms/como_asignar_una_habitacion_a_una_reserva"
     },
     {
       "source": "/cómo-asignar-una-reserva-en-dos-habitaciones-diferentes",
@@ -796,6 +888,10 @@
       "destination": "/conversaciones/como_asignar_uno_o_mas_responsables_a_un_chat_con_clientes_en_la_aplicacion_conversaciones"
     },
     {
+      "source": "/cómo-asignarle-una-habitación-a-un-huésped",
+      "destination": "/pms/como_asignarle_una_habitacion_a_un_huesped"
+    },
+    {
       "source": "/cómo-asociar-un-contacto-existente-al-chat-de-conversaciones",
       "destination": "/conversaciones/como_asociar_un_contacto_existente_al_chat_de_conversaciones"
     },
@@ -804,12 +900,28 @@
       "destination": "/conversaciones/como_asociar_una_reserva_o_consulta_al_chat_de_conversaciones"
     },
     {
+      "source": "/cómo-auditar-una-cuenta-proveedor",
+      "destination": "/pms/como_auditar_una_cuenta_proveedor"
+    },
+    {
       "source": "/como-aumentar-cantidad-de-habitaciones-para-presupuestar",
       "destination": "/motor/como_aumentar_cantidad_de_habitaciones_para_presupuestar"
     },
     {
+      "source": "/como-autoasignar-una-habitacion-en-una-reserva",
+      "destination": "/pms/como_autoasignar_una_habitacion_en_una_reserva"
+    },
+    {
       "source": "/cómo-bloquear-la-visualización-de-reservas-a-un-usuario",
       "destination": "/configuración_inicial/como_bloquear_la_visualizacion_de_reservas_a_un_usuario"
+    },
+    {
+      "source": "/como-bloquear-movimiento-de-habitaciones-en-una-reserva",
+      "destination": "/pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva"
+    },
+    {
+      "source": "/como-bloquear-movimiento-de-habitaciones-fisicas-en-una-reserva",
+      "destination": "/pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1"
     },
     {
       "source": "/como-borrar-cache-y-cookies",
@@ -820,6 +932,14 @@
       "destination": "/pms/como_borrar_comprobantes_emitidos"
     },
     {
+      "source": "/como-borrar-comprobantes-recibidos",
+      "destination": "/pms/como_borrar_comprobantes_recibidos"
+    },
+    {
+      "source": "/como-borrar-consumos-de-un-folio",
+      "destination": "/pms/folios__como_borrar_consumos_de_un_folio"
+    },
+    {
       "source": "/como-borrar-de-forma-definitiva-un-informe-personalizado",
       "destination": "/informes/como_borrar_de_forma_definitiva_un_informe_personalizado"
     },
@@ -828,8 +948,20 @@
       "destination": "/generales/como_borrar_el_historial_de_navegacion_en_google_chrome"
     },
     {
+      "source": "/como-borrar-la-asignacion-de-una-reserva-a-una-habitacion",
+      "destination": "/pms/como_borrar_la_asignacion_de_una_reserva"
+    },
+    {
+      "source": "/como-borrar-lugares-cercanos-cargados",
+      "destination": "/motor/aplicacion_distancias_como_borrar_lugares_cercanos_cargados"
+    },
+    {
       "source": "/cómo-borrar-tareas-programadas",
       "destination": "/operaciones/como_borrar_tareas_programadas"
+    },
+    {
+      "source": "/como-borrar-un-folio-dentro-de-una-reserva",
+      "destination": "/pms/folios__como_borrar_un_folio_dentro_de_una_reserva"
     },
     {
       "source": "/cómo-borrar-un-informe-de-mi-lista",
@@ -856,8 +988,20 @@
       "destination": "/conversaciones/como_buscar_un_mensaje_dentro_de_conversaciones"
     },
     {
+      "source": "/como-buscar-y-enviar-una-plantilla-por-correo-desde-una-reserva",
+      "destination": "/crm/como_buscar_y_enviar_una_plantilla_por_correo_desde_una_reserva"
+    },
+    {
+      "source": "/como-cambiar-asignacion-de-una-reserva",
+      "destination": "/pms/como_cambiar_asignacion_de_una_reserva"
+    },
+    {
       "source": "/cómo-cambiar-de-empresa-con-usuario-multipropiedad",
       "destination": "/configuración_inicial/como_cambiar_de_empresa_con_usuario_multipropiedad"
+    },
+    {
+      "source": "/como-cambiar-de-punto-de-venta",
+      "destination": "/crm/como_cambiar_de_punto_de_venta"
     },
     {
       "source": "/como-cambiar-el-estado-de-limpieza-de-las-habitaciones",
@@ -904,12 +1048,24 @@
       "destination": "/administración/como_cancelar_el_saldo_a_traves_de_mercado_pago"
     },
     {
+      "source": "/como-cancelar-una-reserva-de-forma-manual",
+      "destination": "/crm/como_cancelar_una_reserva_de_forma_manual"
+    },
+    {
       "source": "/cómo-cargar-base-de-conocimiento-desde-una-conversación",
       "destination": "/conversaciones/como_cargar_base_de_conocimiento_desde_una_conversacion"
     },
     {
+      "source": "/como-cargar-consumos-en-una-reserva",
+      "destination": "/pms/folios__como_cargar_consumos_en_una_reserva"
+    },
+    {
       "source": "/cómo-cargar-fotos-y-archivos-en-mi-biblioteca-de-archivos",
       "destination": "/configuración_inicial/como_cargar_fotos_y_archivos_en_mi_biblioteca_de_archivos"
+    },
+    {
+      "source": "/cómo-cargar-la-carta-de-mi-restaurante-en-pxsol",
+      "destination": "/pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol"
     },
     {
       "source": "/como-cargar-la-foto-que-aparece-en-los-presupuestos",
@@ -920,8 +1076,16 @@
       "destination": "/pms/como_cargar_notas_de_credito_en_proveedores"
     },
     {
+      "source": "/como-cargar-nuevos-consumos-en-una-reserva",
+      "destination": "/pms/como_cargar_consumos_en_una_reserva__v1"
+    },
+    {
       "source": "/como-cargar-pagos",
       "destination": "/pms/como_cargar_pagos_en_plano_de_spa"
+    },
+    {
+      "source": "/como-cargar-pagos-en-una-mesa",
+      "destination": "/pms/como_cargar_pagos_en_una_mesa"
     },
     {
       "source": "/como-cargar-proveedores",
@@ -936,12 +1100,36 @@
       "destination": "/motor/como_cargar_un_adicional_promocion_manual"
     },
     {
+      "source": "/como-cargar-un-post-en-el-blog-de-pxsol",
+      "destination": "/web/como_cargar_un_post_en_el_blog_de_pxsol"
+    },
+    {
+      "source": "/cómo-cargar-una-factura-clonando-otra-en-proveedores",
+      "destination": "/pms/como_cargar_una_factura_clonando_otra_en_proveedores"
+    },
+    {
+      "source": "/cómo-cargar-una-factura-en-una-cuenta-proveedor",
+      "destination": "/pms/como_cargar_una_factura_en_una_cuenta_proveedor"
+    },
+    {
+      "source": "/como-cargar-una-reserva",
+      "destination": "/pms/como_cargar_una_reserva"
+    },
+    {
+      "source": "/cómo-cargar-una-reserva-desde-el-plano",
+      "destination": "/pms/como_cargar_una_reserva_desde_el_plano_de_ocupacion"
+    },
+    {
       "source": "/cómo-cargar-una-reserva-sin-plano-de-ocupación",
       "destination": "/procesos/como_cargar_una_reserva_al_no_contar_con_plano_de_ocupacion"
     },
     {
       "source": "/cómo-cargar-y-asignar-tareas-en-la-aplicación-tareas-del-sistema",
       "destination": "/operaciones/como_cargar_y_asignar_tareas_en_la_aplicacion_tareas_del_sistema"
+    },
+    {
+      "source": "/como-cerrar-fechas-para-dias-en-check-in",
+      "destination": "/motor/como_cerrar_fechas_para_dias_en_check_in_o_check_out"
     },
     {
       "source": "/como-cerrar-una-conversación-con-tus-clientes-desde-la-aplicación-conversaciones",
@@ -956,12 +1144,40 @@
       "destination": "/conversaciones/como_comunicarte_con_tus_companeros_de_trabajo_desde_la_aplicacion_conversaciones"
     },
     {
+      "source": "/cómo-clonar-movimientos-en-cuentas-corrientes",
+      "destination": "/pms/como_clonar_movimientos_en_cuentas_corrientes"
+    },
+    {
+      "source": "/como-cobrar-por-mercado-pago-con-tc-existente",
+      "destination": "/motor/como_cobrar_por_mercado_pago_con_tc_existente"
+    },
+    {
+      "source": "/como-cobrar-por-mercado-pago-con-tc-nueva",
+      "destination": "/motor/como_cobrar_por_mercado_pago_con_tc_nueva"
+    },
+    {
+      "source": "/como-colocar-a-un-huesped-como-titular",
+      "destination": "/pms/como_colocar_a_un_huesped_como_titular"
+    },
+    {
       "source": "/como-colocar-descripciones-en-tipos-de-habitaciones",
       "destination": "/motor/como_colocar_descripciones_en_tipos_de_habitaciones"
     },
     {
+      "source": "/como-colocar-el-logo-para-facturacion",
+      "destination": "/pms/como_colocar_el_logo_para_facturacion"
+    },
+    {
       "source": "/como-colocar-inventario-en-las-promociones-o-vouchers",
       "destination": "/motor/como_colocar_inventario_en_las_promociones_o_vouchers"
+    },
+    {
+      "source": "/como-colocar-restricciones-de-noches",
+      "destination": "/motor/como_colocar_restricciones_de_noches"
+    },
+    {
+      "source": "/como-colocarle-descripciones-a-las-fotos-vdf",
+      "destination": "/motor/como_colocarle_descripciones_a_las_fotos"
     },
     {
       "source": "/cómo-comprar-informes-extra",
@@ -972,12 +1188,24 @@
       "destination": "/channel/como_obtener_las_credenciales_de_conexion_de_booking"
     },
     {
+      "source": "/como-confeccionar-comprobantes-desde-cuentas-corrientes",
+      "destination": "/pms/como_confeccionar_comprobantes_sobre_un_movimiento_dentro_de_cuentas_corrientes"
+    },
+    {
       "source": "/como-confeccionar-un-comprobante-de-compra",
       "destination": "/pms/como_confeccionar_un_comprobante_de_compra"
     },
     {
+      "source": "/cómo-configurar-alertas-de-falta-de-stock-de-mi-inventario",
+      "destination": "/pms/como_configurar_alertas_de_falta_de_stock_de_mi_inventario"
+    },
+    {
       "source": "/cómo-configurar-automatizaciones-para-la-aplicación-de-conversaciones",
       "destination": "/conversaciones/como_configurar_automatizaciones_para_la_aplicacion_de_conversaciones"
+    },
+    {
+      "source": "/como-configurar-combinaciones",
+      "destination": "/motor/como_configurar_combinaciones"
     },
     {
       "source": "/como-configurar-el-medio-de-pago-payway",
@@ -996,8 +1224,16 @@
       "destination": "/primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas"
     },
     {
+      "source": "/como-configurar-el-plano",
+      "destination": "/pms/como_configurar_el_plano"
+    },
+    {
       "source": "/cómo-configurar-el-puntos-de-venta",
       "destination": "/motor/como_configurar_puntos_de_venta"
+    },
+    {
+      "source": "/como-configurar-la-encuesta-de-satisfaccion",
+      "destination": "/motor/como_configurar_la_encuesta_de_satisfaccion"
     },
     {
       "source": "/como-configurar-la-integracion-con-webpay",
@@ -1044,12 +1280,36 @@
       "destination": "/motor/como_configurar_temporada_alta_en_el_tarifario"
     },
     {
+      "source": "/como-configurar-un-costo-fijo-adicional",
+      "destination": "/motor/como_establecer_un_cargo_fijo_adicional_ejemplo_tarifa_por_limpieza"
+    },
+    {
+      "source": "/como-conseguir-codigo-para-chat-de-facebook",
+      "destination": "/motor/como_conseguir_codigo_para_chat_de_facebook"
+    },
+    {
+      "source": "/cómo-convertir-un-contacto-tipo-persona-en-contacto-tipo-empresa",
+      "destination": "/crm/como_convertir_un_contacto_tipo_persona_en_contacto_tipo_empresa"
+    },
+    {
+      "source": "/como-crear-bloqueos-desde-el-plano-de-ocupacion",
+      "destination": "/pms/como_crear_bloqueos_desde_el_plano_de_ocupacion"
+    },
+    {
       "source": "/como-crear-campaña-de-email-marketing-manual",
       "destination": "/crm/como_crear_campana_de_email_marketing_manual"
     },
     {
+      "source": "/como-crear-cuentas-corrientes",
+      "destination": "/pms/como_crear_cuentas_corrientes"
+    },
+    {
       "source": "/como-crear-cuentas-recaudadoras",
       "destination": "/pms/como_crear_cuentas_recaudadoras"
+    },
+    {
+      "source": "/cómo-crear-depósitos-para-la-aplicación-inventario",
+      "destination": "/pms/como_crear_depositos_para_la_aplicacion_inventario"
     },
     {
       "source": "/cómo-crear-equipos",
@@ -1076,12 +1336,20 @@
       "destination": "/crm/guia_interna_como_crear_reglas_para_email_marketing_automation"
     },
     {
+      "source": "/cómo-crear-subgrupos-para-los-centros-de-costo",
+      "destination": "/pms/como_crear_subgrupos_para_los_centros_de_costo"
+    },
+    {
       "source": "/como-crear-tipos-de-habitaciones-vdf",
       "destination": "/motor/como_crear_categorias_de_habitaciones"
     },
     {
       "source": "/cómo-crear-un-anuncio",
       "destination": "/motor/como_crear_un_anuncio"
+    },
+    {
+      "source": "/como-crear-un-impuesto",
+      "destination": "/pms/como_crear_un_impuesto"
     },
     {
       "source": "/cómo-crear-un-nuevo-plan-tarifario",
@@ -1096,6 +1364,14 @@
       "destination": "/primeros_pasos/como_crear_un_ticket_desde_el_sistema_al_soporte_de_pxsol"
     },
     {
+      "source": "/como-crear-un-voucher",
+      "destination": "/motor/como_crear_un_voucher"
+    },
+    {
+      "source": "/como-crear-una-nueva-etiqueta",
+      "destination": "/crm/mutadores_como_crear_un_nuevo_mutador"
+    },
+    {
       "source": "/como-crear-una-promocion",
       "destination": "/motor/como_crear_una_promocion"
     },
@@ -1104,12 +1380,20 @@
       "destination": "/motor/como_crear_una_promocion_manual"
     },
     {
+      "source": "/como-crear-una-regla-de-tarifas-entre-planes-tarifarios",
+      "destination": "/pms/como_establecer_o_modificar_una_regla_de_tarifas_entre_diferentes_planes_tarifarios"
+    },
+    {
       "source": "/cómo-crear-una-vista-personalizada-en-mi-lista-de-informes",
       "destination": "/informes/como_crear_una_vista_personalizada_en_mi_lista_de_informes"
     },
     {
       "source": "/cómo-crear-usuarios-masivamente",
       "destination": "/configuración_inicial/como_crear_usuarios_masivamente"
+    },
+    {
+      "source": "/como-crear-y-configurar-una-campaña-en-tripconnect",
+      "destination": "/motor/como_crear_y_configurar_una_campana_en_tripconnect"
     },
     {
       "source": "/cómo-crear-y-editar-plantillas-de-correo-para-chat-whatsapp",
@@ -1144,6 +1428,22 @@
       "destination": "/informes/como_dar_permiso_o_excluir_usuarios_de_un_informe"
     },
     {
+      "source": "/cómo-darle-check-in-a-una-habitación",
+      "destination": "/pms/como_realizar_el_check_in_de_una_habitacion"
+    },
+    {
+      "source": "/cómo-definir-la-visibilidad-de-una-categoría-en-la-sección-de-habitaciones-de-la-web",
+      "destination": "/web/como_definir_la_visibilidad_de_una_categoria_en_la_seccion_de_habitaciones_de_la_web"
+    },
+    {
+      "source": "/cómo-definir-un-acuerdo-a-un-contacto",
+      "destination": "/crm/como_asociar_un_acuerdo_a_un_contacto"
+    },
+    {
+      "source": "/cómo-delegar-su-dominio-.com.ar-a-nuestro-hosting-de-cloudflare",
+      "destination": "/web/como_delegar_su_dominio_com"
+    },
+    {
       "source": "/cómo-delegar-su-dominio-a-nuestro-hosting-de-cloudflare",
       "destination": "/web/como_delegar_su_dominio_a_nuestro_hosting_de_cloudflare"
     },
@@ -1154,6 +1454,10 @@
     {
       "source": "/cómo-delegar-su-dominio-comprado-en-godaddy-a-nuestro-hosting-de-cloudflare",
       "destination": "/web/como_delegar_su_dominio_comprado_en_godaddy_a_nuestro_hosting_de_cloudflare"
+    },
+    {
+      "source": "/cómo-delegar-su-dominio-comprado-en-godaddy-a-nuestro-hosting-de-cloudflare-1",
+      "destination": "/web/como_delegar_su_dominio_comprado_en_towebs_a_nuestro_hosting_de_cloudflare"
     },
     {
       "source": "/cómo-delegar-su-dominio-comprado-en-google-a-nuestro-hosting-de-cloudflare",
@@ -1216,12 +1520,44 @@
       "destination": "/channel/como_desconectarse_de_expedia"
     },
     {
+      "source": "/como-desprogramar-recordatorios",
+      "destination": "/crm/como_desprogramar_recordatorios"
+    },
+    {
       "source": "/como-desvincular-un-pago-de-una-factura-en-cuentas-corrientes",
       "destination": "/administración/como_desvincular_un_pago_de_una_factura_en_cuentas_corrientes"
     },
     {
       "source": "/como-desvincular-un-usuario-de-una-cuenta-de-correo",
       "destination": "/configuración_inicial/como_desvincular_un_usuario_de_una_cuenta_de_correo"
+    },
+    {
+      "source": "/como-desvincularse-de-mercado-pago",
+      "destination": "/motor/como_desvincularse_de_mercado_pago"
+    },
+    {
+      "source": "/como-editar-datos-de-un-huesped",
+      "destination": "/pms/como_editar_datos_de_un_huesped"
+    },
+    {
+      "source": "/cómo-editar-la-información-de-mi-establecimiento",
+      "destination": "/motor/como_editar_la_informacion_de_mi_establecimiento"
+    },
+    {
+      "source": "/cómo-editar-la-tabla-de-las-transacciones-al-ingresar-a-las-instancias",
+      "destination": "/crm/como_editar_la_tabla_de_las_transacciones_al_ingresar_a_las_instancias"
+    },
+    {
+      "source": "/cómo-editar-las-columnas-de-las-instancias",
+      "destination": "/crm/como_editar_las_columnas_de_las_instancias"
+    },
+    {
+      "source": "/cómo-editar-los-datos-de-mi-establecimiento",
+      "destination": "/motor/como_editar_los_datos_de_mi_establecimiento"
+    },
+    {
+      "source": "/como-editar-los-servicios-que-aparecen-en-mi-web",
+      "destination": "/motor/como_editar_los_servicios_que_aparecen_en_mi_motor_de_reservas_y_pagina_web"
     },
     {
       "source": "/cómo-editar-los-textos-de-mi-establecimiento",
@@ -1240,8 +1576,28 @@
       "destination": "/operaciones/como_editar_tareas_programadas"
     },
     {
+      "source": "/como-editar-tus-encuestas",
+      "destination": "/crm/como_editar_tus_encuestas"
+    },
+    {
+      "source": "/como-editar-un-bloqueo",
+      "destination": "/pms/como_editar_un_bloqueo"
+    },
+    {
+      "source": "/como-editar-un-contacto",
+      "destination": "/crm/como_editar_un_contacto"
+    },
+    {
+      "source": "/como-editar-una-consulta-luego-de-presupuestarla",
+      "destination": "/crm/como_editar_una_consulta_luego_de_presupuestarla"
+    },
+    {
       "source": "/como-editar-una-consulta-o-reserva",
       "destination": "/crm/como_editar_una_consulta_o_reserva"
+    },
+    {
+      "source": "/como-editar-una-habitación",
+      "destination": "/pms/como_editar_una_habitacion"
     },
     {
       "source": "/como-editar-varias-habitaciones-a-la-vez-en-una-reserva",
@@ -1256,12 +1612,44 @@
       "destination": "/crm/como_eliminar_campana_de_email_marketing_manual"
     },
     {
+      "source": "/cómo-eliminar-imágenes-a-la-biblioteca-de-fotos-y-archivos",
+      "destination": "/motor/como_eliminar_imagenes_de_la_biblioteca_de_fotos_y_archivos"
+    },
+    {
+      "source": "/como-eliminar-un-bloqueo",
+      "destination": "/pms/como_eliminar_un_bloqueo"
+    },
+    {
+      "source": "/como-eliminar-un-cambio-de-moneda",
+      "destination": "/motor/como_eliminar_un_tipo_de_cambio"
+    },
+    {
       "source": "/como-eliminar-un-contacto",
       "destination": "/crm/como_eliminar_un_contacto"
     },
     {
+      "source": "/como-eliminar-un-huesped-cargado",
+      "destination": "/pms/como_eliminar_un_huesped_cargado"
+    },
+    {
       "source": "/como-eliminar-un-usuario",
       "destination": "/configuración_inicial/como_eliminar_un_usuario"
+    },
+    {
+      "source": "/como-eliminar-una-campaña-de-email-marketing-automation",
+      "destination": "/crm/como_eliminar_una_campana_de_email_marketing_automation"
+    },
+    {
+      "source": "/cómo-eliminar-una-cuenta-recaudadora",
+      "destination": "/pms/como_eliminar_una_cuenta_recaudadora"
+    },
+    {
+      "source": "/como-eliminar-una-etiqueta",
+      "destination": "/crm/como_eliminar_una_etiqueta"
+    },
+    {
+      "source": "/como-eliminar-varias-fotos-a-la-vez",
+      "destination": "/motor/como_eliminar_varias_fotos_a_la_vez"
     },
     {
       "source": "/como-emitir-el-archivo-txt-iva-compras",
@@ -1272,8 +1660,20 @@
       "destination": "/pms/como_emitir_una_factura_e_de_exportacion_argentina"
     },
     {
+      "source": "/como-emitir-una-factura-t",
+      "destination": "/pms/como_emitir_una_factura_t"
+    },
+    {
+      "source": "/como-emitir-una-nota-de-credito-dentro-de-una-reserva",
+      "destination": "/pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva"
+    },
+    {
       "source": "/como-emitir-una-nota-de-debito-dentro-de-una-reserva",
       "destination": "/pms/como_emitir_una_nota_de_debito_dentro_de_una_reserva"
+    },
+    {
+      "source": "/cómo-encontrar-los-datos-de-usuario-contraseña-y-servidor-en-tu-hosting-de-correo-de-ferozo",
+      "destination": "/crm/como_encontrar_los_datos_de_usuario_contrasena_y_servidor_en_tu_hosting_de_correo_de_ferozo"
     },
     {
       "source": "/cómo-encontrar-los-datos-de-usuario-contraseña-y-servidor-en-tu-hosting-de-correo-de-hosting-del-sur",
@@ -1282,6 +1682,10 @@
     {
       "source": "/cómo-encontrar-un-reserva-desde-el-listado-de-reservas",
       "destination": "/motor/como_encontrar_un_reserva_desde_el_listado_de_reservas"
+    },
+    {
+      "source": "/como-enlazar-un-link-al-enviar-un-correo",
+      "destination": "/crm/como_enlazar_un_link_al_enviar_un_correo"
     },
     {
       "source": "/como-enviar-enlace-para-web-check-in-manualmente",
@@ -1312,12 +1716,40 @@
       "destination": "/channel/como_establecer_la_conexion_entre_un_hotel_de_pxsol_y_el_channel_manager_de_todo_alojamiento"
     },
     {
+      "source": "/como-excluir-promocion-para-trafico-de-pxsol-hotel-ads",
+      "destination": "/motor/como_excluir_promocion_para_trafico_de_pxsol_hotel_ads"
+    },
+    {
       "source": "/como-exportar-un-informe",
       "destination": "/informes/como_exportar_un_informe"
     },
     {
       "source": "/como-extender-la-estadia-de-una-reserva",
       "destination": "/pms/como_modificar_la_estadia_de_una_reserva"
+    },
+    {
+      "source": "/cómo-facturar-desde-el-módulo-facturación-nuevo",
+      "destination": "/pms/como_facturar_desde_el_modulo_facturacion_nuevo"
+    },
+    {
+      "source": "/cómo-facturar-desde-el-módulo-neo-facturación-beta-para-uruguay",
+      "destination": "/pms/como_facturar_desde_el_modulo_neo_facturacion_uruguay"
+    },
+    {
+      "source": "/cómo-facturar-desde-el-módulo-neo-facturación-colombia",
+      "destination": "/pms/como_facturar_desde_el_modulo_neo_facturacion_colombia"
+    },
+    {
+      "source": "/cómo-facturar-desde-el-módulo-neo-facturación-mexico",
+      "destination": "/pms/como_facturar_desde_el_modulo_neo_facturacion_mexico"
+    },
+    {
+      "source": "/cómo-facturar-desde-plano-de-mesas",
+      "destination": "/pms/como_facturar_desde_plano_de_mesas"
+    },
+    {
+      "source": "/como-facturar-desde-una-reserva",
+      "destination": "/pms/como_facturar_desde_una_reserva"
     },
     {
       "source": "/como-facturar-una-reserva-parcialmente",
@@ -1328,8 +1760,28 @@
       "destination": "/pms/como_facturar_una_reserva_parcialmente"
     },
     {
+      "source": "/como-filtrar-las-cancelaciones-no-ventas-de-un-periodo",
+      "destination": "/crm/como_filtrar_las_cancelaciones_no_ventas_de_un_periodo"
+    },
+    {
+      "source": "/cómo-filtrar-las-transacciones",
+      "destination": "/crm/como_filtrar_las_transacciones"
+    },
+    {
       "source": "/cómo-filtrar-mi-lista-de-reservas",
       "destination": "/pms/como_filtrar_mi_lista_de_reservas"
+    },
+    {
+      "source": "/cómo-filtrar-movimientos-en-cuenta-corriente",
+      "destination": "/pms/como_filtrar_movimientos_en_cuenta_corriente"
+    },
+    {
+      "source": "/cómo-filtrar-movimientos-en-cuenta-recaudadoras",
+      "destination": "/pms/como_filtrar_movimientos_en_cuenta_recaudadoras"
+    },
+    {
+      "source": "/como-firmar-un-movimiento-dentro-de-caja-diaria",
+      "destination": "/pms/como_firmar_un_movimiento_dentro_de_caja_diaria"
     },
     {
       "source": "/como-firmar-un-pago-dentro-de-una-reserva",
@@ -1340,12 +1792,24 @@
       "destination": "/web/como_forzar_el_borrado_de_cache"
     },
     {
+      "source": "/cómo-fusionar-consultas-o-reservas",
+      "destination": "/crm/como_fusionar_reservas"
+    },
+    {
+      "source": "/como-fusionar-contactos-repetidos",
+      "destination": "/crm/como_fusionar_contactos_repetidos"
+    },
+    {
       "source": "/cómo-generar-base-de-conocimiento-para-el-bot-de-conversaciones",
       "destination": "/conversaciones/como_generar_base_de_conocimiento_para_la_ai_del_bot_de_conversaciones"
     },
     {
       "source": "/como-generar-el-archivo-de-las-facturas-emitidas",
       "destination": "/pms/como_generar_el_archivo_de_las_facturas_emitidas"
+    },
+    {
+      "source": "/como-generar-el-archivo-turiva",
+      "destination": "/pms/como_generar_el_archivo_turiva"
     },
     {
       "source": "/como-generar-informe-citi-rg-3685",
@@ -1356,6 +1820,10 @@
       "destination": "/pms/como_generar_informe_comprobantes_de_ventas_comprobantes_de_ventas_fiscales"
     },
     {
+      "source": "/como-generar-un-link-de-motor-de-reservas-con-codigo-promocional-ya-cargado",
+      "destination": "/motor/como_generar_un_link_de_motor_de_reservas_con_codigo_promocional_ya_cargado"
+    },
+    {
       "source": "/como-generar-un-pin-para-un-usuario",
       "destination": "/configuración_inicial/como_generar_un_pin_para_un_usuario"
     },
@@ -1364,8 +1832,20 @@
       "destination": "/configuración_inicial/como_generar_un_usuario_clonando_los_permisos_de_otro"
     },
     {
+      "source": "/como-generar-una-firma-en-el-perfil",
+      "destination": "/crm/como_actualizar_la_firma_de_mi_usuario_para_el_envio_de_correos"
+    },
+    {
       "source": "/como-gestionar-encuestas",
       "destination": "/crm/como_gestionar_encuestas"
+    },
+    {
+      "source": "/como-gestionar-instancias-de-las-reservas",
+      "destination": "/crm/como_gestionar_instancias_de_las_reservas"
+    },
+    {
+      "source": "/como-gestionar-la-integracion-con-mercado-pago",
+      "destination": "/motor/como_gestionar_la_integracion_con_mercado_pago"
     },
     {
       "source": "/cómo-gestionar-la-integración-con-mercado-pago-desde-una-reserva",
@@ -1378,6 +1858,14 @@
     {
       "source": "/cómo-gestionar-mis-informes-desde-la-lista-de-informes",
       "destination": "/informes/como_filtrar_mi_lista_de_informes"
+    },
+    {
+      "source": "/como-gestionar-preventa-que-ingreso-por-un-llamado-o-personalmente",
+      "destination": "/crm/como_gestionar_una_preventa_que_ingreso_por_un_llamado_o_personalmente_en_el_hotel"
+    },
+    {
+      "source": "/como-gestionar-un-llamado-telefonico",
+      "destination": "/crm/como_gestionar_un_llamado_telefonico"
     },
     {
       "source": "/como-gestionar-una-consulta",
@@ -1396,6 +1884,14 @@
       "destination": "/procesos/como_gestionar_una_reserva_que_esta_cumpliendo_su_estadia"
     },
     {
+      "source": "/como-gestionar-una-reserva-que-ingreso-desde-motor-o-channel",
+      "destination": "/crm/como_gestionar_una_reserva_que_ingreso_desde_motor_o_channel"
+    },
+    {
+      "source": "/como-guardar-los-datos-de-la-tarjeta",
+      "destination": "/motor/como_guardar_los_datos_de_la_tarjeta"
+    },
+    {
       "source": "/cómo-habilitar-aplicaciones-de-configuración-a-usuarios",
       "destination": "/configuración_inicial/como_habilitar_aplicaciones_de_configuracion_a_usuarios"
     },
@@ -1408,16 +1904,36 @@
       "destination": "/configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario"
     },
     {
+      "source": "/como-habilitar-su-gmail-para-vincular-al-crm-de-pxsol",
+      "destination": "/crm/como_habilitar_su_gmail_para_vincular_al_crm_de_pxsol"
+    },
+    {
       "source": "/como-habilitar-una-cuenta-de-proveedores-a-un-usuario-con-permiso-basico",
       "destination": "/configuración_inicial/como_otorgar_acceso_a_una_cuenta_de_proveedores_a_un_usuario_con_permiso_basico"
+    },
+    {
+      "source": "/como-hacer-el-cierre-de-mesa",
+      "destination": "/pms/como_hacer_el_cierre_de_mesa"
     },
     {
       "source": "/como-hacer-que-se-vea-la-ota-de-la-que-proviene-la-reserva",
       "destination": "/arion/como_hacer_que_se_vea_la_ota_de_la_que_proviene_la_reserva_en_arion"
     },
     {
+      "source": "/como-hacer-revision-de-fotos-vinculadas-en-tipos-de-habitaciones",
+      "destination": "/motor/como_hacer_revision_de_fotos_vinculadas_en_tipos_de_habitaciones"
+    },
+    {
       "source": "/cómo-importar-ciudades-de-siigo-a-pxsol-para-la-facturación-colombia",
       "destination": "/facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia"
+    },
+    {
+      "source": "/cómo-importar-clientes-de-siigo-a-pxsol-para-la-facturación-colombia-0",
+      "destination": "/pms/como_importar_clientes_de_siigo_a_pxsol_para_la_facturacion_colombia"
+    },
+    {
+      "source": "/como-importar-contactos-a-partir-de-archivo-csv",
+      "destination": "/crm/como_importar_contactos_a_partir_de_archivo_csv"
     },
     {
       "source": "/cómo-importar-datos-del-hotel-desde-booking.com",
@@ -1426,6 +1942,18 @@
     {
       "source": "/como-importar-reservas",
       "destination": "/crm/como_importar_reservas_al_sistema"
+    },
+    {
+      "source": "/como-imprimir-informacion-de-caja-diaria",
+      "destination": "/pms/como_imprimir_informacion_de_caja_diaria"
+    },
+    {
+      "source": "/como-imprimir-la-ficha-de-check-in",
+      "destination": "/pms/como_imprimir_la_ficha_de_check_in"
+    },
+    {
+      "source": "/como-imprimir-la-ficha-de-registro",
+      "destination": "/pms/como_imprimir_la_ficha_de_registro__v1"
     },
     {
       "source": "/cómo-imprimir-las-transacciones-por-instancia-filtradas",
@@ -1460,6 +1988,10 @@
       "destination": "/analítica/como_insertar_el_codigo_de_seguimiento_de_google_analytics_en_pxsol"
     },
     {
+      "source": "/como-instalar-el-motor-de-reservas-en-un-sitio-web-externo",
+      "destination": "/motor/como_instalar_el_boton_de_reservas_en_un_sitio_web_externo"
+    },
+    {
       "source": "/como-integrar-el-motor-de-roomcloud-en-el-sitio-web-del-hotel",
       "destination": "/web/como_integrar_el_motor_de_roomcloud_en_el_sitio_web_del_hotel"
     },
@@ -1468,20 +2000,80 @@
       "destination": "/web/como_integrar_el_motor_de_roomcloud_en_el_sitio_web_del_hotel"
     },
     {
+      "source": "/cómo-le-hago-una-factura-t-a-una-empresa",
+      "destination": "/pms/como_emitir_una_factura_t_a_una_agencia"
+    },
+    {
+      "source": "/como-leer-en-que-moneda-esta-configurado-el-tarifario",
+      "destination": "/motor/como_leer_en_que_moneda_esta_configurado_el_tarifario"
+    },
+    {
       "source": "/como-leer-estado-de-habitaciones",
       "destination": "/pms/como_leer_estado_de_habitaciones"
+    },
+    {
+      "source": "/como-leer-reglas-entre-tarifarios",
+      "destination": "/motor/como_leer_reglas_entre_tarifarios"
+    },
+    {
+      "source": "/como-marcar-como-lista-negra-un-chat",
+      "destination": "/crm/como_marcar_un_chat_como_lista_negra_en_conversaciones"
     },
     {
       "source": "/cómo-marcar-como-revisada-una-reserva",
       "destination": "/crm/como_marcar_como_revisada_una_reserva"
     },
     {
+      "source": "/cómo-modificar-el-contacto-a-facturar-en-una-reserva",
+      "destination": "/pms/como_modificar_el_contacto_a_facturar_en_una_reserva"
+    },
+    {
+      "source": "/como-modificar-el-nombre-de-un-folio",
+      "destination": "/pms/como_modificar_el_nombre_de_un_folio"
+    },
+    {
       "source": "/como-modificar-el-pin-de-un-usuario",
       "destination": "/configuración_inicial/como_modificar_el_pin_de_un_usuario"
     },
     {
+      "source": "/como-modificar-el-stock-de-un-artículo",
+      "destination": "/pms/como_modificar_el_stock_de_un_articulo"
+    },
+    {
+      "source": "/como-modificar-fecha-de-estadia-de-una-reserva-desde-el-plano-de-ocupacion",
+      "destination": "/pms/como_modificar_fecha_de_estadia_de_una_reserva_desde_el_plano_de_ocupacion"
+    },
+    {
+      "source": "/como-modificar-la-moneda-en-una-reserva",
+      "destination": "/pms/como_modificar_la_moneda_en_una_reserva"
+    },
+    {
       "source": "/como-modificar-la-politica-de-fumadores-para-una-habitacion",
       "destination": "/motor/como_modificar_la_politica_de_fumadores_para_una_habitacion"
+    },
+    {
+      "source": "/como-modificar-la-ubicacion-de-mi-hotel-vdf",
+      "destination": "/motor/como_modificar_la_ubicacion_de_mi_hotel"
+    },
+    {
+      "source": "/como-mover-mail-de-clientes-desde-inbox-a-consultas",
+      "destination": "/crm/como_mover_mail_de_clientes_desde_inbox_a_consultas"
+    },
+    {
+      "source": "/como-mover-una-reserva-a-instancia-post-venta",
+      "destination": "/crm/como_mover_una_reserva_a_instancia_finalizadas"
+    },
+    {
+      "source": "/como-mover-una-reserva-a-la-instancia-lista-de-espera",
+      "destination": "/crm/como_mover_una_reserva_a_la_instancia_lista_de_espera"
+    },
+    {
+      "source": "/como-mover-una-reserva-a-las-distintas-instancias",
+      "destination": "/crm/como_mover_una_reserva_a_las_distintas_instancias"
+    },
+    {
+      "source": "/como-observar-las-recomendaciones-para-mejorar-mi-performance",
+      "destination": "/performance/como_observar_las_recomendaciones_para_mejorar_mi_performance"
     },
     {
       "source": "/como-obtener-la-api-key-y-permisos-necesarios-para-configurar-stripe",
@@ -1492,8 +2084,20 @@
       "destination": "/channel/como_obtener_las_credenciales_de_conexion_de_expedia"
     },
     {
+      "source": "/como-ocultar-o-visualizar-tarifarios-vinculados",
+      "destination": "/motor/como_ocultar_o_visualizar_tarifarios_vinculados"
+    },
+    {
+      "source": "/cómo-ordenar-las-categorías-e-items-de-mi-menú",
+      "destination": "/pms/como_ordenar_las_categorias_e_items_de_mi_menu"
+    },
+    {
       "source": "/como-otorgar-permiso-de-administrador-a-un-usuario",
       "destination": "/configuración_inicial/como_otorgar_permiso_de_administrador_a_un_usuario"
+    },
+    {
+      "source": "/como-pasar-a-no-venta-una-reserva-de-check-out",
+      "destination": "/crm/como_pasar_a_no_venta_una_reserva_de_check_out"
     },
     {
       "source": "/como-pasar-varias-transacciones-a-la-carpeta-de-no-venta",
@@ -1556,6 +2160,10 @@
       "destination": "/crm/como_realizar_busquedas_en_el_crm"
     },
     {
+      "source": "/cómo-realizar-el-check-out-de-un-huésped",
+      "destination": "/pms/como_realizar_el_check_out_de_un_huesped"
+    },
+    {
       "source": "/cómo-realizar-el-check-out-de-una-habitación",
       "destination": "/pms/como_realizar_el_check_out_de_una_habitacion"
     },
@@ -1584,6 +2192,10 @@
       "destination": "/channel/como_realizar_la_conexion_con_expedia"
     },
     {
+      "source": "/cómo-realizar-la-integración-con-factura-lista-para-facturación-en-uruguay",
+      "destination": "/pms/como_realizar_la_integracion_con_factura_lista_para_facturacion_en_uruguay"
+    },
+    {
       "source": "/cómo-realizar-la-integración-con-gns-uruguay",
       "destination": "/integraciones/como_realizar_la_integracion_con_gns_uruguay"
     },
@@ -1596,24 +2208,108 @@
       "destination": "/marketplace/como_realizar_la_integracion_con_tra"
     },
     {
+      "source": "/cómo-realizar-la-integración-de-siigo-para-facturar-desde-pxsol",
+      "destination": "/pms/como_realizar_la_integracion_de_siigo_para_facturar_desde_pxsol"
+    },
+    {
       "source": "/como-realizar-la-vinculacion-de-facturacion",
       "destination": "/pms/como_realizar_la_vinculacion_de_facturacion_de_pxsol_con_arca_ex_afip"
+    },
+    {
+      "source": "/como-realizar-traducciones",
+      "destination": "/web/como_realizar_traducciones_en_su_web_de_pxsol"
     },
     {
       "source": "/cómo-realizar-un-cambio-de-proveedor-de-conectividad-de-booking.com-1",
       "destination": "/channel/como_realizar_un_cambio_de_proveedor_de_conectividad_de_booking"
     },
     {
+      "source": "/como-realizar-un-cierre-de-turno-en-la-caja-diaria",
+      "destination": "/pms/como_realizar_un_cierre_de_turno_en_la_caja_diaria"
+    },
+    {
       "source": "/como-realizar-una-devolucion-por-mercado-pago",
       "destination": "/motor/como_realizar_una_devolucion_por_mercado_pago"
+    },
+    {
+      "source": "/como-recalcular-saldos-en-cuentas-corrientes",
+      "destination": "/pms/como_recalcular_saldos_en_cuentas_corrientes"
+    },
+    {
+      "source": "/como-recalcular-saldos-en-las-cuentas-contables",
+      "destination": "/pms/como_recalcular_saldos_en_las_cuentas_recaudadoras"
+    },
+    {
+      "source": "/cómo-recuperar-comprobantes-fiscales",
+      "destination": "/pms/como_recuperar_comprobantes_fiscales_manual_o_automaticamente"
+    },
+    {
+      "source": "/como-regenerar-comprobantes-emitidos",
+      "destination": "/pms/como_regenerar_comprobantes_emitidos"
+    },
+    {
+      "source": "/como-regenerar-comprobantes-recibidos",
+      "destination": "/pms/como_regenerar_comprobantes_recibidos"
+    },
+    {
+      "source": "/como-regenerar-un-comprobante",
+      "destination": "/pms/como_regenerar_un_comprobante"
+    },
+    {
+      "source": "/como-registrar-deuda-en-cuenta-corriente",
+      "destination": "/pms/como_registrar_deudas_en_cuenta_corriente"
+    },
+    {
+      "source": "/cómo-registrar-el-pago-de-varias-facturas-en-una-cuenta-corriente",
+      "destination": "/pms/como_registrar_el_pago_de_varias_facturas_en_una_cuenta_corriente"
+    },
+    {
+      "source": "/como-registrar-factura-pago-nota-de-credito-invoice-en-cuenta-corriente",
+      "destination": "/pms/como_registrar_facturas_y_pagos_en_cuenta_corriente"
+    },
+    {
+      "source": "/como-registrar-llamadas",
+      "destination": "/crm/como_registrar_llamadas"
+    },
+    {
+      "source": "/como-registrar-un-egreso-desde-caja-diaria",
+      "destination": "/pms/como_registrar_un_egreso_desde_caja_diaria"
+    },
+    {
+      "source": "/como-registrar-un-ingreso-de-alguien-que-no-está-hospedado",
+      "destination": "/pms/como_registrar_un_ingreso_de_alguien_que_no_esta_hospedado"
     },
     {
       "source": "/como-registrar-un-ingreso-desde-caja-diaria",
       "destination": "/pms/como_registrar_un_ingreso_desde_caja_diaria"
     },
     {
+      "source": "/como-registrar-un-pago",
+      "destination": "/pms/como_registrar_un_pago_en_una_reserva"
+    },
+    {
       "source": "/como-registrar-un-pago-de-una-factura-de-proveedor",
       "destination": "/pms/como_registrar_un_pago_de_una_factura_de_proveedor"
+    },
+    {
+      "source": "/cómo-registrar-un-pago-de-varias-facturas-de-proveedor",
+      "destination": "/pms/como_registrar_un_pago_de_varias_facturas_de_proveedor"
+    },
+    {
+      "source": "/como-registrar-una-devolucion-en-cuenta-corriente",
+      "destination": "/pms/como_registrar_una_devolucion_en_cuenta_corriente"
+    },
+    {
+      "source": "/como-registrar-una-nueva-consulta",
+      "destination": "/crm/como_registrar_una_nueva_consulta"
+    },
+    {
+      "source": "/como-registrar-una-reserva",
+      "destination": "/crm/como_registrar_una_reserva"
+    },
+    {
+      "source": "/como-reiniciar-una-reserva",
+      "destination": "/crm/como_reiniciar_una_reserva"
     },
     {
       "source": "/cómo-responder-un-mensaje-de-conversaciones-con-ia",
@@ -1628,12 +2324,28 @@
       "destination": "/conexiones/como_solicitar_la_conexion_a_the_hotel_network"
     },
     {
+      "source": "/cómo-solicitar-la-integración-con-sifactura",
+      "destination": "/pms/como_solicitar_la_integracion_con_sifactura"
+    },
+    {
+      "source": "/cómo-solicitar-la-integración-con-tarjeta-de-registro-en-colombia",
+      "destination": "/pms/como_solicitar_la_integracion_con_tarjeta_de_registro_en_colombia"
+    },
+    {
       "source": "/cómo-solicitar-la-integración-de-siigo-con-pxsol",
       "destination": "/pms/como_obtener_el_usuario_api_o_api_access_key_de_siigo_para_realizar_la_integracion_de_facturacion"
     },
     {
+      "source": "/cómo-solicitar-un-nuevo-impuesto-para-mi-hotel",
+      "destination": "/pms/como_solicitar_un_nuevo_impuesto_para_mi_hotel"
+    },
+    {
       "source": "/como-subir-archivos-dentro-de-una-reserva",
       "destination": "/pms/archivos__como_subir_archivos_dentro_de_una_reserva"
+    },
+    {
+      "source": "/como-subir-fotos-vdf",
+      "destination": "/motor/como_subir_y_vincular_fotos_a_tu_motor_de_reservas"
     },
     {
       "source": "/cómo-subir-imágenes-a-la-biblioteca-de-archivos",
@@ -1642,6 +2354,14 @@
     {
       "source": "/como-subir-una-foto-en-una-promocion-o-voucher",
       "destination": "/motor/como_subir_una_foto_en_una_promocion_o_voucher"
+    },
+    {
+      "source": "/como-transferir-consumos-de-un-folio-a-otro",
+      "destination": "/pms/folios__como_transferir_consumos_de_un_folio_a_otro"
+    },
+    {
+      "source": "/como-transferir-fondos-de-una-cuenta-contable-a-otra",
+      "destination": "/pms/como_transferir_fondos_de_una_cuenta_recaudadora_a_otra"
     },
     {
       "source": "/cómo-usar-mi-lista-de-informes",
@@ -1664,12 +2384,20 @@
       "destination": "/informes/como_ver_el_resultado_de_la_fuente_de_trafico"
     },
     {
+      "source": "/como-ver-informacion-de-cierre-de-turnos-historicos",
+      "destination": "/pms/como_ver_informacion_de_cierre_de_turnos_historicos"
+    },
+    {
       "source": "/como-ver-las-reservas-que-son-resultado-de-las-campañas-de-google-ads",
       "destination": "/informes/como_ver_las_reservas_que_son_resultado_de_las_campanas_de_google_ads"
     },
     {
       "source": "/como-ver-las-solicitudes-de-acuerdos-de-agencias",
       "destination": "/conexiones/como_ver_las_solicitudes_de_acuerdos_de_agencias"
+    },
+    {
+      "source": "/como-ver-las-transacciones-de-mercado-pago",
+      "destination": "/motor/como_ver_las_transacciones_de_mercado_pago"
     },
     {
       "source": "/cómo-ver-si-el-chat-con-un-cliente-dentro-de-conversaciones-ya-tiene-un-contacto-asociado",
@@ -1680,12 +2408,24 @@
       "destination": "/conversaciones/como_ver_si_el_chat_con_un_cliente_dentro_de_conversaciones_ya_tiene_una_consulta_o_reserva_asociada"
     },
     {
+      "source": "/como-ver-un-comprobante-emitido-dentro-de-la-reserva",
+      "destination": "/pms/como_ver_un_comprobante_emitido_dentro_de_la_reserva"
+    },
+    {
       "source": "/como-vincular-cuenta-de-correo",
       "destination": "/crm/como_vincular_una_cuenta_de_correo_corporativo_al_sistema"
     },
     {
+      "source": "/cómo-vincular-cuentas-corrientes-a-usuarios",
+      "destination": "/pms/como_vincular_cuentas_corrientes_a_usuarios"
+    },
+    {
       "source": "/como-vincular-cuentas-recaudadoras-a-puntos-de-venta",
       "destination": "/pms/como_vincular_cuentas_recaudadoras_a_puntos_de_venta"
+    },
+    {
+      "source": "/como-vincular-cuentas-recaudadoras-a-usuarios",
+      "destination": "/pms/como_vincular_cuentas_recaudadoras_a_usuarios"
     },
     {
       "source": "/cómo-vincular-facturación-de-un-cliente-dentro-de-afip-de-pxsol",
@@ -1696,8 +2436,16 @@
       "destination": "/administración/como_vincular_o_actualizar_una_tarjeta_de_credito_para_abonar_pxsol"
     },
     {
+      "source": "/cómo-vincular-su-casilla-de-correo-al-inbox-de-pxsol",
+      "destination": "/crm/como_vincular_su_casilla_de_correo_al_inbox_de_pxsol"
+    },
+    {
       "source": "/cómo-vincular-tu-cuenta-de-whatsapp-con-la-aplicación-conversaciones",
       "destination": "/conversaciones/como_vincular_tu_cuenta_de_whatsapp_con_la_aplicacion_conversaciones"
+    },
+    {
+      "source": "/cómo-vincular-un-contacto-a-una-cuenta-proveedor",
+      "destination": "/pms/como_vincular_un_contacto_a_una_cuenta_proveedor"
     },
     {
       "source": "/como-vincular-un-huesped-a-un-folio",
@@ -1712,8 +2460,32 @@
       "destination": "/pms/como_vincular_un_huesped_a_una_habitacion"
     },
     {
+      "source": "/cómo-vincular-un-tarifario-nuevo-al-canal-de-venta-del-motor",
+      "destination": "/motor/como_vincular_un_tarifario_nuevo_al_canal_de_venta_del_motor"
+    },
+    {
+      "source": "/como-visualizar-cada-cuenta-recaudadora",
+      "destination": "/pms/como_visualizar_cuentas_recaudadoras"
+    },
+    {
       "source": "/como-visualizar-caja-diaria",
       "destination": "/pms/como_visualizar_caja_diaria"
+    },
+    {
+      "source": "/como-visualizar-comprobantes-emitidos",
+      "destination": "/pms/como_visualizar_comprobantes_emitidos"
+    },
+    {
+      "source": "/cómo-visualizar-comprobantes-emitidos-en-afip",
+      "destination": "/pms/como_visualizar_comprobantes_emitidos_dentro_de_afip"
+    },
+    {
+      "source": "/como-visualizar-comprobantes-recibidos",
+      "destination": "/pms/como_visualizar_comprobantes_recibidos"
+    },
+    {
+      "source": "/como-visualizar-detalles-de-pago-y-facturacion",
+      "destination": "/pms/como_visualizar_detalles_de_pago_y_facturacion"
     },
     {
       "source": "/como-visualizar-el-centro-de-ayuda",
@@ -1724,8 +2496,16 @@
       "destination": "/administración/como_visualizar_el_estado_de_cuenta_de_su_hotel_con_pxsol"
     },
     {
+      "source": "/como-visualizar-el-informe-de-housekeeping-desde-estado-de-habitaciones",
+      "destination": "/pms/como_visualizar_el_informe_de_housekeeping_desde_estado_de_habitaciones"
+    },
+    {
       "source": "/cómo-visualizar-el-lote-y-cupón-de-un-pago-con-tarjeta-de-crédito",
       "destination": "/pms/como_visualizar_el_lote_y_cupon_de_un_pago_con_tarjeta_de_credito"
+    },
+    {
+      "source": "/como-visualizar-el-plano-de-ocupacion",
+      "destination": "/pms/como_visualizar_el_plano_de_ocupacion"
     },
     {
       "source": "/como-visualizar-estadísticas-de-conversaciones",
@@ -1736,8 +2516,20 @@
       "destination": "/web/como_visualizar_la_aplicacion_blog"
     },
     {
+      "source": "/como-visualizar-la-aplicacion-email-marketing-automation",
+      "destination": "/crm/como_visualizar_la_aplicacion_email_marketing_automation"
+    },
+    {
+      "source": "/como-visualizar-la-aplicacion-email-marketing-manual",
+      "destination": "/crm/como_visualizar_la_aplicacion_email_marketing_manual"
+    },
+    {
       "source": "/como-visualizar-la-aplicacion-inventario",
       "destination": "/pms/como_visualizar_la_aplicacion_inventario"
+    },
+    {
+      "source": "/como-visualizar-la-aplicacion-plano-de-mesas",
+      "destination": "/pms/como_visualizar_la_aplicacion_plano_de_mesas"
     },
     {
       "source": "/como-visualizar-la-aplicacion-tipos-de-habitaciones",
@@ -1746,6 +2538,10 @@
     {
       "source": "/como-visualizar-las-cuentas-corrientes",
       "destination": "/pms/como_visualizar_las_cuentas_corrientes"
+    },
+    {
+      "source": "/como-visualizar-las-habitaciones-hijas-en-el-tarifario",
+      "destination": "/motor/como_visualizar_las_habitaciones_hijas_en_el_tarifario"
     },
     {
       "source": "/cómo-visualizar-las-reservas-generadas-b2b-agencia",
@@ -1758,6 +2554,14 @@
     {
       "source": "/como-visualizar-los-check-in-de-cada-dia",
       "destination": "/informes/como_visualizar_los_check_in_de_cada_dia"
+    },
+    {
+      "source": "/cómo-visualizar-los-datos-de-huéspedes-en-tra-luego-de-la-integración-con-pxsol",
+      "destination": "/pms/como_visualizar_los_datos_de_huespedes_en_tra_luego_de_la_integracion_con_pxsol"
+    },
+    {
+      "source": "/como-visualizar-los-datos-de-tarjetas-de-credito",
+      "destination": "/motor/como_visualizar_los_datos_de_tarjetas_de_credito"
     },
     {
       "source": "/como-visualizar-los-desayunos-desde-estado-de-habitaciones",
@@ -1844,6 +2648,10 @@
       "destination": "/configuración_inicial/configuracion_punto_de_venta__tipo_motor"
     },
     {
+      "source": "/configuración-del-punto-de-venta-para-mi-web",
+      "destination": "/web/configuracion_del_punto_de_venta_para_su_web"
+    },
+    {
       "source": "/configuracion-punto-de-venta-tipo-agencia",
       "destination": "/configuración_inicial/configuracion_punto_de_venta__tipo_agencia"
     },
@@ -1896,6 +2704,14 @@
       "destination": "/tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios"
     },
     {
+      "source": "/crm-gestion-de-consultas",
+      "destination": "/crm/guia_de_uso__modulo_crm_gestion_de_consultas"
+    },
+    {
+      "source": "/desconectar-otas-y-web-de-pxsol",
+      "destination": "/desconexionporbaja/desconectar_otas_y_web_de_pxsol"
+    },
+    {
       "source": "/descripción-del-establecimien",
       "destination": "/web/descripcion_del_establecimiento"
     },
@@ -1904,8 +2720,20 @@
       "destination": "/motor/difundir_tarifas_de_forma_manual__v8"
     },
     {
+      "source": "/dónde-visualizar-los-recordatorios-programados",
+      "destination": "/crm/donde_visualizar_los_recordatorios_programados"
+    },
+    {
       "source": "/dónde-visualizar-los-registros-de-una-reserva",
       "destination": "/crm/donde_visualizar_los_registros_de_una_reserva"
+    },
+    {
+      "source": "/dónde-visualizar-los-registros-de-una-reserva-1",
+      "destination": "/crm/como_migrar_los_registros_de_una_reserva_donde_no_se_visualizan"
+    },
+    {
+      "source": "/edición-múltiple-en-tarifas-y-disponibilidad",
+      "destination": "/motor/edicion_multiple_por_habitacion_en_tarifas_y_disponibilidad_v8"
     },
     {
       "source": "/edición-múltiple-por-ocupación-en-tarifas-y-disponibilidad",
@@ -1968,6 +2796,18 @@
       "destination": "/configuración_inicial/aplicacion_configuracion_punto_de_venta"
     },
     {
+      "source": "/es/aplicacion-estado-de-habitaciones",
+      "destination": "/pms/aplicacion_estado_de_habitaciones"
+    },
+    {
+      "source": "/es/aplicación-seo",
+      "destination": "/web/aplicacion_seo"
+    },
+    {
+      "source": "/es/archivos-cómo-escanear-un-documento-en-una-reserva",
+      "destination": "/pms/archivos__como_escanear_un_documento_en_una_reserva"
+    },
+    {
       "source": "/es/asociar-un-contacto-tipo-persona-a-un-contacto-empresa",
       "destination": "/crm/asociar_un_contacto_tipo_persona_a_un_contacto_empresa"
     },
@@ -1994,6 +2834,14 @@
     {
       "source": "/es/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito",
       "destination": "/configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito"
+    },
+    {
+      "source": "/es/como-abrir-o-cerrar-un-tarifario",
+      "destination": "/motor/como_abrir_o_cerrar_un_tarifario"
+    },
+    {
+      "source": "/es/como-acceder-a-informe-desde-cuentas-corrientes",
+      "destination": "/pms/como_acceder_al_informe_desde_cuentas_corrientes"
     },
     {
       "source": "/es/como-acceder-a-informes",
@@ -2040,6 +2888,10 @@
       "destination": "/pms/como_activar_o_desactivar_impuestos_en_su_hotel"
     },
     {
+      "source": "/es/como-actualizar-plano-de-ocupacion",
+      "destination": "/pms/como_actualizar_plano_de_ocupacion"
+    },
+    {
       "source": "/es/como-adjuntar-un-mail-a-una-reserva",
       "destination": "/crm/como_adjuntar_un_mail_a_una_reserva"
     },
@@ -2048,8 +2900,28 @@
       "destination": "/analítica/como_administrar_usuarios_en_google_analytics"
     },
     {
+      "source": "/es/como-agendar-una-reserva",
+      "destination": "/crm/como_agendar_un_recordatorio_a_una_reserva"
+    },
+    {
+      "source": "/es/cómo-agregar-condiciones-a-un-voucher",
+      "destination": "/motor/como_agregar_condiciones_a_un_voucher"
+    },
+    {
       "source": "/es/cómo-agregar-condiciones-a-una-promoción",
       "destination": "/motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
+    },
+    {
+      "source": "/es/como-agregar-consumos",
+      "destination": "/pms/como_agregar_consumos"
+    },
+    {
+      "source": "/es/como-agregar-consumos-a-una-mesa",
+      "destination": "/pms/como_agregar_consumos_a_una_mesa"
+    },
+    {
+      "source": "/es/cómo-agregar-contenido-dinámico-a-tus-conversaciones-de-chat",
+      "destination": "/crm/como_agregar_contenido_dinamico_a_tus_conversaciones_de_chat"
     },
     {
       "source": "/es/como-agregar-el-código-de-seguimiento-de-google-tag-manager-a-pxsol",
@@ -2058,6 +2930,10 @@
     {
       "source": "/es/cómo-agregar-informes-a-tu-gestor-de-informes",
       "destination": "/informes/como_agregar_o_instalar_informes_a_tu_gestor_de_informes"
+    },
+    {
+      "source": "/es/como-agregar-lugares-cercanos-a-mi-hotel-vdf",
+      "destination": "/motor/aplicacion_distancias_como_agregar_o_eliminar_lugares_cercanos_a_mi_hotel"
     },
     {
       "source": "/es/como-agregar-o-retirar-fondos-de-una-cuenta-recaudadora",
@@ -2076,6 +2952,10 @@
       "destination": "/crm/como_agregar_plantillas_en_chats_a_traves_de_un_atajo"
     },
     {
+      "source": "/es/cómo-agregar-un-huésped-a-mi-reserva",
+      "destination": "/crm/como_agregar_un_huesped_a_mi_reserva"
+    },
+    {
       "source": "/es/como-agregar-un-nuevo-contacto",
       "destination": "/crm/como_agregar_un_nuevo_contacto"
     },
@@ -2088,12 +2968,44 @@
       "destination": "/crm/como_agregar_una_consulta_de_varias_habitaciones_desde_presupuestar"
     },
     {
+      "source": "/es/como-agregar-una-preventa-desde-presupuestar",
+      "destination": "/crm/como_agregar_una_preventa_o_consulta_desde_presupuestar"
+    },
+    {
+      "source": "/es/cómo-agrupar-datos-en-la-aplicación-proveedores",
+      "destination": "/pms/como_agrupar_datos_en_la_aplicacion_proveedores"
+    },
+    {
       "source": "/es/como-ajustar-el-ancho-de-las-columnas",
       "destination": "/informes/como_ajustar_el_ancho_de_las_columnas"
     },
     {
       "source": "/es/como-ajustar-para-que-el-motor-siempre-confirme-reservas-en-usd-sin-importar-la-moneda-en-la-cual-se-realiza-la-busqueda",
       "destination": "/motor/como_configurar_el_motor_para_que_todas_las_reservas_se_confirmen_en_usd_independientemente_de_la_moneda_utilizada_en_la_busqueda"
+    },
+    {
+      "source": "/es/como-anadir-una-habitacion-en-una-reserva",
+      "destination": "/pms/como_anadir_una_habitacion_en_una_reserva__v1"
+    },
+    {
+      "source": "/es/cómo-anular-o-auditar-varios-movimientos-en-cuentas-recaudadoras",
+      "destination": "/pms/como_anular_o_auditar_varios_movimientos_en_cuentas_recaudadoras"
+    },
+    {
+      "source": "/es/cómo-anular-un-movimiento-en-una-cuenta-proveedor",
+      "destination": "/pms/como_anular_un_movimiento_en_una_cuenta_proveedor"
+    },
+    {
+      "source": "/es/como-anular-un-pago-dentro-de-una-reserva",
+      "destination": "/pms/pagos__como_anular_un_pago_dentro_de_una_reserva"
+    },
+    {
+      "source": "/es/como-anular-un-un-movimiento-dentro-de-caja-diaria",
+      "destination": "/pms/como_anular_un_movimiento_dentro_de_caja_diaria"
+    },
+    {
+      "source": "/es/como-anular-una-operacion-de-una-cuenta-contable",
+      "destination": "/pms/como_anular_una_operacion_de_una_cuenta_recaudadora"
     },
     {
       "source": "/es/como-anular-una-operacion-de-una-cuenta-corriente",
@@ -2112,8 +3024,16 @@
       "destination": "/conversaciones/como_asignar_la_conversacion_a_un_equipo"
     },
     {
+      "source": "/es/como-asignar-un-mail",
+      "destination": "/crm/como_asignar_un_mail_a_un_agente_o_responsable"
+    },
+    {
       "source": "/es/como-asignar-un-mozo-a-la-mesa",
       "destination": "/plano_de_mesa/como_asignar_un_mozo_a_la_mesa"
+    },
+    {
+      "source": "/es/como-asignar-una-habitacion-a-una-reserva",
+      "destination": "/pms/como_asignar_una_habitacion_a_una_reserva"
     },
     {
       "source": "/es/cómo-asignar-una-reserva-en-dos-habitaciones-diferentes",
@@ -2124,6 +3044,10 @@
       "destination": "/conversaciones/como_asignar_uno_o_mas_responsables_a_un_chat_con_clientes_en_la_aplicacion_conversaciones"
     },
     {
+      "source": "/es/cómo-asignarle-una-habitación-a-un-huésped",
+      "destination": "/pms/como_asignarle_una_habitacion_a_un_huesped"
+    },
+    {
       "source": "/es/cómo-asociar-un-contacto-existente-al-chat-de-conversaciones",
       "destination": "/conversaciones/como_asociar_un_contacto_existente_al_chat_de_conversaciones"
     },
@@ -2132,12 +3056,28 @@
       "destination": "/conversaciones/como_asociar_una_reserva_o_consulta_al_chat_de_conversaciones"
     },
     {
+      "source": "/es/cómo-auditar-una-cuenta-proveedor",
+      "destination": "/pms/como_auditar_una_cuenta_proveedor"
+    },
+    {
       "source": "/es/como-aumentar-cantidad-de-habitaciones-para-presupuestar",
       "destination": "/motor/como_aumentar_cantidad_de_habitaciones_para_presupuestar"
     },
     {
+      "source": "/es/como-autoasignar-una-habitacion-en-una-reserva",
+      "destination": "/pms/como_autoasignar_una_habitacion_en_una_reserva"
+    },
+    {
       "source": "/es/cómo-bloquear-la-visualización-de-reservas-a-un-usuario",
       "destination": "/configuración_inicial/como_bloquear_la_visualizacion_de_reservas_a_un_usuario"
+    },
+    {
+      "source": "/es/como-bloquear-movimiento-de-habitaciones-en-una-reserva",
+      "destination": "/pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva"
+    },
+    {
+      "source": "/es/como-bloquear-movimiento-de-habitaciones-fisicas-en-una-reserva",
+      "destination": "/pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1"
     },
     {
       "source": "/es/como-borrar-cache-y-cookies",
@@ -2148,6 +3088,14 @@
       "destination": "/pms/como_borrar_comprobantes_emitidos"
     },
     {
+      "source": "/es/como-borrar-comprobantes-recibidos",
+      "destination": "/pms/como_borrar_comprobantes_recibidos"
+    },
+    {
+      "source": "/es/como-borrar-consumos-de-un-folio",
+      "destination": "/pms/folios__como_borrar_consumos_de_un_folio"
+    },
+    {
       "source": "/es/como-borrar-de-forma-definitiva-un-informe-personalizado",
       "destination": "/informes/como_borrar_de_forma_definitiva_un_informe_personalizado"
     },
@@ -2156,8 +3104,20 @@
       "destination": "/generales/como_borrar_el_historial_de_navegacion_en_google_chrome"
     },
     {
+      "source": "/es/como-borrar-la-asignacion-de-una-reserva-a-una-habitacion",
+      "destination": "/pms/como_borrar_la_asignacion_de_una_reserva"
+    },
+    {
+      "source": "/es/como-borrar-lugares-cercanos-cargados",
+      "destination": "/motor/aplicacion_distancias_como_borrar_lugares_cercanos_cargados"
+    },
+    {
       "source": "/es/cómo-borrar-tareas-programadas",
       "destination": "/operaciones/como_borrar_tareas_programadas"
+    },
+    {
+      "source": "/es/como-borrar-un-folio-dentro-de-una-reserva",
+      "destination": "/pms/folios__como_borrar_un_folio_dentro_de_una_reserva"
     },
     {
       "source": "/es/cómo-borrar-un-informe-de-mi-lista",
@@ -2184,8 +3144,20 @@
       "destination": "/conversaciones/como_buscar_un_mensaje_dentro_de_conversaciones"
     },
     {
+      "source": "/es/como-buscar-y-enviar-una-plantilla-por-correo-desde-una-reserva",
+      "destination": "/crm/como_buscar_y_enviar_una_plantilla_por_correo_desde_una_reserva"
+    },
+    {
+      "source": "/es/como-cambiar-asignacion-de-una-reserva",
+      "destination": "/pms/como_cambiar_asignacion_de_una_reserva"
+    },
+    {
       "source": "/es/cómo-cambiar-de-empresa-con-usuario-multipropiedad",
       "destination": "/configuración_inicial/como_cambiar_de_empresa_con_usuario_multipropiedad"
+    },
+    {
+      "source": "/es/como-cambiar-de-punto-de-venta",
+      "destination": "/crm/como_cambiar_de_punto_de_venta"
     },
     {
       "source": "/es/como-cambiar-el-estado-de-limpieza-de-las-habitaciones",
@@ -2232,12 +3204,24 @@
       "destination": "/administración/como_cancelar_el_saldo_a_traves_de_mercado_pago"
     },
     {
+      "source": "/es/como-cancelar-una-reserva-de-forma-manual",
+      "destination": "/crm/como_cancelar_una_reserva_de_forma_manual"
+    },
+    {
       "source": "/es/cómo-cargar-base-de-conocimiento-desde-una-conversación",
       "destination": "/conversaciones/como_cargar_base_de_conocimiento_desde_una_conversacion"
     },
     {
+      "source": "/es/como-cargar-consumos-en-una-reserva",
+      "destination": "/pms/folios__como_cargar_consumos_en_una_reserva"
+    },
+    {
       "source": "/es/cómo-cargar-fotos-y-archivos-en-mi-biblioteca-de-archivos",
       "destination": "/configuración_inicial/como_cargar_fotos_y_archivos_en_mi_biblioteca_de_archivos"
+    },
+    {
+      "source": "/es/cómo-cargar-la-carta-de-mi-restaurante-en-pxsol",
+      "destination": "/pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol"
     },
     {
       "source": "/es/como-cargar-la-foto-que-aparece-en-los-presupuestos",
@@ -2248,8 +3232,16 @@
       "destination": "/pms/como_cargar_notas_de_credito_en_proveedores"
     },
     {
+      "source": "/es/como-cargar-nuevos-consumos-en-una-reserva",
+      "destination": "/pms/como_cargar_consumos_en_una_reserva__v1"
+    },
+    {
       "source": "/es/como-cargar-pagos",
       "destination": "/pms/como_cargar_pagos_en_plano_de_spa"
+    },
+    {
+      "source": "/es/como-cargar-pagos-en-una-mesa",
+      "destination": "/pms/como_cargar_pagos_en_una_mesa"
     },
     {
       "source": "/es/como-cargar-proveedores",
@@ -2264,12 +3256,36 @@
       "destination": "/motor/como_cargar_un_adicional_promocion_manual"
     },
     {
+      "source": "/es/como-cargar-un-post-en-el-blog-de-pxsol",
+      "destination": "/web/como_cargar_un_post_en_el_blog_de_pxsol"
+    },
+    {
+      "source": "/es/cómo-cargar-una-factura-clonando-otra-en-proveedores",
+      "destination": "/pms/como_cargar_una_factura_clonando_otra_en_proveedores"
+    },
+    {
+      "source": "/es/cómo-cargar-una-factura-en-una-cuenta-proveedor",
+      "destination": "/pms/como_cargar_una_factura_en_una_cuenta_proveedor"
+    },
+    {
+      "source": "/es/como-cargar-una-reserva",
+      "destination": "/pms/como_cargar_una_reserva"
+    },
+    {
+      "source": "/es/cómo-cargar-una-reserva-desde-el-plano",
+      "destination": "/pms/como_cargar_una_reserva_desde_el_plano_de_ocupacion"
+    },
+    {
       "source": "/es/cómo-cargar-una-reserva-sin-plano-de-ocupación",
       "destination": "/procesos/como_cargar_una_reserva_al_no_contar_con_plano_de_ocupacion"
     },
     {
       "source": "/es/cómo-cargar-y-asignar-tareas-en-la-aplicación-tareas-del-sistema",
       "destination": "/operaciones/como_cargar_y_asignar_tareas_en_la_aplicacion_tareas_del_sistema"
+    },
+    {
+      "source": "/es/como-cerrar-fechas-para-dias-en-check-in",
+      "destination": "/motor/como_cerrar_fechas_para_dias_en_check_in_o_check_out"
     },
     {
       "source": "/es/como-cerrar-una-conversación-con-tus-clientes-desde-la-aplicación-conversaciones",
@@ -2284,12 +3300,40 @@
       "destination": "/conversaciones/como_comunicarte_con_tus_companeros_de_trabajo_desde_la_aplicacion_conversaciones"
     },
     {
+      "source": "/es/cómo-clonar-movimientos-en-cuentas-corrientes",
+      "destination": "/pms/como_clonar_movimientos_en_cuentas_corrientes"
+    },
+    {
+      "source": "/es/como-cobrar-por-mercado-pago-con-tc-existente",
+      "destination": "/motor/como_cobrar_por_mercado_pago_con_tc_existente"
+    },
+    {
+      "source": "/es/como-cobrar-por-mercado-pago-con-tc-nueva",
+      "destination": "/motor/como_cobrar_por_mercado_pago_con_tc_nueva"
+    },
+    {
+      "source": "/es/como-colocar-a-un-huesped-como-titular",
+      "destination": "/pms/como_colocar_a_un_huesped_como_titular"
+    },
+    {
       "source": "/es/como-colocar-descripciones-en-tipos-de-habitaciones",
       "destination": "/motor/como_colocar_descripciones_en_tipos_de_habitaciones"
     },
     {
+      "source": "/es/como-colocar-el-logo-para-facturacion",
+      "destination": "/pms/como_colocar_el_logo_para_facturacion"
+    },
+    {
       "source": "/es/como-colocar-inventario-en-las-promociones-o-vouchers",
       "destination": "/motor/como_colocar_inventario_en_las_promociones_o_vouchers"
+    },
+    {
+      "source": "/es/como-colocar-restricciones-de-noches",
+      "destination": "/motor/como_colocar_restricciones_de_noches"
+    },
+    {
+      "source": "/es/como-colocarle-descripciones-a-las-fotos-vdf",
+      "destination": "/motor/como_colocarle_descripciones_a_las_fotos"
     },
     {
       "source": "/es/cómo-comprar-informes-extra",
@@ -2300,12 +3344,24 @@
       "destination": "/channel/como_obtener_las_credenciales_de_conexion_de_booking"
     },
     {
+      "source": "/es/como-confeccionar-comprobantes-desde-cuentas-corrientes",
+      "destination": "/pms/como_confeccionar_comprobantes_sobre_un_movimiento_dentro_de_cuentas_corrientes"
+    },
+    {
       "source": "/es/como-confeccionar-un-comprobante-de-compra",
       "destination": "/pms/como_confeccionar_un_comprobante_de_compra"
     },
     {
+      "source": "/es/cómo-configurar-alertas-de-falta-de-stock-de-mi-inventario",
+      "destination": "/pms/como_configurar_alertas_de_falta_de_stock_de_mi_inventario"
+    },
+    {
       "source": "/es/cómo-configurar-automatizaciones-para-la-aplicación-de-conversaciones",
       "destination": "/conversaciones/como_configurar_automatizaciones_para_la_aplicacion_de_conversaciones"
+    },
+    {
+      "source": "/es/como-configurar-combinaciones",
+      "destination": "/motor/como_configurar_combinaciones"
     },
     {
       "source": "/es/como-configurar-el-medio-de-pago-payway",
@@ -2324,8 +3380,16 @@
       "destination": "/primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas"
     },
     {
+      "source": "/es/como-configurar-el-plano",
+      "destination": "/pms/como_configurar_el_plano"
+    },
+    {
       "source": "/es/cómo-configurar-el-puntos-de-venta",
       "destination": "/motor/como_configurar_puntos_de_venta"
+    },
+    {
+      "source": "/es/como-configurar-la-encuesta-de-satisfaccion",
+      "destination": "/motor/como_configurar_la_encuesta_de_satisfaccion"
     },
     {
       "source": "/es/como-configurar-la-integracion-con-webpay",
@@ -2372,12 +3436,36 @@
       "destination": "/motor/como_configurar_temporada_alta_en_el_tarifario"
     },
     {
+      "source": "/es/como-configurar-un-costo-fijo-adicional",
+      "destination": "/motor/como_establecer_un_cargo_fijo_adicional_ejemplo_tarifa_por_limpieza"
+    },
+    {
+      "source": "/es/como-conseguir-codigo-para-chat-de-facebook",
+      "destination": "/motor/como_conseguir_codigo_para_chat_de_facebook"
+    },
+    {
+      "source": "/es/cómo-convertir-un-contacto-tipo-persona-en-contacto-tipo-empresa",
+      "destination": "/crm/como_convertir_un_contacto_tipo_persona_en_contacto_tipo_empresa"
+    },
+    {
+      "source": "/es/como-crear-bloqueos-desde-el-plano-de-ocupacion",
+      "destination": "/pms/como_crear_bloqueos_desde_el_plano_de_ocupacion"
+    },
+    {
       "source": "/es/como-crear-campaña-de-email-marketing-manual",
       "destination": "/crm/como_crear_campana_de_email_marketing_manual"
     },
     {
+      "source": "/es/como-crear-cuentas-corrientes",
+      "destination": "/pms/como_crear_cuentas_corrientes"
+    },
+    {
       "source": "/es/como-crear-cuentas-recaudadoras",
       "destination": "/pms/como_crear_cuentas_recaudadoras"
+    },
+    {
+      "source": "/es/cómo-crear-depósitos-para-la-aplicación-inventario",
+      "destination": "/pms/como_crear_depositos_para_la_aplicacion_inventario"
     },
     {
       "source": "/es/cómo-crear-equipos",
@@ -2404,12 +3492,20 @@
       "destination": "/crm/guia_interna_como_crear_reglas_para_email_marketing_automation"
     },
     {
+      "source": "/es/cómo-crear-subgrupos-para-los-centros-de-costo",
+      "destination": "/pms/como_crear_subgrupos_para_los_centros_de_costo"
+    },
+    {
       "source": "/es/como-crear-tipos-de-habitaciones-vdf",
       "destination": "/motor/como_crear_categorias_de_habitaciones"
     },
     {
       "source": "/es/cómo-crear-un-anuncio",
       "destination": "/motor/como_crear_un_anuncio"
+    },
+    {
+      "source": "/es/como-crear-un-impuesto",
+      "destination": "/pms/como_crear_un_impuesto"
     },
     {
       "source": "/es/cómo-crear-un-nuevo-plan-tarifario",
@@ -2424,6 +3520,14 @@
       "destination": "/primeros_pasos/como_crear_un_ticket_desde_el_sistema_al_soporte_de_pxsol"
     },
     {
+      "source": "/es/como-crear-un-voucher",
+      "destination": "/motor/como_crear_un_voucher"
+    },
+    {
+      "source": "/es/como-crear-una-nueva-etiqueta",
+      "destination": "/crm/mutadores_como_crear_un_nuevo_mutador"
+    },
+    {
       "source": "/es/como-crear-una-promocion",
       "destination": "/motor/como_crear_una_promocion"
     },
@@ -2432,12 +3536,20 @@
       "destination": "/motor/como_crear_una_promocion_manual"
     },
     {
+      "source": "/es/como-crear-una-regla-de-tarifas-entre-planes-tarifarios",
+      "destination": "/pms/como_establecer_o_modificar_una_regla_de_tarifas_entre_diferentes_planes_tarifarios"
+    },
+    {
       "source": "/es/cómo-crear-una-vista-personalizada-en-mi-lista-de-informes",
       "destination": "/informes/como_crear_una_vista_personalizada_en_mi_lista_de_informes"
     },
     {
       "source": "/es/cómo-crear-usuarios-masivamente",
       "destination": "/configuración_inicial/como_crear_usuarios_masivamente"
+    },
+    {
+      "source": "/es/como-crear-y-configurar-una-campaña-en-tripconnect",
+      "destination": "/motor/como_crear_y_configurar_una_campana_en_tripconnect"
     },
     {
       "source": "/es/cómo-crear-y-editar-plantillas-de-correo-para-chat-whatsapp",
@@ -2472,6 +3584,22 @@
       "destination": "/informes/como_dar_permiso_o_excluir_usuarios_de_un_informe"
     },
     {
+      "source": "/es/cómo-darle-check-in-a-una-habitación",
+      "destination": "/pms/como_realizar_el_check_in_de_una_habitacion"
+    },
+    {
+      "source": "/es/cómo-definir-la-visibilidad-de-una-categoría-en-la-sección-de-habitaciones-de-la-web",
+      "destination": "/web/como_definir_la_visibilidad_de_una_categoria_en_la_seccion_de_habitaciones_de_la_web"
+    },
+    {
+      "source": "/es/cómo-definir-un-acuerdo-a-un-contacto",
+      "destination": "/crm/como_asociar_un_acuerdo_a_un_contacto"
+    },
+    {
+      "source": "/es/cómo-delegar-su-dominio-.com.ar-a-nuestro-hosting-de-cloudflare",
+      "destination": "/web/como_delegar_su_dominio_com"
+    },
+    {
       "source": "/es/cómo-delegar-su-dominio-a-nuestro-hosting-de-cloudflare",
       "destination": "/web/como_delegar_su_dominio_a_nuestro_hosting_de_cloudflare"
     },
@@ -2482,6 +3610,10 @@
     {
       "source": "/es/cómo-delegar-su-dominio-comprado-en-godaddy-a-nuestro-hosting-de-cloudflare",
       "destination": "/web/como_delegar_su_dominio_comprado_en_godaddy_a_nuestro_hosting_de_cloudflare"
+    },
+    {
+      "source": "/es/cómo-delegar-su-dominio-comprado-en-godaddy-a-nuestro-hosting-de-cloudflare-1",
+      "destination": "/web/como_delegar_su_dominio_comprado_en_towebs_a_nuestro_hosting_de_cloudflare"
     },
     {
       "source": "/es/cómo-delegar-su-dominio-comprado-en-google-a-nuestro-hosting-de-cloudflare",
@@ -2544,12 +3676,44 @@
       "destination": "/channel/como_desconectarse_de_expedia"
     },
     {
+      "source": "/es/como-desprogramar-recordatorios",
+      "destination": "/crm/como_desprogramar_recordatorios"
+    },
+    {
       "source": "/es/como-desvincular-un-pago-de-una-factura-en-cuentas-corrientes",
       "destination": "/administración/como_desvincular_un_pago_de_una_factura_en_cuentas_corrientes"
     },
     {
       "source": "/es/como-desvincular-un-usuario-de-una-cuenta-de-correo",
       "destination": "/configuración_inicial/como_desvincular_un_usuario_de_una_cuenta_de_correo"
+    },
+    {
+      "source": "/es/como-desvincularse-de-mercado-pago",
+      "destination": "/motor/como_desvincularse_de_mercado_pago"
+    },
+    {
+      "source": "/es/como-editar-datos-de-un-huesped",
+      "destination": "/pms/como_editar_datos_de_un_huesped"
+    },
+    {
+      "source": "/es/cómo-editar-la-información-de-mi-establecimiento",
+      "destination": "/motor/como_editar_la_informacion_de_mi_establecimiento"
+    },
+    {
+      "source": "/es/cómo-editar-la-tabla-de-las-transacciones-al-ingresar-a-las-instancias",
+      "destination": "/crm/como_editar_la_tabla_de_las_transacciones_al_ingresar_a_las_instancias"
+    },
+    {
+      "source": "/es/cómo-editar-las-columnas-de-las-instancias",
+      "destination": "/crm/como_editar_las_columnas_de_las_instancias"
+    },
+    {
+      "source": "/es/cómo-editar-los-datos-de-mi-establecimiento",
+      "destination": "/motor/como_editar_los_datos_de_mi_establecimiento"
+    },
+    {
+      "source": "/es/como-editar-los-servicios-que-aparecen-en-mi-web",
+      "destination": "/motor/como_editar_los_servicios_que_aparecen_en_mi_motor_de_reservas_y_pagina_web"
     },
     {
       "source": "/es/cómo-editar-los-textos-de-mi-establecimiento",
@@ -2568,8 +3732,28 @@
       "destination": "/operaciones/como_editar_tareas_programadas"
     },
     {
+      "source": "/es/como-editar-tus-encuestas",
+      "destination": "/crm/como_editar_tus_encuestas"
+    },
+    {
+      "source": "/es/como-editar-un-bloqueo",
+      "destination": "/pms/como_editar_un_bloqueo"
+    },
+    {
+      "source": "/es/como-editar-un-contacto",
+      "destination": "/crm/como_editar_un_contacto"
+    },
+    {
+      "source": "/es/como-editar-una-consulta-luego-de-presupuestarla",
+      "destination": "/crm/como_editar_una_consulta_luego_de_presupuestarla"
+    },
+    {
       "source": "/es/como-editar-una-consulta-o-reserva",
       "destination": "/crm/como_editar_una_consulta_o_reserva"
+    },
+    {
+      "source": "/es/como-editar-una-habitación",
+      "destination": "/pms/como_editar_una_habitacion"
     },
     {
       "source": "/es/como-editar-varias-habitaciones-a-la-vez-en-una-reserva",
@@ -2584,12 +3768,44 @@
       "destination": "/crm/como_eliminar_campana_de_email_marketing_manual"
     },
     {
+      "source": "/es/cómo-eliminar-imágenes-a-la-biblioteca-de-fotos-y-archivos",
+      "destination": "/motor/como_eliminar_imagenes_de_la_biblioteca_de_fotos_y_archivos"
+    },
+    {
+      "source": "/es/como-eliminar-un-bloqueo",
+      "destination": "/pms/como_eliminar_un_bloqueo"
+    },
+    {
+      "source": "/es/como-eliminar-un-cambio-de-moneda",
+      "destination": "/motor/como_eliminar_un_tipo_de_cambio"
+    },
+    {
       "source": "/es/como-eliminar-un-contacto",
       "destination": "/crm/como_eliminar_un_contacto"
     },
     {
+      "source": "/es/como-eliminar-un-huesped-cargado",
+      "destination": "/pms/como_eliminar_un_huesped_cargado"
+    },
+    {
       "source": "/es/como-eliminar-un-usuario",
       "destination": "/configuración_inicial/como_eliminar_un_usuario"
+    },
+    {
+      "source": "/es/como-eliminar-una-campaña-de-email-marketing-automation",
+      "destination": "/crm/como_eliminar_una_campana_de_email_marketing_automation"
+    },
+    {
+      "source": "/es/cómo-eliminar-una-cuenta-recaudadora",
+      "destination": "/pms/como_eliminar_una_cuenta_recaudadora"
+    },
+    {
+      "source": "/es/como-eliminar-una-etiqueta",
+      "destination": "/crm/como_eliminar_una_etiqueta"
+    },
+    {
+      "source": "/es/como-eliminar-varias-fotos-a-la-vez",
+      "destination": "/motor/como_eliminar_varias_fotos_a_la_vez"
     },
     {
       "source": "/es/como-emitir-el-archivo-txt-iva-compras",
@@ -2600,8 +3816,20 @@
       "destination": "/pms/como_emitir_una_factura_e_de_exportacion_argentina"
     },
     {
+      "source": "/es/como-emitir-una-factura-t",
+      "destination": "/pms/como_emitir_una_factura_t"
+    },
+    {
+      "source": "/es/como-emitir-una-nota-de-credito-dentro-de-una-reserva",
+      "destination": "/pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva"
+    },
+    {
       "source": "/es/como-emitir-una-nota-de-debito-dentro-de-una-reserva",
       "destination": "/pms/como_emitir_una_nota_de_debito_dentro_de_una_reserva"
+    },
+    {
+      "source": "/es/cómo-encontrar-los-datos-de-usuario-contraseña-y-servidor-en-tu-hosting-de-correo-de-ferozo",
+      "destination": "/crm/como_encontrar_los_datos_de_usuario_contrasena_y_servidor_en_tu_hosting_de_correo_de_ferozo"
     },
     {
       "source": "/es/cómo-encontrar-los-datos-de-usuario-contraseña-y-servidor-en-tu-hosting-de-correo-de-hosting-del-sur",
@@ -2610,6 +3838,10 @@
     {
       "source": "/es/cómo-encontrar-un-reserva-desde-el-listado-de-reservas",
       "destination": "/motor/como_encontrar_un_reserva_desde_el_listado_de_reservas"
+    },
+    {
+      "source": "/es/como-enlazar-un-link-al-enviar-un-correo",
+      "destination": "/crm/como_enlazar_un_link_al_enviar_un_correo"
     },
     {
       "source": "/es/como-enviar-enlace-para-web-check-in-manualmente",
@@ -2640,12 +3872,40 @@
       "destination": "/channel/como_establecer_la_conexion_entre_un_hotel_de_pxsol_y_el_channel_manager_de_todo_alojamiento"
     },
     {
+      "source": "/es/como-excluir-promocion-para-trafico-de-pxsol-hotel-ads",
+      "destination": "/motor/como_excluir_promocion_para_trafico_de_pxsol_hotel_ads"
+    },
+    {
       "source": "/es/como-exportar-un-informe",
       "destination": "/informes/como_exportar_un_informe"
     },
     {
       "source": "/es/como-extender-la-estadia-de-una-reserva",
       "destination": "/pms/como_modificar_la_estadia_de_una_reserva"
+    },
+    {
+      "source": "/es/cómo-facturar-desde-el-módulo-facturación-nuevo",
+      "destination": "/pms/como_facturar_desde_el_modulo_facturacion_nuevo"
+    },
+    {
+      "source": "/es/cómo-facturar-desde-el-módulo-neo-facturación-beta-para-uruguay",
+      "destination": "/pms/como_facturar_desde_el_modulo_neo_facturacion_uruguay"
+    },
+    {
+      "source": "/es/cómo-facturar-desde-el-módulo-neo-facturación-colombia",
+      "destination": "/pms/como_facturar_desde_el_modulo_neo_facturacion_colombia"
+    },
+    {
+      "source": "/es/cómo-facturar-desde-el-módulo-neo-facturación-mexico",
+      "destination": "/pms/como_facturar_desde_el_modulo_neo_facturacion_mexico"
+    },
+    {
+      "source": "/es/cómo-facturar-desde-plano-de-mesas",
+      "destination": "/pms/como_facturar_desde_plano_de_mesas"
+    },
+    {
+      "source": "/es/como-facturar-desde-una-reserva",
+      "destination": "/pms/como_facturar_desde_una_reserva"
     },
     {
       "source": "/es/como-facturar-una-reserva-parcialmente",
@@ -2656,8 +3916,28 @@
       "destination": "/pms/como_facturar_una_reserva_parcialmente"
     },
     {
+      "source": "/es/como-filtrar-las-cancelaciones-no-ventas-de-un-periodo",
+      "destination": "/crm/como_filtrar_las_cancelaciones_no_ventas_de_un_periodo"
+    },
+    {
+      "source": "/es/cómo-filtrar-las-transacciones",
+      "destination": "/crm/como_filtrar_las_transacciones"
+    },
+    {
       "source": "/es/cómo-filtrar-mi-lista-de-reservas",
       "destination": "/pms/como_filtrar_mi_lista_de_reservas"
+    },
+    {
+      "source": "/es/cómo-filtrar-movimientos-en-cuenta-corriente",
+      "destination": "/pms/como_filtrar_movimientos_en_cuenta_corriente"
+    },
+    {
+      "source": "/es/cómo-filtrar-movimientos-en-cuenta-recaudadoras",
+      "destination": "/pms/como_filtrar_movimientos_en_cuenta_recaudadoras"
+    },
+    {
+      "source": "/es/como-firmar-un-movimiento-dentro-de-caja-diaria",
+      "destination": "/pms/como_firmar_un_movimiento_dentro_de_caja_diaria"
     },
     {
       "source": "/es/como-firmar-un-pago-dentro-de-una-reserva",
@@ -2668,12 +3948,24 @@
       "destination": "/web/como_forzar_el_borrado_de_cache"
     },
     {
+      "source": "/es/cómo-fusionar-consultas-o-reservas",
+      "destination": "/crm/como_fusionar_reservas"
+    },
+    {
+      "source": "/es/como-fusionar-contactos-repetidos",
+      "destination": "/crm/como_fusionar_contactos_repetidos"
+    },
+    {
       "source": "/es/cómo-generar-base-de-conocimiento-para-el-bot-de-conversaciones",
       "destination": "/conversaciones/como_generar_base_de_conocimiento_para_la_ai_del_bot_de_conversaciones"
     },
     {
       "source": "/es/como-generar-el-archivo-de-las-facturas-emitidas",
       "destination": "/pms/como_generar_el_archivo_de_las_facturas_emitidas"
+    },
+    {
+      "source": "/es/como-generar-el-archivo-turiva",
+      "destination": "/pms/como_generar_el_archivo_turiva"
     },
     {
       "source": "/es/como-generar-informe-citi-rg-3685",
@@ -2684,6 +3976,10 @@
       "destination": "/pms/como_generar_informe_comprobantes_de_ventas_comprobantes_de_ventas_fiscales"
     },
     {
+      "source": "/es/como-generar-un-link-de-motor-de-reservas-con-codigo-promocional-ya-cargado",
+      "destination": "/motor/como_generar_un_link_de_motor_de_reservas_con_codigo_promocional_ya_cargado"
+    },
+    {
       "source": "/es/como-generar-un-pin-para-un-usuario",
       "destination": "/configuración_inicial/como_generar_un_pin_para_un_usuario"
     },
@@ -2692,8 +3988,20 @@
       "destination": "/configuración_inicial/como_generar_un_usuario_clonando_los_permisos_de_otro"
     },
     {
+      "source": "/es/como-generar-una-firma-en-el-perfil",
+      "destination": "/crm/como_actualizar_la_firma_de_mi_usuario_para_el_envio_de_correos"
+    },
+    {
       "source": "/es/como-gestionar-encuestas",
       "destination": "/crm/como_gestionar_encuestas"
+    },
+    {
+      "source": "/es/como-gestionar-instancias-de-las-reservas",
+      "destination": "/crm/como_gestionar_instancias_de_las_reservas"
+    },
+    {
+      "source": "/es/como-gestionar-la-integracion-con-mercado-pago",
+      "destination": "/motor/como_gestionar_la_integracion_con_mercado_pago"
     },
     {
       "source": "/es/cómo-gestionar-la-integración-con-mercado-pago-desde-una-reserva",
@@ -2706,6 +4014,14 @@
     {
       "source": "/es/cómo-gestionar-mis-informes-desde-la-lista-de-informes",
       "destination": "/informes/como_filtrar_mi_lista_de_informes"
+    },
+    {
+      "source": "/es/como-gestionar-preventa-que-ingreso-por-un-llamado-o-personalmente",
+      "destination": "/crm/como_gestionar_una_preventa_que_ingreso_por_un_llamado_o_personalmente_en_el_hotel"
+    },
+    {
+      "source": "/es/como-gestionar-un-llamado-telefonico",
+      "destination": "/crm/como_gestionar_un_llamado_telefonico"
     },
     {
       "source": "/es/como-gestionar-una-consulta",
@@ -2724,6 +4040,14 @@
       "destination": "/procesos/como_gestionar_una_reserva_que_esta_cumpliendo_su_estadia"
     },
     {
+      "source": "/es/como-gestionar-una-reserva-que-ingreso-desde-motor-o-channel",
+      "destination": "/crm/como_gestionar_una_reserva_que_ingreso_desde_motor_o_channel"
+    },
+    {
+      "source": "/es/como-guardar-los-datos-de-la-tarjeta",
+      "destination": "/motor/como_guardar_los_datos_de_la_tarjeta"
+    },
+    {
       "source": "/es/cómo-habilitar-aplicaciones-de-configuración-a-usuarios",
       "destination": "/configuración_inicial/como_habilitar_aplicaciones_de_configuracion_a_usuarios"
     },
@@ -2736,16 +4060,36 @@
       "destination": "/configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario"
     },
     {
+      "source": "/es/como-habilitar-su-gmail-para-vincular-al-crm-de-pxsol",
+      "destination": "/crm/como_habilitar_su_gmail_para_vincular_al_crm_de_pxsol"
+    },
+    {
       "source": "/es/como-habilitar-una-cuenta-de-proveedores-a-un-usuario-con-permiso-basico",
       "destination": "/configuración_inicial/como_otorgar_acceso_a_una_cuenta_de_proveedores_a_un_usuario_con_permiso_basico"
+    },
+    {
+      "source": "/es/como-hacer-el-cierre-de-mesa",
+      "destination": "/pms/como_hacer_el_cierre_de_mesa"
     },
     {
       "source": "/es/como-hacer-que-se-vea-la-ota-de-la-que-proviene-la-reserva",
       "destination": "/arion/como_hacer_que_se_vea_la_ota_de_la_que_proviene_la_reserva_en_arion"
     },
     {
+      "source": "/es/como-hacer-revision-de-fotos-vinculadas-en-tipos-de-habitaciones",
+      "destination": "/motor/como_hacer_revision_de_fotos_vinculadas_en_tipos_de_habitaciones"
+    },
+    {
       "source": "/es/cómo-importar-ciudades-de-siigo-a-pxsol-para-la-facturación-colombia",
       "destination": "/facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia"
+    },
+    {
+      "source": "/es/cómo-importar-clientes-de-siigo-a-pxsol-para-la-facturación-colombia-0",
+      "destination": "/pms/como_importar_clientes_de_siigo_a_pxsol_para_la_facturacion_colombia"
+    },
+    {
+      "source": "/es/como-importar-contactos-a-partir-de-archivo-csv",
+      "destination": "/crm/como_importar_contactos_a_partir_de_archivo_csv"
     },
     {
       "source": "/es/cómo-importar-datos-del-hotel-desde-booking.com",
@@ -2754,6 +4098,18 @@
     {
       "source": "/es/como-importar-reservas",
       "destination": "/crm/como_importar_reservas_al_sistema"
+    },
+    {
+      "source": "/es/como-imprimir-informacion-de-caja-diaria",
+      "destination": "/pms/como_imprimir_informacion_de_caja_diaria"
+    },
+    {
+      "source": "/es/como-imprimir-la-ficha-de-check-in",
+      "destination": "/pms/como_imprimir_la_ficha_de_check_in"
+    },
+    {
+      "source": "/es/como-imprimir-la-ficha-de-registro",
+      "destination": "/pms/como_imprimir_la_ficha_de_registro__v1"
     },
     {
       "source": "/es/cómo-imprimir-las-transacciones-por-instancia-filtradas",
@@ -2788,6 +4144,10 @@
       "destination": "/analítica/como_insertar_el_codigo_de_seguimiento_de_google_analytics_en_pxsol"
     },
     {
+      "source": "/es/como-instalar-el-motor-de-reservas-en-un-sitio-web-externo",
+      "destination": "/motor/como_instalar_el_boton_de_reservas_en_un_sitio_web_externo"
+    },
+    {
       "source": "/es/como-integrar-el-motor-de-roomcloud-en-el-sitio-web-del-hotel",
       "destination": "/web/como_integrar_el_motor_de_roomcloud_en_el_sitio_web_del_hotel"
     },
@@ -2796,20 +4156,80 @@
       "destination": "/web/como_integrar_el_motor_de_roomcloud_en_el_sitio_web_del_hotel"
     },
     {
+      "source": "/es/cómo-le-hago-una-factura-t-a-una-empresa",
+      "destination": "/pms/como_emitir_una_factura_t_a_una_agencia"
+    },
+    {
+      "source": "/es/como-leer-en-que-moneda-esta-configurado-el-tarifario",
+      "destination": "/motor/como_leer_en_que_moneda_esta_configurado_el_tarifario"
+    },
+    {
       "source": "/es/como-leer-estado-de-habitaciones",
       "destination": "/pms/como_leer_estado_de_habitaciones"
+    },
+    {
+      "source": "/es/como-leer-reglas-entre-tarifarios",
+      "destination": "/motor/como_leer_reglas_entre_tarifarios"
+    },
+    {
+      "source": "/es/como-marcar-como-lista-negra-un-chat",
+      "destination": "/crm/como_marcar_un_chat_como_lista_negra_en_conversaciones"
     },
     {
       "source": "/es/cómo-marcar-como-revisada-una-reserva",
       "destination": "/crm/como_marcar_como_revisada_una_reserva"
     },
     {
+      "source": "/es/cómo-modificar-el-contacto-a-facturar-en-una-reserva",
+      "destination": "/pms/como_modificar_el_contacto_a_facturar_en_una_reserva"
+    },
+    {
+      "source": "/es/como-modificar-el-nombre-de-un-folio",
+      "destination": "/pms/como_modificar_el_nombre_de_un_folio"
+    },
+    {
       "source": "/es/como-modificar-el-pin-de-un-usuario",
       "destination": "/configuración_inicial/como_modificar_el_pin_de_un_usuario"
     },
     {
+      "source": "/es/como-modificar-el-stock-de-un-artículo",
+      "destination": "/pms/como_modificar_el_stock_de_un_articulo"
+    },
+    {
+      "source": "/es/como-modificar-fecha-de-estadia-de-una-reserva-desde-el-plano-de-ocupacion",
+      "destination": "/pms/como_modificar_fecha_de_estadia_de_una_reserva_desde_el_plano_de_ocupacion"
+    },
+    {
+      "source": "/es/como-modificar-la-moneda-en-una-reserva",
+      "destination": "/pms/como_modificar_la_moneda_en_una_reserva"
+    },
+    {
       "source": "/es/como-modificar-la-politica-de-fumadores-para-una-habitacion",
       "destination": "/motor/como_modificar_la_politica_de_fumadores_para_una_habitacion"
+    },
+    {
+      "source": "/es/como-modificar-la-ubicacion-de-mi-hotel-vdf",
+      "destination": "/motor/como_modificar_la_ubicacion_de_mi_hotel"
+    },
+    {
+      "source": "/es/como-mover-mail-de-clientes-desde-inbox-a-consultas",
+      "destination": "/crm/como_mover_mail_de_clientes_desde_inbox_a_consultas"
+    },
+    {
+      "source": "/es/como-mover-una-reserva-a-instancia-post-venta",
+      "destination": "/crm/como_mover_una_reserva_a_instancia_finalizadas"
+    },
+    {
+      "source": "/es/como-mover-una-reserva-a-la-instancia-lista-de-espera",
+      "destination": "/crm/como_mover_una_reserva_a_la_instancia_lista_de_espera"
+    },
+    {
+      "source": "/es/como-mover-una-reserva-a-las-distintas-instancias",
+      "destination": "/crm/como_mover_una_reserva_a_las_distintas_instancias"
+    },
+    {
+      "source": "/es/como-observar-las-recomendaciones-para-mejorar-mi-performance",
+      "destination": "/performance/como_observar_las_recomendaciones_para_mejorar_mi_performance"
     },
     {
       "source": "/es/como-obtener-la-api-key-y-permisos-necesarios-para-configurar-stripe",
@@ -2820,8 +4240,20 @@
       "destination": "/channel/como_obtener_las_credenciales_de_conexion_de_expedia"
     },
     {
+      "source": "/es/como-ocultar-o-visualizar-tarifarios-vinculados",
+      "destination": "/motor/como_ocultar_o_visualizar_tarifarios_vinculados"
+    },
+    {
+      "source": "/es/cómo-ordenar-las-categorías-e-items-de-mi-menú",
+      "destination": "/pms/como_ordenar_las_categorias_e_items_de_mi_menu"
+    },
+    {
       "source": "/es/como-otorgar-permiso-de-administrador-a-un-usuario",
       "destination": "/configuración_inicial/como_otorgar_permiso_de_administrador_a_un_usuario"
+    },
+    {
+      "source": "/es/como-pasar-a-no-venta-una-reserva-de-check-out",
+      "destination": "/crm/como_pasar_a_no_venta_una_reserva_de_check_out"
     },
     {
       "source": "/es/como-pasar-varias-transacciones-a-la-carpeta-de-no-venta",
@@ -2884,6 +4316,10 @@
       "destination": "/crm/como_realizar_busquedas_en_el_crm"
     },
     {
+      "source": "/es/cómo-realizar-el-check-out-de-un-huésped",
+      "destination": "/pms/como_realizar_el_check_out_de_un_huesped"
+    },
+    {
       "source": "/es/cómo-realizar-el-check-out-de-una-habitación",
       "destination": "/pms/como_realizar_el_check_out_de_una_habitacion"
     },
@@ -2912,6 +4348,10 @@
       "destination": "/channel/como_realizar_la_conexion_con_expedia"
     },
     {
+      "source": "/es/cómo-realizar-la-integración-con-factura-lista-para-facturación-en-uruguay",
+      "destination": "/pms/como_realizar_la_integracion_con_factura_lista_para_facturacion_en_uruguay"
+    },
+    {
       "source": "/es/cómo-realizar-la-integración-con-gns-uruguay",
       "destination": "/integraciones/como_realizar_la_integracion_con_gns_uruguay"
     },
@@ -2924,24 +4364,108 @@
       "destination": "/marketplace/como_realizar_la_integracion_con_tra"
     },
     {
+      "source": "/es/cómo-realizar-la-integración-de-siigo-para-facturar-desde-pxsol",
+      "destination": "/pms/como_realizar_la_integracion_de_siigo_para_facturar_desde_pxsol"
+    },
+    {
       "source": "/es/como-realizar-la-vinculacion-de-facturacion",
       "destination": "/pms/como_realizar_la_vinculacion_de_facturacion_de_pxsol_con_arca_ex_afip"
+    },
+    {
+      "source": "/es/como-realizar-traducciones",
+      "destination": "/web/como_realizar_traducciones_en_su_web_de_pxsol"
     },
     {
       "source": "/es/cómo-realizar-un-cambio-de-proveedor-de-conectividad-de-booking.com-1",
       "destination": "/channel/como_realizar_un_cambio_de_proveedor_de_conectividad_de_booking"
     },
     {
+      "source": "/es/como-realizar-un-cierre-de-turno-en-la-caja-diaria",
+      "destination": "/pms/como_realizar_un_cierre_de_turno_en_la_caja_diaria"
+    },
+    {
       "source": "/es/como-realizar-una-devolucion-por-mercado-pago",
       "destination": "/motor/como_realizar_una_devolucion_por_mercado_pago"
+    },
+    {
+      "source": "/es/como-recalcular-saldos-en-cuentas-corrientes",
+      "destination": "/pms/como_recalcular_saldos_en_cuentas_corrientes"
+    },
+    {
+      "source": "/es/como-recalcular-saldos-en-las-cuentas-contables",
+      "destination": "/pms/como_recalcular_saldos_en_las_cuentas_recaudadoras"
+    },
+    {
+      "source": "/es/cómo-recuperar-comprobantes-fiscales",
+      "destination": "/pms/como_recuperar_comprobantes_fiscales_manual_o_automaticamente"
+    },
+    {
+      "source": "/es/como-regenerar-comprobantes-emitidos",
+      "destination": "/pms/como_regenerar_comprobantes_emitidos"
+    },
+    {
+      "source": "/es/como-regenerar-comprobantes-recibidos",
+      "destination": "/pms/como_regenerar_comprobantes_recibidos"
+    },
+    {
+      "source": "/es/como-regenerar-un-comprobante",
+      "destination": "/pms/como_regenerar_un_comprobante"
+    },
+    {
+      "source": "/es/como-registrar-deuda-en-cuenta-corriente",
+      "destination": "/pms/como_registrar_deudas_en_cuenta_corriente"
+    },
+    {
+      "source": "/es/cómo-registrar-el-pago-de-varias-facturas-en-una-cuenta-corriente",
+      "destination": "/pms/como_registrar_el_pago_de_varias_facturas_en_una_cuenta_corriente"
+    },
+    {
+      "source": "/es/como-registrar-factura-pago-nota-de-credito-invoice-en-cuenta-corriente",
+      "destination": "/pms/como_registrar_facturas_y_pagos_en_cuenta_corriente"
+    },
+    {
+      "source": "/es/como-registrar-llamadas",
+      "destination": "/crm/como_registrar_llamadas"
+    },
+    {
+      "source": "/es/como-registrar-un-egreso-desde-caja-diaria",
+      "destination": "/pms/como_registrar_un_egreso_desde_caja_diaria"
+    },
+    {
+      "source": "/es/como-registrar-un-ingreso-de-alguien-que-no-está-hospedado",
+      "destination": "/pms/como_registrar_un_ingreso_de_alguien_que_no_esta_hospedado"
     },
     {
       "source": "/es/como-registrar-un-ingreso-desde-caja-diaria",
       "destination": "/pms/como_registrar_un_ingreso_desde_caja_diaria"
     },
     {
+      "source": "/es/como-registrar-un-pago",
+      "destination": "/pms/como_registrar_un_pago_en_una_reserva"
+    },
+    {
       "source": "/es/como-registrar-un-pago-de-una-factura-de-proveedor",
       "destination": "/pms/como_registrar_un_pago_de_una_factura_de_proveedor"
+    },
+    {
+      "source": "/es/cómo-registrar-un-pago-de-varias-facturas-de-proveedor",
+      "destination": "/pms/como_registrar_un_pago_de_varias_facturas_de_proveedor"
+    },
+    {
+      "source": "/es/como-registrar-una-devolucion-en-cuenta-corriente",
+      "destination": "/pms/como_registrar_una_devolucion_en_cuenta_corriente"
+    },
+    {
+      "source": "/es/como-registrar-una-nueva-consulta",
+      "destination": "/crm/como_registrar_una_nueva_consulta"
+    },
+    {
+      "source": "/es/como-registrar-una-reserva",
+      "destination": "/crm/como_registrar_una_reserva"
+    },
+    {
+      "source": "/es/como-reiniciar-una-reserva",
+      "destination": "/crm/como_reiniciar_una_reserva"
     },
     {
       "source": "/es/cómo-responder-un-mensaje-de-conversaciones-con-ia",
@@ -2956,12 +4480,28 @@
       "destination": "/conexiones/como_solicitar_la_conexion_a_the_hotel_network"
     },
     {
+      "source": "/es/cómo-solicitar-la-integración-con-sifactura",
+      "destination": "/pms/como_solicitar_la_integracion_con_sifactura"
+    },
+    {
+      "source": "/es/cómo-solicitar-la-integración-con-tarjeta-de-registro-en-colombia",
+      "destination": "/pms/como_solicitar_la_integracion_con_tarjeta_de_registro_en_colombia"
+    },
+    {
       "source": "/es/cómo-solicitar-la-integración-de-siigo-con-pxsol",
       "destination": "/pms/como_obtener_el_usuario_api_o_api_access_key_de_siigo_para_realizar_la_integracion_de_facturacion"
     },
     {
+      "source": "/es/cómo-solicitar-un-nuevo-impuesto-para-mi-hotel",
+      "destination": "/pms/como_solicitar_un_nuevo_impuesto_para_mi_hotel"
+    },
+    {
       "source": "/es/como-subir-archivos-dentro-de-una-reserva",
       "destination": "/pms/archivos__como_subir_archivos_dentro_de_una_reserva"
+    },
+    {
+      "source": "/es/como-subir-fotos-vdf",
+      "destination": "/motor/como_subir_y_vincular_fotos_a_tu_motor_de_reservas"
     },
     {
       "source": "/es/cómo-subir-imágenes-a-la-biblioteca-de-archivos",
@@ -2970,6 +4510,14 @@
     {
       "source": "/es/como-subir-una-foto-en-una-promocion-o-voucher",
       "destination": "/motor/como_subir_una_foto_en_una_promocion_o_voucher"
+    },
+    {
+      "source": "/es/como-transferir-consumos-de-un-folio-a-otro",
+      "destination": "/pms/folios__como_transferir_consumos_de_un_folio_a_otro"
+    },
+    {
+      "source": "/es/como-transferir-fondos-de-una-cuenta-contable-a-otra",
+      "destination": "/pms/como_transferir_fondos_de_una_cuenta_recaudadora_a_otra"
     },
     {
       "source": "/es/cómo-usar-mi-lista-de-informes",
@@ -2992,12 +4540,20 @@
       "destination": "/informes/como_ver_el_resultado_de_la_fuente_de_trafico"
     },
     {
+      "source": "/es/como-ver-informacion-de-cierre-de-turnos-historicos",
+      "destination": "/pms/como_ver_informacion_de_cierre_de_turnos_historicos"
+    },
+    {
       "source": "/es/como-ver-las-reservas-que-son-resultado-de-las-campañas-de-google-ads",
       "destination": "/informes/como_ver_las_reservas_que_son_resultado_de_las_campanas_de_google_ads"
     },
     {
       "source": "/es/como-ver-las-solicitudes-de-acuerdos-de-agencias",
       "destination": "/conexiones/como_ver_las_solicitudes_de_acuerdos_de_agencias"
+    },
+    {
+      "source": "/es/como-ver-las-transacciones-de-mercado-pago",
+      "destination": "/motor/como_ver_las_transacciones_de_mercado_pago"
     },
     {
       "source": "/es/cómo-ver-si-el-chat-con-un-cliente-dentro-de-conversaciones-ya-tiene-un-contacto-asociado",
@@ -3008,12 +4564,24 @@
       "destination": "/conversaciones/como_ver_si_el_chat_con_un_cliente_dentro_de_conversaciones_ya_tiene_una_consulta_o_reserva_asociada"
     },
     {
+      "source": "/es/como-ver-un-comprobante-emitido-dentro-de-la-reserva",
+      "destination": "/pms/como_ver_un_comprobante_emitido_dentro_de_la_reserva"
+    },
+    {
       "source": "/es/como-vincular-cuenta-de-correo",
       "destination": "/crm/como_vincular_una_cuenta_de_correo_corporativo_al_sistema"
     },
     {
+      "source": "/es/cómo-vincular-cuentas-corrientes-a-usuarios",
+      "destination": "/pms/como_vincular_cuentas_corrientes_a_usuarios"
+    },
+    {
       "source": "/es/como-vincular-cuentas-recaudadoras-a-puntos-de-venta",
       "destination": "/pms/como_vincular_cuentas_recaudadoras_a_puntos_de_venta"
+    },
+    {
+      "source": "/es/como-vincular-cuentas-recaudadoras-a-usuarios",
+      "destination": "/pms/como_vincular_cuentas_recaudadoras_a_usuarios"
     },
     {
       "source": "/es/cómo-vincular-facturación-de-un-cliente-dentro-de-afip-de-pxsol",
@@ -3024,8 +4592,16 @@
       "destination": "/administración/como_vincular_o_actualizar_una_tarjeta_de_credito_para_abonar_pxsol"
     },
     {
+      "source": "/es/cómo-vincular-su-casilla-de-correo-al-inbox-de-pxsol",
+      "destination": "/crm/como_vincular_su_casilla_de_correo_al_inbox_de_pxsol"
+    },
+    {
       "source": "/es/cómo-vincular-tu-cuenta-de-whatsapp-con-la-aplicación-conversaciones",
       "destination": "/conversaciones/como_vincular_tu_cuenta_de_whatsapp_con_la_aplicacion_conversaciones"
+    },
+    {
+      "source": "/es/cómo-vincular-un-contacto-a-una-cuenta-proveedor",
+      "destination": "/pms/como_vincular_un_contacto_a_una_cuenta_proveedor"
     },
     {
       "source": "/es/como-vincular-un-huesped-a-un-folio",
@@ -3040,8 +4616,32 @@
       "destination": "/pms/como_vincular_un_huesped_a_una_habitacion"
     },
     {
+      "source": "/es/cómo-vincular-un-tarifario-nuevo-al-canal-de-venta-del-motor",
+      "destination": "/motor/como_vincular_un_tarifario_nuevo_al_canal_de_venta_del_motor"
+    },
+    {
+      "source": "/es/como-visualizar-cada-cuenta-recaudadora",
+      "destination": "/pms/como_visualizar_cuentas_recaudadoras"
+    },
+    {
       "source": "/es/como-visualizar-caja-diaria",
       "destination": "/pms/como_visualizar_caja_diaria"
+    },
+    {
+      "source": "/es/como-visualizar-comprobantes-emitidos",
+      "destination": "/pms/como_visualizar_comprobantes_emitidos"
+    },
+    {
+      "source": "/es/cómo-visualizar-comprobantes-emitidos-en-afip",
+      "destination": "/pms/como_visualizar_comprobantes_emitidos_dentro_de_afip"
+    },
+    {
+      "source": "/es/como-visualizar-comprobantes-recibidos",
+      "destination": "/pms/como_visualizar_comprobantes_recibidos"
+    },
+    {
+      "source": "/es/como-visualizar-detalles-de-pago-y-facturacion",
+      "destination": "/pms/como_visualizar_detalles_de_pago_y_facturacion"
     },
     {
       "source": "/es/como-visualizar-el-centro-de-ayuda",
@@ -3052,8 +4652,16 @@
       "destination": "/administración/como_visualizar_el_estado_de_cuenta_de_su_hotel_con_pxsol"
     },
     {
+      "source": "/es/como-visualizar-el-informe-de-housekeeping-desde-estado-de-habitaciones",
+      "destination": "/pms/como_visualizar_el_informe_de_housekeeping_desde_estado_de_habitaciones"
+    },
+    {
       "source": "/es/cómo-visualizar-el-lote-y-cupón-de-un-pago-con-tarjeta-de-crédito",
       "destination": "/pms/como_visualizar_el_lote_y_cupon_de_un_pago_con_tarjeta_de_credito"
+    },
+    {
+      "source": "/es/como-visualizar-el-plano-de-ocupacion",
+      "destination": "/pms/como_visualizar_el_plano_de_ocupacion"
     },
     {
       "source": "/es/como-visualizar-estadísticas-de-conversaciones",
@@ -3064,8 +4672,20 @@
       "destination": "/web/como_visualizar_la_aplicacion_blog"
     },
     {
+      "source": "/es/como-visualizar-la-aplicacion-email-marketing-automation",
+      "destination": "/crm/como_visualizar_la_aplicacion_email_marketing_automation"
+    },
+    {
+      "source": "/es/como-visualizar-la-aplicacion-email-marketing-manual",
+      "destination": "/crm/como_visualizar_la_aplicacion_email_marketing_manual"
+    },
+    {
       "source": "/es/como-visualizar-la-aplicacion-inventario",
       "destination": "/pms/como_visualizar_la_aplicacion_inventario"
+    },
+    {
+      "source": "/es/como-visualizar-la-aplicacion-plano-de-mesas",
+      "destination": "/pms/como_visualizar_la_aplicacion_plano_de_mesas"
     },
     {
       "source": "/es/como-visualizar-la-aplicacion-tipos-de-habitaciones",
@@ -3074,6 +4694,10 @@
     {
       "source": "/es/como-visualizar-las-cuentas-corrientes",
       "destination": "/pms/como_visualizar_las_cuentas_corrientes"
+    },
+    {
+      "source": "/es/como-visualizar-las-habitaciones-hijas-en-el-tarifario",
+      "destination": "/motor/como_visualizar_las_habitaciones_hijas_en_el_tarifario"
     },
     {
       "source": "/es/cómo-visualizar-las-reservas-generadas-b2b-agencia",
@@ -3086,6 +4710,14 @@
     {
       "source": "/es/como-visualizar-los-check-in-de-cada-dia",
       "destination": "/informes/como_visualizar_los_check_in_de_cada_dia"
+    },
+    {
+      "source": "/es/cómo-visualizar-los-datos-de-huéspedes-en-tra-luego-de-la-integración-con-pxsol",
+      "destination": "/pms/como_visualizar_los_datos_de_huespedes_en_tra_luego_de_la_integracion_con_pxsol"
+    },
+    {
+      "source": "/es/como-visualizar-los-datos-de-tarjetas-de-credito",
+      "destination": "/motor/como_visualizar_los_datos_de_tarjetas_de_credito"
     },
     {
       "source": "/es/como-visualizar-los-desayunos-desde-estado-de-habitaciones",
@@ -3172,6 +4804,10 @@
       "destination": "/configuración_inicial/configuracion_punto_de_venta__tipo_motor"
     },
     {
+      "source": "/es/configuración-del-punto-de-venta-para-mi-web",
+      "destination": "/web/configuracion_del_punto_de_venta_para_su_web"
+    },
+    {
       "source": "/es/configuracion-punto-de-venta-tipo-agencia",
       "destination": "/configuración_inicial/configuracion_punto_de_venta__tipo_agencia"
     },
@@ -3224,6 +4860,14 @@
       "destination": "/tarifas_y_disponibilidad/creacion_y_aplicacion_de_escenarios"
     },
     {
+      "source": "/es/crm-gestion-de-consultas",
+      "destination": "/crm/guia_de_uso__modulo_crm_gestion_de_consultas"
+    },
+    {
+      "source": "/es/desconectar-otas-y-web-de-pxsol",
+      "destination": "/desconexionporbaja/desconectar_otas_y_web_de_pxsol"
+    },
+    {
       "source": "/es/descripción-del-establecimien",
       "destination": "/web/descripcion_del_establecimiento"
     },
@@ -3232,8 +4876,20 @@
       "destination": "/motor/difundir_tarifas_de_forma_manual__v8"
     },
     {
+      "source": "/es/dónde-visualizar-los-recordatorios-programados",
+      "destination": "/crm/donde_visualizar_los_recordatorios_programados"
+    },
+    {
       "source": "/es/dónde-visualizar-los-registros-de-una-reserva",
       "destination": "/crm/donde_visualizar_los_registros_de_una_reserva"
+    },
+    {
+      "source": "/es/dónde-visualizar-los-registros-de-una-reserva-1",
+      "destination": "/crm/como_migrar_los_registros_de_una_reserva_donde_no_se_visualizan"
+    },
+    {
+      "source": "/es/edición-múltiple-en-tarifas-y-disponibilidad",
+      "destination": "/motor/edicion_multiple_por_habitacion_en_tarifas_y_disponibilidad_v8"
     },
     {
       "source": "/es/edición-múltiple-por-ocupación-en-tarifas-y-disponibilidad",
@@ -3248,6 +4904,10 @@
       "destination": "/web/faq__instalacion_web"
     },
     {
+      "source": "/es/folios-cómo-cambiar-impuestos-en-un-folio",
+      "destination": "/pms/folios__como_cambiar_impuestos_en_un_folio"
+    },
+    {
       "source": "/es/funciones-sincronización-completa-y-sincronización-de-disponibilidad",
       "destination": "/tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad"
     },
@@ -3258,6 +4918,10 @@
     {
       "source": "/es/gestion-plano-de-mesa",
       "destination": "/plano_de_mesa/guia_de_uso__aplicacion_plano_de_mesa"
+    },
+    {
+      "source": "/es/gestionar-el-correo-no-deseado-carpeta-spam",
+      "destination": "/crm/gestion_del_correo_no_deseado_spam"
     },
     {
       "source": "/es/gestionar-mis-cuentas-de-correo-en-ferozo",
@@ -3276,12 +4940,32 @@
       "destination": "/integraciones/guia_interna_turbosuite"
     },
     {
+      "source": "/es/guía-rápida-para-habilitar-notificaciones",
+      "destination": "/crm/como_activar_las_notificaciones_para_la_aplicacion_de_conversaciones"
+    },
+    {
+      "source": "/es/guías-autoadministrables-template-astra",
+      "destination": "/web/guias_autoadministrables_template_astra"
+    },
+    {
       "source": "/es/guías-autoadministrables-template-desland",
       "destination": "/web/guias_autoadministrables_template_desland"
     },
     {
+      "source": "/es/guías-autoadministrables-template-kai",
+      "destination": "/web/guias_autoadministrables_template_kai"
+    },
+    {
+      "source": "/es/guías-autoadministrables-template-kion",
+      "destination": "/web/guias_autoadministrables_template_kion"
+    },
+    {
       "source": "/es/guías-autoadministrables-template-nean",
       "destination": "/web/guias_autoadministrables_template_nean"
+    },
+    {
+      "source": "/es/guías-autoadministrables-template-nova",
+      "destination": "/web/guias_autoadministrables_template_nova"
     },
     {
       "source": "/es/guías-autoadministrables-template-valda",
@@ -3298,6 +4982,10 @@
     {
       "source": "/es/hotel-reserva-directo-usuario-mis-reservas",
       "destination": "/central_de_reservas/reserva_directo_usuario__mis_reservas"
+    },
+    {
+      "source": "/es/https/ayuda.pxsol.com/es/como-crear-y-editar-plantillas-de-correo",
+      "destination": "/crm/como_crear_y_editar_plantillas_de_correo_para_email"
     },
     {
       "source": "/es/imap-en-gmail-contraseña-de-aplicación-guía-rápida",
@@ -3368,6 +5056,14 @@
       "destination": "/motor/cargar_y_modificar_tarifas_en_la_aplicacion_tarifas_y_disponibilidad__v8"
     },
     {
+      "source": "/es/módulo-web-fotos-box",
+      "destination": "/web/modulo_web__fotos_box"
+    },
+    {
+      "source": "/es/modulo-web-servicios",
+      "destination": "/web/modulo_web__servicios"
+    },
+    {
       "source": "/es/monitor-de-cocina-plano-de-mesa",
       "destination": "/plano_de_mesa/monitor_de_cocina_kds__aplicacion_plano_de_mesa"
     },
@@ -3386,6 +5082,10 @@
     {
       "source": "/es/opciones-avanzadas-de-una-promoción",
       "destination": "/motor/opciones_avanzadas_de_una_promocion_voucher_o_anuncio"
+    },
+    {
+      "source": "/es/opciones-de-integración-con-mercado-pago",
+      "destination": "/motor/opciones_de_vinculacion_con_mercado_pago"
     },
     {
       "source": "/es/panel-de-bienvenida",
@@ -3460,12 +5160,28 @@
       "destination": "/procesos/proceso__web_check_in"
     },
     {
+      "source": "/es/promociones-vouchers-y-anuncios",
+      "destination": "/motor/aplicacion_promociones_vouchers_y_anuncios"
+    },
+    {
       "source": "/es/pxsol-b2b-integracion-con-distribuidores-del-sector-turistico",
       "destination": "/agencias_b2b/pxsol_b2b__integracion_con_distribuidores_del_sector_turistico"
     },
     {
+      "source": "/es/que-es-autodisponibilidad",
+      "destination": "/pms/que_es_autodisponibilidad"
+    },
+    {
+      "source": "/es/que-es-y-para-que-sirve",
+      "destination": "/performance/que_es_y_para_que_sirve"
+    },
+    {
       "source": "/es/que-es-y-para-que-sirve-establecimientos",
       "destination": "/configuración_inicial/que_es_y_para_que_sirve_establecimientos"
+    },
+    {
+      "source": "/es/que-es-y-para-que-sirve-fotos",
+      "destination": "/configuracioninicial/que_es_y_para_que_sirve_fotos"
     },
     {
       "source": "/es/que-es-y-para-que-sirve-medios-de-pago",
@@ -3488,16 +5204,60 @@
       "destination": "/configuración_inicial/que_es_y_para_que_sirve_tipos_de_habitaciones"
     },
     {
+      "source": "/es/que-es-y-para-que-sirve-ubicacien-y-distancias",
+      "destination": "/configuracioninicial/que_es_y_para_que_sirve_ubicacion_y_distancias"
+    },
+    {
+      "source": "/es/que-funcion-cumple-el-registro-de-compra-abandonada",
+      "destination": "/motor/que_funcion_cumple_el_registro_de_compra_abandonada"
+    },
+    {
+      "source": "/es/qué-información-visualizo-en-la-cabecera-de-reservas",
+      "destination": "/pms/que_informacion_visualizo_en_la_cabecera_de_reservas"
+    },
+    {
+      "source": "/es/que-muestra-la-pestana-presupuestos-de-una-reserva",
+      "destination": "/motor/que_muestra_la_pestana_presupuestos_de_una_reserva"
+    },
+    {
+      "source": "/es/que-muestra-la-pestana-presupuestos-de-una-reserva-crm",
+      "destination": "/motor/que_muestra_la_pestana_presupuestos_de_una_reserva"
+    },
+    {
+      "source": "/es/qué-muestra-la-pestaña-avanzado-de-una-reserva",
+      "destination": "/crm/que_muestra_la_pestana_avanzado_de_una_reserva"
+    },
+    {
+      "source": "/es/que-muestra-la-pestaña-historial-de-una-reserva",
+      "destination": "/crm/que_muestra_la_pestana_historial_de_una_reserva"
+    },
+    {
+      "source": "/es/que-muestra-la-pestaña-historial-de-una-reserva-motor",
+      "destination": "/crm/que_muestra_la_pestana_historial_de_una_reserva"
+    },
+    {
       "source": "/es/que-reservas-podran-realizar-web-check-in",
       "destination": "/procesos/que_reservas_podran_realizar_web_check_in"
+    },
+    {
+      "source": "/es/que-significa-que-la-asignacion-de-una-habitacion-este-en-conflicto",
+      "destination": "/pms/que_significa_que_la_asignacion_de_una_habitacion_este_en_conflicto"
     },
     {
       "source": "/es/qué-significan-los-errores-que-pueden-aparecer-al-enviar-un-mensaje-en-conversaciones",
       "destination": "/conversaciones/que_significan_los_errores_que_pueden_aparecer_al_enviar_un_mensaje_en_conversaciones"
     },
     {
+      "source": "/es/qué-visualizar-dentro-del-plano-de-ocupación",
+      "destination": "/pms/que_visualizar_dentro_del_plano_de_ocupacion"
+    },
+    {
       "source": "/es/recomendaciones-busquedas-en-el-motor",
       "destination": "/analítica/recomendaciones_busquedas_en_el_motor"
+    },
+    {
+      "source": "/es/recomendaciones-de-pagos",
+      "destination": "/pms/recomendaciones_de_pagos"
     },
     {
       "source": "/es/recomendaciones-fotos",
@@ -3576,6 +5336,10 @@
       "destination": "/web/faq__instalacion_web"
     },
     {
+      "source": "/folios-cómo-cambiar-impuestos-en-un-folio",
+      "destination": "/pms/folios__como_cambiar_impuestos_en_un_folio"
+    },
+    {
       "source": "/funciones-sincronización-completa-y-sincronización-de-disponibilidad",
       "destination": "/tarifas_y_disponibilidad/funciones_sincronizacion_completa_y_sincronizacion_de_disponibilidad"
     },
@@ -3586,6 +5350,10 @@
     {
       "source": "/gestion-plano-de-mesa",
       "destination": "/plano_de_mesa/guia_de_uso__aplicacion_plano_de_mesa"
+    },
+    {
+      "source": "/gestionar-el-correo-no-deseado-carpeta-spam",
+      "destination": "/crm/gestion_del_correo_no_deseado_spam"
     },
     {
       "source": "/gestionar-mis-cuentas-de-correo-en-ferozo",
@@ -3604,12 +5372,32 @@
       "destination": "/integraciones/guia_interna_turbosuite"
     },
     {
+      "source": "/guía-rápida-para-habilitar-notificaciones",
+      "destination": "/crm/como_activar_las_notificaciones_para_la_aplicacion_de_conversaciones"
+    },
+    {
+      "source": "/guías-autoadministrables-template-astra",
+      "destination": "/web/guias_autoadministrables_template_astra"
+    },
+    {
       "source": "/guías-autoadministrables-template-desland",
       "destination": "/web/guias_autoadministrables_template_desland"
     },
     {
+      "source": "/guías-autoadministrables-template-kai",
+      "destination": "/web/guias_autoadministrables_template_kai"
+    },
+    {
+      "source": "/guías-autoadministrables-template-kion",
+      "destination": "/web/guias_autoadministrables_template_kion"
+    },
+    {
       "source": "/guías-autoadministrables-template-nean",
       "destination": "/web/guias_autoadministrables_template_nean"
+    },
+    {
+      "source": "/guías-autoadministrables-template-nova",
+      "destination": "/web/guias_autoadministrables_template_nova"
     },
     {
       "source": "/guías-autoadministrables-template-valda",
@@ -3626,6 +5414,10 @@
     {
       "source": "/hotel-reserva-directo-usuario-mis-reservas",
       "destination": "/central_de_reservas/reserva_directo_usuario__mis_reservas"
+    },
+    {
+      "source": "/https/ayuda.pxsol.com/es/como-crear-y-editar-plantillas-de-correo",
+      "destination": "/crm/como_crear_y_editar_plantillas_de_correo_para_email"
     },
     {
       "source": "/imap-en-gmail-contraseña-de-aplicación-guía-rápida",
@@ -3696,6 +5488,14 @@
       "destination": "/motor/cargar_y_modificar_tarifas_en_la_aplicacion_tarifas_y_disponibilidad__v8"
     },
     {
+      "source": "/módulo-web-fotos-box",
+      "destination": "/web/modulo_web__fotos_box"
+    },
+    {
+      "source": "/modulo-web-servicios",
+      "destination": "/web/modulo_web__servicios"
+    },
+    {
       "source": "/monitor-de-cocina-plano-de-mesa",
       "destination": "/plano_de_mesa/monitor_de_cocina_kds__aplicacion_plano_de_mesa"
     },
@@ -3714,6 +5514,10 @@
     {
       "source": "/opciones-avanzadas-de-una-promoción",
       "destination": "/motor/opciones_avanzadas_de_una_promocion_voucher_o_anuncio"
+    },
+    {
+      "source": "/opciones-de-integración-con-mercado-pago",
+      "destination": "/motor/opciones_de_vinculacion_con_mercado_pago"
     },
     {
       "source": "/panel-de-bienvenida",
@@ -3788,12 +5592,28 @@
       "destination": "/procesos/proceso__web_check_in"
     },
     {
+      "source": "/promociones-vouchers-y-anuncios",
+      "destination": "/motor/aplicacion_promociones_vouchers_y_anuncios"
+    },
+    {
       "source": "/pxsol-b2b-integracion-con-distribuidores-del-sector-turistico",
       "destination": "/agencias_b2b/pxsol_b2b__integracion_con_distribuidores_del_sector_turistico"
     },
     {
+      "source": "/que-es-autodisponibilidad",
+      "destination": "/pms/que_es_autodisponibilidad"
+    },
+    {
+      "source": "/que-es-y-para-que-sirve",
+      "destination": "/performance/que_es_y_para_que_sirve"
+    },
+    {
       "source": "/que-es-y-para-que-sirve-establecimientos",
       "destination": "/configuración_inicial/que_es_y_para_que_sirve_establecimientos"
+    },
+    {
+      "source": "/que-es-y-para-que-sirve-fotos",
+      "destination": "/configuracioninicial/que_es_y_para_que_sirve_fotos"
     },
     {
       "source": "/que-es-y-para-que-sirve-medios-de-pago",
@@ -3816,16 +5636,60 @@
       "destination": "/configuración_inicial/que_es_y_para_que_sirve_tipos_de_habitaciones"
     },
     {
+      "source": "/que-es-y-para-que-sirve-ubicacien-y-distancias",
+      "destination": "/configuracioninicial/que_es_y_para_que_sirve_ubicacion_y_distancias"
+    },
+    {
+      "source": "/que-funcion-cumple-el-registro-de-compra-abandonada",
+      "destination": "/motor/que_funcion_cumple_el_registro_de_compra_abandonada"
+    },
+    {
+      "source": "/qué-información-visualizo-en-la-cabecera-de-reservas",
+      "destination": "/pms/que_informacion_visualizo_en_la_cabecera_de_reservas"
+    },
+    {
+      "source": "/que-muestra-la-pestana-presupuestos-de-una-reserva",
+      "destination": "/motor/que_muestra_la_pestana_presupuestos_de_una_reserva"
+    },
+    {
+      "source": "/que-muestra-la-pestana-presupuestos-de-una-reserva-crm",
+      "destination": "/motor/que_muestra_la_pestana_presupuestos_de_una_reserva"
+    },
+    {
+      "source": "/qué-muestra-la-pestaña-avanzado-de-una-reserva",
+      "destination": "/crm/que_muestra_la_pestana_avanzado_de_una_reserva"
+    },
+    {
+      "source": "/que-muestra-la-pestaña-historial-de-una-reserva",
+      "destination": "/crm/que_muestra_la_pestana_historial_de_una_reserva"
+    },
+    {
+      "source": "/que-muestra-la-pestaña-historial-de-una-reserva-motor",
+      "destination": "/crm/que_muestra_la_pestana_historial_de_una_reserva"
+    },
+    {
       "source": "/que-reservas-podran-realizar-web-check-in",
       "destination": "/procesos/que_reservas_podran_realizar_web_check_in"
+    },
+    {
+      "source": "/que-significa-que-la-asignacion-de-una-habitacion-este-en-conflicto",
+      "destination": "/pms/que_significa_que_la_asignacion_de_una_habitacion_este_en_conflicto"
     },
     {
       "source": "/qué-significan-los-errores-que-pueden-aparecer-al-enviar-un-mensaje-en-conversaciones",
       "destination": "/conversaciones/que_significan_los_errores_que_pueden_aparecer_al_enviar_un_mensaje_en_conversaciones"
     },
     {
+      "source": "/qué-visualizar-dentro-del-plano-de-ocupación",
+      "destination": "/pms/que_visualizar_dentro_del_plano_de_ocupacion"
+    },
+    {
       "source": "/recomendaciones-busquedas-en-el-motor",
       "destination": "/analítica/recomendaciones_busquedas_en_el_motor"
+    },
+    {
+      "source": "/recomendaciones-de-pagos",
+      "destination": "/pms/recomendaciones_de_pagos"
     },
     {
       "source": "/recomendaciones-fotos",
