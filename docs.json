@@ -24,7 +24,7 @@
             "pages": [
               "primeros_pasos/proceso_de_implementacion_u_onboarding",
               "primeros_pasos/proceso_1__configuracion_inicial",
-              "primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas",
+              "primeros_pasos/proceso_2_optimizacion_del_motor_de_busquedas",
               "primeros_pasos/como_instalar_la_web_app_de_pxsol_en_tu_telefono_celular",
               "primeros_pasos/como_acceder_al_centro_de_ayuda_desde_pxsol",
               "primeros_pasos/como_cambiar_la_contrasena_de_mi_usuario",
@@ -1224,7 +1224,7 @@
     },
     {
       "source": "/como-configurar-el-motor-de-busqueda-para-optimizarlo",
-      "destination": "/primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas"
+      "destination": "/primeros_pasos/proceso_2_optimizacion_del_motor_de_busquedas"
     },
     {
       "source": "/como-configurar-el-plano",
@@ -3380,7 +3380,7 @@
     },
     {
       "source": "/es/como-configurar-el-motor-de-busqueda-para-optimizarlo",
-      "destination": "/primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas"
+      "destination": "/primeros_pasos/proceso_2_optimizacion_del_motor_de_busquedas"
     },
     {
       "source": "/es/como-configurar-el-plano",
