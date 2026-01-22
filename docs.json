@@ -5765,6 +5765,10 @@
     {
       "source": "/workflows-para-ia",
       "destination": "/conversaciones/workflows_para_ia"
+    },
+    {
+      "source": "/primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas",
+      "destination": "/primeros_pasos/proceso_2_optimizacion_del_motor_de_busquedas"
     }
   ]
 }
