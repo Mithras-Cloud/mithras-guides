@@ -552,7 +552,8 @@
               "integraciones/stripe_comportamiento_en_el_motor_de_reservas_checkout",
               "integraciones/integracion_con_payway_consideraciones_a_tener_en_cuenta",
               "integraciones/como_configurar_el_medio_de_pago_payway_en_el_motor_de_reservas",
-              "integraciones/como_realizar_la_integracion_con_stripe"
+              "integraciones/como_realizar_la_integracion_con_stripe",
+              "integraciones/como_configurar_el_medio_de_pago_stripe"
             ]
           },
           {
