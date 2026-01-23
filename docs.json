@@ -350,7 +350,8 @@
               "pms/aplicacion_estado_de_habitaciones",
               "pms/como_realizar_el_check_out_de_un_huesped",
               "pms/como_asignar_una_habitacion_a_una_reserva",
-              "pms/como_solicitar_la_integracion_con_tarjeta_de_registro_en_colombia"
+              "pms/como_solicitar_la_integracion_con_tarjeta_de_registro_en_colombia",
+              "pms/recomendaciones_de_pagos"
             ]
           },
           {
