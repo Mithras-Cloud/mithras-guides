@@ -370,7 +370,8 @@
               "pms/como_emitir_una_factura_t_a_una_agencia",
               "pms/como_eliminar_una_cuenta_recaudadora",
               "pms/como_emitir_una_factura_t",
-              "pms/como_cargar_una_factura_en_una_cuenta_proveedor"
+              "pms/como_cargar_una_factura_en_una_cuenta_proveedor",
+              "pms/como_anular_un_movimiento_en_una_cuenta_proveedor"
             ]
           },
           {
