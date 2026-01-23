@@ -339,7 +339,8 @@
               "pms/archivos__como_escanear_un_documento_en_una_reserva",
               "pms/como_solicitar_la_integracion_con_sifactura",
               "pms/como_auditar_una_cuenta_proveedor",
-              "pms/como_importar_clientes_de_siigo_a_pxsol_para_la_facturacion_colombia"
+              "pms/como_importar_clientes_de_siigo_a_pxsol_para_la_facturacion_colombia",
+              "pms/aplicacion_estado_de_habitaciones"
             ]
           },
           {
