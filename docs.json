@@ -364,7 +364,8 @@
               "pms/como_modificar_el_stock_de_un_articulo",
               "pms/como_realizar_la_integracion_con_factura_lista_para_facturacion_en_uruguay",
               "pms/como_configurar_alertas_de_falta_de_stock_de_mi_inventario",
-              "pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1"
+              "pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1",
+              "pms/como_emitir_una_factura_t_a_una_agencia"
             ]
           },
           {
