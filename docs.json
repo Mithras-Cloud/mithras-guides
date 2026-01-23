@@ -503,7 +503,9 @@
           },
           {
             "group": "Desconexión por baja",
-            "pages": []
+            "pages": [
+              "desconexionporbaja/desconectar_otas_y_web_de_pxsol"
+            ]
           },
           {
             "group": "Conexiones",
