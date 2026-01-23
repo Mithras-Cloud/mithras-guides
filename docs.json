@@ -687,6 +687,12 @@
             "pages": [
               "central_de_reservas/solicitar_acuerdos__central_de_reservas"
             ]
+          },
+          {
+            "group": "Marca blanca",
+            "pages": [
+              "marca_blanca/marca_blanca__reservadirecto"
+            ]
           }
         ]
       }
