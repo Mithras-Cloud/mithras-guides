@@ -355,7 +355,8 @@
               "pms/como_asignar_una_habitacion_a_una_reserva",
               "pms/como_solicitar_la_integracion_con_tarjeta_de_registro_en_colombia",
               "pms/recomendaciones_de_pagos",
-              "pms/como_modificar_el_stock_de_un_articulo"
+              "pms/como_modificar_el_stock_de_un_articulo",
+              "pms/como_realizar_la_integracion_con_factura_lista_para_facturacion_en_uruguay"
             ]
           },
           {
