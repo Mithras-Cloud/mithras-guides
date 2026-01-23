@@ -325,7 +325,8 @@
               "pms/como_autoasignar_una_habitacion_en_una_reserva",
               "pms/recomendaciones",
               "pms/como_crear_cuentas_corrientes",
-              "pms/como_eliminar_un_huesped_cargado"
+              "pms/como_eliminar_un_huesped_cargado",
+              "pms/como_cargar_una_reserva_desde_el_plano_de_ocupacion"
             ]
           },
           {
