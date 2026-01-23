@@ -326,7 +326,8 @@
               "pms/recomendaciones",
               "pms/como_crear_cuentas_corrientes",
               "pms/como_eliminar_un_huesped_cargado",
-              "pms/como_cargar_una_reserva_desde_el_plano_de_ocupacion"
+              "pms/como_cargar_una_reserva_desde_el_plano_de_ocupacion",
+              "pms/como_agregar_consumos_a_una_mesa"
             ]
           },
           {
