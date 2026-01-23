@@ -335,7 +335,8 @@
               "pms/que_visualizar_dentro_del_plano_de_ocupacion",
               "pms/como_cargar_una_reserva",
               "pms/archivos__como_escanear_un_documento_en_una_reserva",
-              "pms/como_solicitar_la_integracion_con_sifactura"
+              "pms/como_solicitar_la_integracion_con_sifactura",
+              "pms/como_auditar_una_cuenta_proveedor"
             ]
           },
           {
