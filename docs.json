@@ -670,6 +670,12 @@
             "pages": [
               "performance/que_es_y_para_que_sirve"
             ]
+          },
+          {
+            "group": "Central de Reservas",
+            "pages": [
+              "central_de_reservas/solicitar_acuerdos__central_de_reservas"
+            ]
           }
         ]
       }
