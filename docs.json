@@ -217,7 +217,8 @@
               "crm/como_registrar_llamadas",
               "crm/como_filtrar_las_cancelaciones_no_ventas_de_un_periodo",
               "crm/como_vincular_su_casilla_de_correo_al_inbox_de_pxsol",
-              "crm/como_editar_las_columnas_de_las_instancias"
+              "crm/como_editar_las_columnas_de_las_instancias",
+              "crm/como_crear_plantilla_de_correo_utilizando_la_funcion_duplicar"
             ]
           },
           {
