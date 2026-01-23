@@ -4,8 +4,11 @@ description: "Este documento detalla cómo configurar Stripe como medio de pago 
 ---
 
 <Note>
-  Es importante que antes de avanzar con esta guía hayas completado los pasos detallados en la siguiente guía:
-  <a href="/es/stripe-como-realizar-la-integracion" target="_blank" rel="noopener">¿Cómo realizar la integración con Stripe?</a>
+  Es importante que antes de avanzar con esta guía hayas completado los pasos detallados en la
+  siguiente guía:
+  <a href="/es/stripe-como-realizar-la-integracion" target="_blank" rel="noopener">
+    ¿Cómo realizar la integración con Stripe?
+  </a>
 </Note>
 
 Para habilitar Stripe como método de pago en el motor de reservas, es esencial contar con al menos una credencial de conexión previamente configurada y validada. Si ya dispones de una credencial de Stripe configurada y validada, puedes proceder con los siguientes pasos para habilitar este método de pago en el motor de reservas:
@@ -14,88 +17,166 @@ Para habilitar Stripe como método de pago en el motor de reservas, es esencial 
 2. Al ingresar a la aplicación, selecciona el botón **"Nuevo medio de pago"** que se encuentra en la esquina superior derecha. Alternativamente, si deseas modificar un medio de pago ya existente, puedes hacerlo desde el menú de acciones ubicado a la derecha del medio de pago que desees editar.
 
 <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-17-2923-PM.jpeg" alt="Botón Nuevo medio de pago y menú de acciones" />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-17-2923-PM.jpeg"
+    alt="Botón Nuevo medio de pago y menú de acciones"
+  />
 </Frame>
 
 1. A continuación, se abrirá un panel lateral en el que podrás ingresar la información requerida para la configuración:3.1 - Categoría de medio de pagoEn este primer paso, es necesario que configuren los siguientes aspectos:3.2 - Configuración de cuenta recaudadoraA continuación, deberás elegir la cuenta recaudadora donde se procesarán los pagos realizados a través de esta pasarela de pagos. Solo se mostrarán las cuentas recaudadoras que estén configuradas en la moneda USD (dólares americanos). Si aún no cuentas con una, tienes la opción de seleccionar "Crear nueva cuenta recaudadora automáticamente" para generarla de forma instantánea.
+
    <Info>
-     Es fundamental configurar una cuenta recaudadora para garantizar que los pagos se reflejen correctamente en las reservas.
+     Es fundamental configurar una cuenta recaudadora para garantizar que los pagos se reflejen
+     correctamente en las reservas.
    </Info>
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-20-2774-PM.png" alt="Seleccionar o crear cuenta recaudadora" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-20-2774-PM.png"
+       alt="Seleccionar o crear cuenta recaudadora"
+     />
    </Frame>
-   3.3 - Configuración de credencialSi tienes una o más de una credencial de Stripe configurada, podrás vincular el nuevo medio de pago a la credencial correspondiente. Solo será posible configurarla si ya fue validada; en caso contrario, deberás completar la validación antes de continuar.
+   3.3 - Configuración de credencialSi tienes una o más de una credencial de Stripe configurada,
+   podrás vincular el nuevo medio de pago a la credencial correspondiente. Solo será posible
+   configurarla si ya fue validada; en caso contrario, deberás completar la validación antes de
+   continuar.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-5112-PM.png" alt="Configuración de credencial Stripe" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-5112-PM.png"
+       alt="Configuración de credencial Stripe"
+     />
    </Frame>
-   3.4 / 3.5 / 3.6 - Configuración de plantilla de correo automático.En este paso, podrás asociar las plantillas de correo electrónico al método de pago. Tendrás la opción de configurar el envío de un correo para la pre-confirmación de la reserva, así como un segundo correo que diferencie entre un pago exitoso y otro que haya sido rechazado o que presente algún error. Tienes la opción de seleccionar una plantilla que ya hayas creado anteriormente o bien, crear una nueva directamente desde esta sección.
+   3.4 / 3.5 / 3.6 - Configuración de plantilla de correo automático.En este paso, podrás asociar
+   las plantillas de correo electrónico al método de pago. Tendrás la opción de configurar el envío
+   de un correo para la pre-confirmación de la reserva, así como un segundo correo que diferencie
+   entre un pago exitoso y otro que haya sido rechazado o que presente algún error. Tienes la opción
+   de seleccionar una plantilla que ya hayas creado anteriormente o bien, crear una nueva
+   directamente desde esta sección.
    <Tip>
-     Te recomendamos diseñar plantillas específicas para cada estado del pago, lo que ayudará a mantener una comunicación clara y efectiva con tus huéspedes.
+     Te recomendamos diseñar plantillas específicas para cada estado del pago, lo que ayudará a
+     mantener una comunicación clara y efectiva con tus huéspedes.
    </Tip>
-   Puedes revisar ejemplos de plantillas de correo electrónico correspondientes a los distintos estados de la transacción haciendo clic en este <a href="https://ayuda.pxsol.com/es/webpay-ejemplos-de-plantillas-de-correo-segun-el-estado-del-pago">enlace</a>.
+   Puedes revisar ejemplos de plantillas de correo electrónico correspondientes a los distintos
+   estados de la transacción haciendo clic en este
+   <a href="https://ayuda.pxsol.com/es/webpay-ejemplos-de-plantillas-de-correo-segun-el-estado-del-pago">
+     enlace
+   </a>
+   .
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-21-2527-PM.png" alt="Configuración de plantillas de correo - Pre-confirmación y Estados de pago" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-21-2527-PM.png"
+       alt="Configuración de plantillas de correo - Pre-confirmación y Estados de pago"
+     />
    </Frame>
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-5334-PM.png" alt="Opciones de plantillas de correo" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-5334-PM.png"
+       alt="Opciones de plantillas de correo"
+     />
    </Frame>
-   3.6 - Política asociada.En este apartado, se mostrarán las políticas que ya están configuradas para su establecimiento. Deberá seleccionar una o más de estas políticas para que apliquen a este medio de pago.
+   3.6 - Política asociada.En este apartado, se mostrarán las políticas que ya están configuradas
+   para su establecimiento. Deberá seleccionar una o más de estas políticas para que apliquen a este
+   medio de pago.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-20-8363-PM.png" alt="Seleccionar políticas asociadas" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-20-8363-PM.png"
+       alt="Seleccionar políticas asociadas"
+     />
    </Frame>
-   3.7 - Definir la moneda para el medio de pago.El medio de pago Stripe **acepta pagos en todas las monedas disponibles en la configuración del punto de venta**.Seleccionar las monedas bajo las cuales estará disponible este medio de pago.
+   3.7 - Definir la moneda para el medio de pago.El medio de pago Stripe **acepta pagos en todas las
+   monedas disponibles en la configuración del punto de venta**.Seleccionar las monedas bajo las
+   cuales estará disponible este medio de pago.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-9990-PM.png" alt="Seleccionar monedas para el medio de pago" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-9990-PM.png"
+       alt="Seleccionar monedas para el medio de pago"
+     />
    </Frame>
    3.8 - Establecer si este medio de pago aplicará algún tipo de descuento o recargo.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-3230-PM.jpeg" alt="Configurar recargos o descuentos" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-3230-PM.jpeg"
+       alt="Configurar recargos o descuentos"
+     />
    </Frame>
-   3.9 - Ventana de reserva:Establece el intervalo de días entre la fecha en que se realiza la compra y la fecha de llegada del huésped al hotel.
+   3.9 - Ventana de reserva:Establece el intervalo de días entre la fecha en que se realiza la
+   compra y la fecha de llegada del huésped al hotel.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-7982-PM.jpeg" alt="Configurar ventana de reserva" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-7982-PM.jpeg"
+       alt="Configurar ventana de reserva"
+     />
    </Frame>
-   3.10 - Definir el punto de venta.Si cuentas con un único punto de venta, el medio de pago se aplicará automáticamente a este. En caso de tener varios puntos de venta configurados, podrás seleccionar uno o más de ellos para que el medio de pago esté disponible.
+   3.10 - Definir el punto de venta.Si cuentas con un único punto de venta, el medio de pago se
+   aplicará automáticamente a este. En caso de tener varios puntos de venta configurados, podrás
+   seleccionar uno o más de ellos para que el medio de pago esté disponible.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-17-5985-PM.jpeg" alt="Seleccionar punto de venta" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-17-5985-PM.jpeg"
+       alt="Seleccionar punto de venta"
+     />
    </Frame>
-   * Recargo porcentual: puedes establecer un incremento porcentual que se aplicará al elegir este medio de pago.
-   * Descuento porcentual: puedes definir un descuento porcentual que se aplicará al seleccionar esta opción de pago.
-   * Cobrar solo un porcentaje: si deseas que el pago corresponda a un porcentaje específico del total.
-   - 3.1.1 - Categoría: despliega el listado de las alternativas disponibles y selecciona la opción de **Stripe**.
+   - Recargo porcentual: puedes establecer un incremento porcentual que se aplicará al elegir este medio de pago.
+   - Descuento porcentual: puedes definir un descuento porcentual que se aplicará al seleccionar esta opción de pago.
+   - Cobrar solo un porcentaje: si deseas que el pago corresponda a un porcentaje específico del total.
+   * 3.1.1 - Categoría: despliega el listado de las alternativas disponibles y selecciona la opción de **Stripe**.
      <Note>
-       La categoría **Stripe** estará disponible únicamente si se cuenta con al menos una credencial configurada; de lo contrario, esta opción no aparecerá en el listado.
+     La categoría **Stripe** estará disponible únicamente si se cuenta con al menos una credencial configurada; de lo contrario, esta opción no aparecerá en el listado.
      </Note>
      <Frame>
-       <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-0307-PM.png" alt="Seleccionar categoría Stripe" />
-     </Frame>
-   - 3.1.2 - Nombre único: nombre con el que el huésped verá este medio de pago durante el proceso de reserva en el motor.
+
+     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-0307-PM.png" alt="Seleccionar categoría Stripe" />
+</Frame>
+
+   * 3.1.2 - Nombre único: nombre con el que el huésped verá este medio de pago durante el proceso de reserva en el motor.
      <Frame>
-       <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-20-5786-PM.png" alt="Nombre del medio de pago Stripe" />
-     </Frame>
+     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-20-5786-PM.png" alt="Nombre del medio de pago Stripe" />
+</Frame>
+
 2. Finalmente, haz clic en el botón "Guardar cambios" para completar la configuración del medio de pago.
    <Frame>
-     <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-17-8195-PM.png" alt="Botón Guardar cambios" />
+     <img
+       src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-17-8195-PM.png"
+       alt="Botón Guardar cambios"
+     />
    </Frame>
 
 Una vez que hayas configurado el medio de pago, en las búsquedas de tarifas dentro del motor de reservas, podrás visualizar el o los medios de pago que has creado:
 
 <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-8565-PM.png" alt="Visualización de medios de pago en búsquedas de tarifas" />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-18-8565-PM.png"
+    alt="Visualización de medios de pago en búsquedas de tarifas"
+  />
 </Frame>
 
 En el check-out del motor, el medio de pago Stripe se visualizará de la siguiente manera:
 
 <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-2321-PM.png" alt="Visualización de Stripe en el check-out" />
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-12-19-2321-PM.png"
+    alt="Visualización de Stripe en el check-out"
+  />
 </Frame>
 
 <Tip>
   Una vez completado este proceso, recomendamos revisar las guías adicionales para comprender cómo funciona la integración, cómo impacta en el motor y en la reserva, y cómo realizar devoluciones de pagos procesados con Stripe.
 
-  <ul>
-    <li><a href="/es/comportamiento-en-el-motor-de-reservas-check-out-stripe" target="_blank" rel="noopener">Stripe: Comportamiento en el Motor de Reservas (Check-out)</a></li>
-    <li><a href="/es/comportamiento-y-visualizaci%C3%B3n-en-la-reserva" target="_blank" rel="noopener">Stripe: Comportamiento y Visualización en la Reserva</a></li>
-    <li><a href="/es/c%C3%B3mo-efectuar-una-devoluci%C3%B3n-parcial-o-total" target="_blank" rel="noopener">Stripe: Cómo efectuar una devolución parcial o total</a></li>
-  </ul>
+- <a
+    href="/es/comportamiento-en-el-motor-de-reservas-check-out-stripe"
+    target="_blank"
+    rel="noopener"
+  >
+    Stripe: Comportamiento en el Motor de Reservas (Check-out)
+  </a>
+- <a href="/es/comportamiento-y-visualizaci%C3%B3n-en-la-reserva" target="_blank" rel="noopener">
+    Stripe: Comportamiento y Visualización en la Reserva
+  </a>
+- <a
+    href="/es/c%C3%B3mo-efectuar-una-devoluci%C3%B3n-parcial-o-total"
+    target="_blank"
+    rel="noopener"
+  >
+    Stripe: Cómo efectuar una devolución parcial o total
+  </a>
+
 </Tip>
