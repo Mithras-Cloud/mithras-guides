@@ -147,7 +147,8 @@
               "motor/que_funcion_cumple_el_registro_de_compra_abandonada",
               "motor/como_cobrar_por_mercado_pago_con_tc_nueva",
               "motor/como_hacer_revision_de_fotos_vinculadas_en_tipos_de_habitaciones",
-              "motor/como_ocultar_o_visualizar_tarifarios_vinculados"
+              "motor/como_ocultar_o_visualizar_tarifarios_vinculados",
+              "motor/como_generar_un_link_de_motor_de_reservas_con_codigo_promocional_ya_cargado"
             ]
           },
           {
