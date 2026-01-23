@@ -605,6 +605,12 @@
               "facturación/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia",
               "facturación/como_facturar_desde_el_modulo_facturacion"
             ]
+          },
+          {
+            "group": "Primeros pasos",
+            "pages": [
+              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta"
+            ]
           }
         ]
       }
