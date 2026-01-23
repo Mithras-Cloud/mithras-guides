@@ -382,7 +382,8 @@
               "pms/como_editar_un_bloqueo",
               "pms/como_crear_bloqueos_desde_el_plano_de_ocupacion",
               "pms/como_facturar_desde_el_modulo_neo_facturacion_colombia",
-              "pms/como_editar_una_habitacion"
+              "pms/como_editar_una_habitacion",
+              "pms/como_confeccionar_comprobantes_sobre_un_movimiento_dentro_de_cuentas_corrientes"
             ]
           },
           {
