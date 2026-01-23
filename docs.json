@@ -150,7 +150,8 @@
               "motor/como_ocultar_o_visualizar_tarifarios_vinculados",
               "motor/como_generar_un_link_de_motor_de_reservas_con_codigo_promocional_ya_cargado",
               "motor/como_crear_y_configurar_una_campana_en_tripconnect",
-              "motor/como_visualizar_los_datos_de_tarjetas_de_credito"
+              "motor/como_visualizar_los_datos_de_tarjetas_de_credito",
+              "motor/que_muestra_la_pestana_presupuestos_de_una_reserva"
             ]
           },
           {
