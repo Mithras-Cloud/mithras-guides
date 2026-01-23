@@ -321,7 +321,6 @@
             "group": "Channel",
             "pages": [
               "channel/conexion_autogestionable_con_el_canal_booking",
-              "channel/_guia_de_conexion_canales_de_venta_acuerdos_y_aplicacion_de_integraciones__interno_pxsoleros",
               "channel/conexion_autogestionable_con_el_canal_hostelworld",
               "channel/como_obtener_las_credenciales_de_conexion_de_expedia",
               "channel/como_desconectarse_de_expedia",
