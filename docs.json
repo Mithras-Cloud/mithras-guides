@@ -388,7 +388,8 @@
               "procesos/como_enviar_una_reserva_a_postventa",
               "procesos/que_reservas_podran_realizar_web_check_in",
               "procesos/movimientos_de_consultas",
-              "procesos/etapas_del_ciclo_de_vida_de_una_reserva"
+              "procesos/etapas_del_ciclo_de_vida_de_una_reserva",
+              "procesos/proceso__configuracion_mercado_pago"
             ]
           },
           {
