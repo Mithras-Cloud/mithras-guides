@@ -3,71 +3,73 @@ title: "¿Cómo delegar su dominio comprado en Google a nuestro hosting de Cloud
 description: "En esta guía explicaremos cómo delegar su dominio comprado en Google a nuestro hosting de Cloudflare."
 ---
 
-
 <Note>
-<strong>IMPORTANTE:</strong> No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com) o con su CSM.
+  **IMPORTANTE:** No realices la delegación de tu dominio sin antes comunicarte con nuestro equipo
+  de soporte web (equipo@pxsol.com) o con tu CSM.
 </Note>
 
-<p>Pasos para hacer el cambio de NS (name servers):</p>
+Pasos para hacer el cambio de NS (name servers):
 
 <Steps>
-<Step title="Iniciar sesión en Google Domains">
-  Inicie sesión en el panel de administración del dominio en Google haciendo clic <a href="https://domains.google/" target="_blank" rel="nofollow noopener">aquí</a>.
+  <Step title="Iniciar sesión en Google Domains">
+    Inicia sesión en el panel de administración del dominio en Google haciendo clic <a href="https://domains.google/" target="_blank" rel="nofollow noopener">aquí</a>.
 
-  <Frame>
-    <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/login-google-domains.png" alt="Inicio de sesión en Google Domain" />
-  </Frame>
-</Step>
+    <Frame>
+      <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/login-google-domains.png" alt="Inicio de sesión en Google Domain" />
+    </Frame>
+  </Step>
 
-<Step title="Administrar su dominio">
-  Una vez que haya ingresado, diríjase al apartado de <strong>Mis dominios</strong> y haga clic en <strong>Administrar</strong> sobre el dominio que desea cambiar los DNS.
+  <Step title="Administrar su dominio">
+    Una vez que hayas ingresado, dirígete al apartado de **Mis dominios** y haz clic en **Administrar** sobre el dominio que deseas cambiar los DNS.
 
-  <Frame>
-    <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/Administrar-DNS.png" alt="Administración de dominio" />
-  </Frame>
-</Step>
+    <Frame>
+      <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/Administrar-DNS.png" alt="Administración de dominio" />
+    </Frame>
+  </Step>
 
-<Step title="Editar configuración de DNS">
-  A continuación, navegue hasta el apartado de <strong>DNS</strong>. Aquí verá todas las opciones para realizar cambios en los servidores de nombres.
-  <br/><br/>
-  Por defecto, Google le permite editar los servidores de nombres predeterminados. Para este propósito, seleccione la pestaña de <strong>Servidores de nombres personalizados</strong> y active la opción <strong>Cambiar a esta configuración</strong>.
+  <Step title="Editar configuración de DNS">
+    A continuación, navega hasta el apartado de **DNS**. Aquí verás todas las opciones para realizar cambios en los servidores de nombres.
 
-  <Frame>
-    <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/DNS.png" alt="Configuración de DNS" />
-  </Frame>
-  <Frame>
-    <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/cambiar-configuracion.png" alt="Cambiar configuración del dominio" />
-  </Frame>
-</Step>
+    \*\*
 
-<Step title="Ingresar los Name Servers de Cloudflare">
-  En el apartado de <strong>Servidores de nombres</strong>, debe añadir los DNS que le indique nuestro equipo de Soporte técnico o su CSM en PXSOL. Estos pueden ser:
-  <ul>
-    <li>grace.ns.cloudflare.com</li>
-    <li>merlin.ns.cloudflare.com</li>
-  </ul>
-  o alternativamente:
-  <ul>
-    <li>henry.ns.cloudflare.com</li>
-    <li>mona.ns.cloudflare.com</li>
-  </ul>
-  <br/>
-  Luego, haga clic en el botón <strong>Guardar</strong>.
+    Por defecto, Google te permite editar los servidores de nombres predeterminados. Para este propósito, selecciona la pestaña de **Servidores de nombres personalizados** y activa la opción **Cambiar a esta configuración**.
 
-  <Frame>
-    <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-12-2023-01-07-22-5488-PM.png" alt="Guardar configuración de Name Servers" />
-  </Frame>
+    <Frame>
+      <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/DNS.png" alt="Configuración de DNS" />
+    </Frame>
 
-  <Warning>
-  El cambio, una vez efectuado, puede tardar entre 12 y 24 horas en tomar efecto en todo Internet.
-  </Warning>
-</Step>
+    <Frame>
+      <img src="https://www.colombiahosting.com.co/blog/wp-content/uploads/2022/05/cambiar-configuracion.png" alt="Cambiar configuración del dominio" />
+    </Frame>
+  </Step>
 
-<Step title="Notificar al equipo de soporte">
-  Una vez realizado el cambio en los NS, por favor, informe por correo electrónico a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y configuración correcta.
+  <Step title="Ingresar los Name Servers de Cloudflare">
+    En el apartado de **Servidores de nombres**, debes añadir los DNS que te indique nuestro equipo de Soporte técnico o tu CSM en PXSOL. Estos pueden ser:
 
-  <Check>
-  ¡Dominio delegado exitosamente a Cloudflare!
-  </Check>
-</Step>
+    * grace.ns.cloudflare.com
+    * merlin.ns.cloudflare.com
+
+    o alternativamente:
+
+    * henry.ns.cloudflare.com
+    * mona.ns.cloudflare.com
+
+    \*\*Luego, haz clic en el botón **Guardar**.
+
+    <Frame>
+      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Oct-12-2023-01-07-22-5488-PM.png" alt="Guardar configuración de Name Servers" />
+    </Frame>
+
+    <Warning>
+      El cambio, una vez efectuado, puede tardar entre 12 y 24 horas en tomar efecto en todo Internet.
+    </Warning>
+  </Step>
+
+  <Step title="Notificar al equipo de soporte">
+    Una vez realizado el cambio en los NS, por favor, informa por correo electrónico a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y configuración correcta.
+
+    <Check>
+      ¡Dominio delegado exitosamente a Cloudflare!
+    </Check>
+  </Step>
 </Steps>
