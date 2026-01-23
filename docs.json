@@ -631,7 +631,8 @@
           {
             "group": "Primeros pasos",
             "pages": [
-              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta"
+              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta",
+              "primeros_pasos/como_crear_un_ticket_desde_el_sistema_al_soporte_de_pxsol"
             ]
           },
           {
