@@ -368,7 +368,8 @@
               "pms/como_configurar_alertas_de_falta_de_stock_de_mi_inventario",
               "pms/como_bloquear_movimiento_de_habitaciones_en_una_reserva__v1",
               "pms/como_emitir_una_factura_t_a_una_agencia",
-              "pms/como_eliminar_una_cuenta_recaudadora"
+              "pms/como_eliminar_una_cuenta_recaudadora",
+              "pms/como_emitir_una_factura_t"
             ]
           },
           {
