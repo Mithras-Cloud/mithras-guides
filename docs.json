@@ -372,7 +372,8 @@
               "pms/como_emitir_una_factura_t",
               "pms/como_cargar_una_factura_en_una_cuenta_proveedor",
               "pms/como_anular_un_movimiento_en_una_cuenta_proveedor",
-              "pms/como_realizar_la_integracion_de_siigo_para_facturar_desde_pxsol"
+              "pms/como_realizar_la_integracion_de_siigo_para_facturar_desde_pxsol",
+              "pms/como_editar_un_bloqueo"
             ]
           },
           {
