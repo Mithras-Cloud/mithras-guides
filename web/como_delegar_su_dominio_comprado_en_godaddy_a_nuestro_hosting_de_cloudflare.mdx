@@ -3,64 +3,75 @@ title: "¿Cómo delegar su dominio comprado en GoDaddy a nuestro hosting de Clou
 description: "En esta guía explicaremos cómo delegar su dominio comprado en GoDaddy a nuestro hosting de Cloudflare."
 ---
 
-
 <Tip>
-<strong>IMPORTANTE:</strong> No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com).
+  **IMPORTANTE:** No realices la delegación de tu dominio sin antes comunicarte con nuestro equipo
+  de soporte web (equipo@pxsol.com).
 </Tip>
 
-<p>Siga estos pasos para cambiar los servidores de nombres (<abbr title='Name Server'>NS</abbr>) de su dominio:</p>
+Sigue estos pasos para cambiar los servidores de nombres (<abbr title="Name Server">NS</abbr>) de tu dominio:
 
 <Steps>
-<Step title="Acceda a GoDaddy">
-  Ingrese a <a href="https://godaddy.com/">GoDaddy.com</a>
-  y acceda a su cuenta con su usuario y contraseña.
-</Step>
+  <Step title="Acceda a GoDaddy">
+    Ingresa a <a href="https://godaddy.com/">GoDaddy.com</a>
+    y accede a tu cuenta con tu usuario y contraseña.
+  </Step>
 
-<Step title="Seleccione el dominio">
-  En el listado de sus dominios comprados, ubique el dominio que desea delegar y haga clic en <strong>Administrar</strong>.
-  <Frame>
-    <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-42-01-99-PM.png" alt="Captura de pantalla mostrando el listado de dominios en GoDaddy con el botón Administrar resaltado." />
-  </Frame>
-</Step>
+  <Step title="Seleccione el dominio">
+    En el listado de tus dominios comprados, ubica el dominio que deseas delegar y haz clic en **Administrar**.
 
-<Step title="Administre la configuración DNS">
-  Una vez dentro de la administración del dominio, desplácese hacia abajo hasta la sección de <strong>Administrar DNS</strong> y haga clic en el enlace.
-  <Frame>
-    <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-44-41-41-PM.png" alt="Captura de pantalla mostrando la sección de administración de DNS." />
-  </Frame>
-</Step>
+    <Frame>
+      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-42-01-99-PM.png" alt="Captura de pantalla mostrando el listado de dominios en GoDaddy con el botón Administrar resaltado." />
+    </Frame>
 
-<Step title="Cambie los servidores de nombres">
-  En el administrador de DNS, localice la sección de <strong>Servidores de nombres</strong> y haga clic en el botón <strong>Cambiar</strong>.
-  <Frame>
-    <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-46-50-44-PM.png" alt="Captura de pantalla mostrando la sección de Servidores de Nombres con el botón Cambiar resaltado." />
-  </Frame>
-</Step>
+  </Step>
 
-<Step title="Ingrese los nuevos servidores de nombres">
-  Reemplace los servidores de nombres actuales por los que le haya proporcionado nuestro equipo de soporte técnico Web en PXSOL. Estos pueden ser:
-  <ul>
-    <li><strong>grace.ns.cloudflare.com</strong></li>
-    <li><strong>merlin.ns.cloudflare.com</strong></li>
-  </ul>
-  o
-  <ul>
-    <li><strong>henry.ns.cloudflare.com</strong></li>
-    <li><strong>mona.ns.cloudflare.com</strong></li>
-  </ul>
-  Después de ingresar los nuevos NS, haga clic en el botón <strong>Guardar</strong>.
-  <Frame>
-    <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-47-56-05-PM.png" alt="Captura de pantalla mostrando el campo para ingresar los nuevos servidores de nombres." />
-  </Frame>
-</Step>
+  <Step title="Administre la configuración DNS">
+    Una vez dentro de la administración del dominio, desplázate hacia abajo hasta la sección de **Administrar DNS** y haz clic en el enlace.
 
-<Step title="Confirme el cambio">
-  Aparecerá una advertencia sobre el cambio de servidores de nombre. Debe <strong>marcar la casilla de consentimiento</strong> para el cambio y luego hacer clic en el botón <strong>Continuar</strong>.
-  <Frame>
-    <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-51-45-55-PM.png" alt="Captura de pantalla de la advertencia de cambio de servidores de nombres con la casilla de consentimiento." />
-  </Frame>
-  <Check>
-  Una vez realizado el cambio, informe por correo electrónico a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y configuración correcta del dominio.
-  </Check>
-</Step>
+    <Frame>
+      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-44-41-41-PM.png" alt="Captura de pantalla mostrando la sección de administración de DNS." />
+    </Frame>
+
+  </Step>
+
+  <Step title="Cambie los servidores de nombres">
+    En el administrador de DNS, localiza la sección de **Servidores de nombres** y haz clic en el botón **Cambiar**.
+
+    <Frame>
+      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-46-50-44-PM.png" alt="Captura de pantalla mostrando la sección de Servidores de Nombres con el botón Cambiar resaltado." />
+    </Frame>
+
+  </Step>
+
+  <Step title="Ingrese los nuevos servidores de nombres">
+    Reemplaza los servidores de nombres actuales por los que te haya proporcionado nuestro equipo de soporte técnico Web en PXSOL. Estos pueden ser:
+
+    - **grace.ns.cloudflare.com**
+    - **merlin.ns.cloudflare.com**
+
+    o
+
+    - **henry.ns.cloudflare.com**
+    - **mona.ns.cloudflare.com**
+
+    Después de ingresar los nuevos NS, haz clic en el botón **Guardar**.
+
+    <Frame>
+      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-47-56-05-PM.png" alt="Captura de pantalla mostrando el campo para ingresar los nuevos servidores de nombres." />
+    </Frame>
+
+  </Step>
+
+  <Step title="Confirme el cambio">
+    Aparecerá una advertencia sobre el cambio de servidores de nombre. Debes **marcar la casilla de consentimiento** para el cambio y luego hacer clic en el botón **Continuar**.
+
+    <Frame>
+      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Feb-18-2021-04-51-45-55-PM.png" alt="Captura de pantalla de la advertencia de cambio de servidores de nombres con la casilla de consentimiento." />
+    </Frame>
+
+    <Check>
+      Una vez realizado el cambio, informa por correo electrónico a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y configuración correcta del dominio.
+    </Check>
+
+  </Step>
 </Steps>
