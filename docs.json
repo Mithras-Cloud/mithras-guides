@@ -138,7 +138,8 @@
               "motor/aplicacion_distancias_como_agregar_o_eliminar_lugares_cercanos_a_mi_hotel",
               "motor/recomendaciones_ubicacion_y_distancias",
               "motor/como_editar_los_datos_de_mi_establecimiento",
-              "motor/que_muestra_la_pestana_historial_de_una_reserva"
+              "motor/que_muestra_la_pestana_historial_de_una_reserva",
+              "motor/como_visualizar_las_habitaciones_hijas_en_el_tarifario"
             ]
           },
           {
