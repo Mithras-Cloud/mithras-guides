@@ -632,6 +632,12 @@
             "pages": [
               "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta"
             ]
+          },
+          {
+            "group": "Performance",
+            "pages": [
+              "performance/que_es_y_para_que_sirve"
+            ]
           }
         ]
       }
