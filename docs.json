@@ -406,7 +406,8 @@
               "pms/como_facturar_desde_una_reserva",
               "pms/que_informacion_visualizo_en_la_cabecera_de_reservas",
               "pms/como_anadir_una_habitacion_en_una_reserva__v1",
-              "pms/como_colocar_el_logo_para_facturacion"
+              "pms/como_colocar_el_logo_para_facturacion",
+              "pms/como_actualizar_plano_de_ocupacion"
             ]
           },
           {
