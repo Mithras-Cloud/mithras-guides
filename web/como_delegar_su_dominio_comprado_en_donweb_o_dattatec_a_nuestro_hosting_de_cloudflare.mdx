@@ -3,86 +3,52 @@ title: "¿Cómo delegar su dominio comprado en DonWeb o Dattatec a nuestro hosti
 description: "En esta guía explicaremos cómo delegar su dominio a nuestro hosting de Cloudflare."
 ---
 
-<Note>
-  **IMPORTANTE:** No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de
-  soporte web (equipo@pxsol.com)
-</Note>
+> **⚠️ IMPORTANTE:** No realice la delegación de su dominio sin antes comunicarse con nuestro equipo de soporte web (equipo@pxsol.com)
 
-<p />
+## Pasos para hacer el cambio de NS (name servers)
 
-<p>Pasos para hacer el cambio de NS (name servers):</p>
+### 1. Ingresar a DonWeb
 
-<Steps>
-  <Step title="Ingresar a DonWeb">
-    Entre a <a href="https://micuenta.donweb.com/es-ar/ingresar" target="_blank" rel="noopener">https://micuenta.donweb.com/es-ar/ingresar</a>.
-  </Step>
+Entre a https://micuenta.donweb.com/es-ar/ingresar
 
-  <Step title="Iniciar sesión">
-    Ingrese con su usuario y contraseña.
+### 2. Iniciar sesión
 
-    <Frame>
-      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-08-45-92-PM.png" alt="Captura de pantalla del inicio de sesión de DonWeb" />
-    </Frame>
+Ingrese con su usuario y contraseña.
 
-  </Step>
+![Captura de pantalla del inicio de sesión de DonWeb](https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-08-45-92-PM.png)
 
-  <Step title="Navegar a Dominios">
-    En el menú de la izquierda, diríjase a **Mis Servicios > Dominios**.
+### 3. Navegar a Dominios
 
-    <Frame>
-      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-10-26-03-PM.png" alt="Captura de pantalla del menú de servicios y dominios en DonWeb" />
-    </Frame>
+En el menú de la izquierda, diríjase a **Mis Servicios > Dominios**.
 
-  </Step>
+![Captura de pantalla del menú de servicios y dominios en DonWeb](https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-10-26-03-PM.png)
 
-  <Step title="Gestionar el dominio">
-    En el listado de sus dominios comprados, haga clic en **Gestionar** el dominio que desea delegar.
+### 4. Gestionar el dominio
 
-    <Frame>
-      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-15-44-94-PM.png" alt="Captura de pantalla mostrando la opción 'Gestionar' para un dominio" />
-    </Frame>
+En el listado de sus dominios comprados, haga clic en **Gestionar** el dominio que desea delegar.
 
-  </Step>
+![Captura de pantalla mostrando la opción 'Gestionar' para un dominio](https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-15-44-94-PM.png)
 
-  <Step title="Editar DNS">
-    En el panel general del dominio, localice el recuadro de DNS y haga clic en el botón **Editar**.
+### 5. Editar DNS
 
-    <Frame>
-      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-23-17-78-PM.png" alt="Captura de pantalla del panel DNS con el botón 'Editar'" />
-    </Frame>
+En el panel general del dominio, localice el recuadro de DNS y haga clic en el botón **Editar**.
 
-  </Step>
+![Captura de pantalla del panel DNS con el botón 'Editar'](https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-23-17-78-PM.png)
 
-  <Step title="Configurar los Name Servers">
-    Elimine los servidores de nombre actuales y reemplácelos por los NS proporcionados por el área de servicio técnico Web en PXSOL. Estos pueden ser:
+### 6. Configurar los Name Servers
 
-    <ul>
-      <li>grace.ns.cloudflare.com</li>
-      <li>merlin.ns.cloudflare.com</li>
-    </ul>
+Elimine los servidores de nombre actuales y reemplácelos por los NS proporcionados por el área de servicio técnico Web en PXSOL. Estos pueden ser:
 
-    O también:
+- grace.ns.cloudflare.com
+- merlin.ns.cloudflare.com
 
-    <ul>
-      <li>henry.ns.cloudflare.com</li>
-      <li>mona.ns.cloudflare.com</li>
-    </ul>
+O también:
 
-    Luego, haga clic en el botón **Guardar**.
+- henry.ns.cloudflare.com
+- mona.ns.cloudflare.com
 
-    <Frame>
-      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-24-52-75-PM.png" alt="Captura de pantalla mostrando la edición de los Name Servers en DonWeb" />
-    </Frame>
+Luego, haga clic en el botón **Guardar**.
 
-  </Step>
-</Steps>
+![Captura de pantalla mostrando la edición de los Name Servers en DonWeb](https://f.hubspotusercontent40.net/hubfs/7398646/image-png-Oct-15-2021-05-24-52-75-PM.png)
 
-<div class="hs-callout-type-note" data-hs-callout-type="note">
-  <p>
-    Una vez realizado el cambio en los NS, informe por correo a
-    [equipo@pxsol.com](mailto:equipo@pxsol.com) para que nuestro equipo de soporte pueda dar
-    seguimiento a la propagación y configuración correcta.
-  </p>
-</div>
-
-<p />
+> **📝 Nota:** Una vez realizado el cambio en los NS, informe por correo a equipo@pxsol.com para que nuestro equipo de soporte pueda dar seguimiento a la propagación y configuración correcta.
