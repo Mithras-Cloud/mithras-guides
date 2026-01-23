@@ -1,0 +1,131 @@
+---
+title: "Guía de Activación de Tax Free en el Punto de Venta de Pxsol"
+description: "La funcionalidad Tax Free permite a los hoteles ofrecer exoneración de impuestos a los huéspedes internacionales. Esta guía explica cómo activar Tax Free desde el Punto de Venta, cómo se visualiza en el Motor de Reservas y cómo gestionar esta funcionalidad desde la vista de la reserva."
+---
+
+
+## Activar Tax Free desde el Punto de Venta
+
+La activación y configuración de Tax Free se realiza desde la sección **Impuestos** de tu **Punto de Venta**. Sigue estos pasos para habilitar la funcionalidad.
+
+<Steps>
+  <Step title="Acceder a la configuración de Impuestos">
+    Dirígete a **Punto de Venta > Configuración > Impuestos**. En esta sección encontrarás las opciones para gestionar cómo se muestran los impuestos y para activar el beneficio de Tax Free.
+
+    <Frame caption="Sección de Impuestos en la configuración del Punto de Venta.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/283071664642cefb545db7afb40991082009d6d3fde.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T195145Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=46546ce4c8e9db49daf229aa56856ce79b34c8a58cc84c0df38de75d1e6450ac" alt="Navegación a la sección de Impuestos en el Punto de Venta." />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar el desglose de impuestos y activar Tax Free">
+    Dentro de la sección **Impuestos**, configura las siguientes opciones:
+
+    - **Desglosar impuestos en el motor**: Activa esta opción para mostrar los impuestos desglosados durante la búsqueda y la cotización.
+    - **Desglosar impuestos en el presupuesto**: Activa esta opción para mostrar los impuestos desglosados en el documento del presupuesto.
+    - **Tax Free**: Activa esta opción para aplicar la exoneración de impuestos a los huéspedes internacionales que cumplan los requisitos.
+
+    <Warning>
+      **Requisito previo**: Para poder activar la opción de **Tax Free**, es obligatorio tener activada la opción **Desglosar impuestos en el motor**.
+    </Warning>
+
+    <Frame caption="Switches de activación para el desglose de impuestos y Tax Free.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/123843887379764c79030cea626c2123eed9db3b7cb.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T195952Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=49233cb8683694474c55662fd93c7574c1f20fa2acfa3cbc02fdf35362f009b1" alt="Opciones para configurar el desglose de impuestos y la activación de Tax Free." />
+    </Frame>
+  </Step>
+
+  <Step title="Personalizar el mensaje informativo">
+    Al activar el switch de **Tax Free**, aparecerá un campo de texto para que personalices el mensaje que se mostrará en el motor de reservas. Este mensaje explica las condiciones de la exoneración de impuestos a los huéspedes.
+
+    <Info>
+      **Mensaje multi-idioma**: El texto informativo se traducirá y mostrará automáticamente en el idioma del navegador del huésped, asegurando una comunicación clara para todos los viajeros.
+    </Info>
+
+    <Frame caption="Campo para personalizar el mensaje de Tax Free que verán los huéspedes.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/22999579226a6a446e2221385b1dea29c8915e57d36.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T200002Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=cf6a04623d7ab321433161211fcea42a4a9169fca2e67e828743f69dc8fab9cf" alt="Personalización del mensaje informativo de Tax Free." />
+    </Frame>
+  </Step>
+
+  <Step title="Activar la solicitud de nacionalidad (Opcional)">
+    Para identificar a los huéspedes elegibles para Tax Free, puedes solicitar su nacionalidad antes de que inicien la búsqueda.
+
+    1.  Dirígete a **Punto de Venta > Configuración > Buscador**.
+    2.  Activa el switch **Solicitar nacionalidad del huésped titular antes de buscar**.
+
+    <Info>
+      **Autocompletado por IP**: El sistema preselecciona la nacionalidad basándose en la ubicación de la IP del usuario. El huésped siempre puede cambiarla manualmente.
+    </Info>
+
+    <Frame caption="Switch para activar la solicitud de nacionalidad en el buscador.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/353839711897a176137cfc0f22e3bd60623c0030f4.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T200240Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=d779c0bb655d30df3eb85b64db5554454d794b1da0d2715f675171a63c10f066" alt="Activación de la solicitud de nacionalidad en la configuración del buscador." />
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+## Cómo se ve Tax Free en el Motor de Reservas
+
+Una vez activado, el sistema mostrará la opción de Tax Free a los huéspedes elegibles durante el proceso de reserva.
+
+### Selección de Nacionalidad en el Buscador
+Si activaste la solicitud de nacionalidad, el motor de reservas mostrará un campo para que el huésped seleccione su país.
+
+<Info>
+  Por defecto, el sistema autocompleta la nacionalidad según la IP del usuario, pero el huésped puede modificarla manualmente.
+</Info>
+
+<Frame caption="Campo para seleccionar la nacionalidad en el motor de reservas.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/159227889938894d6cb67760545e34589eb6852b7dd.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T200617Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=7a157ba3d91918155dfe4c324e379994fca304c5993659ada5aac70652b18146" alt="Selector de nacionalidad añadido al buscador del motor de reservas." />
+</Frame>
+
+### Widget Informativo de Tax Free
+Después de realizar una búsqueda con una nacionalidad elegible, aparecerá un widget de Tax Free en la parte derecha de la pantalla.
+- **Elegibilidad**: El widget confirma si el huésped puede optar a la exoneración de impuestos.
+- **Información detallada**: Al hacer clic en el icono de información (`i`), se muestra el mensaje personalizado que configuraste, traducido al idioma del navegador del huésped.
+
+### Detalle de la Reserva en el Checkout
+Durante el checkout, el resumen de la reserva desglosará el monto exacto que se descuenta por el beneficio de Tax Free, brindando total transparencia al huésped antes de finalizar el pago.
+
+<Frame caption="Desglose de precios en el checkout mostrando el descuento de Tax Free.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28307182528bbf6539ba3c86ffe8f40c8ae1f620c61.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T200828Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=e0bf09ea433cebcdc093894660195c279cb10bc201370d99107d47743bd083cb" alt="Resumen de la reserva en el checkout con el ítem de Tax Free." />
+</Frame>
+
+---
+
+## Gestionar Tax Free en una Reserva Existente
+
+Puedes ver y gestionar el beneficio de Tax Free directamente desde la vista de detalle de cada reserva.
+
+### Desactivación Manual
+Si necesitas anular el beneficio para una reserva específica, puedes hacerlo manualmente:
+1.  Abre la reserva.
+2.  Haz clic en el botón de **Editar** en la cabecera.
+3.  Desactiva el switch de **Tax Free**.
+
+Esta acción solo afectará a la reserva actual.
+
+<Frame caption="Opción para desactivar manualmente Tax Free en la edición de una reserva.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/283071856485a17cc77e63f9b8e3fca6e409311ddd9.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T201143Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=f8ab90a74ead2af331732defea3a9a4beb58d8c8791f5b2ef5b10f4837a99af8" alt="Switch para desactivar Tax Free dentro de la vista de edición de una reserva." />
+</Frame>
+
+### Verificación en Pago y Facturación
+En la sección de **Pago y Facturación**, al hacer clic en **Ver detalle**, el sistema muestra un desglose completo de los cargos. Si Tax Free está activo, verás una línea específica con el monto exonerado.
+
+<Frame caption="Detalle de cargos mostrando el ítem de Tax Free.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5307597693d28dc34cbf1fe62babf1bbb18fd867e3.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T201351Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=90d72f7392f8c5608f3676bf2125c588984913c6c40659c09dcdc590629fc6a5" alt="Desglose de Pago y Facturación con el monto de Tax Free visible." />
+</Frame>
+
+### Verificación en el Presupuesto
+La pestaña **Presupuesto** también refleja el desglose total de la reserva, incluyendo el descuento aplicado por Tax Free. Esto asegura que la información sea consistente en todos los documentos relacionados con la reserva.
+
+<Frame caption="El descuento de Tax Free también se refleja en la pestaña Presupuesto.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/19461192432b83da9087d93ab24dbe8c3e25752ee68.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260123%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260123T201512Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=2390f5983a98da4322007c587d48b989cd911aae09492593dccb87e4f2d9405e" alt="Vista de la pestaña Presupuesto mostrando el monto de Tax Free." />
+</Frame>
+
+---
+
+## Próximos pasos
+
+<Check>
+¡Listo! Una vez activado **Tax Free**, tu hotel podrá ofrecer la exoneración de impuestos a huéspedes internacionales de manera sencilla y transparente. El motor de reservas y la gestión interna se actualizarán automáticamente para reflejar esta funcionalidad.
+</Check>
