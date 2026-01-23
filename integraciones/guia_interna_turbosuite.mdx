@@ -3,27 +3,26 @@ title: "Guía interna: Turbosuite"
 description: ""
 ---
 
+Para llevar a cabo la integración con Turbosuite, es necesario que un representante del hotel se comunique previamente con nuestro equipo de soporte a través del correo electrónico [equipo@pxsol.com](mailto:equipo@pxsol.com). En este mensaje, deberá indicar que ya están utilizando Turbosuite y que desean integrarse con Pxsol, incluyendo el correo electrónico del usuario de Turbosuite que se va a configurar. Una vez recibida la solicitud, el correo será dirigido al equipo de PRODUCTO para generar la clave API correspondiente. Posteriormente será necesario informar a Turbosuite sobre la clave generada para completar el proceso de integración.
 
-<p>Para llevar a cabo la integración con Turbosuite, es necesario que un representante del hotel se comunique previamente con nuestro equipo de soporte a través del correo electrónico equipo@pxsol.com. En este mensaje, deberá indicar que ya están utilizando Turbosuite y que desean integrarse con Pxsol, incluyendo el correo electrónico del usuario de Turbosuite que se va a configurar. Una vez recibida la solicitud, el correo será dirigido al equipo de PRODUCTO para generar la clave API correspondiente. Posteriormente será necesario informar a Turbosuite sobre la clave generada para completar el proceso de integración.</p>
+<Warning>
+  Antes de proceder con la solicitud de integración a Turbosuite, es fundamental verificar que el
+  hotel esté utilizando la versión 8 de tarifas y disponibilidad. Si actualmente se encuentra en V7,
+  será necesario realizar la migración antes de continuar con el proceso de integración.
+</Warning>
 
-<Warning>Antes de proceder con la solicitud de integración a Turbosuite, es fundamental verificar que el hotel esté utilizando la versión 8 de tarifas y disponibilidad. Si actualmente se encuentra en V7, será necesario realizar la migración antes de continuar con el proceso de integración.</Warning>
+Una vez que se confirme la integración, será necesario añadir la tarjeta de Turbosuite correspondiente a la propiedad desde la aplicación ''Integraciones''.
 
-<p>Una vez que se confirme la integración, será necesario añadir la tarjeta de Turbosuite correspondiente a la propiedad desde la aplicación ''Integraciones''.</p>
+Turbosuite consulta los siguientes endpoints de nuestra API pública:
 
-<p>Turbosuite consulta los siguientes endpoints de nuestra API pública:</p>
+- `rates_availability/list`
+- `rates_availability/update`
+- `booking/list`
+- `hotels/list`
+- `hotel/info`
 
-<ul>
-  <li><code>rates_availability/list</code></li>
-  <li><code>rates_availability/update</code></li>
-  <li><code>booking/list</code></li>
-  <li><code>hotels/list</code></li>
-  <li><code>hotel/info</code></li>
-</ul>
+Turbosuite nos envía información al siguiente endpoint:
 
-<p>Turbosuite nos envía información al siguiente endpoint:</p>
+- `rates_availability/update`
 
-<ul>
-  <li><code>rates_availability/update</code></li>
-</ul>
-
-<p>Importante: El RMS permite enviar tarifas por habitación o por ocupación. En el caso de contar con un esquema por ocupación, envían solo un único precio (ocupación base por ejemplo) y las demás tarifas deben generarse por regla en nuestro sistema.</p>
+Importante: El RMS permite enviar tarifas por habitación o por ocupación. En el caso de contar con un esquema por ocupación, envían solo un único precio (ocupación base por ejemplo) y las demás tarifas deben generarse por regla en nuestro sistema.
