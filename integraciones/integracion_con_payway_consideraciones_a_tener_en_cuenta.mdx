@@ -3,72 +3,58 @@ title: "Integración con Payway: Consideraciones Clave"
 description: "Guía detallada sobre los aspectos esenciales para integrar Payway en tu motor de reservas, cubriendo requisitos, configuración y la gestión de cobros y reservas."
 ---
 
+## Puntos a considerar
 
-<h3>Puntos a considerar:</h3>
+> **ℹ️ Información:** Esta integración está diseñada exclusivamente para hoteles ubicados en Argentina.
 
-<Info>
-Esta integración está diseñada exclusivamente para hoteles ubicados en Argentina.
-</Info>
+> **ℹ️ Información:** Actualmente, la gestión de cobros a través de Payway está limitada al motor de reservas.
 
-<Info>
-Actualmente, la gestión de cobros a través de Payway está limitada al motor de reservas.
-</Info>
+> **⚠️ Advertencia:** La integración con Payway conlleva un costo adicional del 0,5% por cada transacción completada. Es indispensable contar con el contrato correspondiente activado para proceder.
 
-<Warning>
-La integración con Payway conlleva un costo adicional del 0,5% por cada transacción completada. Es indispensable contar con el contrato correspondiente activado para proceder.
-</Warning>
+### Registro en Payway
 
-<Info>
-Es requisito que el hotel esté registrado en Payway. Si aún no lo está, puede registrarse a través del siguiente enlace: 👉<a href="https://mi.payway.com.ar/ms/ui-login/onboarding/cuit">https://mi.payway.com.ar/ms/ui-login/onboarding/cuit</a>
-</Info>
+Es requisito que el hotel esté registrado en Payway. Si aún no lo está, puede registrarse a través del siguiente enlace: 👉 https://mi.payway.com.ar/ms/ui-login/onboarding/cuit
 
-<Info>
+### Cuenta activa
+
 Los clientes deben poseer una cuenta activa en Payway. Nuestro servicio se integra con la cuenta existente; no gestionamos altas nuevas.
-</Info>
 
-<Info>
-Si el hotel ya es cliente, debe asegurarse de tener acceso a su portal de ventas online:
-👉<a href="https://developers-ventasonline.payway.com.ar/portal/login">https://developers-ventasonline.payway.com.ar/portal/login</a>
-</Info>
+Si el hotel ya es cliente, debe asegurarse de tener acceso a su portal de ventas online: 👉 https://developers-ventasonline.payway.com.ar/portal/login
 
-<Info>
+### Datos necesarios para la integración
+
 Para la integración con Pxsol, necesitarás los siguientes datos, que deberás obtener desde tu portal de Payway:
-<ul aria-level="1">
-<li aria-level="2"><strong>API Key Pública</strong></li>
-<li aria-level="2"><strong>API Key Privada</strong></li>
-</ul>
-</Info>
 
-<Info>
+- **API Key Pública**
+- **API Key Privada**
+
+### Limitaciones de moneda
+
 Solo se admiten pagos en ARS (Pesos Argentinos). No se permiten transacciones en otras divisas.
-<ul aria-level="1">
-<li aria-level="2">Si configuras este medio de pago para otras monedas en el motor de reservas, Payway siempre procesará el cobro en ARS.</li>
-<li aria-level="2">El tipo de cambio aplicado será el que hayas configurado en Pxsol dentro de la sección "Cambio de moneda".</li>
-</ul>
-</Info>
 
-<Info>
+- Si configuras este medio de pago para otras monedas en el motor de reservas, Payway siempre procesará el cobro en ARS.
+- El tipo de cambio aplicado será el que hayas configurado en Pxsol dentro de la sección "Cambio de moneda".
+
+### Configuración de cuotas
+
 Por defecto, la integración está configurada para aceptar pagos en una sola cuota sin interés.
-<ul aria-level="1">
-<li aria-level="2">Si deseas ofrecer cuotas (con o sin interés), deberás configurarlo manualmente.</li>
-<li aria-level="2">Ten en cuenta que ante futuras actualizaciones, esta configuración podría requerir revisión y actualización manual.</li>
-<li aria-level="2">Si tienes planes en cuotas configurados, el motor de reservas solo los mostrará cuando la búsqueda se realice en pesos argentinos. Si la búsqueda se realiza en otra moneda, la opción de pago en cuotas no estará disponible, y solo se permitirá el pago en una cuota.</li>
-</ul>
-</Info>
 
-<Info>
+- Si deseas ofrecer cuotas (con o sin interés), deberás configurarlo manualmente.
+- Ten en cuenta que ante futuras actualizaciones, esta configuración podría requerir revisión y actualización manual.
+- Si tienes planes en cuotas configurados, el motor de reservas solo los mostrará cuando la búsqueda se realice en pesos argentinos. Si la búsqueda se realiza en otra moneda, la opción de pago en cuotas no estará disponible, y solo se permitirá el pago en una cuota.
+
+### Pagos aceptados
+
 Payway acepta pagos tanto nacionales como internacionales.
-</Info>
 
-<Info>
-<strong>Gestión del inventario:</strong>
+### Gestión del inventario
+
 Toda reserva, independientemente de si el pago es exitoso o rechazado, descontará inventario y quedará registrada en el sistema.
-<ul aria-level="1">
-<li aria-level="1"><strong>Si el pago es exitoso:</strong>
-La reserva se marcará como pagada (total o parcialmente, según corresponda). Si es necesario, podrás realizar devoluciones totales o parciales directamente desde la reserva en el sistema, sin necesidad de acceder a Payway.</li>
-</ul>
-</Info>
-<ul aria-level="1">
-<li aria-level="1"><strong>Si el pago es rechazado:</strong>
-La reserva ingresará al sistema pero quedará con saldo pendiente. Deberás gestionarla activamente (contactando al huésped para solicitar otro medio de pago o cancelándola según las políticas del hotel) para poder liberar el inventario.</li>
-</ul>
+
+#### Si el pago es exitoso
+
+La reserva se marcará como pagada (total o parcialmente, según corresponda). Si es necesario, podrás realizar devoluciones totales o parciales directamente desde la reserva en el sistema, sin necesidad de acceder a Payway.
+
+#### Si el pago es rechazado
+
+La reserva ingresará al sistema pero quedará con saldo pendiente. Deberás gestionarla activamente (contactando al huésped para solicitar otro medio de pago o cancelándola según las políticas del hotel) para poder liberar el inventario.
