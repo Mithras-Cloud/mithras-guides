@@ -3,18 +3,24 @@ title: "¿Cómo realizar la integración con Stripe?"
 description: "En esta guía se detallan los pasos para integrar Stripe al motor de Pxsol, los requisitos esenciales, pasos básicos de configuración y funcionamiento de los cobros dentro del motor de reservas."
 ---
 
-
 <Note>
-Antes de avanzar es importante que hayas leído la siguiente información:
-<a href="/es/integracion-con-stripe-consideraciones-a-tener-en-cuenta" target="_blank" rel="noopener">Integración con Stripe: consideraciones a tener en cuenta</a>
+  Antes de avanzar es importante que hayas leído la siguiente información:
+  <a
+    href="/es/integracion-con-stripe-consideraciones-a-tener-en-cuenta"
+    target="_blank"
+    rel="noopener"
+  >
+    Integración con Stripe: consideraciones a tener en cuenta
+  </a>
 </Note>
 
-<p>Para llevar a cabo la configuración de la integración con Stripe, siga los pasos a continuación:</p>
+Para llevar a cabo la configuración de la integración con Stripe, sigue los pasos a continuación:
 
 <Steps>
 <Step title="Ingresar a la aplicación Integraciones">
-  1 - Ingresar a la aplicación "<strong>Integraciones</strong>".
-  2 - Ubicar la tarjeta correspondiente a <strong>Stripe</strong>, y hacer clic en "<strong>Instalar</strong>".
+  1 - Ingresar a la aplicación "**Integraciones**".
+  2 - Ubicar la tarjeta correspondiente a **Stripe**, y hacer clic en "**Instalar**".
+
   <Frame>
   <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-38-3342-PM.png" alt="Instalar Stripe desde Integraciones" />
   </Frame>
@@ -22,72 +28,135 @@ Antes de avanzar es importante que hayas leído la siguiente información:
 
 <Step title="Confirmar la instalación">
   3 - Aparecerá una nueva ventana en la que deberán hacer clic en la opción "Sí, Instalar".
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-36-5724-PM.png" alt="Confirmar instalación de Stripe" />
-  </Frame>
-  Se abrirá una <strong>ventana lateral</strong> desde la cual se podrán <strong>vincular las credenciales deseadas</strong>.
-  <p>En caso de que ya existan credenciales configuradas, se mostrará una <strong>tabla con las existentes</strong>.</p>
-  <p>Es posible añadir <strong>múltiples credenciales por empresa</strong>.</p>
-  <p>Sin credenciales:</p>
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-38-7412-PM.png" alt="Ventana lateral de credenciales sin configuraciones previas" />
-  </Frame>
-  <p>Con credenciales:&nbsp;</p>
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-36-5724-PM.png"
+    alt="Confirmar instalación de Stripe"
+  />
+</Frame>
+
+Se abrirá una **ventana lateral** desde la cual se podrán **vincular las credenciales deseadas**.
+
+En caso de que ya existan credenciales configuradas, se mostrará una **tabla con las existentes**.
+
+Es posible añadir **múltiples credenciales por empresa**.
+
+Sin credenciales:
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-38-7412-PM.png"
+    alt="Ventana lateral de credenciales sin configuraciones previas"
+  />
+</Frame>
+
+Con credenciales:
+
   <Frame>
   <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-37-6981-PM.png" alt="Ventana lateral de credenciales con configuraciones previas" />
   </Frame>
 </Step>
 
 <Step title="Añadir una nueva credencial">
-  4 - Haz clic en <strong>"Añadir credencial"</strong>.
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-38-0513-PM.png" alt="Añadir credencial de Stripe" />
-  </Frame>
-  Se abrirá una ventana lateral a la derecha, donde deberás completar los siguientes tres campos:
-  <ParamField path="Punto de venta" type="string" required explanation="Seleccione el punto de venta bajo el cual se está creando la credencial.">
+  4 - Haz clic en **"Añadir credencial"**.
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-38-0513-PM.png"
+    alt="Añadir credencial de Stripe"
+  />
+</Frame>
+
+Se abrirá una ventana lateral a la derecha, donde deberás completar los siguientes tres campos:
+
+<ParamField
+  path="Punto de venta"
+  type="string"
+  required
+  explanation="Seleccione el punto de venta bajo el cual se está creando la credencial."
+>
   Punto de venta
-  </ParamField>
-  <ParamField path="Nombre de la credencial" type="string" required explanation="Identificador que te permitirá reconocerla al momento de configurarla en el medio de pago, especialmente si trabajas con varias credenciales.">
+</ParamField>
+
+<ParamField
+  path="Nombre de la credencial"
+  type="string"
+  required
+  explanation="Identificador que te permitirá reconocerla al momento de configurarla en el medio de pago, especialmente si trabajas con varias credenciales."
+>
   Nombre de la credencial
-  </ParamField>
-  <ParamField path="API Key" type="string" required explanation="Token proporcionado por Stripe. Para obtener la API Key y los permisos necesarios consulta [esta guía](https://ayuda.pxsol.com/es/como-obtener-la-api-key-y-permisos-necesarios-para-configurar-stripe).">
+</ParamField>
+
+<ParamField
+  path="API Key"
+  type="string"
+  required
+  explanation="Token proporcionado por Stripe. Para obtener la API Key y los permisos necesarios consulta [esta guía](https://ayuda.pxsol.com/es/como-obtener-la-api-key-y-permisos-necesarios-para-configurar-stripe)."
+>
   API Key
-  </ParamField>
-  4.4 - Una vez completados los campos, confirma la acción haciendo clic en el botón <strong>"Añadir"</strong>.
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-37-4400-PM.png" alt="Completar y añadir credencial de Stripe" />
-  </Frame>
-  Se visualizará luego de la siguiente manera:
+</ParamField>
+
+4.4 - Una vez completados los campos, confirma la acción haciendo clic en el botón **"Añadir"**.
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-37-4400-PM.png"
+    alt="Completar y añadir credencial de Stripe"
+  />
+</Frame>
+
+Se visualizará luego de la siguiente manera:
+
   <Frame>
   <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-39-1366-PM.png" alt="Credencial de Stripe añadida" />
   </Frame>
 </Step>
 
 <Step title="Validar la credencial">
-  6 - Antes de avanzar con la configuración del medio de pago, es importante <strong>validar la credencial.</strong> Para ello, sigue estos pasos:
-  6.1 - Una vez guardada la credencial, dirígete a <strong>ACCIONES &gt; Validar credencial</strong>.
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-39-3942-PM.png" alt="Validar credencial de Stripe desde Acciones" />
-  </Frame>
-  6.2 - Para completar la validación, deberás utilizar los datos de una <strong>tarjeta real</strong>. Se realizará un <strong>cobro</strong> y, de manera inmediata, una <strong>devolución</strong> del mismo monto.
-  <Frame>
-  <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-36-8450-PM.png" alt="Proceso de validación de credencial con tarjeta real" />
-  </Frame>
-  <Check>
-  6.3 - Si la validación se procesa correctamente, la credencial quedará habilitada para continuar con la configuración. En caso contrario, verifica si la <strong>API Key</strong> fue configurada correctamente o si cuenta con los permisos necesarios. Si persiste el inconveniente, puedes contactar a <strong>equipo@pxsol.com</strong> para revisarlo.
-  </Check>
-  Una vez validada la credencial, se visualizará de la siguiente manera. Además, la opción "Validar credencial" ya no estará disponible en el menú de Acciones.
+  6 - Antes de avanzar con la configuración del medio de pago, es importante **validar la credencial.** Para ello, sigue estos pasos:
+
+6.1 - Una vez guardada la credencial, dirígete a **ACCIONES > Validar credencial**.
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-39-3942-PM.png"
+    alt="Validar credencial de Stripe desde Acciones"
+  />
+</Frame>
+
+6.2 - Para completar la validación, deberás utilizar los datos de una **tarjeta real**. Se realizará un **cobro** y, de manera inmediata, una **devolución** del mismo monto.
+
+<Frame>
+  <img
+    src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-36-8450-PM.png"
+    alt="Proceso de validación de credencial con tarjeta real"
+  />
+</Frame>
+
+<Check>
+  6.3 - Si la validación se procesa correctamente, la credencial quedará habilitada para continuar
+  con la configuración. En caso contrario, verifica si la **API Key** fue configurada correctamente
+  o si cuenta con los permisos necesarios. Si persiste el inconveniente, puedes contactar a
+  **equipo@pxsol.com** para revisarlo.
+</Check>
+
+Una vez validada la credencial, se visualizará de la siguiente manera. Además, la opción "Validar credencial" ya no estará disponible en el menú de Acciones.
+
   <Frame>
   <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/undefined-Dec-16-2025-06-10-37-1783-PM.png" alt="Credencial de Stripe validada y lista para usar" />
   </Frame>
 </Step>
 
 <Step title="Configurar el medio de pago">
-  7 - Dirígete a la aplicación "Medios de Pago" y creá un nuevo medio con la categoría <strong>Stripe</strong>. Consulta <a href="/es/c%C3%B3mo-configurar-el-medio-de-pago-stripe" target="_blank" rel="noopener">¿Cómo configurar el medio de pago para Stripe?</a>
+  7 - Dirígete a la aplicación "Medios de Pago" y crea un nuevo medio con la categoría **Stripe**. Consulta <a href="/es/c%C3%B3mo-configurar-el-medio-de-pago-stripe" target="_blank" rel="noopener">¿Cómo configurar el medio de pago para Stripe?</a>
 </Step>
 </Steps>
 
 <Note>
-Si en algún momento necesitas modificar la credencial o eliminarla, puedes consultar la siguiente guía:
-<a href="/es/stripe-gestion-de-credenciales-de-pasarelas-de-pago" target="_blank" rel="noopener">Stripe: Gestión de credenciales</a>
+  Si en algún momento necesitas modificar la credencial o eliminarla, puedes consultar la siguiente
+  guía:
+  <a href="/es/stripe-gestion-de-credenciales-de-pasarelas-de-pago" target="_blank" rel="noopener">
+    Stripe: Gestión de credenciales
+  </a>
 </Note>
