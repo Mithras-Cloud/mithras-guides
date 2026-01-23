@@ -1,44 +1,52 @@
 ---
-title: "Recomendaciones para Cuentas Corrientes"
-description: "Guía detallada con recomendaciones y buenas prácticas para la aplicación Cuentas Corrientes."
+title: "Recomendaciones para la aplicación Estado de Habitaciones"
+description: "Guía de recomendaciones y buenas prácticas para el uso efectivo de la aplicación Estado de Habitaciones."
 ---
 
-```mdx
-**¿Qué son las Cuentas Corrientes?**
+<h4>**¿Qué es el Estado de Habitaciones?**</h4>
 
-La aplicación **Cuentas Corrientes** permite **crear y administrar empresas, agencias y clientes corporativos**, vinculando a cada uno la deuda generada por los servicios ofrecidos por el hotel (alojamiento, extras, eventos, entre otros). De esta manera, los cargos no se imputan directamente al huésped, sino que quedan asociados a la cuenta corriente correspondiente.
+La aplicación **Estado de Habitaciones** permite visualizar en tiempo real la **situación general de todas las habitaciones del hotel**, integrando información de reservas, ocupación y limpieza. Desde esta vista es posible:
 
-Recomendaciones y buenas prácticas de uso
+- Cambiar y mostrar el estado de cada habitación.
+- Visualizar las habitaciones en el plano de ocupación.
+- Acceder rápidamente a reportes clave, como:
+  - Desayuno
+  - Housekeeping
+  - Arribos
+  - In-House
+  - Salidas
 
-🏢 Creación y configuración
+- Identificar de forma clara la **instancia operativa** en la que se encuentra cada habitación.
+- Modificaciones masivas del estado de limpieza de las habitaciones.
 
-- Crear **todas las cuentas corrientes** correspondientes a:
-  - Empresas
-  - Agencias
-  - Clientes corporativos
+<h4>**Recomendaciones y buenas prácticas de uso**</h4>
+<h3 id="actualizacion-de-estados">🧹 Actualización de estados</h3>
 
-- Completar correctamente los datos fiscales y de contacto para facilitar la facturación y la cobranza.
+- Asignación manual de las habitaciones a las mucamas correspondientes.
+- Actualizar el estado de cada habitación según el **informe diario de las mucamas**.
+- Asegurarse de reflejar correctamente cuándo una habitación:
+  - Está libre
+  - Está ocupada
+  - Está sucia
+  - Está limpia e inspeccionada
 
-📄 Emisión de comprobantes
+- Esta actualización es clave para identificar rápidamente qué habitaciones están disponibles para la venta.
 
-- Generar el **comprobante a nombre de la empresa o agencia** desde la reserva o desde la cuenta corriente.
-- Confirmar que el comprobante refleje fielmente los servicios prestados y los impuestos aplicados.
+<h3 id="identificacion-visual">🎨 Identificación visual</h3>
 
-🔄 Registro masivo de pagos de deudas
+- Personalizar los **colores de los estados** de las habitaciones.
+- Utilizar códigos visuales claros para identificar rápidamente la situación de cada habitación (libre, ocupada, sucia, en limpieza, etc.).
 
-- Utilizar la funcionalidad de **registro de pago masivo** para:
-  - Seleccionar una o varias deudas pendientes en cuenta corriente.
-  - Indicar la opción de pago en una única operación.
-  - Permitir que el sistema **calcule automáticamente el monto total** de los saldos seleccionados.
+<h3 id="check-in-y-check-out">🔄 Check-in y check-out</h3>
 
-- Esta herramienta agiliza la cobranza, reduce tareas manuales y minimiza errores de cálculo.
+- Realizar siempre los **check-in y check-out** en el sistema.
+- Estos movimientos actualizan la información **en vivo** de:
+  - Habitaciones ocupadas.
+  - Habitaciones libres.
 
----
+- Sin estos pasos, la información mostrada en la aplicación no reflejará la situación real del hotel.
 
-Beneficios operativos
+<h4>Nota importante</h4>
 
-- Mayor orden y claridad en la gestión de deudas.
-- Seguimiento eficiente de cobranzas.
-- Reducción de tiempos administrativos.
-- Información confiable para reportes y conciliaciones contables.
-```
+- Las reservas que pasan a estado **check-out** cambian automáticamente el estado de la habitación a **"sucia"**.
+- Todos los demás cambios de estado son **manuales** y deben realizarse desde la aplicación.
