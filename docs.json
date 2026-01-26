@@ -5922,6 +5922,10 @@
     {
       "source": "/primeros_pasos/proceso_2__optimizacion_del_motor_de_busquedas",
       "destination": "/primeros_pasos/proceso_2_optimizacion_del_motor_de_busquedas"
+    },
+    {
+      "source": "/(c%C3%B3mo-cargar-la-carta-de-mi-restaurante-en-pxsol",
+      "destination": "/pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol"
     }
   ]
 }
