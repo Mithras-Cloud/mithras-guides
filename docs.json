@@ -5934,6 +5934,10 @@
     {
       "source": "/es/documentaci%C3%B3n-data-layer",
       "destination": "/analítica/documentacion_tecnica_diccionario_de_eventos_del_data_layer_de_pxsol"
+    },
+    {
+      "source": "/documentación-data-layer",
+      "destination": "/analítica/documentacion_tecnica_diccionario_de_eventos_del_data_layer_de_pxsol"
     }
   ]
 }
