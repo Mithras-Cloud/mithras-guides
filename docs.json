@@ -418,7 +418,8 @@
               "pms/como_colocar_el_logo_para_facturacion",
               "pms/como_actualizar_plano_de_ocupacion",
               "pms/como_filtrar_movimientos_en_cuenta_recaudadoras",
-              "pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol"
+              "pms/como_cargar_la_carta_de_mi_restaurante_en_pxsol",
+              "pms/como_recuperar_comprobantes_fiscales_manual_o_automaticamente"
             ]
           },
           {
