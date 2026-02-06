@@ -5948,6 +5948,10 @@
     {
       "source": "/es/c%C3%B3mo-habilitar-a-un-usuario",
       "destination": "/configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito"
+    },
+    {
+      "source": "/es/cómo-habilitar-a-un-usuario",
+      "destination": "/configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito"
     }
   ]
 }
