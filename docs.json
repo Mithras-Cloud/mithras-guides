@@ -5944,6 +5944,10 @@
     {
       "source": "/es/documentación-data-layer",
       "destination": "/analítica/documentacion_tecnica_diccionario_de_eventos_del_data_layer_de_pxsol"
+    },
+    {
+      "source": "/es/c%C3%B3mo-habilitar-a-un-usuario",
+      "destination": "/configuración_inicial/como_habilitar_a_un_usuario_la_gestion_de_tarjetas_de_credito"
     }
   ]
 }
