@@ -5982,6 +5982,10 @@
     {
       "source": "/c%C3%B3mo-crear-una-promoci%C3%B3n",
       "destination": "/motor/como_crear_una_promocion"
+    },
+    {
+      "source": "/es/cómo-crear-una-promoción",
+      "destination": "/motor/como_crear_una_promocion"
     }
   ]
 }
