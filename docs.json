@@ -5973,6 +5973,10 @@
     {
       "source": "/como-agregar-lugares-cercanos-a-mi-hotel",
       "destination": "/motor/aplicacion_distancias_como_agregar_o_eliminar_lugares_cercanos_a_mi_hotel"
+    },
+    {
+      "source": "/m%C3%B3dulo-web-servicios",
+      "destination": "/web/modulo_web__servicios"
     }
   ]
 }
