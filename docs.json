@@ -5969,6 +5969,10 @@
     {
       "source": "/cómo-crear-una-promoción",
       "destination": "/motor/como_crear_una_promocion"
+    },
+    {
+      "source": "/como-agregar-lugares-cercanos-a-mi-hotel",
+      "destination": "/motor/aplicacion_distancias_como_agregar_o_eliminar_lugares_cercanos_a_mi_hotel"
     }
   ]
 }
