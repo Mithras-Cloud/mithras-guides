@@ -5977,6 +5977,10 @@
     {
       "source": "/m%C3%B3dulo-web-servicios",
       "destination": "/web/modulo_web__servicios"
+    },
+    {
+      "source": "/c%C3%B3mo-crear-una-promoci%C3%B3n",
+      "destination": "/motor/como_crear_una_promocion"
     }
   ]
 }
