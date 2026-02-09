@@ -5957,6 +5957,10 @@
     {
       "source": "/como-editar-habitaciones-para-web",
       "destination": "/web/categorias_tipo_de_habitaciones"
+    },
+    {
+      "source": "/como-cargar-quitar-o-modificar-fotos-en-la-página-web",
+      "destination": "/web/modulo_web__imagen_o_galeria_principal_home_y_secciones"
     }
   ]
 }
