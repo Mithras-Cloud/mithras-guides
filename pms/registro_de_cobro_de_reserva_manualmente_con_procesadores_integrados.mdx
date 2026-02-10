@@ -1,0 +1,95 @@
+---
+title: "Procesar Cobros de Reservas a través de un Procesador de Pagos"
+description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas de crédito y procesadores de pago integrados."
+---
+
+<Note>
+  Esta funcionalidad te permite cobrar los saldos pendientes de una reserva utilizando una tarjeta de crédito a través de los procesadores de pago que se encuentren integrados en el sistema. El proceso incluye la selección de los folios a cobrar, la definición del monto (total, parcial, neto o porcentual), la elección del procesador de pagos, el ingreso de los datos de la tarjeta y la confirmación de la transacción, la cual queda registrada automáticamente en la reserva.
+</Note>
+
+<Steps>
+  <Step title="Acceder a la Reserva">
+    Ingresa a la reserva específica sobre la cual deseas realizar el cobro. La selección puede realizarse desde el panel principal o a través del buscador general del sistema.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2301970244675ba16d4191be9938c3f3194ab6e40da.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Ver Detalles de los Folios">
+    Una vez dentro de la reserva, navega a la pestaña "Habitaciones y Huéspedes" para visualizar los detalles de los folios asociados. Aquí puedes consultar el detalle de los consumos y saldos pendientes. Al desplegar la opción "Información" de cada folio, se muestra el total, el monto pagado y el saldo restante. Puedes cargar consumos que aún no se hayan cargado.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/21248956692cbf345589936f848362f1c7d958ec483.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar el Proceso de Cobro">
+    Haz clic en el botón "Cobrar reserva", ubicado en la sección "Pago y Facturación" en la cabecera de la reserva, a la derecha de la pantalla. Esta acción abrirá una ventana emergente para gestionar el proceso de cobro.
+
+    <Frame>
+      ![Imagen](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17707465440b0cc9f66a8f224d6eb59a961745131b0.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260210%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20260210T180224Z\&X-Amz-SignedHeaders=host\&X-Amz-Expires=1200\&X-Amz-Signature=218c9b7b11bc001b9675e0fdef86749dc875a70600c34db1d90008acb274ff58)
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar Folios a Cobrar">
+    En la ventana "Cobrar Reserva", el primer paso es seleccionar los folios que se incluirán en el cobro. Es posible marcar uno o varios folios de la lista. Si se seleccionan múltiples folios, el sistema solicitará que se elija un folio principal, ya que todos los seleccionados se fusionarán en este último después de que el cobro se complete con éxito.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28331946160caabb4a68bcbd5f90f769b08fd235f49.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Definir el Monto a Cobrar">
+    A continuación, en la sección "Monto a cobrar", define el importe de la transacción. Se ofrecen cuatro opciones:
+
+    * **Monto total del folio:** Cobra el saldo completo de los folios seleccionados.
+    * **Monto neto del folio (sin impuestos):** Cobra el saldo excluyendo los impuestos aplicados.
+    * **Monto personalizado:** Permite ingresar un valor fijo a cobrar.
+    * **Porcentaje del total:** Permite ingresar un porcentaje del saldo total a cobrar.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7082986948791ef9c5b624e9ce97618699a38d00b2.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar el Medio de Pago">
+    En la sección "Medio de Pago", selecciona el procesador de pagos que se utilizará para la transacción. La lista mostrará todos los procesadores integrados y activos. Es importante tener en cuenta las condiciones de cada uno, como las monedas aceptadas o los montos mínimos de transacción.
+
+    <Note>
+      Payway se podrá utilizar solamente en Establecimientos de Argentina, cobrará en Pesos Argentinos (ARS) y no podrán realizarse cobros menores a 100 ARS
+    </Note>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/230197124433418f82287fe42de6e77740ec370adfe.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresar los Datos de la Tarjeta">
+    En la sección "Tarjeta", ingresa los datos del medio de pago. Si la reserva ya tiene una tarjeta guardada, se podrá seleccionar desde "Tarjeta existente". De lo contrario, se debe seleccionar "Nueva tarjeta" y completar los campos requeridos: número de tarjeta, nombre del titular, fecha de vencimiento (MM/AA) y código de seguridad.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/19478218045f83c7347fd0a707b17dcdb79b78d920f.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Confirmar el Cobro">
+    Revisa el "Resumen del cobro" en la parte inferior de la ventana, que detalla los folios seleccionados, el monto sin impuestos, los impuestos, el total y el monto final a cobrar. Una vez verificada toda la información, haz clic en el botón "Procesar Pago" para ejecutar la transacción.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/88537360905db4e36dddfb60f829dacdcb25914b63.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Verificar el Registro del Pago">
+    Una vez que el cobro es exitoso, el pago quedará registrado en la pestaña "Pagos" de la reserva. En esta sección podrás visualizar la fecha, el procesador utilizado, el concepto, el folio afectado, el monto del ingreso y el usuario que realizó la operación. Adicionalmente, en la pestaña "Habitaciones y Huéspedes", los folios se mostrarán fusionados y el saldo actualizado reflejará el pago recibido.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/15936726357db32459801da5b56e6b433d87e50a93d.png" alt="Imagen" />
+    </Frame>
+
+    Cuenta: Indica el Procesador de cobro con el que se realizó la transacción y la cuenta recaudadora donde quedó registrado.
+
+    Usuario: PGs API indica que es un pago registrado luego de haber realizado el cobro con un Procesador y no un registro manual.
+  </Step>
+</Steps>
