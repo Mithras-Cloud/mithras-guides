@@ -18,16 +18,14 @@ description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2301970244675ba16d4191be9938c3f3194ab6e40da.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Ver Detalles de los Folios">
-    Una vez dentro de la reserva, navega a la pestaña "Habitaciones y Huéspedes" para visualizar los detalles de los folios asociados. Aquí puedes consultar el detalle de los consumos y saldos pendientes. Al desplegar la opción "Información" de cada folio, se muestra el total, el monto pagado y el saldo restante. Puedes cargar consumos que aún no se hayan cargado.
+    Para Establecimientos que utilizan el PMS de Pxsol, una vez dentro de la reserva, navega a la pestaña "Habitaciones y Huéspedes" para visualizar los detalles de los folios asociados. Aquí puedes consultar el detalle de los consumos y saldos pendientes. Al desplegar la opción "Información" de cada folio, se muestra el total, el monto pagado y el saldo restante. Puedes cargar consumos que aún no se hayan cargado.
 
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/21248956692cbf345589936f848362f1c7d958ec483.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Iniciar el Proceso de Cobro">
@@ -36,37 +34,38 @@ description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17707465440b0cc9f66a8f224d6eb59a961745131b0.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Seleccionar Folios a Cobrar">
-    En la ventana "Cobrar Reserva", el primer paso es seleccionar los folios que se incluirán en el cobro. Es posible marcar uno o varios folios de la lista. Si se seleccionan múltiples folios, el sistema solicitará que se elija un folio principal, ya que todos los seleccionados se fusionarán en este último después de que el cobro se complete con éxito.
+    En la ventana "Cobrar Reserva", el primer paso es seleccionar los folios (en casos donde la cuenta utilice el PMS de Pxsol y cargue folios) que se incluirán en el cobro. Es posible marcar uno o varios folios de la lista. Si se seleccionan múltiples folios, el sistema solicitará que se elija un folio principal, ya que todos los seleccionados se fusionarán en este último después de que el cobro se complete con éxito.
+
+    <Note>
+      En caso de que la reserva no contenga folios o no se utilice el PMS de Pxsol para el registro de folios y consumos, esta ventana mostrará el monto total de la cebecera de Reservas. Se podrá realizar el cobro de la reserva sin la selección de folios.
+    </Note>
 
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28331946160caabb4a68bcbd5f90f769b08fd235f49.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Definir el Monto a Cobrar">
     A continuación, en la sección "Monto a cobrar", define el importe de la transacción. Se ofrecen cuatro opciones:
 
-    - **Monto total del folio:** Cobra el saldo completo de los folios seleccionados.
-    - **Monto neto del folio (sin impuestos):** Cobra el saldo excluyendo los impuestos aplicados.
-    - **Monto personalizado:** Permite ingresar un valor fijo a cobrar.
-    - **Porcentaje del total:** Permite ingresar un porcentaje del saldo total a cobrar.
+    * **Monto total del folio:** Cobra el saldo completo de los folios seleccionados.
+    * **Monto neto del folio (sin impuestos):** Cobra el saldo excluyendo los impuestos aplicados.
+    * **Monto personalizado:** Permite ingresar un valor fijo a cobrar.
+    * **Porcentaje del total:** Permite ingresar un porcentaje del saldo total a cobrar.
 
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7082986948791ef9c5b624e9ce97618699a38d00b2.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Seleccionar el Medio de Pago">
     En la sección "Medio de Pago", selecciona el procesador de pagos que se utilizará para la transacción. La lista mostrará todos los procesadores integrados y activos. Es importante tener en cuenta las condiciones de cada uno, como las monedas aceptadas o los montos mínimos de transacción.
 
     <Note>
-      Payway se podrá utilizar solamente en Establecimientos de Argentina, cobrará en Pesos Argentinos (ARS) y no podrán realizarse cobros menores a 100 ARS.
+      Payway se podrá utilizar solamente en Establecimientos de Argentina, cobrará en Pesos Argentinos (ARS) por más que los folios se encuentren en otra moneda, solicitando el tipo de cambio y mostrando el monto correspondiente. No podrán realizarse cobros menores a 100 ARS.
 
       Stripe se podrá utilizar en Establecimientos del resto del mundo. Los huéspedes con tarjetas argentinas pueden enfrentar cargos adicionales por impuestos de compras al exterior.
     </Note>
@@ -74,7 +73,6 @@ description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/230197124433418f82287fe42de6e77740ec370adfe.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Ingresar los Datos de la Tarjeta">
@@ -83,7 +81,6 @@ description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/19478218045f83c7347fd0a707b17dcdb79b78d920f.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Confirmar el Cobro">
@@ -92,7 +89,6 @@ description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/88537360905db4e36dddfb60f829dacdcb25914b63.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Verificar el Registro del Pago">
@@ -105,6 +101,5 @@ description: "Aprende a cobrar saldos pendientes de reservas utilizando tarjetas
     Cuenta: Indica el Procesador de cobro con el que se realizó la transacción y la cuenta recaudadora donde quedó registrado.
 
     Usuario: PGs API indica que es un pago registrado luego de haber realizado el cobro con un Procesador y no un registro manual.
-
   </Step>
 </Steps>
