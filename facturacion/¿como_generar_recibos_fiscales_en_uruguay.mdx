@@ -8,6 +8,8 @@ description: "Generación de comprobantes de recibo fiscal para clientes uruguay
   asegurando el cumplimiento de las normativas de la Dirección General Impositiva (DGI). La
   funcionalidad se integra con proveedores de facturación electrónica como Facturalista y GNS,
   automatizando el envío de información para su validación.
+
+  Una característica de los Recibos Fiscales en Uruguay es que la reserva no queda marcada como Facturada al emitir este tipo de comprobante. Permite mantener la reserva pendiente de Facturar hasta que se genere la Factura correspondiente.
 </Info>
 
 Proceso para Integración con Facturalista
@@ -23,7 +25,6 @@ Proceso para Integración con Facturalista
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/24790200736f26f28f52d99cb0b4ba4e65bc96343c4.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Iniciar la creación de un nuevo comprobante">
@@ -38,7 +39,6 @@ Proceso para Integración con Facturalista
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/123951007184af4046469b333cc140d1f6da9aac317.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Preparar el comprobante para edición">
@@ -53,7 +53,6 @@ Proceso para Integración con Facturalista
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26560934310ba421ff0e25a3b45c79c853f18597949.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Seleccionar el tipo de comprobante de recibo fiscal">
@@ -66,7 +65,6 @@ Proceso para Integración con Facturalista
     <Tip>
       Esta selección es específica para las integraciones con el proveedor Facturalista.
     </Tip>
-
   </Step>
 </Steps>
 
@@ -93,7 +91,6 @@ Proceso para Integración con GNS
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8853647200a8cf92838c738d5a88fc7b879846e5e0.png" alt="Imagen" />
     </Frame>
-
   </Step>
 
   <Step title="Seleccionar el tipo de comprobante automático">
@@ -104,12 +101,11 @@ Proceso para Integración con GNS
     </Frame>
 
     En el formulario "Editar Comprobante", en el campo "Tipo de comprobante", selecciona "Automático (Recibo Fiscal e-Ticket o Recibo Fiscal e-Factura)".
-
   </Step>
 
-<Step title="Completar los datos del comprobante y del receptor">
-  Ingresa los datos requeridos, incluyendo el RUT del receptor. Completa los campos necesarios.
-</Step>
+  <Step title="Completar los datos del comprobante y del receptor">
+    Ingresa los datos requeridos, incluyendo el RUT del receptor. Completa los campos necesarios.
+  </Step>
 
   <Step title="Guardar los cambios y emitir el comprobante">
     Guarda los cambios y emite el comprobante. Después de ingresar todos los datos, guarda los cambios. La opción para emitir el comprobante se habilitará y enviará la información al sistema de facturación electrónica para su procesamiento y validación.
@@ -121,6 +117,5 @@ Proceso para Integración con GNS
     <Frame>
       <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/24790217536ab37df877dc00db47458532e038e9ca5.png" alt="Imagen" />
     </Frame>
-
   </Step>
 </Steps>
