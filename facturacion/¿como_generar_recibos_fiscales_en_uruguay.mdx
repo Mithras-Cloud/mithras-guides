@@ -1,0 +1,116 @@
+---
+title: "Emisión de Comprobantes de Recibo Fiscal para Uruguay"
+description: "Generación de comprobantes de recibo fiscal para clientes uruguayos, cumpliendo con las normativas de la DGI. Integración con Facturalista y GNS."
+---
+
+<Info>
+  Esta guía detalla el proceso para generar comprobantes de recibo fiscal para clientes de Uruguay, asegurando el cumplimiento de las normativas de la Dirección General Impositiva (DGI). La funcionalidad se integra con proveedores de facturación electrónica como Facturalista y GNS, automatizando el envío de información para su validación.
+</Info>
+
+## Proceso para Integración con Facturalista
+
+<Steps>
+  <Step title="Acceder a la sección de Facturación de la reserva">
+    Navegue hasta la sección de "Facturación" dentro de la reserva del cliente. Desde el panel principal, localice y acceda a la reserva específica para la cual emitirá el comprobante. Una vez dentro de la reserva, seleccione la pestaña "Facturación".
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1593655754495dad6d40e9437f4a6556892a03c922d.png" alt="Imagen" />
+    </Frame>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/24790200736f26f28f52d99cb0b4ba4e65bc96343c4.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar la creación de un nuevo comprobante">
+    Presione el botón "Nuevo Comprobante" y seleccione el folio de la reserva.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/159365578955409a001005e3b2191ffb2e917ca12f0.png" alt="Imagen" />
+    </Frame>
+
+    Luego de presionar el botón "Nuevo Comprobante", seleccione el folio de la reserva que contiene los cargos a facturar desde la opción "Cargar desde".
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/123951007184af4046469b333cc140d1f6da9aac317.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Preparar el comprobante para edición">
+    Haga clic en el botón "Preparar Comprobante" para cargar los datos del folio.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/15936558300426bdd1520011de521f5837980242a40.png" alt="Imagen" />
+    </Frame>
+
+    Esta acción cargará todos los datos y conceptos del folio en un formulario de edición, preparando el sistema para la configuración final del documento fiscal.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26560934310ba421ff0e25a3b45c79c853f18597949.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar el tipo de comprobante de recibo fiscal">
+    Seleccione "Recibo fiscal y E-factura" o "Recibo fiscal E-ticket". En el formulario "Editar Comprobante", en la sección "Tipo de comprobante y sucursal", seleccione "Recibo fiscal E-factura" o "Recibo fiscal E-ticket", según corresponda para el cliente.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17707290200605957c1fb57ea541e2d65f84cf9d2df.png" alt="Imagen" />
+    </Frame>
+
+    <Tip>
+      Esta selección es específica para las integraciones con el proveedor Facturalista.
+    </Tip>
+  </Step>
+</Steps>
+
+## Proceso para Integración con GNS
+
+<Steps>
+  <Step title="Acceder a la Facturación e iniciar un nuevo comprobante">
+    Ingrese a la reserva del cliente y acceda a la pestaña "Facturación".
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/177072940401585e56698b4d3057a74650067ece0ae.png" alt="Imagen" />
+    </Frame>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/106243764903ba836f334e1e4101f941075bf434404.png" alt="Imagen" />
+    </Frame>
+
+    Presione el botón "Nuevo Comprobante" y seleccione el folio correspondiente. Luego, haga clic en "Preparar Comprobante".
+
+    <Frame>
+      ![Imagen](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/3541458864c34560806a6b3ed9f09271ec386d9a4c.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD\&X-Amz-Algorithm=AWS4-HMAC-SHA256\&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260210%2Fus-west-2%2Fs3%2Faws4_request\&X-Amz-Date=20260210T131712Z\&X-Amz-SignedHeaders=host\&X-Amz-Expires=1200\&X-Amz-Signature=6b45b1ef2a014fdcc3d76999a0e70d38191b7171a7888949c19f819e9b3f3e4a)
+    </Frame>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8853647200a8cf92838c738d5a88fc7b879846e5e0.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar el tipo de comprobante automático">
+    Seleccione la opción "Automático (Recibo Fiscal e-Ticket o Recibo Fiscal e-Factura)".
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5312188998169ec88982cc45efad4484b67e3f9c29.png" alt="Imagen" />
+    </Frame>
+
+    En el formulario "Editar Comprobante", en el campo "Tipo de comprobante", seleccione "Automático (Recibo Fiscal e-Ticket o Recibo Fiscal e-Factura)".
+  </Step>
+
+  <Step title="Completar los datos del comprobante y del receptor">
+    Ingrese los datos requeridos, incluyendo el RUT del receptor. Complete los campos necesarios.
+  </Step>
+
+  <Step title="Guardar los cambios y emitir el comprobante">
+    Guarde los cambios y emita el comprobante. Después de ingresar todos los datos, guarde los cambios.  La opción para emitir el comprobante se habilitará y enviará la información al sistema de facturación electrónica para su procesamiento y validación.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/70829190208e6f30a313bb706d41e1559d43b576f9.png" alt="Imagen" />
+    </Frame>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/24790217536ab37df877dc00db47458532e038e9ca5.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
