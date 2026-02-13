@@ -1,15 +1,15 @@
 ---
 title: "¿Cómo Configurar el Orden de Resultados en el Motor de Reservas de Pxsol?"
-description: "Desarrolla una funcionalidad configurable para que los hoteleros puedan definir el tipo de orden predeterminado en el motor de reservas, mejorando la relevancia y la experiencia de búsqueda de los huéspedes."
+description: "Implementamos una funcionalidad flexible que permite a los hoteleros personalizar el orden predeterminado de los resultados en el motor de reservas, optimizando la relevancia y mejorando la experiencia de búsqueda para los huéspedes, lo que facilita una navegación más eficiente y un mayor control sobre la presentación de las opciones."
 ---
 
-## Activar Configuración de Orden Predeterminado
+## Configuración de Orden Predeterminado
 
-Puede establecer un orden de visualización por defecto para los resultados en su motor de reservas. Siga estos pasos para configurarlo desde el Punto de Venta.
+Puede establecer un orden de visualización por defecto para los resultados en su motor de reservas. Siga estos pasos para configurarlo desde Configuración Punto de Venta.
 
 <Steps>
-  <Step title="Acceder a la Configuración del Motor de Reservas">
-    Para activar el tipo de orden predeterminado, acceda a la sección **Configuración de Orden por Defecto** en el **Punto de Venta**.
+  <Step title="Acceder a la aplicación Configuración Punto de Venta">
+    Para activar el tipo de orden predeterminado, acceda a la sección **Contenido dinámico > Filtros Orden >** **Orden de resultados predeterminado**
   </Step>
 
   <Step title="Seleccionar el Tipo de Orden">
@@ -48,7 +48,7 @@ Los huéspedes pueden cambiar el orden de los resultados de búsqueda según su 
 
 ## Visualización de Resultados Divididos en Secciones
 
-Para mejorar la experiencia de búsqueda y facilitar la navegación, los resultados se dividen en dos secciones claras:
+Para mejorar la experiencia de búsqueda y facilitar la navegación, los resultados se dividen en dos secciones claras (esta estructura aplica exclusivamente cuando el tipo de orden seleccionado es **“Recomendado”**):
 
 * **Te ofrecemos esto**: Muestra los resultados más relevantes según los criterios de búsqueda.
 * **Pero también tenemos estas opciones**: Sugiere otras alternativas que podrían interesar al huésped.
@@ -57,7 +57,7 @@ Para mejorar la experiencia de búsqueda y facilitar la navegación, los resulta
   <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/70840208048b336c90888bd916dd6055bd289fed95.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260213%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260213T175321Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=4ac63bfef301f8e1719ec2001abe44d90239c8a1e05655808f703f8695eaa1c1" alt="Imagen" />
 </Frame>
 
-## Ordenamiento de Habitaciones Según Capacidad del Grupo
+## Ordenamiento "Recomendado"
 
 Cuando un huésped busca alojamiento para un grupo, el sistema prioriza y muestra primero las habitaciones con capacidad suficiente para todo el grupo.
 
@@ -75,7 +75,7 @@ Los huéspedes pueden ajustar fácilmente la cantidad de habitaciones que desean
 
 <AccordionGroup>
   <Accordion title="¿Cómo activar el orden predeterminado en el motor de reservas de Pxsol?">
-    Puede configurar el tipo de orden predeterminado accediendo a la sección **Configuración de Orden por Defecto** en su **Punto de Venta** y seleccionando una de las opciones disponibles. El cambio se aplica al instante.
+    Puede configurar el tipo de orden predeterminado accediendo a la sección **Contenido dinámico > Filtros Orden >** **Orden de resultados predeterminado** en la app **Configuración Punto de Venta** y seleccionando una de las opciones disponibles. El cambio se aplica al instante.
   </Accordion>
 
   <Accordion title="¿Cómo cambia el huésped el orden de los resultados?">
@@ -83,11 +83,11 @@ Los huéspedes pueden ajustar fácilmente la cantidad de habitaciones que desean
   </Accordion>
 
   <Accordion title="¿Cómo se organizan los resultados de búsqueda en el motor de reservas?">
-    Los resultados se dividen en dos secciones: **"Te ofrecemos esto"**, con las opciones más relevantes, y **"Pero también tenemos estas opciones"**, con sugerencias adicionales.
+    Aplica solo al orden de tipo "Recomendado". Los resultados se dividen en dos secciones: **"Te ofrecemos esto"**, con las opciones más relevantes, y **"Pero también tenemos estas opciones"**, con sugerencias adicionales.
   </Accordion>
 
   <Accordion title="¿Cómo se muestran las habitaciones según la capacidad del grupo?">
-    El sistema ordena las habitaciones para mostrar primero aquellas que pueden alojar al número total de personas en la búsqueda. Si no hay una única habitación, sugiere combinaciones.
+    El sistema ordena las habitaciones para mostrar primero aquellas que pueden alojar al número total de personas en la búsqueda. Si no hay una única habitación, sugiere combinaciones. Aplica solo al orden de tipo "Recomendado".&#x20;
   </Accordion>
 
   <Accordion title="¿Cómo puedo ajustar la cantidad de habitaciones seleccionadas?">
