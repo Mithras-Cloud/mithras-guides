@@ -5997,6 +5997,10 @@
     {
       "source": "/es/módulo-web-servicios",
       "destination": "/web/modulo_web__servicios"
+    },
+    {
+      "source": "/es/cómo-agregar-condiciones-a-una-promoción-beta",
+      "destination": "/motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
     }
   ]
 }
