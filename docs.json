@@ -6001,6 +6001,10 @@
     {
       "source": "/es/cómo-agregar-condiciones-a-una-promoción-beta",
       "destination": "/motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
+    },
+    {
+      "source": "/cómo-agregar-condiciones-a-una-promoción-beta",
+      "destination": "/motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
     }
   ]
 }
