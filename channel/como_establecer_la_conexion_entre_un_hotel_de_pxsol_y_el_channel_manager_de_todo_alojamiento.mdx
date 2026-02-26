@@ -3,72 +3,66 @@ title: "¿Cómo establecer la conexión entre un hotel de Pxsol y el Channel Man
 description: En esta guía, se explicará paso a paso el proceso para conectar un hotel que utiliza Pxsol con el Channel Manager de Todo Alojamiento.
 ---
 
-
 <Steps>
-<Step title="Dar de alta la propiedad en Pxsol">
-  Asegúrate de que tu propiedad esté registrada correctamente en el sistema Pxsol.
-</Step>
+  <Step title="Dar de alta la propiedad en Pxsol">
+    Asegúrate de que tu propiedad esté registrada correctamente en el sistema Pxsol.
+  </Step>
 
-<Step title="Configurar categorías y planes tarifarios">
-  Define las categorías y los planes tarifarios para tu propiedad dentro de Pxsol.
-</Step>
+  <Step title="Configurar categorías y planes tarifarios">
+    Define las categorías y los planes tarifarios para tu propiedad dentro de Pxsol.
+  </Step>
 
-<Step title="Notificar a Todo Alojamiento y proporcionar credenciales">
-  Una vez completada la configuración en Pxsol, envía un correo electrónico a <code>soporte@todoalojamiento.com</code>.
-  
-  En el correo, incluye:
-  
-  *   El ID de la propiedad (P) de Pxsol.
-  *   La API Key correspondiente. 
-  
-  <Note>
-  Deberás solicitar la API Key al equipo de Producto de Pxsol.
-  </Note>
-  
-  Estos datos permitirán a Todo Alojamiento avanzar con el mapeo y posteriormente enviar tarifas, disponibilidad e inventario.
-  
-  <Info>
-  Si la conexión es para un canal de ventas específico (ej. Roomfares, Destino Cariló, Moebius, etc.), será necesario configurar la conexión de ese canal y realizar una reserva de prueba para validar el funcionamiento.
-  </Info>
-</Step>
+  <Step title="Notificar a Todo Alojamiento y proporcionar credenciales">
+    Una vez completada la configuración en Pxsol, es necesario notificar a **Todo Alojamiento** enviando un correo electrónico a [`soporte@todoalojamiento.com`](mailto:soporte@todoalojamiento.com).
 
-<Step title="Verificar la sincronización con Todo Alojamiento">
-  Junto al equipo de Todo Alojamiento, verifica que la información recibida sea correcta, incluyendo:
-  
-  *   Tarifas y disponibilidad.
-  *   Recepción de reservas en su Channel Manager.
-  
-  <Check>
-  La sincronización se considera exitosa cuando la información es correcta y las reservas se reciben sin problemas.
-  </Check>
-</Step>
+    En el correo, incluye:
+
+    * El ID de la propiedad (P) de Pxsol.
+    * La API Key correspondiente.
+
+    <Note>
+      Deberás solicitar la API Key al equipo de Producto de Pxsol.
+    </Note>
+
+    Estos datos permitirán a Todo Alojamiento avanzar con el mapeo y posteriormente **enviar tarifas, disponibilidad e inventario.**
+
+    <Info>
+      Si la conexión se realiza para integrar un canal de ventas específico (por ejemplo, Roomfares, Destino Cariló, Moebius, etc.), será necesario:
+
+      * ○ Informar el medio correspondiente a través del cual ingresarán las reservas.
+      * ○ Configurar la conexión de dicho canal en la propiedad dentro de Pxsol.
+      * ○ Generar una reserva de prueba para validar el correcto funcionamiento de la integración.
+
+      De esta manera, se podrá verificar que la vinculación opere correctamente antes de su puesta en producción.
+    </Info>
+  </Step>
+
+  <Step title="Verificar la sincronización con Todo Alojamiento">
+    Junto al equipo de Todo Alojamiento, verifica que la información recibida sea correcta, incluyendo:
+
+    * Tarifas y disponibilidad.
+    * Recepción de reservas en su Channel Manager.
+
+    <Check>
+      La sincronización se considera exitosa cuando la información es correcta y las reservas se reciben sin problemas.
+    </Check>
+  </Step>
 </Steps>
 
 <Info>
-**Información del Producto:** Con la API Key se brinda acceso a los siguientes endpoints:
-<Tabs>
-<Tab title="Endpoints">
-<CodeGroup>
-bash
-hotels/info
+  **Información del Producto:** Con la API Key se brinda acceso a los siguientes endpoints:
 
+  <Tabs>
+    <Tab title="Endpoints">
+      * `hotels/info`
 
-bash
-booking/list
+      * `booking/list`
 
+      * `booking/info`
 
-bash
-booking/info
+      * `ratesplan/update`
 
-
-bash
-ratesplan/update
-
-
-bash
-ratesplan/list
-
-</CodeGroup>
-</Tab>
-</Tabs>
+      * `ratesplan/list`
+    </Tab>
+  </Tabs>
 </Info>
