@@ -1,0 +1,97 @@
+---
+title: "¿Cuáles son las distintas formas de instalar el Motor de Reservas de Pxsol?"
+description: "Conoce las diferentes formas de instalar el Motor de Reservas de Pxsol según el tipo de sitio web del hotel, su configuración técnica y los productos contratados. Descubre cuándo se instala en el mismo dominio, cuándo se utiliza un subdominio y qué opciones existen para integraciones externas."
+---
+
+
+El Motor de Reservas de Pxsol está diseñado para integrarse de manera flexible y eficiente con la presencia online de su hotel. La forma de instalación depende principalmente de su configuración web actual y los productos que haya contratado con Pxsol.
+
+A continuación, se detallan los tres métodos principales de instalación.
+
+<CardGroup cols={3}>
+  <Card title="Mismo Dominio" icon="globe" href="#instalacion-en-el-mismo-dominio">
+    Integración perfecta si su sitio web también es de Pxsol. El motor se instala en una ruta como `hotel.com/reservas`.
+  </Card>
+  <Card title="Subdominio" icon="link-simple" href="#instalacion-en-un-subdominio">
+    El método más común. El motor se aloja en un subdominio, como `reservas.hotel.com`, manteniendo la marca del hotel.
+  </Card>
+  <Card title="Integración Externa" icon="puzzle-piece" href="#integracion-externa-widget-o-iframe">
+    Opción para insertar el motor dentro de una página existente de su sitio web actual utilizando un iframe o widget.
+  </Card>
+</CardGroup>
+
+## Instalación en el Mismo Dominio
+
+Este método se aplica exclusivamente a los hoteles que tienen contratado el **producto de Sitio Web de Pxsol**. En este escenario, el Motor de Reservas se convierte en una parte nativa de su sitio web.
+
+- **URL:** `https://www.sudominio.com/reservations`
+- **Cómo funciona:** El motor se instala directamente dentro de la estructura de su sitio web. Para el visitante, la transición entre la navegación del sitio y el proceso de reserva es completamente transparente.
+
+<Tip>
+**Beneficios de SEO y Marca:** Al estar en el mismo dominio, esta instalación refuerza la autoridad de su dominio principal (SEO) y ofrece una experiencia de usuario unificada, fortaleciendo la confianza y la identidad de su marca.
+</Tip>
+
+## Instalación en un Subdominio
+
+Esta es la opción más popular y recomendada para hoteles que ya tienen un sitio web desarrollado por un tercero pero desean utilizar el Motor de Reservas de Pxsol.
+
+- **URL:** `https://reservas.sudominio.com`
+- **Cómo funciona:** Se crea una dirección web separada pero vinculada a su dominio principal (un subdominio). Esta dirección apuntará a los servidores de Pxsol, donde se aloja su motor de reservas personalizado con la imagen de su hotel.
+
+<Steps>
+<Step title="Paso 1: Elección del Subdominio">
+  Usted elige el nombre del subdominio. Las opciones más comunes son `reservas`, `booking` o `motor`. El resultado sería, por ejemplo, `reservas.hotelmargarita.com`.
+</Step>
+
+<Step title="Paso 2: Configuración de DNS">
+  Debe crear un registro `CNAME` en la configuración de DNS de su dominio principal. Este registro apuntará el subdominio elegido a un host proporcionado por Pxsol.
+
+  <Note>
+  El equipo de Soporte de Pxsol le proporcionará el valor exacto para el registro `CNAME` (por ejemplo, `motor.pxsol.com`). No debe configurar esto hasta recibir las instrucciones precisas.
+  </Note>
+
+  Ejemplo de un registro `CNAME`:
+  text
+  Tipo:      CNAME
+  Nombre:    reservas
+  Valor:     motor.pxsol.com
+  TTL:       Auto (o 3600)
+  
+</Step>
+
+<Step title="Paso 3: Emisión del Certificado SSL">
+  Una vez que el registro CNAME se propaga correctamente, Pxsol se encarga de generar e instalar un certificado de seguridad SSL para su subdominio. Esto garantiza que todas las transacciones sean seguras (`https://`).
+
+  <Warning>
+  No utilice un registro de tipo `A` apuntando a una IP. Usar un `CNAME` permite a Pxsol realizar mantenimientos y actualizaciones de servidor sin requerir acciones de su parte en el futuro.
+  </Warning>
+</Step>
+
+<Step title="Paso 4: Enlace desde su Web">
+  Finalmente, debe actualizar los botones "Reservar Ahora" en su sitio web para que dirijan a los usuarios a la URL de su nuevo subdominio (ej. `https://reservas.hotelmargarita.com`).
+</Step>
+</Steps>
+
+## Integración Externa (Widget o iframe)
+
+Este método permite incrustar el Motor de Reservas directamente dentro de una página de su sitio web existente, utilizando una etiqueta HTML `<iframe>`. Es una opción menos común y se utiliza en casos específicos.
+
+- **Cómo funciona:** Se le proporciona un fragmento de código que usted o su desarrollador web puede "pegar" en el código HTML de una página de su sitio (por ejemplo, `sudominio.com/reservar`).
+
+<AccordionGroup>
+<Accordion title="Ventajas de la integración con iframe">
+  - **Implementación rápida:** No requiere configuración de DNS.
+  - **Contexto mantenido:** El usuario nunca abandona visualmente su sitio web, ya que el encabezado y el pie de página de su web pueden permanecer visibles.
+</Accordion>
+
+<Accordion title="Desventajas y Consideraciones">
+  - **Experiencia de usuario limitada:** Los `iframes` pueden presentar problemas de usabilidad en dispositivos móviles (scrolling, tamaño de pantalla).
+  - **Seguimiento y analíticas:** Medir el comportamiento del usuario a través de herramientas como Google Analytics puede ser más complejo.
+  - **Restricciones de pago:** Algunas pasarelas de pago no funcionan correctamente dentro de un `iframe` por motivos de seguridad.
+  - **Menor control:** La apariencia y el rendimiento están condicionados por el contenedor (su página web).
+</Accordion>
+</AccordionGroup>
+
+<Check>
+Independientemente del método, el equipo de Pxsol le guiará durante todo el proceso para asegurar una instalación exitosa y optimizada para su hotel.
+</Check>
