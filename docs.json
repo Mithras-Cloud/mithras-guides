@@ -658,7 +658,8 @@
               "integraciones/como_configurar_el_medio_de_pago_payway_en_el_motor_de_reservas",
               "integraciones/como_realizar_la_integracion_con_stripe",
               "integraciones/como_configurar_el_medio_de_pago_stripe",
-              "integraciones/guia_interna_turbosuite"
+              "integraciones/guia_interna_turbosuite",
+              "integraciones/guia_de_integracion_rms_pricelabs"
             ]
           },
           {
