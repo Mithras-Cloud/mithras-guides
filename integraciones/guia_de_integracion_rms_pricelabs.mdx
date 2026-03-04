@@ -3,13 +3,12 @@ title: "Guía de Integración RMS – PriceLabs"
 description: "En esta guía encontrarás el detalle sobre la integración con el RMS Pricelabs."
 ---
 
-
 ## Verificación inicial
 
-Antes de iniciar el proceso, debes confirmar que tu plan contratado en Pxsol habilite integraciones vía API.
+Antes de iniciar el proceso verifica que tengas activo el acceso a integraciones vía API. Esta funcionalidad puede requerir una habilitación adicional según tu contrato actual.&#x20;
 
 <Info>
-Si tienes dudas sobre tu plan actual, por favor contacta a nuestro equipo comercial para verificar la disponibilidad de esta funcionalidad.
+  Para confirmar o activarla, contactá a nuestro equipo comercial.
 </Info>
 
 ## Pasos para habilitar la integración
@@ -17,38 +16,38 @@ Si tienes dudas sobre tu plan actual, por favor contacta a nuestro equipo comerc
 Sigue estos pasos para conectar PriceLabs con Pxsol.
 
 <Steps>
-<Step title="Activar la integración en PriceLabs">
-Inicia el proceso en la plataforma de PriceLabs. Debes solicitar la activación o configuración de la integración con Pxsol API, siguiendo los procedimientos y requisitos que el propio RMS te indique.
-</Step>
+  <Step title="Activar la integración en PriceLabs">
+    Inicia el proceso en la plataforma de PriceLabs. Debes solicitar la activación o configuración de la integración con Pxsol API, siguiendo los procedimientos y requisitos que el propio RMS te indique.
+  </Step>
 
-<Step title="Solicitar la API Key a Pxsol">
-Una vez que hayas completado los pasos requeridos por PriceLabs, debes solicitar a Pxsol la generación de tu **API Key**. Esta es la URL que el RMS necesita para establecer la conexión.
+  <Step title="Solicitar la API Key a Pxsol">
+    Una vez que hayas completado los pasos requeridos por PriceLabs, debes solicitar a Pxsol la generación de tu **API Key**. Esta es la URL que el RMS necesita para establecer la conexión.
 
-Para solicitarla, envía un correo a [**api@pxsol.com**](mailto:api@pxsol.com) con la siguiente información:
+    Para solicitarla, envía un correo a [**api@pxsol.com**](mailto:api@pxsol.com) con la siguiente información:
 
-- **Asunto:** Solicitud de API Key para PriceLabs
-- **Cuerpo del mensaje:**
-    - Nombre de la propiedad a integrar.
-    - Confirmación de que ya completaste los pasos en PriceLabs.
+    * **Asunto:** Solicitud de API Key para PriceLabs
+    * **Cuerpo del mensaje:**
+      * Nombre de la propiedad a integrar.
+      * Confirmación de que ya completaste los pasos en PriceLabs.
 
-<Tip>
-Incluir toda la información en tu correo nos ayudará a generar tu API Key más rápido.
-</Tip>
+    <Tip>
+      Incluir toda la información en tu correo nos ayudará a generar tu API Key más rápido.
+    </Tip>
 
-Nuestro equipo generará la URL/API Key y te la enviará para que puedas finalizar la integración.
-</Step>
+    Nuestro equipo generará la URL/API Key y te la enviará para que puedas finalizar la integración.
+  </Step>
 </Steps>
 
 ## Alcance funcional de la integración
 
 La integración permite que PriceLabs envíe la siguiente información a Pxsol:
 
-- **Tarifas:** Configuración de precios por habitación o por persona.
-- **Restricciones:** Mínimo de noches, Cierre para Llegadas (COA) y Cierre para Salidas (COD).
-- **Alcance múltiple:** La información puede impactar a múltiples planes tarifarios y categorías de habitación simultáneamente.
+* **Tarifas:** Configuración de precios por habitación o por persona.
+* **Restricciones:** Mínimo de noches, Cierre para Llegadas (COA) y Cierre para Salidas (COD).
+* **Alcance múltiple:** La información puede impactar a múltiples planes tarifarios y categorías de habitación simultáneamente.
 
 <Warning>
-**Modalidad no disponible:** La configuración de precios *Per Party* no está soportada por esta integración.
+  **Modalidad no disponible:** La configuración de precios *Per Party* no está soportada por esta integración.
 </Warning>
 
 La cantidad de planes y categorías que se actualizan dependerá exclusivamente de la configuración que realices dentro de la plataforma de PriceLabs.
@@ -61,19 +60,19 @@ Para asegurar un funcionamiento correcto, ten en cuenta los siguientes puntos.
 
 Los planes tarifarios en Pxsol que reciban precios desde el RMS deben ser **tarifas independientes**. Esto significa que:
 
-- No deben tener reglas automáticas aplicadas.
-- No deben depender de otra tarifa mediante reglas de derivación.
+* No deben tener reglas automáticas aplicadas.
+* No deben depender de otra tarifa mediante reglas de derivación.
 
 <Warning>
-Si un plan tarifario tiene una regla activa, el precio enviado por PriceLabs podría ser sobrescrito o generar inconsistencias en tu inventario.
+  Si un plan tarifario tiene una regla activa, el precio enviado por PriceLabs podría ser sobrescrito o generar inconsistencias en tu inventario.
 </Warning>
 
 ### Escenarios mixtos (RMS + reglas en Pxsol)
 
 Puedes combinar el uso del RMS con reglas de Pxsol. Por ejemplo, si PriceLabs envía precios únicamente para:
 
-- Una sola categoría de habitación, o
-- Un único plan tarifario.
+* Una sola categoría de habitación, o
+* Un único plan tarifario.
 
 En este caso, puedes configurar reglas en Pxsol para que el resto de las tarifas o categorías se calculen automáticamente en base a esa tarifa principal que gestiona el RMS. Este esquema es ideal si deseas usar el RMS como tarifa base y mantener derivaciones internas.
 
