@@ -428,7 +428,8 @@
               "pms/como_recuperar_comprobantes_fiscales_manual_o_automaticamente",
               "pms/como_identificar_reservas_de_google_free_links",
               "pms/registro_de_cobro_de_reserva_manualmente_con_procesadores_integrados",
-              "pms/como_marcar_como_revisadas_varias_reservas_a_la_vez"
+              "pms/como_marcar_como_revisadas_varias_reservas_a_la_vez",
+              "pms/como_mover_reservas_de_nuevas_a_confirmadas_de_forma_masiva"
             ]
           },
           {
