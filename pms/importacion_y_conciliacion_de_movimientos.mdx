@@ -1,0 +1,152 @@
+---
+title: "Conciliación Bancaria Mediante Importación de Extracto"
+description: "Esta funcionalidad permite conciliar transacciones bancarias al importar un archivo con los movimientos de un extracto bancario. El sistema compara los movimientos importados con los registros ya presentes y sugiere posibles coincidencias. Proporciona herramientas para conciliar manualmente los movimientos o para crear nuevos registros en el sistema para aquellas transacciones que no tienen una contrapartida. Este proceso agiliza la gestión contable al automatizar la comparación de datos entre el banco y los registros internos."
+---
+
+<Warning>
+  Por el momento esta aplicación está disponible únicamente para Pxsol SAS
+</Warning>
+
+## Importación del Extracto Bancario
+
+Para iniciar el proceso de conciliación bancaria, siga estos pasos:
+
+<Steps>
+  <Step title="Acceder a la sección de conciliaciones">
+    Navegue al menú Interno y seleccione la opción "Conciliaciones".
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/23045710506816a3e345664215f7b6eee56bbe1ed5b.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar la cuenta recaudadora">
+    Dentro de la pantalla de conciliaciones, seleccione la cuenta recaudadora con la que desea trabajar.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1418197700874b4fdc13e54bf00f02d71272bbd640a.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Importar el extracto bancario">
+    Presione el botón rojo "Importar extracto" ubicado en la esquina superior derecha. Esto abrirá una ventana emergente.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14181977528e0109dab7db95ea78a63ec894bfb4b95.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar el archivo del extracto">
+    Haga clic en el botón "Seleccionar archivo..." dentro de la ventana "Importar extracto bancario". Esto abrirá el explorador de archivos del sistema operativo.
+
+    <Note>
+      El archivo debe estar en un formato compatible (XLS, XLSX, TXT).
+
+      Por el momento, solo pueden exportarse extractos del Banco Galicia
+    </Note>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/19500220201675aaa25ff07a4e115f94d36b6719459.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar la importación">
+    Después de seleccionar el archivo, su nombre aparecerá en la ventana de importación. El campo "Formato" generalmente se autocompleta. Confirme que el formato sea correcto.  Finalmente, haga clic en el botón rojo "Importar".
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5318242077b12dffacf1a0bb9eda13fcf20e160cc1.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Conciliación y Carga
+
+## Carga de un Movimiento Nuevo
+
+Para registrar un movimiento que aparece en el extracto bancario pero no en el sistema, sigue estos pasos:
+
+<Steps>
+  <Step title="Identifica el movimiento">
+    Localiza el movimiento en la lista de "Movimientos Importados". Estos movimientos suelen tener un porcentaje de coincidencia bajo o nulo.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5318464746cd6cc79f1366e995b33f158c67b03d00.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Accede a la opción de carga">
+    Haz clic en el botón "Cargar" ubicado en la columna "Acciones" correspondiente a la fila del movimiento. Esto abrirá una ventana emergente.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/886410810527ee2ef4c2c221e421658ba4a0e6af03.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Steps>
+  <Step title="Completa los campos en la ventana emergente">
+    Los campos de "Fecha" y "Monto" se completarán automáticamente con la información del extracto importado. Edita el campo "Descripción" si es necesario para mayor claridad.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/159553950399c144955188c8b8e04ad4fd1fe6cce58.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Asocia el movimiento a una cuenta y a una factura">
+    Utiliza el menú desplegable "Tipo de cuenta" para seleccionar la categoría adecuada: "Proveedor", "Cuenta corriente" o "Sin cuenta". Una vez seleccionado el "Tipo de cuenta", se habilitará el menú desplegable "Cuenta". Selecciona de la lista la cuenta específica a la que corresponde este movimiento. El listado mostrará todas las cuentas corrientes o de proveedores disponibles. Si la cuenta seleccionada tiene facturas pendientes de pago registradas en el sistema, utiliza el campo "Seleccione una factura" para buscar y elegir la factura correspondiente. Si no hay facturas pendientes, el campo indicará que no se encontraron resultados.
+
+    <Note>
+      Si seleccionas "Sin cuenta", el movimiento se registrará en la cuenta recaudadora general sin un vínculo específico.
+    </Note>
+  </Step>
+</Steps>
+
+<Steps>
+  <Step title="Guarda el movimiento">
+    Haz clic en el botón "Guardar" para finalizar el proceso. El nuevo movimiento se creará en el sistema y se conciliará automáticamente con la transacción del extracto bancario. Desaparecerá de la lista de "Movimientos Importados" y aparecerá en la sección "Movimientos Procesados".
+  </Step>
+
+  <Step title="">
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28365147536d59260f42c0b48a01b85302569407340.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Conciliación Manual de Movimientos
+
+Para conciliar manualmente una transacción importada con una ya existente en el sistema:
+
+<Steps>
+  <Step title="Selecciona el movimiento importado">
+    En la lista de "Movimientos Importados", marca la casilla de verificación situada a la izquierda de la fila correspondiente al movimiento.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/265923261153db2b531003dd3d8d3cb6aece4a31536.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona el movimiento del sistema">
+    Busca el movimiento correspondiente en la lista de "Movimientos del Sistema" y marca también su casilla de verificación.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/23046683959f6f933a0430e6a775eb6d3cef8bb3b0d.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Steps>
+  <Step title="Concilia los movimientos seleccionados">
+    Después de seleccionar un movimiento de cada lista, el sistema los vinculará visualmente y habilitará el botón "Conciliar Seleccionados" en la parte superior derecha de la pantalla. Haz clic en este botón para procesar la conciliación.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/24819506334c1f76ea0697e8ffd88cba793ba07f928.png" alt="Imagen" />
+    </Frame>
+
+    <Tip>
+      Es posible realizar conciliaciones masivas seleccionando múltiples pares de movimientos. Al seleccionar un par (uno importado y uno del sistema), ambos se marcarán con un color distintivo. Puedes repetir este proceso con otros pares, y cada nuevo par recibirá un color diferente para facilitar su identificación visual. Esta función también permite conciliar varias transacciones importadas contra una única transacción del sistema (o viceversa), seleccionando todas las casillas correspondientes.
+    </Tip>
+  </Step>
+
+  <Step title="" />
+</Steps>
