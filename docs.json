@@ -706,8 +706,7 @@
           {
             "group": "Performance",
             "pages": [
-              "performance/que_es_y_para_que_sirve",
-              "performance/mercado_pago_como_obtener_la_clave_secreta_de_webhooks"
+              "performance/que_es_y_para_que_sirve"
             ]
           },
           {
