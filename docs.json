@@ -660,7 +660,8 @@
               "integraciones/como_realizar_la_integracion_con_stripe",
               "integraciones/como_configurar_el_medio_de_pago_stripe",
               "integraciones/guia_interna_turbosuite",
-              "integraciones/guia_de_integracion_rms_pricelabs"
+              "integraciones/guia_de_integracion_rms_pricelabs",
+              "integraciones/mercado_pago_como_obtener_la_clave_secreta_de_webhooks"
             ]
           },
           {
