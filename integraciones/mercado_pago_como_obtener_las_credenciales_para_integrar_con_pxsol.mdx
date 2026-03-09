@@ -1,0 +1,125 @@
+---
+title: "Mercado Pago: ¿Cómo obtener las credenciales para integrar con Pxsol?"
+description: "Sigue esta guía paso a paso para crear una aplicación en Mercado Pago y obtener tus credenciales de producción: Public Key y Access Token."
+---
+
+Para integrar Mercado Pago como procesador de pagos, necesitas obtener tus credenciales de producción: la `Public Key` y el `Access Token`.&#x20;
+
+Esta guía te mostrará cómo crear una aplicación en tu cuenta de Mercado Pago para generar estas claves.
+
+<Steps>
+  <Step title="Accede a tu cuenta de Mercado Pago">
+    Ingresa a tu cuenta de Mercado Pago con tu usuario y contraseña.
+  </Step>
+
+  <Step title="Navega a la sección de Integraciones">
+    1. En el menú lateral izquierdo, selecciona **Configuración**.
+
+    <Frame>
+      ![Imagen](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/354616693682a60c25b7a4cf5e8e818ac73e0acc50.png)
+    </Frame>
+  </Step>
+
+  <Step title="Crea una nueva aplicación">
+    1. En la sección Negocio, selecciona **Integraciones**.
+
+    <Frame>
+      ![Imagen](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5319250635383b6199527046c1e00fcedc4896037e.png)
+    </Frame>
+
+    1. Luego selecciona **Tus integraciones.**
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2482317243051c7ec305431a739a5c7b8de3fb540f5.png" alt="Imagen" />
+    </Frame>
+
+    1. Haz clic en el botón **Crear Aplicación**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/124115866073d123a29fa50404887438792b0fd1bb2.png" alt="Imagen" />
+    </Frame>
+
+    1. Si ya tienes una aplicación creada, puedes utilizar la existente. En caso contrario, puedes crear una nueva, la pantalla se visualizará de la siguiente manera:
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/35461678308f296b6683f5ca3486262da1556da1d3.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Configura los detalles de la aplicación">
+    Sigue los pasos del asistente de configuración de Mercado Pago:
+
+    1. **Nombra la aplicación:** Escoge un nombre y haz clic en **Continuar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28369351216d0b66d05f7cb2ff1c7cfa0282ab9ea98.png" alt="Imagen" />
+    </Frame>
+
+    1. **Tipo de pago a integrar:** Selecciona **Pagos online**, luego elige **Con un desarrollo propio** y haz clic en **Continuar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/88654224958e6b61d8283e545c4bbf35e2e03c101a.png" alt="Imagen" />
+    </Frame>
+
+    1. **Producto a integrar:** Selecciona **Checkout API** y haz clic en **Continuar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28369352800987936a3de87239344f7ccbc2447b078.png" alt="Imagen" />
+    </Frame>
+
+    1. **Modelo de integración:** Selecciona **API de Pagos** y haz clic en **Continuar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/23050099904f555d28cfb888add2ca2c7d98503873d.png" alt="Imagen" />
+    </Frame>
+
+    1. **Confirmación y validación:** Para finalizar, completa las validaciones de seguridad:
+
+       * Marca la casilla **"Autorizo el uso de mis datos personales…"**.
+       * Completa la verificación reCAPTCHA ("No soy un robot").
+       * Haz clic en **Confirmar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14184677184112647b61b83a765ba8709530b762217.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Activa las credenciales de producción">
+    1. Una vez creada la aplicación, recarga la página para verla en tu listado de integraciones.
+       <Tip>
+         Puedes recargar la página presionando la tecla `F5` en Windows/Linux o `Cmd + R` en macOS. Este paso es importante para que la nueva aplicación aparezca correctamente en el listado.
+       </Tip>
+    2. Busca tu nueva aplicación en la lista y haz clic en **Activar credenciales**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7092368212b4ba750a2bc54bfd097b34461fa11efb.png" alt="Imagen" />
+    </Frame>
+
+    1. Completa el formulario de activación:
+       * Selecciona la **categoría** de tu negocio.
+       * Ingresa la **URL de tu sitio web o motor**.
+       * Marca nuevamente la casilla **"Autorizo el uso de mis datos personales…"**.
+       * Completa la verificación reCAPTCHA.
+    2. Haz clic en el botón **Activar credenciales de producción**
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/35461842366281ad16d56b69f9d7172f6202404e16.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Obtén tus credenciales">
+    ¡Listo! Una vez activadas, el sistema te mostrará tu **Public Key** y tu **Access Token**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/106385531107057ffebdcac12ffc9ceb1d47a95bd9f.png" alt="Imagen" />
+    </Frame>
+
+    <Check>
+      Has obtenido exitosamente tus credenciales de producción. Ya puedes copiarlas y pegarlas para integrar Mercado Pago en Pxsol.
+    </Check>
+  </Step>
+</Steps>
+
+## Próximos pasos: Configurar Webhooks
+
+Después de configurar tus credenciales, el siguiente paso crucial es configurar las **notificaciones** y obtener la clave secreta asociada. Esto permite a Mercado Pago notificar sobre el estado de los pagos en tiempo real (por ejemplo, si un pago fue aprobado, rechazado o está pendiente).
