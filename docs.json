@@ -720,6 +720,12 @@
             "pages": [
               "marca_blanca/marca_blanca__reservadirecto"
             ]
+          },
+          {
+            "group": "Tarifas y disponibilidad",
+            "pages": [
+              "tarifasydisponibilidad/como_aplicar_una_restriccion_para_el_motor_de_reservas"
+            ]
           }
         ]
       }
