@@ -727,6 +727,12 @@
             "pages": [
               "tarifasydisponibilidad/como_aplicar_una_restriccion_para_el_motor_de_reservas"
             ]
+          },
+          {
+            "group": "Plano de mesa",
+            "pages": [
+              "plano_de_mesa/guia_de_uso__aplicacion_plano_de_mesa"
+            ]
           }
         ]
       }
