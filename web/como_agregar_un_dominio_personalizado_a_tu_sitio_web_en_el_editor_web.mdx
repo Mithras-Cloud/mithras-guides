@@ -1,0 +1,104 @@
+---
+title: "¿Cómo agregar un dominio personalizado a tu sitio web en el Editor Web?"
+description: "Aprende cómo conectar tu dominio personalizado configurando los registros DNS correctamente."
+---
+
+## Introducción
+
+Conectar un dominio personalizado permite que tu sitio web se publique con tu propia dirección web, ofreciendo una imagen más profesional a tus visitantes.
+
+Para conectar tu dominio, necesitas seguir tres pasos principales:
+1.  Agregar el dominio dentro del Editor Web.
+2.  Configurar los registros DNS en tu proveedor de dominio.
+3.  Verificar la conexión para que el dominio quede activo.
+
+<Warning>
+### Antes de comenzar
+Asegúrate de cumplir con los siguientes requisitos antes de continuar:
+
+*   Tener acceso a la **configuración del sitio** en el Editor Web.
+*   Poder editar la **zona DNS de tu dominio**. Esta se gestiona en el panel de control de tu proveedor de dominio (por ejemplo, GoDaddy, Namecheap, Cloudflare, DonWeb, Hostinger).
+</Warning>
+
+<Info>
+### ¿Dónde se encuentra esta función?
+Puedes acceder a la configuración del dominio desde el menú de navegación: **Sitio web → Propiedades → Dominio**.
+</Info>
+
+## Conectar tu dominio
+
+Sigue estos pasos para conectar, configurar y verificar tu dominio personalizado.
+
+<Steps>
+<Step title="Paso 1 — Ir a Propiedades del sitio">
+  Dentro del editor de tu sitio web, navega a la sección **Propiedades** en el menú lateral.
+
+  <Frame caption="Ubicación de la sección Propiedades del sitio web.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7094764440b254e951626f280277c9e2c5c50497e7.png" alt="Acceso a la sección Propiedades desde el menú principal del editor." />
+  </Frame>
+</Step>
+
+<Step title="Paso 2 — Agregar el dominio">
+  Haz clic en el botón **Agregar un nombre de dominio**. Luego, ingresa tu dominio en el campo correspondiente.
+
+  <Tip>
+  Ingresa el dominio sin `http://` o `https://`. Utiliza el formato `www.tudominio.com`.
+  </Tip>
+
+  <Frame caption="Campo para agregar un nuevo nombre de dominio.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17736912660ad72998432cdb99e194576f84892b3b9.png" alt="Formulario para ingresar el nombre de dominio personalizado." />
+  </Frame>
+</Step>
+
+<Step title="Paso 3 — Configurar los registros DNS">
+  Después de agregar el dominio, su estado aparecerá como **pendiente**. Haz clic en **Instrucciones de DNS** para obtener los valores que necesitas configurar en tu proveedor de dominio.
+
+  Debes agregar los siguientes dos registros DNS en la zona DNS de tu dominio.
+
+  <Frame caption="Instrucciones con los registros DNS necesarios para la verificación.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/12415841032449000134eb7d678546e771fc2f503bc.png" alt="Ventana modal mostrando los registros TXT y CNAME pendientes de configuración." />
+  </Frame>
+
+  ### Registro TXT
+  Este registro se utiliza para verificar que eres el propietario del dominio.
+  1. Copia el **nombre** y el **valor** indicados en las instrucciones.
+  2. En tu proveedor de dominio, crea un nuevo registro de tipo **TXT**.
+  3. Pega los datos copiados en los campos correspondientes.
+  4. Guarda los cambios.
+
+  ### Registro CNAME
+  Este registro apunta tu dominio a los servidores del Editor Web.
+  *   **Tipo:** CNAME
+  *   **Nombre:** `www`
+  *   **Destino/Valor:** El valor indicado en las instrucciones de DNS.
+
+</Step>
+
+<Step title="Paso 4 — Verificar el dominio">
+  Una vez que hayas agregado ambos registros DNS en tu proveedor, regresa al Editor Web y haz clic en **Verificar ahora**.
+
+  Si el sistema detecta los registros correctamente, el estado del dominio cambiará de **pendiente** a **activo**.
+
+  <Warning>
+  La propagación de los cambios de DNS puede tardar entre 5 minutos y 24 horas. Si la verificación falla, espera un tiempo y vuelve a intentarlo.
+  </Warning>
+</Step>
+</Steps>
+
+<Check>
+### Resultado esperado
+Una vez completado el proceso, tu dominio personalizado estará correctamente conectado a tu sitio web.
+*   El estado del dominio aparecerá como **activo**.
+*   Los visitantes podrán acceder a tu sitio web utilizando tu dominio.
+*   El sitio contará con un certificado SSL para una conexión segura (HTTPS).
+</Check>
+
+<AccordionGroup>
+<Accordion title="Preguntas Frecuentes">
+  Esta guía responde a las siguientes preguntas:
+  - ¿Cómo conectar mi dominio al sitio web?
+  - ¿Qué registros DNS debo configurar?
+  - ¿Por qué mi dominio aparece como pendiente?
+  - ¿Cómo verificar que el dominio quedó correctamente configurado?
+</Accordion>
+</AccordionGroup>
