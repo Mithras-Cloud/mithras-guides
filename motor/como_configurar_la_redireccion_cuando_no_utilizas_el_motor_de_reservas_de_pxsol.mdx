@@ -1,0 +1,112 @@
+---
+title: "¿Cómo configurar la redirección cuando no utilizas el motor de reservas de Pxsol?"
+description: "Aprende a desactivar el motor de reservas de Pxsol y redirigir a un motor externo desde la configuración del punto de venta."
+---
+
+## Introducción
+
+Si no utilizas el motor de reservas de Pxsol, puedes redirigir a tus usuarios a un proveedor externo. Esta guía te muestra cómo configurar esta redirección directamente desde los ajustes de tu punto de venta.
+
+Esta funcionalidad es clave para:
+
+<CardGroup cols={3}>
+  <Card title="Flexibilidad Total" icon="link">
+    Integra tu sitio web con cualquier motor de reservas externo para adaptarte a tus necesidades operativas.
+  </Card>
+  <Card title="Datos Precisos" icon="chart-simple">
+    Asegura que las reservas y métricas se gestionen en la plataforma correcta, evitando inconsistencias.
+  </Card>
+  <Card title="Experiencia Coherente" icon="user-check">
+    Ofrece a tus usuarios un flujo de reserva fluido y sin interrupciones, alineado con tu oferta comercial.
+  </Card>
+</CardGroup>
+
+## Antes de comenzar
+
+Para seguir esta guía, asegúrate de tener:
+
+*   Acceso al módulo **Configuración de Punto de Venta**.
+*   Permisos para **editar las configuraciones** del punto de venta.
+
+## ¿Dónde encontrar la configuración?
+
+Puedes acceder a esta función desde la siguiente ruta:
+
+**Omnibox → Configuración de Punto de Venta → Otros ajustes**
+
+## Cómo configurar la redirección a un motor externo
+
+Sigue estos pasos para desactivar el motor de Pxsol y configurar la URL de redirección.
+
+<Steps>
+<Step title="1. Accede a la configuración del punto de venta">
+  Utiliza el buscador (Omnibox), escribe **"punto"** y selecciona la opción **Configuración de Punto de Venta** en los resultados.
+</Step>
+
+<Step title="2. Navega a 'Otros ajustes'">
+  Dentro del panel de configuración, desplázate hasta la sección **Otros ajustes**. Allí encontrarás la opción **Motor de reservas**.
+
+  <Frame caption="Ubicación de la opción Motor de reservas en la sección Otros ajustes.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7095748504b29aa0e27cd4897a4432c3f72ef4cd12.png" alt="Pantalla de configuración del punto de venta, destacando la sección 'Otros ajustes'." />
+  </Frame>
+</Step>
+
+<Step title="3. Desactiva el motor de Pxsol">
+  Busca el interruptor con la etiqueta "Habilita el motor de reservas de Pxsol para este punto de venta".
+
+  <Frame caption="Interruptor del motor de reservas de Pxsol en estado activado.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/141914970963fd05a4cff5d696d0cbc2444b162bbaa.png" alt="Interruptor del motor de reservas activado, mostrando el color verde." />
+  </Frame>
+  
+  Para usar un motor externo, haz clic en el interruptor para desactivarlo. Al hacerlo, aparecerá un nuevo campo para ingresar la URL de redirección.
+
+  <Frame caption="El campo para la URL de redirección aparece al desactivar el motor de Pxsol.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/23061182885fbd703185f911f93478a23e2b8a2f54d.png" alt="Interruptor desactivado y campo de texto para la URL ahora visible." />
+  </Frame>
+</Step>
+
+<Step title="4. Ingresa la URL del motor externo">
+  En el campo de texto que apareció, pega la URL completa del motor de reservas externo a donde quieres redirigir a tus usuarios.
+
+  <Frame caption="Campo de texto con una URL de ejemplo para el motor de reservas externo.">
+    <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/10643622918c1e559f94cbf0f6b8e2d7c19438bf8d7.png" alt="Ejemplo de una URL completa ingresada en el campo de redirección." />
+  </Frame>
+
+  <Tip>
+    Asegúrate de que la URL sea correcta y esté funcionando. Cópiala y pégala en tu navegador para verificar que dirige a la página deseada antes de guardar.
+  </Tip>
+</Step>
+
+<Step title="5. Guarda los cambios">
+  Haz clic en el botón **Guardar Configuración** al final de la página para aplicar los cambios.
+  
+  <Check>
+  ¡Listo! El sistema ahora redirigirá automáticamente a los usuarios al motor externo cuando intenten realizar una reserva.
+  </Check>
+</Step>
+</Steps>
+
+## Consideraciones importantes
+
+<Warning title="Impacto en el seguimiento de datos">
+  Al desactivar el motor de Pxsol, ten en cuenta lo siguiente:
+  - **No se registrarán reservas** ni conversiones dentro del sistema Pxsol.
+  - Las **métricas de rendimiento** asociadas a las reservas no se generarán en la plataforma.
+  - Todo el flujo de compra y la recopilación de datos dependerán exclusivamente del proveedor externo.
+</Warning>
+
+## Preguntas frecuentes
+
+<AccordionGroup>
+  <Accordion title="¿Cómo puedo volver a activar el motor de reservas de Pxsol?">
+    Simplemente sigue los mismos pasos de esta guía, vuelve a activar el interruptor del **Motor de reservas** y guarda la configuración. El campo de la URL externa desaparecerá.
+  </Accordion>
+
+  <Accordion title="¿Qué sucede si la URL del motor externo es incorrecta?">
+    Si la URL es incorrecta o está rota, los usuarios serán redirigidos a una página de error (como un 404). Esto interrumpirá el proceso de reserva y generará una mala experiencia de usuario.
+  </Accordion>
+
+  <Accordion title="¿Esta configuración afecta a todos mis puntos de venta?">
+    No, esta configuración es específica para el punto de venta que estás editando. Puedes tener diferentes configuraciones para cada uno de tus puntos de venta.
+  </Accordion>
+</AccordionGroup>
