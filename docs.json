@@ -6045,6 +6045,10 @@
     {
       "source": "/es/configuración-inicial#usuarios",
       "destination": "/configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario"
+    },
+    {
+      "source": "/configuración-inicial#usuarios",
+      "destination": "/configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario"
     }
   ]
 }
