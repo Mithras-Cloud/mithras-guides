@@ -6041,6 +6041,10 @@
     {
       "source": "/cómo-agregar-condiciones-a-una-promoción-beta",
       "destination": "/motor/como_agregar_condiciones_a_una_promocion_o_anuncio"
+    },
+    {
+      "source": "/es/configuración-inicial#usuarios",
+      "destination": "/configuración_inicial/como_habilitar_o_deshabilitar_la_visualizacion_de_aplicaciones_a_un_usuario"
     }
   ]
 }
