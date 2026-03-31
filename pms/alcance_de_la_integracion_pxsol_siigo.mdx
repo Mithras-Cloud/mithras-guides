@@ -1,0 +1,170 @@
+---
+title: "Alcance de la Integración Pxsol - SIIGO"
+description: "Esta guía presenta el alcance, funcionamiento y consideraciones clave de la integración entre Pxsol y Siigo para la emisión de facturación electrónica en Colombia."
+---
+
+## 🎯 Descripción General
+
+La integración entre Pxsol (PMS hotelero) y Siigo le permite emitir la **facturación electrónica requerida en Colombia** de manera eficiente.
+
+En este flujo:
+- **Pxsol** gestiona la operación hotelera y construye la estructura de la factura.
+- **Siigo** actúa como su proveedor tecnológico para la facturación electrónica.
+- **Siigo** envía la factura a la DIAN para su validación oficial.
+- **Pxsol** recibe y almacena el PDF de la factura validada, listo para ser enviado al huésped.
+
+<Info>
+El objetivo principal es centralizar toda la operación de facturación dentro de su PMS, garantizando el cumplimiento fiscal sin necesidad de cambiar entre sistemas.
+</Info>
+
+## ⚙️ Precondiciones del Servicio
+
+Para activar y utilizar la integración, debe cumplir con los siguientes requisitos:
+
+<CardGroup cols={2}>
+  <Card title="Cuenta y Plan en Siigo" icon="cloud">
+    Necesita un plan activo de Siigo en la línea de **software administrativo**.
+    Consulte los planes disponibles [aquí](https://www.siigo.com/precios-siigo/).
+  </Card>
+  <Card title="Habilitación Fiscal" icon="briefcase">
+    Su empresa debe estar habilitada como **facturador electrónico ante la DIAN**.
+  </Card>
+  <Card title="Credenciales de Integración" icon="key">
+    Debe obtener de Siigo su **Usuario API** y **API Key** (Access Key).
+    Siga nuestra [guía de obtención de credenciales](https://ayuda.pxsol.com/pms/como_obtener_el_usuario_api_o_api_access_key_de_siigo_para_realizar_la_integracion_de_facturacion).
+  </Card>
+  <Card title="Estructura de Cuenta" icon="building">
+    La integración se configura **por hotel**. Cada hotel debe tener su propia cuenta en Siigo o operar como una sucursal (seller) dentro de una cuenta principal.
+  </Card>
+</CardGroup>
+
+## 🧾 Modelo de Facturación
+
+### Generación de Factura
+Usted decide el momento exacto para emitir la factura directamente desde Pxsol. Antes del envío final, puede revisar y modificar todos los datos necesarios para asegurar su exactitud.
+
+### Construcción de la Factura
+El proceso es simple:
+1.  **Seleccione los consumos** (folios) que desea incluir en la factura.
+2.  **Complete el formulario fiscal** con los datos del cliente.
+3.  **Envíe la factura**. Pxsol la transmite a Siigo y, en segundos, recibe el PDF oficial.
+
+### Nivel de Detalle
+La factura se envía a Siigo con un desglose completo, incluyendo:
+- Ítems detallados (alojamiento, extras, consumos de restaurante, etc.).
+- Impuestos aplicados a cada ítem de forma individual.
+
+### Creación Automática de Productos
+Si un ítem facturado desde Pxsol no existe previamente en su cuenta de Siigo, la integración lo gestiona automáticamente.
+
+<Note>
+El sistema creará un nuevo producto en Siigo utilizando el código y la descripción definidos en Pxsol, y lo asignará a una categoría contable por defecto que usted configure en Siigo.
+</Note>
+
+## 🔄 Flujo de Integración
+
+La comunicación entre Pxsol y Siigo es un proceso **sincrónico**, lo que significa que obtiene una respuesta en cuestión de segundos.
+
+<Steps>
+<Step title="Envío y Validación">
+  Usted envía la factura desde Pxsol. El sistema la transmite a Siigo, que a su vez la valida en tiempo real con la DIAN.
+</Step>
+<Step title="Recepción de Respuesta">
+  El resultado de la validación puede ser:
+  - **✅ Aprobada**: Pxsol recibe y almacena el PDF de la factura.
+  - **❌ Error**: El sistema muestra un mensaje claro con el motivo del rechazo para que pueda corregirlo.
+</Step>
+<Step title="Gestión de Estados en Pxsol">
+  La factura en Pxsol reflejará su estado:
+  - **Guardada**: Preparada pero aún no enviada a la DIAN.
+  - **Emitida**: Validada por la DIAN. Puede marcarse como "Cobrada" o "A cobrar".
+</Step>
+<Step title="Reintentos">
+   Si una factura es rechazada por un error en los datos, puede corregirla en Pxsol y reenviarla para su validación sin inconvenientes.
+</Step>
+</Steps>
+
+## 📄 Documentos Soportados
+
+La integración está diseñada para gestionar los siguientes documentos fiscales:
+- **Facturas de Venta**
+- **Notas Crédito**
+
+## 📥 Documentación y Almacenamiento
+
+Una vez que Siigo emite la factura, Pxsol gestiona el documento PDF de la siguiente manera:
+- **Almacenamiento**: El PDF se guarda de forma segura dentro de Pxsol.
+- **Vinculación**: El archivo queda directamente asociado a la factura correspondiente en el sistema.
+- **Distribución**: Puede enviar el PDF por correo electrónico al cliente con un solo clic.
+
+## 🔧 Configuración y Dependencias
+
+Para un funcionamiento correcto, es necesario sincronizar ciertos catálogos desde Siigo hacia Pxsol.
+
+<Tip>
+Antes de comenzar a facturar, debe realizar una importación inicial de Clientes, Países y Ciudades desde Siigo.
+</Tip>
+
+- **Guía para importar Clientes**: [Ver tutorial](https://ayuda.pxsol.com/pms/como_importar_clientes_de_siigo_a_pxsol_para_la_facturacion_colombia)
+- **Guía para importar Países y Ciudades**: [Ver tutorial](https://ayuda.pxsol.com/facturaci%C3%B3n/como_importar_paises_y_ciudades_de_siigo_a_pxsol_para_la_facturacion_colombia)
+
+## ⚠️ Limitaciones de la Integración
+
+Es importante conocer las siguientes limitaciones para gestionar sus expectativas y procesos.
+
+<AccordionGroup>
+<Accordion title="Sincronización y Dirección de Datos">
+  La integración es **unidireccional** (Pxsol → Siigo). Los únicos datos que se leen desde Siigo son los clientes y localidades durante la importación inicial. Cualquier cambio posterior en Siigo debe ser replicado manualmente en Pxsol si es necesario.
+</Accordion>
+<Accordion title="Asignación Contable">
+  Cuando Pxsol crea un producto nuevo en Siigo, se le asigna una **única categoría contable por defecto**. Esta asignación no puede ser modificada automáticamente desde Pxsol en envíos posteriores.
+</Accordion>
+<Accordion title="Edición de Documentos">
+  Una vez que una factura ha sido emitida y validada por la DIAN, **no puede ser modificada**. La única acción permitida es anularla mediante una Nota Crédito o cambiar su estado de pago ("Cobrada" / "A cobrar") dentro de Pxsol.
+</Accordion>
+<Accordion title="Medios de Pago">
+  Solo se permite registrar **una forma de pago por factura**.
+</Accordion>
+<Accordion title="Descuentos">
+  La integración no soporta descuentos porcentuales por ítem. Los descuentos deben aplicarse como un **valor monetario directo** sobre el producto.
+</Accordion>
+<Accordion title="Dependencias Externas">
+  El éxito y el tiempo de respuesta de la validación fiscal dependen completamente de la disponibilidad y rendimiento de los servicios de Siigo y la DIAN.
+</Accordion>
+</AccordionGroup>
+
+## ⚖️ Consideraciones Fiscales
+
+### Impuestos
+La integración está preparada para manejar múltiples impuestos por ítem.
+
+| Impuestos Soportados     | Impuestos No Soportados |
+| ------------------------ | ----------------------- |
+| ✅ IVA 19%               | ❌ ReteICA              |
+| ✅ IVA 0%                | ❌ ReteIVA              |
+| ✅ IVA Exento            | ❌ Impuestos globales   |
+| ✅ Retefuente            |                         |
+
+<Warning>
+Los impuestos no soportados, como **ReteICA** y **ReteIVA**, no pueden ser aplicados. Además, todos los impuestos deben asignarse a nivel de ítem, ya que no se soportan impuestos a nivel global de la factura.
+</Warning>
+
+### Facturación Internacional
+Puede emitir facturas en moneda extranjera sin problemas. El sistema gestionará la conversión según las normativas vigentes.
+
+## ✅ Beneficios Clave
+
+<CardGroup>
+  <Card title="Operación Centralizada" icon="switches">
+    Emita facturación electrónica y gestione su operación hotelera desde una única plataforma: Pxsol.
+  </Card>
+  <Card title="Cumplimiento Fiscal" icon="shield-check">
+    Asegure el cumplimiento normativo con la DIAN de manera automatizada y segura.
+  </Card>
+  <Card title="Sincronización Inteligente" icon="sparkles">
+    Ahorre tiempo con la creación automática de productos en Siigo directamente desde Pxsol.
+  </Card>
+  <Card title="Almacenamiento y Envío" icon="envelope">
+    Guarde y distribuya los comprobantes fiscales a sus clientes de forma automática y profesional.
+  </Card>
+</CardGroup>
