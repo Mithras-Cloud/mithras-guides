@@ -446,7 +446,8 @@
               "pms/registro_de_cobro_de_reserva_manualmente_con_procesadores_integrados",
               "pms/como_marcar_como_revisadas_varias_reservas_a_la_vez",
               "pms/como_mover_reservas_de_nuevas_a_confirmadas_de_forma_masiva",
-              "pms/importacion_y_conciliacion_de_movimientos"
+              "pms/importacion_y_conciliacion_de_movimientos",
+              "pms/alcance_de_la_integracion_pxsol_siigo"
             ]
           },
           {
