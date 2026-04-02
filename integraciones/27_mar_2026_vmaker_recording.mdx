@@ -1,0 +1,178 @@
+---
+title: "Configuración de la Integración con Mercado Pago "
+description: "Aprende a integrar Mercado Pago en tu sistema. Este tutorial te guiará a través de la instalación, configuración de credenciales, Webhooks y la creación de un medio de pago."
+---
+
+## Configuración de la Integración con Mercado Pago
+
+Este proceso detalla los pasos necesarios para integrar una cuenta de Mercado Pago con Pxsol. La instalación de la aplicación de Mercado Pago, la configuración y validación de las credenciales de la cuenta, la configuración de los Webhooks y, finalmente, la creación de un nuevo medio de pago asociado para que pueda ser utilizado en el motor de reservas y otras funcionalidades del sistema como "Cobrar reserva".
+
+<Note>
+  Sigue cuidadosamente estas instrucciones para asegurar una integración exitosa y el correcto funcionamiento de los pagos a través de Mercado Pago.
+</Note>
+
+## Sección 1: Instalación y configuración de Credenciales
+
+Para comenzar la integración, primero debes instalar la aplicación correspondiente desde el panel de configuraciones > Integraciones. Este paso inicial habilita la conexión entre el sistema y el procesador de pagos, lo que te permitirá configurar las credenciales posteriormente.
+
+<Steps>
+  <Step title="Accede a la aplicación &#x22;Integraciones&#x22;">
+    En la barra lateral izquierda, selecciona la opción "Configuración". Luego, en el submenú, haz clic en "Integraciones".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158197_0_69cec3b5bb0d0.jpg" alt="Barra lateral izquierda con la opción Configura seleccionada y el submenú Integraciones resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Instala la Aplicación de Mercado Pago">
+    Localiza la tarjeta de la integración de Mercado Pago (RECOMENDADA) dentro del listado de aplicaciones disponibles y procede con su instalación. Esto preparará el sistema para recibir las credenciales de tu cuenta.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158197_1_69cec3b5e46ad.jpg" alt="Vista de la tienda de integraciones, con la tarjeta de Mercado Pago (RECOMENDADA) y el botón INSTALAR resaltados." />
+    </Frame>
+  </Step>
+
+  <Step title="Confirma la Instalación">
+    Aparecerá una ventana emergente solicitando tu confirmación para instalar la integración. Acepta para continuar con el proceso. Una vez completado, se abrirá una nueva ventana específica para la configuración de las credenciales.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158198_2_69cec3b60fcd8.jpg" alt="Ventana emergente de confirmación de instalación con el botón SÍ, INSTALAR seleccionado." />
+    </Frame>
+  </Step>
+
+  <Step title="Agrega una Nueva Credencial">
+    Selecciona la opción para agregar una nueva credencial. Esto abrirá un panel donde deberás ingresar la información necesaria para conectar tu cuenta.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158198_3_69cec3b63e9e6.jpg" alt="Ventana de listado de credenciales vacía, con el mensaje Todavía no tienes credenciales configuradas y el botón + Añadir credencial resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresa tus Credenciales de Mercado Pago">
+    Completa los campos en el panel "Añadir credencial". Deberás seleccionar un punto de venta, asignar un nombre único para identificar esta credencial, e ingresar la "Public Key" y el "Access Token" obtenidos desde tu cuenta de desarrollador de Mercado Pago.
+
+    Para obtener estas credenciales, puedes seguir la siguiente [guía](https://ayuda.pxsol.com/integraciones/mercado_pago_como_obtener_las_credenciales_para_integrar_con_pxsol#mercado-pago-como-obtener-las-credenciales-para-integrar-con-pxsol "¿Cómo obtener las credenciales?").
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158198_4_69cec3b676a4a.jpg" alt="Panel lateral Añadir credencial de Mercado Pago con campos para el nombre de la credencial, Public Key y Access Token siendo completados." />
+    </Frame>
+
+    <Warning>
+      Asegúrate de ingresar correctamente la Public Key y el Access Token. Estos valores son esenciales para la conexión con Mercado Pago.
+    </Warning>
+  </Step>
+
+  <Step title="Guarda la Configuración de la Credencial">
+    Una vez ingresados todos los datos de la credencial, guarda la configuración. El sistema almacenará esta información y la mostrará en el listado principal de credenciales.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158198_5_69cec3b692946.jpg" alt="Botón rojo Añadir en la parte inferior del panel de credenciales." />
+    </Frame>
+  </Step>
+
+  <Step title="Verifica el Estado de la Credencial">
+    La credencial recién creada aparecerá en el listado. Observa que el "Estado de Webhooks" y el "Estado de validación" se mostrarán como pendientes, indicando que se requieren pasos adicionales para completar la configuración.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158198_6_69cec3b6b0af4.jpg" alt="Tabla de listado de credenciales mostrando una nueva entrada con el estado de Webhooks y validación marcados con un ícono de advertencia rojo." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Sección 2: Configuración de Webhooks y Validación
+
+Para avanzar es necesario configurar las notificaciones automáticas sobre el estado de los pagos, es fundamental configurar los Webhooks. Además, deberás validar la credencial para confirmar su funcionamiento.
+
+<Steps>
+  <Step title="Configura los Webhooks">
+    Accede al menú de acciones de la credencial que acabas de crear.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158198_7_69cec3b6e5535.jpg" alt="Menú desplegable Acciones con la opción Configurar Webhooks seleccionada." />
+    </Frame>
+
+    En el panel de configuración de Webhooks, deberás ingresar la "Clave Secreta" que se genera en tu cuenta de Mercado Pago. Sigue las instrucciones de la [guía proporcionada](https://ayuda.pxsol.com/integraciones/mercado_pago_como_obtener_la_clave_secreta_de_webhooks#mercado-pago-como-obtener-la-clave-secreta-de-webhooks "¿Cómo obtener la clave secreta de Webhooks?") para obtener esta clave y configurar la URL de notificaciones en la plataforma de Mercado Pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158199_8_69cec3b713bb9.jpg" alt="Panel Configurar Webhooks de Mercado Pago con un campo para ingresar la Clave Secreta." />
+    </Frame>
+  </Step>
+
+  <Step title="Espera la Autorización de Producción">
+    Antes de validar la credencial, es necesario solicitar la autorización de producción en tu cuenta de Mercado Pago. Este proceso puede tardar hasta 48 horas. Una vez que Mercado Pago apruebe tu solicitud, podrás proceder con el siguiente paso de validación.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158199_9_69cec3b742c36.jpg" alt="Tabla de credenciales con el estado de Webhooks ya configurado (ícono verde) y el estado de validación aún pendiente (ícono rojo)." />
+    </Frame>
+  </Step>
+
+  <Step title="Valida la Credencial">
+    Con la autorización de producción aprobada, accede nuevamente al menú de acciones y selecciona la opción para validar la credencial. Este paso es crucial para confirmar que la cuenta puede procesar pagos reales.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158199_10_69cec3b75b8d1.jpg" alt="Menú desplegable Acciones con la opción Validar credencial seleccionada." />
+    </Frame>
+
+    Para validar la credencial, el sistema realizará un cobro de un monto mínimo a una tarjeta de crédito/débito real, el cual será devuelto automáticamente. Completa el formulario con los datos de la tarjeta para realizar esta transacción de prueba y finalizar la validación.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158199_11_69cec3b792a8f.jpg" alt="Panel Validar credencial de Mercado Pago con un formulario para ingresar datos de una tarjeta de crédito." />
+    </Frame>
+
+    <Check>
+      Una vez que la validación sea exitosa, el estado de la credencial cambiará a "Validado".
+    </Check>
+  </Step>
+</Steps>
+
+## Sección 3: Creación del Medio de Pago
+
+Una vez que la credencial esté completamente instalada y validada (con ambos estados en verde), debes crear el medio de pago correspondiente en el sistema.
+
+<Steps>
+  <Step title="Accede a la Sección de Medios de Pago">
+    Utiliza el buscador para acceder a la sección "Medios de pago" o ingresando directamente desde la interfaz de credenciales, donde encontrarás un acceso directo disponible.
+  </Step>
+
+  <Step title="Crea un Nuevo Medio de Pago">
+    En la pantalla de **“Medios de pago”**, inicia la creación de un nuevo medio de pago. Esta configuración definirá cómo se mostrará y operará la opción de pago con Mercado Pago en el motor de reservas y, además, habilitará este procesador dentro del botón **“Cobrar reserva”** en cada reserva.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158199_13_69cec3b7f21af.jpg" alt="Pantalla de listado de medios de pago con el botón + NUEVO MEDIO DE PAGO resaltado en la esquina superior derecha." />
+    </Frame>
+  </Step>
+
+  <Step title="Configura el Medio de Pago para Mercado Pago">
+    En el panel de creación, selecciona la categoría "Mercado Pago (RECOMENDADA)" y asigna un nombre único y descriptivo que te permita identificar este medio de pago, por ejemplo, "Pago con tarjeta de crédito/débito (Mercado Pago)".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158200_14_69cec3b81cae4.jpg" alt="Panel Crear medio de pago con el campo Categoría desplegado, mostrando la opción Mercado Pago (RECOMENDADA)." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona la cuenta recaudadora, vincula la Credencial y Configura Plantillas de Correo">
+    A continuación, selecciona la cuenta recaudadora (puedes elegir una existente o crear una nueva). Luego, vincula la credencial previamente configurada y validada en los pasos anteriores.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158200_15_69cec3b83f416.jpg" alt="Sección Credencial de pasarela de pago con el menú desplegable mostrando la credencial previamente creada y validada." />
+    </Frame>
+
+    Configura las plantillas de correo que se enviarán al cliente en diferentes momentos del proceso de pago. Deberás seleccionar una plantilla para la pre-confirmación de la reserva, otra para notificar un pago exitoso y una última para informar sobre un pago fallido.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158200_16_69cec3b872174.jpg" alt="Secciones para seleccionar las plantillas de correo para transacciones, pagos exitosos y problemas con el pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Guarda la Configuración Final">
+    Finaliza la configuración estableciendo los parámetros adicionales como las políticas aplicables, las monedas aceptadas, posibles recargos o descuentos, la ventana de días para la reserva y los puntos de venta donde este medio de pago estará disponible. Al terminar, guarda los cambios.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/04/02/screenshot_1775158200_17_69cec3b89496b.jpg" alt="Parte inferior del panel Crear medio de pago, mostrando las opciones de configuración y el botón GUARDAR CAMBIOS resaltado." />
+    </Frame>
+
+    <Check>
+      Una vez completados estos pasos, Mercado Pago estará integrado y listo para ser utilizado en el sistema.
+    </Check>
+  </Step>
+</Steps>
