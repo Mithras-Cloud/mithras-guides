@@ -448,7 +448,8 @@
               "pms/como_mover_reservas_de_nuevas_a_confirmadas_de_forma_masiva",
               "pms/importacion_y_conciliacion_de_movimientos",
               "pms/alcance_de_la_integracion_pxsol_siigo",
-              "pms/como_crear_centros_de_costo"
+              "pms/como_crear_centros_de_costo",
+              "pms/como_crear_subgrupos_para_los_centros_de_costo"
             ]
           },
           {
