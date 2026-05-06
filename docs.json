@@ -689,7 +689,8 @@
               "integraciones/guia_de_integracion_rms_pricelabs",
               "integraciones/mercado_pago_como_obtener_la_clave_secreta_de_webhooks",
               "integraciones/mercado_pago_como_obtener_las_credenciales_para_integrar_con_pxsol",
-              "integraciones/27_mar_2026_vmaker_recording"
+              "integraciones/27_mar_2026_vmaker_recording",
+              "integraciones/paypal_como_obtener_las_credenciales"
             ]
           },
           {
