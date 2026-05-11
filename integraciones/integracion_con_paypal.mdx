@@ -1,0 +1,162 @@
+---
+title: "Integración y configuración de PayPal como Medio de Pago"
+description: "Sigue esta guía paso a paso para integrar y configurar PayPal como método de pago en tu motor de reservas."
+---
+
+##
+
+Esta guía detalla el proceso de integración de la pasarela de pagos de PayPal con el motor de reservas. Incluye desde la vinculación de credenciales hasta la configuración completa del medio de pago, para que tus huéspedes puedan utilizar PayPal al momento de realizar sus reservas.
+
+### 1: Vinculación de Credenciales de PayPal
+
+Sigue estos pasos para instalar y configurar las credenciales de PayPal:
+
+<Steps>
+  <Step title="Accede a Configuración">
+    Dirígete al menú lateral izquierdo y selecciona la opción "Configuración". Esto desplegará un submenú con diversas opciones de configuración del sistema.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463069_0_6a01315d69686.jpg" alt="Menú de configuraciones desplegado en la barra lateral izquierda." />
+    </Frame>
+  </Step>
+
+  <Step title="Navega a Integraciones">
+    Dentro del submenú de "Configuración", haz clic en "Integraciones". Se cargará una nueva página que muestra un catálogo de todas las aplicaciones y servicios externos disponibles para conectar con el sistema.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463069_1_6a01315db67ce.jpg" alt="Página de integraciones con múltiples tarjetas de aplicaciones." />
+    </Frame>
+  </Step>
+
+  <Step title="Instala la aplicación PayPal">
+    Explora el listado de integraciones hasta encontrar la tarjeta correspondiente a "PayPal". Una vez localizada, haz clic en el botón rojo "Instalar" ubicado en la esquina inferior derecha de la tarjeta.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463069_2_6a01315dde227.jpg" alt="Tarjeta de la aplicación PayPal con el botón Instalar resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Confirma la instalación">
+    Aparecerá una ventana emergente de confirmación con el mensaje "Instalar PayPal". Confirma la acción haciendo clic en el botón "Sí, Instalar".&#x20;
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463070_3_6a01315e0ac0b.jpg" alt="Ventana emergente para confirmar la instalación de PayPal." />
+    </Frame>
+  </Step>
+
+  <Step title="Añade credenciales">
+    Una vez completada la instalación, se abrirá automáticamente un panel lateral titulado "Listado de credenciales". Dentro de este panel, haz clic en el botón rojo "+ Añadir credencial" para iniciar el proceso de vinculación de tu cuenta de PayPal.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463070_4_6a01315e3f5a2.jpg" alt="Panel lateral de listado de credenciales con el botón para añadir una nueva credencial." />
+    </Frame>
+  </Step>
+
+  <Step title="Completa el formulario de credenciales">
+    Se abrirá un segundo panel lateral llamado "Añadir credencial de PayPal". En este formulario, primero selecciona el "Punto de venta" al que deseas asociar esta credencial desde el menú desplegable.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463070_5_6a01315e659c6.jpg" alt="Formulario para añadir credencial de PayPal, con el campo Punto de venta." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresa tus credenciales API">
+    Ingresa un "Nombre de credencial" que te permita identificarla fácilmente. A continuación, deberás pegar el `Client ID` y la `Secret Key` que obtuviste previamente de tu cuenta de desarrollador de PayPal. Estos valores son esenciales para autenticar la conexión entre el sistema y tu cuenta de PayPal.
+
+    Si no sabes cómo obtener las credenciales desde tu cuenta de PayPal, puedes consultar la [siguiente guía](https://ayuda.pxsol.com/integraciones/paypal_como_obtener_las_credenciales#paypal-como-obtener-las-credenciales-para-integrar-con-pxsol "Paypal, ¿cómo obtener las credenciales para integrar con Pxsol?").
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463070_6_6a01315e83ebf.jpg" alt="Campos Client ID y Secret Key siendo completados con datos de ejemplo." />
+    </Frame>
+  </Step>
+
+  <Step title="Guarda las credenciales">
+    Tras pegar el `Client ID` y la `Secret Key`, haz clic en el botón "Añadir" para guardar las credenciales. El sistema intentará validar los datos con PayPal. Si la validación falla, se mostrará un mensaje de error indicando que las credenciales son inválidas, lo que requerirá que verifiques y corrijas los datos ingresados.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463070_7_6a01315ea9e62.jpg" alt="Botón rojo Añadir en el formulario de credenciales de PayPal." />
+    </Frame>
+  </Step>
+
+  <Step title="Verifica la validación">
+    Una vez que las credenciales son validadas y guardadas correctamente, el panel se actualizará y verás la nueva credencial listada, mostrando el procesador, punto de venta, nombre de la credencial, fecha de creación y un estado de validación exitoso, indicado con un ícono verde.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463070_8_6a01315eddf3f.jpg" alt="Listado de credenciales mostrando la nueva credencial de PayPal creada y validada." />
+    </Frame>
+  </Step>
+</Steps>
+
+### 2: Creación del Medio de Pago
+
+Sigue estos pasos para configurar el medio de pago PayPal en el sistema:
+
+<Steps>
+  <Step title="Accede a la configuración de medios de pago">
+    Dentro del mismo panel lateral "Listado de credenciales", haz clic en el enlace "hacerlo desde aquí" ubicado en el texto informativo superior. Esta acción te redirigirá a la sección de "Medios de pago" para completar la configuración, creando el método de pago que los clientes verán.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463071_9_6a01315f1c3a3.jpg" alt="Panel lateral con el enlace para ir a la configuración de medios de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Crea un nuevo medio de pago">
+    En la página de "Medios de pago", haz clic en el botón rojo "Nuevo medio de pago" ubicado en la esquina superior derecha. Esto abrirá un panel lateral con un formulario para crear y configurar todos los detalles del nuevo método de pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463071_10_6a01315f50a0c.jpg" alt="Página de medios de pago con el botón para crear uno nuevo." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona la categoría y el nombre">
+    En el panel "Crear medio de pago", en la primera sección, selecciona la "Categoría". Despliega el menú y elige "Paypal - Pasarela de pagos". Luego, asigna un "Nombre único" que será visible para los clientes en el motor de reservas, por ejemplo, "Paypal".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463071_11_6a01315f7b93e.jpg" alt="Sección para seleccionar la categoría y el nombre del nuevo medio de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Vincula la credencial de PayPal">
+    En la sección 3, "Credencial de pasarela de pago", despliega el menú "Selecciona una credencial" y elige la credencial de PayPal que creaste en los pasos anteriores. Esta acción es fundamental, ya que vincula este medio de pago con tu cuenta específica de PayPal para procesar las transacciones.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463071_12_6a01315fc27d1.jpg" alt="Menú desplegable para seleccionar la credencial de PayPal previamente configurada." />
+    </Frame>
+  </Step>
+
+  <Step title="Configura las plantillas de correo">
+    Configura las plantillas de correo para notificar al cliente sobre el estado del pago. Deberás seleccionar una plantilla para la transacción inicial, una para cuando el pago sea exitoso y otra para cuando ocurra un problema con el pago. Estas plantillas se envían automáticamente en cada escenario.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463071_13_6a01315ff2f9d.jpg" alt="Secciones para seleccionar las plantillas de correo para diferentes estados de la transacción." />
+    </Frame>
+  </Step>
+
+  <Step title="Define las políticas de cancelación y pago">
+    En la sección 7, define a qué políticas de cancelación y pago aplicará este medio de pago. Marca las casillas correspondientes a las políticas deseadas. Solo las reservas con estas políticas podrán utilizar PayPal como opción de pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463072_14_6a01316032464.jpg" alt="Listado de políticas de pago para asociar al medio de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona las monedas disponibles">
+    En la sección 8, especifica en qué monedas deseas que este medio de pago esté disponible para los clientes en el motor de reservas. Marca las casillas de las monedas que necesites. Es importante saber que, aunque el cliente vea el precio en su moneda local, la transacción final en PayPal se procesará en dólares.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463072_15_6a0131605aee5.jpg" alt="Selección de monedas en las que se mostrará el medio de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Guarda los cambios">
+    Finalmente, asocia el medio de pago a los puntos de venta correspondientes y haz clic en "Guardar cambios". El sistema guardará la configuración y el medio de pago de PayPal estará activo y listo para ser utilizado en tu motor de reservas.&#x20;
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/10/screenshot_1778463072_16_6a0131607b319.jpg" alt="Botón Guardar cambios al final del formulario de creación del medio de pago." />
+    </Frame>
+  </Step>
+</Steps>
+
+<Note>
+  Recuerda que para completar este proceso, necesitas tener una cuenta de PayPal y haber generado las credenciales API necesarias (`Client ID` y `Secret Key`).
+</Note>
