@@ -1,0 +1,70 @@
+---
+title: "¿Cómo integrar Mercado Pago? Integración con OAuth - Argentina"
+description: "Este proceso detalla cómo configurar y validar una nueva credencial de Mercado Pago utilizando el método de vinculación OAuth. Este método automatiza la autorización conectando directamente con la cuenta de Mercado Pago para generar las credenciales de forma segura."
+---
+
+<Note>
+  Esta funcionalidad está disponible exclusivamente para cuentas de Argentina.
+</Note>
+
+Este proceso detalla cómo añadir y validar una nueva credencial de Mercado Pago utilizando el método de vinculación OAuth. Este método automatiza la autorización conectando directamente con la cuenta de Mercado Pago para generar las credenciales de forma segura, eliminando la necesidad de copiar y pegar claves manualmente.
+
+<Steps>
+  <Step title="Iniciar el proceso">
+    Desde la pantalla de listado de credenciales, haga clic en el botón "Añadir credencial", ubicado en la esquina superior derecha de la tabla. Esta acción despliega una ventana modal titulada "Añadir credencial de Mercado Pago".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863912_0_6a074f284c6a0.jpg" alt="Botón 'Añadir credencial' siendo presionado." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresar el nombre de la credencial">
+    Dentro de la ventana modal, el campo "Punto de venta" ya se encuentra preseleccionado. Ingrese un nombre identificatorio para la nueva credencial en el campo "Nombre de credencial". Este nombre servirá para diferenciarla de otras credenciales existentes en el listado.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863912_1_6a074f2885df4.jpg" alt="Ingreso del nombre de la credencial en el campo de texto." />
+    </Frame>
+  </Step>
+
+  <Step title="Generar el enlace de autorización">
+    Presione el botón rojo "Generar enlace de autorización de Mercado Pago". El sistema creará un enlace temporal y seguro para iniciar el proceso de vinculación con la cuenta de Mercado Pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863912_2_6a074f28d99a5.jpg" alt="Clic en el botón para generar el enlace de autorización." />
+    </Frame>
+  </Step>
+
+  <Step title="Abrir el enlace de autorización">
+    El sistema mostrará una nueva sección con el enlace de autorización generado. Hacé clic en el botón “Abrir en una nueva pestaña”. Esta acción abrirá una nueva pestaña en el navegador y redirigirá al usuario a la página oficial de autorización de Mercado Pago.
+
+    Es importante que, en el mismo navegador, el usuario tenga iniciada sesión en la cuenta de Mercado Pago que desea vincular.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863913_3_6a074f293ce76.jpg" alt="Botón 'Abrir en pestaña nueva' para acceder al enlace de autorización." />
+    </Frame>
+  </Step>
+
+  <Step title="Autorizar la conexión en Mercado Pago">
+    En la nueva pestaña, se cargará la página de Mercado Pago, donde se solicitará la autorización para integrar la aplicación. La pantalla mostrará los permisos que se otorgarán. Presione el botón azul "Autorizar" para confirmar la vinculación.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863913_4_6a074f299c9f6.jpg" alt="Página de autorización de Mercado Pago con el botón 'Autorizar' resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Verificar la confirmación en Mercado Pago">
+    Tras autorizar la conexión, Mercado Pago mostrará un mensaje de confirmación indicando que el proceso se ha completado con éxito. El sistema redirigirá automáticamente al usuario de vuelta a la plataforma de gestión.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863913_5_6a074f29cedeb.jpg" alt="Mensaje de autorización exitosa en la página de Mercado Pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Confirmar la validación de la credencial">
+    Al regresar a la pantalla de listado de credenciales, la nueva credencial aparecerá en la tabla con el nombre ingresado previamente. En la columna "Estado de validación", se mostrará un ícono de verificación verde, confirmando que la credencial ha sido validada correctamente y está activa para su uso.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863914_6_6a074f2a33aba.jpg" alt="Listado de credenciales mostrando la nueva credencial con estado validado." />
+    </Frame>
+  </Step>
+</Steps>
