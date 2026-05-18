@@ -1,0 +1,78 @@
+---
+title: "Gestión del Cambio de Sábanas en el Estado de Habitaciones"
+description: "Aprenda a gestionar y hacer seguimiento del cambio de sábanas para cada habitación a través del módulo de housekeeping, incluyendo la actualización manual y automática del estado."
+---
+
+<Info>
+  Esta funcionalidad permite realizar un seguimiento detallado y gestionar el estado del cambio de sábanas para cada habitación a través del módulo de housekeeping. El sistema actualiza el estado de forma automática para indicar si una habitación requiere el servicio. En caso de no realizar la actualización manual marcando que el cambio de sábanas se realizó, el sistema mostrará la habitación con estado Cambio de sábanas en SI permanentemente.
+</Info>
+
+<Note>
+  La actualización manual se realiza después de completar el cambio de sábanas, mientras que el sistema lo activa automáticamente al finalizar una estancia o después de un número predefinido de días para estancias largas.
+</Note>
+
+## Visualización y Actualización Manual
+
+Para gestionar el estado de cambio de sábanas, siga estos pasos:
+
+<Steps>
+  <Step title="Acceda a la sección 'Estado de habitaciones'">
+    Desde el menú de navegación principal ubicado en el lateral izquierdo de la pantalla, haga clic en la opción "Operaciones". Al desplegarse el submenú, seleccione la entrada "Estado de habitaciones" para cargar la vista principal que contiene el listado de todas las unidades del establecimiento.
+
+    <Frame>
+      ![Imagen](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14232948872b59f1bb7102c9a2df915bd180d049fab.png)
+    </Frame>
+  </Step>
+
+  <Step title="Navegue a la pestaña 'Housekeeping'">
+    En la parte superior del listado de habitaciones, encontrará una serie de pestañas que filtran la información mostrada. Haga clic en la pestaña etiquetada como "Housekeeping". La tabla se actualizará para mostrar columnas específicas de esta área, como "Fecha de arribo", "Fecha de salida" y la columna "Cambio de sábs.", que indica si se requiere el cambio de sábanas.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/266867803957f57b8cbc865083ad2044c3a9807b32d.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Actualice manualmente el estado de cambio de sábanas">
+    Una vez que el personal de limpieza ha realizado el cambio de sábanas en una habitación cuyo estado es "SI" (indicando que se requiere el servicio), debe registrar la tarea completada. Para ello, localice la habitación correspondiente en la lista y haga clic en el menú desplegable dentro de la columna "Cambio de sábs.". Seleccione la opción "NO" para indicar que el cambio ha sido efectuado y la habitación ya no requiere este servicio.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/249076664629fd7c00bb879ee9308e45dad8119f967.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+## Funcionamiento de la Actualización Automática
+
+El sistema está diseñado para cambiar automáticamente el estado de la columna "Cambio de sábanas" a "SI" en dos situaciones específicas:
+
+<AccordionGroup>
+  <Accordion title="Finalización de una estancia">
+    Cuando una reserva llega a su fecha de salida y se procesa el check-out del huésped, al cambiar la instancia de la reserva a Finalizadas el estado de "Cambio de sábanas" para esa habitación cambiará automáticamente a "SI". Esto asegura que la habitación sea preparada con sábanas limpias para el próximo huésped.
+  </Accordion>
+
+  <Accordion title="Estancias prolongadas">
+    Para huéspedes con estancias largas, el sistema activará automáticamente el estado "SI" después de que haya transcurrido un número determinado de días desde el último cambio. Esta frecuencia se establece en la configuración del sistema para garantizar que se mantengan los estándares de limpieza durante la estancia del huésped.
+  </Accordion>
+</AccordionGroup>
+
+## Configuración de la Frecuencia del Cambio de Sábanas
+
+Para definir la frecuencia con la que el sistema debe solicitar automáticamente un cambio de sábanas durante estancias largas, siga estos pasos:
+
+<Steps>
+  <Step title="Acceda a la configuración de Housekeeping">
+    Utilice el buscador global ubicado en la parte superior de la interfaz para localizar la sección de configuración. Escriba "Configuración Housekeeping" y seleccione la aplicación correspondiente de los resultados de búsqueda para abrir el panel de ajustes.
+
+    <Frame>
+      ![Imagen](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/142329529364d137f07a3c5217ec569c1aafc731ca9.png)
+    </Frame>
+  </Step>
+
+  <Step title="Establezca los días para el cambio de sábanas">
+    Se abrirá una ventana de configuración. En la sección "Cambio de sábanas", encontrará un campo de texto titulado "Días entre cada cambio de sábanas". Ingrese en este campo el número de días que deben transcurrir en una estancia prolongada antes de que el sistema solicite automáticamente un nuevo cambio de sábanas. Por ejemplo, si ingresa "3", el estado cambiará a "SI" cada tres días. Finalmente, guarde los cambios para aplicar la nueva configuración.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28465907024dfff9c44636534267830561bb20e427f.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
