@@ -1,0 +1,96 @@
+---
+title: "Configuración de Respuesta Automática para Compras Abandonadas"
+description: "Configura reglas para enviar correos electrónicos automáticos a huéspedes que abandonaron reservas, incentivando su finalización."
+---
+
+## Configuración de Respuesta Automática para Compras Abandonadas
+
+Esta funcionalidad te permite configurar una regla para que el sistema envíe automáticamente una plantilla de correo electrónico a los huéspedes que iniciaron un proceso de reserva a través del motor pero no lo completaron. El objetivo es recuperar estas "compras abandonadas" mediante el envío de una comunicación predefinida, incentivando al huésped a finalizar su reserva.
+
+<Steps>
+  <Step title="Acceder a la configuración del Mutador">
+    Para acceder a la sección de configuración, utilizá el buscador global ubicado en la parte superior de la pantalla. Hacé clic en la barra de búsqueda e ingresá el término "mutador".
+
+    <Frame caption="Buscador global con el término 'mutador' y el resultado resaltado">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891756_0_6a16fe2c6a83b.jpg" alt="Vista del buscador global con el término 'mutador' y el resultado 'Mutadores (ex Etiquetas)' resaltado." />
+    </Frame>
+
+    En la lista de resultados que se despliega, seleccioná la opción "Mutadores (ex Etiquetas)" bajo el encabezado "Aplicaciones y Configuración".
+  </Step>
+
+  <Step title="Editar la regla de Compra Abandonada">
+    Una vez en la pantalla "Mutadores (ex Etiquetas)", se mostrará una lista con las reglas existentes. Localizá la regla cuyo origen es "Motor" y el medio es "Compra Abandonada".
+
+    <Frame caption="Panel lateral de 'Editar Mutador' abierto sobre la lista de mutadores.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891756_1_6a16fe2ccca0c.jpg" alt="Panel lateral de 'Editar Mutador' abierto sobre la lista de mutadores." />
+    </Frame>
+
+    Para modificarla, dirigite a la columna "ACCIONES" en el extremo derecho de la fila correspondiente y hacé clic en el botón para editar. Esto abrirá un panel lateral con los detalles de la configuración.
+  </Step>
+
+  <Step title="Verificar Datos Principales">
+    Dentro del panel "Editar Mutador", en la sección "Datos Principales", verificá que los campos estén configurados correctamente. El campo "Origen" debe estar establecido en "Motor" y el campo "Medio" debe contener exactamente el texto "Compra Abandonada".
+
+    <Frame caption="Campos 'Origen' y 'Medio' del mutador con los valores 'Motor' y 'Compra Abandonada'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891756_2_6a16fe2cf1262.jpg" alt="Campos 'Origen' y 'Medio' del mutador con los valores 'Motor' y 'Compra Abandonada'." />
+    </Frame>
+
+    Es fundamental que estos valores sean precisos para que la automatización funcione como se espera.
+  </Step>
+
+  <Step title="Activar Opciones Avanzadas">
+    Para acceder a las opciones de automatización de correo, activá el interruptor "Opciones Avanzadas" ubicado en la esquina superior derecha del panel de edición.
+
+    <Frame caption="Interruptor de 'Opciones Avanzadas' siendo activado en el panel de edición del mutador.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891757_3_6a16fe2d286cf.jpg" alt="Interruptor de 'Opciones Avanzadas' siendo activado en el panel de edición del mutador." />
+    </Frame>
+
+    Al hacerlo, se desplegarán campos adicionales de configuración, incluyendo la opción para seleccionar una respuesta automática.
+  </Step>
+
+  <Step title="Seleccionar la Plantilla de Correo">
+    En las opciones avanzadas, localizá el menú desplegable "Respuesta automática". Hacé clic en él para ver la lista de plantillas de correo electrónico de email marketing disponibles.
+
+    <Frame caption="Menú desplegable 'Respuesta automática' mostrando una lista de plantillas de correo electrónico para seleccionar.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891757_4_6a16fe2d55aec.jpg" alt="Menú desplegable 'Respuesta automática' mostrando una lista de plantillas de correo electrónico para seleccionar." />
+    </Frame>
+
+    Seleccioná la plantilla que deseás que se envíe automáticamente a los huéspedes que abandonen el proceso de compra.
+
+    <Warning>
+      Si no tienen configurada la plantilla de correo de tipo email marketing pueden realizarlo siguiendo los pasos de esta guía:
+
+      https://ayuda.pxsol.com/crm/como\_configurar\_las\_plantillas\_de\_correo\_email\_marketing
+    </Warning>
+  </Step>
+
+  <Step title="Guardar los Cambios">
+    Después de seleccionar la plantilla de correo electrónico, desplazate hasta el final del panel de configuración y hacé clic en el botón "GUARDAR CAMBIOS".
+
+    <Frame caption="Botón 'GUARDAR CAMBIOS' siendo presionado en la parte inferior del panel de edición.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891757_5_6a16fe2d863f9.jpg" alt="Botón 'GUARDAR CAMBIOS' siendo presionado en la parte inferior del panel de edición." />
+    </Frame>
+
+    Esta acción aplicará la configuración y activará el envío automático para todas las futuras consultas que coincidan con los criterios de compra abandonada.
+  </Step>
+
+  <Step title="Verificar el Funcionamiento">
+    Para verificar el funcionamiento, navegá a la bandeja de consultas o reservas. Cuando el sistema detecte una compra abandonada, generará una nueva consulta.
+
+    <Frame caption="Lista de reservas con una nueva consulta etiquetada como 'Compra Abandonada' en la columna 'Medio'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891757_6_6a16fe2da37f3.jpg" alt="Lista de reservas con una nueva consulta etiquetada como 'Compra Abandonada' en la columna 'Medio'." />
+    </Frame>
+
+    Podrás identificarla porque en la columna "Medio" se mostrará la etiqueta "Compra Abandonada".
+  </Step>
+
+  <Step title="Confirmar el Envío del Correo">
+    Al abrir el detalle de una consulta de compra abandonada, podrás confirmar que la automatización se ha ejecutado correctamente. En el historial de comunicaciones de la reserva, aparecerá un registro del correo electrónico enviado automáticamente, mostrando la plantilla que fue seleccionada durante la configuración.
+
+    <Frame caption="Detalle de la reserva mostrando el historial con el correo de marketing enviado automáticamente.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/27/screenshot_1779891757_7_6a16fe2dbea98.jpg" alt="Detalle de la reserva mostrando el historial con el correo de marketing enviado automáticamente." />
+    </Frame>
+
+    El sistema enviará este correo sin verificar previamente la disponibilidad para las fechas consultadas por el huésped.
+  </Step>
+</Steps>
