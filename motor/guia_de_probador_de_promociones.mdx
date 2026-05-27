@@ -1,0 +1,110 @@
+---
+title: "Herramienta de Prueba de Promociones"
+description: "Simula búsquedas y diagnostica la visibilidad de promociones para asegurar que se muestran correctamente a los clientes."
+---
+
+## Herramienta de Prueba de Promociones
+
+<Info>
+  Esta funcionalidad permite simular búsquedas para verificar si una promoción específica se muestra correctamente a los clientes. La herramienta simula una consulta en el motor de reservas, utilizando parámetros como fechas, moneda y ocupación, para ofrecer un diagnóstico detallado. Esto es útil para solucionar problemas y asegurar la correcta aplicación de ofertas.
+</Info>
+
+## Acceso a la Herramienta de Prueba
+
+Para acceder a la herramienta de prueba, siga estos pasos:
+
+<Steps>
+  <Step title="Acceda a la sección de promociones">
+    Utilice el buscador general en el panel principal para localizar la aplicación "Promociones y Vouchers".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599514_0_6a03465a7b27c.jpg" alt="Vista del menú de búsqueda desplegado con la opción 'Promociones y Vouchers'." />
+    </Frame>
+  </Step>
+
+  <Step title="Ubique el botón 'Probar Promociones'">
+    Dentro de la pantalla de "Promociones, Vouchers y Anuncios", busque el botón "Probar Promociones" en la parte superior derecha de la tabla.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599515_1_6a03465b0ac74.jpg" alt="Cursor del mouse haciendo clic en el botón 'Probar Promociones'." />
+    </Frame>
+
+    Al hacer clic, se abrirá la herramienta de prueba.
+  </Step>
+</Steps>
+
+## Configuración de la Simulación de Búsqueda
+
+Configure los parámetros de la búsqueda simulada:
+
+<Steps>
+  <Step title="Seleccione la promoción">
+    En la sección "Configuración de prueba", elija la promoción a evaluar usando el menú desplegable "Promoción a consultar".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599515_2_6a03465b5a2dd.jpg" alt="Menú desplegable de 'Promoción a consultar' mostrando la selección de la promoción 'Termas Experience - Pase Tarde'." />
+    </Frame>
+  </Step>
+
+  <Step title="Configure los parámetros de búsqueda">
+    Seleccione la "Moneda", la cantidad de "Adultos" y "Niños".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599515_3_6a03465bc1eb1.jpg" alt="Configuración de la búsqueda con moneda ARS, 2 adultos y 1 niño seleccionados." />
+    </Frame>
+  </Step>
+
+  <Step title="Establezca las fechas de estadía">
+    Seleccione las "Fechas de estadía" usando el calendario desplegable.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599516_4_6a03465c29975.jpg" alt="Calendario desplegado para seleccionar el rango de fechas de la estadía." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingrese el código promocional (opcional)">
+    Si la promoción requiere un código, ingréselo en el campo "Código promocional".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599516_5_6a03465c7a783.jpg" alt="Vista del campo opcional para ingresar un código promocional." />
+    </Frame>
+  </Step>
+
+  <Step title="Ejecute la simulación">
+    Haga clic en el botón "Probar configuración" para ejecutar la simulación y generar el diagnóstico.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599516_6_6a03465cf2aac.jpg" alt="Cursor del mouse haciendo clic en el botón 'Probar configuración'." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Análisis de los Resultados del Diagnóstico
+
+Revise los resultados de la simulación:
+
+<Steps>
+  <Step title="Verifique el estado general">
+    El estado general indicará si "La promoción será visible". Un estado verde confirma la visibilidad con los parámetros especificados.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599517_7_6a03465d60915.jpg" alt="Sección de resultados mostrando el diagnóstico 'La promoción será visible' en color verde." />
+    </Frame>
+  </Step>
+
+  <Step title="Explore los Tarifarios retornados">
+    Seleccione una opción del menú desplegable "Tarifarios retornados por el Motor / Buscador" para refinar el análisis.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599517_8_6a03465dba2c6.jpg" alt="Menú desplegable con la lista de tarifarios y tipos de habitación disponibles para la búsqueda simulada." />
+    </Frame>
+  </Step>
+
+  <Step title="Revise las reglas evaluadas">
+    Verifique el desglose de reglas. Las reglas cumplidas se marcan con "CUMPLE". Las reglas no cumplidas, indicadas en rojo, explican la razón de la no visibilidad.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/12/screenshot_1778599518_9_6a03465e01072.jpg" alt="Desglose de las reglas de la promoción, todas marcadas con la etiqueta 'CUMPLE' en verde." />
+    </Frame>
+  </Step>
+</Steps>
