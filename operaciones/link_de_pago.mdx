@@ -1,0 +1,144 @@
+---
+title: "Solicitar Cobro a Huéspedes"
+description: "Aprenda a generar y enviar enlaces de pago seguros a sus huéspedes para garantizar o saldar montos pendientes de sus reservas. Esta guía detalla el proceso, desde la creación de la solicitud hasta la confirmación automática del pago, útil para reservas sin medio de pago o con tarjetas inválidas."
+---
+
+Esta funcionalidad es particularmente útil en situaciones donde una reserva no cuenta con un medio de pago registrado o cuando la tarjeta proporcionada por el huésped resulta ser inválida.
+
+El sistema le notificará automáticamente una vez que el huésped complete el pago, actualizando el estado financiero de la reserva en tiempo real.
+
+## Envío de la Solicitud de Cobro
+
+Siga estos pasos para enviar una solicitud de cobro a su huésped:
+
+<Steps>
+  <Step title="Acceda a la reserva">
+    Para iniciar el proceso, acceda a una reserva que tenga un saldo pendiente de pago.
+
+    En la sección **"Pago y Facturación"**, ubique y presione el botón **"Solicitar cobro"**.
+
+    <Frame caption="Vista de una reserva con el botón 'Solicitar cobro' resaltado.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434393_0_6a1f45d9c903f.jpg" alt="Captura de pantalla de la interfaz de una reserva, mostrando el botón 'Solicitar cobro' en la sección de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Configure la solicitud">
+    Al presionar el botón, se abrirá una ventana emergente titulada **"Solicitar cobro al huésped"**.
+
+    1. En esta ventana, encontrará un campo desplegable llamado **"Motivos"**. Haga clic en él para seleccionar la razón de la solicitud. Las opciones disponibles son **"Tarjeta inválida"** y **"Sin tarjeta"**.
+    2. La opción que elija personalizará el texto del correo electrónico que recibirá el huésped, proporcionando un contexto relevante.
+
+    <Frame caption="Ventana emergente 'Solicitar cobro al huésped' mostrando las opciones del campo 'Motivos'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434394_1_6a1f45daa4ef6.jpg" alt="Ventana emergente para solicitar cobro, mostrando el menú desplegable 'Motivos' con las opciones 'Tarjeta inválida' y 'Sin tarjeta'." />
+    </Frame>
+  </Step>
+
+  <Step title="Verifique el email y envíe">
+    En la misma ventana, verifique que el campo **"Email"** contenga la dirección de correo electrónico correcta del huésped.
+
+    1. Este campo se autocompleta automáticamente con el email registrado en la reserva. Si es necesario, puede editarlo manualmente.
+    2. Una vez que haya confirmado el motivo de la solicitud y la dirección de correo electrónico, presione el botón **"Enviar por email"** para despachar la solicitud de pago.
+
+    <Frame caption="Ventana emergente con el campo de email y el botón 'Enviar por email' listo para ser presionado.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434395_2_6a1f45db17dba.jpg" alt="Ventana emergente de solicitud de cobro mostrando el campo de correo electrónico del huésped y el botón 'Enviar por email'." />
+    </Frame>
+  </Step>
+
+  <Step title="Confirme el estado de la solicitud">
+    Una vez enviado el correo, la ventana emergente se cerrará y el sistema mostrará un mensaje de confirmación en la parte inferior izquierda de su pantalla.
+
+    <Check>
+      Verifique que el mensaje "¡Solicitud de cobro enviada con éxito!" aparezca.
+    </Check>
+
+    Adicionalmente, en la sección de **"Pago y Facturación"** de la reserva, aparecerá el estado **"Solicitud de cobro vigente"**.
+
+    <Info>
+      Este indicador permanecerá activo, y el botón **"Solicitar cobro"** estará deshabilitado, hasta que el huésped complete el pago o la solicitud expire al final del día.
+    </Info>
+
+    <Frame caption="Estado 'Solicitud de cobro vigente' mostrado en la pantalla de la reserva.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434395_3_6a1f45db6e844.jpg" alt="Sección 'Pago y Facturación' de una reserva, mostrando el estado 'Solicitud de cobro vigente'." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Proceso de Pago del Huésped
+
+A continuación, se detalla la experiencia del huésped al recibir y completar la solicitud de pago:
+
+<Steps>
+  <Step title="Reciba el correo electrónico de pago">
+    El huésped recibirá un correo electrónico con el asunto **"Completa el pago de tu reserva"**.
+
+    Dentro del correo, deberá presionar el botón azul **"Cargar medio de pago"** para ser redirigido a la pasarela de pago segura.
+
+    <Frame caption="Correo electrónico recibido por el huésped con el botón 'Cargar medio de pago'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434395_4_6a1f45dbba401.jpg" alt="Captura de pantalla de un correo electrónico con el asunto 'Completa el pago de tu reserva' y un botón 'Cargar medio de pago'." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingrese sus datos personales">
+    Al hacer clic en el enlace, el huésped será dirigido a una página de pago segura.
+
+    En la sección **"Datos del titular de la reserva"**, deberá completar su tipo y número de documento, según se requiera.
+
+    <Frame caption="Página de pago donde el huésped debe ingresar su número de documento.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434396_5_6a1f45dc9a89f.jpg" alt="Página de pago mostrando la sección 'Datos del titular de la reserva' con campos para tipo y número de documento." />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccione el método de pago">
+    A continuación, en la sección **"¿Cómo quieres pagar?"**, el huésped deberá seleccionar uno de los métodos de pago disponibles, como tarjeta de crédito o débito a través de un procesador de pago integrado.
+
+    Al seleccionar una opción, se desplegará un formulario para ingresar los datos específicos de la tarjeta.
+
+    <Frame caption="Sección de métodos de pago en la página de pago, con un formulario de tarjeta de crédito desplegado.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434397_6_6a1f45dd26ab2.jpg" alt="Página de pago con opciones de pago seleccionadas y un formulario de datos de tarjeta de crédito." />
+    </Frame>
+  </Step>
+
+  <Step title="Confirme la transacción">
+    Después de completar todos los datos de la tarjeta (número, nombre del titular, fecha de vencimiento y código de seguridad) y seleccionar el número de cuotas deseado, el huésped deberá presionar el botón **"Confirmar"** para procesar la transacción.
+
+    <Frame caption="Formulario de pago completo y el botón 'Confirmar' siendo presionado.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434397_7_6a1f45ddd1ff1.jpg" alt="Formulario de pago con todos los datos de la tarjeta y cuotas ingresados, listo para confirmar." />
+    </Frame>
+  </Step>
+
+  <Step title="Reciba la confirmación de pago">
+    Si el pago se procesa correctamente, el sistema mostrará una página de confirmación con el mensaje **"¡Muchas gracias por tu compra!"** junto con un resumen de los detalles de la reserva.
+
+    <Check>
+      Esta página confirma que el saldo pendiente de la reserva ha sido cubierto con éxito.
+    </Check>
+
+    <Frame caption="Página de confirmación de pago exitoso con los detalles de la reserva.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434398_8_6a1f45de6a6ed.jpg" alt="Página de confirmación de pago exitoso mostrando el mensaje de agradecimiento y detalles de la reserva." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Actualización en el Sistema
+
+Una vez que el huésped completa el pago, el sistema reflejará inmediatamente esta acción:
+
+1. **Notificación en tiempo real**: Inmediatamente después de que el huésped complete el pago, recibirá una notificación en tiempo real en la plataforma con el mensaje **"Tarjeta actualizada"** seguido del número de la reserva.
+2. **Acceso rápido**: Al hacer clic sobre esta notificación, será dirigido directamente a los detalles de la reserva correspondiente para verificar los cambios.
+
+<Frame caption="Notificación emergente en el sistema indicando que una tarjeta ha sido actualizada para una reserva.">
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434399_9_6a1f45df25a8e.jpg" alt="Notificación emergente en la interfaz del sistema que dice 'Tarjeta actualizada' con el número de reserva." />
+</Frame>
+
+1. **Estado financiero actualizado**: Al acceder a la reserva, podrá observar en la sección **"Pago y Facturación"** que:
+   * El monto en **"Pagado"** se ha actualizado con el valor de la transacción.
+   * El campo **"Pendiente de pagar"** ahora muestra un saldo de **ARS $0,00**.
+   * El estado de la reserva reflejará el pago completado y el botón **"Solicitar cobro"** ya no estará activo, ya que la deuda ha sido saldada.
+
+<Check>
+  Verifique que el saldo pendiente de la reserva ahora sea cero y que el botón de solicitud de cobro esté inactivo.
+</Check>
+
+<Frame caption="Sección 'Pago y Facturación' de la reserva actualizada, mostrando el saldo pendiente en cero.">
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780434399_10_6a1f45df910d1.jpg" alt="Sección 'Pago y Facturación' de una reserva, mostrando el monto 'Pagado' actualizado y 'Pendiente de pagar' en cero." />
+</Frame>
