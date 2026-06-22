@@ -1,0 +1,122 @@
+---
+title: "Integración del Motor de Reservas en Sitios Web Externos"
+description: "Aprende a integrar el motor de reservas en tu sitio web externo usando dos métodos: vinculación directa a la URL o incrustando un widget de búsqueda con un script. Mejora la experiencia del usuario y optimiza el proceso de reserva."
+---
+
+Este documento te guía a través de dos métodos principales para integrar la funcionalidad de reservas de nuestro sistema directamente en tu sitio web externo. Ambos enfoques te permiten ofrecer una experiencia de reserva fluida a tus clientes, ya sea redirigiéndolos a una página dedicada o permitiéndoles iniciar el proceso de búsqueda desde tu propio sitio.
+
+## Vinculación Directa al Motor de Reservas
+
+Utiliza este procedimiento para obtener el enlace directo a tu motor de reservas. Podrás vincular esta URL a cualquier botón o enlace en tu sitio web, como "Reservar ahora". Cuando los usuarios hagan clic en el botón, serán redirigidos a la página de tu motor de reservas en una nueva pestaña.
+
+<Steps>
+<Step title="Accede a la aplicación del Motor de Reservas">
+  Desde la pantalla principal del sistema, utiliza la barra de búsqueda principal localizada en la parte superior. Ingresa el texto "motor de reservas" para encontrar el acceso directo a la aplicación.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147671_0_6a396a57ec801.jpg" alt="Barra de búsqueda del sistema con el término 'motor' escrito y mostrando resultados de búsqueda." />
+  <Tip>
+  La barra de búsqueda es una herramienta eficiente para localizar rápidamente cualquier función dentro del sistema sin navegar por menús complejos.
+  </Tip>
+  </Frame>
+</Step>
+
+<Step title="Selecciona el Motor de Reservas">
+  En la lista de resultados de la búsqueda, selecciona la opción "Motor de reservas". Esta acción abrirá una nueva pestaña en tu navegador, cargando la interfaz pública de tu motor de reservas.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147672_1_6a396a588132d.jpg" alt="Resultado de la búsqueda 'Motor de reservas' resaltado en el menú de aplicaciones." />
+  </Frame>
+</Step>
+
+<Step title="Copia la URL del motor de reservas">
+  Una vez que la nueva pestaña haya cargado completamente, dirígete a la barra de direcciones del navegador. Selecciona y copia la URL completa que se muestra. Esta es la dirección web que debes compartir con tu desarrollador.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147673_2_6a396a591a0e7.jpg" alt="Página del motor de reservas abierta en una nueva pestaña, con la URL en la barra de direcciones del navegador seleccionada." />
+  </Frame>
+</Step>
+
+<Step title="Comparte la URL para configurar el botón de reserva">
+  Proporciona la URL copiada a tu webmaster o desarrollador. Deberá configurar los botones de reserva de tu sitio web para que, al ser presionados, redirijan a los usuarios a esta dirección, iniciando así el flujo de reserva.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147673_3_6a396a596b939.jpg" alt="Imagen del motor de reservas con el formulario de búsqueda de fechas y el botón 'Ver Tarifas'." />
+  <Check>
+  Confirma que el botón de reserva en tu sitio web redirige correctamente a la URL del motor de reservas y que la página carga sin errores.
+  </Check>
+  </Frame>
+</Step>
+</Steps>
+
+## Integración del Buscador de Disponibilidad mediante Script
+
+Este método te permite incrustar la barra de búsqueda de disponibilidad directamente en cualquier página de tu sitio web externo. Se proporciona un script que tu webmaster debe insertar en el código del sitio. De esta forma, el cliente puede seleccionar las fechas y la cantidad de huéspedes sin salir de tu página principal y luego será redirigido a la página de resultados del motor de reservas.
+
+<Steps>
+<Step title="Accede a la configuración del Punto de Venta">
+  Regresa a la pantalla principal del sistema y utiliza nuevamente la barra de búsqueda. En esta ocasión, ingresa el texto "Configurar punto de venta" para acceder a las opciones avanzadas de configuración.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147674_4_6a396a5a0ef74.jpg" alt="Barra de búsqueda del sistema con el texto 'configurar' escrito y mostrando resultados relevantes." />
+  </Frame>
+</Step>
+
+<Step title="Navega a la sección de Complementos">
+  Dentro de la ventana de "Configurar punto de venta" que se ha abierto, navega por el menú vertical ubicado en el lado izquierdo. Desplázate hacia abajo y selecciona la sección "Complementos" para acceder a las herramientas de integración.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147674_5_6a396a5a68737.jpg" alt="Ventana de configuración con el menú lateral visible, y la opción 'Complementos' siendo seleccionada." />
+  </Frame>
+</Step>
+
+<Step title="Localiza el script del widget de búsqueda">
+  En la sección de "Complementos", localiza el apartado titulado "Buscador para web externas". Aquí encontrarás un bloque de código que corresponde al script del widget de búsqueda. Este código contiene toda la lógica necesaria para mostrar y operar la barra de búsqueda en un sitio externo.
+
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147674_6_6a396a5aa0e8a.jpg" alt="Sección de 'Complementos' mostrando el script para el buscador en un recuadro de texto." />
+  <Info>
+  El script del widget de búsqueda permite a tus usuarios interactuar directamente con el motor de reservas desde tu sitio, mejorando la experiencia de usuario y reduciendo los pasos para la reserva.
+  </Info>
+  </Frame>
+</Step>
+
+<Step title="Copia e implementa el script">
+  Copia el script completo y compártelo con tu webmaster. Puedes hacer clic en el botón "Copiar script del sitio" para copiarlo al portapapeles.
+
+  <CodeGroup>
+  ```html script.html
+  <!-- Este es un script de ejemplo. El código real variará según la configuración de tu sistema. -->
+  <div id="booking-search-widget"></div>
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = 'https://your-booking-engine.com/widget-loader.js?partnerId=YOUR_PARTNER_ID&language=es'; // Reemplaza con tu URL e IDs reales
+      var firstScript = document.getElementsByTagName('script')[0];
+      firstScript.parentNode.insertBefore(script, firstScript);
+    })();
+  </script>
+  ```
+
+  </CodeGroup>
+
+<Tip>
+  Adicionalmente, haz clic en el enlace "Instrucciones" para descargar un documento con
+  especificaciones técnicas detalladas que ayudarán a tu desarrollador a la correcta implementación
+  del widget.
+</Tip>
+
+<Warning>
+  Asegúrate de que el script se inserte en la sección `
+  <body>` de tu código HTML, preferiblemente antes de la etiqueta de cierre `</body>`. Esto
+  garantiza que los elementos de la página se carguen antes de que el script intente modificar el
+  DOM.
+</Warning>
+
+  <Frame caption="Vista detallada del script del widget y los botones para copiarlo y descargar las instrucciones de implementación.">
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147675_7_6a396a5b36d69.jpg" alt="Script para el buscador de disponibilidad y opciones para copiarlo e instrucciones." />
+  </Frame>
+</Step>
+</Steps>
