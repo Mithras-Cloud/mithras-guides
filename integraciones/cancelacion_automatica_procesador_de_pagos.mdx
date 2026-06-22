@@ -1,0 +1,148 @@
+---
+title: "Configuración de Cancelación Automática de Reservas por Falta de Pago"
+description: "Aprenda a configurar la cancelación automática de reservas procesadas a través de procesadores o pasarelas de pago cuando los pagos no se completan, permitiendo liberar inventario de forma automática y notificar a los huéspedes de manera oportuna."
+---
+
+Esta funcionalidad le permite configurar la cancelación automática de reservas si un pago no se completa o falla dentro de un período de tiempo predefinido. Al activar esta opción en un medio de pago compatible (como Payway, Mercado Pago, Stripe, PayPal y Webpay), el sistema liberará automáticamente el inventario si el huésped no realiza el pago a tiempo y enviará una notificación de cancelación.
+
+## Configuración del Medio de Pago
+
+Para configurar la cancelación automática de reservas, siga estos pasos:
+
+<Steps>
+  <Step title="Acceda a 'Medios de pago'">
+    Aquí, usted puede crear un nuevo medio de pago o editar uno existente que sea compatible con la funcionalidad de cancelación automática.
+
+    <Frame caption="Lista de medios de pago disponibles en el sistema.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147909_0_6a396b450eb4a.jpg" alt="Captura de pantalla mostrando una lista de medios de pago como Payway, Mercado Pago, Stripe, PayPal." />
+    </Frame>
+  </Step>
+
+  <Step title="Localice la opción de cancelación automática">
+    En la ventana de edición del medio de pago, busque el **paso número 7**, titulado "¿Quiere cancelar automáticamente las reservas que no se paguen a tiempo?". Este apartado contiene la opción para habilitar la cancelación automática.
+
+    <Frame caption="Ventana de edición de un medio de pago, enfocada en la sección 7.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147909_1_6a396b45bd60e.jpg" alt="Captura de pantalla de la interfaz de configuración de un medio de pago, con el paso 7 resaltado: '¿Quieres cancelar automáticamente las reservas que no se paguen a tiempo?'." />
+    </Frame>
+  </Step>
+
+  <Step title="Active la cancelación automática">
+    Active el interruptor **"Activar cancelación automática de reservas sin pago"**. Al hacerlo, se desplegarán campos de configuración adicionales para que usted defina el comportamiento de la cancelación.
+
+    <Frame caption="Opción de cancelación automática activada, mostrando campos adicionales.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147910_2_6a396b46c6c7a.jpg" alt="Captura de pantalla mostrando el interruptor 'Activar cancelación automática de reservas sin pago' habilitado, y campos de 'Tiempo de pago para cancelar' y 'Plantilla de Correo de Cancelación' visibles." />
+    </Frame>
+  </Step>
+
+  <Step title="Establezca el tiempo de pago para cancelar">
+    Seleccione un intervalo de tiempo en el campo **"Tiempo de pago para cancelar"**. Este es el período que el sistema esperará antes de cancelar la reserva si el pago no se confirma. Las opciones van desde minutos (por ejemplo, 30 minutos) hasta varias horas (1, 3, 6, 12, 24, 48 y 72 horas).
+
+    <Frame caption="Selector de tiempo para la cancelación, con la opción de 30 minutos resaltada.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147911_3_6a396b475be55.jpg" alt="Captura de pantalla del selector de 'Tiempo de pago para cancelar', mostrando opciones como '30 minutos', '1 hora', '3 horas', etc., con '30 minutos' seleccionado." />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccione la plantilla de correo de cancelación">
+    Elija una plantilla de correo electrónico en el campo **"Plantilla de Correo de Cancelación"**. Este correo se enviará automáticamente al huésped para notificarle que su reserva ha sido cancelada por falta de pago. Usted puede seleccionar una plantilla existente o crear una nueva.
+
+    <Frame caption="Menú desplegable para seleccionar la plantilla de correo de cancelación.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147912_4_6a396b4858650.jpg" alt="Captura de pantalla del menú desplegable para seleccionar la 'Plantilla de Correo de Cancelación', mostrando opciones de plantillas existentes." />
+    </Frame>
+  </Step>
+
+  <Step title="Guarde los cambios">
+    Una vez que haya configurado todas las opciones, desplácese hasta el final de la página y haga clic en el botón **"GUARDAR CAMBIOS"** para aplicar la nueva configuración al medio de pago.
+
+    <Frame caption="Botón de 'Guardar cambios' al final del formulario de edición del medio de pago.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147912_5_6a396b48c0335.jpg" alt="Captura de pantalla del botón 'GUARDAR CAMBIOS' al final del formulario de configuración de medios de pago." />
+    </Frame>
+
+    <Check>
+      Verifique que los cambios se guardaron correctamente para que la configuración surta efecto.
+    </Check>
+  </Step>
+</Steps>
+
+## Proceso de Reserva y Notificación de Pago Fallido
+
+Explore el flujo que experimenta un huésped cuando el pago de una reserva falla y se activa la cancelación automática.
+
+<Steps>
+  <Step title="El cliente realiza la reserva">
+    Cuando un cliente realiza una reserva a través de su motor de reservas, completará sus datos personales y de contacto.
+
+    <Frame caption="Formulario de datos del titular de la reserva en el motor de reservas.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147913_6_6a396b499156a.jpg" alt="Captura de pantalla de un formulario de reserva solicitando datos personales del titular como nombre, apellido, correo electrónico, teléfono y dirección." />
+    </Frame>
+  </Step>
+
+  <Step title="Selección y fallo del medio de pago">
+    En la sección de pago, el cliente selecciona un medio de pago que usted ha configurado previamente con la cancelación automática.
+
+    <Frame caption="Sección de información de pago con el medio de pago 'STRIPE' seleccionado.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147914_7_6a396b4a7b002.jpg" alt="Captura de pantalla de la sección de pago de una reserva, donde el medio de pago 'STRIPE' está seleccionado, mostrando campos para introducir los datos de la tarjeta de crédito." />
+    </Frame>
+
+    Si el cliente intenta pagar pero la transacción es rechazada o falla (por ejemplo, al usar datos de tarjeta incorrectos), el sistema no podrá completar el pago. Sin embargo, la reserva quedará registrada en un estado pre-confirmado.
+  </Step>
+
+  <Step title="Confirmación de reserva con pago fallido">
+    Tras el intento de pago fallido, el sistema mostrará una página de confirmación que informa al usuario: "Tu reserva está casi lista. El pago no se pudo completar, pero tu reserva quedó registrada". Se advertirá que, en caso de no realizarse el pago, la reserva podría ser cancelada.
+
+    <Frame caption="Página de confirmación de reserva con un mensaje de pago fallido.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147915_9_6a396b4bebd25.jpg" alt="Captura de pantalla de una página de confirmación de reserva que muestra un mensaje: '¡Tu reserva está casi lista! El pago no se pudo completar, pero tu reserva quedó registrada.'." />
+    </Frame>
+
+    <Warning>
+      Una vez transcurrido el tiempo configurado (en el ejemplo, 30 minutos) sin que el pago se haya completado, el sistema cancelará la reserva automáticamente. Esto libera el inventario y evita bloqueos innecesarios.
+    </Warning>
+  </Step>
+</Steps>
+
+## Notificación de Cancelación al Huésped
+
+Cuando la reserva se cancela automáticamente, el sistema notificará al huésped mediante un correo electrónico.
+
+<Steps>
+  <Step title="Envío del correo electrónico de cancelación">
+    El sistema enviará un correo electrónico al huésped utilizando la plantilla que usted seleccionó durante la configuración para informar que la reserva se encuentra cancelada.
+
+    <Frame caption="Bandeja de entrada de Gmail mostrando el correo de cancelación de reserva.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147916_11_6a396b4c6cd09.jpg" alt="Captura de pantalla de una bandeja de entrada de Gmail mostrando un correo con el asunto 'Su reserva se encuentra cancelada - [Número de Reserva]'." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Gestión Manual de la Cancelación Automática
+
+Usted puede gestionar manualmente el proceso de cancelación automática para reservas individuales.
+
+<Steps>
+  <Step title="Visualice el banner de cancelación programada">
+    Al acceder a los detalles de una reserva que tiene una cancelación automática programada, se mostrará un banner informativo en la parte superior.&#x20;
+
+    <Frame caption="Detalle de una reserva con el banner de cancelación automática programada.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147917_13_6a396b4d3362b.jpg" alt="Captura de pantalla de los detalles de una reserva, con un banner azul en la parte superior que dice 'Esta reserva se cancelará si no se recibe el pago en [Tiempo restante]'." />
+    </Frame>
+  </Step>
+
+  <Step title="Pause la cancelación automática">
+    Para detener el proceso de cancelación automática de una reserva específica, haga clic en el menú desplegable junto al banner de "Cancelación automática" y seleccione la opción **"Pausar para esta reserva"**.
+
+    <Frame caption="Menú desplegable con la opción 'Pausar para esta reserva'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147918_14_6a396b4e17e8c.jpg" alt="Captura de pantalla de un menú desplegable en el banner de cancelación automática, mostrando la opción 'Pausar para esta reserva'." />
+    </Frame>
+
+    <Info>
+      Al pausar la cancelación, el banner cambiará su estado a "Cancelación automática en pausa". Esta acción evita que la reserva se cancele automáticamente, dándole tiempo para gestionar el cobro manualmente o contactar al huésped. Es una acción reversible; usted puede reactivar la cancelación desde el mismo menú.
+    </Info>
+  </Step>
+
+  <Step title="Considere la disponibilidad de la opción">
+    Tenga en cuenta que esta opción para pausar la cancelación solo está disponible para reservas que se realizaron utilizando un medio de pago que tiene la cancelación automática activada. Si una reserva se realizó con un medio de pago sin esta configuración, el banner y las opciones de gestión no aparecerán.
+
+    <Frame caption="Detalle de una reserva sin la opción de cancelación automática disponible.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147919_16_6a396b4f37dc8.jpg" alt="Captura de pantalla de los detalles de una reserva donde el banner de cancelación automática no está presente, indicando que la opción no está disponible para esta reserva." />
+    </Frame>
+  </Step>
+</Steps>
