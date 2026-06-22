@@ -1,0 +1,89 @@
+---
+title: "Configurar Transferencia Bancaria como Medio de Pago"
+description: "Aprenda a habilitar y personalizar la transferencia bancaria como una opción de pago en su motor de reservas. Este proceso le permite definir el nombre visible, asociar la plantilla de correo con datos bancarios, establecer políticas aplicables, restringir por moneda y nacionalidad, y configurar descuentos u otras condiciones."
+---
+
+La transferencia bancaria es un método de pago esencial para muchos clientes. Este tutorial le guiará a través del proceso para configurarla como una opción disponible en su motor de reservas, asegurando que sus clientes tengan toda la información necesaria para completar sus pagos.
+
+<Steps>
+  <Step title="Acceder a la Gestión de Medios de Pago">
+    Navegue hasta la aplicación de **Medios de Pago**, que centraliza la gestión de todas las formas de pago disponibles en su sistema. Aquí iniciará el proceso para añadir una nueva modalidad de pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165298_0_6a39af326ab1e.jpg" alt="Vista de la aplicación de Medios de Pago con el cursor buscando la opción correcta." />
+    </Frame>
+  </Step>
+
+  <Step title="Crear un Nuevo Medio de Pago">
+    Haga clic en el botón **Nuevo medio de pago** para abrir un formulario emergente. Este formulario le permitirá definir las características y reglas para la nueva opción de pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165299_1_6a39af33744af.jpg" alt="Cursor haciendo clic en el botón rojo 'Nuevo medio de pago'." />
+    </Frame>
+
+  </Step>
+
+  <Step title="Seleccionar la Categoría 'Transferencia Bancaria'">
+    En el primer campo del formulario, **Categoría**, abra el menú desplegable. Seleccione **Transferencia Bancaria** de la lista de opciones. Esta elección adaptará los campos del formulario a las configuraciones específicas de este tipo de pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165299_2_6a39af33b7ad8.jpg" alt="Despliegue de la lista de categorías y selección de 'Transferencia Bancaria'." />
+    </Frame>
+  </Step>
+
+  <Step title="Asignar un Nombre al Medio de Pago">
+    En el campo **Nombre único**, ingrese `Transferencia bancaria`. Este es el texto que se mostrará al cliente final en la sección de pago de su motor de reservas.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165300_3_6a39af3424b9f.jpg" alt="Ingreso del texto 'Transferencia bancaria' en el campo de nombre." />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar la Plantilla de Correo Electrónico">
+    Seleccione la plantilla de correo electrónico que se enviará automáticamente al cliente cuando elija este método. Es crucial que la plantilla seleccionada contenga todos los datos de la cuenta bancaria (CBU/alias, nombre del titular, etc.) para que el cliente pueda efectuar el pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165300_4_6a39af347c65f.jpg" alt="Selección de una plantilla de correo desde un menú desplegable." />
+    </Frame>
+
+    <Warning>
+      Verifique que la plantilla de correo elegida contenga los datos bancarios completos y correctos. Sin esta información, el cliente no podrá realizar el pago.
+    </Warning>
+  </Step>
+
+  <Step title="Seleccionar Políticas Aplicables">
+    Especifique a qué políticas de cancelación aplicará este medio. Marque la casilla correspondiente a la política deseada. Esto asegura que la opción de transferencia bancaria solo esté disponible para las tarifas asociadas a dicha política.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165300_5_6a39af34b94c6.jpg" alt="Marcado de una casilla de verificación en la sección de políticas aplicables." />
+    </Frame>
+  </Step>
+
+  <Step title="Configurar Monedas Permitidas">
+    Defina las monedas en las que este medio de pago estará disponible. Esto significa que solo las reservas cotizadas en esta moneda mostrarán la opción de pago por transferencia bancaria.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165301_6_6a39af35035c5.jpg" alt="Marcado de la casilla de 'Peso Argentino (ARS)' en la sección de monedas." />
+    </Frame>
+  </Step>
+
+  <Step title="Restringir por Nacionalidad del Cliente">
+    Restrinja la disponibilidad del medio de pago por nacionalidad del cliente. Esto limitará la visualización de esta forma de pago únicamente a clientes cuya nacionalidad corresponda a la configurada.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782165301_7_6a39af354a945.jpg" alt="Selección de la nacionalidad 'Argentina' para restringir el medio de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Establecer Descuento y Ventana de Reserva, y Guardar">
+    Puede configurar un descuento, recargo o cobro de un porcentaje del total de la reserva al seleccionar este medio de pago. Si desea establecer un período mínimo de antelación para la reserva, ingrese el correspondiente en el campo **Ventana de Reserva Mínima** (por ejemplo, 3 días antes de la fecha de llegada).
+
+    Finalmente, haga clic en el botón **Guardar Cambios** para aplicar todas las configuraciones. El sistema mostrará un mensaje de confirmación cuando la configuración se haya guardado correctamente.
+
+    <Check>
+      Confirme que ha recibido el mensaje de éxito y que la transferencia bancaria aparece como un medio de pago configurado en la lista y en el check-out del motor de reservas.
+    </Check>
+  </Step>
+</Steps>
+
+Ahora ha configurado con éxito la transferencia bancaria como un medio de pago para sus clientes. Asegúrese de probar el flujo de reserva para verificar que la opción se muestra correctamente y que los correos electrónicos se envían con la información bancaria adecuada.
