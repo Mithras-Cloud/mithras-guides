@@ -1,203 +1,358 @@
 ---
-title: "Plano de Ocupación"
-description: "Guía de uso del Plano de Ocupación renovado de PXSOL: más rápido, más claro y más completo para gestionar habitaciones y reservas."
+title: Plano de Ocupación
+description: Guía de uso y novedades del Plano de Ocupación — más rápido, más claro y más completo. Cómo usar cada función, paso a paso.
+lang: es
 ---
 
-El **Plano de Ocupación** es la herramienta para administrar tus habitaciones y reservas desde una sola pantalla. La versión renovada es más rápida, más clara y más completa: carga al instante, se actualiza en vivo y suma funciones nuevas para trabajar con varios establecimientos, buscar todo desde un solo lugar y personalizar la vista a tu gusto.
+# Plano de Ocupación
 
-<Info>
-  Las novedades están marcadas con etiquetas: **NUEVO**, **MEJORA**, **RENOVADA** o **NUEVO
-  DISEÑO**. Si ya conocías el plano anterior, fíjate en esas marcas para ver qué cambió.
-</Info>
+**PXSOL · Guía de uso — Junio 2026**
 
-## Qué es y qué cambió
+Todo lo nuevo y lo que mejoró: más rápido, más claro y más completo. Cómo usar cada función, paso a paso.
 
-El nuevo Plano de Ocupación mantiene lo que ya conocías y mejora la experiencia de fondo.
+> **Novedades de esta versión:** Carga más rápida · Cambio de establecimiento · Búsqueda global · Intercambiar habitaciones · Huésped por habitación · Correo y plantillas · Días festivos · Modo claro / oscuro.
 
-| Antes                                | Ahora                                                      |
-| ------------------------------------ | ---------------------------------------------------------- |
-| Carga lenta con muchas habitaciones  | Carga instantánea, dibuja solo lo visible                  |
-| Se actualizaba al recargar la página | Se actualiza en vivo, en tiempo real                       |
-| Un solo establecimiento por vista    | Cambio de establecimiento sin salir                        |
-| Búsqueda limitada                    | Búsqueda global de reservas, contactos, empresas y correos |
-| Vista fija                           | Tamaño de vista, colores y tema personalizables            |
+## Contenido
 
-## Carga más rápida [MEJORA]
+1. Qué es y qué cambió
+2. Carga más rápida
+3. Cambiar de establecimiento
+4. Búsqueda global
+5. Barra superior
+6. Filtros
+7. Rango de fechas
+8. La grilla y su diseño
+9. La pastilla de reserva
+10. Detalle de la reserva
+11. Bloqueos
+12. Mover e intercambiar
+13. Indicadores del día
+14. Reservas sin asignar
+15. Tamaño de la vista
+16. Colores de las reservas
+17. Días festivos
+18. Estado de limpieza
+19. Crear reservas y bloqueos
+20. Correo y plantillas
+21. Modo claro / oscuro
+22. ¿Quién ve mis cambios?
 
-El sistema está optimizado para responder al instante, sin importar cuántas habitaciones tengas.
+---
 
-- **Dibuja solo lo que ves**: aunque haya cientos de habitaciones, el plano renderiza únicamente lo visible en pantalla.
-- **Se actualiza en vivo**: los cambios se reflejan en tiempo real, sin necesidad de recargar.
-- **Acciones al instante**: crear, mover o editar reservas responde de inmediato.
-- **Recuerda lo que cargó**: al volver a una zona ya visitada, no la vuelve a pedir desde cero.
+## 1. Qué es y qué cambió
 
-## Cambiar de establecimiento [NUEVO]
+El Plano de Ocupación es la vista de calendario donde ves todas tus habitaciones y reservas, y gestionás el día a día.
 
-Si administras varios hoteles o propiedades, puedes cambiar entre ellos sin abandonar la interfaz principal. Seleccionas el establecimiento desde la barra superior y el plano se actualiza solo con sus habitaciones y reservas.
+Esta es una versión renovada: **más rápida, más clara y más completa**. Mantiene todo lo que ya conocías y suma varias funciones nuevas.
 
-## Búsqueda global [RENOVADA]
+| Tema | Antes | Ahora |
+|------|-------|-------|
+| Velocidad | Recarga la página | Carga al instante y se actualiza solo · **MEJORA** |
+| Cambiar de hotel | Salir y volver a entrar | Selector rápido en el plano · **NUEVO** |
+| Intercambiar habitaciones | Dos movimientos manuales | Un paso, arrastrando · **NUEVO** |
+| Huésped en la reserva | Solo el titular | Muestra el huésped de cada habitación · **NUEVO** |
+| Correo | Básico | Redactor con plantillas y adjuntos · **NUEVO** |
+| Días festivos | — | Nacionales y propios, en el plano · **NUEVO** |
+| Apariencia | Una sola | Diseño nuevo + modo claro / oscuro · **NUEVO** |
 
-Un único buscador localiza lo que necesites desde cualquier pantalla.
+---
 
-<Tip>
-  Abre el buscador con **⌘** (Command) para encontrar **reservas, contactos, empresas y correos**
-  sin salir del plano.
-</Tip>
+## 2. Carga más rápida — MEJORA
 
-## Barra superior
+El plano abre mucho más rápido y se siente fluido aunque tengas cientos de habitaciones y meses de reservas. Y lo mejor: **cuanto más grande es el hotel, mayor es la diferencia**.
 
-La barra superior reúne los controles principales del plano:
+| Métrica | Valor |
+|---------|-------|
+| Menos elementos dibujados en pantalla* | **−96%** |
+| Para cambiar de fecha (antes 2–5 s) | **&lt; 0,5 s** |
+| Recargas de página al operar | **0** |
+| Menos descarga al abrir* | **~70%** |
 
-- Selector de **establecimiento**.
-- Acceso a la **búsqueda global**.
-- **Filtros** de la vista.
-- Selector de **rango de fechas**.
-- Controles de **vista y tema**.
+### Elementos dibujados en pantalla
 
-## Filtros
+Cuánto tiene que dibujar el navegador:
 
-Acota lo que ves en la grilla según tu necesidad del momento: por tipo de habitación, estado de la reserva u otras condiciones disponibles. Los filtros se aplican sobre la vista actual sin modificar tus datos.
+| Escenario | Antes | Ahora | Mejora |
+|-----------|-------|-------|--------|
+| Hotel mediano (50 hab × 60 días) | ~21.000 | ~1.500 | −93% |
+| Hotel grande (100 hab × 120 días) | ~85.000 | ~3.000 | −96% |
 
-## Rango de fechas
+> El plano viejo **crecía** con el tamaño del hotel; el nuevo se mantiene en un hilito sin importar cuántas habitaciones y fechas tengas.
 
-Elige el período que quieres visualizar en la grilla. Cuentas con accesos rápidos para moverte entre fechas y saltar a rangos frecuentes sin tener que seleccionarlos manualmente cada vez.
+### Cambiar de fecha o rango
 
-## La grilla y su diseño [NUEVO DISEÑO]
+| Métrica | Antes | Ahora | Mejora |
+|---------|-------|-------|--------|
+| Tiempo de respuesta | 2–5 s | &lt; 0,5 s | −90% |
 
-La grilla es el corazón del plano: filas para habitaciones y columnas para los días del rango elegido.
+> Antes recargaba todo el plano; ahora se actualiza al instante, sin recargar.
 
-- Visualizas de un vistazo qué habitaciones están ocupadas, libres o bloqueadas.
-- Interactúas directamente sobre la grilla para crear, mover o editar.
-- El diseño renovado prioriza la claridad y el rendimiento incluso con muchas habitaciones.
+### Qué lo hace más rápido
 
-## La pastilla de reserva [MÁS MODERNA]
+- **Dibuja solo lo que ves** — aunque haya muchísimas habitaciones y fechas, prepara solo lo visible. Por eso no se pone lento en hoteles grandes.
+- **Arranca liviano** — al abrir baja mucho menos; las pantallas pesadas (crear reserva, correo, configuración) se cargan recién cuando las usás.
+- **Se actualiza en vivo** — cuando entra o cambia una reserva, se refresca solo, sin recargar la página.
+- **Acciones al instante** — mover, intercambiar o cambiar de fecha se ven de inmediato.
+- **Recuerda lo que cargó** — al volver a una vista, evita esperas repetidas.
 
-Cada reserva se representa con una **pastilla** sobre la grilla. El diseño actualizado muestra la información clave de forma más legible.
+> \* Valores de referencia para un hotel grande (≈100 habitaciones × 120 días). Los conteos de elementos surgen del propio sistema; los tiempos y el peso de descarga son estimaciones según la arquitectura. En todos los casos, la diferencia crece cuanto más grande es el establecimiento.
 
-### 🆕 El huésped de cada habitación
+---
 
-En reservas que abarcan **varias habitaciones**, ahora se ve quién ocupa cada cuarto en particular.
+## 3. Cambiar de establecimiento — NUEVO
 
-- Identificas al huésped asignado a cada habitación.
-- Distinguís fácilmente reservas individuales de las múltiples.
-- Reconoces rápidamente a qué reserva pertenece cada pastilla.
-- Interactúas con la pastilla para ver más detalle o editar.
+Si administrás varios hoteles, saltá de uno a otro sin salir del plano.
 
-## Detalle de la reserva
+Junto al logo hay un selector de establecimiento. Al desplegarlo ves la lista de tus hoteles (por ejemplo: *Hotel Costa Azul*, *Posada del Lago*, *Cabañas El Bosque*); elegís uno y el plano se actualiza al toque.
 
-Al seleccionar una reserva se abre un panel con su información. Ten en cuenta la diferencia entre dos accesos:
+---
 
-- **Ver Detalle**: muestra un resumen rápido dentro del plano, sin salir de la vista.
-- **Ver Reserva**: abre la reserva completa para gestionarla en profundidad.
+## 4. Búsqueda global — RENOVADA
 
-## Bloqueos
+Un buscador único para encontrar de todo: reservas, contactos, empresas, correos, informes. Se abre con el botón ⌘ o un atajo de teclado.
 
-Puedes reservar disponibilidad sin que sea una estadía de huésped. Existen distintas opciones de bloqueo:
+Escribís en un solo campo (*"Buscar reservas, contactos, empresas…"*) y aparecen resultados de cualquier tipo, sin cambiar de pantalla. Por ejemplo:
 
-- **Bloqueo de habitación**: marca una habitación como no disponible por mantenimiento u otro motivo.
-- **Bloqueo por período**: reserva una franja de fechas para que no se pueda vender.
+- 📅 Reserva #48213 — García, Lucía
+- 👤 Contacto — Martín Pérez
+- 🏢 Empresa — Viajes del Sur
 
-## Mover e intercambiar habitaciones
+También hay un **buscador de filas** dentro del plano para resaltar habitaciones, huéspedes, país o número de reserva sobre la grilla.
 
-Trabajas directamente sobre la grilla arrastrando las reservas.
+---
 
-- **Mover**: arrastras una reserva a otra habitación o fecha disponible.
-- **Intercambiar**: al arrastrar una reserva sobre otra del **mismo tipo**, el sistema las cambia automáticamente entre sí.
-- El cambio se confirma al soltar, manteniendo la coherencia de las fechas.
+## 5. Barra superior
 
-## Indicadores del día [MÁS DETALLES]
+Reúne las acciones principales y se acomoda sola al tamaño de tu pantalla. De izquierda a derecha: logo, selector de hotel, búsqueda, configuración, "Hoy", menú "＋" y "Nueva reserva".
 
-Cada día de la grilla muestra indicadores con información de ocupación, entradas, salidas y pendientes, ahora con más detalle para anticipar la operación de la jornada.
+- **Hoy** — vuelve la vista al día actual.
+- **Nueva reserva** — abre la carga de una reserva.
+- **Menú "＋"** — creación rápida: bloqueo, presupuesto, consulta o correo.
+- **Configuración** — tamaño de la vista, colores, indicadores y festivos.
+- En pantallas chicas las acciones se agrupan en un menú ☰.
 
-### Columnas con reservas sin asignar [NUEVO]
+---
 
-Las columnas señalan cuándo hay reservas que todavía no tienen una habitación asignada, para que las resuelvas antes de la llegada del huésped.
+## 6. Filtros
 
-## Reservas sin asignar [NUEVO]
+Mostrá solo las habitaciones que te interesan. Cuando hay filtros activos aparece "Limpiar filtros".
 
-El sistema te avisa por **tres vías** cuando hay reservas pendientes de asignar habitación, para que no se te escapen:
+Podés filtrar por **categoría**, **piso**, **estado** de limpieza u **ocupación** del día, además del buscador de filas. En el celular, los filtros se abren en un panel.
 
-- **Botón** dedicado en la interfaz.
-- **Notificación** visible.
-- **Panel** con el listado de pendientes.
+---
 
-<Warning>
-  Una reserva sin asignar no tiene habitación definida. Resuélvela antes del check-in para evitar
-  conflictos de disponibilidad.
-</Warning>
+## 7. Rango de fechas
 
-## Tamaño de la vista [PREVIEW EN VIVO]
+Define qué fechas ves. Se resalta en **azul** para encontrarlo fácil: es navegación, no un filtro más.
 
-Ajusta el tamaño de la grilla a tu pantalla y preferencia. El **preview en vivo** te muestra el resultado mientras mueves el control, así eliges el nivel de detalle ideal sin probar a ciegas.
+Al abrirlo trae atajos (esta semana, 30/60/90/120 días) y un calendario doble. Mostrás hasta **120 días** a la vez (por ejemplo *1 jun – 30 jun 2026*).
 
-## Colores de las reservas
+---
 
-Los colores ayudan a distinguir estados y tipos de reserva de un vistazo.
+## 8. La grilla y su diseño — NUEVO DISEÑO
+
+Habitaciones en filas, fechas en columnas. Diseño renovado, más limpio y legible.
+
+Cada fila de habitación muestra su punto de **estado de limpieza** y su **categoría** (DBL, SGL, etc.). Las reservas se dibujan como pastillas que ocupan sus fechas; los bloqueos (p. ej. *Mantenimiento*) aparecen como barras.
+
+- **Encabezado de fechas y columna de habitaciones fijos** al desplazar.
+- **Hoy, fin de semana y festivos** con color de fondo suave.
+- **Seleccionar fechas libres** arrastrando abre un menú para crear bloqueo, reserva o presupuesto ahí mismo.
+
+---
+
+## 9. La pastilla de reserva — MÁS MODERNA
+
+Cada reserva es una pastilla con forma moderna (bordes inclinados) y toda la info de un vistazo: **nombre del huésped** + iconos de **impago**, **país** (bandera), **cantidad de huéspedes**, **noches** y **canal de venta** (por ejemplo, Booking).
+
+> **🆕 El huésped de cada habitación**
+>
+> Una reserva puede tener un **huésped principal por habitación**. El plano lo aprovecha: si una reserva ocupa varias habitaciones, **cada pastilla muestra al huésped que se aloja en esa habitación** (no siempre el titular). Así sabés de un vistazo quién está en cada cuarto. Antes todas mostraban solo al titular.
+
+- **Pasá el mouse** y la pastilla se agranda para mostrar todo el detalle.
+- **Puntas más oscuras** con early check-in / late check-out (entrada o salida a mitad de día). · **NUEVO**
+- **Un click** abre el menú; **doble click** abre la reserva directo.
+- **Candado** cuando la habitación está bloqueada o la reserva no se puede mover.
+- Al buscar, la reserva queda **resaltada con un halo**.
+
+---
+
+## 10. Detalle de la reserva
+
+Un click → "Ver Detalle" abre un panel lateral con el resumen completo, sin salir del plano. El panel se organiza en bloques **Titular / Reserva / Habitación / Notas**, con el botón "Ir a la reserva" abajo.
+
+**Titular**
+
+| Campo | Ejemplo |
+|-------|---------|
+| Nombre y apellido | García, Lucía |
+| Nacionalidad | 🇦🇷 Argentina |
+| Email | lucia@correo.com |
+| Teléfono | +54 9 11 5555 |
+
+**Reserva**
+
+| Campo | Ejemplo |
+|-------|---------|
+| Ingreso | 14/6/2026 |
+| Salida | 16/6/2026 |
+| Noches | 2 |
+| Total | $ 120.000 |
+| Pagado | $ 80.000 |
+| Impago | $ 40.000 |
+| Instancia | Confirmada |
+
+**Habitación**
+
+| Campo | Ejemplo |
+|-------|---------|
+| Nombre | 101 |
+| Categoría | Doble |
+| ECI / LCO | No / Sí |
+| Distribución | 🛏 1 |
+
+> 💡 Atajo: doble click sobre la reserva en el plano para abrirla.
+
+**Ver Detalle** = este resumen rápido en el plano · **Ver Reserva** (o doble click) = la ficha completa.
+
+---
+
+## 11. Bloqueos
+
+Habitaciones bloqueadas por mantenimiento u otros motivos. **Amarillo** para bloqueo común, **rojo** para fuera de servicio. Al click: ver, editar o eliminar.
+
+- **Bloqueo de medio día** — para medias jornadas (mañana o tarde).
+- **Bloquear varias habitaciones** a la vez — elegís el rango y marcás todas las que quieras.
+
+---
+
+## 12. Mover e intercambiar habitaciones
+
+Reorganizá reservas arrastrándolas. Arrastrar a una habitación libre = **mover**. Arrastrar sobre otra reserva = **intercambiar**.
+
+- **Mover**: al arrastrar ves un aviso verde (se puede) o rojo (no se puede). Si la habitación destino es de otra categoría, te avisa antes de confirmar.
+- **Intercambiar** · **NUEVO**: si la soltás sobre otra reserva de la misma categoría, se abre una confirmación y se **cambian de habitación las dos a la vez**.
+
+---
+
+## 13. Indicadores del día — MÁS DETALLES
+
+Arriba de la grilla, una fila por indicador y una columna por día. Ahora con mucha más información: **sin asignar, libres, ingresos, salidas, huéspedes, ocupación y disponibilidad por categoría**.
+
+| Indicador | Mié 13 | Jue 14 | Vie 15 | Sáb 16 | Dom 17 |
+|-----------|:------:|:------:|:------:|:------:|:------:|
+| Sin asignar › | 0 | **2** | 0 | 0 | **1** |
+| Libres | 8 | 5 | 9 | 7 | 6 |
+| Ocupación | 72% | 81% | 64% | 70% | 78% |
+
+### Columnas con reservas sin asignar — NUEVO
+
+Cuando una fecha tiene reservas sin asignar, se pinta **toda su columna en rojo claro** (Jue y Dom en el ejemplo) para que constantemente se vea que ahí hay algo para revisar. El "Sin asignar" se muestra en rojo y te lleva al panel con un click. Si no hay sin-asignar, todo vuelve a la normalidad.
+
+---
+
+## 14. Reservas sin asignar — NUEVO
+
+Reservas que todavía no tienen habitación. Imposible que se te pasen: tres formas de avisarte.
+
+- **Botón en la barra** — rojo con el número (p. ej. *Sin asignar · 3*).
+- **Alerta** — aparece al abrir el plano o cuando llega una nueva (*"Recibiste 3 reservas sin asignar"*). Se cierra cuando querés o al abrir el panel.
+- **Panel** — listado con huésped, fechas y pagos; click para abrir cada una.
+
+---
+
+## 15. Tamaño de la vista — PREVIEW EN VIVO
+
+Elegí cuántas habitaciones ver de golpe: desde muy compacto (más filas) hasta cómodo.
+
+Movés el control (*Compacto ◀ ── ▶ Cómodo*) y una **vista previa** te muestra al toque cómo queda, sin guardar.
+
+> Esta preferencia es **tuya**: cada operador elige su tamaño y no afecta al resto.
+
+---
+
+## 16. Colores de las reservas
+
+Cada estado de reserva tiene su color. Se renovó la paleta para que todos sean fáciles de distinguir. Antes algunos compartían color (Arribos y Venta, Salidas e In House); ahora cada uno es único.
+
+| Estado | Color |
+|--------|-------|
+| Preventa / Nueva | `#3b82f6` |
+| Venta / Confirmada | `#10b981` |
+| Arribos | `#0ea5e9` |
+| In House | `#14b8a6` |
+| Salidas | `#f97316` |
+| Postventa | `#8b5cf6` |
+| No shows | `#475569` |
+| Sin asignar | `#ffb86a` |
 
 ### Cómo cambiarlos
 
-Desde la configuración de colores asignas un color a cada estado o categoría de reserva. El cambio se refleja en toda la grilla.
+Un selector con paleta visual (mover a gusto) y un campo para pegar el código de color (p. ej. `#10B981`). Los colores se aplican **para todo el hotel**.
 
-<Note>
-  Los colores de las reservas son **configuración compartida**: afectan a todos los usuarios del
-  establecimiento.
-</Note>
+---
 
-## Días festivos [NUEVO]
+## 17. Días festivos — NUEVO
 
-Visualiza los feriados directamente sobre la grilla para planificar mejor.
+Marcá los días especiales para tenerlos siempre a la vista. Los feriados tiñen la columna y muestran su nombre al pasar el mouse.
 
-- Se muestran los **feriados nacionales**.
-- Puedes cargar **eventos propios** del establecimiento.
-- Los días festivos se ven directamente en la grilla, junto a las fechas.
+- **Feriados nacionales** — según el país, se pueden traer automáticamente.
+- **Feriados propios** del hotel o la ciudad — los cargás vos, con su color.
+- Podés cargar un **día puntual o un rango** (ej. una semana de evento).
 
-## Estado de limpieza
+---
 
-Consulta el estado de limpieza de cada habitación desde el plano, para coordinar la operación de housekeeping con las llegadas y salidas del día.
+## 18. Estado de limpieza
 
-## Crear reservas y bloqueos
+El estado de housekeeping de cada habitación, a la vista. Un punto de color por estado. Cambiás el estado y dejás observaciones desde la misma fila.
 
-Tienes varias formas de crear desde el plano: nueva reserva, bloqueo de habitación, bloqueo por período y demás opciones disponibles según tu operación.
+| Estado | Color |
+|--------|-------|
+| Limpia | `#4d842c` (verde) |
+| Sucia | `#8b4513` (marrón) |
+| Fuera de servicio | `#6e6e6e` (gris) |
+
+---
+
+## 19. Crear reservas y bloqueos
+
+Desde el botón "＋", desde "Nueva reserva" o seleccionando fechas libres en la grilla. El menú "＋" ofrece: **Nuevo bloqueo**, **Nuevo presupuesto**, **Nueva consulta** y **Nuevo correo** — todo desde el plano.
 
 ### Cargar reserva = un asistente guiado
 
-Cargar una reserva es un proceso guiado en pasos.
+- **Huésped** — buscás un contacto existente o creás uno nuevo (nombre, documento, país, teléfono, email).
+- **Datos** — ingreso / salida, early check-in / late check-out, tarifario, moneda, idioma y notas.
+- **Habitaciones** — cantidad, selección entre las disponibles, tarifa diaria o total y distribución de camas.
 
-<Steps>
-  <Step title="Datos de la estadía">Indicas habitación, fechas y tipo de reserva.</Step>
-  <Step title="Datos del huésped">Cargas o seleccionas el contacto que ocupa la habitación.</Step>
-  <Step title="Confirmación">
-    Revisas el resumen y confirmas. La reserva aparece en la grilla al instante.
-  </Step>
-</Steps>
+---
 
-## Correo y plantillas [NUEVO]
+## 20. Correo y plantillas — NUEVO
 
-Un editor de correo integrado te permite comunicarte con los huéspedes sin salir del plano.
+Desde el plano podés redactar y enviar correos, con plantillas reutilizables. Elegís una plantilla (p. ej. *Confirmación de reserva*), completás destinatario y asunto, adjuntás archivos y enviás. Podés guardar borradores.
 
-- Redactas mensajes desde el editor integrado.
-- Reutilizas **plantillas** para mensajes frecuentes.
-- Sumás **adjuntos** a tus envíos.
+- **Plantillas reutilizables** — confirmaciones, marketing, encuestas, comprobantes, etc.
+- **Editor de plantillas** — con contenido dinámico (datos de la reserva), por idioma e instancia.
+- **Adjuntos** y **guardar borrador** para retomar después.
 
-## Modo claro / oscuro [NUEVO]
+---
 
-Cambia entre **tema claro** y **tema oscuro** según tu preferencia o el horario de trabajo, para mayor comodidad visual.
+## 21. Modo claro / oscuro — NUEVO
 
-## ¿Quién ve mis cambios?
+El plano se adapta para trabajar cómodo de día o de noche. Las reservas conservan su color; el fondo y los textos se ajustan al tema.
 
-No todo lo que configuras afecta a los demás. Hay una diferencia clara entre lo personal y lo compartido.
+---
 
-### 🔑 Para tener claro
+## 22. ¿Quién ve mis cambios?
 
-<CardGroup cols={2}>
-  <Card title="Preferencias personales" icon="user">
-    Solo te afectan a ti: tamaño de la vista, indicadores y tema claro/oscuro.
-  </Card>
-  <Card title="Configuración compartida" icon="users">
-    Afecta a todo el establecimiento: colores de las reservas y días festivos del hotel.
-  </Card>
-</CardGroup>
+Algunas preferencias son personales y otras se comparten con todo el hotel.
 
-<Note>
-  Antes de cambiar colores o festividades, recuerda que el resto del equipo verá esos cambios.
-</Note>
+> **🔑 Para tener claro**
+>
+> - **Tuyo (solo vos):** el **tamaño de la vista** y qué **indicadores** mostrás. Cada operador tiene su configuración.
+> - **Del hotel (todos lo ven):** los **colores** de las reservas y los **días festivos**. Si los cambiás, cambian para todo el establecimiento.
+
+Además, algunas acciones dependen de tus permisos: si no tenés habilitada una función, el botón aparece pero te avisa que no tenés acceso.
+
+---
+
+*PXSOL · Plano de Ocupación · Guía de uso · Junio 2026*
