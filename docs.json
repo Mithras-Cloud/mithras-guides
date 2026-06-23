@@ -460,7 +460,8 @@
               "pms/alcance_de_la_integracion_pxsol_siigo",
               "pms/como_crear_centros_de_costo",
               "pms/como_crear_subgrupos_para_los_centros_de_costo",
-              "pms/cambios_de_sabanas"
+              "pms/cambios_de_sabanas",
+              "pms/plano_de_ocupacion"
             ]
           },
           {
