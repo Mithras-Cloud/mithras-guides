@@ -144,5 +144,19 @@ Usted puede gestionar manualmente el proceso de cancelación automática para re
     <Frame caption="Detalle de una reserva sin la opción de cancelación automática disponible.">
       <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/22/screenshot_1782147919_16_6a396b4f37dc8.jpg" alt="Captura de pantalla de los detalles de una reserva donde el banner de cancelación automática no está presente, indicando que la opción no está disponible para esta reserva." />
     </Frame>
+
+    La automatización de cancelación automática puede detenerse por cualquiera de las siguientes razones:
+
+    **1. Pausar la automatización manualmente**
+    Desde el banner amarillo de la reserva puedes seleccionar la opción para pausar la cancelación automática.
+
+    **2. Registro de un pago automático a través de un procesador o pasarela integrada**
+    Si compartís nuevamente el link de pago al cliente y este realiza el pago mediante una integración como Stripe, PayPal, Mercado Pago o WebPay, el sistema acredita el cobro automáticamente y detiene la cancelación automática de la reserva.
+
+    **3. Mover la reserva a la instancia Confirmada**
+    La cancelación automática solo se ejecuta sobre reservas que se encuentran en la instancia de Preventa. Por lo tanto, al mover la reserva a Confirmadas, la automatización deja de aplicar.
+
+    **Importante:**
+    El sistema solo reconoce automáticamente los pagos que ingresan a través de procesadores o pasarelas integradas. Si se registra un pago de forma manual, ese cobro no detendrá la cancelación automática por sí solo. En estos casos, se recomienda mover la reserva a Confirmadas o utilizar la opción de pausar la automatización.
   </Step>
 </Steps>
