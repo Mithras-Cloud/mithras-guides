@@ -1,0 +1,146 @@
+---
+title: "Gestión de Claves de API para Integraciones"
+description: "Aprenda a instalar el módulo de Integraciones Generales y a generar claves de API seguras (API Keys) que permiten a sistemas externos interactuar con la plataforma del hotel, controlando el acceso mediante permisos específicos y usuarios asociados."
+---
+
+La funcionalidad de **Gestión de Claves de API** le permite instalar el módulo de integraciones generales y generar claves de API (API Keys). Estas claves son **tokens de acceso seguros** que permiten a sistemas externos conectarse e interactuar con la plataforma del hotel de forma autorizada, heredando los permisos del usuario asociado a la clave.
+
+Usted puede crear múltiples claves, cada una con un conjunto de permisos específicos para segmentar el acceso según la necesidad de la integración.
+
+## Instalación del Módulo de Integraciones
+
+Para habilitar la generación y gestión de claves de API, primero debe instalar el módulo correspondiente.
+
+<Steps>
+  <Step title="Diríjase al Marketplace de Integraciones">
+    Vaya a la sección de **"Integraciones"** o **"Marketplace"** de su sistema.
+
+    <Frame caption="Vista del marketplace de integraciones con múltiples tarjetas de aplicaciones.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782767864_0_6a42e0f82a664.jpg" alt="Captura de pantalla del Marketplace de Integraciones, mostrando varias tarjetas de aplicaciones disponibles." />
+    </Frame>
+  </Step>
+
+  <Step title="Localice e instale el módulo de API Keys">
+    Busque la opción **"Integraciones Generales (API Keys)"** dentro de las integraciones disponibles y seleccione **"Instalar"**.
+
+    <Frame caption="Cursor del mouse sobre el botón 'Instalar' de la tarjeta 'Integraciones Generales (API Keys)'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782767865_1_6a42e0f9c9da5.jpg" alt="Captura de pantalla de la tarjeta 'Integraciones Generales (API Keys)' en el Marketplace, con el botón 'Instalar' resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Acepte los términos y condiciones">
+    Acepte los términos y condiciones del servicio que se presentan en la ventana emergente. Esta ventana le informa sobre el costo asociado al servicio y los detalles del contrato.
+
+    Marque la casilla de aceptación y presione **"Instalar"** para continuar.
+
+    <Warning>
+      Lea atentamente los términos y condiciones, ya que la instalación de este módulo podría implicar costos asociados al servicio.
+    </Warning>
+
+    <Frame caption="Ventana emergente con los términos y condiciones y un botón 'Instalar'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782767866_2_6a42e0fa3da18.jpg" alt="Captura de pantalla de la ventana emergente de términos y condiciones, mostrando un botón 'Instalar' en la parte inferior." />
+    </Frame>
+  </Step>
+
+  <Step title="Verifique la instalación">
+    Una vez instalado, el sistema le redirigirá automáticamente a la pantalla de gestión **"Mis API Keys"**, donde podrá crear y administrar sus claves.
+
+    <Check>
+      Confirme que ha sido redirigido a la pantalla **"Mis API Keys"** y que ve el botón **"Crear API Key"**.
+    </Check>
+
+    <Frame caption="Pantalla vacía con el título 'Mis API Keys' y un botón 'Crear API Key'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782767866_3_6a42e0fa95c83.jpg" alt="Captura de pantalla de la pantalla 'Mis API Keys', que inicialmente está vacía y muestra un botón 'Crear API Key'." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Creación de una Nueva Clave de API
+
+Desde la pantalla de gestión **"Mis API Keys"**, usted puede generar nuevas claves para diferentes integraciones.
+
+<Steps>
+  <Step title="Inicie la creación de una nueva clave">
+    Haga clic en el botón **"Crear API Key"** para iniciar el proceso de creación de una nueva clave.
+
+    <Frame caption="Cursor del mouse haciendo clic en el botón rojo 'Crear API Key'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782767867_4_6a42e0fbd729a.jpg" alt="Captura de pantalla del botón 'Crear API Key' resaltado, indicando la acción de hacer clic." />
+    </Frame>
+  </Step>
+
+  <Step title="Configure los detalles de la clave">
+    Complete el formulario **"Crear nueva API Key"** con los detalles de su nueva clave.
+
+    <Frame caption="Formulario 'Crear nueva API Key' con campos como Nombre y Usuario asociado.">
+      ![Captura de pantalla del formulario 'Crear nueva API Key', mostrando los campos para introducir la información de la clave.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782767868_5_6a42e0fc427b7.jpg)
+    </Frame>
+
+    Debe definir los siguientes campos:
+
+    * **Nombre:** Asigne un nombre descriptivo que le permita identificar el propósito de la clave, por ejemplo, "API key de prueba para CRM".
+    * **Usuario asociado:** Seleccione un usuario existente del sistema. La clave de API operará con los permisos de este usuario. Todas las acciones realizadas a través de la API se registrarán como si las hubiera hecho el usuario seleccionado.
+    * **Expiración:** Establezca un período de validez para la clave.
+      <Tip>
+        Se recomienda seleccionar un período de expiración definido (por ejemplo, "12 meses") para mejorar la seguridad y requerir una rotación periódica de claves.
+      </Tip>
+    * **Alcance:** Defina a qué recursos tendrá acceso la clave.
+      * **Implícito:** Otorga acceso a todos los recursos de la propiedad actual.
+      * **Explícito:** Le permite restringir el acceso a empresas y establecimientos específicos, lo cual es útil en entornos con múltiples propiedades.
+    * **Entorno:** Seleccione **"Producción"** para que la clave sea funcional en el ambiente operativo real.
+
+    **Defina los permisos específicos:**
+    Despliegue cada sección (por ejemplo, "Hotel", "Reservas") y active los interruptores para conceder las autorizaciones necesarias. Esto le permite un control granular sobre las acciones que la integración externa podrá realizar, como "Consultar disponibilidad", "Ver datos del hotel", "Crear reservas" o "Listar reservas".
+
+    <Frame>
+      <img height="369" width="596" alt="Imagen" src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/231759903835d810b12fa5365b3f08ef93d76e2a84d.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260629T212812Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=dd7474c3f0fa68202e80c6f34c65b6006881ae7d77a2a4f4803b6fd738d24604" />
+    </Frame>
+  </Step>
+
+  <Step title="Genere la clave de API">
+    Una vez que haya configurado todos los detalles y permisos, haga clic en el botón **"Crear API Key"** en la parte inferior del formulario para generar la clave.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5348305740c9ccd04c43c935d7a2e59f1f7d442b18.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260629T212940Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=9a2abbaaefbdffcdc6503b2b7769648f65812998cbc084428dbdc9dfff38d72e" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Copie y guarde el token de acceso">
+    Copie el **token de acceso** generado que se muestra en la ventana emergente. Este token es su clave de API y **solo se mostrará una vez** por motivos de seguridad.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2317599276277034b8c25a09513901493f733eee700.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260629T213114Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=695bdf5c4299bc14db029a370ff35996073f74d2279e35b143c2d7d8d85e9083" alt="Imagen" />
+    </Frame>
+
+    <Warning>
+      Es fundamental copiar este token y guardarlo en un lugar seguro inmediatamente. No será posible recuperarlo después de cerrar esta ventana.
+    </Warning>
+  </Step>
+
+  <Step title="Cierre la ventana de confirmación">
+    Cierre la ventana de confirmación. El sistema le advertirá que la clave no se podrá volver a ver. Confirme la acción seleccionando **"Sí, ya copié"**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/16044919578ec74bf5fd9045ca968f05d93ad3f52f7.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260629T213402Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=e83a2c904709d1fe2fcfe62a490e6fbc6aa1cc5af31fbf5352ee3b6d81c5e3a9" alt="Imagen" />
+    </Frame>
+
+    <Check>
+      Asegúrese de haber copiado y guardado su token de acceso antes de confirmar.
+    </Check>
+  </Step>
+
+  <Step title="Verifique la clave en la lista">
+    La nueva clave de API aparecerá listada en la pantalla **"Mis API Keys"**, mostrando su nombre, estado (**Activo**) y fecha de expiración. Desde aquí, usted puede gestionarla, ver sus detalles o revocarla si es necesario.
+
+    <Check>
+      Confirme que la nueva API Key ha sido creada y aparece correctamente en la lista.
+    </Check>
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14262151160bd346eda500b9a634bad79708138fada.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260629%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260629T213456Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=de542a2bf0ae58ec66045ae737106c5f3c818755a66f6477fad4f74395a10bf5" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Utilizar el apikey">
+    Para utilizar el apikey puede seguir los requerimientos de esta [documentación](https://developers.pxsol.com) oficial de la api
+  </Step>
+</Steps>
