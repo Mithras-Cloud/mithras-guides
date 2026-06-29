@@ -461,7 +461,8 @@
               "pms/como_crear_centros_de_costo",
               "pms/como_crear_subgrupos_para_los_centros_de_costo",
               "pms/cambios_de_sabanas",
-              "pms/plano_de_ocupacion"
+              "pms/plano_de_ocupacion",
+              "pms/integracion_forze"
             ]
           },
           {
