@@ -437,7 +437,7 @@ Arriba de la grilla, una fila por indicador y una columna por día. Ahora con mu
         <div style={{borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',lineHeight:'38px',color:'#dc2626',fontWeight:800,background:'rgba(239,68,68,.15)'}}>1</div>
       </div>
       <div style={{display:'grid',gridTemplateColumns:'96px repeat(5,1fr)',textAlign:'center'}}>
-        <div style={{height:'38px',background:'#fff',fontWeight:600,display:'flex',alignItems:'center',gap:'7px',paddingLeft:'9px',borderRight:'1px solid #cbd5e1',borderBottom:'1px solid rgba(15,23,42,.12)'}}>Libres</div>
+        <div style={{height:'38px',background:'#fff',fontWeight:600,display:'flex',alignItems:'center',gap:'7px',paddingLeft:'9px',borderRight:'1px solid #cbd5e1',borderBottom:'1px solid rgba(15,23,42,.12)'}}>Hab. libres 📌</div>
         <div style={{borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',lineHeight:'38px',color:'#059669'}}>8</div>
         <div style={{borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',lineHeight:'38px',color:'#059669',background:'rgba(239,68,68,.15)'}}>5</div>
         <div style={{borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',lineHeight:'38px',color:'#059669'}}>9</div>
@@ -461,6 +461,15 @@ Arriba de la grilla, una fila por indicador y una columna por día. Ahora con mu
 ### Columnas con reservas sin asignar — NUEVO
 
 Cuando una fecha tiene reservas sin asignar, se pinta **toda su columna en rojo claro** (Jue y Dom en el ejemplo) para que constantemente se vea que ahí hay algo para revisar. El "Sin asignar" se muestra en rojo y te lleva al panel con un click. Si no hay sin-asignar, todo vuelve a la normalidad.
+
+### Fijar filas: Hab. libres y Categorías libres — NUEVO
+
+Las filas **Hab. libres** y **Categorías libres** tienen un ícono de chincheta 📌 en su etiqueta para decidir si quedan a la vista cuando ocultás el panel de indicadores:
+
+- **Fijada** (chincheta marcada, por defecto) → la fila queda **siempre visible**, aunque ocultes el resto del panel. Ideal para tener la disponibilidad siempre a mano.
+- **Desfijada** → la fila se **oculta junto con las demás** al cerrar el panel.
+
+Es una preferencia **por usuario**: cada quien fija o desfija lo que le sirve y se guarda para la próxima vez.
 
 ---
 
