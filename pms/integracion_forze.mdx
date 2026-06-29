@@ -1,0 +1,110 @@
+---
+title: "Integración de Cerraduras Electrónicas"
+description: "Aprende a conectar tu sistema de gestión hotelera con cerraduras electrónicas para automatizar la generación de códigos de acceso y simplificar el check-in."
+---
+
+Esta funcionalidad te permite configurar la conexión entre tu sistema de gestión hotelera y un proveedor de cerraduras electrónicas. El objetivo es automatizar la generación de códigos de acceso para las habitaciones, vinculándolos directamente a las reservas futuras para simplificar el proceso de check-in y mejorar la seguridad.
+
+## Instalación y Configuración de Credenciales
+
+Para comenzar con la integración, debes acceder al marketplace de aplicaciones, instalar el complemento correspondiente y configurar las credenciales de acceso proporcionadas por el proveedor del sistema de cerraduras.
+
+<Steps>
+<Step title="Accede a Integraciones">
+  Desde el panel de navegación principal ubicado en el lateral izquierdo de la pantalla, selecciona la opción "**Configuración**". Al desplegarse las subopciones, haz clic en "**Integraciones**" para acceder al listado de complementos y servicios disponibles para conectar con el sistema.
+
+  <Frame caption="Selecciona 'Integraciones' en el menú de Configuración.">
+    <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782765561_0_6a42d7f979953.jpg" alt="Menú lateral izquierdo con la opción de configuración resaltada y el cursor sobre la opción de integraciones." />
+  </Frame>
+</Step>
+
+<Step title="Instala la integración de cerraduras">
+  Una vez en la página del marketplace, utiliza la barra de búsqueda para localizar la integración de cerraduras electrónicas. Al escribir el nombre del proveedor, el sistema filtrará los resultados y mostrará la tarjeta correspondiente. Procede a hacer clic en el botón "**Instalar**" para iniciar el proceso de activación.
+
+  <Frame caption="Busca y haz clic en 'Instalar' para la integración de cerraduras electrónicas.">
+    <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782765562_1_6a42d7fa1a512.jpg" alt="Marketplace de integraciones con el cursor en la barra de búsqueda y el resultado de la búsqueda mostrando la tarjeta de la integración de cerraduras." />
+  </Frame>
+</Step>
+
+<Step title="Acepta los términos y condiciones">
+  Al hacer clic en "**Instalar**", se abrirá una ventana emergente que contiene los términos y condiciones del servicio. Es necesario marcar la casilla de verificación para aceptar dichos términos y, a continuación, hacer clic en el botón "**Sí, instalar**" para confirmar y continuar con la configuración.
+
+  <Frame caption="Marca la casilla para aceptar los términos y haz clic en 'Sí, instalar'.">
+    <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782765562_2_6a42d7fa8f4c2.jpg" alt="Ventana emergente con los términos y condiciones y el cursor marcando la casilla de aceptación." />
+  </Frame>
+</Step>
+
+<Step title="Añade una nueva credencial">
+  Después de la instalación, el sistema te redirigirá a la página de configuración específica de la integración. En esta pantalla, debes hacer clic en el botón "**Añadir credencial**" para abrir el formulario donde ingresarás los datos de conexión.
+
+  <Frame caption="Haz clic en 'Añadir credencial' para configurar la conexión.">
+    <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/29/screenshot_1782765563_3_6a42d7fb33580.jpg" alt="Pantalla de configuración de la integración con un botón rojo que indica 'Añadir credencial'." />
+  </Frame>
+</Step>
+
+<Step title="Completa el formulario de credenciales">
+  En el formulario que se despliega, debes completar los siguientes campos con la información proporcionada por el proveedor de cerraduras:
+  - **Nombre de credencial**: Un identificador para esta conexión.
+  - **Usuario**: Tu nombre de usuario del sistema de cerraduras.
+  - **Contraseña**: Tu contraseña del sistema de cerraduras.
+  - **ID de hotel**: El identificador de tu hotel en el sistema de cerraduras.
+  - **Establecimiento**: Se seleccionará automáticamente si solo hay una propiedad configurada.
+
+  Una vez completados los datos, haz clic en el botón "**Añadir**".
+
+  <Tip>
+  Asegúrate de que toda la información de las credenciales sea exacta para evitar problemas de conexión.
+  </Tip>
+</Step>
+</Steps>
+
+## Verificación y Sincronización Inicial
+
+Una vez guardadas las credenciales, el siguiente paso es verificar que la conexión con el sistema de cerraduras sea exitosa y, posteriormente, ejecutar una sincronización inicial para vincular las habitaciones y generar los códigos para las reservas existentes.
+
+<Steps>
+<Step title="Prueba la conexión">
+  Tras añadir la credencial, aparecerá en la parte derecha de la pantalla la sección "**Test de conexión**". Aquí, debes seleccionar la credencial recién creada en el menú desplegable y luego presionar el botón "**Probar conexión**" para que el sistema intente establecer comunicación con el servicio externo.
+</Step>
+
+<Step title="Confirma la conexión exitosa">
+  Si las credenciales son correctas, el sistema mostrará un mensaje de confirmación en color verde con el texto "**Conectado**". Esto indica que la comunicación entre ambos sistemas se ha establecido correctamente y puedes proceder con la sincronización de datos.
+
+  <Check>
+  Un mensaje "Conectado" confirma que tu sistema y el de cerraduras se comunican correctamente.
+  </Check>
+</Step>
+
+<Step title="Inicia la sincronización de habitaciones">
+  Debajo de la confirmación de conexión, se habilitará la opción de "**Sincronización inicial**". Al hacer clic en el botón "**Sincronizar**", se iniciará el proceso de vinculación de las habitaciones de tu sistema con las correspondientes en el sistema de cerraduras.
+</Step>
+
+<Step title="Confirma el inicio de la sincronización">
+  El sistema solicitará una confirmación final a través de una ventana emergente. Esta ventana informa que se vincularán las habitaciones y se generarán códigos para las reservas futuras. Debes hacer clic en "**Confirmar**" para dar inicio a este proceso, que se ejecuta en segundo plano.
+
+  <Info>
+  La sincronización inicial puede tardar unos minutos, dependiendo del número de habitaciones y reservas. El proceso se ejecuta en segundo plano, permitiéndote continuar usando el sistema.
+  </Info>
+</Step>
+
+<Step title="Revisa el resultado de la sincronización">
+  Una vez finalizado el proceso, el sistema mostrará un resumen del resultado. Este informe detallará cuántas habitaciones fueron "**Vinculadas**" correctamente, cuántas quedaron "**sin coincidencia**" por no tener nombres idénticos en ambos sistemas, y el número de "**reservas iniciadas**" para la generación de códigos.
+
+  <Warning>
+  Es fundamental que los nombres de las habitaciones físicas en tu sistema coincidan exactamente con los nombres en el sistema de cerraduras electrónicas para que la vinculación sea exitosa. Las habitaciones "sin coincidencia" no podrán generar códigos automáticamente.
+  </Warning>
+</Step>
+</Steps>
+
+## Consulta de Códigos en Reservas
+
+<Steps>
+<Step title="Verifica el código de acceso en una reserva">
+  Una vez completada la integración y sincronización, al consultar el detalle de una reserva futura, en la pestaña "**Habitaciones y huéspedes**", podrás visualizar el código de acceso numérico que se ha generado automáticamente para la habitación asignada. Este código será el que el huésped utilizará para acceder a su habitación.
+
+  <Note>
+  Este código se genera automáticamente para cada reserva y está vinculado a las fechas de check-in y check-out del huésped, asegurando el acceso solo durante su estancia.
+  </Note>
+</Step>
+</Steps>
+
