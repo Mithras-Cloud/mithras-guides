@@ -705,7 +705,8 @@
               "integraciones/integracion_con_paypal",
               "integraciones/integracion_mercado_pago_argentina",
               "integraciones/configurar_el_medio_de_pago_bajo_procesador_medio_de_pago",
-              "integraciones/cancelacion_automatica_procesador_de_pagos"
+              "integraciones/cancelacion_automatica_procesador_de_pagos",
+              "integraciones/como_crear_apikeys_compressed"
             ]
           },
           {
