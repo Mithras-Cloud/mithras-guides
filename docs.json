@@ -463,7 +463,8 @@
               "pms/como_crear_subgrupos_para_los_centros_de_costo",
               "pms/cambios_de_sabanas",
               "pms/plano_de_ocupacion",
-              "pms/integracion_forze"
+              "pms/integracion_forze",
+              "crm/como_importar_reservas_al_sistema"
             ]
           },
           {
