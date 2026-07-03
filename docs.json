@@ -462,7 +462,8 @@
               "pms/como_crear_subgrupos_para_los_centros_de_costo",
               "pms/cambios_de_sabanas",
               "pms/plano_de_ocupacion",
-              "pms/integracion_forze"
+              "pms/integracion_forze",
+              "crm/como_importar_reservas_al_sistema"
             ]
           },
           {
@@ -495,8 +496,7 @@
               "channel/como_enviar_una_reserva_que_no_se_sincronizo_con_arion",
               "channel/sobre_el_servicio_de_gds",
               "channel/como_desconectarse_de_booking",
-              "channel/conexion_xenia_gds",
-              "crm/como_importar_reservas_al_sistema"
+              "channel/conexion_xenia_gds"
             ]
           },
           {
