@@ -1,0 +1,80 @@
+---
+title: "Configurar Validación de Tarjetas con procesadores de pago"
+description: "Aprenda a configurar la validación de tarjetas de crédito con un microcargo temporal de 1 USD (o equivalente) para las reservas realizadas a través de su motor. Este proceso verifica la validez y los fondos de la tarjeta, reduciendo el riesgo de fraudes."
+---
+
+Esta funcionalidad le permite configurar una validación de tarjeta de crédito para las reservas realizadas a través de su motor. Al activar esta opción, el sistema realizará un microcargo temporal de 1 USD (o su equivalente en la moneda local) para verificar que la tarjeta ingresada por el huésped sea válida y tenga fondos. Este monto se reembolsará automáticamente.
+
+<Info>
+  Este proceso ayuda a reducir el riesgo de reservas fraudulentas o con datos de pago inválidos, mejorando la seguridad de sus transacciones.
+</Info>
+
+<Note>
+  La configuración de validación de tarjeta es aplicable únicamente a procesadores de pago específicos:
+
+  * Mercado Pago
+  * Payway
+  * Stripe
+  * PayPal como Procesador
+  * Otros procesadores de tarjeta directa que se integren en el futuro.
+</Note>
+
+<Tip>
+  Mercado Pago es el procesador de pago recomendado para utilizar con esta funcionalidad de validación de tarjetas.
+</Tip>
+
+<Steps>
+  <Step title="Acceder a Medios de Pago">
+    Para iniciar la configuración, utilice la barra de búsqueda principal del sistema. Ingrese el término `Medios de pago` y seleccione la opción correspondiente que aparece en los resultados para acceder a la lista de todos los métodos de pago configurados en su cuenta.
+
+    <Frame caption="Seleccione 'Medios de pago' de los resultados de búsqueda.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/14/screenshot_1784063005_0_6a56a41d3d723.jpg" alt="Barra de búsqueda del sistema con la opción 'Medios de pago' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Editar el Método de Pago">
+    Una vez en la pantalla "Medios de pago", se mostrará una tabla con todos los métodos de pago existentes. Localice en la lista el medio de pago que desea modificar. Haga clic en el botón `Acciones` ubicado en el extremo derecho de su fila y, en el menú desplegable que aparece, seleccione la opción `Editar`. O seleccione `Nuevo medio de pago`.
+
+    <Frame caption="Haga clic en 'Acciones' y luego en 'Editar'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/14/screenshot_1784063006_1_6a56a41e1bce5.jpg" alt="Menú desplegable de 'Acciones' con la opción 'Editar' resaltada." />
+    </Frame>
+  </Step>
+
+  <Step title="Activar la Validación de Tarjeta">
+    Se abrirá una ventana emergente titulada "Editar medio de pago". Desplácese hacia abajo hasta encontrar la sección número 8, que lleva por título `¿Quieres validar la tarjeta con un cobro de 1 USD?`. Para activar la funcionalidad, haga clic en el interruptor que se encuentra junto a la descripción. Al activarlo, el interruptor cambiará de color, indicando que la opción ha sido habilitada.
+
+    <Frame caption="Active el interruptor para habilitar la validación.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/14/screenshot_1784063006_2_6a56a41e52db4.jpg" alt="Interruptor de activación para la validación de tarjeta con cobro de 1 USD." />
+    </Frame>
+  </Step>
+
+  <Step title="Guardar los Cambios">
+    Después de activar el interruptor de validación, desplácese hasta el final de la ventana emergente. Para confirmar y aplicar los cambios realizados, haga clic en el botón `Guardar Cambios`. El sistema procesará la solicitud y la ventana se cerrará, volviendo a la lista de medios de pago. Un mensaje de confirmación aparecerá brevemente en la pantalla.
+
+    <Frame caption="Haga clic en 'Guardar Cambios'.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/14/screenshot_1784063006_3_6a56a41ef1256.jpg" alt="Botón 'Guardar Cambios' al final del formulario de edición del medio de pago." />
+    </Frame>
+
+    <Check>
+      Verifique que el sistema muestre un mensaje de confirmación y que la ventana se haya cerrado correctamente, regresando a la lista de medios de pago.
+    </Check>
+  </Step>
+
+  <Step title="Verificar la Configuración en el Motor de Reservas">
+    Para verificar que la configuración se ha aplicado correctamente, puede simular el proceso de reserva desde la perspectiva del huésped. Cuando un usuario llega a la sección de pago en el motor de reservas y selecciona el método de pago que acaba de configurar, el sistema le mostrará el cambio.
+
+    <Frame caption="Seleccione un método de pago en la sección de información de pago del motor de reservas.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/14/screenshot_1784063007_4_6a56a41f4d381.jpg" alt="Selección de un medio de pago en la sección de información de pago del motor de reservas." />
+    </Frame>
+
+    Al seleccionar el medio de pago, aparecerá un mensaje informativo visible para el huésped en el resumen de la reserva. Este texto le notificará que se realizará un cargo temporal de 1 USD (o equivalente) para validar su tarjeta y que este importe será reembolsado.
+
+    <Frame caption="Confirme la aparición del mensaje informativo sobre la validación de tarjeta en el resumen de la reserva.">
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/14/screenshot_1784063007_5_6a56a41fe9482.jpg" alt="Mensaje de notificación sobre la validación de tarjeta en el resumen de la reserva." />
+    </Frame>
+
+    <Check>
+      Asegúrese de que el mensaje informativo sobre el cargo temporal y el reembolso sea visible en el resumen de la reserva para el huésped, confirmando que la funcionalidad de validación está activa y funcionando correctamente.
+    </Check>
+  </Step>
+</Steps>
