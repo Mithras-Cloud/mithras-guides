@@ -789,7 +789,8 @@
             "group": "Motor de reservas v10",
             "pages": [
               "motordereservasv10/como_migrar_el_motor_a_la_version_nueva",
-              "motordereservasv10/como_personalizar_el_motor"
+              "motordereservasv10/como_personalizar_el_motor",
+              "motordereservasv10/ajustar_textos_en_el_motor_de_reservas"
             ]
           }
         ]
