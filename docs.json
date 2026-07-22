@@ -709,7 +709,8 @@
               "integraciones/configurar_el_medio_de_pago_bajo_procesador_medio_de_pago",
               "integraciones/cancelacion_automatica_procesador_de_pagos",
               "integraciones/como_crear_apikeys_compressed",
-              "integraciones/validacion_de_tarjeta_usd_1"
+              "integraciones/validacion_de_tarjeta_usd_1",
+              "integraciones/webpay_-_confirgurar_modalidad_mall"
             ]
           },
           {
