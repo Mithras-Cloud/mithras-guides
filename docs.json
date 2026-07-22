@@ -710,7 +710,8 @@
               "integraciones/cancelacion_automatica_procesador_de_pagos",
               "integraciones/como_crear_apikeys_compressed",
               "integraciones/validacion_de_tarjeta_usd_1",
-              "integraciones/webpay_-_confirgurar_modalidad_mall"
+              "integraciones/webpay_-_confirgurar_modalidad_mall",
+              "integraciones/como_hacer_una_devolucion_de_un_cobro_de_webpay"
             ]
           },
           {
