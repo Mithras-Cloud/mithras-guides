@@ -1,0 +1,62 @@
+---
+title: "Configuración de la Modalidad Mall en la Integración de WebPay"
+description: "Este procedimiento detalla cómo configurar la integración con la pasarela de pago WebPay para operar bajo la 'Modalidad Mall'. Esta modalidad permite que una cuenta principal (padre) gestione las transacciones de una o más cuentas secundarias (hijas), centralizando la operación financiera mientras se mantiene la trazabilidad individual de cada comercio. La configuración requiere la activación de datos de producción y la posterior habilitación de la modalidad específica, donde se deben ingresar tanto el código de comercio principal como el código de la tienda hija."
+---
+
+<Steps>
+  <Step title="Acceder al menú de configuraciones de integraciones">
+    Desde el menú lateral izquierdo de la pantalla principal, seleccioná la opción "Configuración" para desplegar sus submenús. A continuación, hacé clic en la opción "Integraciones" para ser redirigido a la página que lista todos los servicios y aplicaciones conectadas.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729730_0_6a60d082ecef3.jpg" alt="Vista del menú principal con la opción de configuración e integraciones resaltada." />
+    </Frame>
+  </Step>
+
+  <Step title="Seleccionar la pasarela de pago a configurar">
+    Dentro de la pantalla de "Marketplace de Integraciones", localizá la tarjeta correspondiente a la pasarela de pago que querés modificar y hacé clic en el botón "Configurar". Esta acción abre la página de gestión de credenciales específica para esa integración.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729731_1_6a60d083729a4.jpg" alt="Listado de integraciones con el cursor sobre el botón de configurar de la pasarela de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar la creación de una nueva credencial">
+    En la pantalla de gestión de la pasarela de pago, hacé clic en el botón "Añadir credencial". Esto abrirá un panel lateral o una nueva vista con un formulario destinado a ingresar los datos de conexión de una nueva cuenta de la pasarela.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729732_2_6a60d0841ca54.jpg" alt="Botón 'Añadir credencial' siendo presionado en la pantalla de gestión de la pasarela." />
+    </Frame>
+  </Step>
+
+  <Step title="Activar el uso de datos de producción">
+    Dentro del formulario para añadir la credencial, debés activar el interruptor que indica el uso de datos de producción. Este paso es fundamental, ya que al habilitarlo, el sistema revela opciones de configuración avanzadas que no están disponibles en el modo de prueba.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729732_3_6a60d0849063b.jpg" alt="Interruptor para habilitar los datos de producción siendo activado." />
+    </Frame>
+  </Step>
+
+  <Step title="Habilitar la Modalidad Mall">
+    Inmediatamente después de activar el modo de producción, aparecerá un nuevo interruptor en el formulario etiquetado como "Modalidad Mall". Debés activar este segundo interruptor para que el sistema despliegue los campos adicionales necesarios para este tipo de configuración.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729733_4_6a60d0850c144.jpg" alt="Aparición y activación del interruptor para la Modalidad Mall." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresar los códigos de comercio">
+    Con la Modalidad Mall habilitada, el formulario mostrará dos campos distintos para los códigos de comercio. En el campo "Código de comercio", debés ingresar el código que identifica a la tienda secundaria o "hija". En el nuevo campo "Código de comercio principal", debés introducir el código correspondiente a la cuenta "padre" que agrupa las transacciones.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729733_5_6a60d0856530a.jpg" alt="Formulario de credenciales con los campos para el código de comercio principal y el código de la tienda hija visibles." />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar y guardar la configuración">
+    Una vez que todos los campos del formulario fueron completados, incluyendo el nombre de la credencial, la API Key y los dos códigos de comercio, debés hacer clic en el botón "Añadir" para guardar la nueva credencial. Con esta acción, la integración queda correctamente configurada para operar bajo la Modalidad Mall. El siguiente paso es avanzar con el cobro de CLP 50.&#x20;
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/22/screenshot_1784729733_6_6a60d085b8c4f.jpg" alt="Vista final del formulario completo con el botón 'Añadir' resaltado." />
+    </Frame>
+  </Step>
+</Steps>
