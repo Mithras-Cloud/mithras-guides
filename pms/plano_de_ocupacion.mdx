@@ -18,6 +18,7 @@ lang: es
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Modo claro / oscuro</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Forma de la pastilla</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Cambio de sábanas</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Recargar y limpiar cache</span>
     </div>
   </div>
   <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso y novedades · <b style={{color:'#0f172a'}}>Julio 2026</b></div>
@@ -185,6 +186,7 @@ Reúne las acciones principales y se acomoda sola al tamaño de tu pantalla.
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'flex',alignItems:'center',gap:'8px',flexWrap:'wrap'}}>
+      <span style={{height:'32px',display:'inline-flex',alignItems:'center',padding:'0 11px',borderRadius:'8px',fontSize:'12px',fontWeight:600,border:'1px solid #e2e8f0',background:'#fff',color:'#64748b'}}>🔄</span>
       <span style={{width:'34px',height:'34px',borderRadius:'8px',border:'1px solid #e2e8f0',background:'#fff',display:'inline-flex',alignItems:'center',justifyContent:'center',flex:'none'}}>📅</span>
       <span style={{height:'32px',display:'inline-flex',alignItems:'center',gap:'6px',padding:'0 11px',borderRadius:'8px',fontSize:'12px',fontWeight:600,border:'1px solid #e2e8f0',background:'#fff',color:'#0f172a'}}>Hotel Costa Azul <span style={{color:'#64748b'}}>▾</span></span>
       <span style={{height:'32px',display:'inline-flex',alignItems:'center',padding:'0 11px',borderRadius:'8px',fontSize:'12px',fontWeight:600,border:'1px solid #e2e8f0',background:'#fff',color:'#64748b'}}>⌘</span>
@@ -197,13 +199,43 @@ Reúne las acciones principales y se acomoda sola al tamaño de tu pantalla.
   </div>
 </div>
 
-*Logo, selector de hotel, búsqueda, configuración, "Hoy", menú "＋" y "Nueva reserva".*
+*Recargar, logo, selector de hotel, búsqueda, configuración, "Hoy", menú "＋" y "Nueva reserva".*
 
+- **Recargar 🔄** — trae los datos de nuevo desde cero. Lo vemos justo abajo.
 - **Hoy** — vuelve la vista al día actual.
 - **Nueva reserva** — abre la carga de una reserva.
 - **Menú "＋"** — creación rápida: bloqueo, presupuesto, consulta o correo.
 - **Configuración** — tamaño de la vista, colores, indicadores y festivos.
+- El **logo del hotel** te lleva al inicio del sistema, en una pestaña nueva.
 - En pantallas chicas las acciones se agrupan en un menú ☰.
+
+### Recargar y limpiar cache — NUEVO
+
+El primer botón de la barra recarga el plano **desde cero**: descarta todo lo que el navegador tenía guardado y le vuelve a pedir los datos al servidor.
+
+Sirve para cuando **cambiaste algo y el plano lo sigue mostrando viejo**. El caso típico: agregaste una habitación, la renombraste o le cambiaste la categoría desde otra pantalla, volvés al plano y seguís viendo la estructura anterior. Para que la vista abra rápido, el plano se guarda una copia de las cosas que casi nunca cambian —habitaciones, categorías, datos del establecimiento— y a veces esa copia queda vieja.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
+  <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+    <div style={{display:'flex',alignItems:'center',gap:'8px'}}><span style={{height:'32px',display:'inline-flex',alignItems:'center',padding:'0 11px',borderRadius:'8px',fontSize:'12px',fontWeight:600,border:'2px solid #0ea5e9',background:'#f0f9ff',color:'#0f172a',boxShadow:'0 0 0 3px rgba(14,165,233,.18)'}}>🔄</span><span style={{width:'34px',height:'34px',borderRadius:'8px',border:'1px solid #e2e8f0',background:'#fff',display:'inline-flex',alignItems:'center',justifyContent:'center',flex:'none'}}>📅</span><span style={{height:'32px',display:'inline-flex',alignItems:'center',gap:'6px',padding:'0 11px',borderRadius:'8px',fontSize:'12px',fontWeight:600,border:'1px solid #e2e8f0',background:'#fff',color:'#0f172a'}}>Hotel Costa Azul <span style={{color:'#64748b'}}>▾</span></span></div>
+    <div style={{marginTop:'18px',display:'flex',justifyContent:'flex-end'}}>
+      <div style={{display:'inline-flex',alignItems:'center',gap:'10px',border:'1px solid #e2e8f0',borderRadius:'10px',background:'#fff',boxShadow:'0 6px 20px rgba(15,23,42,.12)',padding:'11px 14px',fontSize:'12px',color:'#0f172a',fontWeight:600}}><span>🔄</span><span>Limpiando el cache y recargando el plano, aguardá un momento...</span></div>
+    </div>
+  </div>
+</div>
+
+*Un aviso confirma la limpieza y la pantalla se recarga sola en un segundo.*
+
+- **Antes lo veían solo los usuarios internos** — ahora está disponible para todos.
+- **No perdés tus preferencias** — el tamaño y la forma de la pastilla, los colores, las columnas del detalle y el modo claro / oscuro quedan como los dejaste.
+- **No te cierra la sesión** — seguís trabajando normalmente.
+- Se recarga **la pantalla completa**, así que si tenías algo a medio cargar en otra ventana del sistema, guardalo antes de tocarlo.
+
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 ¿Cuándo conviene usarlo?</h4>
+  <p style={{margin:'6px 0'}}>Cuando tocaste <b>habitaciones, categorías o datos del establecimiento</b> y el plano no lo refleja. Para las <b>reservas</b> no hace falta: se actualizan solas, incluso mientras tenés el plano abierto.</p>
+</div>
 
 ---
 
@@ -296,20 +328,7 @@ Cada reserva es una pastilla con forma moderna (bordes inclinados) y toda la inf
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'flex',justifyContent:'center',padding:'8px 0'}}>
-      <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'320px',height:'46px',display:'flex',flexDirection:'column',justifyContent:'center',gap:'3px',padding:'5px 22px',fontWeight:800,fontSize:'12px',clipPath:'polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)'}}>
-        <span style={{textTransform:'uppercase',lineHeight:1,fontWeight:800,display:'flex',alignItems:'center',gap:'6px'}}>García, Lucía</span>
-        <span style={{display:'flex',alignItems:'center',gap:'6px',fontSize:'10px',fontWeight:700,lineHeight:1}}>
-          <span style={{background:'#dc2626',color:'#fff',borderRadius:'3px',width:'15px',height:'15px',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'9px'}}>{'$'}</span>
-          <span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />
-          <span style={{width:'15px',height:'11px',borderRadius:'2px',overflow:'hidden',display:'inline-flex',flexDirection:'column'}}><span style={{height:'50%',background:'#74acdf'}} /><span style={{height:'50%',background:'#fff'}} /></span>
-          <span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />
-          👥 3
-          <span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />
-          🌙 2
-          <span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />
-          Booking
-        </span>
-      </div>
+      <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'320px',height:'46px',display:'flex',flexDirection:'column',justifyContent:'center',gap:'3px',padding:'5px 22px',fontWeight:800,fontSize:'12px',clipPath:'polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)'}}><span style={{textTransform:'uppercase',lineHeight:1,fontWeight:800,display:'flex',alignItems:'center',gap:'6px'}}>García, Lucía</span><span style={{display:'flex',alignItems:'center',gap:'6px',fontSize:'10px',fontWeight:700,lineHeight:1}}><span style={{background:'#dc2626',color:'#fff',borderRadius:'3px',width:'15px',height:'15px',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'9px'}}>{'$'}</span><span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} /><span style={{width:'15px',height:'11px',borderRadius:'2px',overflow:'hidden',display:'inline-flex',flexDirection:'column'}}><span style={{height:'50%',background:'#74acdf'}} /><span style={{height:'50%',background:'#fff'}} /></span><span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />👥 3<span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />🌙 2<span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />Booking</span></div>
     </div>
   </div>
 </div>
