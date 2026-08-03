@@ -1,0 +1,94 @@
+---
+title: "Guía de Integración RMS – Perform iP"
+description: "En esta guía encontrarás el detalle sobre la integración con el RMS Perform iP, cómo instalarla desde el Marketplace y cuál es su alcance funcional."
+---
+
+## ¿Qué es Perform iP?
+
+Perform iP es el sistema de Revenue Management (RMS) desarrollado por iP Revenue. Trabaja sobre la información del hotel y del mercado para generar recomendaciones de tarifa, mínimo de noches y cierres o aperturas de venta, con el objetivo de sostener una estrategia de precios dinámica sin depender de planillas ni procesos manuales.
+
+Al integrarlo con Pxsol, esas decisiones de precio se aplican directamente sobre los planes tarifarios de tu propiedad, evitando la carga manual y reduciendo el margen de error.
+
+<Info>
+  **Oferta de lanzamiento:** los hoteles que activen el contrato de esta integración hasta el **31 de diciembre de 2026** obtienen un **40% de descuento durante el primer año**, aplicable exclusivamente al costo de esta integración.
+</Info>
+
+## Pasos para habilitar la integración
+
+La integración con Perform iP se activa íntegramente desde Pxsol, a través de la aplicación **Integraciones**.
+
+<Steps>
+  <Step title="Ingresar a la aplicación Integraciones">
+    Una vez dentro de Pxsol, buscá y abrí la aplicación **Integraciones**. Podés escribir "Integraciones" en el buscador general para llegar directamente.
+
+    Dentro vas a encontrar dos grupos: las integraciones **ya instaladas** en la propiedad y las **disponibles en el Marketplace**.
+
+    <Frame caption="Aplicación Integraciones: integraciones instaladas y disponibles en el Marketplace.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/53573707083e3eb8f374d32832a9dc7ec423434356.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260803T205036Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=c85fcd53adf1ae2045e878bac4755d0378823b319251b08ca35b64eb5268829d" alt="Vista general de la aplicación Integraciones de Pxsol, mostrando las secciones de integraciones instaladas y las disponibles en el Marketplace." />
+    </Frame>
+  </Step>
+
+  <Step title="Ubicar la tarjeta RMS Perform">
+    En el listado de integraciones disponibles en el Marketplace, localizá la tarjeta **RMS Perform** y hacé clic en **Instalar**.
+
+    <Frame caption="Tarjeta RMS Perform dentro del Marketplace de integraciones.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/357158050003ea469f3ad79890e8874936c32e58e3.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260803T205050Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=6fefc6b4aaf7b125242a8faa453d55f128eb3370803cc1d9fee277a4ba86d485" alt="Tarjeta de la integración RMS Perform en el Marketplace con el botón Instalar." />
+    </Frame>
+  </Step>
+
+  <Step title="Aceptar los términos y confirmar la instalación">
+    Se abrirá una ventana de confirmación con los **términos y condiciones** de la integración y, cuando corresponde, el **costo mensual** asociado. Esta integración tiene costo, por lo que el valor vigente se muestra en esta misma pantalla antes de confirmar.
+
+    Al confirmar, la integración queda instalada en la propiedad.
+
+    <Frame caption="Ventana de confirmación con el costo y los términos de la integración.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8928951475a6f4ea3668db3c5d5514233c52e6af2c.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260803T205135Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=9025daa0b424765b5d7ce2286b2247655082bfd97fa64bf337f30b4b6fc822c1" alt="Ventana modal 'Instalar RMS PERFORM' mostrando el costo, los términos y el botón de confirmación." />
+    </Frame>
+
+    <Tip>
+      Revisá el costo y las condiciones antes de confirmar: la instalación impacta directamente en el contrato de la propiedad.
+    </Tip>
+  </Step>
+</Steps>
+
+## Alcance funcional de la integración
+
+La integración está definida para que **Perform iP actualice precios en los planes tarifarios de Pxsol**.
+
+### Esquema de trabajo habitual
+
+El equipo de Perform iP trabaja con un esquema de **plan tarifario madre**:
+
+1.  Perform iP actualiza el precio de un único plan tarifario, que funciona como tarifa base.
+2.  Dentro de Pxsol se aplican **reglas locales** sobre ese plan madre para derivar automáticamente el resto de los planes tarifarios y categorías.
+
+Este esquema permite mantener una sola tarifa gobernada por el RMS y toda la estructura tarifaria restante administrada desde Pxsol.
+
+### Fuera de alcance
+
+<Warning>
+  **Perform iP no obtiene los datos de ocupación desde el PMS de Pxsol.** Esta capacidad del RMS queda fuera del alcance de la integración actual, por lo que la información de ocupación debe gestionarse por los medios que indique el equipo de Perform iP.
+</Warning>
+
+## Consideraciones técnicas clave
+
+### El plan tarifario madre debe ser independiente
+
+El plan tarifario que recibe los precios desde Perform iP debe ser una **tarifa independiente**. Esto significa que:
+
+*   No debe tener reglas automáticas aplicadas.
+*   No debe depender de otra tarifa mediante reglas de derivación.
+
+<Warning>
+  Si el plan tarifario madre tiene una regla activa, el precio enviado por Perform iP puede ser sobrescrito o generar inconsistencias en la estructura tarifaria.
+</Warning>
+
+### Las reglas se aplican después, no antes
+
+Las reglas de derivación deben construirse **tomando como origen el plan madre**, nunca en sentido inverso. De esta manera cada actualización del RMS se propaga de forma predecible al resto de los planes y categorías.
+
+## Soporte
+
+Si tenés cualquier duda técnica o funcional durante el proceso, contactá a nuestro equipo de soporte.
+
+📩 [**equipo@pxsol.com**](mailto:equipo@pxsol.com)
