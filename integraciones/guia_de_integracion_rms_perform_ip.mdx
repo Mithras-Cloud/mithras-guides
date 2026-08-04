@@ -24,7 +24,7 @@ La integración con Perform iP se activa íntegramente desde Pxsol, a través de
     Dentro vas a encontrar dos grupos: las integraciones **ya instaladas** en la propiedad y las **disponibles en el Marketplace**.
 
     <Frame caption="Aplicación Integraciones: integraciones instaladas y disponibles en el Marketplace.">
-      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/53573707083e3eb8f374d32832a9dc7ec423434356.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260803T205036Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=c85fcd53adf1ae2045e878bac4755d0378823b319251b08ca35b64eb5268829d" alt="Vista general de la aplicación Integraciones de Pxsol, mostrando las secciones de integraciones instaladas y las disponibles en el Marketplace." />
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/53573707083e3eb8f374d32832a9dc7ec423434356.png" alt="Vista general de la aplicación Integraciones de Pxsol, mostrando las secciones de integraciones instaladas y las disponibles en el Marketplace." />
     </Frame>
   </Step>
 
@@ -32,7 +32,7 @@ La integración con Perform iP se activa íntegramente desde Pxsol, a través de
     En el listado de integraciones disponibles en el Marketplace, localizá la tarjeta **RMS Perform** y hacé clic en **Instalar**.
 
     <Frame caption="Tarjeta RMS Perform dentro del Marketplace de integraciones.">
-      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/357158050003ea469f3ad79890e8874936c32e58e3.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260803T205050Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=6fefc6b4aaf7b125242a8faa453d55f128eb3370803cc1d9fee277a4ba86d485" alt="Tarjeta de la integración RMS Perform en el Marketplace con el botón Instalar." />
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/357158050003ea469f3ad79890e8874936c32e58e3.png" alt="Tarjeta de la integración RMS Perform en el Marketplace con el botón Instalar." />
     </Frame>
   </Step>
 
@@ -42,7 +42,7 @@ La integración con Perform iP se activa íntegramente desde Pxsol, a través de
     Al confirmar, la integración queda instalada en la propiedad.
 
     <Frame caption="Ventana de confirmación con el costo y los términos de la integración.">
-      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8928951475a6f4ea3668db3c5d5514233c52e6af2c.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260803%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260803T205135Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=9025daa0b424765b5d7ce2286b2247655082bfd97fa64bf337f30b4b6fc822c1" alt="Ventana modal 'Instalar RMS PERFORM' mostrando el costo, los términos y el botón de confirmación." />
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8928951475a6f4ea3668db3c5d5514233c52e6af2c.png" alt="Ventana modal 'Instalar RMS PERFORM' mostrando el costo, los términos y el botón de confirmación." />
     </Frame>
 
     <Tip>
@@ -59,8 +59,8 @@ La integración está definida para que **Perform iP actualice precios en los pl
 
 El equipo de Perform iP trabaja con un esquema de **plan tarifario madre**:
 
-1.  Perform iP actualiza el precio de un único plan tarifario, que funciona como tarifa base.
-2.  Dentro de Pxsol se aplican **reglas locales** sobre ese plan madre para derivar automáticamente el resto de los planes tarifarios y categorías.
+1. Perform iP actualiza el precio de un único plan tarifario, que funciona como tarifa base.
+2. Dentro de Pxsol se aplican **reglas locales** sobre ese plan madre para derivar automáticamente el resto de los planes tarifarios y categorías.
 
 Este esquema permite mantener una sola tarifa gobernada por el RMS y toda la estructura tarifaria restante administrada desde Pxsol.
 
@@ -76,8 +76,8 @@ Este esquema permite mantener una sola tarifa gobernada por el RMS y toda la est
 
 El plan tarifario que recibe los precios desde Perform iP debe ser una **tarifa independiente**. Esto significa que:
 
-*   No debe tener reglas automáticas aplicadas.
-*   No debe depender de otra tarifa mediante reglas de derivación.
+* No debe tener reglas automáticas aplicadas.
+* No debe depender de otra tarifa mediante reglas de derivación.
 
 <Warning>
   Si el plan tarifario madre tiene una regla activa, el precio enviado por Perform iP puede ser sobrescrito o generar inconsistencias en la estructura tarifaria.
