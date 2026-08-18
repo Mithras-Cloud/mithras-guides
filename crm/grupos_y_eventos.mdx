@@ -1,0 +1,483 @@
+---
+title: "Grupos y eventos"
+description: "Cómo gestionar la venta de salones, eventos y grupos: desde la consulta inicial hasta el evento confirmado y cobrado."
+---
+
+
+## Qué es el Hub de Eventos
+
+El Hub de Eventos es donde se gestiona **la venta** de salones, eventos y grupos: desde que llega la consulta hasta que el evento queda confirmado y cobrado.
+
+No es el módulo de reservas. Acá no se carga una reserva de habitación suelta ni se opera el día del evento. Lo que se administra es el proceso comercial: quién consultó, qué se le cotizó, en qué instancia está la negociación y cuánto se espera facturar.
+
+Se llega desde **CRM → Grupos y Eventos**.
+
+<CardGroup cols={3}>
+  <Card title="Oportunidades" icon="kanban" href="#la-pantalla-oportunidades">
+    El tablero de trabajo diario. Todas las negociaciones abiertas.
+  </Card>
+  <Card title="Cuentas" icon="building" href="#cuentas-y-contactos">
+    Los clientes: personas, empresas y agencias.
+  </Card>
+  <Card title="Calendario salones" icon="calendar-range" href="#calendario-de-ocupación-de-salones">
+    Qué salón está ocupado, qué día y en qué turno.
+  </Card>
+  <Card title="Catálogos" icon="box" href="#catálogos-salones-extras-y-turnos">
+    Los salones, extras y turnos que el hotel ofrece.
+  </Card>
+  <Card title="Proveedores" icon="truck" href="#proveedores">
+    Los terceros que prestan servicios para los eventos.
+  </Card>
+  <Card title="Forecast" icon="trending-up">
+    Cuánto se espera cerrar y cómo viene el trimestre.
+  </Card>
+</CardGroup>
+
+## Cuatro conceptos para empezar
+
+Vale la pena leer esto una vez. El resto de la guía asume estos cuatro términos.
+
+**Cuenta.** El cliente. Puede ser una **persona** (un particular, una familia), una **empresa** (un cliente corporativo) o una **agencia** (un operador, un wedding planner, un intermediario). Las cuentas se sincronizan con el CRM del hotel.
+
+**Contacto.** La persona con la que se habla. Siempre es una persona física y siempre pertenece a una cuenta. Una empresa puede tener varios contactos (por ejemplo, quien organiza y quien autoriza el pago); una cuenta persona normalmente tiene uno.
+
+**Oportunidad.** Una negociación concreta. "Boda Méndez · 250 invitados" es una oportunidad. Si la misma familia vuelve el año que viene por un aniversario, eso es otra oportunidad sobre la misma cuenta.
+
+**Presupuesto.** La propuesta económica que se le manda al cliente. Una oportunidad puede tener varios presupuestos: cada vez que se renegocia, se genera una versión nueva y la anterior queda archivada.
+
+Y dos más, que aparecen todo el tiempo:
+
+**Etapa.** En qué instancia está la negociación: Nuevo, Contactado, Visita, Cotización, Contrato, Confirmado. Cada etapa lleva asociada una probabilidad de cierre.
+
+**Pipeline.** El conjunto ordenado de etapas. El hotel puede tener más de uno con etapas propias -por ejemplo, uno para _Leads de UpSelling_- y se cambia desde el selector de pipeline.
+
+## La pantalla Oportunidades
+
+Es la pantalla donde se trabaja todos los días. Se abre en vista **Kanban**: una columna por etapa, una tarjeta por oportunidad.
+
+### Kanban o Lista
+
+Arriba a la derecha se alterna entre **Kanban** y **Lista**.
+
+- **Kanban** sirve para mover cosas: se arrastra la tarjeta de una columna a otra y la etapa cambia.
+- **Lista** sirve para mirar muchas oportunidades a la vez ordenadas por columna: Evento, Cuenta, Etapa, Fecha, Valor, Dueño.
+
+### Los indicadores de arriba
+
+Cuatro números que resumen el estado del tablero:
+
+- **Pipeline total**: la suma del valor estimado de todas las oportunidades abiertas.
+- **Forecast ponderado**: la misma suma, pero multiplicando cada oportunidad por su probabilidad de cierre. Es el número realista, no el optimista.
+- **A confirmar este mes**: cierres esperados dentro del mes.
+- **Vencidos**: presupuestos que pasaron su fecha de validez.
+
+**Requieren atención** agrupa lo que está pidiendo acción. Se puede hacer clic en cada indicador para ver solo esas oportunidades.
+
+### Filtros y búsqueda
+
+- **Buscar evento o cuenta**: busca por nombre de la oportunidad o del cliente.
+- **Todos los vendedores**: filtra por dueño.
+- **Todos los tipos**: Bodas, Congresos, Corporativos, Otros.
+- **Todas las fechas**: Evento en 30 / 60 / 90 días, o en 6 meses. Filtra por fecha del evento, no por fecha de carga.
+- **Limpiar** vuelve todo a cero.
+
+### Los avisos
+
+Arriba del tablero pueden aparecer barras de aviso:
+
+- **Cobros por vencer**: hay eventos confirmados con saldo por cobrar. _Ver cobros_ filtra el tablero.
+- **Cut-offs por vencer**: hay bloqueos de grupo cuyo plazo de confirmación está por vencerse. _Ver bloqueos_ filtra el tablero.
+
+Se pueden cerrar con **Ocultar aviso**, pero vuelven a aparecer mientras la situación siga sin resolverse.
+
+### Qué dice cada tarjeta
+
+La tarjeta muestra el nombre del evento, la cuenta, el tipo, la fecha, el valor estimado y el vendedor asignado. Además puede traer señales:
+
+| Señal                    | Qué significa                                                                               |
+| ------------------------ | ------------------------------------------------------------------------------------------- |
+| **El cliente respondió** | Llegó un mensaje del cliente y todavía no se le contestó.                                   |
+| **Esperando respuesta**  | Se le escribió y falta que conteste.                                                        |
+| **Sin asignar**          | No tiene vendedor. Nadie la está siguiendo.                                                 |
+| **Vencido**              | El presupuesto enviado pasó su fecha de validez.                                            |
+| **Cut-off vencido**      | En oportunidades de grupo: se venció el plazo y las habitaciones no confirmadas se liberan. |
+| Badge de origen          | De dónde vino la consulta: carga manual, formulario web o consulta entrante.                |
+
+Las oportunidades con el evento a menos de 30 días se destacan, igual que las que llevan una semana o más sin movimiento.
+
+## Crear una oportunidad
+
+Botón **Nueva oportunidad**, arriba a la derecha. Son cuatro pasos.
+
+<Steps>
+  <Step title="Cuenta">
+    **Es el único campo obligatorio de todo el asistente.** Se busca la cuenta por nombre. Si el cliente no existe todavía, **Crear nueva cuenta** pide razón social o nombre, y opcionalmente ID fiscal y rubro.
+  </Step>
+  <Step title="Evento">
+    - **Nombre del evento**: se puede dejar vacío y completar después.
+    - **Tipo de evento**: Boda, Congreso, Corporativo, Grupo u Otro.
+    - **Fecha del evento**: o **Estadía del grupo** si el tipo es Grupo, porque ahí son dos fechas.
+
+    Si se elige **Grupo**, aparecen los campos del bloqueo: cantidad de pasajeros, régimen, cut-off, gratuidades y el cupo de habitaciones por tipo.
+
+  </Step>
+  <Step title="Valor">
+    - **Valor estimado** y moneda. Es lo que alimenta el forecast ponderado, así que conviene poner algo aunque sea aproximado.
+    - **Fecha esperada de cierre.**
+    - **Dueño**: por defecto, quien la está creando.
+  </Step>
+  <Step title="Revisar">
+    Un resumen de todo antes de confirmar. **Crear oportunidad** la deja primera en la columna **Nuevo**, con 10% de probabilidad.
+  </Step>
+</Steps>
+
+<Note>
+  **¿Por qué solo Cuenta es obligatorio?** Cuando entra una consulta por teléfono, muchas veces no se sabe la fecha ni el presupuesto. La idea es que la oportunidad se pueda cargar en veinte segundos mientras el cliente todavía está en línea, y completarse después. Una oportunidad incompleta en el tablero es infinitamente mejor que una anotada en un papel.
+</Note>
+
+## Trabajar una oportunidad
+
+Al hacer clic en una tarjeta se abre el panel de detalle, con seis pestañas.
+
+<Tabs>
+  <Tab title="Resumen">
+    La foto completa: datos del evento, cuenta y contacto, tareas pendientes, salones reservados, presupuesto activo y estado de cobro.
+
+    Desde acá se opera la etapa:
+
+    - **Ganada** y **Perdida** cierran la oportunidad.
+    - **Retroceder** la manda a la etapa anterior.
+    - **Marcar Perdido** la cierra sin ganar.
+    - **Reabrir** vuelve a abrir una cerrada.
+
+    También se gestiona el **Agente asignado**: **Reasignar**, **Asignar agente…** o **Quitar asignación**.
+
+  </Tab>
+  <Tab title="Comunicación">
+    El hilo con el cliente, entrante y saliente, en un solo lugar. Se responde con **Responder por Email** o **Responder por WhatsApp si tiene conectado conversaciones**.
+
+    Cada mensaje queda registrado con su canal y su fecha. Si el cliente contesta, la tarjeta en el kanban se marca con **El cliente respondió**.
+
+  </Tab>
+  <Tab title="Presupuestos">
+    Todas las versiones de propuesta de esta oportunidad. El vigente aparece como **Presupuesto vigente**; el resto queda en **Todas las versiones**.
+
+    Acciones: **Abrir**, **Ver**, **Reenviar**, **Nueva versión**.
+
+    | Estado      | Significa                           |
+    | ----------- | ----------------------------------- |
+    | **Borrador**  | Armado pero no enviado.             |
+    | **Enviado**   | Ya lo tiene el cliente.             |
+    | **Aceptado**  | El cliente lo aprobó.               |
+    | **Rechazado** | El cliente lo rechazó.              |
+    | **Vencido**   | Pasó su fecha de validez sin respuesta. |
+
+  </Tab>
+  <Tab title="Tareas">
+    Los pendientes concretos de esta oportunidad: **Recordatorio**, **Llamado**, **Reunión** o **Visita**. Se agregan con **Nueva tarea** y se cierran con **Marcar hecha**. **Ver calendario** las muestra en contexto.
+  </Tab>
+  <Tab title="Salones">
+    Los salones reservados para este evento, con su estado: **Confirmado**, **Tentativo** o **Liberado**.
+
+    <Info>
+    Las reservas de salón no se crean acá a mano. Se generan solas al enviar un presupuesto que incluya un salón, y entran como **Tentativo**.
+    </Info>
+
+  </Tab>
+  <Tab title="Historial">
+    La bitácora completa: cambios de etapa, asignaciones, presupuestos, vencimientos y notas. Se agregan notas internas con **Nueva nota**. Lo que hace el sistema queda registrado como **Sistema**.
+
+    Las notas internas no las ve el cliente.
+
+  </Tab>
+</Tabs>
+
+## Las etapas del pipeline
+
+El pipeline **Hub de Eventos** tiene seis etapas activas y tres cierres.
+
+| Etapa          | Probabilidad | Cuándo corresponde                                |
+| -------------- | ------------ | ------------------------------------------------- |
+| **Nuevo**      | 10%          | Entró la consulta. Todavía no se habló con nadie. |
+| **Contactado** | 25%          | Ya hubo contacto y el cliente sigue interesado.   |
+| **Visita**     | 40%          | Vino a ver el salón, o está agendado para venir.  |
+| **Cotización** | 60%          | Se le envió una propuesta formal.                 |
+| **Contrato**   | 85%          | Aceptó y se está firmando.                        |
+| **Confirmado** | 100%         | Cerrado y ganado.                                 |
+
+Cierres:
+
+| Estado        | Cuándo se usa                              |
+| ------------- | ------------------------------------------ |
+| **Perdido**   | El cliente eligió otra opción o no avanzó. |
+| **Cancelado** | Estaba confirmado y se dio de baja.        |
+| **Vencido**   | Pasó la fecha del evento sin resolución.   |
+
+**Para mover una oportunidad:** se arrastra la tarjeta a la columna que corresponde. La probabilidad se ajusta sola.
+
+<Note>
+  **Sobre la probabilidad.** El porcentaje es un valor por etapa, no una estimación caso por caso.
+  Sirve para que el forecast ponderado tenga sentido: veinte oportunidades en Cotización no valen lo
+  mismo que veinte en Nuevo. Mover las tarjetas cuando corresponde no es burocracia; es lo que hace
+  que el número del forecast sirva para algo.
+</Note>
+
+## Armar y enviar un presupuesto
+
+Desde la pestaña **Presupuestos** de la oportunidad, con **Nueva versión** o abriendo un borrador.
+
+### Cargar ítems
+
+Los ítems se agregan por categoría, y cada categoría trae sus precios de un lugar distinto:
+
+| Categoría       | De dónde salen los precios                                 |
+| --------------- | ---------------------------------------------------------- |
+| **Alojamiento** | Del PMS, con disponibilidad en tiempo real.                |
+| **Salones**     | Del catálogo del Hub.                                      |
+| **Catering**    | Del módulo Menú del PMS.                                   |
+| **Extras**      | Del catálogo del Hub (incluye servicios de proveedores).   |
+| **Línea libre** | Se escribe a mano, para lo que no está en ningún catálogo. |
+
+Cada línea tiene Descripción, Cantidad, Unidad y Precio unitario, y se puede editar. **Eliminar línea** la quita.
+
+### Alojamiento: con PMS y sin PMS
+
+<AccordionGroup>
+  <Accordion title="Con el PMS conectado" icon="plug">
+    El botón **Presupuestar** abre la consulta de disponibilidad real: devuelve los tipos de habitación disponibles con su tarifa por noche, la promoción vigente, la ocupación máxima, las unidades libres y la política de cancelación.
+
+    Al elegir, las líneas entran al presupuesto agrupadas por reserva y quedan como lectura del PMS, no editables acá. Se pueden quitar con **Quitar reserva del presupuesto**.
+
+  </Accordion>
+  <Accordion title="Sin PMS conectado" icon="plug-circle-xmark">
+    El alojamiento se carga en modo manual y las líneas se escriben a mano. Las líneas manuales se distinguen visualmente de las traídas del PMS.
+  </Accordion>
+</AccordionGroup>
+
+### Totales y condiciones
+
+- **Subtotal**, **Descuento** y **Total**.
+- **Moneda**: pesos argentinos, dólares o euros.
+- **Vence el**: hasta cuándo vale la propuesta. Cumplida esa fecha, el presupuesto pasa a **Vencido** y la tarjeta se marca en el tablero.
+- **Plantilla PDF**: el diseño con el que sale la propuesta.
+- **Notas internas**: no se muestran al cliente.
+
+### Cerrar el presupuesto
+
+Tres salidas:
+
+- **Guardar borrador**: queda armado sin enviarse.
+- **Previsualizar PDF**: se ve como lo va a ver el cliente.
+- **Guardar presupuesto**: queda guardado en la oportunidad.
+
+<Warning>
+  **Enviar tiene consecuencias.** Al enviar un presupuesto que incluye un salón, se genera
+  automáticamente una **reserva tentativa** de ese salón en el calendario, para el día y turno
+  cotizados. No hay que reservarlo aparte. Y si el presupuesto incluye alojamiento, NO bloquea en el
+  PSM, este es un proceso comercial y solo se gestiona la oportunidad.
+</Warning>
+
+## Vender un grupo:
+
+Cuando el tipo de evento es **Grupo**, lo que se vende no es un salón: es un cupo de habitaciones.
+Las oportunidades de grupo conviven con el resto en el mismo pipeline y recorren las mismas etapas.
+
+### Los datos del grupo:
+
+- **Estadía**: fecha de entrada y de salida. De ahí sale la cantidad de noches.
+- **Cantidad de pasajeros (pax).**
+- **Régimen**: Solo alojamiento, Con desayuno, Media pensión o Pensión completa.
+- **Cupo de habitaciones**: cuántas habitaciones de cada tipo se cotizan, con la tarifa grupal negociada para cada una.
+- **Cut-off**: el plazo para confirmar. Explicado abajo.
+- **Gratuidades**: lo que se le da de cortesía al grupo. Por ejemplo, "1 free cada 20 pax" o "2 free + 1 upgrade suite".
+
+### El cut-off
+
+El cut-off es la fecha límite para que el cliente confirme la oportunidad.
+
+Por eso el Hub avisa por triple vía:
+
+- La tarjeta en el kanban se marca cuando el cut-off está por vencer, y cambia a **Cut-off vencido** cuando ya pasó.
+- Arriba del tablero aparece el aviso **Cut-offs por vencer**, con acceso directo a las oportunidades afectados.
+- Se puede configurar una alerta con anticipación propia.
+
+### Tarifa grupal contra tarifa pública
+
+En la pestaña **Salones**, el bloqueo muestra la tarifa negociada de cada tipo de habitación y cuánto representa contra la tarifa pública. Sirve para saber cuánto se está resignando y para defender el número si el cliente vuelve a pedir descuento.
+
+## Calendario de ocupación de salones
+
+Muestra qué salón está ocupado, qué día y en qué turno. Se filtra por salón y por turno, o se ven **Todos los turnos**.
+
+Los turnos son los que el hotel haya configurado. Por defecto:
+
+- **Day use**: de 09:00 a 17:00
+- **Noche**: de 19:00 a 02:00
+- **Completo**: de 09:00 a 02:00
+
+### Los tres estados
+
+| Estado         | Qué es                                                                              |
+| -------------- | ----------------------------------------------------------------------------------- |
+| **Confirmada** | Evento cerrado. El salón está tomado.                                               |
+| **Tentativa**  | Se envió un presupuesto que incluye ese salón, pero el cliente todavía no confirmó. |
+| **Conflicto**  | Dos reservas tentativas se superponen en el mismo salón, día y turno.               |
+
+<Info>
+  **Los conflictos no bloquean.** El sistema deja cotizar el mismo salón para el mismo día a dos
+  clientes distintos -lo cual es sano, porque a veces conviene tener dos hierros en el fuego- pero
+  lo marca para que nadie lo descubra el día del evento. El resumen del mes cuenta los conflictos
+  abiertos.
+</Info>
+
+El resumen muestra también la ocupación del mes, las reservas confirmadas, las tentativas y los eventos de hoy.
+
+## Cobro del evento
+
+Una vez que la oportunidad está en **Confirmado**, la pestaña **Resumen** muestra el estado de cobro:
+
+- **Seña / pagado**: lo que ya entró.
+- **Saldo pendiente**: lo que falta.
+- **Saldado**: cuando el evento está cobrado en su totalidad.
+
+Dos acciones: **Registrar pago** para asentar un cobro, y **Recordar al cliente** para mandarle un aviso.
+
+Los eventos confirmados con saldo pendiente aparecen en el aviso **Cobros por vencer** del tablero.
+
+## Cuentas y contactos
+
+La pantalla **Cuentas** lista todos los clientes. Se filtra por **Todas**, **Personas**, **Empresas** o **Agencias**, y se busca por nombre.
+
+Cada cuenta muestra sus contactos, sus oportunidades y lo cotizado.
+
+### Las cuentas vienen del CRM
+
+Las fichas de cliente **viven en el CRM del hotel**, no en el Hub. El Hub las espeja.
+
+<Warning>
+  **Los datos sincronizados del CRM llegan como lectura y no se editan desde acá.** Si un teléfono o
+  un CUIT está mal, se corrige en la ficha del CRM y el cambio baja al Hub. Editarlo en dos lugares
+  distintos es lo que produce las bases de datos que nadie sabe cuál está bien.
+</Warning>
+
+Al crear una cuenta nueva con **Nueva cuenta**, se busca primero en el directorio del CRM: si la ficha ya existe, se vincula en vez de duplicarla.
+
+Las cuentas de tipo **agencia** pueden tener un porcentaje de comisión asociado.
+
+### Escribirle al cliente desde Cuentas
+
+Con **Enviar email** o **Enviar WhatsApp** se le escribe directamente a un contacto sin pasar por una oportunidad. Sirve para seguimiento general de un cliente recurrente.
+
+## Catálogos: salones, extras y turnos
+
+Es lo que después se puede cotizar. Tres pestañas propias del Hub, más una de lectura del PMS.
+
+<Tabs>
+  <Tab title="Salones">
+    Alta, edición y baja de los salones del hotel. Cada uno lleva Nombre, Capacidad, Precio base, Unidad (por evento, por día o por hora) y Estado (activo o no).
+
+    Un salón desactivado deja de ofrecerse en presupuestos nuevos, pero no afecta a los ya emitidos.
+
+  </Tab>
+  <Tab title="Extras">
+    Todo lo que se suma al evento y no es salón ni comida: audio, iluminación, decoración, audiovisual, producción, logística, bebidas, coordinación.
+
+    Cada extra tiene Categoría, Unidad (por evento, por unidad o por persona), Precio y, si corresponde, **Proveedor**. Los que no dependen de un tercero figuran como **Propio del hotel**.
+
+  </Tab>
+  <Tab title="Turnos">
+    Las franjas horarias en las que se reserva un salón. Cada turno tiene nombre, hora de inicio y hora de fin.
+
+    <Info>
+    Las reservas de salón se hacen por turno, no por hora suelta. Cambiar los turnos cambia cómo se reserva de acá en adelante, así que conviene definirlos una vez y no tocarlos seguido.
+    </Info>
+
+  </Tab>
+  <Tab title="Habitaciones y Menús · PMS">
+    Esta pestaña es **de lectura**: los tipos de habitación y los menús vienen del PMS y no se editan en el Hub.
+
+    Lo único que se puede hacer es **quitar de la lista los menús que no se ofrecen en eventos**, para que no aparezcan al cotizar. El menú sigue existiendo en el PMS.
+  </Tab>
+</Tabs>
+
+## Proveedores
+
+Los terceros que prestan servicios: DJ, iluminación, flores, pantallas, traslados, fotografía, catering externo, seguridad, transporte, pirotecnia.
+
+Cada proveedor lleva razón social, categoría o rubro, nombre del contacto, teléfono, email, CUIT y estado.
+
+<Info>
+  **La relación con el catálogo:** los servicios de un proveedor **activo** aparecen como extras
+  disponibles para cotizar. Si se desactiva el proveedor, sus servicios dejan de ofrecerse. Es la
+  forma de sacar de circulación a un proveedor con el que se cortó el convenio, sin borrar el
+  historial de los eventos donde ya se usó.
+</Info>
+
+## Configuración: pipelines y alertas
+
+### Pipelines
+
+El hotel puede tener más de un pipeline, cada uno con sus propias etapas, nombres y probabilidades.
+Tiene sentido crear otro cuando el proceso de venta es realmente distinto -por ejemplo, upselling a huéspedes ya alojados, que no pasa por visita ni por contrato- y no simplemente para separar tipos de evento. Para eso ya está el filtro por tipo.
+
+Cada etapa se configura con nombre, color, probabilidad y estado: **Abierta**, **Ganada** o **Perdida**.
+
+### Alertas
+
+Cinco avisos configurables, cada uno con su anticipación.
+
+| Alerta                            | Qué avisa                                                                   |
+| --------------------------------- | --------------------------------------------------------------------------- |
+| **Cut-off de bloqueos de grupos** | Antes de que venza el cut-off y se liberen las habitaciones no confirmadas. |
+| **Cobro de eventos confirmados**  | Cuando un evento ganado tiene saldo pendiente.                              |
+| **Presupuestos vencidos**         | Cuando una propuesta enviada supera su validez.                             |
+| **Leads sin actividad**           | Cuando una oportunidad no tiene movimientos, según el umbral que se defina. |
+| **Respuesta del cliente**         | Cuando el cliente contesta un mensaje.                                      |
+
+<Tip>
+Conviene activar pocas y bien.
+</Tip>
+
+## Auditor IA
+
+Próximamente.
+
+<Note>
+  Es una segunda lectura del tablero, no una autoridad. Las sugerencias se revisan y se aplican si
+  tienen sentido.
+</Note>
+
+## Preguntas frecuentes
+
+<AccordionGroup>
+  <Accordion title="Cargué una oportunidad sin fecha ni valor. ¿Está mal?">
+    No. Solo la cuenta es obligatoria. Es preferible cargarla incompleta mientras el cliente está en
+    línea y completarla después.
+  </Accordion>
+  <Accordion title="¿Cómo reservo un salón?">
+    No se reserva a mano. Se arma un presupuesto que incluya el salón y se envía: la reserva
+    tentativa se genera sola. Se confirma cuando la oportunidad pasa a Confirmado.
+  </Accordion>
+  <Accordion title="Dos clientes quieren el mismo salón el mismo día">
+    Se puede cotizar a los dos. El calendario lo marca como conflicto para que quede visible. Cuando
+    uno confirma, se libera el otro.
+  </Accordion>
+  <Accordion title="El teléfono de un cliente está mal y no me deja editarlo">
+    Ese dato viene del CRM. Se corrige en la ficha del CRM y baja al Hub.
+  </Accordion>
+  <Accordion title="Mandé un presupuesto con el precio equivocado">
+    Se genera una **Nueva versión** con el precio corregido y se envía. La versión anterior queda
+    registrada en el historial.
+  </Accordion>
+  <Accordion title="¿Por qué el forecast me da menos que la suma de mis oportunidades?">
+    Porque el forecast está ponderado: cada oportunidad se multiplica por la probabilidad de su
+    etapa. Una de un millón en Nuevo aporta cien mil, no un millón.
+  </Accordion>
+  <Accordion title="Un evento ya pasó y quedó abierto en el tablero">
+    Se cierra según lo que pasó: **Confirmado** si se hizo, **Perdido** si el cliente eligió otra
+    opción, **Cancelado** si se dio de baja.
+  </Accordion>
+  <Accordion title="Perdí una oportunidad y el cliente volvió">
+    **Reabrir**, desde el panel de detalle.
+  </Accordion>
+</AccordionGroup>
