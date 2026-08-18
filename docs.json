@@ -792,7 +792,8 @@
               "motordereservasv10/como_personalizar_el_motor",
               "motordereservasv10/ajustar_textos_en_el_motor_de_reservas",
               "motordereservasv10/activar_y_configurar_el_calendario_informativo",
-              "motordereservasv10/ajustar_textos_en_el_motor"
+              "motordereservasv10/ajustar_textos_en_el_motor",
+              "motordereservasv10/agente_de_promos"
             ]
           }
         ]
