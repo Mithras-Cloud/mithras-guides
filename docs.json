@@ -235,7 +235,8 @@
               "crm/como_cambiar_de_punto_de_venta",
               "crm/como_automatizar_los_envios_de_correos_en_reservas",
               "crm/como_configurar_las_plantillas_de_correo_email_marketing",
-              "crm/configuracion_de_mutador_para_compras_abandonadas"
+              "crm/configuracion_de_mutador_para_compras_abandonadas",
+              "crm/grupos_y_eventos"
             ]
           },
           {
