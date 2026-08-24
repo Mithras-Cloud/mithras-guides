@@ -1,0 +1,80 @@
+---
+title: "Creación de credenciales de pago con OAuth"
+description: "Esta guía detalla el procedimiento para configurar y vincular una cuenta de un procesador de pagos externo utilizando el método de autorización OAuth. Este proceso permite que los pagos se procesen directamente en el sitio web, sin redirigir al cliente a una página externa, creando una credencial validada y lista para ser asociada a un medio de pago."
+---
+
+En esta guía, vas a aprender a crear y configurar una credencial de pago utilizando OAuth. Esto te va a permitir procesar pagos directamente en tu sitio, ofreciéndole a tus clientes una experiencia de compra fluida y sin redirecciones externas.
+
+<Steps>
+  <Step title="Accedé a las integraciones de pago">
+    Para iniciar la configuración, accedé al listado de integraciones disponibles en el sistema. Desde el menú principal, navegá a la sección de **Marketplace** o **Integraciones**. Una vez ahí, ubicá la integración de pago recomendada, que se distingue por una etiqueta específica. Hacé clic en el botón **"Configurar"** asociado a esta integración para acceder a la pantalla de gestión de credenciales.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592710_0_6a8c800629fa1.jpg" alt="Vista del listado de integraciones con el botón 'Configurar' de la opción de pago recomendada siendo seleccionado." />
+    </Frame>
+  </Step>
+
+  <Step title="Agregá una nueva credencial">
+    En la pantalla de **"Mercado Pago"**, donde se muestra el listado de credenciales existentes, vas a encontrar el botón **"Añadir credencial"** en la esquina superior derecha. Al hacer clic en este botón, se va a desplegar un panel lateral con el formulario para crear una nueva credencial de pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592710_1_6a8c8006dcc9f.jpg" alt="Tabla con el listado de credenciales de pago y el cursor haciendo clic en el botón rojo 'Añadir credencial'." />
+    </Frame>
+  </Step>
+
+  <Step title="Elegí el tipo de integración">
+    Dentro del formulario **"Añadir credencial de Mercado Pago"**, el primer paso es seleccionar el **"Tipo de integración"**. Elegí la opción **"Mercado Pago Procesador"**. Esta selección es fundamental, ya que configura la integración para procesar los pagos directamente dentro de tu sitio, ofreciéndole una experiencia de compra fluida a tus clientes.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592711_2_6a8c80077c3c6.jpg" alt="Panel lateral para añadir una nueva credencial, con las opciones 'Mercado Pago Pasarela' y 'Mercado Pago Procesador', donde esta última está siendo seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Configurá el punto de venta y el nombre">
+    A continuación, seleccioná el **"Punto de venta"** al cual querés asociar esta nueva credencial. Desplegá el menú y elegí el punto de venta correspondiente. Luego, en el campo **"Nombre de credencial"**, ingresá un nombre descriptivo que te permita identificar fácilmente esta configuración en el futuro, por ejemplo, "Mercado Pago - Procesador".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592711_3_6a8c8007efcd8.jpg" alt="Formulario de creación de credencial con el campo 'Punto de venta' y 'Nombre de credencial' siendo completado con el texto 'Mercado Pago - Procesador'." />
+    </Frame>
+  </Step>
+
+  <Step title="Generá el enlace de autorización">
+    Una vez que completaste los campos anteriores, hacé clic en el botón rojo **"Generar enlace de autorización de Mercado Pago"**. El sistema va a procesar la solicitud y va a generar un enlace único y temporal necesario para vincular la cuenta.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592712_4_6a8c800847f65.jpg" alt="Cursor del ratón haciendo clic en el botón 'Generar enlace de autorización de Mercado Pago'." />
+    </Frame>
+  </Step>
+
+  <Step title="Copiá y abrí el enlace de autorización">
+    El sistema te va a mostrar el **"Enlace de autorización"** generado. Para continuar, hacé clic en el botón **"Copiar enlace"**.
+
+    <Tip>
+      Es crucial que este enlace se abra en un navegador donde tengas la sesión iniciada en la cuenta del procesador de pagos que querés vincular. Esto asegura que la autorización se aplique a la cuenta correcta.
+    </Tip>
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592712_5_6a8c8008c644c.jpg" alt="Sección del formulario que muestra el enlace de autorización generado y el cursor haciendo clic en el botón 'Copiar enlace'." />
+    </Frame>
+  </Step>
+
+  <Step title="Autorizá la conexión">
+    Abrí una nueva pestaña en tu navegador, pegá el enlace copiado en la barra de direcciones y presioná Enter. Vas a ser redirigido a la página del procesador de pagos para autorizar la conexión. Seguí las instrucciones en pantalla para permitir que el sistema gestione los pagos en nombre de tu cuenta.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592713_6_6a8c80096525e.jpg" alt="Barra de direcciones de un navegador web donde se está pegando el enlace de autorización copiado previamente." />
+    </Frame>
+  </Step>
+
+  <Step title="Verificá la credencial autorizada">
+    Después de completar la autorización en el sitio del procesador de pagos, vas a ser redirigido automáticamente de vuelta al sistema. La nueva credencial va a aparecer en el listado, con su nombre, la fecha de creación y, lo más importante, un indicador de color verde en la columna **"Estado de validación"**, confirmando que la vinculación se realizó con éxito y la credencial está activa y lista para ser utilizada.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592713_7_6a8c8009c01c0.jpg" alt="Tabla de listado de credenciales actualizada, donde se muestra la nueva credencial 'Mercado Pago - Procesador' con un círculo verde en la columna 'Estado de validación'." />
+    </Frame>
+
+    <Check>
+      ¡Listo! La credencial está validada y lista para ser asociada a tus medios de pago.
+    </Check>
+  </Step>
+</Steps>
