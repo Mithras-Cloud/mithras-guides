@@ -6107,6 +6107,10 @@
     {
       "source": "/integraciones/integracion_mercado_pago_argentina",
       "destination": "/integraciones/como_integrar_mercado_pago_como_procesador_de_pago_oauth_argentina"
+    },
+    {
+      "source": "/integraciones/mercadopago",
+      "destination": "/integraciones/como_integrar_mercado_pago_como_procesador_de_pago_oauth_argentina"
     }
   ]
 }
