@@ -709,7 +709,8 @@
               "integraciones/webpay_-_confirgurar_modalidad_mall",
               "integraciones/como_hacer_una_devolucion_de_un_cobro_de_webpay",
               "integraciones/guia_de_integracion_rms_perform_ip",
-              "integraciones/como_integrar_mercado_pago_como_pasarela_de_pago_oauth_argentina"
+              "integraciones/como_integrar_mercado_pago_como_pasarela_de_pago_oauth_argentina",
+              "integraciones/como_integrar_mercado_pago_como_procesador_de_pago_oauth_argentina"
             ]
           },
           {
