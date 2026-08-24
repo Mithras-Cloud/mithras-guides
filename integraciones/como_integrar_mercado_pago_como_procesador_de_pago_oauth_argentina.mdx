@@ -1,0 +1,106 @@
+---
+title: "¿Cómo integrar Mercado Pago como procesador de pago? – OAuth Argentina"
+description: "Este procedimiento detalla cómo configurar Mercado Pago para procesar los cobros con tarjeta directamente desde PXSOL, sin que el huésped salga del sistema. La vinculación se realiza por OAuth: se autoriza una sola vez desde la cuenta de Mercado Pago y las credenciales se generan automáticamente, sin necesidad de copiar claves de forma manual."
+---
+
+<Note>
+  Esta funcionalidad está disponible exclusivamente para cuentas de Argentina.
+</Note>
+
+<Steps>
+  <Step title="Abre la configuración de Mercado Pago">
+    Desde el buscador, ingresa a **Integraciones**. Busca la integración **Mercado Pago (RECOMENDADA)** y selecciona **Configurar**. Se abre el listado de credenciales.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787588446_0_6a8c6f5ece100.jpg" alt="Vista de la página del marketplace con la integración de Mercado Pago resaltada y el cursor sobre el botón Configurar." />
+    </Frame>
+  </Step>
+
+  <Step title="Crea una nueva credencial">
+    Presiona **Añadir credencial**. Se abre una ventana emergente para
+    configurar los parámetros de la conexión.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592710_1_6a8c8006dcc9f.jpg" alt="Tabla con el listado de credenciales de pago y el cursor haciendo clic en el botón rojo 'Añadir credencial'." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona el tipo de integración 'Procesador'">
+    En la ventana **Añadir credencial** aparecen dos tipos de integración:
+    **Pasarela** y **Procesador**. Selecciona **Procesador**. Con esta opción,
+    el huésped ingresa los datos de la tarjeta dentro de PXSOL y Mercado Pago
+    procesa el cobro sin redirigirlo a otro sitio.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592711_2_6a8c80077c3c6.jpg" alt="Panel lateral para añadir una nueva credencial, con las opciones 'Mercado Pago Pasarela' y 'Mercado Pago Procesador', donde esta última está siendo seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona el punto de venta al que aplica y el nombre de la credencial">
+    En el menú desplegable, selecciona el punto de venta al que se asocia la
+    credencial. Luego, en **Nombre de credencial**, ingresa un nombre que te
+    permita reconocerla después, por ejemplo "Mercado Pago - Procesador".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592711_3_6a8c8007efcd8.jpg" alt="Formulario de creación de credencial con el campo 'Punto de venta' y 'Nombre de credencial' siendo completado con el texto 'Mercado Pago - Procesador'." />
+    </Frame>
+  </Step>
+
+  <Step title="Genera el enlace de autorización">
+    Con los campos completos, haz clic en
+    **Generar enlace de autorización de Mercado Pago**. El sistema crea un
+    enlace único y temporal que sirve para vincular la cuenta de Mercado Pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592712_4_6a8c800847f65.jpg" alt="Cursor del ratón haciendo clic en el botón 'Generar enlace de autorización de Mercado Pago'." />
+    </Frame>
+  </Step>
+
+  <Step title="Abre o copia el enlace de autorización">
+    El enlace aparece en el campo **Enlace de autorización**. Haz clic en **Abrir en pestaña nueva** o **Copiar enlace** si no tienes sesión iniciada en ese navegador.
+
+    <Warning>
+      El enlace debe abrirse en un navegador con la sesión de Mercado Pago ya
+      iniciada, en la cuenta que quieres vincular. Si tienes varias cuentas de
+      Mercado Pago, verifica cuál está abierta antes de continuar.
+    </Warning>
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592712_5_6a8c8008c644c.jpg" alt="Sección del formulario que muestra el enlace de autorización generado y el cursor haciendo clic en el botón 'Copiar enlace'." />
+    </Frame>
+  </Step>
+
+  <Step title="Autoriza la conexión en Mercado Pago">
+    Abre el enlace en una pestaña nueva. Mercado Pago muestra la pantalla de
+    autorización, con el detalle de los permisos que solicita. Revísalos y haz clic en **Autorizar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/05/15/screenshot_1778863913_4_6a074f299c9f6.jpg" alt="Página de autorización de Mercado Pago con el botón 'Autorizar' resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Confirma la autorización">
+    Mercado Pago muestra un mensaje de confirmación y redirige automáticamente
+    a PXSOL para finalizar la vinculación.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787588449_7_6a8c6f61c3621.jpg" alt="Mensaje de confirmación 'Autorizaste la conexión' en la página de Mercado Pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Verifica la credencial">
+    Al volver a PXSOL, la credencial aparece en el listado con el nombre que le
+    asignaste y con el ícono verde de verificación en **Estado de validación**.
+
+    Si la credencial no aparece, la vinculación se interrumpió antes de
+    completarse. Repite el proceso desde el paso 5 generando un enlace nuevo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/08/24/screenshot_1787592713_7_6a8c8009c01c0.jpg" alt="Tabla de listado de credenciales actualizada, donde se muestra la nueva credencial 'Mercado Pago - Procesador' con un círculo verde en la columna 'Estado de validación'." />
+    </Frame>
+
+    <Check>
+      ¡Listo! La credencial está validada y lista para ser asociada a tus medios de pago.
+    </Check>
+  </Step>
+</Steps>
