@@ -6102,10 +6102,6 @@
     {
       "source": "/integraciones/configuracion_integracion_mercado_pago",
       "destination": "/integraciones/27_mar_2026_vmaker_recording"
-    },
-    {
-      "source": "/integracion_mercado_pago_pasarela_argentina",
-      "destination": "/integraciones/2026-08-24_13-15-21"
     }
   ]
 }
