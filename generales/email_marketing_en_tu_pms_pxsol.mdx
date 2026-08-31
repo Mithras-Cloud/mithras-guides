@@ -1,0 +1,369 @@
+---
+title: "Email Marketing en tu PMS Pxsol"
+description: "Creá, programá y analizá las campañas de email que enviás a tus huéspedes y contactos, sin salir del PMS. Esta guía te lleva desde tu primera campaña hasta leer los resultados: entregas, aperturas y reservas generadas."
+---
+
+<Note>
+Lo encontrás en **Marketing** → **Email Marketing** y en **CRM** → **Email Marketing**.
+</Note>
+
+## 1. Antes de empezar
+
+Qué es el módulo y cómo está organizado.
+
+El módulo de Email Marketing se apoya en los datos que ya tenés cargados en Pxsol: contactos del CRM, reservas y etiquetas. Los envíos salen por infraestructura de entrega profesional de Amazon, y el estado de cada correo se refleja en vivo en el panel.
+
+Al entrar vas a ver una barra con las subsecciones del módulo:
+- **Email Marketing**: El panel principal con tus campañas, el cupo del mes y accesos directos.
+- **Plantillas**: La base reutilizable de diseños de email.
+- **Automatizaciones**: Campañas que se re-envían solas con la frecuencia que definas.
+- **Segmentos**: Los grupos de contactos a los que les enviás.
+- **Analytics**: Resultados por campaña y comparativa con hoteles similares.
+- **Configuración**: Dominios de envío, supresiones de contactos y reputación.
+
+### Lo primero de todo: configurá tu dominio de envío
+
+Antes de enviar tu primera campaña, es fundamental que verifiques un dominio propio. El sistema te guiará en este proceso, que consiste en dos pasos.
+
+<Steps>
+  <Step title="Registrá tu dominio">
+    Navegá a **Configuración → Dominios** y hacé clic en **Agregar dominio**. Ingresá el dominio raíz de tu hotel (sin `www` ni `mailto`), por ejemplo `tuhotel.com`. El sistema generará los registros DNS necesarios automáticamente.
+  </Step>
+  <Step title="Cargá los registros DNS y verificá">
+    Agregá los registros generados en el administrador de tu dominio. Si no lo administrás vos, pasale los registros a tu proveedor web. Una vez cargados, volvé a **Configuración → Dominios** en Pxsol y hacé clic en **Verificar**. El estado cambiará de `Pendiente` a `Verificado`.
+  </Step>
+</Steps>
+
+Verificar tu dominio con autenticación DKIM te permite enviar desde tu propia dirección (ej. `reservas@tuhotel.com`), refuerza tu marca y mejora significativamente la entregabilidad de tus correos.
+
+En la misma pantalla de **Configuración**, encontrarás dos pestañas adicionales:
+- **Supresiones**: Lista de contactos excluidos de todos los envíos (ej. dados de baja).
+- **Reputación**: El estado de salud de tu dominio de envío.
+
+<Tip>
+**Lo mínimo para tu primera campaña:** un dominio verificado, un segmento con contactos (podés usar uno predefinido o importar un CSV), una plantilla y un asunto. El asistente de creación te acompañará en el resto del proceso.
+</Tip>
+
+---
+
+## 2. El panel de campañas
+
+Tu punto de partida: cupo del mes arriba, campañas abajo.
+
+### Los cuatro indicadores del mes
+
+La franja superior resume tu consumo de envíos en el período actual.
+
+<CardGroup cols={2}>
+  <Card title="Emails enviados este mes">
+    Muestra cuánto llevás consumido de tu cupo. La barra de progreso cambia de color al superar el 85%.
+  </Card>
+  <Card title="Cupo disponible">
+    Indica la cantidad de emails que te quedan por enviar. El contador se reinicia el día 1 de cada mes.
+  </Card>
+  <Card title="Cupo del plan">
+    El total de emails incluidos en tu plan mensual.
+  </Card>
+  <Card title="Costo estimado del mes">
+    Si no superaste el cupo, es $0. Si lo superaste, aquí verás el costo del excedente acumulado.
+  </Card>
+</CardGroup>
+
+### Estados de una campaña
+
+Una campaña pasa por varios estados a lo largo de su ciclo de vida:
+
+`Borrador` → `Lista para enviar` → `Programada` → `Enviando` → `Enviada`
+
+- **Borrador**: La campaña se está creando; se puede editar todo.
+- **Lista para enviar**: Completa y lista para ser enviada. El sistema te avisará si falta algún paso.
+- **Programada**: Con fecha y hora de envío definidas; se enviará automáticamente.
+- **Enviando**: El envío está en curso. Verás una barra de progreso en la lista.
+- **Enviada**: El envío finalizó. Ya podés analizar los resultados.
+
+### La tabla: los números se clickean
+
+Cada fila en la tabla de campañas resume sus resultados. Los números subrayados son accesos directos a informes detallados.
+
+<Frame caption="Ejemplo de una campaña en la lista">
+| Campaña | Destinatarios | Entregados | Fallidos | Reservas | Estado |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Promo invierno - Suites**<br/><small>Plantilla: Promo invierno</small> | 1.240 | [1.180](/entregas) | [60](/entregas) | [36](/reservas) | `Enviada` |
+</Frame>
+
+- **Click en Entregados**: Abre la lista de destinatarios con el estado de cada correo.
+- **Click en Fallidos**: Abre el detalle de entregas con el motivo de cada fallo.
+- **Click en Reservas**: Abre el detalle de reservas atribuidas con ingresos y ROI.
+
+---
+
+## 3. Crear una campaña
+
+El botón **Nueva campaña** abre un asistente de cuatro pasos para guiarte.
+
+<Steps>
+  <Step title="Detalles">
+    Completá la identidad del envío. Verás una vista previa en tiempo real de cómo se verá en la bandeja de entrada.
+    - **Nombre de la campaña**: Para uso interno.
+    - **Asunto**: Lo que verán los destinatarios. Mantenelo corto (menos de 60 caracteres).
+    - **Nombre y email del remitente**: Quién firma el envío (ej. `reservas@tuhotel.com`).
+    - **Email para pruebas**: La casilla donde recibirás la vista previa.
+
+    <Tip>
+    **Tips para un buen asunto:** empezá con un verbo o un beneficio claro ("Escapate", "Reservá", "30% off"), evitá mayúsculas excesivas y múltiples signos de exclamación. Los asuntos cortos con números o descuentos suelen tener mayor tasa de apertura.
+    </Tip>
+  </Step>
+  <Step title="Plantilla">
+    Elegí el diseño del email desde tus plantillas guardadas o creá una nueva. La galería ofrece diseños listos para adaptar.
+  </Step>
+  <Step title="Audiencia">
+    Seleccioná uno o más segmentos. El sistema deduplica automáticamente las direcciones repetidas. El panel **Audiencia total** te mostrará si el envío excede tu cupo mensual y el costo estimado.
+  </Step>
+  <Step title="Programar y revisar">
+    Elegí entre **Enviar ahora** o **Programar** para una fecha y hora específicas. La **Revisión final** resume todos los detalles antes de confirmar. Es muy recomendable enviar un [email de prueba](#6-email-de-prueba) primero.
+  </Step>
+</Steps>
+
+---
+
+## 4. Variables y contenido del email
+
+Personalizá el cuerpo del mensaje con variables que el sistema reemplaza al enviar. En campañas masivas (Email Marketing), están disponibles las variables del establecimiento:
+
+- `[var_hotel_nombre]`
+- `[var_servicios_hotel]`
+- `[var_service_name]`
+- `[var_fotos_establecimiento]`
+- `[CP_*]` (cuerpos pre-escritos)
+
+Las variables ligadas a una reserva o contacto específico **no están disponibles** en envíos masivos, ya que no se asocian a una reserva concreta. Por ejemplo: `[var_reserva_num]`, `[var_nombre]`, `[var_fechain]`.
+
+<Warning>
+**Importante:** si usás una plantilla de emails transaccionales, las variables de contacto o reserva no se completarán. Reemplazalas por texto genérico antes de enviar la campaña masiva.
+</Warning>
+
+### Vista previa del contenido
+Desde **Vista previa** podés ver el email final en formato de **Escritorio** y **Móvil**. El contenido se edita visualmente con el editor de bloques, y todos los envíos incluyen automáticamente el enlace de baja (desuscripción) para cumplir con las normativas y mantener una buena reputación de envío.
+
+---
+
+## 5. Destinatarios
+
+Quiénes reciben la campaña, y las tres formas de sumarlos.
+
+La pantalla **Destinatarios** de cada campaña lista a cada contacto con su estado individual: `Enviado`, `En proceso`, `Error` o `Pendiente`.
+
+### Agregar destinatarios
+Desde **Agregar destinatarios** podés elegir la fuente de tus contactos:
+
+| Fuente | Cómo funciona |
+| :--- | :--- |
+| **Contactos (CRM)** | Elegís etiquetas o segmentos. El sistema actualiza el conteo y deduplica los contactos automáticamente. |
+| **Reservas** | Filtrás por rango de fechas y estado de la reserva. Se te informará cuántos emails únicos se encontraron. |
+| **Carga manual** | Pegás una lista de emails separados por coma o salto de línea. |
+
+### Importar contactos desde un CSV
+Si tenés una lista externa, podés importarla desde **Segmentos → Importar contactos**.
+
+<Steps>
+  <Step title="Subir archivo">
+    Arrastrá tu archivo CSV. El sistema lo procesará y validará su formato.
+  </Step>
+  <Step title="Mapear columnas">
+    Indicá qué columna corresponde a cada dato (email, nombre, país, etc.). La columna de email es obligatoria.
+  </Step>
+  <Step title="Revisar y guardar">
+    Verificá el resumen de contactos válidos y duplicados. Podés crear un segmento nuevo o añadirlos a uno existente.
+  </Step>
+</Steps>
+
+---
+
+## 6. Email de prueba
+
+Un minuto que te ahorra errores frente a miles de personas.
+
+Antes de un envío masivo, validá cómo se ve el email en una bandeja de entrada real. Usá la opción **Enviar prueba** para mandarlo a hasta 5 direcciones.
+
+El sistema también te mostrará un **checklist previo al envío**:
+- Asunto configurado
+- Plantilla seleccionada
+- Remitente verificado (DKIM/SPF)
+- Email de prueba enviado
+- Audiencia dentro del cupo
+
+<Tip>
+**Qué mirar en la prueba:** que el asunto no se corte, que las imágenes carguen, que los botones lleven a la página correcta, que no hayan quedado variables sin reemplazar y que se vea bien en el celular.
+</Tip>
+
+---
+
+## 7. Entregas y fallos
+
+Qué pasó con cada correo, y cómo cuidar tu reputación de envío.
+
+Al hacer clic en el número de **Fallidos** de una campaña, accedés al **Detalle de entregas**.
+
+### Resumen de fallos
+Los fallos se agrupan por tipo para facilitar el diagnóstico.
+
+| Tipo de fallo | Qué significa | Qué hacer |
+| :--- | :--- | :--- |
+| **Bounce permanente** | La dirección no existe o fue rechazada. | Depurala de tu lista. Insistir daña tu reputación. |
+| **Bounce temporal** | El servidor no pudo recibir el correo (casilla llena, etc.). | No requiere acción, suele resolverse solo. |
+| **Marcado como spam** | El destinatario reportó el correo como no deseado. | Revisá la frecuencia y relevancia del contenido para ese segmento. |
+| **Dirección inválida** | El formato del email es incorrecto. | Corregila o eliminala de tu CRM. |
+| **Dado de baja** | El contacto se desuscribió. | Nada. El sistema lo excluye automáticamente. |
+
+### Reputación y recomendaciones
+El panel de reputación te muestra la salud de tu remitente con estas métricas:
+- **Salud del remitente**: Estado general de tu dominio de envío.
+- **Tasa de spam**: Idealmente por debajo de 0,10%.
+- **Tasa de bounce**: Se recomienda mantenerla por debajo del 5%.
+- **Autenticación DKIM**: La firma técnica que valida tu dominio.
+
+<Warning>
+**La regla de oro:** depurá los bounces permanentes después de cada campaña. Una lista limpia es clave para proteger tu tasa de entrega a largo plazo.
+</Warning>
+
+---
+
+## 8. Reservas atribuidas
+
+La métrica que importa: cuánta venta generó cada campaña.
+
+Al hacer clic en la columna **Reservas**, se abre un informe detallado con:
+- **Reservas atribuidas** y su porcentaje de conversión.
+- **Ingresos generados** y el ticket promedio.
+- **ROI (Retorno de la Inversión)**: Ingresos divididos por el costo del envío.
+- **Tiempo medio click → reserva**: Cuánto tarda un huésped en reservar después de hacer clic.
+
+<Info>
+**Modelo de atribución:** se usa el modelo de **último click**. Una reserva se atribuye a la campaña si el huésped hizo clic en un enlace del email y completó la reserva dentro de los **30 días** siguientes.
+</Info>
+
+---
+
+## 9. Analytics y benchmark
+
+Leé los resultados y comparate con hoteles como el tuyo.
+
+### Resumen de la campaña
+- **Tasa de apertura**: Porcentaje de destinatarios que abrieron el email.
+- **Tasa de click (CTR)**: Porcentaje de destinatarios que hicieron clic en un enlace.
+- **CTR sobre aperturas**: Mide qué tan atractivo fue el contenido para quienes lo abrieron.
+- **Bajas y quejas**: Desuscripciones y reportes de spam.
+
+### Benchmark Pxsol
+La pestaña **Benchmark Pxsol** compara tu campaña contra el promedio de hoteles similares en los últimos 90 días, mostrando:
+- Tus tasas de rendimiento frente al promedio y el top 10% del sector.
+- **Mejores horarios de envío** en un mapa de calor.
+- **Frecuencia de envío** y su impacto en la apertura.
+- **Patrones de asunto** que mejor funcionan en hotelería.
+
+---
+
+## 10. Segmentos
+
+Los grupos de contactos a los que les hablás. Buena segmentación = más aperturas y menos bajas.
+
+En la sección **Segmentos**, podés crear grupos de contactos basados en reglas.
+
+### Crear un segmento
+<Steps>
+  <Step title="Detalles">
+    Definí el nombre, una descripción y el **modo de actualización**:
+    - **Dinámico**: Se recalcula en cada uso. Ideal para "huéspedes recientes".
+    - **Estático**: Una foto fija del momento de creación. Ideal para listas puntuales.
+  </Step>
+  <Step title="Criterios">
+    Combiná reglas basadas en datos del contacto, reservas, engagement de email y etiquetas del CRM.
+  </Step>
+  <Step title="Vista previa">
+    Revisá la lista de contactos que cumplen los criterios. Podés excluir o sumar contactos manualmente antes de guardar.
+  </Step>
+</Steps>
+
+---
+
+## 11. Automatizaciones
+
+Enviá emails automáticos basados en comportamiento y eventos del huésped. Actualmente, podés configurar campañas recurrentes.
+
+Una automatización toma una campaña y la re-envía con una frecuencia definida (semanal o mensual).
+
+### Crear una automatización
+<Steps>
+  <Step title="Nombre y campaña a repetir">
+    Dale un nombre a la automatización y elegí la campaña base. Cada envío crea una copia nueva para medir sus métricas por separado.
+  </Step>
+  <Step title="Segmentos">
+    Elegí los segmentos de destino. Usá segmentos dinámicos para que los nuevos contactos que cumplan los criterios se incluyan automáticamente.
+  </Step>
+  <Step title="Frecuencia y horario">
+    Definí cuándo se enviará (cada semana o mes) y la hora local de tu hotel.
+  </Step>
+</Steps>
+
+<Warning>
+**La automatización se crea pausada.** Revisala y activala con el interruptor cuando quieras que empiece a enviar.
+</Warning>
+
+---
+
+## 12. Plantillas
+
+Gestioná la base reutilizable de tus emails, con soporte multi-idioma y una galería de diseños listos.
+
+### Crear o editar una plantilla
+El proceso te permite configurar el nombre y uso, y luego editar el contenido para cada idioma que necesites. Podés usar IA para traducir el contenido automáticamente. El cuerpo del email se construye con un editor visual de bloques (arrastrar y soltar) o, para mayor control, con la vista HTML.
+
+<Tip>
+**Sugerencia:** antes de diseñar de cero, revisá la galería. Clonar un diseño listo y ajustar textos e imágenes es más rápido y asegura que el email se vea bien en todos los clientes de correo.
+</Tip>
+
+---
+
+## 13. Cupo mensual y costos
+
+Cómo funciona el cupo de envíos incluido en tu plan y qué pasa si lo superás.
+
+- Tu plan incluye un **cupo mensual de emails** que se reinicia el día 1 de cada mes.
+- Si superás el cupo, **podés seguir enviando**. Los emails adicionales se facturarán como excedente en el próximo período.
+- El asistente de campaña siempre te avisará **antes de confirmar** si un envío generará un costo adicional.
+
+Desde el botón **Costos** del panel principal, podés ver el detalle de consumo y los costos estimados.
+
+<Tip>
+¿Superás el cupo todos los meses? Probablemente te convenga **ampliar tu plan**. Escribile a tu contacto comercial de Pxsol o a Soporte para analizarlo.
+</Tip>
+
+---
+
+## 14. Preguntas frecuentes
+
+<AccordionGroup>
+  <Accordion title="¿Puedo cancelar una campaña programada?">
+    Sí. Mientras esté en estado **Programada**, podés cancelarla o cambiar la fecha. Una vez que pasa a **Enviando**, los correos ya despachados no se pueden detener.
+  </Accordion>
+  <Accordion title="¿Por qué mi tasa de entrega bajó?">
+    Generalmente se debe a la calidad de la lista. Usá el [detalle de entregas](#7-entregas-y-fallos) para identificar y depurar los bounces permanentes. Enviar a segmentos más comprometidos también ayuda a mejorar la reputación y la tasa de entrega.
+  </Accordion>
+  <Accordion title="¿Los contactos dados de baja pueden volver a recibir emails?">
+    No. Quien se desuscribe queda excluido automáticamente de todos los envíos masivos para cumplir con requisitos legales y de buena reputación.
+  </Accordion>
+  <Accordion title="¿Qué diferencia hay entre un segmento dinámico y uno estático?">
+    Un segmento **dinámico** se actualiza automáticamente con los contactos que cumplen sus criterios en cada uso. Uno **estático** es una lista fija creada en un momento específico. Usá dinámicos para audiencias cambiantes y estáticos para listas puntuales.
+  </Accordion>
+  <Accordion title="¿Cómo sé cuántas reservas generó una campaña?">
+    En la columna **Reservas** del panel o en la sección de Analytics. La atribución se basa en el modelo de último click dentro de una ventana de 30 días.
+  </Accordion>
+  <Accordion title="¿Se me cobra algo si no supero el cupo?">
+    No. Los envíos dentro de tu cupo están incluidos en el plan. Solo el excedente genera un cargo adicional.
+  </Accordion>
+  <Accordion title="¿Cuál es el mejor día y horario para enviar?">
+    Depende de tu audiencia. Usá el **Benchmark Pxsol** para ver un mapa de calor con los horarios de mayor apertura para hoteles como el tuyo. Como regla general, las mañanas de días hábiles suelen funcionar bien.
+  </Accordion>
+</AccordionGroup>
+
+¿Te quedó alguna duda? Escribinos desde **Soporte** en el menú de tu PMS: estamos para ayudarte.
