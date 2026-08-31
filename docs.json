@@ -650,7 +650,9 @@
           },
           {
             "group": "Generales",
-            "pages": []
+            "pages": [
+              "generales/email_marketing_en_tu_pms_pxsol"
+            ]
           },
           {
             "group": "Marketplace",
