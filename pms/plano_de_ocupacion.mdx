@@ -299,11 +299,11 @@ Habitaciones en filas, fechas en columnas. Diseño renovado, más limpio y legib
         <div style={{height:'38px',background:'#fff',fontWeight:600,display:'flex',alignItems:'center',gap:'7px',paddingLeft:'9px',borderRight:'1px solid #cbd5e1',borderBottom:'1px solid rgba(15,23,42,.12)'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#4d842c',flex:'none'}} />101 <span style={{color:'rgba(15,23,42,.6)',fontWeight:700,fontSize:'8.5px',textTransform:'uppercase'}}>DBL</span></div>
         <div style={{height:'38px',borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)'}} />
         <div style={{height:'38px',borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',background:'rgba(173,217,255,.45)'}} />
-        <div style={{gridColumn:'span 3',padding:'4px',borderBottom:'1px solid rgba(15,23,42,.12)'}}><div style={{background:'#10b981',color:'#0b3b2e',width:'100%',height:'30px',display:'flex',alignItems:'center',padding:'0 12px',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)'}}>García, Lucía</div></div>
+        <div style={{gridColumn:'span 3',padding:'4px',borderBottom:'1px solid rgba(15,23,42,.12)'}}><div style={{background:'#10b981',color:'#0b3b2e',width:'100%',height:'30px',display:'flex',alignItems:'center',padding:'0 12px',fontWeight:800,fontSize:'12px',clipPath:'polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)'}}>García, Lucía</div></div>
       </div>
       <div style={{display:'grid',gridTemplateColumns:'96px repeat(5,1fr)'}}>
         <div style={{height:'38px',background:'#fff',fontWeight:600,display:'flex',alignItems:'center',gap:'7px',paddingLeft:'9px',borderRight:'1px solid #cbd5e1',borderBottom:'1px solid rgba(15,23,42,.12)'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#FF2600',flex:'none'}} />102 <span style={{color:'rgba(15,23,42,.6)',fontWeight:700,fontSize:'8.5px',textTransform:'uppercase'}}>SGL</span></div>
-        <div style={{gridColumn:'span 2',padding:'4px',borderBottom:'1px solid rgba(15,23,42,.12)'}}><div style={{width:'100%',height:'30px',display:'flex',alignItems:'center',gap:'7px',padding:'0 12px',borderRadius:'7px',background:'#f1c40f',color:'#fff',fontWeight:800,fontSize:'12px',textShadow:'0 1px 2px rgba(0,0,0,.45)',textTransform:'uppercase'}}>⛔ Mantenim.</div></div>
+        <div style={{gridColumn:'span 2',padding:'4px',borderBottom:'1px solid rgba(15,23,42,.12)'}}><div style={{width:'100%',height:'30px',display:'flex',alignItems:'center',gap:'7px',padding:'0 12px',borderRadius:'7px',background:'#f1c40f',color:'#fff',fontWeight:800,fontSize:'12px',textShadow:'0 1px 2px rgba(0,0,0,.45)'}}>⛔ Mantenim.</div></div>
         <div style={{height:'38px',borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',background:'rgba(173,217,255,.45)'}} />
         <div style={{height:'38px',borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',background:'rgba(226,226,226,.45)'}} />
         <div style={{height:'38px',borderRight:'1px solid rgba(15,23,42,.12)',borderBottom:'1px solid rgba(15,23,42,.12)',background:'rgba(226,226,226,.45)'}} />
@@ -315,6 +315,7 @@ Habitaciones en filas, fechas en columnas. Diseño renovado, más limpio y legib
 *Hoy y los fines de semana se tiñen (también festivos). Cada habitación muestra su estado de limpieza y categoría.*
 
 - **Encabezado de fechas y columna de habitaciones fijos** al desplazar.
+- **Nombres largos, siempre legibles** — si el nombre de la habitación o la categoría no entra, se corta con puntos suspensivos y al pasar el mouse un tooltip muestra el nombre y la categoría completos.
 - **Hoy, fin de semana y festivos** con color de fondo suave.
 - **Seleccionar fechas libres** arrastrando abre un menú para crear bloqueo, reserva o presupuesto ahí mismo.
 
@@ -328,30 +329,32 @@ Cada reserva es una pastilla con forma moderna (bordes inclinados) y toda la inf
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'flex',justifyContent:'center',padding:'8px 0'}}>
-      <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'320px',height:'46px',display:'flex',flexDirection:'column',justifyContent:'center',gap:'3px',padding:'5px 22px',fontWeight:800,fontSize:'12px',clipPath:'polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)'}}><span style={{textTransform:'uppercase',lineHeight:1,fontWeight:800,display:'flex',alignItems:'center',gap:'6px'}}>García, Lucía</span><span style={{display:'flex',alignItems:'center',gap:'6px',fontSize:'10px',fontWeight:700,lineHeight:1}}><span style={{background:'#dc2626',color:'#fff',borderRadius:'3px',width:'15px',height:'15px',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'9px'}}>{'$'}</span><span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} /><span style={{width:'15px',height:'11px',borderRadius:'2px',overflow:'hidden',display:'inline-flex',flexDirection:'column'}}><span style={{height:'50%',background:'#74acdf'}} /><span style={{height:'50%',background:'#fff'}} /></span><span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />👥 3<span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />🌙 2<span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />Booking</span></div>
+      <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'320px',height:'46px',display:'flex',flexDirection:'column',justifyContent:'center',gap:'3px',padding:'5px 22px',fontWeight:800,fontSize:'12px',clipPath:'polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)'}}><span style={{lineHeight:1,fontWeight:800,display:'flex',alignItems:'center',gap:'6px'}}>García, Lucía</span><span style={{display:'flex',alignItems:'center',gap:'6px',fontSize:'10px',fontWeight:700,lineHeight:1}}><span style={{background:'#dc2626',color:'#fff',borderRadius:'3px',width:'15px',height:'15px',display:'inline-flex',alignItems:'center',justifyContent:'center',fontSize:'9px'}}>{'$'}</span><span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} /><span style={{width:'15px',height:'11px',borderRadius:'2px',overflow:'hidden',display:'inline-flex',flexDirection:'column'}}><span style={{height:'50%',background:'#74acdf'}} /><span style={{height:'50%',background:'#fff'}} /></span><span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />👤 2 🧒 1<span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />🌙 2<span style={{width:'1px',height:'9px',background:'currentColor',opacity:.3}} />Booking</span></div>
     </div>
   </div>
 </div>
 
-*Nombre del huésped + iconos: impago, país, huéspedes, noches y canal de venta.*
+*Nombre del huésped + iconos: impago, país, huéspedes (adultos, niños y bebés), noches y canal de venta.*
 
 <div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>🆕 El huésped de cada habitación</h4>
   <p style={{margin:'6px 0'}}>Una reserva puede tener un <b>huésped principal por habitación</b>. El plano lo aprovecha: si una reserva ocupa varias habitaciones, <b>cada pastilla muestra al huésped que se aloja en esa habitación</b> (no siempre el titular). Así sabés de un vistazo quién está en cada cuarto. Antes todas mostraban solo al titular.</p>
 </div>
 
-- **Pasá el mouse** y la pastilla se agranda para mostrar todo el detalle.
+- **Pasá el mouse** y la pastilla se agranda hasta que **el nombre completo entra**, por largo que sea, como en el plano anterior. · **NUEVO**
+- **Pastillas cortas** — en reservas de pocas noches el nombre y el aviso de impago tienen prioridad; el tirador para mover aparece al pasar el mouse, cuando la pastilla se agranda. · **NUEVO**
+- **Huéspedes por tipo** — si la reserva tiene niños o bebés cargados, la pastilla los muestra separados de los adultos, con los mismos iconos que la ficha de la reserva; si no, muestra un único icono genérico con el total. Una línea fina separa los huéspedes de las noches para que no se confundan los números. · **NUEVO**
 - **Puntas más oscuras** con early check-in / late check-out (entrada o salida a mitad de día). · **NUEVO**
-- **Un click** abre el menú; **doble click** abre la reserva directo.
+- **Un click** abre el detalle; **doble click** o el botón ↗ que aparece al pasar el mouse abren la reserva directo. · **NUEVO**
 - **Candado** cuando la habitación está bloqueada o la reserva no se puede mover.
 - Al buscar, la reserva queda **resaltada con un halo**.
-- **Elegí su forma**: paralelogramo (por defecto) o rectangular redondeada como el plano anterior, desde Configuración (ver sección 15). · **NUEVO**
+- **Elegí su forma**: rectangular redondeada como el plano anterior (por defecto) o paralelogramo, desde Configuración (ver sección 15). · **NUEVO**
 
 ---
 
 ## 10. Detalle de la reserva
 
-Un click → "Ver Detalle" abre un panel lateral con el resumen completo, sin salir del plano.
+Un click sobre la pastilla abre un panel lateral con el resumen completo, sin salir del plano.
 
 <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
@@ -375,6 +378,9 @@ Un click → "Ver Detalle" abre un panel lateral con el resumen completo, sin sa
         <div style={{display:'flex',justifyContent:'space-between',gap:'10px',padding:'4px 0'}}><span style={{color:'#64748b'}}>Impago</span><span style={{fontWeight:700,textAlign:'right',color:'#dc2626'}}>{'$ 40.000'}</span></div>
         <div style={{display:'flex',justifyContent:'space-between',gap:'10px',padding:'4px 0'}}><span style={{color:'#64748b'}}>Instancia</span><span style={{fontSize:'10px',fontWeight:800,textTransform:'uppercase',letterSpacing:'.04em',borderRadius:'999px',padding:'2px 10px',color:'#0b3b2e',background:'#10b981'}}>Confirmada</span></div>
         <div style={{height:'1px',background:'#e2e8f0',margin:'10px 0'}} />
+        <div style={{fontSize:'12px',fontWeight:700,color:'#0f172a',margin:'12px 0 7px'}}>Pagos</div>
+        <div style={{display:'flex',justifyContent:'space-between',gap:'10px',border:'1px solid #e2e8f0',borderRadius:'8px',background:'rgba(100,116,139,.06)',padding:'8px 10px'}}><span><span style={{fontWeight:700,display:'block'}}>2/6/2026 · 10:12</span><span style={{color:'#64748b',fontSize:'11px'}}>Caja Pesos · Transferencia Bancaria</span><span style={{color:'#64748b',fontSize:'11px',display:'block'}}>Seña por transferencia</span></span><span style={{fontWeight:700,textAlign:'right'}}>{'$ 80.000'}</span></div>
+        <div style={{height:'1px',background:'#e2e8f0',margin:'10px 0'}} />
         <div style={{fontSize:'12px',fontWeight:700,color:'#0f172a',margin:'12px 0 7px'}}>Habitación</div>
         <div style={{display:'flex',justifyContent:'space-between',gap:'10px',padding:'4px 0'}}><span style={{color:'#64748b'}}>Nombre</span><span style={{fontWeight:700,textAlign:'right'}}>101</span></div>
         <div style={{display:'flex',justifyContent:'space-between',gap:'10px',padding:'4px 0'}}><span style={{color:'#64748b'}}>Categoría</span><span style={{fontWeight:700,textAlign:'right'}}>Doble</span></div>
@@ -386,9 +392,12 @@ Un click → "Ver Detalle" abre un panel lateral con el resumen completo, sin sa
   </div>
 </div>
 
-*Panel a la derecha con bloques Titular / Reserva / Habitación / Notas, y el botón "Ir a la reserva" abajo.*
+*Panel a la derecha con bloques Titular / Reserva / Pagos / Habitación / Notas, y el botón "Ir a la reserva" abajo.*
 
-**Ver Detalle** = este resumen rápido en el plano · **Ver Reserva** (o doble click) = la ficha completa.
+**Un click** = este resumen rápido en el plano · **Doble click**, el botón ↗ de la pastilla o "Ir a la reserva" en el panel = la ficha completa.
+
+- **Nombre completo en el panel** — el nombre del titular ya no se corta con puntos suspensivos: si es largo, baja de línea. · **NUEVO**
+- **Pagos de la reserva** — el panel lista cada pago y devolución con su fecha, hora, cuenta, medio de pago y concepto, junto al total, lo pagado y el saldo. Un movimiento anulado queda tachado, y una devolución en otra moneda muestra el equivalente del folio. · **NUEVO**
 
 ---
 
@@ -400,13 +409,13 @@ Habitaciones bloqueadas por mantenimiento u otros motivos.
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'flex',gap:'12px',justifyContent:'center',flexWrap:'wrap'}}>
-      <div style={{height:'34px',display:'inline-flex',alignItems:'center',gap:'7px',padding:'0 12px',borderRadius:'7px',background:'#f1c40f',color:'#fff',fontWeight:800,fontSize:'12px',textShadow:'0 1px 2px rgba(0,0,0,.45)',textTransform:'uppercase'}}>⛔ Mantenimiento</div>
-      <div style={{height:'34px',display:'inline-flex',alignItems:'center',gap:'7px',padding:'0 12px',borderRadius:'7px',background:'#e74c3c',color:'#fff',fontWeight:800,fontSize:'12px',textShadow:'0 1px 2px rgba(0,0,0,.45)',textTransform:'uppercase'}}>⛔ Fuera de servicio</div>
+      <div style={{height:'34px',display:'inline-flex',alignItems:'center',gap:'7px',padding:'0 12px',borderRadius:'7px',background:'#f1c40f',color:'#fff',fontWeight:800,fontSize:'12px',textShadow:'0 1px 2px rgba(0,0,0,.45)'}}>⛔ Mantenimiento</div>
+      <div style={{height:'34px',display:'inline-flex',alignItems:'center',gap:'7px',padding:'0 12px',borderRadius:'7px',background:'#e74c3c',color:'#fff',fontWeight:800,fontSize:'12px',textShadow:'0 1px 2px rgba(0,0,0,.45)'}}>⛔ Fuera de servicio</div>
     </div>
   </div>
 </div>
 
-*Amarillo para bloqueo común, rojo para fuera de servicio. Al click: ver, editar o eliminar.*
+*Amarillo para bloqueo común, rojo para fuera de servicio. Un click abre el detalle, con Editar y Eliminar.*
 
 - **Bloqueo de medio día** — para medias jornadas (mañana o tarde).
 - **Bloquear varias habitaciones** a la vez — elegís el rango y marcás todas las que quieras.
@@ -421,7 +430,7 @@ Reorganizá reservas arrastrándolas.
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'18px'}}>
-      <div style={{textAlign:'center'}}><div style={{background:'#10b981',color:'#0b3b2e',minWidth:'120px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)'}}>García</div><div style={{fontSize:'10px',color:'#64748b',marginTop:'4px'}}>Hab. 101</div></div>
+      <div style={{textAlign:'center'}}><div style={{background:'#10b981',color:'#0b3b2e',minWidth:'120px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px',clipPath:'polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)'}}>García</div><div style={{fontSize:'10px',color:'#64748b',marginTop:'4px'}}>Hab. 101</div></div>
       <div style={{fontSize:'22px',color:'#2563eb'}}>⇅</div>
       <div style={{textAlign:'center'}}><div style={{background:'#0ea5e9',color:'#062c3a',minWidth:'120px',height:'32px',display:'flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)'}}>Pérez</div><div style={{fontSize:'10px',color:'#64748b',marginTop:'4px'}}>Hab. 102</div></div>
     </div>
@@ -431,6 +440,7 @@ Reorganizá reservas arrastrándolas.
 *Arrastrar a una habitación libre = mover. Arrastrar sobre otra reserva = intercambiar.*
 
 - **Mover**: al arrastrar ves un aviso verde (se puede) o rojo (no se puede). Si la habitación destino es de otra categoría, te avisa antes de confirmar.
+- **Mientras se guarda** — al mover, intercambiar, crear o borrar algo, un aviso con indicador de carga te muestra que la acción está en curso hasta que llega la confirmación o el error. · **NUEVO**
 - **Intercambiar** · **NUEVO**: si la soltás sobre otra reserva de la misma categoría, se abre una confirmación y se **cambian de habitación las dos a la vez**.
 
 ---
@@ -524,14 +534,14 @@ Reservas que todavía no tienen habitación. Imposible que se te pasen: tres for
 
 ## 15. Tamaño y forma de la vista — PREVIEW EN VIVO
 
-Elegí cuántas habitaciones ver de golpe: desde muy compacto (más filas) hasta cómodo.
+Los dos controles viven en **Configuración → Detalles**, la sección de los ajustes que son **tuyos**. Elegí cuántas habitaciones ver de golpe: desde muy compacto (más filas) hasta cómodo. Si nunca elegiste, el plano arranca en **Compacto** (celdas de 44px). Las celdas van de 30px (Mínimo) a 84px (Amplio); el texto de las pastillas mide 13px hasta Normal y sube a 14px en Grande y 15px en Amplio.
 
 <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'flex',gap:'18px',alignItems:'center',flexWrap:'wrap'}}>
       <div style={{flex:1,minWidth:'180px'}}><div style={{fontSize:'11px',color:'#64748b',marginBottom:'8px'}}>Compacto ◀ ──●──────── ▶ Cómodo</div><div style={{display:'flex',flexDirection:'column',gap:'3px'}}><div style={{height:'14px',background:'#e2e8f0',borderRadius:'3px'}} /><div style={{height:'14px',background:'#e2e8f0',borderRadius:'3px'}} /><div style={{height:'14px',background:'#e2e8f0',borderRadius:'3px'}} /></div></div>
-      <div style={{flex:1,minWidth:'160px',border:'1px dashed #cbd5e1',borderRadius:'8px',padding:'10px',textAlign:'center'}}><div style={{background:'#10b981',color:'#0b3b2e',height:'38px',display:'inline-flex',alignItems:'center',justifyContent:'center',padding:'0 18px',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)'}}>García, L.</div><div style={{fontSize:'10px',color:'#64748b',marginTop:'8px'}}>Vista previa — se actualiza al instante</div></div>
+      <div style={{flex:1,minWidth:'160px',border:'1px dashed #cbd5e1',borderRadius:'8px',padding:'10px',textAlign:'center'}}><div style={{background:'#10b981',color:'#0b3b2e',height:'38px',display:'inline-flex',alignItems:'center',justifyContent:'center',padding:'0 18px',fontWeight:800,fontSize:'12px',clipPath:'polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%)'}}>García, L.</div><div style={{fontSize:'10px',color:'#64748b',marginTop:'8px'}}>Vista previa — se actualiza al instante</div></div>
     </div>
   </div>
 </div>
@@ -554,12 +564,12 @@ Esta preferencia es **tuya**: cada operador elige su tamaño y no afecta al rest
       </div>
       <div style={{display:'flex',gap:'14px',flexWrap:'wrap',justifyContent:'center'}}>
         <div style={{textAlign:'center'}}>
-          <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'188px',height:'40px',display:'flex',alignItems:'center',padding:'0 22px',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)'}}>García, Lucía</div>
-          <div style={{fontSize:'10px',color:'#64748b',marginTop:'6px'}}>Paralelogramo — por defecto</div>
+          <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'188px',height:'40px',display:'flex',alignItems:'center',padding:'0 22px',fontWeight:800,fontSize:'12px',clipPath:'polygon(14px 0,100% 0,calc(100% - 14px) 100%,0 100%)'}}>García, Lucía</div>
+          <div style={{fontSize:'10px',color:'#64748b',marginTop:'6px'}}>Paralelogramo</div>
         </div>
         <div style={{textAlign:'center'}}>
-          <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'188px',height:'40px',display:'flex',alignItems:'center',padding:'0 14px',fontWeight:800,fontSize:'12px',textTransform:'uppercase',borderRadius:'10px'}}>García, Lucía</div>
-          <div style={{fontSize:'10px',color:'#64748b',marginTop:'6px'}}>Redondeada — estilo clásico</div>
+          <div style={{background:'#10b981',color:'#0b3b2e',minWidth:'188px',height:'40px',display:'flex',alignItems:'center',padding:'0 14px',fontWeight:800,fontSize:'12px',borderRadius:'10px'}}>García, Lucía</div>
+          <div style={{fontSize:'10px',color:'#64748b',marginTop:'6px'}}>Redondeada — por defecto</div>
         </div>
       </div>
     </div>
@@ -568,10 +578,27 @@ Esta preferencia es **tuya**: cada operador elige su tamaño y no afecta al rest
 
 *El selector está al lado de la vista previa: elegís la forma y la ves aplicada al instante, antes de guardar.*
 
-- **Paralelogramo** (por defecto) — bordes inclinados, el diseño del plano nuevo.
-- **Redondeada** — rectangular con bordes redondeados, como el plano anterior y los bloqueos; deja menos espacio entre pastillas contiguas.
+- **Redondeada** (por defecto) — rectangular con bordes redondeados, como el plano anterior y los bloqueos.
+- **Paralelogramo** — bordes inclinados, el diseño del plano nuevo; deja más espacio entre pastillas contiguas.
 
 También es una preferencia **por usuario**: cada operador elige su forma y queda guardada para la próxima vez.
+
+### Íconos de la pastilla — NUEVO
+
+La pastilla viene con lo mismo que mostraba el plano anterior: **GRP** si es de grupo, el botón de abrir la reserva al pasar el mouse, el **nombre**, el aviso de **impago**, la **bandera** del país, el **total de huéspedes**, el **medio** por el que entró y el **tirador** para moverla. Si querés ver más (o menos), los interruptores están acá mismo:
+
+- **Cantidad de huéspedes** — encendido. Un solo número con el total.
+- **Separar adultos, niños y bebés** — apagado. Prendido, muestra un ícono por categoría (sin los que están en cero).
+- **Bandera del país** — encendido. Solo si el titular tiene país cargado.
+- **Medio de reserva** — encendido. El logo de la OTA, el motor o el canal por el que entró.
+- **Noches** — apagado.
+- **Camas** — apagado. Camas grandes, chicas y cunas.
+
+Nada se dibuja en cero: si la habitación tiene una sola cama grande, vas a ver ese ícono con un 1 y ninguno más.
+
+**El grupo, el impago y el tirador no se pueden apagar:** los dos primeros hay que verlos siempre que correspondan y el tercero te dice si esa pastilla se puede mover. Y aunque apagues un ícono, el dato sigue estando: pasá el mouse por la fila de datos y el globo de ayuda te muestra todo.
+
+También es una preferencia **por usuario**.
 
 ---
 
@@ -768,6 +795,7 @@ Desde el botón "＋", desde "Nueva reserva" o seleccionando fechas libres en la
 - **Huésped** — buscás un contacto existente o creás uno nuevo (nombre, documento, país, teléfono, email).
 - **Datos** — ingreso / salida, early check-in / late check-out, tarifario, moneda, idioma y notas.
 - **Habitaciones** — cantidad, selección entre las disponibles, tarifa diaria o total y distribución de camas.
+- **Al guardar** — la ventana no se cierra: te avisa que la reserva se cargó y te deja **abrirla**, **verla en el plano** (va al rango y te la deja resaltada), **cargar otra** o **cerrar**. · **NUEVO**
 
 ---
 
@@ -807,8 +835,8 @@ El plano se adapta para trabajar cómodo de día o de noche.
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}} /></div>
   <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
     <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'14px'}}>
-      <div style={{border:'1px solid #e2e8f0',borderRadius:'9px',overflow:'hidden'}}><div style={{background:'#fff',padding:'12px'}}><div style={{background:'#10b981',color:'#0b3b2e',height:'30px',display:'inline-flex',alignItems:'center',justifyContent:'center',padding:'0 16px',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)'}}>García</div></div><div style={{fontSize:'10px',textAlign:'center',color:'#64748b',padding:'5px'}}>Claro</div></div>
-      <div style={{border:'1px solid #334155',borderRadius:'9px',overflow:'hidden'}}><div style={{background:'#0f172a',padding:'12px'}}><div style={{background:'#10b981',color:'#0b3b2e',height:'30px',display:'inline-flex',alignItems:'center',justifyContent:'center',padding:'0 16px',fontWeight:800,fontSize:'12px',textTransform:'uppercase',clipPath:'polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)'}}>García</div></div><div style={{fontSize:'10px',textAlign:'center',color:'#94a3b8',padding:'5px',background:'#0f172a'}}>Oscuro</div></div>
+      <div style={{border:'1px solid #e2e8f0',borderRadius:'9px',overflow:'hidden'}}><div style={{background:'#fff',padding:'12px'}}><div style={{background:'#10b981',color:'#0b3b2e',height:'30px',display:'inline-flex',alignItems:'center',justifyContent:'center',padding:'0 16px',fontWeight:800,fontSize:'12px',clipPath:'polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)'}}>García</div></div><div style={{fontSize:'10px',textAlign:'center',color:'#64748b',padding:'5px'}}>Claro</div></div>
+      <div style={{border:'1px solid #334155',borderRadius:'9px',overflow:'hidden'}}><div style={{background:'#0f172a',padding:'12px'}}><div style={{background:'#10b981',color:'#0b3b2e',height:'30px',display:'inline-flex',alignItems:'center',justifyContent:'center',padding:'0 16px',fontWeight:800,fontSize:'12px',clipPath:'polygon(10px 0,100% 0,calc(100% - 10px) 100%,0 100%)'}}>García</div></div><div style={{fontSize:'10px',textAlign:'center',color:'#94a3b8',padding:'5px',background:'#0f172a'}}>Oscuro</div></div>
     </div>
   </div>
 </div>
@@ -829,13 +857,15 @@ Algunas preferencias son personales y otras se comparten con todo el hotel.
   </ul>
 </div>
 
+**Ahora te lo dice la pantalla** — cada sección de Configuración abre con un rótulo que lo aclara: **General** (colores de las instancias y color del texto) y **Días festivos** afectan a todo el hotel; **Datos** (qué indicadores ves) y **Detalles** (tamaño de las celdas y forma de la pastilla) son solo tuyos. · **NUEVO**
+
 Además, algunas acciones dependen de tus permisos: si no tenés habilitada una función, el botón aparece pero te avisa que no tenés acceso.
 
 ---
 
 ## 23. Probalo a tu ritmo — NUEVO
 
-Durante esta etapa el plano nuevo es **opcional y personal**: lo activás —o volvés al anterior— **solo para tu usuario**, sin afectar a tus compañeros. A partir del **1 de septiembre de 2026** pasa a ser la versión oficial.
+Durante esta etapa el plano nuevo es **opcional y personal**: lo activás —o volvés al anterior— **solo para tu usuario**, sin afectar a tus compañeros. A partir del **1 de octubre de 2026** pasa a ser la versión oficial.
 
 <div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>👋 La primera vez</h4>
