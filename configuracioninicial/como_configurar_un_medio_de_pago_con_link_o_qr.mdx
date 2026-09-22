@@ -1,0 +1,96 @@
+---
+title: "¿Cómo configurar un medio de pago con link o QR?"
+description: "Configura un medio de pago que el huésped recibe después de confirmar la reserva: un link para pagar desde cualquier dispositivo, o un código QR que escanea desde su billetera. Son el mismo medio con dos presentaciones."
+---
+
+Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuración_inicial/gestion_de_medios_de_pago), donde encontrarás el resto de la pantalla: el orden en que se le muestran al huésped, los avisos de configuración y la vista previa del checkout.
+
+<Steps>
+  <Step title="Abre el asistente y elige 'Link de pago' o 'QR'">
+    En la tabla de medios de pago, pulsa **Crear**. El asistente te pregunta cómo paga el huésped y muestra las seis categorías disponibles.
+
+    **Link de pago** y **QR** son el mismo medio con dos presentaciones: en los dos cargas un link de cobro tuyo y el huésped lo recibe **al confirmar la reserva, no en el checkout**. Con Link de pago le llega el enlace para que pague desde cualquier dispositivo; con QR le mostramos un código que escanea con su celular.
+
+    Elige el que quieras crear. El resto del asistente es idéntico en los dos, así que esta guía sirve para ambos.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092459_0_6ab2a4abd6eba.jpg" alt="Pantalla de selección de un nuevo medio de pago con varios recuadros de opciones, donde se destaca el botón 'Crear' en el recuadro 'Link de pago'." />
+    </Frame>
+  </Step>
+
+  <Step title="Define el nombre que ve el huésped">
+    Es el texto que el huésped lee en la lista de medios de pago del checkout, tal como lo escribas. Conviene que sea explícito: en muchos medios es casi toda la información que recibe.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092460_1_6ab2a4ac22557.jpg" alt="Campo de texto rotulado '¿Con qué nombre lo ve el huésped?' con el valor 'Link de pago' ingresado." />
+    </Frame>
+  </Step>
+
+  <Step title="Agrega una descripción (opcional)">
+    Aparece debajo del nombre, en el checkout. Si la dejas vacía, el checkout escribe una línea propia según cómo quede configurado el medio. Complétala cuando quieras decir algo tuyo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092460_2_6ab2a4ac8ddbf.jpg" alt="Campo de texto rotulado '¿Qué quiere que lea el huésped debajo del nombre?' con el valor 'Probando descripción' ingresado." />
+    </Frame>
+  </Step>
+
+  <Step title="Carga el link de cobro">
+    Es el link que genera tu proveedor de cobros. La pregunta cambia de redacción según la categoría: en Link de pago dice **¿A qué link enviamos al huésped?** y en QR **¿Con qué link se genera el código QR?**. Se carga el mismo tipo de link y, en el QR, el sistema dibuja el código a partir de él.
+
+    Es obligatorio: sin el link el huésped no tiene nada que abrir para pagar. Si lo dejas vacío, el medio se le sigue ofreciendo pero al confirmar no recibe nada, y la tabla lo marca como **Sin URL**.
+
+    Una diferencia del QR que conviene tener presente: **el código no lleva el monto**. El huésped lo escanea e ingresa él mismo el importe de su reserva.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092460_3_6ab2a4acefe0e.jpg" alt="Campo de texto rotulado '¿A qué link enviamos al huésped?' con la URL 'link.com/test' ingresada." />
+    </Frame>
+  </Step>
+
+  <Step title="Aplica un recargo o un descuento">
+    El ajuste se aplica sobre el total de la reserva y solo cuando el huésped elige este medio. El huésped lo ve en el resumen y el total ya lo incluye.
+
+    <Frame>
+      ![Opciones radiales para 'Sin ajuste', '+ Recargo' o '- Descuento', con 'Sin ajuste' seleccionado.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092461_4_6ab2a4ad7238f.jpg)
+    </Frame>
+  </Step>
+
+  <Step title="Define el importe a cobrar">
+    Aquí eliges qué importe se le pide al huésped por esta reserva: el **total** o un **porcentaje** como seña. No se le cobra nada al reservar — el cobro pasa después, cuando abre el link o escanea el código.
+
+    <Frame>
+      ![Selector de importe con la opción 'Un porcentaje del total' seleccionada y el valor '50%' elegido para el cobro parcial de la reserva.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092461_5_6ab2a4add7aab.jpg)
+    </Frame>
+  </Step>
+
+  <Step title="Establece las condiciones de disponibilidad">
+    Este paso decide a qué reservas se les ofrece el medio de pago. Si no restringes nada, se ofrece en todas.
+
+    Puedes acotarlo por políticas de pago, puntos de venta, monedas, ventana de anticipación -los días entre el día en que el huésped reserva y su fecha de entrada- y nacionalidad del huésped.
+
+    Presta atención a la moneda: si dejas una que ninguno de sus puntos de venta vende, el medio queda en estado **Oculto** y no se le ofrece a nadie.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092462_6_6ab2a4ae0bac0.jpg" alt="Pantalla de configuración de reglas de aplicación para el medio de pago, mostrando filtros para políticas de pago, puntos de venta, monedas, ventana de anticipación y nacionalidades, todos en sus valores por defecto." />
+    </Frame>
+  </Step>
+
+  <Step title="Asigna las plantillas de correo">
+    Cada correo se envía en un momento distinto y aquí eliges la plantilla de cada uno.
+
+    En este medio vas a ver un solo correo: el que recibe el huésped al reservar, que se envía al confirmar, antes de que se procese el pago. El cobro pasa después, cuando el huésped abre el link o escanea el código, así que no hay un pago aprobado ni un pago rechazado que avisar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092462_7_6ab2a4ae52809.jpg" alt="Menú desplegable 'Seleccionar una plantilla' abierto, mostrando varias opciones, con 'TEST 1' seleccionado." />
+    </Frame>
+  </Step>
+
+  <Step title="Revisa y crea el medio de pago">
+    El último paso es un resumen de todo lo que cargaste, en solo lectura y agrupado por paso. Cada sección tiene su botón **Editar**, que te lleva directo a ese paso.
+
+    Cuando esté todo correcto, pulsa **Crear**. El medio de pago **nace activo**, así que desde ese momento el huésped ya lo ve en el checkout. Desde la tabla puedes pausarlo, reordenarlo o editarlo cuando quieras.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092463_9_6ab2a4af0bfee.jpg" alt="Botón 'Crear' en la parte inferior de la pantalla de revisión, listo para guardar la configuración del nuevo medio de pago." />
+    </Frame>
+  </Step>
+</Steps>
