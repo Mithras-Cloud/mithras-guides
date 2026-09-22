@@ -89,7 +89,8 @@
               "configuracioninicial/gestion_de_medios_de_pago",
               "configuracioninicial/como_configurar_un_medio_de_pago_con_tarjeta",
               "configuracioninicial/como_configurar_un_medio_de_pago_con_pasarela",
-              "configuracioninicial/como_configurar_un_medio_de_pago_por_transferencia"
+              "configuracioninicial/como_configurar_un_medio_de_pago_por_transferencia",
+              "configuracioninicial/como_configurar_un_medio_de_pago_con_link_o_qr"
             ]
           },
           {
