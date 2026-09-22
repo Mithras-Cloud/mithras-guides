@@ -1,0 +1,116 @@
+---
+title: "¿Cómo configurar un medio de pago con pasarela?"
+description: "Aprende a configurar un nuevo medio de pago del tipo pasarela. Las pasarelas dirigen al huésped a un proveedor externo para completar el pago en su propia plataforma, garantizando una transacción segura y un retorno automático al sitio de tu establecimiento."
+---
+
+Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuración_inicial/gestion_de_medios_de_pago), donde encontrarás el resto de la pantalla: el orden en que se le muestran al huésped, los avisos de configuración y la vista previa del checkout.
+
+<Steps>
+  <Step title="Abre el asistente y elige 'Pasarela'">
+    En la tabla de medios de pago, pulsa **Crear**. El asistente te pregunta cómo paga el huésped y muestra las seis categorías disponibles. Elige **Pasarela**: el huésped no carga la tarjeta en el checkout, el pago lo resuelve el proveedor en su propia pantalla y vuelve con el resultado.
+
+    <Frame>
+      ![Ventana 'Nuevo medio de pago' con seis opciones. El cursor está sobre 'Pasarela', resaltando la opción a seleccionar para iniciar la configuración de una pasarela de pago.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091858_0_6ab2a25283a6a.jpg)
+    </Frame>
+  </Step>
+
+  <Step title="Elige la pasarela">
+    En la ventana emergente **'¿Con qué pasarela se cobra?'**, vas a ver una lista de los proveedores cuyas credenciales están activas y validadas en el sistema.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091858_1_6ab2a252c4e9f.jpg" alt="Ventana emergente con opciones de pasarelas de pago como Mercado Pago y Paypal. El cursor selecciona 'Mercado Pago Checkout Pro' para continuar la configuración." />
+    </Frame>
+
+    Elige el proveedor que quieras usar para continuar con la configuración. Por ejemplo **'Mercado Pago Checkout Pro'**.
+  </Step>
+
+  <Step title="Define el nombre que ve el huésped">
+    Es el texto que el huésped lee en la lista de medios de pago del checkout, tal como lo escribas. Conviene que sea explícito: en muchos medios es casi toda la información que recibe.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091858_2_6ab2a252e37cb.jpg" alt="Formulario de configuración del nuevo medio de pago, primer paso. Se ingresó 'Pagar con Mercado Pago' en el campo '¿Qué nombre le ve el huésped?'." />
+    </Frame>
+  </Step>
+
+  <Step title="Agrega una descripción (opcional)">
+    Aparece debajo del nombre, en el checkout. Si la dejas vacía, el checkout escribe una línea propia según cómo quede configurado el medio. Complétala cuando quieras decir algo tuyo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091859_3_6ab2a253288d6.jpg" alt="Formulario de configuración, primer paso. Se ingresó 'Probando descripción opcional' en el campo de descripción. La vista previa a la derecha muestra el cambio en el motor de reservas." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona la credencial de cobro">
+    Es una de las credenciales que ya conectaste en Integraciones. Sin credencial este medio no cobra nunca, así que es obligatoria.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091859_4_6ab2a253622db.jpg" alt="Formulario de configuración del nuevo medio de pago, segundo paso. Se seleccionó la credencial 'Envia ES Checkout Pro' de la lista desplegable." />
+    </Frame>
+  </Step>
+
+  <Step title="Asigna la cuenta recaudadora">
+    Es la cuenta donde entra el dinero de este medio. Si todavía no tienes ninguna, puedes pedir que se cree una automáticamente, y en ese caso te pregunta en qué moneda abrirla.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091859_5_6ab2a253d3c5b.jpg" alt="Formulario de configuración del nuevo medio de pago, segundo paso. Se seleccionó la cuenta recaudadora 'CAJA - ARS' para acreditar los pagos." />
+    </Frame>
+  </Step>
+
+  <Step title="Aplica un recargo o un descuento">
+    El ajuste se aplica sobre el total de la reserva y solo cuando el huésped elige este medio. El huésped lo ve en el resumen y el total ya lo incluye.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/268514775759d9bc8866c73f9ef7899ac459377e911.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJGMEQCIG8eA7Na9YlW%2BROYGqKsl5UQ%2FjlIjEwN6Aav38BnELZxAiBsJI9OyEQZ11RkOEqe56x%2Bw9qVlwRTEd0w34YbKJ2VFyqMAwiq%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDAxOTExMTMxMjQwMiIM%2FkOej4Xm5gNy2Q9tKuACqV2q0MOqcY3bCryQnZJet69lQJuQuLCRRG3xZvVN1zk5OJZCWpRhZnO7g7Bh%2Bfl36O8ynhBcFsme4a1QDWXu40yyZgve8IduXRMl7WBp2G1xfXYQ0b4I039bQToJhMkN4NQ95llaDvaxAYm4P0%2BLq45zxfWVKEn88PSKO%2FPWz7tmIdTrN5%2FNwazdQ3UEBPTOcCvCg%2BZITjYHz6FbC7ltaX%2FmgIILD7GKbChWUxiTP%2BMuqnLS5MfMYPaTXW2J%2FauWpNWjW8bbQLwvjdLcl0tQwoJn4FJyMtT1piUkJeYHXG2knYnghfdyGMFFVrq0jDpceti84ufdqy8OYmxVVHDXerZ6XjBAOm4TNTjizOVPvPkcLltgjyIdQbaNe0gMEjzDUINQmU1vdRi7hnJApK9fIaQG%2FKofBxMH8FHIXVoUgxH0qn1%2BntmMy93WEo7vGTuZ%2FGGsknADk8wIEa8OwkI5ozDJ%2BMrVBjqeATYsvwQ6qwRA947eRQEOfHJZCXxQzTJ%2BS%2BiQadE0wkHXYzeR7XU18kTeyFkJyTw1PhGXQoq0rdaogDk55F765D9rgD%2Bdxfk5bg%2F6BNoDpB%2FXxbI9yEsNQex3bKj5Pp0fihUJdGaktzACIwwp%2BxuZL%2FoyOjlb1BSEWJ1ybbN5cyoml1YYBPQONub1YkY5EwH4rVwMK1m3XrPMPZoIKdte&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJKVBCHDZE%2F20260922%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260922T173505Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=35499e9d67f2d77a70d699903337d14b5c1da27092c7309e1edb80890161070f" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Define el importe a cobrar">
+    Aquí eliges qué importe se le pide al huésped por esta reserva. En una pasarela son dos opciones: el **total** de la reserva o un **porcentaje** como seña. No hay "una noche" ni tarjeta en garantía, porque la tarjeta la guarda el proveedor y no nosotros. El importe se le debita al huésped al confirmar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091860_6_6ab2a25443942.jpg" alt="Formulario de configuración, segundo paso. Se seleccionó 'Un porcentaje del total' y se estableció el valor en 40% del monto de la reserva." />
+    </Frame>
+  </Step>
+
+  <Step title="Activa la cancelación automática">
+    Libera el cupo cuando el huésped no completa el pago: defines un plazo desde que se creó la reserva y, si el pago no se completó, se cancela sola. Solo aparece en los medios que cobran automáticamente.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091860_7_6ab2a254b695f.jpg" alt="Formulario de configuración, segundo paso. La opción de cancelación automática está activada y el plazo se estableció en 10 minutos." />
+    </Frame>
+  </Step>
+
+  <Step title="Establece las condiciones de disponibilidad">
+    Este paso decide a qué reservas se les ofrece el medio de pago. Si no restringes nada, se ofrece en todas.
+
+    Puedes acotarlo por políticas de pago, puntos de venta, monedas, ventana de anticipación -los días entre el día en que el huésped reserva y su fecha de entrada- y nacionalidad del huésped.
+
+    Presta atención a la moneda: si dejas una que ninguno de sus puntos de venta vende, el medio queda en estado **Oculto** y no se le ofrece a nadie.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17900990800315596001e3a33e8e0a2f47174940ba1.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEOL%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLXdlc3QtMiJIMEYCIQDXHmKszfohF4Yai2Mbco9fpiFXnbbT%2FbGEEuhD3kqGHAIhAKC%2BMIuSj17ik5niFyFWgPFuqKDr6ltwZefvmxElUU4VKowDCKv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDE5MTExMzEyNDAyIgwQsHzFSwEEEeWzh1oq4AJLifmyGIjcUgv6h4tE2IjCmWr0RiPbiN7LyvTyKFD5PNdRtUI2pFRmmIdfTPS21G%2F88bK2422sORqhRadN3ofj%2BKsLSxOPq%2BptTb3g71e2tAC5dCYeGiqGPDRqc0HeOHg1iFHiSG2f9qN%2BKLhBvTcs%2Bdn1oHSTncg2zIrTzHoHSXGqQmKl5y%2BaUPZmecYy2mag0wkAP6WBPSbfJ00ufS9j6LL4B7A1xzdRc0KfnBfEZ4qxQWIM4HUqE83MdNGnlpY4jffi3jEqUJWrXC7s2sBJH4q8uTv9zrbOXF8%2BIM11YM7o1A2VzgaKGQG1JY8A7dBpcovak66MWOqLoa6IalGu796k7GBaH3DzbennhmEIke97dLX3aZMYh7JFY2u1QNjV3MDrHzHoky57%2F%2Fuim56EAjuJD0tWz49Yy50NbOS9gYjGdlpLxoOVrORUfRc%2Bcl%2FfxFWSWi0QrXOZx0uokPdEMIj9ytUGOpwBDB6vQtaVS4vArRRMCPWcm4H5wbZ43upjiQUOUqrTpqln4YODd5QJvljC3DlH%2F4tJIJ%2Fj0ruVQYqp%2FfyYYh9DnzmaB4VXnHEwC6l08W5ksDi1vCd%2FTuIUZ0m%2FrT4ZUCmg2S%2BCzwJS8EuTVlRXwnXliUUSOgXPujq2kNEBiO37aW336Clr5Oz%2FvP55nUyvxbaV3WJpwzLUuT0aoBLA&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJEECXE7YK%2F20260922%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260922T174440Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=88422026bcdf62988ace6616e01458b2be48599f5957d065cffbf00212eb41b0" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Asigna las plantillas de correo">
+    Cada correo se envía en un momento distinto y aquí eliges la plantilla de cada uno.
+
+    El primero, el que recibe el huésped al reservar, aparece siempre. Se envía al confirmar la reserva, antes de que se procese el pago.
+
+    Como una pasarela cobra sola, aquí vas a ver también los otros tres: el de pago aprobado, el de pago no cobrado, y el de reserva cancelada por falta de pago -este último solo si activaste la cancelación automática-.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091861_9_6ab2a255bd795.jpg" alt="Formulario de configuración, cuarto paso. Muestra los campos para seleccionar plantillas de correo electrónico para diferentes estados del pago: pre-confirmación, aprobado y rechazado." />
+    </Frame>
+  </Step>
+
+  <Step title="Revisa y crea el medio de pago">
+    El último paso es un resumen de todo lo que cargaste, en solo lectura y agrupado por paso. Cada sección tiene su botón **Editar**, que te lleva directo a ese paso.
+
+    Cuando esté todo correcto, pulsa **Crear**. El medio de pago **nace activo**, así que desde ese momento el huésped ya lo ve en el checkout. Desde la tabla puedes pausarlo, reordenarlo o editarlo cuando quieras.
+
+    <Frame>
+      ![Botón 'Crear' al final del formulario de configuración. Al hacer clic, se finaliza el proceso y se activa el nuevo medio de pago de tipo pasarela.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091862_11_6ab2a25692bf4.jpg)
+    </Frame>
+  </Step>
+</Steps>
