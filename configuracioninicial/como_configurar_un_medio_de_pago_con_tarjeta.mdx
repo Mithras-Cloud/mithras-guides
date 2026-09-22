@@ -1,0 +1,137 @@
+---
+title: "¿Cómo configurar un medio de pago con tarjeta?"
+description: "Configura un medio de pago que permite al huésped ingresar los datos de su tarjeta de crédito o débito directamente en el motor de reservas. Esta funcionalidad te permite procesar pagos de forma automática a través de un procesador conectado o guardar los datos de la tarjeta de forma segura para un cobro manual posterior desde el sistema de gestión."
+---
+
+Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuración_inicial/gestion_de_medios_de_pago), donde encontrarás el resto de la pantalla: el orden en que se le muestran al huésped, los avisos de configuración y la vista previa del checkout.
+
+<Steps>
+  <Step title="Abre el asistente y elige 'Tarjeta'">
+    En la tabla de medios de pago, pulsa **Crear**. El asistente te pregunta cómo paga el huésped y muestra las seis categorías disponibles. Elige **Tarjeta**: el huésped ingresa los datos de la tarjeta dentro del checkout, sin salir a un sitio externo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091587_0_6ab2a14303b91.jpg" alt="Vista de la pantalla de creación de un nuevo medio de pago, con la opción 'Tarjeta' resaltada." />
+    </Frame>
+  </Step>
+
+  <Step title="Define el nombre que ve el huésped">
+    Es el texto que el huésped lee en la lista de medios de pago del checkout, tal como lo escribas. Conviene que sea explícito: en muchos medios es casi toda la información que recibe.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091587_1_6ab2a14370497.jpg" alt="Campo de texto para el nombre del medio de pago, con el texto 'Tarjeta de crédito - Prueba' ingresado." />
+    </Frame>
+  </Step>
+
+  <Step title="Agrega una descripción (opcional)">
+    Aparece debajo del nombre, en el checkout. Si la dejas vacía, el checkout escribe una línea propia según cómo quede configurado el medio. Complétala cuando quieras decir algo tuyo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091587_2_6ab2a143dc092.jpg" alt="Campo de texto para la descripción, con el texto 'Testeando descripción' y su reflejo en la vista previa del checkout a la derecha." />
+    </Frame>
+  </Step>
+
+  <Step title="Elige quién procesa el cobro">
+    Tienes que definir si el cobro se va a procesar automáticamente por un proveedor de pagos o si los datos de la tarjeta se van a guardar para un cobro manual.
+
+    * Al seleccionar **Sin procesador**, la tarjeta se guarda en la reserva para ser cobrada manualmente desde el sistema de gestión.
+    * Al seleccionar un procesador como **Mercado Pago**, el cobro se realiza automáticamente al confirmar la reserva.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091588_3_6ab2a14494c61.jpg" alt="Menú desplegable de procesadores de pago, con la opción 'Mercado Pago' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona la credencial de cobro">
+    Es una de las credenciales que ya conectaste en Marketplace. Sin credencial este medio no cobra nunca, así que es obligatoria.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091589_4_6ab2a14541f49.jpg" alt="Menú desplegable para seleccionar las credenciales del procesador de pago, con una opción de 'Mercado Pago Procesador' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Asigna la cuenta recaudadora">
+    Es la cuenta donde entra el dinero de este medio. Si todavía no tienes ninguna, puedes pedir que se cree una automáticamente, y en ese caso te pregunta en qué moneda abrirla.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091589_5_6ab2a1458f67f.jpg" alt="Menú desplegable de cuentas recaudadoras, con la opción 'CAJA - ARS' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Define el tipo de tarjeta que aceptas">
+    Define qué tipos de tarjeta se van a aceptar: **Crédito y débito**, **Solo crédito** o **Solo débito**.
+
+    <Warning>
+      Al seleccionar **Solo débito**, ten en cuenta que este tipo de tarjeta no puede usarse para garantizar la reserva, solo para cobros inmediatos.
+    </Warning>
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091590_6_6ab2a1462a800.jpg" alt="Opciones de tipo de tarjeta, con la opción 'Solo débito' seleccionada y una advertencia en amarillo debajo." />
+    </Frame>
+  </Step>
+
+  <Step title="Selecciona las marcas de tarjeta">
+    Especifica qué marcas de tarjeta son aceptadas. Puedes optar por aceptar todas las marcas, las mismas que están configuradas en el punto de venta, o seleccionar manualmente marcas específicas como **VISA** y **Mastercard**.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091590_7_6ab2a1469864c.jpg" alt="Selector de marcas de tarjeta, con las opciones 'VISA' y 'Mastercard' marcadas." />
+    </Frame>
+  </Step>
+
+  <Step title="Aplica un recargo o un descuento">
+    El ajuste se aplica sobre el total de la reserva y solo cuando el huésped elige este medio. El huésped lo ve en el resumen y el total ya lo incluye.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1432078493618f54e973936b4dfd04586c65fb751bb.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Define el importe a cobrar">
+    Aquí eliges qué importe se le pide al huésped por esta reserva. Con un procesador conectado tienes las cinco opciones: el **total** de la reserva, un **porcentaje** como seña, el valor de **una noche**, dejar la **tarjeta en garantía** sin cobrar nada, o **validar la tarjeta** con un cargo equivalente a 1 USD que se devuelve en el acto. Sin procesador, el importe es lo que le anuncias al huésped y lo cobras después desde el PMS. Si alguna opción aparece deshabilitada, la pantalla te dice el motivo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091590_8_6ab2a146e1101.jpg" alt="Opciones de importe a cobrar, con la opción 'Validar la tarjeta' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Activa la cancelación automática">
+    Libera el cupo cuando el huésped no completa el pago: defines un plazo desde que se creó la reserva y, si el pago no se completó, se cancela sola. Solo aparece en los medios que cobran automáticamente.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790091592_11_6ab2a14854ddd.jpg" alt="Interruptor para activar la cancelación automática de reservas impagas, con un selector de tiempo fijado en 12 horas." />
+    </Frame>
+  </Step>
+
+  <Step title="Establece las condiciones de disponibilidad">
+    Este paso decide a qué reservas se les ofrece el medio de pago. Si no restringes nada, se ofrece en todas.
+
+    Puedes acotarlo por políticas de pago, puntos de venta, monedas, ventana de anticipación -los días entre el día en que el huésped reserva y su fecha de entrada- y nacionalidad del huésped.
+
+    Presta atención a la moneda: si dejas una que ninguno de sus puntos de venta vende, el medio queda en estado **Oculto** y no se le ofrece a nadie. La tabla te lo avisa.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26851472760577cf69238a4a35b30886447c1238286.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Asigna las plantillas de correo">
+    Cada correo se envía en un momento distinto y aquí eliges la plantilla de cada uno.
+
+    El primero, el que recibe el huésped al reservar, aparece siempre. Se envía al confirmar la reserva, antes de que se procese el pago.
+
+    Los otros tres aparecen solo si elegiste un procesador: el de pago aprobado, el de pago no cobrado, y el de reserva cancelada por falta de pago -este último solo si activaste la cancelación automática-. Sin procesador el cobro lo haces tú desde el PMS, así que no hay nada que avisar después y vas a ver un solo correo.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/196910804318e18952d44cad80b16dc3d95be266f08.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Revisa y crea el medio de pago">
+    El último paso es un resumen de todo lo que cargaste, en solo lectura y agrupado por paso. Cada sección tiene su botón **Editar**, que te lleva directo a ese paso.
+
+    Cuando esté todo correcto, pulsa **Crear**. El medio de pago **nace activo**, así que desde ese momento el huésped ya lo ve en el checkout. Desde la tabla puedes pausarlo, reordenarlo o editarlo cuando quieras.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28641572288287ea244149630e8f664be98b79027fb.png" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
