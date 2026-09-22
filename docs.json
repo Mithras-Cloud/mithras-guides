@@ -166,7 +166,8 @@
               "motor/medio_de_pago_tranferencia_bancaria_para_el_motor",
               "motor/integrar_el_motor_en_un_sitio_web_externo",
               "motor/cargo_fijo_adicional",
-              "motor/registro_de_cambio_de_moneda"
+              "motor/registro_de_cambio_de_moneda",
+              "motordereservasv10/medios_de_pago"
             ]
           },
           {
@@ -803,8 +804,7 @@
               "motordereservasv10/como_se_muestran_las_tarifas_en_el_motor_al_realizar_una_busqueda",
               "motordereservasv10/insentivos_de_compra",
               "motordereservasv10/como_crear_un_voucher",
-              "motordereservasv10/paquetes-multi-categorias-y-precios-de-plan-tarifario",
-              "motordereservasv10/medios_de_pago"
+              "motordereservasv10/paquetes-multi-categorias-y-precios-de-plan-tarifario"
             ]
           }
         ]
