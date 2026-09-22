@@ -1,0 +1,88 @@
+---
+title: "¿Cómo configurar un medio de pago por transferencia?"
+description: "Esta funcionalidad te permite configurar un medio de pago para que los huéspedes puedan realizar el pago de sus reservas mediante transferencia bancaria. Este método no procesa el pago automáticamente, sino que le proporciona al huésped las instrucciones y los datos necesarios para que realice la transferencia de forma manual. La confirmación del pago debe gestionarse fuera del sistema."
+---
+
+Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuración_inicial/gestion_de_medios_de_pago), donde encontrarás el resto de la pantalla: el orden en que se le muestran al huésped, los avisos de configuración y la vista previa del checkout.
+
+<Steps>
+  <Step title="Abre el asistente y elige 'Transferencia'">
+    En la tabla de medios de pago, pulsa **Crear**. El asistente te pregunta cómo paga el huésped y muestra las seis categorías disponibles. Elige **Transferencia**: el huésped reserva y después transfiere el importe a la cuenta que le indicas.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092327_0_6ab2a4274f6f8.jpg" alt="Seis tarjetas con diferentes tipos de medios de pago. El cursor selecciona 'Transferencia'." />
+    </Frame>
+  </Step>
+
+  <Step title="Define el nombre que ve el huésped">
+    Es el texto que el huésped lee en la lista de medios de pago del checkout, tal como lo escribas. Conviene que sea explícito: en muchos medios es casi toda la información que recibe.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092327_1_6ab2a427a5221.jpg" alt="Primer paso del asistente de configuración con campos para el nombre y la descripción del medio de pago." />
+    </Frame>
+  </Step>
+
+  <Step title="Agrega una descripción (opcional)">
+    Aparece debajo del nombre, en el checkout. Si la dejas vacía, el checkout escribe una línea propia según cómo quede configurado el medio. Complétala cuando quieras decir algo tuyo.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5370286218bacb7176283b57b7f75bd6b9ab3aec3a.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Aplica un recargo o un descuento">
+    El ajuste se aplica sobre el total de la reserva y solo cuando el huésped elige este medio. El huésped lo ve en el resumen y el total ya lo incluye.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/268514913754212dd75f07864ab58c9b239aa97903b.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Define el importe a cobrar">
+    Aquí eliges qué importe se le pide al huésped por esta reserva. En una transferencia son tres opciones: el **total** de la reserva, un **porcentaje** como seña o el valor de **una noche**. No se le cobra nada al reservar: es lo que le pides que transfiera.
+  </Step>
+
+  <Step title="Indica a qué cuenta transfiere el huésped">
+    Son los datos que le enviamos para que pueda transferir: titular, CBU o alias, y banco. Este campo es el que hace funcionar el medio — si queda vacío, el huésped reserva y no sabe a dónde mandar el dinero.
+  </Step>
+
+  <Step title="Pide una tarjeta en garantía (opcional)">
+    El huésped transfiere y además deja los datos de su tarjeta como respaldo por si la transferencia no llega. A esa tarjeta no se le cobra nada. No se puede pedir junto con el cobro de una noche: las dos configuraciones ocupan el mismo lugar, así que eliges una.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28641593136eae2fe153c7b44c52076f80e05004dc2.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Establece las condiciones de disponibilidad">
+    Este paso decide a qué reservas se les ofrece el medio de pago. Si no restringes nada, se ofrece en todas.
+
+    Puedes acotarlo por políticas de pago, puntos de venta, monedas, ventana de anticipación -los días entre el día en que el huésped reserva y su fecha de entrada- y nacionalidad del huésped.
+
+    Presta atención a la moneda: si dejas una que ninguno de sus puntos de venta vende, el medio queda en estado **Oculto** y no se le ofrece a nadie.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092328_3_6ab2a4289cc42.jpg" alt="Tercer paso del asistente, con opciones para filtrar por políticas, puntos de venta, monedas y otras condiciones." />
+    </Frame>
+  </Step>
+
+  <Step title="Asigna las plantillas de correo">
+    Cada correo se envía en un momento distinto y aquí eliges la plantilla de cada uno.
+
+    En este medio vas a ver un solo correo: el que recibe el huésped al reservar, que se envía al confirmar, antes de que se procese el pago. Como la transferencia no se cobra en el momento, no hay un pago aprobado ni un pago rechazado que avisar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092328_4_6ab2a428bf991.jpg" alt="Cuarto paso del asistente, con un menú desplegable para seleccionar la plantilla de correo de confirmación de reserva." />
+    </Frame>
+  </Step>
+
+  <Step title="Revisa y crea el medio de pago">
+    El último paso es un resumen de todo lo que cargaste, en solo lectura y agrupado por paso. Cada sección tiene su botón **Editar**, que te lleva directo a ese paso.
+
+    Cuando esté todo correcto, pulsa **Crear**. El medio de pago **nace activo**, así que desde ese momento el huésped ya lo ve en el checkout. Desde la tabla puedes pausarlo, reordenarlo o editarlo cuando quieras.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092329_5_6ab2a4295ae43.jpg" alt="Pantalla final de revisión con un resumen detallado de toda la configuración del medio de pago." />
+    </Frame>
+  </Step>
+</Steps>
