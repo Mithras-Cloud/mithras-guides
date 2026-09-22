@@ -1,0 +1,68 @@
+---
+title: "¿Cómo configurar el pago en destino?"
+description: "Esta funcionalidad te permite configurar un medio de pago para que los huéspedes puedan hacer una reserva sin necesidad de ingresar datos de pago al momento, abonando el total al llegar al establecimiento. Puedes personalizar el nombre, la descripción, aplicar recargos o descuentos, y establecer reglas específicas sobre cuándo y para quién está disponible esta opción."
+---
+
+Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuración_inicial/gestion_de_medios_de_pago), donde encontrarás el resto de la pantalla: el orden en que se le muestran al huésped, los avisos de configuración y la vista previa del checkout.
+
+<Steps>
+  <Step title="Abre el asistente y elige 'Pago en destino'">
+    En la tabla de medios de pago, pulsa **Crear**. El asistente te pregunta cómo paga el huésped y muestra las seis categorías disponibles. Elige **Pago en destino**: el huésped paga al llegar al establecimiento y no se le cobra nada al reservar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092492_0_6ab2a4cc88a8e.jpg" alt="Selector de medios de pago con la opción 'Pago en destino' resaltada para iniciar la configuración." />
+    </Frame>
+  </Step>
+
+  <Step title="Define el nombre que ve el huésped">
+    Es el texto que el huésped lee en la lista de medios de pago del checkout, tal como lo escribas. Conviene que sea explícito: en muchos medios es casi toda la información que recibe.
+
+    ![Campo de texto para el nombre del medio de pago, con 'Pagar en el establecimiento' ingresado como ejemplo para el huésped.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092493_1_6ab2a4cd32498.jpg)
+  </Step>
+
+  <Step title="Agrega una descripción (opcional)">
+    Aparece debajo del nombre, en el checkout. Si la dejas vacía, el checkout escribe una línea propia según cómo quede configurado el medio. Complétala cuando quieras decir algo tuyo.
+
+    ![Campo de texto para la descripción del medio de pago, mostrando el ejemplo 'El pago se coordina directamente con el establecimiento al momento de su llegada'.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092493_2_6ab2a4cd76cbb.jpg)
+  </Step>
+
+  <Step title="Aplica un recargo o un descuento">
+    El ajuste se aplica sobre el total de la reserva y solo cuando el huésped elige este medio. El huésped lo ve en el resumen y el total ya lo incluye.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092494_3_6ab2a4ce0ae29.jpg" alt="Opciones para configurar recargos o descuentos en el medio de pago, como 'Sin ajuste', '+ Recargo' o '- Descuento'." />
+    </Frame>
+  </Step>
+
+  <Step title="Establece las condiciones de disponibilidad">
+    Este paso decide a qué reservas se les ofrece el medio de pago. Si no restringes nada, se ofrece en todas.
+
+    Puedes acotarlo por políticas de pago, puntos de venta, monedas, ventana de anticipación -los días entre el día en que el huésped reserva y su fecha de entrada- y nacionalidad del huésped.
+
+    En el pago en destino esta es la pantalla más importante, porque es donde acotas el riesgo: puedes ofrecerlo solo para ciertas políticas, o solo dentro de una ventana de anticipación.
+
+    <Frame>
+      ![Selección de un 20% de descuento aplicado al medio de pago, mostrando cómo el precio final se reduce en la vista previa del checkout.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092494_4_6ab2a4ce842d4.jpg)
+    </Frame>
+  </Step>
+
+  <Step title="Asigna las plantillas de correo">
+    Cada correo se envía en un momento distinto y aquí eliges la plantilla de cada uno.
+
+    En este medio vas a ver un solo correo: el que recibe el huésped al reservar, que se envía al confirmar, antes de que se procese el pago. Como el huésped paga al llegar, no hay un pago aprobado ni un pago rechazado que avisar.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/3580199874b4a3fb9220e6a2553c4f1d9354e6c25d.png" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Revisa y crea el medio de pago">
+    El último paso es un resumen de todo lo que cargaste, en solo lectura y agrupado por paso. Cada sección tiene su botón **Editar**, que te lleva directo a ese paso.
+
+    Cuando esté todo correcto, pulsa **Crear**. El medio de pago **nace activo**, así que desde ese momento el huésped ya lo ve en el checkout. Desde la tabla puedes pausarlo, reordenarlo o editarlo cuando quieras.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092496_8_6ab2a4d07dca5.jpg" alt="Menú desplegable para seleccionar la plantilla de correo de confirmación que se enviará al huésped." />
+    </Frame>
+  </Step>
+</Steps>
