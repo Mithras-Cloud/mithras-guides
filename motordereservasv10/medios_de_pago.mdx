@@ -1,0 +1,88 @@
+---
+title: "Gestión de Medios de Pago"
+description: "Configurá y administrá las formas de pago disponibles para los huéspedes en el motor de reservas. Definí tarjetas, pasarelas, transferencias y enlaces de pago, determinando qué se cobra, a qué huésped se le ofrece, bajo qué condiciones y en qué orden."
+---
+
+Esta funcionalidad te permite configurar y administrar las diversas formas de pago disponibles para los huéspedes en el motor de reservas. Podés definir tarjetas, pasarelas de pago, transferencias y enlaces de pago. Es posible determinar qué se cobra con cada método, a qué tipo de huésped se le ofrece, bajo qué condiciones y en qué orden se presentan en el checkout. El sistema mostrará al huésped únicamente los medios de pago activos que cumplan con las condiciones de su reserva, en el orden establecido en esta tabla.
+
+## Reordenar Medios de Pago
+
+La posición de cada medio de pago en la tabla determina el orden en que se mostrarán al huésped durante el proceso de reserva. Es posible modificar este orden de dos maneras para priorizar los métodos de pago deseados.
+
+<Steps>
+<Step title="Arrastrando una fila de la tabla">
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084216_0_6ab284780fb8d.jpg" alt="Arrastrando una fila de la tabla para cambiar su orden." />
+  </Frame>
+  Para cambiar la posición de un medio de pago, mantené presionado el ícono de seis puntos ubicado a la izquierda de la fila correspondiente. Luego, arrastrá la fila hacia arriba o hacia abajo hasta la posición deseada en la lista y soltala.
+  
+  <Check>
+  El sistema guardará automáticamente el nuevo orden y mostrará una notificación de "Datos actualizados".
+  </Check>
+</Step>
+
+<Step title="Utilizando el menú de acciones">
+  <Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084216_1_6ab284787d2f9.jpg" alt="Menú de acciones desplegado con opciones de reordenamiento." />
+  </Frame>
+  Otra forma de reordenar es utilizando el menú "Acciones" al final de cada fila. Hacé clic en "Acciones" y, en el submenú "Reordenar", seleccioná "Máxima prioridad" para mover el medio de pago al primer lugar de la lista, o "Mínima prioridad" para enviarlo al último lugar.
+</Step>
+</Steps>
+
+## Análisis de la Tabla de Medios de Pago
+
+La tabla de medios de pago presenta varias columnas con información clave para la configuración y gestión de cada método.
+
+### Categoría
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084217_2_6ab284793ce87.jpg" alt="Vista de la columna 'Categoría' con sus diferentes tipos." />
+</Frame>
+Esta columna clasifica cada medio de pago según su naturaleza. Las categorías disponibles son: **Tarjeta**, **Pasarela**, **Transferencia**, **Link de pago**, **QR** y **Pago en destino**. Adicionalmente, los medios de pago de tipo "Tarjeta" especifican si aceptan "Crédito y débito", "Solo débito" o "Solo crédito".
+
+### Vía de Cobro
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084217_3_6ab28479b4517.jpg" alt="Detalle de la columna 'Vía de cobro' con ejemplos de pasarelas y procesadores." />
+</Frame>
+Esta columna detalla el sistema o herramienta específica que procesará el pago. Para la categoría "Pasarela", muestra la pasarela de pago seleccionada (ej. PayPal, Mercado Pago). Para la categoría "Tarjeta", indica el procesador de pagos configurado, si aplica. Para las categorías "Link de pago" o "QR", muestra la URL del enlace de pago configurado, con opciones para copiarlo o abrirlo en una nueva pestaña.
+
+### Cobro
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Ejemplos de configuraciones en la columna 'Cobro', incluyendo porcentajes y tarjetas en garantía." />
+</Frame>
+Aquí se define qué monto se le cobrará al huésped al momento de confirmar la reserva. Las opciones incluyen: "Total" (el 100% de la reserva), un porcentaje específico del total (ej. "Total -10%" o "Total +5%"), el valor de una noche con el resto a pagar en destino, o "Tarjeta en garantía", donde no se realiza un cobro inmediato pero los datos de la tarjeta se almacenan como garantía. Si el medio de pago tiene un recargo o descuento asociado, este también se indicará en esta columna.
+
+## Visuales Adicionales de la Interfaz
+
+A continuación, te mostramos otras secciones importantes de la interfaz que te ayudarán a gestionar tus medios de pago.
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Vista general de las columnas de filtro 'Moneda', 'Política', 'Condiciones' y 'Puntos de venta'." />
+</Frame>
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Ventana emergente 'Necesitan revisión' con una lista de alertas de configuración." />
+</Frame>
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Ventana de 'Vista previa del checkout' con campos para simular una reserva." />
+</Frame>
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Panel derecho de la vista previa mostrando los motivos por los cuales no se aplican ciertos medios de pago." />
+</Frame>
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Opción 'Clonar' dentro del menú desplegable 'Acciones'." />
+</Frame>
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Panel lateral del 'Historial de cambios' de un medio de pago." />
+</Frame>
+
+<Frame>
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790084218_4_6ab2847a4b684.jpg" alt="Pantalla 'Nuevo medio de pago' con las seis categorías disponibles para crear." />
+</Frame>
+
