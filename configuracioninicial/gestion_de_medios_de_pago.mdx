@@ -1,0 +1,142 @@
+---
+title: "Gestión de Medios de Pago"
+description: "Esta sección te permite configurar las formas de pago que vas a ofrecerle a tus huéspedes en el motor de reservas. Aquí vas a poder definir tarjetas, pasarelas, transferencias y links de pago disponibles, estableciendo qué se cobra con cada uno, a quién le ofreces y en qué orden aparecen. El sistema le va a mostrar a tus huéspedes únicamente los medios de pago activos que cumplan con las condiciones de su reserva, respetando el orden que definiste en esta tabla."
+---
+
+La sección de Gestión de Medios de Pago es fundamental para personalizar la experiencia de reserva de tus huéspedes. Desde aquí, tienes el control total para definir cómo pueden pagar, asegurando que solo se les muestren las opciones relevantes para su reserva específica y en el orden que tú elijas.
+
+## Orden de los Medios de Pago
+
+La disposición de los medios de pago en la tabla determina el orden en que se le van a presentar al huésped durante el proceso de reserva. Es crucial establecer un orden estratégico para priorizar ciertas opciones o guiar al huésped hacia los métodos de pago preferidos. Para modificar esta secuencia, tienes dos métodos disponibles.
+
+<Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790085628_0_6ab289fcdadc7.jpg" alt="Vista de la tabla de medios de pago con varias filas, mostrando el orden actual de las opciones de pago." />
+</Frame>
+
+<Steps>
+  <Step title="Reordenar arrastrando y soltando">
+    Ubica el cursor sobre los puntos a la izquierda del nombre del medio de pago que quieres mover. Vas a ver que el cursor cambia para indicarte que el elemento es movible. Haz clic y mantén presionado, luego arrastra la fila hacia arriba o hacia abajo hasta la posición deseada en la lista y suéltala. El sistema va a guardar automáticamente el nuevo orden.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790085629_1_6ab289fd76443.jpg" alt="Cursor arrastrando una fila de la tabla de medios de pago hacia una nueva posición para cambiar el orden." />
+    </Frame>
+  </Step>
+
+  <Step title="Usar el menú 'Acciones'">
+    Ve a la fila del medio de pago que quieres reposicionar y haz clic en el botón "Acciones" que está al final de la fila. En el menú desplegable, selecciona "Máxima prioridad" para mover el medio de pago al primer lugar de la lista, o "Mínima prioridad" para moverlo al último lugar. Esta acción reordena la tabla de forma instantánea.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790085629_2_6ab289fdaacd5.jpg" alt="Menú desplegable 'Acciones' mostrando las opciones 'Máxima prioridad' y 'Mínima prioridad' para reordenar un medio de pago." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Configuración de las Columnas de la Tabla
+
+La tabla de medios de pago presenta varias columnas que te permiten configurar y visualizar el comportamiento de cada opción. A continuación, te detallamos las más relevantes.
+
+### Columna "Categoría"
+
+Clasifica el medio de pago según su naturaleza. Las categorías disponibles son: Tarjeta, Pasarela, Transferencia, Link de pago, QR y Pago en destino. Para la categoría "Tarjeta", se especifica si acepta "Crédito y débito", "Solo débito" o "Solo crédito".
+
+<Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790085630_4_6ab289fe96f22.jpg" alt="Detalle de la columna 'Categoría' con etiquetas como 'Pasarela' y 'Tarjeta (Crédito y débito)'." />
+</Frame>
+
+### Columna "Vía de cobro"
+
+Muestra la herramienta específica utilizada para procesar el pago. Para la categoría "Pasarela", indica la pasarela de pago seleccionada (ej. PayPal, Mercado Pago). Para la categoría "Tarjeta", muestra el procesador configurado (ej. Payway, Stripe). Para las categorías "Link de pago" y "QR", muestra la URL del enlace de pago, con opciones para copiarlo o abrirlo en una nueva pestaña.
+
+<Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790085630_5_6ab289fed5c1b.jpg" alt="Detalle de la columna 'Vía de cobro' mostrando nombres de procesadores y URLs de pago de ejemplo." />
+</Frame>
+
+### Columna "Cobro"
+
+Define qué se le va a cobrar al huésped al momento de confirmar la reserva. Las opciones son: el importe "Total" de la reserva, un porcentaje específico del total, el valor de "1 noche", o "Tarjeta en garantía", donde no se realiza ningún cobro inmediato pero se validan los datos de la tarjeta. Si el medio de pago tiene configurado un recargo o un descuento, esto también se va a indicar en esta columna.
+
+<Frame>
+  <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790085631_6_6ab289ff1db21.jpg" alt="Detalle de la columna 'Cobro' mostrando opciones como 'Total', '25%' y 'Tarjeta en garantía'." />
+</Frame>
+
+### Otras Columnas Relevantes
+
+Además de las columnas detalladas anteriormente, la tabla incluye filtros y datos adicionales que te ayudan a gestionar tus medios de pago:
+
+* **Moneda:** Muestra la moneda en la que se procesa el pago.
+* **Política:** Indica la política de pago asociada a ese medio.
+* **Condiciones:** Muestra cualquier condición especial aplicada al medio de pago.
+* **Puntos de venta:** Define en qué puntos de venta está disponible ese medio.
+
+## Herramientas de Verificación y Previsualización
+
+Para asegurar que tus configuraciones funcionen como esperas, tienes acceso a herramientas que te permiten revisar el estado de tus medios de pago y previsualizar cómo se ven en el proceso de checkout.
+
+### Necesitan Revisión
+
+El botón "Necesitan revisión", ubicado en la parte superior de la tabla, te va a mostrar una ventana emergente con una lista de advertencias de configuración. Esta herramienta es muy útil para identificar posibles problemas o medios de pago incompletos que podrían afectar la experiencia del huésped.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/895043661534044ad511a196e1580a8ddd11f38b20.png" alt="Botón 'Necesitan revisión' en la parte superior de la tabla y una ventana emergente con una lista de advertencias de configuración." />
+</Frame>
+
+### Vista Previa en el Checkout
+
+Con el botón "Vista previa en el checkout", también en la parte superior, puedes simular el proceso de reserva de un huésped. Esta ventana te va a mostrar exactamente qué medios de pago estarían disponibles para una reserva de prueba y, lo más importante, cuáles no lo estarían y por qué motivos.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8950437380a948057a03ef05a431dd8987600ca7e9.png" alt="Botón 'Vista previa en el checkout' y la ventana que simula una reserva, con los medios disponibles y los que no se ofrecen con su motivo." />
+</Frame>
+
+## Gestión Individual de Medios de Pago
+
+El botón "Acciones" que encuentras al final de cada fila en la tabla de medios de pago te permite realizar operaciones específicas para cada método de forma individual.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/53702627701052a0d5ce9b0fd8d66358e1da33c700.png" alt="Botón 'Acciones' al final de una fila de la tabla de medios de pago." />
+</Frame>
+
+### Clonar un Medio de Pago
+
+La opción "Clonar" dentro del menú "Acciones" te permite duplicar un medio de pago existente. Esto es muy útil si quieres crear una opción similar con solo pequeñas modificaciones, sin tener que configurarla desde cero.
+
+### Ver el Historial de Cambios
+
+Al seleccionar "Historial de cambios" desde el menú "Acciones", se va a abrir un panel lateral que muestra una lista detallada de todas las modificaciones realizadas en ese medio de pago específico, incluyendo quién hizo el cambio y cuándo.
+
+### Eliminar un Medio de Pago
+
+Si un medio de pago ya no es necesario o fue creado por error, puedes eliminarlo usando la opción "Eliminar" en el menú "Acciones". Ten en cuenta que esta acción es permanente.
+
+## Creación de Medios de Pago
+
+Haz clic en el botón "Crear" para añadir un nuevo medio de pago a tu lista. Se te va a presentar una pantalla donde puedes elegir entre las seis categorías disponibles: Tarjeta, Pasarela, Transferencia, Link de pago, QR y Pago en destino, para empezar la configuración.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26851315320df78c01018418a5815f2b4d0daefb430.png" alt="Pantalla 'Nuevo medio de pago' con las seis categorías disponibles para crear." />
+</Frame>
+
+### Guías por tipo de medio de pago
+
+Cada categoría tiene su propia configuración. Elige la que vas a crear para ver el paso a paso:
+
+<CardGroup cols="2">
+  <Card title="Tarjeta">
+    El huésped ingresa la tarjeta dentro del checkout. Eliges si aceptas crédito, débito o las dos.
+  </Card>
+  <Card title="Pasarela">
+    El pago lo resuelve el proveedor en su propia pantalla. Necesita una integración conectada.
+  </Card>
+  <Card title="Transferencia">
+    El huésped reserva y después transfiere el importe a la cuenta que le indicas.
+  </Card>
+  <Card title="Link de pago">
+    Le envías un link para que pague desde cualquier dispositivo.
+  </Card>
+  <Card title="QR">
+    El huésped escanea un código y paga desde su billetera o app bancaria.
+  </Card>
+  <Card title="Pago en destino">
+    El huésped paga al llegar al establecimiento.
+  </Card>
+</CardGroup>
