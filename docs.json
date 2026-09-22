@@ -87,7 +87,8 @@
               "configuración_inicial/que_es_y_para_que_sirve_plantillas_de_correo",
               "configuración_inicial/como_bloquear_la_visualizacion_de_reservas_a_un_usuario",
               "configuracioninicial/gestion_de_medios_de_pago",
-              "configuracioninicial/como_configurar_un_medio_de_pago_con_tarjeta"
+              "configuracioninicial/como_configurar_un_medio_de_pago_con_tarjeta",
+              "configuracioninicial/como_configurar_un_medio_de_pago_con_pasarela"
             ]
           },
           {
