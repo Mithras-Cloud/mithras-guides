@@ -9,54 +9,64 @@ Este documento detalla los eventos disparados en el Data Layer de Pxsol, diseña
 
 Estos eventos establecen y actualizan la información global de la sesión, como el punto de venta (POS) y los datos del producto.
 
-| Evento | Significado | Cuándo se dispara | Parámetros Principales |
-|--------|-------------|-------------------|------------------------|
-| **px_context** | Establece el contexto global inicial de la sesión. | En cada carga de página (una vez por página). | pos, product_id, product_name, search_id, start_date, end_date, adults, children, rooms, session_id, page_url |
-| **px_context_update** | Actualiza dinámicamente los parámetros del contexto cuando hay cambios. | Al actualizar fechas, pasajeros o habitaciones tras una búsqueda; al encontrar disponibilidad o en la página de agradecimiento. | search_id, start_date, end_date, adults, children, rooms, transaction_id, value, currency, session_id |
-| **px_layer_ready** | Indica que el Data Layer está listo y funcionando. | Una vez al cargar la página. | session_id, page_url, pos, product_id, search_id, ts (timestamp) |
-| **user_data_update** | Actualización de datos del usuario de forma segura. | Cuando se actualizan datos de perfil o privacidad. | Datos de usuario anonimizados/protegidos |
+| Evento                  | Significado                                                             | Cuándo se dispara                                                                                                               | Parámetros Principales                                                                                               |
+| ----------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| **px\_context**         | Establece el contexto global inicial de la sesión.                      | En cada carga de página (una vez por página).                                                                                   | pos, product\_id, product\_name, search\_id, start\_date, end\_date, adults, children, rooms, session\_id, page\_url |
+| **px\_context\_update** | Actualiza dinámicamente los parámetros del contexto cuando hay cambios. | Al actualizar fechas, pasajeros o habitaciones tras una búsqueda; al encontrar disponibilidad o en la página de agradecimiento. | search\_id, start\_date, end\_date, adults, children, rooms, transaction\_id, value, currency, session\_id           |
+| **px\_layer\_ready**    | Indica que el Data Layer está listo y funcionando.                      | Una vez al cargar la página.                                                                                                    | session\_id, page\_url, pos, product\_id, search\_id, ts (timestamp)                                                 |
+| **user\_data\_update**  | Actualización de datos del usuario de forma segura.                     | Cuando se actualizan datos de perfil o privacidad.                                                                              | Datos de usuario anonimizados/protegidos                                                                             |
 
 ## 2. Eventos de Búsqueda
 
 Rastrea la interacción del usuario con el motor de búsqueda y la disponibilidad de resultados.
 
-| Evento | Significado | Cuándo se dispara | Parámetros Principales |
-|--------|-------------|-------------------|------------------------|
-| **search_open** | El usuario tiene disponible el formulario de búsqueda. | Al cargar la página si se detecta un contenedor de búsqueda válido en el DOM. | page_url |
-| **search_modify** | El usuario modifica los parámetros de búsqueda. | Al cambiar fechas, adultos, niños o habitaciones (máximo 1 vez por segundo). | start_date, end_date, rooms, adults, children, pos, hotel_id, search_id, session_id |
-| **no_inventory** | No hay resultados disponibles para la búsqueda realizada. | Al detectar mensajes de "Sin resultados" en la página o manualmente vía script. | no_inventory (true), start_date, end_date, rooms, adults, children, pos, search_id, session_id |
-| **has_inventory** | Existen resultados de disponibilidad para la búsqueda. | Cuando se detectan productos con disponibilidad mayor a cero. | has_availability (true), availability (total unidades), product_count, search_id, start_date, end_date |
+| Evento             | Significado                                               | Cuándo se dispara                                                               | Parámetros Principales                                                                                      |
+| ------------------ | --------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **search\_open**   | El usuario tiene disponible el formulario de búsqueda.    | Al cargar la página si se detecta un contenedor de búsqueda válido en el DOM.   | page\_url                                                                                                   |
+| **search\_modify** | El usuario modifica los parámetros de búsqueda.           | Al cambiar fechas, adultos, niños o habitaciones (máximo 1 vez por segundo).    | start\_date, end\_date, rooms, adults, children, pos, hotel\_id, search\_id, session\_id                    |
+| **no\_inventory**  | No hay resultados disponibles para la búsqueda realizada. | Al detectar mensajes de "Sin resultados" en la página o manualmente vía script. | no\_inventory (true), start\_date, end\_date, rooms, adults, children, pos, search\_id, session\_id         |
+| **has\_inventory** | Existen resultados de disponibilidad para la búsqueda.    | Cuando se detectan productos con disponibilidad mayor a cero.                   | has\_availability (true), availability (total unidades), product\_count, search\_id, start\_date, end\_date |
 
 ## 3. Eventos de Formularios
 
 Monitorea el progreso del usuario a través de los formularios de contacto o checkout.
 
-| Evento | Significado | Cuándo se dispara | Parámetros Principales |
-|--------|-------------|-------------------|------------------------|
-| **form_view** | El usuario visualiza un formulario. | Al cargar la página de checkout o hacer scroll hasta el formulario. | form_id (ej: "formCheckoutSubmit"), page_url |
-| **form_interaction** | Interacción con un campo específico del formulario. | Al hacer foco, escribir o seleccionar opciones (adultos/niños). | form_id, field_name (ej: "email", "party_adults"), page_url |
-| **form_submit** | Intento de envío del formulario. | Al hacer click en enviar, antes de la validación del servidor. | form_id, fields_status, email_provided (booleano), phone_provided (booleano), session_id |
-| **form_success** | Envío exitoso del formulario. | En la página de agradecimiento tras procesar la reserva o lead. | form_id, lead_id, transaction_id |
+| Evento                | Significado                                         | Cuándo se dispara                                                   | Parámetros Principales                                                                        |
+| --------------------- | --------------------------------------------------- | ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| **form\_view**        | El usuario visualiza un formulario.                 | Al cargar la página de checkout o hacer scroll hasta el formulario. | form\_id (ej: "formCheckoutSubmit"), page\_url                                                |
+| **form\_interaction** | Interacción con un campo específico del formulario. | Al hacer foco, escribir o seleccionar opciones (adultos/niños).     | form\_id, field\_name (ej: "email", "party\_adults"), page\_url                               |
+| **form\_submit**      | Intento de envío del formulario.                    | Al hacer click en enviar, antes de la validación del servidor.      | form\_id, fields\_status, email\_provided (booleano), phone\_provided (booleano), session\_id |
+| **form\_success**     | Envío exitoso del formulario.                       | En la página de agradecimiento tras procesar la reserva o lead.     | form\_id, lead\_id, transaction\_id                                                           |
 
 ## 4. Eventos de Chat
 
 Registra la actividad en el widget de atención al cliente.
 
-| Evento | Significado | Cuándo se dispara | Parámetros Principales |
-|--------|-------------|-------------------|------------------------|
-| **chat_open** | Apertura del widget de chat. | Al hacer click en el botón del chat o detectarse su apertura. | chat_session_id, session_id, search_id, pos, hotel_id, page_url |
-| **chat_message** | Mensaje enviado por el usuario. | Al enviar un mensaje (máximo 1 vez por segundo). | chat_session_id, message_type ("user"), duration_sec, pos, page_url |
-| **chat_close** | Cierre del widget de chat. | Al cerrar manualmente o si el widget se oculta. | chat_session_id, duration_sec (duración total abierto), pos, session_id |
+| Evento            | Significado                     | Cuándo se dispara                                             | Parámetros Principales                                                      |
+| ----------------- | ------------------------------- | ------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| **chat\_open**    | Apertura del widget de chat.    | Al hacer click en el botón del chat o detectarse su apertura. | chat\_session\_id, session\_id, search\_id, pos, hotel\_id, page\_url       |
+| **chat\_message** | Mensaje enviado por el usuario. | Al enviar un mensaje (máximo 1 vez por segundo).              | chat\_session\_id, message\_type ("user"), duration\_sec, pos, page\_url    |
+| **chat\_close**   | Cierre del widget de chat.      | Al cerrar manualmente o si el widget se oculta.               | chat\_session\_id, duration\_sec (duración total abierto), pos, session\_id |
 
-## 5. Eventos de E-commerce
+## 5. Eventos de Contacto
+
+Registra las interacciones del usuario con canales externos de contacto del establecimiento.
+
+| Evento              | Significado                                                                  | Cuándo se dispara                                                          | Parámetros Principales                 |
+| ------------------- | ---------------------------------------------------------------------------- | -------------------------------------------------------------------------- | -------------------------------------- |
+| **whatsapp\_click** | Click del usuario en el botón de WhatsApp para contactar al establecimiento. | Al hacer click en el botón de WhatsApp disponible en el Motor de Reservas. | page\_url, session\_id, pos, hotel\_id |
+
+***
+
+## 6. Eventos de E-commerce
 
 Eventos críticos para la medición de ingresos y conversiones.
 
-| Evento | Significado | Cuándo se dispara | Parámetros Principales |
-|--------|-------------|-------------------|------------------------|
-| **add_to_cart** | El usuario agrega un producto al carrito. | Tras seleccionar una habitación o servicio. | product_id, value, currency (basado en el contexto de búsqueda) |
-| **purchase** | Compra o reserva completada exitosamente. | En la página de confirmación tras validarse el pago/reserva. | transaction_id, value, tax, currency, items (array con detalles de SKU, nombre y precio), start_date, end_date, search_id |
+| Evento            | Significado                               | Cuándo se dispara                                            | Parámetros Principales                                                                                                        |
+| ----------------- | ----------------------------------------- | ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| **add\_to\_cart** | El usuario agrega un producto al carrito. | Tras seleccionar una habitación o servicio.                  | product\_id, value, currency (basado en el contexto de búsqueda)                                                              |
+| **purchase**      | Compra o reserva completada exitosamente. | En la página de confirmación tras validarse el pago/reserva. | transaction\_id, value, tax, currency, items (array con detalles de SKU, nombre y precio), start\_date, end\_date, search\_id |
 
----
+***
 
 > **📝 Nota:** Pxsol no envía Información de Identificación Personal (PII) directamente. Los datos sensibles como emails o teléfonos se transmiten como banderas booleanas (true/false) para proteger la privacidad del usuario.
