@@ -1,0 +1,372 @@
+---
+title: "Acuerdos: tarifas de convenio para quien corresponde"
+description: "Cómo crear acuerdos, cómo tus clientes corporativos y agencias ven su tarifa en tu motor de reservas, y cómo sumar agencias (y a todo su equipo) con un link o un QR, sin cargarlas a mano."
+---
+
+**Guía para hoteleros · Pxsol**
+
+# Acuerdos: tarifas de convenio para quien corresponde
+
+Cómo crear acuerdos, cómo tus clientes corporativos y agencias ven su tarifa en tu motor de reservas, y cómo sumar agencias (y a todo su equipo) con un link o un QR, sin cargarlas a mano.
+
+| Acuerdo   | Convenio Acme Minera |
+| --------- | -------------------- |
+| Tipo      | B1 · Específico      |
+| Tarifario | Convenio especial    |
+| Dominio   | `@acme.com`          |
+| Estado    | Conectado            |
+
+<Info>
+  *Las capturas son del hotel de prueba **The Yellow Place**. Los nombres de empresas, agencias y personas de los ejemplos son ficticios.*
+</Info>
+
+## Contenido
+
+1. [Qué es un acuerdo](#qué-es-un-acuerdo)
+2. [Casos de uso](#casos-de-uso)
+3. [General (A1) y Específico (B1)](#general-a1-y-específico-b1)
+4. [Crear un acuerdo](#crear-un-acuerdo)
+5. [Qué tiene que hacer el cliente para ver su tarifa](#qué-tiene-que-hacer-el-cliente-para-ver-su-tarifa)
+6. [Link público y QR](#link-público-y-qr)
+7. [Sumar a todo el equipo de la agencia](#sumar-a-todo-el-equipo-de-la-agencia)
+8. [Preguntas frecuentes](#preguntas-frecuentes)
+
+***
+
+## Qué es un acuerdo
+
+Un acuerdo habilita uno o más **tarifarios** de tu establecimiento para un grupo de clientes: una empresa, una agencia de viajes o todos los que reservan por tu motor. Lo configuras en **Canales y acuerdos de venta**, la misma pantalla donde están tus canales de venta.
+
+El beneficio puede venir de dos lados: del **tarifario** que el acuerdo habilita (por ejemplo, uno derivado de tu tarifa base con un descuento) o de la **comisión (descuento)** del acuerdo, un porcentaje que el motor descuenta de la tarifa.
+
+<Frame caption="Fig. 1 — Canales y acuerdos de venta. Cada tarjeta muestra el tipo de acuerdo, la comisión, los planes tarifarios y el estado.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/25065119380522b9045e4dad98e0830103b8c86f074.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQC%2F2aDDwefEKLuMIGMWxRVya4bQ2EMZArNImsGPsHYCtgIgU1n19CNAg7%2FOuKmfRlxhmWYpirSbKP4nD%2B4Vvx0Mb3oqjAMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDJtWkwCEPRvMP60QfyrgApbtijpjIQNSy79G4gkSTRzEfQQZFjtpngppOH1q60595MkKQ7BsjswlfreQNJCM2LNV8jeyYcp60k5%2B1lcODpHvHP%2FLA1ZBLpX7PigNRZy320GIKpOKOWQTntckT2oIH0AE5Y59jXzXlhOZhStz5fQ8%2Flz6NP2h%2B3GCP8WR5X1hhwc0BywrOspuN0BRWd2QSch9sQsqfZH6O7dq3iUwZKM0nnKVVeG9yeggREG9so0EqUrnsu%2Fnn5RNj29welCZnOebrohF5ZnCOLBR%2FK3nBIrZTG8dx9%2Bh1uQxXPYNOIWUn8WObWcVPQ%2BC0b%2BL4puzFz8zIxWCRwqPFOhf5IYreZuP6eoZNws%2FQ3aCJWhYpeOpVqOVs%2BLNqN7wMHUvFbtmo%2FwAlkYL7kQ8iBenHdQSl%2Bu9aMqYBZU%2FTGx960QL4C1vJBDHA6ny9JXaCoTWS%2BpIDQu%2Fl88CaULPVGiPj%2FmzouAw5p%2Fb1QY6nQHLTwbVYYydLbKO1iTphIbZ4bDmtY84QyORl%2BEH3jN31WxInFl9mpTBqeNAFj7xrFCPdA26BrxdmaMS0x%2BsoSZRdJuHWVHglPA4Z0vHBjhLogtmbyYGKF4D85I1Wito45VrALOl3kdkzRast5jP1%2FOBPf7XruVRLp44iRl%2BAAG4GPB%2BXZPo37qK%2Bq%2FFTacISNy2gZsHi9Moyncn25RE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJMBVCXDUL%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194750Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=95b73167467aaac1aede65871ff635286ba85bc6e678210d4ffcb44344ba686e" alt="Imagen" />
+</Frame>
+
+<Tip>
+  **La idea clave**
+
+  <br />
+
+  En los acuerdos específicos, lo que abre la tarifa es el **correo con el que el cliente inicia sesión** en tu motor: el que cargaste en su contacto, o uno de un dominio del acuerdo (como `@acme.com`).
+</Tip>
+
+***
+
+## Casos de uso
+
+Cuatro situaciones frecuentes y cómo se resuelven con un acuerdo.
+
+### Empresa con muchos empleados · `B1 + dominio`
+
+Cargas el dominio de la empresa una sola vez y todo el que inicie sesión con un correo de ese dominio ve la tarifa, sin dar de alta persona por persona.
+
+**Ejemplo:** Acme Minera tiene 400 empleados que viajan a tu ciudad. Creas "Convenio Acme Minera" con el tarifario "Convenio especial" y agregas el dominio `acme.com`.
+
+### Agencias de viajes · `B1 + link público`
+
+Compartes un link o un QR y cada agencia se suma sola con un formulario. Se crea su contacto y queda vinculada al acuerdo, sin que tengas que aprobarla. Si lo permites, suma de paso a todo su equipo.
+
+**Ejemplo:** en una feria de turismo muestras el QR del convenio. Laura, de Viajes del Sur, lo escanea, completa sus datos y ya forma parte.
+
+### Clientes puntuales · `B1 + contactos`
+
+Vinculas contactos concretos: el correo de cada uno es su llave. Sirve para clientes frecuentes, socios o una lista cerrada de personas.
+
+**Ejemplo:** "Socios Club Andino": vinculas los 30 contactos de la lista y los invitas a registrarse desde el mismo acuerdo.
+
+### Tarifa para todos en tu motor · `A1 · General`
+
+El acuerdo aplica a todas las personas que buscan en tu motor de reservas, sin identificar a nadie.
+
+**Ejemplo:** "Tarifa web directa": habilitas en tu motor un tarifario que no publicas en otros canales, para premiar la reserva directa.
+
+***
+
+## General (A1) y Específico (B1)
+
+Al crear un acuerdo eliges su tipo, que define a quién se le aplica. En la app, el Específico aparece como **Usuarios registrados (B1)**.
+
+|                                 | General · A1                       | Específico · B1                                 |
+| ------------------------------- | ---------------------------------- | ----------------------------------------------- |
+| **¿A quién se aplica?**         | A todos los que buscan en tu motor | Solo a las personas identificadas por su correo |
+| **¿Hace falta iniciar sesión?** | No                                 | Sí, con el correo habilitado                    |
+| **Contactos vinculados**        | No tiene (aplica a todos)          | Sí: ver, importar, unificar y desvincular       |
+| **Dominios de correo**          | No los necesita                    | Sí, por ejemplo `@acme.com`                     |
+| **Invitar a registrarse**       | No                                 | Sí                                              |
+| **Link público y QR**           | No                                 | Sí                                              |
+| **Uso típico**                  | Tarifa exclusiva del motor propio  | Empresas, agencias y grupos cerrados            |
+
+<Frame caption="Fig. 2 — A la izquierda, un acuerdo A1: &#x22;Contactos vinculados&#x22; está deshabilitado y lo explica al pasar el cursor. A la derecha, uno B1.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7161462772d8bd57904025995c000cf8fc76ce93a7.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJIMEYCIQCzqnYcqXGYzOSt9E9AvYf2NRqMpWYclSpM3frPFQ1YkAIhAIYwRi2WV6k9LKiwBP%2Bv0mJoM1QfRlVLqcIcf2OsVQycKowDCPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDE5MTExMzEyNDAyIgzBkypiQUiI4EWyhtQq4ALCzxVcAIFnN1rztH30iVs86GC%2BKvaxPHou0qIBCwQ%2BRp4jrTpuj3LBm3ejCOKFFfFhlyAmllh%2BXCDauLQnWHha25b8izgZ0N%2F6MqAOR6eUfFFYmyx%2Fsdp%2FgTJhPfy85tLy4d5h8mY1YTF9HrmHJeFwac5shdVDsb48YjC7%2BsHXzNSfcy6WJW9t2QAMpUW12iPaqz3TN8o%2BYiXAkV2fNmZETtDBnPfxPNYPjhQDBO%2BAwy%2FQvoPEEKHShHk1iOML1opq%2Bq33aHH8LhOB%2FiBou9M1WUr0lz%2FzjAMXkIVttNyi%2FmDRLpNqnn29nZ0biuGKG%2FdxxQyL1sjrcdmQDXOq%2F%2FP0VnleLPmLQVkGjD05ZEKtMbaNEQDMNAFuhaovuPBuGiXLCsfU2hVkUTpLDxXoENaccWUJce6r1Kh1QZ%2FyagOrF8qNeSaHU5MkhdDWYRkmDWyLqrUbjbZ%2FFtZW9iXp1%2BVWMP2f29UGOpwBRfnRXETUosNM11Shgl7AXAiIwVvQb%2BIstdhS1%2B%2FaJjWplODXK0fMZ0dcnMSW0SuRLHREENPa0Smjamva4PVBexcKqkYOkct0wqEbB3Ri4PxweHMDSWzXNAFTIRuWA7NQ%2Fel5SE5dJ6viUlpwf5qCybztWTuecxF1wsD6ysUN%2FFpxK%2FwessZCYbG2elgAN%2FxjAeLAmVQgh%2BD4rj%2Bb&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJHKWU3I23%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194813Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=b156a1377de27065400db81846ccd16ee0194f2ada879c1dfeab91a43807bb4a" alt="Imagen" />
+</Frame>
+
+***
+
+## Crear un acuerdo
+
+Desde **Canales y acuerdos de venta**. Tomamos como ejemplo el "Convenio Acme Minera".
+
+<Steps>
+  <Step title="1. Ten listo el tarifario">
+    El acuerdo habilita tarifarios que ya existen, como "Convenio especial". Si quieres un precio propio, créalo antes (por ejemplo, derivado de tu tarifa base con un descuento).
+  </Step>
+
+  <Step title="2. Toca 'Nuevo canal o acuerdo'">
+    Elige un punto de venta de la lista para instalar el acuerdo con él.
+  </Step>
+
+  <Step title="3. Completa el formulario y toca 'Crear acuerdo'">
+    * **Equipo** y **Tipo de acuerdo**: General (A1) o Usuarios registrados (B1). Para Acme, B1.
+    * **Planes tarifarios**: al menos uno. Aquí, "Convenio especial".
+    * **Comisión**: el porcentaje de convenio que el motor descuenta de la tarifa (0 si el beneficio ya está en el tarifario). Después de crearlo, solo Pxsol puede cambiarla.
+    * **Nombre del acuerdo**: "Convenio Acme Minera".
+
+    <Frame caption="Fig. 3 — Alta de un acuerdo B1 con el tarifario &#x22;Convenio especial&#x22;.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26855485650ca85462f2848973d3118a2d0a809fae7.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQDV43em6KC8YfEyM4ETGyegZ6aDV8BEAYKhZbyDJkHYMgIgKTOXKTGfr0GJeGwB3%2FscoSbTf7ttqXFhty%2B%2B2FRszQUqjAMI9P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDIp7Jc3DTHtlfknKOCrgAsbA2mokWb8eA5SeeFvEtVkOsAYThxc7ht5OSEe2uxXcazib2fzNACZ5eOEts8f9ryeynRe%2FSCekuvRppM3E0k0oUB2ZSNtjVPyqJmPrWQ1heSrVoB55uXIGRDu62zDfBeIl5lWLEDdrKff5W%2BYZnE8QP1B%2FIKvsZYqJC4f7SC7cANuEmPMnOE71NaZTKmO7fyj46gp7VIw3qB9sH6pqHvKV6AdmshJ9mOFJz%2FsYt7C1HMfqlrkGmKEUxi8vQv1XX1aMupjrHaTtMSU%2Be831mICx8klY%2FiVg6UUEUrjnwc29V5ju56A34Ekl%2BOiwCnPwLQMiVC3%2FetMS1AXCgNGB7OPkbPRXlFmj4frnr571khtVQL%2B9vPXnzg5cuoIMAVe%2F7mP9LLzNzgfpiDCgYLgVNo8mx%2F%2BU98yuCf3XBiydQcvKEMNeprJaWbmE0ciehRw8Esq19lmyps10%2BlQEZIlxFQswjqDb1QY6nQHacgR%2B0Dit0AZgFDb7Z4qGSxKECmy8puH7H5SMljanyzDgpMZUucDLGIbfTj%2FPT%2FQUjv%2BGBnmqvEMA0nXEHqbFKBkwWRLqsgNFeMih9nrlEByOaEZqEB%2FgtvhvnrrDYh8p8ikF5Q8hxTYBx%2BfOWAN6rKt5HQQXcz0qcKeqcr%2Fw5PhqzfQnBEdg2ftebM6FCnqooloHJVZkNJu7%2B1pv&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJI2OV3WJX%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194830Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=d49b768436836b0d0566673c9aa215e5954220f695e6277b18c953fefc178bde" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="4. Define a quién le aplica (solo B1)">
+    * **Dominios de email** (en **Editar**): agrega `acme.com`; también acepta `@acme.com` o un correo completo. Se guarda al instante. No se admiten dominios públicos (gmail, hotmail, outlook…) ni uno que ya use otro acuerdo activo del mismo punto de venta.
+    * **Contactos vinculados**: suma personas puntuales, impórtalas de otro acuerdo o unifica duplicados.
+    * **Link para sumarse**: el link público y el QR para agencias, que además pueden sumar a todo su equipo (ver más abajo).
+
+    <Frame caption="Fig. 4 — Configuración del acuerdo: el campo Dominios de email con acme.com listo para agregar.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/286458515206ed4976d6d9605c693bc6cad18694f45.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJGMEQCIFQ3I08ileYhx31NgOrnaQaZPKEDugdPQhC9rpt0bA3SAiBxBrXiHJpIMhDsvh%2BwZBFslPH510oF4ae0DG5KVy9HhSqMAwj1%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDAxOTExMTMxMjQwMiIM50RicYR9ekymo7GYKuACJHE7a0teaM6gVT3aq0h9FdWiJRSqAGjo7lOu5f%2BGQJaZLC5SxtAx1uuyN5AzQDduau28XOrtAZOzgEqp5%2BJJOzwMRyTsuvWeEm2dz1UgXMnVRub7RboMUwzPOlCmF%2Ba%2FMSkW4%2F%2BakvApk6c3cYgLEWSt7VUwmrSrfKD1EZg3dYGM45V59O6jSf3a15bSpxvXOxgd6tCn4esj8fmi85%2FwsO0UK8S3d9ukSaAhO82fSPnUCwAT%2FrOoZSjCB4XjeEzWL0v4QR0z5pjws2vNZ9TtJ7cQ8tK0QBAA0opc%2BN0YRccuzzQvtB7iTvkgcNl2jnmI9HzC3t1bCJX3O%2BWQJfB%2FGp27SoEdUBYRKHXbM%2FaRW2v8QJelrPUiN%2F%2BGprZMKw5zVCw%2B0pa4uZS5ESLZ2QBC90umAy9XTNjq4ifV7i%2FIILayHgcQfUd3j8nWlk4%2Fsks7D9IQd8YE0QVSAeuvq28cPTCZoNvVBjqeAWFY%2FIOeVWalEhZ17gXABt9A%2BCxmp0wJ6M1XrJ8nUfGgjQk4PkiiF9gb7ugFdEk2fd3L4skTztAlcB%2Bik4nigzriJ%2BM2dIchq4fIBbVNXs7iPc7dj1dSzsV33yHOFtroAE2wE3wuo45rNVrNA51O%2BpSf3KMs25LItDmLfS3FHpbaTNQcAJzXl4S%2F1D%2BFuqTDMkBbYPu6GUlMLFIURWFR&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJGTV2SMNT%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194841Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=b5b030777f08d213b2d932d990ab4efbbf2e2b6d9511004705f5795de402255f" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="5. Revisa los contactos e invítalos">
+    La ventana **Contactos vinculados** muestra cada contacto con su tipo y si ya se registró. **Invitar a registrarse** les envía un correo para crear su cuenta; es opcional, porque la tarifa ya se reconoce por su correo apenas inicien sesión.
+
+    <Frame caption="Fig. 5 — Contactos vinculados: agencias con su estado. El ojo abre el contacto y el ícono rojo lo desvincula.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2327475446494ee30f22c4e12b90da18d6779107e59.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIDmMejT06oBK3beRJkrbEUnOlpMxalbzsdfZgvom5KT9AiEAnrZEN9yUeRwU8VlkRVzzGS4y1AHXzP9%2FNiPjHlpA0AEqjAMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDBela5Ki9e2%2BeZ2fjSrgAii1%2FmrNgPaMZjdyTIAn8uDMJe0XpEI2JYg9hxZ64kZm9WC6rEnBU657pQ4gvsDQQngeI2bKVSy7Dtaus8fw5fQeio9P%2Bl6dC2Mu7wHABz%2BxSQtNgSR%2FYvW8Pvof7V49hUNTC6SNX%2BqK48pI9jOW6KEW12PDqLcwLhg5n5n128UHGg5H1Tf5t6%2FL8bWkEbCsfKTDql%2FgJ5Q%2B4uTJdOvKl6yTJR25mhxcz6qAqAiUMgsYhDfwzvRH2ifpxAuAnnCTg48AGnRQ0XnxKiV0J7YHDBOrzebMGGWj%2FzZwgoP4ij0o2L1zs0eFgXhggLxAUXJxSygJ2adKoMhwcwqkj%2FNr9mQlX2mgIFhdHERrvTru4qu7qJ3Ek6oW3dz7McxjSBH8CifpPgGhkU5llxqOVW%2BSKtJubVmvotnOEt%2FFImpC%2Bpjdelz9h%2FjxT6LTq3gnVramU%2ByywDU3AsVvQ9Uhx1AKHikwoKDb1QY6nQF%2BKidQVXNo0R8EGxJOoRI0LoaByzWduHbK%2Bp3mLgnCpCB482Zojnkvvp0YuBYgBT38w1isnoRcuqpHuw%2BPbZXhRKFQFzp8obxc%2FA5U0iRS%2FrMP2gI1MnKXBpD%2BFedzqTHFXiVYUamp8Jbd0vXNLBpApyqHlBikf6KCJZyZovyKeCJO4e1NF7NKsuOBf6qahWBQLNN2FHZFLRGmDex%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJMEWIJLFH%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194848Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=a87132fc588f69d2b521198db55586d302622bb549d25b5efbd5966f7c68e50f" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Note>
+  **Desde la tarjeta del acuerdo**
+
+  <br />
+
+  Puedes editarlo, ver el historial de cambios, gestionar sus contactos, generar el link para sumarse o eliminarlo. Eliminar un acuerdo es definitivo.
+</Note>
+
+***
+
+## Qué tiene que hacer el cliente para ver su tarifa
+
+En un acuerdo Específico (B1), el cliente tiene que **iniciar sesión en tu motor de reservas con el correo habilitado**. Si todavía no tiene cuenta, la crea en el mismo motor. No hace falta que apruebes nada ni que vincules su cuenta.
+
+<Steps>
+  <Step title="1. Entra a tu motor de reservas">
+    Desde tu sitio web, o con el botón del correo de invitación o de bienvenida.
+  </Step>
+
+  <Step title="2. Inicia sesión o se registra con ese correo">
+    Tiene que ser **el mismo correo** que cargaste en su contacto, o uno de un dominio del acuerdo. Al registrarse, verifica su correo.
+  </Step>
+
+  <Step title="3. Busca fechas y ve su tarifa">
+    La tarifa del convenio aparece en la habitación, con el ahorro a la vista.
+
+    <Frame caption="Fig. 6 — Con la sesión iniciada, el motor aplica el acuerdo: &#x22;Estás ahorrando ARS 71.026 (−33 %)&#x22;.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2327475455560a920af927be86bf535bd8729d19f57.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIEPRsxbEHoHCDRG4OFIWNbLpC3vGrW4uKvU9th5hM6utAiEAn0jsPTXnRLYMuQx4q%2FbH1BPUd0zMb2mF06rFJ6aHhpIqjAMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDFy7N1QmEDMHJSPMKCrgAviE2oisqmb915EXvnk2ByrcfPMRz1NdXJxAqLaS8W5T0fiHCdR17QIIk0snB0PnLQdxeywSq51QzXd8DFrSaximUXo3DdxgfecL%2Fe4izlml9s4xFFo0x5aSOH8aE1pnSjdqVeXDD3v8%2FFZ5Nu31APi8uTnWK5E5WHzriWy43wqBC4470PGNlquQuQbolYI7yHLjBscxhTT5DHMGSMXkVZj4m5p17LszMvYOv8M6edqcpWTxGTbcZmcFrd87%2B785%2BSotISVHQuISkz2G1IV127xuZhcMkSsSYSPEjr8ubkFQ0jp646VpFsEno0Mmu71thZvnh4yDl5AiuJIdnwngm%2BFf9hCK8%2FXm9KtIPTy9h%2FiSXk1D%2Fv3NjuAGV3L1%2B4HQvzMABy83jOgpnthLvYxsKhQ%2B7Wy5W1mQc33%2FquQKK0gLAdGb9Ij4Aflb24D2fbpBfw6W7%2Ff5Qd9tei%2BYfyNXW%2BcwqKDb1QY6nQENetSoXkZ95FhhTvM3rHwbfTXtp5QpgUIl4Ybf5A4EK8MTrLRjGHRjk2NlCXDSCZ5z%2F8q1qCbch9FNFTr1GHitw9ZgpOSxJfYQosqApJyk8FydE5bWn6FRAG%2BIQEyqdmWtjaxE2Cj7vC4pViZuo5IGBvK4Umru8fobKlue%2FSs1pnRcvYpJTcRWJgq4tJvLYNxDVZ7RqbxAAXFeypDt&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJPNPVGY5W%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194856Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=8f33187622142edf2c78148bdf2cae2a611be36bcdbc4ccb1006554da427a085" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+### Cómo decide el motor qué acuerdo le corresponde
+
+1. **Contacto vinculado** — La persona es un contacto vinculado al acuerdo.
+2. **Correo exacto** — Su correo está cargado en un contacto del acuerdo.
+3. **Dominio** — Su correo termina en un dominio del acuerdo.
+
+Gana el primero que coincide; los acuerdos no se suman entre sí. Solo cuentan los acuerdos en estado **Conectado**. Si quitas un correo o un dominio, deja de aplicar en la búsqueda siguiente.
+
+### El correo de invitación
+
+<Frame caption="Fig. 7 — Invitación a registrarse, con el logo y el nombre del hotel.">
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1253256019419a30344c0cbdeb746359092140e46c7.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQD38%2BfvwuIylQ%2BvmgZDeJveZ3DHJks%2FvYgqRq%2FFghZm4wIgfI6cdQoTz8inr55aKk4G2y8j22R1HI7p6LrmhYgcn0IqjAMI9P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDKPhblpYSPDKPZihESrgAgpuGtNlrqrARyWg6qM6KpRMrnqjDgxi1mP9oGmiQykGz9v4ACE3cUn7MJ454rIMBKrrTL7ljPzwVNGnztNFf8l3hGBQAP7cx8gjbX48d2KpvbDp9aqL8U0H6acIWQEYMOl1I%2Fo7OGi%2FTtz8JYrp2GVjpdFnwOWZP0rAjYASLlIXLZKeSC8mVup4d2ZqzyaRoLu6%2FPuy1lQBF%2FUFbYPA2fCj3nNINfroRhxCU5dhVaVx7cEmWojGdItffdyC0hD4patOjDfJqUFp%2FfxOXrS5%2BbpPNsfF0jn0FJ1QV1%2FoGljIfePP4Kxst1vn0CBYhnPTDD66Q8PEpmN8mURRW7L0Ay%2BdeRbp6ZxzRhNTZkUKaCqoHZB4hxCzFh8S2XiGabY8iNvuSTtxix85vNkMjkWkDy5XMoTW0RbhZmPZ9pqhrsTBTIHNIfqeBYXKjRV%2BLSTPuAcMK3QWj6YxIao20y9z9gowrqDb1QY6nQEWB5XWPQG7ywoRz89%2BD0VFbB5OstdNeN1cbzROACtzSH7la%2Fz2dBFau1KgVvlwvhZmS6omhp8YRKtJ9kpn%2BMzkRhZfNkZ1IuHsnVnfeW50jm9DwuqxcJ1hGGYW%2BocPmrxJjHVDvCxjpstEUgNElAZlThUgmCd%2BbQQEj1sBMnWUe5Ep%2FuBngdSdtWSgCcLoMm376w%2F%2FEGKhQCpISRVh&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJAYPETQ4U%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194902Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=a1b7d43282a026fc7f363b6114f0dedfe4818daa1a70c06b2a39a211b1eef742" alt="Imagen" />
+</Frame>
+
+* **Asunto:** "Invitación para registrarte en \{tu hotel}".
+* **Remitente:** el nombre de tu hotel, a través de Pxsol, para que no caiga en spam. Si el cliente responde, la respuesta te llega a ti.
+* **Botón "Crear mi cuenta":** abre el registro en tu motor con el correo ya cargado.
+* **Vigencia:** 48 horas. Después el enlace sigue funcionando, pero lleva al inicio de sesión.
+
+***
+
+## Link público y QR
+
+Para acuerdos Específicos (B1). Compartes un enlace o un QR y cada agencia se da de alta sola: se crea su contacto, queda vinculada al acuerdo y recibe un correo de bienvenida.
+
+<Steps>
+  <Step title="1. Activa el link desde la tarjeta del acuerdo">
+    * Toca **Link para sumarse** y enciende **Link activo**.
+    * Si quieres, pon un **vencimiento** (fecha y hora) para ofrecer "súmate por tiempo limitado".
+    * **Copia** el enlace, ábrelo o **descarga el QR** en PNG para imprimirlo.
+
+    El enlace tiene la forma `https://{tu-dominio}/lp.html?agreement=…`. Requiere que tu punto de venta tenga un dominio configurado. **Regenerar link** invalida el enlace y los QR anteriores; las agencias que ya se sumaron siguen en el acuerdo.
+
+    <Frame caption="Fig. 8 — Link para sumarse: estado, agencias sumadas, vencimiento, dirección y QR.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17903657490efd116ee2b8922a08810fcc62cd25cf8.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQDrY9Ix0M0iIfYELU3FwHFI%2BJzUhmAJOwQRH9XNUK%2BwmgIgMMrObq8Ew6gvmBifzyUuHb9V6%2Bd4dQpASySSLldeSQ0qjAMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDDQqXPvKlp8jswl4virgAivJvbdnE3kkZKMJqTDrx4BnRTt6Dy2rgTHWJH54cAoUGaJ%2FISS7teRE5tydzYUkTi7RdEu1hjx4nKp5u51t1oliwrBjoySTOsa1daOd6%2F9CeUmbqhoYkOumT0j4tFFnNQUPYIDXKuYbO0Ff94Yy5yQNHfTKBQLXz88Ka3BaArquMcJPm9xb1ojui9t%2FZDwPZFl8vr8B56NGOlGrAULCo8il75zAm53RCegsRD3Asyti5lJeGX4o5Tvvd3%2BOhKyZovqiZCDCYxZimgEQ2r5nmQ8iVf2TjOyD9X5EISMJWg72qUnYt73FRWfu6gdBbWI%2BHtzmP4VEXb4fOoHNvHfPdJs2dVuAfty7%2Fd5YB%2Fjxz5O2SGuTCNFMN2w1%2FXHZz%2FfPn2qyCYRaBwLkdjKPw%2BFE2NRzHhMvdxkMEtr%2BnU0%2BuvEHCgadHO9RKH082rZEr%2Blal%2F0qTU8S37zq0QQ3FMnFYJcwtaDb1QY6nQGOFLNQYkkeroeeNvg%2FOygQzQ%2FRj4%2BcfNR6Z1evrKAq9BxpUMdLX3qr%2F9t4eooOl5MpVvdCdG%2FtCVQcGnNjxjhFMuUdMYJtOro6FcYbaEfaGwAFNvI34gPYcx8sCCogGtRv8O%2BLhMbDNAW%2FMlubsyefPvm9MHxE6kYi7WylAiT07NEmHtvwSeqAea0C%2FCQe6CPvcoc7DkmUafaDtohN&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJLOBF7T7Y%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194909Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=14c2bb1e52cb650156fd83dc6f2de7d47247f8cb6cb21953295aea2851c290ed" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="2. La agencia completa el formulario">
+    La página muestra tu logo, el nombre del acuerdo, los **descuentos** que ofrece (si no tiene, un texto sobre tarifas preferenciales; nunca recargos ni comisiones) y tus datos de contacto. Son obligatorios el nombre de la agencia, nombre, apellido y correo; país, identificación fiscal y teléfono (con prefijo internacional) son opcionales. Un aviso le pide usar **su propio correo**.
+
+    <Frame caption="Fig. 9 — La página pública, completada por Laura, de Viajes del Sur.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/286458521124481c6b06a68c0e13ac172991886c902.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJIMEYCIQC1CoXA0zsh6FXtg96Pnn7FWe%2Bhf7vfmoXKQFvnBoEP8AIhAMS4Sy%2B7%2FhKhAHww7eMypUua4IJ6Nng4eLhf6XidcnLNKowDCPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDE5MTExMzEyNDAyIgzSAMf2GyFDyBWmp2Uq4AJeXwv%2B8XlXQqz0Z5527dgWO497j23UGO%2FhiLnNnWgMjghTks7b1C7%2BtlaE4xbsfWpNKAn8dcCwLVXSn47mJZoDg%2Fz%2F89wj3%2BOG94dj3DhKus%2BW2rrpTaezM12XgOQkBulHmFq46A%2BT1Dw956NgTYxAAKqaB25ML3XMg%2FNPdpqUWj8Txqgoi2%2FWzaThOJ16kF%2BTaj%2F0S8cJzyHZO%2Btvatq989QlRnLD2fjyz5H0lnC1dl2TT7iVnxCep7%2B8rS2GYd4131bSuxE3f7qvunYzdQYCM5zNDW75qrk10%2BdCIbs4ioDdyoyB4QLmaQcepENjbxFHt1EUAmxO%2FmWlC42r5yzDgX66efqYDJ%2BtM1eZ3VgBn9%2FX1xvHpuIE9KuaBeK40V12S08V37RKWlVC4DedNgu09j1xF%2FZQAKAKvobYNBJWtqgQaosnBQesGcFKwNejliqXfEzMhwhwi0cmA0U9dvafML2g29UGOpwBhuGX0Ruv8Okmwn2jMmJSaXeZwSW3pPCmZxdPDCFYxjK0dkBIjCGRWsOptM%2F%2Fl3sqcI7TysjFNic8dkZ5JfXUnPbw%2BOV6fpHzzPPCnzFp9dFmNfzG%2FoOv6uoBTwniuhYEiqmnuRUXwRZJYYt4IbNIzaCT9CWd4jHzxYlgng7SUglx%2Fip55sA4U8PHqqBJiUqzOB9Lwgj8boBViOHi&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJISXTMJG7%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194917Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=d52da71a6da7f5c003f774badbd6328862e307ad5e3616554095ce76cff69eaa" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="3. Alta automática y bienvenida">
+    Al tocar **Sumarme al convenio** queda dentro del acuerdo, sin aprobación, y recibe un correo con el enlace a tu motor y tus datos de contacto.
+
+    <Frame caption="Fig. 10 — Confirmación en pantalla.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/12532560355c7c327e5984df91878c0f52e6feaad3f.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJGMEQCIGhLkSefdHbqeVFM6ELVVbEL6EsLjr5wJvD%2BhS8yM39jAiAEUciHhyejC9LTRmEhfh01VrMbjYohrOjT3wwbnNbvVSqMAwj1%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDAxOTExMTMxMjQwMiIMtBkCWegJrB48IBhFKuACemoNOrYJXtYM7qWU9wFUhfQ26YC%2FW%2BprZO1e4WwbreW2ImpGG0LehIQUGXG7O1SCGION63ni64w6ShBUal5%2FrI4miYpSKFMoAiJfcTiL4k38Ln%2BV5VemH0IWfulQxXaAQ7djhI7xLTDEfTixIgCos2pcUVd5WFAonmk1ATGno3vLLJlSCarZkZSnRvYnG%2FYqPcBlTrE62H82nNDTwMnUS6AZ%2Ft%2BVklg%2FpmBq2o7f1IX79tjOdpdwTh8AjUHEiYgfut0Cc859d3sVO%2FMqNgLavWrOoGymNPqzACRvBjrVSCeAHNoDoCpsGjeH3BHpV5oiHbVGmKhvvj8JelnDYyQQk8pj44FAflAgT9SKGq317AZLMg4LrLbJvV1yFcZBiIuTGd17TVJP%2BP0sxKFa0UKmIyitNDN5RabaYtEyU4ORAGzgWXGiqNrNFn1MDdIflx5yVDBMTcjyTGSDyznBVWmikDDFoNvVBjqeAbeOnzM3jDNZEi2Uym8w4c2o8ZPGcHUtzDXbp7q0k3d%2FON4jkOwdErn3R7WuQinufQlSI0jQfjNKexrgBB8sw2YGOM41AD%2FKd3CzkRg8ZfaAUcn6N6cM2hq1kBycRDR%2FtOL5ZiGjoll7n28Cj0FZXF%2Ft5gSuAdyiOsLYak9vyVsKNzeD%2BMeIKTZnlMVsg9xrYusv2ZS7bMCcWjG9U0UL&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJEGFU5HOH%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194925Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=fb66c5f14527f99d6f9cbca94b30bb486dac02e8c418bd91bb0201a34019b1fa" alt="Imagen" />
+    </Frame>
+
+    <Frame caption="Fig. 11 — Correo de bienvenida. Las respuestas le llegan al hotel.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/161132919570393cc0e18b23ee537743c635a3c938a.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCICO6RuX1ONBKVRHmt5XAnf4ObJb6tb487eP3l62mQuOSAiEAtp3R4OqL5s0dsHstu4l0w7rgAB3UPH3ZD1FT1w5B2iEqjAMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDHYU2QnY2Z2MyGzgACrgAkVIVq8cSa7wpN83EZLBzsyXFrXDU3QeIEmKCwUwyfImoecI%2FNktVBe7HvUgLTvfIFEnbvnBjNceSuNWtijwjz9ntctTt92T1HONiTSYKIBgqquVJMouscOIdvcVwHp3yrDGCif2%2BFfWuOHZ3fWhnMPuusCoc0oDQbdAqohI5clP8PNKjh89qTKaZJ8VJmuZIfwQNa%2FyOJo06YcqcdDGyZS2ZjV4CRqu5r%2FIS5wgjdec%2BCX%2FpwJUOUA1uGKCkW5Xr0mroqzgsBIndnMFp%2Bn4QyBaluVcOlWPMLo8zZtL6a33dIzWEvu8LHl7G5f%2BK5nwEUL4TE4%2FZzDlNe%2FhugHoNtBUrmIztCsis9thnVd8dUcGTR2fIRlZN277GIIGoSJeFj5ZwH%2FDfGGlwayOGjen5T86Io%2BBbhxSafXcWHxi0yYT84EB1Yjzsjl2aKWHQ6S9mdHG%2Bf7Z4oBZj7PL4Cz2KCUwzaDb1QY6nQG6hGdY1TPRipgXfG3UO80shLqVjeJpP9P9QGIKSC0d86x3aLH1ODb8AIhzjGPBnljR7TxgbqfPPozJv5dk4XZGZ5zn8YKNcW34J1mi8Yn1K7G7lRpeKRRVisGf3YPghFAV8QgO0t%2BlqVgk4zZZJKHujLfRBIqEvAd8jL9Ggdo73Yqsa8cclxBkc7vDLzixbn5aI%2BdPta3TdrfcmKh6&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJJNG7BUU4%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194933Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=db2a19fcbe2c11853cb5f664ffe333c4168ac55a686c1c544c8199471347ce52" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Info>
+  **Protección incluida**
+
+  <br />
+
+  La página tiene defensas contra altas automáticas de bots y límites por hora, y no revela si un correo ya era cliente tuyo. Si el link vence, la página avisa que el convenio terminó y muestra tus datos de contacto.
+</Info>
+
+***
+
+## Sumar a todo el equipo de la agencia
+
+Una agencia suele tener varios agentes que reservan. Con un tilde en el formulario, la persona que se suma puede pedir que **todos los que tengan un correo de su misma empresa** (por ejemplo, `@viajesdelsur.com`) vean la tarifa. El dominio se agrega al acuerdo recién cuando lo confirma desde su correo.
+
+<Steps>
+  <Step title="1. Enciende el ajuste en el link del acuerdo">
+    En **Link para sumarse**, activa **Permitir que la agencia sume a todo su equipo**. Viene apagado: mientras lo esté, el formulario no ofrece la opción y cada agencia se suma solo con su propio correo.
+
+    <Frame caption="Fig. 12 — El ajuste, debajo de Link activo. Apagarlo después no quita los dominios que ya se sumaron.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/19694023591d7775138f0262cb53a3a2e0b172db086.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJGMEQCIH4GkQ%2F6%2BvgY6MCR1BYC7IfdMagdgjFJKN6AnFZgSZfEAiAt%2BubNF4LpldGUYbV8caa9%2F%2FtD2TMkfsC6shEup8dtVCqMAwj0%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDAxOTExMTMxMjQwMiIMtxnfEJ0el%2BTUGZZcKuACqaZDvu0uR%2BA11K6vDcl5flRWwTmURS2pKO3ooPm%2B4KaGVeX5pta2Y0ZSWtYruc9DMzrEwTHGeaQzbKWz9fBIcU%2BBdpC005vRDfsSXJxPxILp12mT%2BM%2B4Pns1LcBK21jZBhanjwgZaYzdxa%2BcMJ63EpJ%2FVieoS16sWM%2B1lJ1zv5rVTNeyi5tdCdXSvst1er6%2BxIGUMGoU8yn5Jyx%2BtWoH24Bv8yTYyDU80U61N1Mj1rjSZSW80hPDyeG4mtN3M5tcJm7dxk3oL%2FddM055XEZPOIYOzFpxmEBtFCBVFOuMWB0epzIrNFazCyUJvWjTrVLdq4NExuKL6PzUn5eIUjmR%2FtX%2BsIaY3e2ZAza2sdBt%2B3iV97%2FNhpICiFgdw8zJ97dys1ZOX%2BFhHlFmuc2VL4ueLWzqs%2FuoFtsBrvmNboVQDUf3BqGoHoCCPgL1p%2FNqFpEV5%2F5dNDD2N1KjFclCcb1vgDDVoNvVBjqeAbhuq65LHoNBK2V1tTJLrS8yWvq1gOLbwq3sPXUuVhFq3Kzgt9v%2BskkS7TwDiy7lPdQwteua7R5BHNyf62muNIFVo78E9Eul1H4lz8RPJaMGlx8t2aSIvQQQQ7%2FDABOYkjQfeSFU2TJ9UNLKL8SAJZ0uFY75hNWeNDTo67rF%2BCcBm5xQSFjcmFVRJbEee%2BM2M687wRh9hFnnpWgA8U96&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJBTIPWTFN%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194941Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=7af4b7b25a9e2facae8552c50fc3832b7286e4a120857a3165378668620b820b" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="2. La agencia marca 'Sumar a todo mi equipo'">
+    La opción aparece sola cuando la agencia escribe un correo con dominio propio, y muestra ese dominio: **sale de su correo, no se escribe a mano**. Con una casilla gratuita (gmail, hotmail, yahoo y sus variantes por país) o de un proveedor de internet, la opción no aparece.
+
+    <Frame caption="Fig. 13 — Laura marca Sumar a todo mi equipo (@viajesdelsur.com) antes de enviar.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/161132920924c18c0bafe9cf89c292cf01f173f3f60.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQC08tPpEXDFxG0Hkvxgul6mChgQEN21OGbbCcV8LARxuwIgBLcZ789kkEABvKWb1h35YdwaNQDqsNot0GgUDlKa2kcqjAMI9P%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDHQCbhp%2Fapu%2BXQiu%2BirgAp16lJ7MnyDe7%2BnxNCtsmWLfUnU8sxeSNcXsSExjhhjn5G04EGlAQfk0HI%2FhrR5KPtXOSIM%2Bxw3ZYbKfZvooodH4lNwvmVSPS9n3JgbGOxzLoC66P9p1VBnkP%2FnNIce%2BdvkZQfPWUgCDlQfCL2nefV1461ThSqX63V2cIa74RbzMoMWYvIHCNvBTKfGSWr6jXqfJh23JceKa66OstlYElSiEQB8BNdizX6xoCm8ZQGoL1mDdBcORqe9MRP58Lf4qF32axF4zK0lo%2FtQrd%2Bkhp0lztRrBdogETD%2FNRwViPvSXZ%2FVexxMUnuOijAgW0ok1SkVBOhvNZaS8uZ0RrjhR4wVDwRA%2FQLVO6XfKqzKxi%2FffkvizFPvvMNbPC39QSJA8TMRYx1F0Z4OGI8hSiAiyN4OQ3MpcR%2FFu9yIPK7jm6xmqPWTx6IEEMaDB4vitqlVYCt%2FqKRTBtukc2OmAWVhPyCow3KDb1QY6nQGkNYz8BsUh%2F72AIn7SiZhUuZALv6oQ0StDAZLRwfh6T4yL8sI7SlRIz2zNA5tdd6OIIDCwk3rbAjIQFwJG0K%2BlTHYRZnIqhS8viHU0%2Bl0n4dPejj%2FHz3rPmO0gxBtnejfsucR5r8Sn4EHjH6cftX6A8jgFGgnybVwyW3YZTDmnr8%2BmSbGI%2FMY9jo5X3mcQ%2BqjULrLwpEmmeEwwEenU&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJCCSHVWZN%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194948Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=3b346ec0e4d0aa87acae70356c47731d129343b74a0a6acf745da10c6a1ce30a" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="3. Se suma al instante; el equipo, al confirmar">
+    Laura ya forma parte del acuerdo con su correo. La pantalla le avisa que, para sumar a su equipo, tiene que abrir el enlace que le mandamos por correo.
+
+    <Frame caption="Fig. 14 — Confirmación del alta, con el aviso del paso que falta para el equipo.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/895182898577e78bcb0feaff77d2b23b71073d44b1.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJIMEYCIQDYbFc9p0aVI6ZttZhLrAt1Bax4QbPPhIrz4zyef%2BAi%2BgIhANemqJUsizwQz%2BgdxSMhhyCMiVQLxAi7aLJeep5wSz0XKowDCPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDE5MTExMzEyNDAyIgwUoxlqjYW60sKhl1gq4AJKPTaRw0duYjNYAZ1scxDMWs1xMmpqqxfuVOvdEfH08G7BI%2F66UCyQ%2BgWdEjANWt9e1l6YTYsZtmlN8UyM3JywHVBmF9v%2Fg%2BKITo%2F6lW0vmCyqD8%2Fz1LQcbUg56TyWmuv9jwOIgx0VTsKOLeQGKC0b5fi32%2FN%2FCjvDGr9OskLNZUV%2BmCT26aU8pOwjWl%2Bk2uCc6rWaT1WfdXExnQ5sUWOX6%2BkLL9%2FifxhyhVQxTkpAcibXsy9LnGuBPvry61uDXoN4%2BxGxDLidnw7MEl%2B2xfm79ygFwmcIMip%2BRljHL2Dhn9S2v5Ly8Ywy3KDqwxTXONlTic4TI4v0zzVFDXiQLogee8oVyh0WjTTSGvebvPwyZ%2Fp7Jbw7sYUnlkOYziRsbqGNEnBInVq0LxDDH7FSkiuVVgHt2oUEliZyN6%2B0eTTxn%2FHA3%2FHjJsEkDCANPCLhepsBtUlUHliwVLqVKYZVxjQOMOWg29UGOpwB3WFvJ5eMIzUTKadvgedwERtaU7dqBjlZdhYPsVDsleYG26snahFEbMMxcGgKPuR0SZmtUTEG%2FmUUUyHeXTHbYNqa%2B0lGyf%2Bz1TRjDLjlHuZrj58dzytYX0AVd%2BAJoMUqDTEkuFdi%2BqyLrNy0PEITFserok1rbhewPgtuhxKDDonTr5GaA0NXHLj8DGbrBPJS2nWAnbxrkixWz0HD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJFLZBZUX7%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T194957Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=e9be203d4472534943fcc32f8f3da5f31ccc9cbe4ac5ab55c9d1db7bb4d33bb1" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="4. Confirma desde el correo de bienvenida">
+    El mismo correo de bienvenida trae un bloque **Suma a todo tu equipo** con el botón **Confirmar @dominio**. El enlace vale **7 días**; hasta que lo abra, la tarifa aplica solo a su correo. Así, el dominio lo suma alguien que de verdad usa una casilla de esa empresa.
+
+    <Frame caption="Fig. 15 — El correo de bienvenida con el botón de confirmación.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/250651212700b747c57b41ba1a3508026aa915fffff.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJHMEUCIQCqMwGG4MtSTa6Fsu7sp2AN695dkMhwfLzpshgVIV%2FnhAIgDm9wl2FU2rczdJyWLRJP%2BgILb5GA%2Ba08yYjEjnUI3fMqjAMI9f%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwwMTkxMTEzMTI0MDIiDBBM6fc6vFSrVe2Y4yrgArh6ZzpAab5Se2Y7IErNVk4VB%2F1UOq8dpS%2BApKmhVW%2B1o1j0EGHu3v1e2xKq41R%2BbLKFm%2B%2BnL5kmZooOGLQ5LddpcKIiaiilJJK1aiAOKEa5uHGMZJtQ%2FHB3BfLolHfn5sAf8v%2BdH0zSUgXZKKSYHl86fNYg7i0vgo0MZZYzhI2bCn79PkwctRzzYy2uW2xHjA%2Bqn7%2F8CAl56wHU8oj3Jsq28jiJ0RmUfcCnnD9mKkLoU%2FDdnULELpNlJZR2rekccNE8s0Ozms8J4G4MIiK6E8luGYqO6lhuknJacvZnsqk8SPg79gQc%2BspQ%2FyKe1D5cZeik0n6eqMpK0rKBt0W%2FLTxanpW2LpHY7j%2BB5A5QYhLlh6BulFXkF2r0jTaSFAYFe22q4ZYtk9BuMKmW3vF6Z2bgShAkUsbVmd0V0%2BpFdKsZta987wroxe9wSPJnJz8PUFbNq4baqDxtv2uPz3qWeIEw7aDb1QY6nQGc29FrywuWSYK9uFAFHbLZi6wSLCIGjeP6%2Fg%2BFtKPqDFO0S%2Fs5MBDFvB2pz7baLoYfsBJQXhWvDw6kRRJaXYeFHZSTE%2BHnQrHITTTBlDo54ydapLwJN%2Fl8dC5Ey%2B5bJd80FhqKXnytmxxw%2FI07GNIBvGUEy0AdC5AEb4qeUoVZCa5nJGtPpiA0eac7YkdGCHWxac0xLqoHePGAOpmI&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJCZJXGD3U%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T195005Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=377cc21fb21b980cbd56d23bfc077c16ce1a73994eb67136ce581e172916d49d" alt="Imagen" />
+    </Frame>
+
+    <Frame caption="Fig. 16 — Al tocar el botón: el equipo ya forma parte. Abrir el enlace dos veces no da error.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17903658130e8592df81f3ed8b86f8e740816954844.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJIMEYCIQCYAZeRtQjLcuUOjaJzB7Sy609b8hi3yTKU9UOK%2BONxDQIhANXL8wxxnvtKnRAk%2BlNJ9QoBRyqSiuyoD%2B%2BXEm1pUDOXKowDCPX%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDE5MTExMzEyNDAyIgxgkZbI%2FSGvoxXdylkq4AL4iDpC76Tk6C7Md%2B7e4dtyZSnPly0Zn7lJdRi7gfMhMxKiDwmOmYMEY4UP7Nq%2BcyooYZX7pKUk%2FidLXVuqyWmPzCAHz3UDZE0%2FZZTiCLuuMImkodbPvq32mRHtXxFAFxdtMSPs32VL6Ov1FALKEDZGHdduPy9%2FjZO%2BAVcFVMe4lOikFacDkt%2BIvmaqfjCEEfDQWEteMrx6%2BReSOWtucM2I9Au97GTZXj1QPePrrFfXI0VB4GNpPHBiv6MVjwckuYtCkdBdeTTrY2b%2BSM0PKWF4V7bzkeA9nX6aUPK5CJIcM5voAR10BQxr15NZhcnTAm4ZRlseCnqM0R48PzlwYxMhDf11s%2BSLgae%2BEt4oS15K8T9x%2BNjHjHvOnbJc0RNGYAc%2B82ZJdtAwMMvpUU10BjG89hfqrXVrwaMlzzZyUPQxvMwrFYGcKWlY%2BFWNEjHTOdrYvrVJS87uFkUJSLCyYBCZMPWg29UGOpwBtNxaLeoxzOyBK6%2BgTZ%2BtWLsXEbCDM%2F9JSN5DpoxWXtifOoWjA56m548LT9SfnQ8XUv%2B4ZfRpmgR9jLOY8SxVtesnARibl2K%2BDs92ctM03kd0PsN%2FaUjmQpTUaxvYlIUxSe6ys47wp8mvx5lszQrlXH6iARQ4FDg1WzE9tzWcwPAFdEXjl5NZdJUNCFjXNcUlRsfrH%2FSioaYFkBzt&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJEOTZOCCZ%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T195013Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=15c1b5d256f8efacd33c8035627671bcd0dd7d8b4bb8d9621b3c7db3ec670f6f" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="5. Tu equipo de reservas lo ve en el acuerdo">
+    El dominio queda en **Editar → Dominios de email**, junto a los que cargues tú, y en **Link para sumarse** ves qué agencia lo sumó y cuándo. Desde ese momento, cualquier agente que inicie sesión en tu motor con un correo `@viajesdelsur.com` ve la tarifa, sin darse de alta en el formulario. Para quitarlo, tócalo en **Dominios de email**: se quita al instante y deja de aplicar en la búsqueda siguiente.
+
+    <Frame caption="Fig. 17 — Qué agencia sumó cada dominio y cuándo.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/179036582109bbcf9501415db02186c5da90cff93b4.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJIMEYCIQDK45IqF1H%2BKBgIJ%2B2bf95DfXgi%2F%2BQI1Zj6q9fKK0WNTwIhAKEoQMkS41x%2BkzXH16iXHWNKWZTBu41gqkxESvHoeR1RKowDCPT%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMMDE5MTExMzEyNDAyIgwXEK%2BIoo8ddW1b25Yq4ALNcmF6s6spAwIWeg3OJpABpDW29fRJJ5RgTY4vp1hjm4i9HjH1SjlQvewRp2089Q5bwBy9yPRU79qQNngjpaJpoEHQ2rrnHWjF0vWNSATTfZlXcMAIpdUbdO13DGAxDSrywGYdOVgu8jVSnHJewcYGDEUb9n0nnAwhincFA71Zrzg4ROjY2vdrMWtQGpaskPmhDC0BImpuHCjkO4cq7TV0qBwPDZVjmAgs8NsdwCIkjXlAOXHnxj7hM3K9pFxEXAtaTRok8Ri8byh16CdzbnvtmIEt0o4TCxsJ0SDnyZf%2Fg%2Fk2ThaSa%2B3aBpzrOeZJKDF5Kp%2FUqFa3ppaUQPPZAhY7ckdrfOQ6BAMxfiMorgFSDmLUeMzOWu0I0vNJ4%2Bg4jZw0w7TeiyilzPu94E3dtxtcfrl95V6p3o5eGgs1q54ha2nyoB%2FnsVqbWHwnP8HWZU1p%2Fvz5viSLIkAwDdOMnHzeMP2g29UGOpwBSDe3MAxELzajwAjrBp%2FSMQempBCYox1nQus1EyeQayTtLLALJDPsmZHzLOqGylzt179HY5seQS3Vnqc06zUVQrG%2BZ%2Brxaapab9Fz6Wpbke9gRMGsyrIBHHa0R53K7l0zoVPd62An6EReQ7RXUS31iqKiPJFTdYoljT%2B9Pe6%2BqhDpkDzzEt551PBWKiY7px87Y5qj%2F8BrVrlr3El0&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJP72UA4HO%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T195021Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=80c3dba6d3dba80cd7d1bff0634efa512873b5b07f50af8ff0623974f4dbcdcf" alt="Imagen" />
+    </Frame>
+
+    <Frame caption="Fig. 18 — El dominio en Dominios de email; la cruz lo quita.">
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2685548742067e63b3a85292f656b9da31ea1e1b412.jpg?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECwaCXVzLXdlc3QtMiJGMEQCIDqWPj1HlFsndlIm6CYvgd2ByBHTyeqxihRQ4%2Bf1KxQzAiBBb20Gmo5y6igjStRwrOgRn4rXC4SZakmxFwZN1w4e1SqMAwj1%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDAxOTExMTMxMjQwMiIMrO%2BqIAqJQydwi80nKuACjsZqZe0Lk%2BNo7%2Fyi1QicGgWp%2BcGtj6SsH%2FjmdAOAXnQCF3R6HT2BFmLbqC610ioqzovC0Qz5DpiV04WcjAppGlR0JAFSQme%2BwJWqwXwUC%2BrGxhahGbcaZFVJAL0AO6XThqlVeq86cg9u%2BAfvyPm5aQjREbP41Nr7HxTAxIs45vGSQrK8vVMtqQ5ouIbX%2F%2F5vVJcIQUMWe6WpSX3s8QVyJWqD7a1jtzShvxKqo9xSxgQuPueU9o9sb6lIRj4yBt1402sV2IF5uPmwWTV2E6q19Ir1AlVah5K0V%2B1xDEbbQp%2FYxZ9cgiJM%2B%2BYI76YJu9u3N3ByoVqDoOmshQZrR2H%2BYs5kVIApuhy3mS%2Bp%2BApHF3simhwRoXOp2fdY5N1SorC94LTGImhRsFKyJ%2BVPy%2Bl71gp22YBSo6X2RYJo%2FcmnQr5GPSS1p08Q5vh3%2FvS7ObY%2FUj8dHWY67m9gC3eBMwoVsjCFodvVBjqeAZ1f9HDGCOZA6FW3lG6xPHrw9sKJnZqW469LaG7RSauG0AHtLUkioiOYy9QAKC%2BqvCd9dTnFPYB%2Fnw6MFFHA8izXlqfOjmoZrzqkYgxboHgeOEkNI9uFTif786tqgll6b7B4lGihNNJGdW1YYMBFRp86b0cPwa%2Fslc8aQCC%2FYvOsCIEHemNryu488%2BrmDlv5W9Vepje3uhTjts9f3PN4&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=ASIAQI4Y7PQJDMQJPLY3%2F20260925%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260925T195029Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=a1506e2bfa3ad75f85e2b84f1540f672ccc1d90fae27dddb46474c95adb678de" alt="Imagen" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Tip>
+  **Reglas que cuidan tu tarifa**
+
+  <br />
+
+  El dominio siempre sale del correo de la agencia y se activa solo con la confirmación. Las casillas gratuitas nunca se suman. Si otro acuerdo activo del mismo punto de venta ya usa ese dominio, no se suma, y la página no le dice a la agencia cuál es. Además, cada correo puede pedirlo una vez por día.
+</Tip>
+
+<Warning>
+  **Antes de encenderlo**
+
+  <br />
+
+  Un dominio le da la tarifa a **todas** las personas con correo de esa empresa. Enciéndelo en acuerdos pensados para agencias o empresas, y revisa de vez en cuando los **Dominios sumados por agencias**.
+</Warning>
+
+***
+
+## Preguntas frecuentes
+
+<AccordionGroup>
+  <Accordion title="Mi cliente no ve la tarifa del convenio">
+    Revisa, en este orden: que haya iniciado sesión (escribir el correo en el buscador no alcanza); que lo haya hecho con el mismo correo que cargaste o con uno del dominio del acuerdo; y que el acuerdo esté en estado **Conectado**.
+  </Accordion>
+
+  <Accordion title="¿Tengo que vincular a cada empleado de una empresa?">
+    No. Agrega el dominio de la empresa (por ejemplo `acme.com`) y todos los que inicien sesión con ese dominio ven la tarifa.
+  </Accordion>
+
+  <Accordion title="¿Puedo cargar gmail.com u hotmail.com como dominio?">
+    No: le daría la tarifa a cualquier persona con esa casilla. Los dominios públicos se rechazan. En esos casos, vincula el contacto con su correo exacto.
+  </Accordion>
+
+  <Accordion title="Desvinculé un contacto y sigue viendo la tarifa">
+    Su correo pertenece a un dominio del acuerdo, o hay otra ficha de contacto con el mismo correo que sigue vinculada. La ventana de contactos te avisa cuando pasa.
+  </Accordion>
+
+  <Accordion title="La agencia se sumó con otro correo">
+    La tarifa se reconoce por el correo con el que inicia sesión. Si usa una dirección distinta, no la ve: puede volver a sumarse con el correo correcto, o puedes vincular ese correo tú desde sus contactos.
+  </Accordion>
+
+  <Accordion title="Una agencia marcó 'Sumar a todo mi equipo' y el dominio no aparece">
+    Todavía no abrió el enlace de confirmación del correo de bienvenida (vale 7 días), o ese dominio ya lo usa otro acuerdo activo del mismo punto de venta. Con casillas gratuitas la opción ni siquiera se ofrece.
+  </Accordion>
+
+  <Accordion title="¿Cómo le saco la tarifa a un dominio que sumó una agencia?">
+    En **Editar → Dominios de email**, toca la cruz del dominio. Apagar el ajuste en **Link para sumarse** solo evita pedidos nuevos: no quita los dominios ya sumados.
+  </Accordion>
+
+  <Accordion title="Venció el enlace para confirmar el dominio">
+    La agencia puede volver a sumarse desde el link y marcar el tilde otra vez (una vez por día por correo), o puedes cargar el dominio tú en **Dominios de email**.
+  </Accordion>
+
+  <Accordion title="El link dice que el convenio terminó">
+    Venció la fecha que configuraste. Cambia o quita el vencimiento en **Link para sumarse** para volver a abrirlo.
+  </Accordion>
+
+  <Accordion title="Regeneré el link y los QR impresos dejaron de andar">
+    Es lo esperado: regenerar invalida el enlace anterior. Úsalo si el link circuló donde no debía; las agencias ya sumadas siguen en el acuerdo.
+  </Accordion>
+
+  <Accordion title="El link no muestra una dirección">
+    Tu punto de venta no tiene dominio configurado. Configúralo o consulta con soporte.
+  </Accordion>
+</AccordionGroup>
+
+***
+
+*Guía de Acuerdos · Pxsol · septiembre de 2026 · actualizada el 24/09/2026 con "Sumar a todo el equipo".*
