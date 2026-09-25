@@ -782,7 +782,8 @@
           {
             "group": "Tarifas y disponibilidad",
             "pages": [
-              "tarifasydisponibilidad/como_aplicar_una_restriccion_para_el_motor_de_reservas"
+              "tarifasydisponibilidad/como_aplicar_una_restriccion_para_el_motor_de_reservas",
+              "motordereservasv10/acuerdos_tarifas_de_convenio_para_quien_corresponde"
             ]
           },
           {
