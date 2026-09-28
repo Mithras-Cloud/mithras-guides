@@ -581,9 +581,7 @@
           },
           {
             "group": "Central De Reservas",
-            "pages": [
-              "central_de_reservas/solicitar_acuerdos__central_de_reservas"
-            ]
+            "pages": []
           },
           {
             "group": "Operaciones",
@@ -769,9 +767,7 @@
           },
           {
             "group": "Central de Reservas",
-            "pages": [
-              "central_de_reservas/solicitar_acuerdos__central_de_reservas"
-            ]
+            "pages": []
           },
           {
             "group": "Marca blanca",
