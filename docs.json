@@ -469,7 +469,8 @@
               "pms/plano_de_ocupacion",
               "pms/integracion_forze",
               "crm/como_importar_reservas_al_sistema",
-              "pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva"
+              "pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva",
+              "pms/link_de_confirmacion_de_reserva"
             ]
           },
           {
