@@ -1,43 +1,87 @@
 ---
-title: "Link de Confirmación de Reserva"
-description: "La página que le muestra al huésped lo que hay realmente en su reserva hoy: habitaciones, huéspedes, importes y pagos. Cómo funciona, cómo se protege y cómo leer cada dato."
+lang: es
 ---
 
+<div style={{borderRadius:'20px',overflow:'hidden',border:'1px solid #e2e8f0',background:'#fff',boxShadow:'0 20px 60px rgba(15,23,42,.12)',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',margin:'0 0 24px'}}>
+  <div style={{background:'linear-gradient(135deg,#0f3d36,#175E52 60%,#2f7d6f)',color:'#fff',padding:'46px 40px'}}>
+    <div style={{fontSize:'12px',letterSpacing:'.18em',textTransform:'uppercase',color:'#a7d4c8',fontWeight:700}}>Mithras · Guía de uso</div>
+    <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Link de Confirmación de Reserva</div>
+    <div style={{fontSize:'16px',color:'#d7ece6',maxWidth:'600px'}}>La página que le muestra al huésped lo que hay <b>realmente</b> en su reserva hoy: habitaciones, huéspedes, importes y pagos. Cómo funciona, cómo se protege y cómo leer cada dato.</div>
+    <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Resumen vivo</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Token de acceso</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Habitación por habitación</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Resumen económico</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Consumos y pagos</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Imprimir</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Español · English · Português</span>
+    </div>
+  </div>
+  <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Septiembre 2026</b></div>
+</div>
 
-## Qué es
+## Contenido
+
+1. Qué es
+2. Confirmación vs. presupuesto original
+3. Cómo le llega el link al huésped
+4. El token: la llave del link
+5. Quién puede abrirlo y hasta cuándo
+6. "El enlace no es válido"
+7. Recorrido por la página
+8. Cabecera del hotel
+9. Titular
+10. Estadía
+11. Habitaciones
+12. Resumen económico
+13. Consumos y extras
+14. Pagos registrados
+15. Política de cancelación
+16. Pie de página
+17. Siempre actualizada
+18. Idiomas
+19. Imprimir o guardar en PDF
+20. Privacidad: qué nunca muestra
+21. Preguntas frecuentes
+
+---
+
+## 1. Qué es
 
 El **link de confirmación de reserva** abre una página pública, en la web del hotel, donde el huésped ve **el estado actual de su reserva**: quién es el titular, las fechas, cada habitación con sus huéspedes y camas, el detalle de los importes, lo que ya pagó, lo que le falta pagar y la política de cancelación.
 
 La clave es que es un **resumen vivo**: no es una foto del momento en que se hizo la reserva. Cada vez que el huésped abre el link, la página le pide los datos al sistema **en ese momento**. Si en el PMS cambiaste una habitación, agregaste un huésped, cargaste un consumo o registraste un pago, el huésped lo ve la próxima vez que abra o recargue la página.
 
-<Note>
-  **💡 En una frase**
-  
-  El presupuesto dice **lo que el huésped compró**. La confirmación dice **lo que hay hoy en su reserva**.
-</Note>
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 En una frase</h4>
+  <p style={{margin:'6px 0'}}>El presupuesto dice <b>lo que el huésped compró</b>. La confirmación dice <b>lo que hay hoy en su reserva</b>.</p>
+</div>
 
 La página toma el **color, el logo y los datos de contacto** de tu establecimiento, así que el huésped la reconoce como tuya. Se ve bien en el celular y se puede imprimir.
 
 ---
 
-## Confirmación vs. presupuesto original
+## 2. Confirmación vs. presupuesto original
 
 Hay dos páginas distintas que el huésped puede recibir. Conviene no confundirlas:
 
-| Tema                      | Presupuesto original                     | Confirmación de reserva                                                  |
-| ------------------------- | ---------------------------------------- | ------------------------------------------------------------------------ |
-| **Qué muestra**           | Lo que se cotizó y compró, tal cual      | El estado actual de la reserva **VIVO**                                  |
-| **Cambia si editás la reserva** | No                                       | Sí, al recargar                                                          |
-| **Habitaciones y huéspedes** | Las categorías cotizadas                 | Cada habitación asignada, con sus huéspedes y camas                      |
-| **Consumos y pagos**      | —                                        | Sí, con saldo pendiente                                                  |
-| **Sirve para una consulta** | Sí, si tiene presupuesto                 | No, solo para reservas                                                   |
-| **Cómo se llega**         | "Copiar link presupuesto original"       | "Copiar link confirmación de reserva"                                    |
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Tema</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Presupuesto original</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Confirmación de reserva</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Qué muestra</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Lo que se cotizó y compró, tal cual</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El estado actual de la reserva <span style={{fontSize:'10px',fontWeight:800,padding:'2px 8px',borderRadius:'999px',background:'#dcfce7',color:'#15803d',border:'1px solid #bbf7d0'}}>VIVO</span></td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cambia si editás la reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, al recargar</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Habitaciones y huéspedes</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las categorías cotizadas</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cada habitación asignada, con sus huéspedes y camas</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Consumos y pagos</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>—</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, con saldo pendiente</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sirve para una consulta</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, si tiene presupuesto</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No, solo para reservas</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cómo se llega</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>"Copiar link presupuesto original"</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>"Copiar link confirmación de reserva"</td></tr>
+  </tbody>
+</table>
 
-Desde la confirmación el huésped puede abrir el presupuesto con el botón **"Ver presupuesto original"** (ver sección 17), así que con mandar la confirmación alcanza.
+Desde la confirmación el huésped puede abrir el presupuesto con el botón **"Ver presupuesto original"** (ver sección 16), así que con mandar la confirmación alcanza.
 
 ---
 
-## Cómo le llega el link al huésped
+## 3. Cómo le llega el link al huésped
 
 Hay dos caminos. En los dos, **el sistema arma el link completo por vos**, token incluido.
 
@@ -45,21 +89,14 @@ Hay dos caminos. En los dos, **el sistema arma el link completo por vos**, token
 
 En la ficha de la reserva, dentro de los **links para compartir**, vas a ver **"Copiar link confirmación de reserva"**. Al tocarlo se copia el link listo para pegar en un correo, un WhatsApp o un chat.
 
-<Card title="🔗 Links para compartir · Reserva #11845210">
-  <div style={{backgroundColor: '#f0f9ff', padding: '9px 13px', borderRadius: '8px', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
-    <span>**Copiar link confirmación de reserva**</span>
-    <Check>Copiado</Check>
-  </div>
-  <div style={{padding: '9px 13px', color: '#334155'}}>Copiar link presupuesto original</div>
-  <div style={{padding: '9px 13px', color: '#334155'}}>Copiar link web check-in</div>
-  <div style={{padding: '9px 13px', color: '#334155'}}>Copiar link encuesta</div>
-</Card>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#fbfdff',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{maxWidth:'420px',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',boxShadow:'0 12px 30px rgba(0,0,0,.08)',overflow:'hidden',fontSize:'13px'}}><div style={{padding:'12px 14px',borderBottom:'1px solid #e2e8f0',fontWeight:700,color:'#0f172a'}}>🔗 Links para compartir · Reserva #11845210</div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#0f172a',borderBottom:'1px solid #f1f5f9',background:'#f0f9ff',boxShadow:'inset 3px 0 0 #0ea5e9',fontWeight:700}}><span style={{}}>Copiar link confirmación de reserva</span><span style={{fontSize:'10.5px',fontWeight:800,padding:'2px 9px',borderRadius:'999px',background:'#dcfce7',color:'#15803d',border:'1px solid #bbf7d0'}}>✓ Copiado</span></div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#334155',borderBottom:'1px solid #f1f5f9'}}><span style={{}}>Copiar link presupuesto original</span></div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#334155',borderBottom:'1px solid #f1f5f9'}}><span style={{}}>Copiar link web check-in</span></div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#334155'}}><span style={{}}>Copiar link encuesta</span></div></div></div></div>
+</div>
 
-<Note>
-El link se copia con el token incluido. Pegalo tal cual: no hace falta agregarle nada.
-</Note>
+*El link se copia con el token incluido. Pegalo tal cual: no hace falta agregarle nada.*
 
-El botón **solo aparece cuando el link va a funcionar**. Si no lo ves, revisá la sección de preguntas frecuentes.
+El botón **solo aparece cuando el link va a funcionar**. Si no lo ves, revisá la sección 21.
 
 ### En los correos: la variable `[var_confirmation_v2]`
 
@@ -67,180 +104,192 @@ En las **plantillas de correo** podés insertar la variable **`[var_confirmation
 
 ### Cómo se ve el link
 
-text
-https://www.hotelcostaazul.com/neo_checkout/gracias_v2.php?CID=11845210&token=4f9c1e7a0b3d58c2e6a91f04d7b8c3e25a60f1d9b4c7e2a8f03d6b19c5e7a2d4
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#0f172a',color:'#e2e8f0',padding:'14px 16px',margin:'14px 0 4px',fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12.5px',overflowWrap:'anywhere',lineHeight:1.7}}>
+  <span style={{color:'#94a3b8'}}>https://</span><span style={{color:'#fbbf24'}}>www.hotelcostaazul.com</span><span style={{color:'#94a3b8'}}>/neo_checkout/gracias_v2.php</span><span style={{color:'#94a3b8'}}>?CID=</span><span style={{color:'#34d399'}}>11845210</span><span style={{color:'#94a3b8'}}>&token=</span><span style={{color:'#f472b6'}}>4f9c1e7a0b3d58c2e6a91f04d7b8c3e25a60f1d9b4c7e2a8f03d6b19c5e7a2d4</span>
+</div>
 
-
-| Parte                    | Qué es                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------ |
-| **Dominio**              | La web de tu establecimiento (la del punto de venta). El huésped nunca sale de tu sitio.         |
-| **CID**                  | El número de la reserva. Es el que aparece como "Reserva #…" en la página.                        |
-| **token**                | La llave secreta de esta reserva: 64 caracteres. Sin ella, o con una que no corresponde, la página no muestra nada. |
-| **lng** (opcional)       | Fuerza el idioma: `&lng=en` o `&lng=pt`. Ver sección de idiomas.                                 |
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Parte</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué es</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#b45309',fontWeight:700}}>Dominio</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La web de tu establecimiento (la del punto de venta). El huésped nunca sale de tu sitio.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#047857',fontWeight:700}}>CID</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El número de la reserva. Es el que aparece como "Reserva #…" en la página.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#be185d',fontWeight:700}}>token</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La llave secreta de esta reserva: 64 caracteres. Sin ella, o con una que no corresponde, la página no muestra nada.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>lng <span style={{color:'#64748b'}}>(opcional)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Fuerza el idioma: <span style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12px',background:'#f1f5f9',borderRadius:'4px',padding:'1px 5px'}}>&lng=en</span> o <span style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12px',background:'#f1f5f9',borderRadius:'4px',padding:'1px 5px'}}>&lng=pt</span>. Ver sección 18.</td></tr>
+  </tbody>
+</table>
 
 ---
 
-## El token: la llave del link
+## 4. El token: la llave del link
 
 El número de reserva es fácil de adivinar: son correlativos. Si alcanzara con cambiar `CID=11845210` por `CID=11845211` para ver otra reserva, cualquiera podría ver nombres, correos, teléfonos e importes de otros huéspedes. **El token es lo que lo impide.**
 
-<CardGroup cols={3}>
-  <Card title="✅ CID + token correcto" icon="check-circle">
-    La página muestra la reserva.
-    text
-    ?CID=11845210&token=4f9c…a2d4
-    
-  </Card>
-  <Card title="⛔ Otro CID, mismo token" icon="x-circle">
-    "El enlace no es válido". El token es de **una sola** reserva.
-    text
-    ?CID=11845211&token=4f9c…a2d4
-    
-  </Card>
-  <Card title="⛔ Sin token o token cortado" icon="x-circle">
-    "El enlace no es válido". Tiene que coincidir carácter por carácter.
-    text
-    ?CID=11845210
-    
-  </Card>
-</CardGroup>
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #bbf7d0',background:'#f0fdf4',borderRadius:'12px',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13px',color:'#15803d',marginBottom:'6px'}}>✅ CID + token correcto</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>La página muestra la reserva.</div>
+    <div style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'11px',color:'#64748b',marginTop:'8px',overflowWrap:'anywhere'}}>?CID=11845210&token=4f9c…a2d4</div>
+  </div>
+  <div style={{border:'1px solid #fecaca',background:'#fef2f2',borderRadius:'12px',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13px',color:'#b91c1c',marginBottom:'6px'}}>⛔ Otro CID, mismo token</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>"El enlace no es válido". El token es de <b>una sola</b> reserva.</div>
+    <div style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'11px',color:'#64748b',marginTop:'8px',overflowWrap:'anywhere'}}>?CID=11845211&token=4f9c…a2d4</div>
+  </div>
+  <div style={{border:'1px solid #fecaca',background:'#fef2f2',borderRadius:'12px',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13px',color:'#b91c1c',marginBottom:'6px'}}>⛔ Sin token o token cortado</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>"El enlace no es válido". Tiene que coincidir carácter por carácter.</div>
+    <div style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'11px',color:'#64748b',marginTop:'8px',overflowWrap:'anywhere'}}>?CID=11845210</div>
+  </div>
+</div>
 
 ### Cómo es el token
 
--   **Es aleatorio y largo**: 64 caracteres hexadecimales (32 bytes al azar). No se puede adivinar ni deducir del número de reserva.
--   **Es único por reserva** y **no cambia**: el link que mandaste hoy sigue siendo el mismo mañana, aunque edites la reserva.
--   **Se compara exacto**, letra por letra. Si al pegarlo se perdió un carácter (pasa en algunos chats que cortan links largos), el link deja de funcionar.
+- **Es aleatorio y largo**: 64 caracteres generados al azar. No se puede adivinar ni deducir del número de reserva.
+- **Es único por reserva** y **no cambia**: el link que mandaste hoy sigue siendo el mismo mañana, aunque edites la reserva.
+- **Se compara exacto**, letra por letra. Si al pegarlo se perdió un carácter (pasa en algunos chats que cortan links largos), el link deja de funcionar.
 
 ### Cuándo se crea
 
 No tenés que hacer nada: el token se genera solo.
 
-| Cómo entró la reserva                                              | Cuándo recibe su token                                        |
-| ------------------------------------------------------------------ | ------------------------------------------------------------- |
-| Motor de reservas (compra online)                                  | En el momento de la compra                                    |
-| Cargada en el PMS (mostrador, consulta, presupuestar, inbox, tickets) | Al crearla                                                    |
-| Reserva vieja que todavía no tenía                                 | La primera vez que alguien pide el link para compartirlo      |
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cómo entró la reserva</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cuándo recibe su token</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Motor de reservas (compra online)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>En el momento de la compra</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cargada en el PMS (mostrador, consulta, presupuestar, inbox, tickets)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Al crearla</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Reserva vieja que todavía no tenía</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La primera vez que alguien pide el link para compartirlo</td></tr>
+  </tbody>
+</table>
 
-<Warning>
-  **Tratalo como una contraseña**
-  
-  Quien tenga el link completo ve la reserva. Mandalo **solo al titular** (o a quien él indique), no lo publiques y no lo pegues en canales abiertos. **Nunca armes el link a mano** cambiando el número: usá siempre "Copiar link" o la variable del correo.
-</Warning>
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #fde68a',background:'#fffbeb',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>⚠️ Tratalo como una contraseña</h4>
+  <p style={{margin:'6px 0'}}>Quien tenga el link completo ve la reserva. Mandalo <b>solo al titular</b> (o a quien él indique), no lo publiques y no lo pegues en canales abiertos. <b>Nunca armes el link a mano</b> cambiando el número: usá siempre "Copiar link" o la variable del correo.</p>
+</div>
 
 ---
 
-## Quién puede abrirlo y hasta cuándo
+## 5. Quién puede abrirlo y hasta cuándo
 
 Tener el token no alcanza: además, la reserva tiene que estar en un estado donde tenga sentido confirmarla. Cada vez que alguien abre el link, el sistema revisa **cuatro cosas, en este orden**:
 
-<Steps>
-    <Step title="¿La reserva existe?">
-        Un número inexistente o una reserva eliminada no se muestran.
-    </Step>
-    <Step title="¿Es una reserva activa?">
-        Solo se muestran reservas en **preventa, venta, postventa, check-in, in-house o check-out**. Una **consulta** nunca: la página afirma que hay una reserva y una consulta todavía no lo es. Una reserva **cancelada o caída** tampoco.
-    </Step>
-    <Step title="¿Sigue vigente?">
-        El link funciona hasta **7 días después de la fecha de salida**. Después vence solo.
-    </Step>
-    <Step title="¿El token coincide?">
-        Si la reserva tiene token, el del link tiene que ser exactamente ese.
-    </Step>
-</Steps>
+<div style={{display:'flex',flexDirection:'column',gap:'8px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{display:'flex',gap:'12px',alignItems:'flex-start',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'12px 14px'}}><span style={{flex:'none',width:'26px',height:'26px',borderRadius:'50%',background:'#175E52',color:'#fff',display:'inline-flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px'}}>1</span><div><div style={{fontWeight:700,fontSize:'13px'}}>¿La reserva existe?</div><div style={{fontSize:'12.5px',color:'#64748b'}}>Un número inexistente o una reserva eliminada no se muestran.</div></div></div>
+  <div style={{display:'flex',gap:'12px',alignItems:'flex-start',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'12px 14px'}}><span style={{flex:'none',width:'26px',height:'26px',borderRadius:'50%',background:'#175E52',color:'#fff',display:'inline-flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px'}}>2</span><div><div style={{fontWeight:700,fontSize:'13px'}}>¿Es una reserva activa?</div><div style={{fontSize:'12.5px',color:'#64748b'}}>Solo se muestran reservas en <b>preventa, venta, postventa, check-in, in-house o check-out</b>. Una <b>consulta</b> nunca: la página afirma que hay una reserva y una consulta todavía no lo es. Una reserva <b>cancelada o caída</b> tampoco.</div></div></div>
+  <div style={{display:'flex',gap:'12px',alignItems:'flex-start',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'12px 14px'}}><span style={{flex:'none',width:'26px',height:'26px',borderRadius:'50%',background:'#175E52',color:'#fff',display:'inline-flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px'}}>3</span><div><div style={{fontWeight:700,fontSize:'13px'}}>¿Sigue vigente?</div><div style={{fontSize:'12.5px',color:'#64748b'}}>El link funciona hasta <b>7 días después de la fecha de salida</b>. Después vence solo.</div></div></div>
+  <div style={{display:'flex',gap:'12px',alignItems:'flex-start',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'12px 14px'}}><span style={{flex:'none',width:'26px',height:'26px',borderRadius:'50%',background:'#175E52',color:'#fff',display:'inline-flex',alignItems:'center',justifyContent:'center',fontWeight:800,fontSize:'12px'}}>4</span><div><div style={{fontWeight:700,fontSize:'13px'}}>¿El token coincide?</div><div style={{fontSize:'12.5px',color:'#64748b'}}>Si la reserva tiene token, el del link tiene que ser exactamente ese.</div></div></div>
+</div>
 
 ### La vida del link, en una línea de tiempo
 
-El link es válido desde que la reserva se confirma hasta 7 días después del check-out. Si la reserva se cancela, el link deja de funcionar inmediatamente.
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'18px 16px 14px',margin:'14px 0 4px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{display:'flex',height:'14px',borderRadius:'999px',overflow:'hidden'}}>
+    <div style={{flex:3,background:'#e2e8f0'}} />
+    <div style={{flex:5,background:'#17714f'}} />
+    <div style={{flex:2,background:'#34d399'}} />
+    <div style={{flex:2,background:'#fca5a5'}} />
+  </div>
+  <div style={{display:'flex',fontSize:'11px',color:'#64748b',marginTop:'8px',gap:'4px'}}>
+    <div style={{flex:3}}><div style={{fontWeight:700,color:'#0f172a'}}>Consulta</div>no abre</div>
+    <div style={{flex:5}}><div style={{fontWeight:700,color:'#17714f'}}>Reserva confirmada → estadía</div>abre y se actualiza</div>
+    <div style={{flex:2}}><div style={{fontWeight:700,color:'#047857'}}>+7 días del check-out</div>sigue abriendo</div>
+    <div style={{flex:2}}><div style={{fontWeight:700,color:'#b91c1c'}}>Vencido</div>no abre</div>
+  </div>
+</div>
 
--   **Consulta:** No abre.
--   **Reserva confirmada → Estadía:** Abre y se actualiza con cada cambio.
--   **Hasta 7 días post-check-out:** Sigue abriendo.
--   **Vencido (más de 7 días post-check-out):** No abre.
-
-<Info>
-Si la reserva se cancela, el link deja de abrir en ese mismo momento, esté donde esté en la línea de tiempo.
-</Info>
-
-<Note>
-  **Reservas antiguas sin token**
-  
-  Algunas reservas anteriores al token nunca recibieron uno. Para no romper los links que esos huéspedes ya tienen, **esas reservas siguen abriendo con el número solo**, siempre que cumplan los puntos 1 a 3. En cuanto alguien pide el link para compartir, la reserva recibe su token y desde ahí queda protegida como cualquier otra.
-</Note>
+*Si la reserva se cancela, el link deja de abrir en ese mismo momento, esté donde esté en la línea de tiempo.*
 
 ---
 
-## "El enlace no es válido"
+## 6. "El enlace no es válido"
 
 Si alguna de las cuatro revisiones falla, el huésped ve esta pantalla:
 
-<Card title="⚠ El enlace no es válido">
-  El enlace de tu confirmación de reserva no es válido o ya expiró. Por favor, comunícate con el establecimiento para más información.
-</Card>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'30px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{marginLeft:'10px',flex:1,height:'18px',borderRadius:'6px',background:'#fff',border:'1px solid #e2e8f0',fontSize:'10.5px',color:'#64748b',display:'flex',alignItems:'center',padding:'0 8px',overflow:'hidden',whiteSpace:'nowrap'}}>🔒 hotelcostaazul.com/neo_checkout/gracias_v2.php?CID=11845211&token=4f9c1e7a0b3d…</span></div>
+  <div style={{padding:'50px 16px',background:'#f5f6f8',display:'flex',justifyContent:'center',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><div style={{maxWidth:'440px',width:'100%',background:'#fff',borderRadius:'10px',boxShadow:'0 4px 24px rgba(0,0,0,.08)',padding:'40px 32px',textAlign:'center'}}><div style={{fontSize:'30px'}}>⚠️</div><div style={{fontSize:'20px',fontWeight:700,margin:'14px 0 8px',color:'#333'}}>El enlace no es válido</div><div style={{fontSize:'15px',lineHeight:1.55,color:'#666'}}>El enlace de tu confirmación de reserva no es válido o ya expiró. Por favor, comunícate con el establecimiento para más información.</div></div></div>
+</div>
 
-<Info>Se muestra un único mensaje, neutro, para todos los casos.</Info>
+*Un único mensaje, neutro, para todos los casos.*
 
 **¿Por qué no dice el motivo?** A propósito. Si la página dijera "esta reserva está cancelada" o "esta reserva venció", cualquiera podría ir probando números y averiguar qué reservas existen y en qué estado están. Con un mensaje único, quien no tiene el link correcto no aprende nada.
 
 Por eso el mensaje invita al huésped a **comunicarse con el establecimiento**: vos sí podés ver el motivo en el PMS.
 
-| Lo que ves en el PMS                       | Por qué no abre                             | Qué hacer                                                               |
-| ------------------------------------------ | ------------------------------------------- | ----------------------------------------------------------------------- |
-| La reserva está cancelada / caída          | No hay nada que confirmar                   | Es correcto que no abra                                                 |
-| Todavía es una consulta                    | Aún no es reserva                           | Mandá el presupuesto; cuando se confirme, la confirmación              |
-| El check-out fue hace más de 7 días        | El link venció                              | Si el huésped necesita el detalle, enviáselo desde el PMS               |
-| La reserva está bien                       | El link llegó incompleto o fue modificado   | Volvé a copiarlo con "Copiar link confirmación de reserva" y reenviálo  |
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Lo que ves en el PMS</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Por qué no abre</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué hacer</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La reserva está cancelada / caída</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No hay nada que confirmar</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Es correcto que no abra</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Todavía es una consulta</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Aún no es reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Mandá el presupuesto; cuando se confirme, la confirmación</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El check-out fue hace más de 7 días</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El link venció</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si el huésped necesita el detalle, enviáselo desde el PMS</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La reserva está bien</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El link llegó incompleto o fue modificado</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Volvé a copiarlo con "Copiar link confirmación de reserva" y reenviálo</td></tr>
+  </tbody>
+</table>
 
 ---
 
-## Recorrido por la página
+## 7. Recorrido por la página
 
 Así se ve la confirmación completa de una reserva de ejemplo: **2 habitaciones, 2 noches, 4 huéspedes**, con una seña pagada y saldo pendiente. En las secciones que siguen explicamos cada bloque.
 
-<Frame caption="Vista general de la página de confirmación. Los bloques de consumos, pagos, link de pago y política de cancelación aparecen solo cuando tienen contenido.">
-  <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/main-view.png" alt="Vista general de la página de confirmación de reserva." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'30px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{marginLeft:'10px',flex:1,height:'18px',borderRadius:'6px',background:'#fff',border:'1px solid #e2e8f0',fontSize:'10.5px',color:'#64748b',display:'flex',alignItems:'center',padding:'0 8px',overflow:'hidden',whiteSpace:'nowrap'}}>🔒 hotelcostaazul.com/neo_checkout/gracias_v2.php?CID=11845210&token=4f9c1e7a0b3d…</span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)',display:'flex',alignItems:'center',gap:'16px',flexWrap:'wrap',borderTop:'4px solid #175E52'}}><div style={{width:'56px',height:'56px',borderRadius:'8px',background:'#e2f2ea',position:'relative',flex:'none',overflow:'hidden'}}><div style={{width:'14px',height:'14px',borderRadius:'50%',background:'#f2b84b',position:'absolute',top:'10px',right:'12px'}}></div><div style={{position:'absolute',left:'8px',bottom:'6px',fontSize:'26px',lineHeight:1,color:'#175E52',fontWeight:800}}>〰</div></div><div style={{}}><div style={{fontSize:'18px',fontWeight:700}}>Hotel Costa Azul</div><div style={{fontSize:'13px',color:'#66716c',marginTop:'2px'}}>Av. San Martín 1234, Mendoza · +54 261 555-0100</div></div><div style={{marginLeft:'auto',display:'flex',gap:'8px',flexWrap:'wrap'}}><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#175E52',color:'#fff',borderRadius:'8px',padding:'9px 16px',fontSize:'13.5px',fontWeight:700,whiteSpace:'nowrap'}}>🌐 Ir al sitio web</span><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#fff',color:'#175E52',border:'1px solid #175E52',borderRadius:'8px',padding:'8px 15px',fontSize:'13.5px',fontWeight:700,whiteSpace:'nowrap'}}>🖨 Imprimir</span></div></div><div style={{display:'flex',alignItems:'baseline',justifyContent:'space-between',gap:'10px',flexWrap:'wrap',margin:'22px 4px 14px'}}><span style={{fontSize:'21px',fontWeight:700,letterSpacing:'-0.01em'}}>Confirmación de reserva</span><span style={{color:'#66716c',fontSize:'14px',fontWeight:600,whiteSpace:'nowrap'}}>Reserva #11845210<span style={{display:'inline-block',fontSize:'12px',fontWeight:700,letterSpacing:'.04em',textTransform:'uppercase',borderRadius:'999px',padding:'3px 12px',marginLeft:'6px',background:'#fbf0d7',color:'#8a5f10'}}>Saldo pendiente</span></span></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Titular</div><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Titular</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Laura Gómez</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Email</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>laura.gomez@correo.com</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Teléfono</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>+54 9 261 555-0123</div></div></div></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Estadía</div><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(125px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>12 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>14 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Noches</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>4</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada anticipada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#e2f2ea',color:'#17714f'}}>Sí</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Huéspedes</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>3 adultos · 1 niño</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Régimen</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Desayuno incluido</div></div></div></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'2px'}}>Habitaciones</div><div style={{border:'1px solid #e3e7e4',borderRadius:'10px',padding:'14px 16px',marginTop:'10px'}}><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(118px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Habitación</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>101</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Categoría</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Doble Superior</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Huéspedes</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Ingreso</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>12 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>14 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada anticipada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Distribución de camas</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-flex',alignItems:'center',gap:'3px',fontSize:'13px',fontWeight:700,marginRight:'10px'}}>🛏 ×1</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Régimen</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Desayuno incluido</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Noches</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Precio por noche</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 85.000,00</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Total</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 170.000,00</div></div></div></div><div style={{border:'2px solid #0ea5e9',borderRadius:'10px',padding:'14px 16px',marginTop:'10px',boxShadow:'0 0 0 3px rgba(14,165,233,.15)'}}><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(118px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Habitación</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>204</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Categoría</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Familiar</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Huéspedes</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Ingreso</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>12 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>14 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada anticipada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#e2f2ea',color:'#17714f'}}>Sí</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Distribución de camas</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-flex',alignItems:'center',gap:'3px',fontSize:'13px',fontWeight:700,marginRight:'10px'}}>🛏 ×1</span><span style={{display:'inline-flex',alignItems:'center',gap:'3px',fontSize:'13px',fontWeight:700,marginRight:'10px'}}>🛌 ×1</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Régimen</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Desayuno incluido</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Noches</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Precio por noche</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 110.000,00</div></div><div style={{minWidth:'0',background:'#f0f9ff',borderRadius:'6px',padding:'2px 6px',margin:'-2px -6px'}}><div style={{fontSize:'12px',color:'#0369a1'}}>Precio salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 55.000,00</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Total</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 275.000,00</div></div></div></div></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)',fontVariantNumeric:'tabular-nums'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Resumen económico</div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px',color:'#66716c'}}><span style={{}}>Alojamiento</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 445.000,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px',color:'#66716c'}}><span style={{}}>Consumos y extras</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 18.000,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'17px',borderTop:'1px solid #e3e7e4',marginTop:'4px',paddingTop:'12px',fontWeight:750}}><span style={{}}>Total</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 463.000,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px'}}><span style={{}}>Pagado</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 231.500,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px',color:'#8a5f10',fontWeight:700}}><span style={{}}>Saldo pendiente</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 231.500,00</span></div><div style={{marginTop:'10px',fontSize:'12.5px',color:'#66716c'}}>Precio promedio por noche: ARS 115.750,00</div><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginTop:'16px'}}>Promociones aplicadas</div><div style={{display:'flex',flexWrap:'wrap',gap:'6px',marginTop:'10px'}}><span style={{background:'#e2f2ea',color:'#17714f',fontSize:'12.5px',fontWeight:600,borderRadius:'999px',padding:'3px 12px'}}>Early booking 10%</span></div></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Consumos y extras</div><div style={{display:'grid',gridTemplateColumns:'1.1fr 1.4fr 1fr .5fr 1.1fr',gap:'10px',padding:'4px 0 8px',fontSize:'13.5px',borderBottom:'1px solid #e3e7e4'}}><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Fecha</div><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Detalle</div><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Habitación</div><div style={{textAlign:'right',whiteSpace:'nowrap',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Cant.</div><div style={{textAlign:'right',whiteSpace:'nowrap',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Importe</div></div><div style={{display:'grid',gridTemplateColumns:'1.1fr 1.4fr 1fr .5fr 1.1fr',gap:'10px',padding:'8px 0',fontSize:'13.5px',borderBottom:'1px solid #e3e7e4'}}><div style={{textAlign:'left',whiteSpace:'normal'}}>12 oct 2026</div><div style={{textAlign:'left',whiteSpace:'normal'}}>Frigobar</div><div style={{textAlign:'left',whiteSpace:'normal'}}>101</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>2</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>ARS 9.000,00</div></div><div style={{display:'grid',gridTemplateColumns:'1.1fr 1.4fr 1fr .5fr 1.1fr',gap:'10px',padding:'8px 0',fontSize:'13.5px'}}><div style={{textAlign:'left',whiteSpace:'normal'}}>12 oct 2026</div><div style={{textAlign:'left',whiteSpace:'normal'}}>Estacionamiento</div><div style={{textAlign:'left',whiteSpace:'normal'}}><span style={{color:'#66716c'}}>General</span></div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>1</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>ARS 9.000,00</div></div></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Pagos registrados</div><div style={{display:'grid',gridTemplateColumns:'1fr 2fr 1.1fr',gap:'10px',padding:'4px 0 8px',fontSize:'13.5px',borderBottom:'1px solid #e3e7e4'}}><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Fecha</div><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Detalle</div><div style={{textAlign:'right',whiteSpace:'nowrap',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Importe</div></div><div style={{display:'grid',gridTemplateColumns:'1fr 2fr 1.1fr',gap:'10px',padding:'8px 0',fontSize:'13.5px'}}><div style={{textAlign:'left',whiteSpace:'normal'}}>20 sep 2026</div><div style={{textAlign:'left',whiteSpace:'normal'}}>Seña 50% — Tarjeta de crédito</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>ARS 231.500,00</div></div></div><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Política de cancelación</div><div style={{fontWeight:650,fontSize:'14.5px',marginBottom:'6px'}}>Flexible</div><div style={{fontSize:'13.5px',color:'#3d4642',lineHeight:1.6}}>Cancelación sin cargo hasta 72 horas antes de la llegada. Pasado ese plazo, o en caso de no presentarse, se cobra el importe de la primera noche.</div></div><div style={{textAlign:'center',color:'#66716c',fontSize:'12.5px',marginTop:'22px'}}><div style={{display:'flex',justifyContent:'center',marginBottom:'14px'}}><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#fff',color:'#175E52',border:'1px solid #175E52',borderRadius:'8px',padding:'8px 15px',fontSize:'13.5px',fontWeight:700,whiteSpace:'nowrap'}}>📄 Ver presupuesto original</span></div><div style={{}}>Información actualizada al 28 sep 2026 16:42</div></div><div style={{marginTop:'26px',paddingTop:'16px',borderTop:'1px solid #e3e7e4',textAlign:'center',fontSize:'12px',color:'#66716c',lineHeight:1.7}}><div style={{}}><span style={{display:'inline-block',background:'#1e2724',color:'#f3f5f4',borderRadius:'8px',padding:'8px 18px',fontWeight:600,marginBottom:'12px'}}>Botón de Arrepentimiento</span></div><div style={{}}>Al utilizar este sitio web, acepta el uso de cookies.</div><div style={{display:'flex',flexWrap:'wrap',gap:'4px 16px',justifyContent:'center',marginTop:'4px'}}><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Política de cookies</span><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Términos y condiciones</span><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Política de privacidad</span></div><div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'6px',marginTop:'10px'}}><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Software Hotelero</span><span style={{}}>de</span><span style={{fontWeight:800,color:'#231f20',letterSpacing:'.02em'}}>P<span style={{color:'#ee2735'}}>X</span>SOL</span></div></div></div></div>
+</div>
+
+*Vista general. Los bloques de consumos, pagos y política aparecen solo cuando tienen algo para mostrar.*
 
 **Qué bloques aparecen siempre y cuáles no:**
 
-| Bloque                                               | Cuándo aparece                                                         |
-| ---------------------------------------------------- | ---------------------------------------------------------------------- |
-| Cabecera, título, titular, estadía, resumen económico | Siempre                                                                |
-| Habitaciones                                         | Si la reserva tiene habitaciones                                       |
-| Consumos y extras                                    | Si hay consumos cargados y el hotel usa el PMS de Pxsol                |
-| Pagos registrados                                    | Si hay al menos un pago                                                |
-| Pagar con link / QR                                  | Si el medio de pago es link o QR y queda saldo                         |
-| Política de cancelación                              | Si la reserva tiene una política asociada                              |
-| Ver presupuesto original                             | Si la reserva nació de un presupuesto                                  |
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Bloque</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cuándo aparece</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cabecera, título, titular, estadía, resumen económico</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Habitaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva tiene habitaciones</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Consumos y extras</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si hay consumos cargados y el hotel usa el PMS de Pxsol</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Pagos registrados</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si hay al menos un pago</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Política de cancelación</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva tiene una política asociada</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ver presupuesto original</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva nació de un presupuesto</td></tr>
+  </tbody>
+</table>
 
 ---
 
-## Cabecera del hotel
+## 8. Cabecera del hotel
 
-<Frame caption="La cabecera muestra el logo, nombre, dirección y teléfono del hotel, usando el color de tu marca.">
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/header.png" alt="Cabecera del hotel en la página de confirmación." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',boxShadow:'0 1px 3px rgba(30,39,36,.05)',display:'flex',alignItems:'center',gap:'16px',flexWrap:'wrap',borderTop:'4px solid #175E52'}}><div style={{width:'56px',height:'56px',borderRadius:'8px',background:'#e2f2ea',position:'relative',flex:'none',overflow:'hidden'}}><div style={{width:'14px',height:'14px',borderRadius:'50%',background:'#f2b84b',position:'absolute',top:'10px',right:'12px'}}></div><div style={{position:'absolute',left:'8px',bottom:'6px',fontSize:'26px',lineHeight:1,color:'#175E52',fontWeight:800}}>〰</div></div><div style={{}}><div style={{fontSize:'18px',fontWeight:700}}>Hotel Costa Azul</div><div style={{fontSize:'13px',color:'#66716c',marginTop:'2px'}}>Av. San Martín 1234, Mendoza · +54 261 555-0100</div></div><div style={{marginLeft:'auto',display:'flex',gap:'8px',flexWrap:'wrap'}}><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#175E52',color:'#fff',borderRadius:'8px',padding:'9px 16px',fontSize:'13.5px',fontWeight:700,whiteSpace:'nowrap'}}>🌐 Ir al sitio web</span><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#fff',color:'#175E52',border:'1px solid #175E52',borderRadius:'8px',padding:'8px 15px',fontSize:'13.5px',fontWeight:700,whiteSpace:'nowrap'}}>🖨 Imprimir</span></div></div></div></div>
+</div>
 
--   **Logo, nombre, dirección y teléfono** — salen de la ficha del establecimiento. Si falta alguno, simplemente no se muestra.
--   **Color de marca** — la franja superior y los botones usan el **color del tema de tu punto de venta**. Si no hay uno configurado, se usa un verde por defecto. Si tu color es muy claro, el texto de los botones pasa a oscuro automáticamente para que se lea.
--   **Ir al sitio web** — lleva a la web de tu hotel. En cadenas, marketplaces y agencias lleva al sitio del punto de venta.
--   **Imprimir** — abre la impresión del navegador.
--   La pestaña del navegador muestra **"Hotel Costa Azul — Confirmación de reserva #11845210"** y el ícono de tu marca.
+*Logo, nombre, dirección y teléfono del establecimiento, con el color de tu marca arriba.*
+
+- **Logo, nombre, dirección y teléfono** — salen de la ficha del establecimiento. Si falta alguno, simplemente no se muestra.
+- **Color de marca** — la franja superior y los botones usan el **color del tema de tu punto de venta**. Si no hay uno configurado, se usa un verde por defecto. Si tu color es muy claro, el texto de los botones pasa a oscuro automáticamente para que se lea.
+- **Ir al sitio web** — lleva a la web de tu hotel. En cadenas, marketplaces y agencias lleva al sitio del punto de venta.
+- **Imprimir** — abre la impresión del navegador (sección 19).
+- La pestaña del navegador muestra **"Hotel Costa Azul — Confirmación de reserva #11845210"** y el ícono de tu marca.
 
 ### Título y estado de pago
 
 Debajo de la cabecera va el título con el número de reserva y una etiqueta con el estado del pago:
 
-<Frame>
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/payment-status.png" alt="Etiquetas de estado de pago: Reserva pagada y Saldo pendiente." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'4px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{display:'flex',alignItems:'baseline',justifyContent:'space-between',gap:'10px',flexWrap:'wrap',margin:'22px 4px 14px'}}><span style={{fontSize:'21px',fontWeight:700,letterSpacing:'-0.01em'}}>Confirmación de reserva</span><span style={{color:'#66716c',fontSize:'14px',fontWeight:600,whiteSpace:'nowrap'}}>Reserva #11845210<span style={{display:'inline-block',fontSize:'12px',fontWeight:700,letterSpacing:'.04em',textTransform:'uppercase',borderRadius:'999px',padding:'3px 12px',marginLeft:'6px',background:'#e2f2ea',color:'#17714f'}}>Reserva pagada</span></span></div><div style={{display:'flex',alignItems:'baseline',justifyContent:'space-between',gap:'10px',flexWrap:'wrap',margin:'22px 4px 14px'}}><span style={{fontSize:'21px',fontWeight:700,letterSpacing:'-0.01em'}}>Confirmación de reserva</span><span style={{color:'#66716c',fontSize:'14px',fontWeight:600,whiteSpace:'nowrap'}}>Reserva #11845210<span style={{display:'inline-block',fontSize:'12px',fontWeight:700,letterSpacing:'.04em',textTransform:'uppercase',borderRadius:'999px',padding:'3px 12px',marginLeft:'6px',background:'#fbf0d7',color:'#8a5f10'}}>Saldo pendiente</span></span></div></div></div>
+</div>
 
--   **Reserva pagada** (verde) — el total es mayor a cero y ya no queda saldo.
--   **Saldo pendiente** (ámbar) — falta pagar algo.
--   Si el total es cero, no se muestra etiqueta.
+- **Reserva pagada** (verde) — el total es mayor a cero y ya no queda saldo.
+- **Saldo pendiente** (ámbar) — falta pagar algo.
+- Si el total es cero, no se muestra etiqueta.
 
 ---
 
-## Titular
+## 9. Titular
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Titular</div><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Titular</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Laura Gómez</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Email</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>laura.gomez@correo.com</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Teléfono</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>+54 9 261 555-0123</div></div></div></div></div></div>
+</div>
 
 Nombre y apellido del titular, su **email** y su **teléfono**, tal como están cargados en la reserva. Si alguno está vacío, no aparece.
 
@@ -248,341 +297,263 @@ Si el huésped te avisa que un dato está mal, corregilo en la reserva: la próx
 
 ---
 
-## Estadía
+## 10. Estadía
 
-<Frame caption="Resumen de la estadía completa, incluyendo fechas, noches, huéspedes y régimen.">
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/stay.png" alt="Bloque de información de la estadía." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Estadía</div><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(125px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>12 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>14 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Noches</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>4</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada anticipada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#e2f2ea',color:'#17714f'}}>Sí</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Huéspedes</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>3 adultos · 1 niño</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Régimen</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Desayuno incluido</div></div></div></div></div></div>
+</div>
 
-<Info>El resumen de toda la reserva. El detalle por habitación está en el bloque siguiente.</Info>
+*El resumen de toda la reserva. El detalle por habitación está en el bloque siguiente.*
 
--   **Llegada / Salida** — las fechas de la reserva completa. Las fechas se escriben con el mes en letras ("12 oct 2026") para que no haya confusión entre día y mes en ningún país.
--   **Noches** — ojo con este dato, ver el recuadro de abajo.
--   **Llegada anticipada / Salida tardía** — **Sí** en verde o **No** en rojo, a nivel reserva. Cada habitación tiene además los suyos.
--   **Huéspedes** — adultos, niños y bebés, contados **habitación por habitación** a partir de cómo está armada la reserva hoy.
--   **Régimen** — el plan de comidas de la reserva, si tiene.
+- **Llegada / Salida** — las fechas de la reserva completa. Las fechas se escriben con el mes en letras ("12 oct 2026") para que no haya confusión entre día y mes en ningún país.
+- **Noches** — ojo con este dato, ver el recuadro de abajo.
+- **Llegada anticipada / Salida tardía** — **Sí** en verde o **No** en rojo, a nivel reserva. Cada habitación tiene además los suyos.
+- **Huéspedes** — adultos, niños y bebés, contados **habitación por habitación** a partir de cómo está armada la reserva hoy.
+- **Régimen** — el plan de comidas de la reserva, si tiene.
 
-<Warning>
-  **🛏 "Noches" son noches-habitación**
-
-  En el bloque Estadía, **Noches** suma las noches de **todas** las habitaciones. En el ejemplo son 2 habitaciones × 2 noches = **4**, aunque del 12 al 14 de octubre haya 2 noches de calendario.
-
-  Es intencional: dividir el total por ese número da el **precio promedio por noche** que se ve en el resumen económico, y ese promedio coincide con las tarifas de cada habitación. El largo de la estadía lo dicen Llegada y Salida; las noches de cada habitación, su propio bloque.
-</Warning>
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #fde68a',background:'#fffbeb',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>🛏 "Noches" son noches-habitación</h4>
+  <p style={{margin:'6px 0'}}>En el bloque Estadía, <b>Noches</b> suma las noches de <b>todas</b> las habitaciones. En el ejemplo son 2 habitaciones × 2 noches = <b>4</b>, aunque del 12 al 14 de octubre haya 2 noches de calendario.</p>
+  <p style={{margin:'6px 0'}}>Es intencional: dividir el total por ese número da el <b>precio promedio por noche</b> que se ve en el resumen económico, y ese promedio coincide con las tarifas de cada habitación. El largo de la estadía lo dicen Llegada y Salida; las noches de cada habitación, su propio bloque.</p>
+</div>
 
 ---
 
-## Habitaciones
+## 11. Habitaciones
 
 Una tarjeta por cada habitación de la reserva, con todo lo que el huésped necesita saber de ella:
 
-<Frame caption="Detalle de cada habitación. La habitación 204 tiene salida tardía, cuyo precio se detalla por separado.">
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/rooms.png" alt="Detalle de las habitaciones asignadas en la reserva." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'2px'}}>Habitaciones</div><div style={{border:'1px solid #e3e7e4',borderRadius:'10px',padding:'14px 16px',marginTop:'10px'}}><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(118px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Habitación</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>101</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Categoría</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Doble Superior</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Huéspedes</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Ingreso</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>12 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>14 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada anticipada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Distribución de camas</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-flex',alignItems:'center',gap:'3px',fontSize:'13px',fontWeight:700,marginRight:'10px'}}>🛏 ×1</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Régimen</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Desayuno incluido</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Noches</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Precio por noche</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 85.000,00</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Total</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 170.000,00</div></div></div></div><div style={{border:'2px solid #0ea5e9',borderRadius:'10px',padding:'14px 16px',marginTop:'10px',boxShadow:'0 0 0 3px rgba(14,165,233,.15)'}}><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(118px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Habitación</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>204</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Categoría</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Familiar</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Huéspedes</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Ingreso</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>12 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>14 oct 2026</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Llegada anticipada</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#fbe7e4',color:'#ad3a32'}}>No</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-block',fontSize:'12px',fontWeight:700,borderRadius:'999px',padding:'2px 12px',background:'#e2f2ea',color:'#17714f'}}>Sí</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Distribución de camas</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}><span style={{display:'inline-flex',alignItems:'center',gap:'3px',fontSize:'13px',fontWeight:700,marginRight:'10px'}}>🛏 ×1</span><span style={{display:'inline-flex',alignItems:'center',gap:'3px',fontSize:'13px',fontWeight:700,marginRight:'10px'}}>🛌 ×1</span></div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Régimen</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Desayuno incluido</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Noches</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>2</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Precio por noche</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 110.000,00</div></div><div style={{minWidth:'0',background:'#f0f9ff',borderRadius:'6px',padding:'2px 6px',margin:'-2px -6px'}}><div style={{fontSize:'12px',color:'#0369a1'}}>Precio salida tardía</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 55.000,00</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Total</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>ARS 275.000,00</div></div></div></div></div></div></div>
+</div>
 
-| Dato                                  | Qué muestra                                                                                                                             |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| **Habitación**                        | El nombre o número de la habitación asignada.                                                                                           |
-| **Categoría**                         | La categoría con la que se vendió. Si hiciste un upgrade, acá sigue diciendo lo que el huésped compró.                                    |
-| **Huéspedes**                         | Cuántas personas hay cargadas en esa habitación (adultos + niños + bebés).                                                              |
-| **Ingreso / Salida**                  | Las fechas de **esa** habitación. Pueden diferir de las de la reserva si una habitación entra o sale otro día. Si una misma habitación aparece dos veces (estadía partida), cada tarjeta tiene sus fechas. |
-| **Llegada anticipada / Salida tardía**| Sí o No para esa habitación.                                                                                                            |
-| **Distribución de camas**             | Íconos con cantidad: cama grande, cama chica y cuna (al pasar el mouse dice cuál es). Un guion si no hay camas configuradas.              |
-| **Régimen**                           | El de la habitación; si no tiene uno propio, el de la reserva.                                                                          |
-| **Noches**                            | Las noches de esa habitación.                                                                                                           |
-| **Precio por noche**                  | El promedio de las noches de alojamiento de esa habitación. **No** incluye llegada anticipada ni salida tardía, porque no son noches.    |
-| **Precio llegada anticipada / salida tardía** | Solo si se cobraron. Van como línea propia para que el total se entienda solo.                                                          |
-| **Total**                             | Todo el alojamiento de esa habitación: noches + llegada anticipada + salida tardía.                                                     |
+*La habitación 204 tiene salida tardía: su precio va en una línea propia y el total la incluye (2 × 110.000 + 55.000 = 275.000).*
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Dato</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué muestra</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Habitación</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El nombre o número de la habitación asignada.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Categoría</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La categoría con la que se vendió. Si hiciste un upgrade, acá sigue diciendo lo que el huésped compró.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Huéspedes</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cuántas personas hay cargadas en esa habitación (adultos + niños + bebés).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Ingreso / Salida</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las fechas de <b>esa</b> habitación. Pueden diferir de las de la reserva si una habitación entra o sale otro día. Si una misma habitación aparece dos veces (estadía partida), cada tarjeta tiene sus fechas.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Llegada anticipada / Salida tardía</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí o No para esa habitación.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Distribución de camas</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Íconos con cantidad: cama grande, cama chica y cuna (al pasar el mouse dice cuál es). Un guion si no hay camas configuradas.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Régimen</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El de la habitación; si no tiene uno propio, el de la reserva.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Noches</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las noches de esa habitación.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Precio por noche</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El promedio de las noches de alojamiento de esa habitación. <b>No</b> incluye llegada anticipada ni salida tardía, porque no son noches.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Precio llegada anticipada / salida tardía</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo si se cobraron. Van como línea propia para que el total se entienda solo.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Total</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Todo el alojamiento de esa habitación: noches + llegada anticipada + salida tardía.</td></tr>
+  </tbody>
+</table>
 
 Los precios y el total aparecen solo si son mayores a cero. Si la reserva no tiene habitaciones asignadas una por una (por ejemplo, porque el hotel no las gestiona), el bloque muestra solo la cantidad: **"2 habitaciones"**.
 
 ---
 
-## Resumen económico
+## 12. Resumen económico
 
-<Frame caption="Resumen económico con desglose de alojamiento, consumos, total, pagado y saldo. El precio promedio por noche es de 463.000 ÷ 4 = 115.750.">
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/summary.png" alt="Bloque de resumen económico de la reserva." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)',fontVariantNumeric:'tabular-nums'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Resumen económico</div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px',color:'#66716c'}}><span style={{}}>Alojamiento</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 445.000,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px',color:'#66716c'}}><span style={{}}>Consumos y extras</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 18.000,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'17px',borderTop:'1px solid #e3e7e4',marginTop:'4px',paddingTop:'12px',fontWeight:750}}><span style={{}}>Total</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 463.000,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px'}}><span style={{}}>Pagado</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 231.500,00</span></div><div style={{display:'flex',justifyContent:'space-between',gap:'12px',padding:'6px 0',fontSize:'14.5px',color:'#8a5f10',fontWeight:700}}><span style={{}}>Saldo pendiente</span><span style={{fontWeight:600,whiteSpace:'nowrap'}}>ARS 231.500,00</span></div><div style={{marginTop:'10px',fontSize:'12.5px',color:'#66716c'}}>Precio promedio por noche: ARS 115.750,00</div><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginTop:'16px'}}>Promociones aplicadas</div><div style={{display:'flex',flexWrap:'wrap',gap:'6px',marginTop:'10px'}}><span style={{background:'#e2f2ea',color:'#17714f',fontSize:'12.5px',fontWeight:600,borderRadius:'999px',padding:'3px 12px'}}>Early booking 10%</span></div></div></div></div>
+</div>
+
+*Precio promedio por noche = 463.000 ÷ 4 noches-habitación = 115.750.*
 
 **Las líneas de desglose** (en gris) aparecen solo si tienen un importe distinto de cero:
 
--   **Alojamiento** — noches de todas las habitaciones, incluyendo llegadas anticipadas y salidas tardías.
--   **Consumos y extras** — todo lo que no es alojamiento: frigobar, estacionamiento, servicios, etc.
--   **Impuestos** — los impuestos de la reserva, cuando se discriminan.
--   **Tributos de comprobantes** — impuestos que surgen de las facturas emitidas.
--   **Devoluciones** — se muestran con signo menos.
+- **Alojamiento** — noches de todas las habitaciones, incluyendo llegadas anticipadas y salidas tardías.
+- **Consumos y extras** — todo lo que no es alojamiento: frigobar, estacionamiento, servicios, etc.
+- **Impuestos** — los impuestos de la reserva, cuando se discriminan.
+- **Tributos de comprobantes** — impuestos que surgen de las facturas emitidas.
+- **Devoluciones** — se muestran con signo menos.
 
 **Las líneas finales** están siempre:
 
--   **Total** — lo que cuesta la reserva hoy.
--   **Pagado** — la suma de los pagos registrados.
--   **Saldo pendiente** — Total − Pagado. En **ámbar** si falta pagar; en **verde** y en cero cuando ya está todo pago. Nunca se muestra negativo.
+- **Total** — lo que cuesta la reserva hoy.
+- **Pagado** — la suma de los pagos registrados.
+- **Saldo pendiente** — Total − Pagado. En **ámbar** si falta pagar; en **verde** y en cero cuando ya está todo pago. Nunca se muestra negativo.
 
 Además:
 
--   **Precio promedio por noche** — el total dividido por las noches-habitación.
--   **Promociones aplicadas** — las promociones que se aplicaron a la reserva, como etiquetas verdes.
+- **Precio promedio por noche** — el total dividido por las noches-habitación (sección 10).
+- **Promociones aplicadas** — las promociones que se aplicaron a la reserva, como etiquetas verdes.
 
 Los importes se muestran en la **moneda de la reserva** y con los **decimales configurados** en tu punto de venta. El formato de los números sigue el idioma: `463.000,00` en español y portugués, `463,000.00` en inglés.
 
 ---
 
-## Consumos y extras
+## 13. Consumos y extras
 
 Si cargaste consumos en los folios de la reserva, el huésped los ve uno por uno:
 
-<Frame caption="Tabla de consumos y extras cargados a la reserva. 'General' indica un consumo no asociado a una habitación específica.">
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/charges.png" alt="Lista de consumos y extras." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Consumos y extras</div><div style={{display:'grid',gridTemplateColumns:'1.1fr 1.4fr 1fr .5fr 1.1fr',gap:'10px',padding:'4px 0 8px',fontSize:'13.5px',borderBottom:'1px solid #e3e7e4'}}><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Fecha</div><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Detalle</div><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Habitación</div><div style={{textAlign:'right',whiteSpace:'nowrap',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Cant.</div><div style={{textAlign:'right',whiteSpace:'nowrap',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Importe</div></div><div style={{display:'grid',gridTemplateColumns:'1.1fr 1.4fr 1fr .5fr 1.1fr',gap:'10px',padding:'8px 0',fontSize:'13.5px',borderBottom:'1px solid #e3e7e4'}}><div style={{textAlign:'left',whiteSpace:'normal'}}>12 oct 2026</div><div style={{textAlign:'left',whiteSpace:'normal'}}>Frigobar</div><div style={{textAlign:'left',whiteSpace:'normal'}}>101</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>2</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>ARS 9.000,00</div></div><div style={{display:'grid',gridTemplateColumns:'1.1fr 1.4fr 1fr .5fr 1.1fr',gap:'10px',padding:'8px 0',fontSize:'13.5px'}}><div style={{textAlign:'left',whiteSpace:'normal'}}>12 oct 2026</div><div style={{textAlign:'left',whiteSpace:'normal'}}>Estacionamiento</div><div style={{textAlign:'left',whiteSpace:'normal'}}><span style={{color:'#66716c'}}>General</span></div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>1</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>ARS 9.000,00</div></div></div></div></div>
+</div>
 
--   Se listan **solo si el hotel usa el PMS de Pxsol**. Si tu hotel gestiona los consumos en otro sistema, este bloque no aparece, para no mostrar importes que no son la fuente real.
--   Los consumos **eliminados** no aparecen.
--   Cada consumo se muestra en la moneda de su folio.
+*"General" indica un consumo de la reserva que no está asociado a ninguna habitación en particular.*
 
----
-
-## Pagos registrados
-
-<Frame>
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/payments.png" alt="Tabla de pagos registrados en la reserva." />
-</Frame>
-
--   Cada pago con su **fecha**, su **detalle** (la descripción con la que se registró) y su **importe**.
--   Las filas que no mueven dinero (importe cero) no se muestran.
--   Cada pago se muestra en su propia moneda. Si una reserva en USD recibió un pago en pesos, ese pago dice ARS.
-
-<Tip>
-  **Cuidá la descripción de los pagos**
-  
-  El huésped lee literalmente el detalle que escribiste al registrar el pago. Usá descripciones claras ("Seña 50% — Transferencia") y evitá notas internas.
-</Tip>
+- Se listan **solo si el hotel usa el PMS de Pxsol**. Si tu hotel gestiona los consumos en otro sistema, este bloque no aparece, para no mostrar importes que no son la fuente real.
+- Los consumos **eliminados** no aparecen.
+- Cada consumo se muestra en la moneda de su folio.
 
 ---
 
-## Pagar desde la confirmación
+## 14. Pagos registrados
 
-Si la reserva tiene como medio de pago un **link de pago** o un **QR de pago**, y **queda saldo pendiente**, la confirmación le ofrece al huésped pagar desde ahí mismo:
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Pagos registrados</div><div style={{display:'grid',gridTemplateColumns:'1fr 2fr 1.1fr',gap:'10px',padding:'4px 0 8px',fontSize:'13.5px',borderBottom:'1px solid #e3e7e4'}}><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Fecha</div><div style={{textAlign:'left',whiteSpace:'normal',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Detalle</div><div style={{textAlign:'right',whiteSpace:'nowrap',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.06em',color:'#66716c',fontWeight:700}}>Importe</div></div><div style={{display:'grid',gridTemplateColumns:'1fr 2fr 1.1fr',gap:'10px',padding:'8px 0',fontSize:'13.5px'}}><div style={{textAlign:'left',whiteSpace:'normal'}}>20 sep 2026</div><div style={{textAlign:'left',whiteSpace:'normal'}}>Seña 50% — Tarjeta de crédito</div><div style={{textAlign:'right',whiteSpace:'nowrap'}}>ARS 231.500,00</div></div></div></div></div>
+</div>
 
-<CardGroup cols={2}>
-    <Card title="Paga con este link" icon="link">
-        <div style={{textAlign: 'center'}}>
-            <button style={{backgroundColor: '#175E52', color: 'white', fontWeight: 'bold', fontSize: '14px', borderRadius: '8px', padding: '10px 24px', border: 'none', cursor: 'pointer'}}>Ir a pagar</button>
-            <p style={{color: '#66716c', fontSize: '12.5px', marginTop: '12px'}}>Al pagar, ingresa el importe indicado en el resumen de tu reserva.</p>
-            <p style={{color: '#66716c', fontSize: '11.5px', borderTop: '1px solid #e3e7e4', marginTop: '12px', paddingTop: '10px', wordBreak: 'break-all'}}>Si el botón no abre el link, ingresa desde:<br/><span style={{color: '#175E52'}}>https://pago.ejemplo.com/costa-azul</span></p>
-        </div>
-    </Card>
-    <Card title="Paga escaneando este código" icon="qr-code">
-        <div style={{textAlign: 'center'}}>
-            <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/qr-code.png" alt="Código QR de ejemplo para realizar un pago." width="120" />
-            <p style={{color: '#66716c', fontSize: '12.5px', marginTop: '8px'}}>Escanea este QR con la cámara de tu teléfono.</p>
-        </div>
-    </Card>
-</CardGroup>
+- Cada pago con su **fecha**, su **detalle** (la descripción con la que se registró) y su **importe**.
+- Las filas que no mueven dinero (importe cero) no se muestran.
+- Cada pago se muestra en su propia moneda. Si una reserva en USD recibió un pago en pesos, ese pago dice ARS.
 
--   Aparece **solo** si: el medio de pago de la reserva es **Link de pago** o **QR de pago**, ese medio tiene una URL configurada, y el **saldo pendiente es mayor a cero**. Cuando la reserva queda paga, el bloque desaparece solo.
--   El link de pago es **fijo** (el configurado en el medio de pago), no calcula el importe. Por eso la página le recuerda al huésped **que ingrese el importe del resumen**.
--   Siempre se muestra también la dirección escrita, por si el botón no abre o el celular no puede escanear.
--   Este bloque **no se imprime**.
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 Cuidá la descripción de los pagos</h4>
+  <p style={{margin:'6px 0'}}>El huésped lee literalmente el detalle que escribiste al registrar el pago. Usá descripciones claras ("Seña 50% — Transferencia") y evitá notas internas.</p>
+</div>
 
 ---
 
-## Política de cancelación
+## 15. Política de cancelación
 
-<Frame>
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/cancellation.png" alt="Política de cancelación de la reserva." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Política de cancelación</div><div style={{fontWeight:650,fontSize:'14.5px',marginBottom:'6px'}}>Flexible</div><div style={{fontSize:'13.5px',color:'#3d4642',lineHeight:1.6}}>Cancelación sin cargo hasta 72 horas antes de la llegada. Pasado ese plazo, o en caso de no presentarse, se cobra el importe de la primera noche.</div></div></div></div>
+</div>
 
 Muestra el **nombre** y el **texto** de la política de cancelación asociada a la reserva, en el idioma de la página. Si la reserva no tiene política, el bloque no aparece.
 
 ---
 
-## Pie de página
+## 16. Pie de página
 
-<Frame caption="El pie de página contiene links útiles, la fecha de última actualización y avisos legales.">
-    <img src="https://mintlify.s3-us-west-1.amazonaws.com/pxsol/docs/confirmation-link-v2/footer.png" alt="Pie de página de la confirmación." />
-</Frame>
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'0 16px 18px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{textAlign:'center',color:'#66716c',fontSize:'12.5px',marginTop:'22px'}}><div style={{display:'flex',justifyContent:'center',marginBottom:'14px'}}><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#fff',color:'#175E52',border:'1px solid #175E52',borderRadius:'8px',padding:'8px 15px',fontSize:'13.5px',fontWeight:700,whiteSpace:'nowrap'}}>📄 Ver presupuesto original</span></div><div style={{}}>Información actualizada al 28 sep 2026 16:42</div></div><div style={{marginTop:'26px',paddingTop:'16px',borderTop:'1px solid #e3e7e4',textAlign:'center',fontSize:'12px',color:'#66716c',lineHeight:1.7}}><div style={{}}><span style={{display:'inline-block',background:'#1e2724',color:'#f3f5f4',borderRadius:'8px',padding:'8px 18px',fontWeight:600,marginBottom:'12px'}}>Botón de Arrepentimiento</span></div><div style={{}}>Al utilizar este sitio web, acepta el uso de cookies.</div><div style={{display:'flex',flexWrap:'wrap',gap:'4px 16px',justifyContent:'center',marginTop:'4px'}}><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Política de cookies</span><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Términos y condiciones</span><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Política de privacidad</span></div><div style={{display:'flex',alignItems:'center',justifyContent:'center',gap:'6px',marginTop:'10px'}}><span style={{textDecoration:'underline',textUnderlineOffset:'2px'}}>Software Hotelero</span><span style={{}}>de</span><span style={{fontWeight:800,color:'#231f20',letterSpacing:'.02em'}}>P<span style={{color:'#ee2735'}}>X</span>SOL</span></div></div></div></div>
+</div>
 
--   **Ver presupuesto original** — solo si la reserva nació de un presupuesto. Abre el presupuesto tal como se compró, con el mismo token y el mismo idioma.
--   **Información actualizada al…** — fecha y hora de la **última modificación de la reserva**. Le dice al huésped qué tan reciente es lo que está viendo.
--   **Botón de Arrepentimiento** — solo para establecimientos en **Argentina** que lo tengan activado en el punto de venta. Lleva al flujo de cancelación.
--   **Legales** — cookies, términos y privacidad: los links configurados en tu punto de venta, o las páginas por defecto.
--   **WhatsApp y chat** — si tu punto de venta tiene el **botón flotante de WhatsApp** o el **chat de Pxsol**, aparecen igual que en el resto de tu web. Si están los dos, se muestra el chat y se oculta WhatsApp para que no se superpongan.
+- **Ver presupuesto original** — solo si la reserva nació de un presupuesto. Abre el presupuesto tal como se compró (sección 2), con el mismo token y el mismo idioma.
+- **Información actualizada al…** — fecha y hora de la **última modificación de la reserva**. Le dice al huésped qué tan reciente es lo que está viendo.
+- **Botón de Arrepentimiento** — solo para establecimientos en **Argentina** que lo tengan activado en el punto de venta. Lleva al flujo de cancelación.
+- **Legales** — cookies, términos y privacidad: los links configurados en tu punto de venta, o las páginas por defecto.
+- **WhatsApp y chat** — si tu punto de venta tiene el **botón flotante de WhatsApp** o el **chat de Pxsol**, aparecen igual que en el resto de tu web. Si están los dos, se muestra el chat y se oculta WhatsApp para que no se superpongan.
 
 ---
 
-## Siempre actualizada
+## 17. Siempre actualizada
 
 Esta es la diferencia más importante con las confirmaciones de antes. La página **no guarda una copia**: cada vez que se abre, lee la reserva **como está en ese momento**.
 
-<CardGroup cols={2}>
-    <Card title="Lunes · en el PMS">
-        Pasás la reserva de la hab. **101** a la **305**, agregás un niño y registrás la seña.
-    </Card>
-    <Card title="Lunes · el huésped recarga" icon="check-circle">
-        Ve la hab. **305**, un huésped más, el pago en "Pagos registrados", el saldo nuevo y "Información actualizada al" con la hora del cambio.
-    </Card>
-</CardGroup>
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#64748b',marginBottom:'8px'}}>Lunes · en el PMS</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Pasás la reserva de la hab. <b>101</b> a la <b>305</b>, agregás un niño y registrás la seña.</div>
+  </div>
+  <div style={{border:'1px solid #bbf7d0',borderRadius:'12px',background:'#f0fdf4',padding:'14px 16px'}}>
+    <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#15803d',marginBottom:'8px'}}>Lunes · el huésped recarga</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Ve la hab. <b>305</b>, un huésped más, el pago en "Pagos registrados", el saldo nuevo y "Información actualizada al" con la hora del cambio.</div>
+  </div>
+</div>
 
 Qué se refleja al recargar:
 
--   Cambios de **habitación**, de **fechas** y de **categoría**.
--   **Huéspedes** agregados o quitados en cada habitación.
--   **Llegada anticipada** y **salida tardía**.
--   **Consumos** cargados o eliminados.
--   **Pagos** registrados y el **saldo**.
--   Datos del **titular**.
+- Cambios de **habitación**, de **fechas** y de **categoría**.
+- **Huéspedes** agregados o quitados en cada habitación.
+- **Llegada anticipada** y **salida tardía**.
+- **Consumos** cargados o eliminados.
+- **Pagos** registrados y el **saldo**.
+- Datos del **titular**.
 
-<Note>
-  **Por qué los huéspedes ahora siempre cuadran**
-  
-  Antes, la cantidad de huéspedes se tomaba de lo que se cargó al crear la reserva, y no se actualizaba al editar las habitaciones. Pasaba que una reserva de 7 habitaciones con 5 personas cada una mostraba **47 huéspedes** en lugar de **35**. Ahora se cuentan habitación por habitación, a partir de cómo está armada la reserva hoy.
-</Note>
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 Los huéspedes siempre cuadran</h4>
+  <p style={{margin:'6px 0'}}>La cantidad de huéspedes se cuenta habitación por habitación, a partir de cómo está armada la reserva <b>hoy</b>, no de lo que se cargó al crearla. Si agregás o quitás huéspedes en una habitación, el total de la estadía se ajusta solo.</p>
+</div>
 
 **No hace falta volver a mandar el link** después de un cambio: el mismo link muestra lo nuevo. Si querés avisarle al huésped, alcanza con decirle que lo vuelva a abrir.
 
 ---
 
-## Idiomas
+## 18. Idiomas
 
 La página está en **español, inglés y portugués**: títulos, etiquetas, fechas ("12 oct 2026", "12 Oct 2026", "12 out 2026") y formato de números.
 
 El idioma se elige así, en este orden:
 
-1.  El que diga el link, si termina en `&lng=en`, `&lng=pt` o `&lng=es`.
-2.  El **idioma de la reserva**.
-3.  El **idioma de tu punto de venta**.
-4.  Español, si ninguno de los anteriores es uno de los tres.
+1. El que diga el link, si termina en `&lng=en`, `&lng=pt` o `&lng=es`.
+2. El **idioma de la reserva**.
+3. El **idioma de tu punto de venta**.
+4. Español, si ninguno de los anteriores es uno de los tres.
 
 Para mandarle el link en otro idioma a un huésped puntual, agregá `&lng=en` (o `&lng=pt`) al final del link copiado. Lo que carga el hotel en texto libre (nombre de la política, descripción de consumos y pagos, régimen) se muestra tal como está cargado.
 
 ---
 
-## Imprimir o guardar en PDF
+## 19. Imprimir o guardar en PDF
 
 El botón **Imprimir** de la cabecera abre la impresión del navegador. Desde ahí el huésped puede imprimir en papel o elegir **"Guardar como PDF"**.
 
 La versión impresa está preparada para eso:
 
--   **Se imprime**: cabecera con logo y datos del hotel, titular, estadía, habitaciones, resumen económico, consumos, pagos, política de cancelación y la fecha de "Información actualizada al".
--   **No se imprime**: los botones (Ir al sitio web, Imprimir, Ver presupuesto), el bloque de pago con link o QR, el pie legal, WhatsApp y el chat.
--   Fondo blanco, sin sombras, y cada tarjeta se mantiene entera en una página cuando es posible.
--   Sin el encabezado y pie automáticos del navegador (fecha, URL): así **el token no queda impreso** en el papel.
+- **Se imprime**: cabecera con logo y datos del hotel, titular, estadía, habitaciones, resumen económico, consumos, pagos, política de cancelación y la fecha de "Información actualizada al".
+- **No se imprime**: los botones (Ir al sitio web, Imprimir, Ver presupuesto), el pie legal, WhatsApp y el chat.
+- Fondo blanco, sin sombras, y cada tarjeta se mantiene entera en una página cuando es posible.
+- Sin el encabezado y pie automáticos del navegador (fecha, URL): así **el token no queda impreso** en el papel.
 
 ---
 
-## Privacidad: qué nunca muestra
+## 20. Privacidad: qué nunca muestra
 
--   **Datos de tarjeta**: nunca. Ni números, ni vencimientos, ni tokens de tarjeta.
--   **Consultas**: nunca. Solo reservas.
--   **Reservas canceladas o vencidas**: no se muestran.
--   **Motivo del rechazo**: no se le dice a quien abre un link inválido.
--   **Buscadores**: la página está marcada para que Google y otros buscadores **no la indexen**.
--   **Estadísticas de conversión**: la confirmación no registra conversiones de Google Analytics ni de publicidad. La conversión ya se registró una vez, al momento de la compra; esta página se abre muchas veces y no debe contarse de nuevo.
-
----
-
-## Preguntas frecuentes
-
-<AccordionGroup>
-  <Accordion title='No me aparece "Copiar link confirmación de reserva"'>
-    El botón solo se ofrece cuando el link va a abrir. Revisá que: la reserva **no sea una consulta** ni esté cancelada; que **tenga presupuesto**; y, si es un **voucher**, que tenga al menos una habitación.
-  </Accordion>
-  <Accordion title='El huésped dice que el link no abre'>
-    Mirá la reserva en el PMS: ¿está cancelada? ¿es todavía una consulta? ¿pasaron más de 7 días desde la salida? Si nada de eso aplica, el link llegó cortado: volvé a copiarlo y reenviálo. Ver la tabla de la sección "El enlace no es válido".
-  </Accordion>
-  <Accordion title='"Noches" dice 4 pero la estadía es de 2 noches'>
-    Es correcto: en el bloque Estadía son noches-habitación (2 habitaciones × 2 noches). Cada habitación muestra sus propias noches. Ver la sección de Estadía.
-  </Accordion>
-  <Accordion title='El total de una habitación no es noches × precio por noche'>
-    Esa habitación tiene llegada anticipada o salida tardía: el total la incluye y su precio aparece en una línea propia justo arriba. El precio por noche es solo el de las noches.
-  </Accordion>
-  <Accordion title='La categoría dice una cosa y la habitación es de otra'>
-    "Categoría" es lo que el huésped compró. Si le diste un upgrade, la habitación asignada puede ser de una categoría superior: es lo esperado.
-  </Accordion>
-  <Accordion title='No aparecen los consumos'>
-    Se listan solo si el establecimiento usa el PMS de Pxsol y los consumos están cargados en los folios de la reserva. Igualmente se suman en "Consumos y extras" del resumen económico.
-  </Accordion>
-  <Accordion title='No aparece el botón para pagar'>
-    El medio de pago de la reserva tiene que ser Link de pago o QR de pago, con la URL configurada, y tiene que quedar saldo. Si la reserva ya está paga, el bloque no se muestra.
-  </Accordion>
-  <Accordion title='Hice un cambio y el huésped no lo ve'>
-    Pedile que recargue la página. Si "Información actualizada al" no muestra la hora de tu cambio, verificá que se haya guardado en la reserva.
-  </Accordion>
-  <Accordion title='¿Puedo mandar el link sin el token, que es más corto?'>
-    No. En cuanto la reserva tiene token, el link sin él no abre. Si el largo molesta, usá un acortador de links sobre el link completo.
-  </Accordion>
-</AccordionGroup>
+- **Datos de tarjeta**: nunca. Ni números, ni vencimientos, ni tokens de tarjeta.
+- **Consultas**: nunca. Solo reservas.
+- **Reservas canceladas o vencidas**: no se muestran.
+- **Motivo del rechazo**: no se le dice a quien abre un link inválido (sección 6).
+- **Buscadores**: la página está marcada para que Google y otros buscadores **no la indexen**.
+- **Estadísticas de conversión**: la confirmación no registra conversiones de Google Analytics ni de publicidad. La conversión ya se registró una vez, al momento de la compra; esta página se abre muchas veces y no debe contarse de nuevo.
 
 ---
 
-## Para soporte: cómo funciona por dentro
+## 21. Preguntas frecuentes
 
-Esta sección es para el equipo de soporte y desarrollo.
+<div style={{display:'flex',flexDirection:'column',gap:'10px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>No me aparece "Copiar link confirmación de reserva"</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>El botón solo se ofrece cuando el link va a abrir. Revisá que: la reserva <b>no sea una consulta</b> ni esté cancelada; que <b>tenga presupuesto</b>; y, si es un <b>voucher</b>, que tenga al menos una habitación.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>El huésped dice que el link no abre</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Mirá la reserva en el PMS: ¿está cancelada? ¿es todavía una consulta? ¿pasaron más de 7 días desde la salida? Si nada de eso aplica, el link llegó cortado: volvé a copiarlo y reenviálo. Ver la tabla de la sección 6.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>"Noches" dice 4 pero la estadía es de 2 noches</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Es correcto: en el bloque Estadía son noches-habitación (2 habitaciones × 2 noches). Cada habitación muestra sus propias noches. Ver sección 10.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>El total de una habitación no es noches × precio por noche</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Esa habitación tiene llegada anticipada o salida tardía: el total la incluye y su precio aparece en una línea propia justo arriba. El precio por noche es solo el de las noches.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>La categoría dice una cosa y la habitación es de otra</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>"Categoría" es lo que el huésped compró. Si le diste un upgrade, la habitación asignada puede ser de una categoría superior: es lo esperado.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>No aparecen los consumos</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Se listan solo si el establecimiento usa el PMS de Pxsol y los consumos están cargados en los folios de la reserva. Igualmente se suman en "Consumos y extras" del resumen económico.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Hice un cambio y el huésped no lo ve</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Pedile que recargue la página. Si "Información actualizada al" no muestra la hora de tu cambio, verificá que se haya guardado en la reserva.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>¿Puedo mandar el link sin el token, que es más corto?</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>No. En cuanto la reserva tiene token, el link sin él no abre. Si el largo molesta, usá un acortador de links sobre el link completo.</div>
+  </div>
+</div>
 
-### El recorrido de una apertura
+---
 
-<Steps>
-    <Step title="1. Huésped">
-        Abre `gracias_v2.php?CID=…&token=…` en la web del hotel.
-    </Step>
-    <Step title="2. webroot">
-        Llama a api2 con su key interna y pasa el token en el header `X-Reservation-Token`.
-    </Step>
-    <Step title="3. api2 decide">
-        Verifica: Existe → estado visible → dentro de ventana → token coincide. Si falla: 403.
-    </Step>
-    <Step title="4. Resumen">
-        Arma el resumen desde las habitaciones, folios y balance actuales.
-    </Step>
-    <Step title="5. Render">
-        webroot suma datos del POS y del producto (logo, color, legales) y dibuja la página.
-    </Step>
-</Steps>
-
--   **Endpoint**: `GET {Api2}/v2/reservations/{CID}/public-summary?context=gracias_v2`, en el grupo de rutas `internalpxsol`. La key `WEBROOT_TO_API2_INTERNAL_KEY` autentica a **webroot**; el `public_access_token` autoriza al **huésped**.
--   El token viaja **por header**, no por query string, para que no quede en los access logs de api2.
--   **Fail-closed**: si webroot no tiene endpoint o key configurados, o api2 responde algo distinto de 200, la página muestra "El enlace no es válido". Nunca se muestra una confirmación a medias.
--   El token se compara con `hash_equals` (byte a byte), no con la collation de MySQL, que es case-insensitive e ignora espacios finales.
--   Se leen **todos** los tokens de `reservation_metadata` de la reserva (la tabla puede tener más de una fila): "tiene token" significa que existe al menos uno, y el del link puede coincidir con cualquiera.
-
-### Motivos de rechazo
-
-La página siempre muestra el mismo mensaje. El motivo real viaja en la respuesta 403 de api2 (`reason`) para diagnóstico interno:
-
-| reason            | Cuándo                                                                      |
-| ----------------- | --------------------------------------------------------------------------- |
-| `INVALID_CID`     | El CID no es un número positivo.                                            |
-| `NOT_FOUND`       | No existe en `mod09_transacciones`, está borrada, o el resumen salió vacío. |
-| `CANCELLED`       | Instancia `noventa`, `nvcp`, `90` o `caidas`.                               |
-| `NOT_AVAILABLE`   | Cualquier otra instancia fuera de la allowlist (incluida `consulta`).       |
-| `EXPIRED`         | `fechaegreso` anterior a hoy − 7 días (reloj de la DB).                     |
-| `INVALID_TOKEN`   | La reserva tiene token y el del link falta o no coincide.                   |
-
-<Warning>
-Estados visibles (allowlist): `preventa`, `venta`, `postventa`, `checkin`, `inhouse`, `checkout`. Cambiar esta lista o la ventana de 7 días amplía qué reservas son legibles sin sesión: es una decisión de seguridad (CVE-2026-38872) y se discute aparte.
-</Warning>
-
-### De dónde sale cada dato
-
-| Bloque                 | Fuente                                                                                                                |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Cabecera, titular, estadía, totales | `ReservationService::getReservationSummary()` de api2                                                       |
-| Huéspedes              | `reservation_rooms` (no la cabecera `GroupsForm`, que es una foto del alta — NX#152220)                                |
-| Detalle por habitación | `reservation_rooms` + folios / `vouchers_items` de alojamiento si la empresa tiene `activate_reservation_rooms`; si no, `neo_ocupacion` |
-| Precio por noche       | Promedio de ítems `Accommodation` no borrados, excluyendo ECI/LCO por prefijo de código (NX#154500)                      |
-| Consumos               | `vouchers_items` no-alojamiento, solo si `mod00_productos.use_pxsol_pms`                                             |
-| Pagos                  | `mod09_balance` con `Status = 1`, importe = créditos − cargos, sin filas en cero                                      |
-| Link / QR de pago      | `payment_means` del medio de la reserva (`PaymentLink` / `PaymentQR`)                                                 |
-| "Actualizada al"       | `fecha` / `hora` de `mod09_transacciones`                                                                             |
-| Logo, nombre, dirección, web | `/product/info` de api1                                                                                             |
-| Color, decimales, legales, WhatsApp, favicon | `/pos/info` de api1 (cacheado 30 días en Redis)                                                                   |
-
-### Archivos
-
--   `webroot/neo_checkout/gracias_v2.php` — la página.
--   `webroot/neo_checkout/gracias_v2_textos.php` — textos es / en / pt, fechas y formato de montos.
--   `webroot/core/functions.php` — `get_public_reservation_summary()` y `renderLinkExpiredPage()`.
--   `api2/app/Http/Controllers/PublicReservationController.php` y `api2/app/Services/PublicReservationSummaryService.php` — el gate y el payload.
--   `api/booking/submit.php`, `api/booking/new.php` — generan el token al crear la reserva.
--   `api/links/list.php` + `api/links/includes/shareable_scope.php` — el botón "Copiar link" y el token a demanda.
--   `api/email_template/load_body.php`, `api/links/html.php`, api2 `TemplateVariablesReplacerService` — reemplazo de `[var_confirmation_v2]`.
+*Mithras · Link de Confirmación de Reserva · Guía de uso · Septiembre 2026*
