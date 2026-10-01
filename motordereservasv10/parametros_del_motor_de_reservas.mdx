@@ -1,0 +1,273 @@
+---
+title: Parámetros del motor de reservas
+description: Qué parámetros acepta la URL del motor y qué eventos envía a Google Tag Manager, para armar links directos y medir las reservas.
+---
+
+Esta guía reúne dos cosas:
+
+1.  **Parámetros de URL**: lo que se puede agregar al link del motor para abrirlo con fechas, ocupación, moneda o promoción ya elegidas.
+2.  **Eventos de medición**: lo que el motor envía al `dataLayer` para que Google Tag Manager (GTM), Google Analytics 4 (GA4) y Google Ads registren búsquedas y reservas.
+
+## 1. Parámetros de URL
+
+El motor se abre en la página `lp.html` del sitio del hotel, por ejemplo `https://www.mihotel.com/lp.html`.
+
+Los parámetros se agregan después de `?` y se separan con `&`. No distinguen mayúsculas y minúsculas salvo donde se indica.
+
+### Fechas
+
+| Parámetro | Alias aceptados | Formato | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| `checkin` | `start`, `Start`, `CheckIn`, `checkin_date`, `fechaingreso` | `AAAA-MM-DD` o `DD/MM/AAAA` | `checkin=2026-12-20` |
+| `checkout` | `end`, `End`, `CheckOut`, `checkout_date`, `fechaegreso` | `AAAA-MM-DD` o `DD/MM/AAAA` | `checkout=2026-12-23` |
+| `nights` | `Nights` | número de noches | `nights=3` |
+
+<Info>
+Si una fecha viene en otro formato, se ignora y el motor usa las fechas por defecto del hotel.
+</Info>
+
+### Ocupación
+
+| Parámetro | Alias aceptados | Qué indica | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| `rooms` | `Rooms` | cantidad de habitaciones | `rooms=1` |
+| `adults` | `Adults` | cantidad de adultos | `adults=2` |
+| `minors` | `Minors`, `children`, `Children` | cantidad de menores | `minors=1` |
+| `childAges` | `child_ages`, `childrenAges` | edades de los menores, separadas por coma | `childAges=7` |
+| `babies` | `Babies` | cantidad de bebés | `babies=1` |
+| `GroupsForm` | `groupsform`, `groups_form` | ocupación completa en el formato `habitaciones:adultos,edades,bebés` | `GroupsForm=1:2,7.10,0` |
+
+<Tip>
+En `GroupsForm`, las edades de los menores se separan con punto. El ejemplo de la tabla es 1 habitación, 2 adultos, dos menores de 7 y 10 años y ningún bebé.
+</Tip>
+
+### Moneda, idioma y nacionalidad
+
+| Parámetro | Alias aceptados | Formato | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| `currency` | `cur`, `Currency` | código ISO de moneda | `currency=ARS` |
+| `lng` | `lang`, `Lng` | código de idioma de 2 letras | `lng=en` |
+| `nationality` | `country`, `Nationality` | código ISO de país de 2 letras | `nationality=AR` |
+
+<Info>
+La nacionalidad incide en el precio cuando el hotel tiene activado Tax Free. Sin este parámetro, el motor la detecta y el huésped la puede cambiar en el buscador.
+</Info>
+
+### Promociones y orden del listado
+
+| Parámetro | Alias aceptados | Qué hace | Ejemplo |
+| :--- | :--- | :--- | :--- |
+| `code` | `Code`, `promoCode`, `promocode`, `promo_code` | aplica un código promocional o de convenio | `code=VERANO26` |
+| `showpromos` | `showPromos`, `show_promos` | abre el motor mostrando las promociones en lugar de las habitaciones | `showpromos=true` |
+| `order_rooms` | `cart_sort` | orden del listado: `recommended`, `price_asc`, `price_desc` o `category` | `order_rooms=price_asc` |
+| `roomid` | `roomId`, `room_id`, `RoomID` | abre directamente el detalle de una habitación | `roomid=175105` |
+
+### Origen de la visita (atribución)
+
+| Parámetro | Qué indica | Ejemplo |
+| :--- | :--- | :--- |
+| `tag` | etiqueta de origen que queda registrada en la reserva | `tag=PxsolHotelAdsGoogle` |
+| `utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content` | parámetros UTM de campaña | `utm_source=newsletter` |
+| `gclid`, `fbclid` | identificadores de clic de Google Ads y Meta | lo agregan los anuncios automáticamente |
+
+<Note>
+- `tag` y los UTM **se conservan durante toda la visita**, aunque el huésped navegue, inicie sesión o vaya y vuelva de la pasarela de pago. Llegan hasta la reserva.
+- Si un parámetro UTM aparece repetido en la URL, vale **el último**. Los cinco UTM se toman como un conjunto: una campaña nueva reemplaza entera a la anterior.
+</Note>
+
+### Ejemplo completo
+
+Este link abre el motor con 3 noches del 20 al 23 de diciembre, 2 adultos y un menor de 7 años, precios en pesos, el código VERANO26 aplicado y la visita atribuida a la campaña de newsletter.
+
+
+https://www.mihotel.com/lp.html?checkin=2026-12-20&checkout=2026-12-23&adults=2&minors=1&childAges=7&currency=ARS&code=VERANO26&utm_source=newsletter&utm_medium=email&utm_campaign=verano
+
+
+## 2. Eventos de medición (dataLayer y GTM)
+
+### Qué contenedores se cargan
+
+El motor carga automáticamente los contenedores configurados en el panel de PXSOL:
+
+*   **Google Tag Manager**: el contenedor `GTM-…` del hotel.
+*   **Google Analytics 4**: el ID de medición `G-…` del hotel.
+*   **Google Ads**: el ID y las etiquetas de conversión, si están cargados en el panel.
+*   **Meta Pixel**: el ID del píxel, si está cargado.
+
+<Info>
+Todos los eventos se envían también al `dataLayer`, así que se pueden usar como activadores en GTM.
+</Info>
+
+### Recorrido de una reserva
+
+| Paso | Pantalla | Eventos principales |
+| :--- | :--- | :--- |
+| 1 | Buscador y listado de habitaciones | `search_open`, `search_submit`, `has_inventory` / `no_inventory` |
+| 2 | Habitación agregada a la reserva | `add_to_cart` |
+| 3 | Datos del huésped y pago | `form_view`, `form_interaction`, `form_submit` |
+| 4 | Confirmación de la reserva | `purchase`, `form_success` |
+
+La confirmación de la reserva (paso 4) es una pantalla del propio motor, con una URL del tipo `lp.html?…&step=4`.
+
+<Warning>
+La página `/neo_checkout/gracias_v2.php` es la confirmación que el huésped abre desde el mail. Se puede abrir muchas veces, así que **no envía conversiones a propósito**. Si en el diagnóstico de cobertura de Tag Manager aparece como "Sin etiquetar", es el comportamiento esperado.
+</Warning>
+
+### Evento `purchase` (reserva confirmada)
+
+Es la conversión principal. Se envía **una sola vez por reserva**, aunque el huésped recargue la confirmación o inicie sesión después. Sigue el formato estándar de **GA4 Ecommerce**: primero el motor limpia el objeto `ecommerce` anterior y después envía el evento `purchase` con estos datos.
+
+**Datos dentro de `ecommerce`**:
+
+| Campo | Qué contiene | Ejemplo |
+| :--- | :--- | :--- |
+| `transaction_id` | número de reserva | `11921970` |
+| `value` | total de la reserva | `450000.03` |
+| `currency` | moneda de la reserva | `ARS` |
+| `tax` | importe de los impuestos | `54000` |
+| `discount` | descuento aplicado | `0` |
+| `shipping` | siempre 0 | `0` |
+| `affiliation` | nombre del hotel | `Nombre del hotel` |
+| `items` | una entrada por habitación reservada | |
+
+**Datos de cada entrada de `items`**:
+
+| Campo | Qué contiene | Ejemplo |
+| :--- | :--- | :--- |
+| `item_id` | id de la habitación | `175105` |
+| `item_name` | nombre de la habitación | `Habitación Doble` |
+| `item_brand` | nombre del hotel | `Nombre del hotel` |
+| `item_category` | siempre Hotel | `Hotel` |
+| `item_category2` | tarifa | `Tarifa flexible` |
+| `item_variant` | tarifa | `Tarifa flexible` |
+| `quantity` | cantidad | `1` |
+| `price` | precio de la habitación | `150000` |
+
+Además, al nivel del evento (fuera de `ecommerce`) van `transaction_id`, `value` y `currency` repetidos, más estos datos de contexto:
+
+| Campo | Qué contiene | Ejemplo |
+| :--- | :--- | :--- |
+| `start_date` | fecha de ingreso | `2026-12-20` |
+| `end_date` | fecha de salida | `2026-12-23` |
+| `total_paxs` | cantidad de huéspedes | `2` |
+| `pos` | punto de venta del hotel | `MiHotel` |
+| `product_id` | id del hotel | `23898` |
+| `product_name` | nombre del hotel | `Nombre del hotel` |
+| `search_id` | id de la búsqueda | `69408115` |
+| `budget_id` | id del presupuesto | `11212794` |
+
+<Note>Los valores de ejemplo son ilustrativos.</Note>
+
+### Evento `add_to_cart` (habitación agregada)
+
+Se envía cuando el huésped agrega una habitación a su reserva. También usa el formato de GA4 Ecommerce, con `value`, `currency` e `items` dentro de `ecommerce`, más `pos`, `product_id`, `search_id` y `budget_id` al nivel del evento.
+
+### Eventos del embudo
+
+Todos estos eventos llevan además `pos` y `product_id`.
+
+| Evento | Cuándo se envía | Parámetros |
+| :--- | :--- | :--- |
+| `px_layer_ready` | la capa de medición quedó lista | `pos`, `product_id`, `product_name`, `company_id`, `currency` |
+| `search_open` | el buscador está disponible (una vez por visita) | `page_url` |
+| `start_search` | el huésped cambió la fecha de ingreso | `start_search`, `page_url` |
+| `egreso_search` | el huésped cambió la fecha de salida | `egreso_search`, `page_url` |
+| `search_modify` | el huésped cambió fechas, ocupación o moneda | `start_date`, `end_date`, `rooms`, `adults`, `children`, `babies`, `currency`, `page_url` |
+| `search_submit` | se lanzó una búsqueda | `start_date`, `end_date`, `nights`, `rooms`, `adults`, `children`, `currency` |
+| `has_inventory` | la búsqueda devolvió habitaciones | `search_id`, `start_date`, `end_date`, `results` |
+| `no_inventory` | la búsqueda no devolvió habitaciones | `search_id`, `start_date`, `end_date` |
+| `form_view` | un formulario apareció en pantalla | `form_id`, `page_url` |
+| `form_interaction` | el huésped completó un campo | `form_id`, `field_name` |
+| `form_submit` | se envió un formulario | `form_id`, `fields_status`, `email_provided`, `phone_provided`, `page_url` |
+| `form_success` | un formulario terminó bien | `form_id`, `lead_id`, `transaction_id` |
+| `whatsapp_click` | el huésped tocó el botón de WhatsApp | `channel`, `product_name`, `search_id`, `currency` |
+
+**Valores de `form_id`**:
+
+| `form_id` | Formulario |
+| :--- | :--- |
+| `search_form` | el buscador (en `form_submit`) |
+| `pxmk_searchform` | búsqueda completada (en `form_success`) |
+| `add_to_cart` | habitación agregada (en `form_success`) |
+| `formCheckoutSubmit` | datos del huésped y pago. En `form_success`, `transaction_id` es el número de reserva |
+
+### Conversiones de Google Ads
+
+Si el hotel cargó en el panel de PXSOL su **ID de conversión** (`AW-…`) y sus **etiquetas de conversión**, el motor envía las conversiones de Google Ads por su cuenta. No hace falta configurar nada en GTM:
+
+*   **Reserva confirmada**: una vez por reserva, con el total y la moneda.
+*   **Búsqueda**: una vez por visita.
+
+<Warning>
+**No configuren las dos cosas a la vez**, porque cada reserva se contaría dos veces. Si prefieren manejar Google Ads desde su propio GTM, dejen los campos de conversión de Google Ads vacíos en el panel de PXSOL.
+</Warning>
+
+## 3. Configurar la conversión en Google Tag Manager
+
+<Steps>
+<Step title="Crear variables de capa de datos">
+Cree variables de tipo **Variable de capa de datos**, versión 2, para acceder a la información de la compra.
+
+| Nombre de la variable | Nombre en la capa de datos |
+| :--- | :--- |
+| `DLV - ecommerce.transaction_id` | `ecommerce.transaction_id` |
+| `DLV - ecommerce.value` | `ecommerce.value` |
+| `DLV - ecommerce.currency` | `ecommerce.currency` |
+
+</Step>
+<Step title="Configurar el activador">
+1. Cree un nuevo activador de tipo **Evento personalizado**.
+2. En el campo **Nombre del evento**, escriba `purchase`.
+
+<Tip>
+No use activadores por URL ni por página vista. El evento `purchase` garantiza que la conversión se cuente una sola vez por reserva, en el momento exacto de la confirmación.
+</Tip>
+</Step>
+<Step title="Crear la etiqueta de GA4">
+1. Cree una nueva etiqueta de tipo **Google Analytics: Evento de GA4**.
+2. Configure el **Nombre del evento** como `purchase`.
+3. En *Más opciones de configuración*, active la casilla **Enviar datos de comercio electrónico** y seleccione la fuente de datos **Capa de datos**.
+4. Asigne el activador de evento personalizado `purchase` que creó en el paso anterior.
+
+<Warning>
+Si GA4 ya está cargado en el panel de PXSOL, el motor envía el evento `purchase` a esa propiedad automáticamente. Para no duplicar conversiones, use esta etiqueta solo si necesita enviar los datos a **otra** propiedad de GA4.
+</Warning>
+</Step>
+<Step title="Crear la etiqueta de Google Ads">
+1. Cree una nueva etiqueta de tipo **Seguimiento de conversiones de Google Ads**.
+2. Complete el **ID de conversión** y la **Etiqueta de conversión** con los datos de su cuenta de Google Ads.
+3. Asigne las variables de capa de datos a los campos correspondientes:
+    - **Valor de conversión**: `{{DLV - ecommerce.value}}`
+    - **ID de transacción**: `{{DLV - ecommerce.transaction_id}}`
+    - **Código de moneda**: `{{DLV - ecommerce.currency}}`
+    <Tip>Para elegir cada variable, use el ícono del bloque de LEGO que aparece al lado de cada campo en GTM.</Tip>
+4. Asigne el activador de evento personalizado `purchase`.
+</Step>
+<Step title="Verificar la configuración">
+1. Abra **Tag Assistant** sobre el sitio web del hotel.
+2. Realice una reserva de prueba hasta llegar a la pantalla de confirmación del motor.
+3. En la lista de eventos de Tag Assistant, verifique que ocurra lo siguiente:
+    <Check>
+    - Aparece un evento llamado `purchase` en la línea de tiempo.
+    - Al seleccionar el evento `purchase`, la pestaña *Data Layer* muestra `transaction_id`, `value` y `currency` con los datos correctos.
+    - Las etiquetas de GA4 y Google Ads que configuró aparecen en la sección *Tags Fired*.
+    </Check>
+</Step>
+</Steps>
+
+## Preguntas frecuentes
+
+<AccordionGroup>
+<Accordion title='El diagnóstico de cobertura marca "gracias_v2.php" como "Sin etiquetar"'>
+Es el comportamiento esperado. Esa página es la confirmación que el huésped abre desde su correo electrónico y se puede visitar varias veces. Para evitar contar conversiones de más, no se incluyen etiquetas de seguimiento a propósito. La conversión real se registra una sola vez en la pantalla de confirmación del motor (`lp.html?…&step=4`).
+</Accordion>
+<Accordion title="Veo el contenedor en el buscador pero no se dispara el evento `purchase`">
+Revise que el activador de su etiqueta sea el **evento personalizado** `purchase` y no una condición de URL o página vista. La confirmación no tiene una URL única y fija. Si el problema persiste, contacte a soporte con el número de la reserva de prueba y una captura de pantalla de Tag Assistant mostrando la línea de tiempo de eventos.
+</Accordion>
+<Accordion title="¿El valor de la conversión incluye impuestos?">
+Sí, el campo `value` representa el total final de la reserva, incluyendo los impuestos que correspondan a ese huésped y su nacionalidad. El importe de los impuestos también se envía por separado en el campo `tax`.
+</Accordion>
+<Accordion title="¿En qué moneda llega el valor de la conversión?">
+El valor llega en la moneda que el huésped utilizó para realizar la reserva, indicada en el campo `currency`. Si su sitio ofrece varias monedas, es una buena práctica configurar la etiqueta de Google Ads para que tome el código de moneda de la variable de capa de datos (`{{DLV - ecommerce.currency}}`) en lugar de usar un valor fijo.
+</Accordion>
+</AccordionGroup>
