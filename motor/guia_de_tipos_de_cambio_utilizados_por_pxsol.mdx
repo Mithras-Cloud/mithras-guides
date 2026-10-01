@@ -1,0 +1,48 @@
+---
+title: "Guía de tipos de cambio utilizados por Pxsol"
+description: "Descubre las APIs y fuentes de datos que Pxsol utiliza para obtener los tipos de cambio para ARS, CLP, COP y otras monedas."
+---
+
+Pxsol obtiene automáticamente los tipos de cambio mediante diferentes APIs de cotización, según la moneda que necesites convertir. A continuación, detallamos la fuente utilizada para cada caso.
+
+<CardGroup cols={1}>
+  <Card title="Peso Argentino (ARS) - Fuente Principal" icon="money-bill-wave">
+    Para la conversión de **ARS**, Pxsol consulta la API del **Banco Central de la República Argentina (BCRA)** como fuente principal.
+
+    - **Fuente:** [API del BCRA](https://www.bcra.gob.ar/apis-banco-central/?)
+    - **Cotización utilizada:** **Dólar minorista - venta**.
+
+  </Card>
+  <Card title="Monedas Latinoamericanas y Alternativa para ARS" icon="globe-americas">
+    Para las siguientes monedas, Pxsol utiliza **[DolarAPI](https://dolarapi.com/?)**:
+
+    - **CLP** - Peso chileno
+    - **COP** - Peso colombiano
+    - **UYU** - Peso uruguayo
+    - **MXN** - Peso mexicano
+    - **VES** - Bolívar venezolano
+
+    <Info>
+      **Fuente alternativa para ARS**
+
+      DolarAPI también actúa como fuente secundaria para **ARS** si la cotización del BCRA no está disponible. En este caso:
+
+      - **Cotización:** Dólar oficial - venta.
+      - **Spread:** Se aplica un recargo (spread) de aproximadamente **1,47%**.
+    </Info>
+
+  </Card>
+  <Card title="Otras Monedas Internacionales" icon="globe">
+    Para las monedas no cubiertas por las fuentes anteriores, Pxsol utiliza **[Currency Converter API](https://www.currencyconverterapi.com/?)**.
+
+    Esta API proporciona los tipos de cambio para el resto de las monedas soportadas por el sistema.
+
+  </Card>
+</CardGroup>
+
+<Warning>
+  **Variación de Cotizaciones**
+
+Las cotizaciones pueden variar según la frecuencia de actualización de cada API. Pxsol siempre utilizará el tipo de cambio disponible en la fuente correspondiente al momento exacto de la conversión.
+
+</Warning>
