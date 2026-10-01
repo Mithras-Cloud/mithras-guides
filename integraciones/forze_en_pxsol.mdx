@@ -1,0 +1,680 @@
+---
+lang: es
+title: Forze en Pxsol
+description: "Las cerraduras digitales del hotel, administradas desde Pxsol: habitaciones, check-ins, códigos, tarjetas, cerraduras, gateways y el registro de actividad. Cómo funciona cada vista, qué hace el envío automático y qué ve cada usuario."
+---
+
+<div style={{borderRadius:'20px',overflow:'hidden',border:'1px solid #e2e8f0',background:'#fff',boxShadow:'0 20px 60px rgba(15,23,42,.12)',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',margin:'0 0 24px'}}>
+  <div style={{background:'linear-gradient(135deg,#3b0f0d,#722320 60%,#9a3a35)',color:'#fff',padding:'46px 40px'}}>
+    <div style={{fontSize:'12px',letterSpacing:'.18em',textTransform:'uppercase',color:'#f3c7c2',fontWeight:700}}>Pxsol · Guía de uso</div>
+    <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Forze en Pxsol</div>
+    <div style={{fontSize:'16px',color:'#fbe4e1',maxWidth:'620px'}}>Las cerraduras digitales del hotel, administradas desde Pxsol: habitaciones, check-ins, códigos, tarjetas, cerraduras, gateways y el registro de actividad. Cómo funciona cada vista, qué hace el envío automático y qué ve cada usuario.</div>
+    <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Habitaciones</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Check-ins</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Códigos y tarjetas</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Cerraduras y gateways</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Tarjetas del hotel</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Registro de actividad</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Envío automático</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>PMS y plano</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#fff1ef'}}>Permisos</span>
+    </div>
+  </div>
+  <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Octubre 2026</b></div>
+</div>
+
+## Contenido
+
+1. Qué es
+2. Antes de empezar: credencial y permisos
+3. La ventana de Forze
+4. Habitaciones
+5. El botón "Check-in" de una habitación
+6. Detalle de una habitación
+7. Nueva habitación
+8. El check-in de la habitación
+9. Un check-in nuevo
+10. Check-ins
+11. Cerraduras
+12. Gateways
+13. Tarjetas del hotel
+14. Registro de actividad
+15. El envío automático del código
+16. Cuándo se genera el código
+17. En el PMS: la pestaña de habitaciones de la reserva
+18. En el plano: el detalle de la reserva
+19. Intercambio de habitaciones
+20. Privacidad y seguridad
+21. Preguntas frecuentes
+
+---
+
+## 1. Qué es
+
+**Forze** es el sistema de cerraduras digitales del hotel. Cada habitación tiene una cerradura que se abre con un **código de teclado**, una **tarjeta** o la **app del huésped**. Lo que habilita esos accesos, y por cuánto tiempo, es un **check-in de Forze**: dice qué habitaciones abre, desde qué día y hora, hasta cuándo, y con qué códigos y tarjetas.
+
+Pxsol se integra con Forze en dos sentidos:
+
+- **Automático**: cuando nace una reserva, Pxsol le genera un código a cada habitación y, el día del check-in, crea el check-in en Forze con el código, las fechas, el huésped y las observaciones (sección 15). No hay que hacer nada.
+- **Manual**: la **ventana de Forze** de Pxsol permite hacer desde el PMS todo lo que antes había que hacer en la web de Forze: ver el estado de cada habitación, editar un check-in, sumar códigos y tarjetas, abrir una puerta a distancia, administrar las tarjetas maestras y revisar la actividad.
+
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 En una frase</h4>
+  <p style={{margin:'6px 0'}}>La <b>reserva</b> dice quién se aloja y cuándo. El <b>check-in de Forze</b> dice qué puertas abre ese huésped, con qué códigos y tarjetas, y hasta cuándo. Pxsol arma el segundo a partir del primero y te deja ajustarlo.</p>
+</div>
+
+---
+
+## 2. Antes de empezar: credencial y permisos
+
+### La credencial del hotel
+
+Para que todo funcione, el establecimiento tiene que tener la **integración de Forze configurada en Marketplace**: usuario, contraseña e ID de hotel de Forze. Si falta, la ventana lo explica y lleva a Marketplace en lugar de mostrar una pantalla vacía. Si Forze rechaza la credencial, también lo dice.
+
+Para administrar las **tarjetas del hotel** (sección 13), Forze además tiene que tener habilitado el permiso de administración de tarjetas en esa credencial. Si no lo tiene, la vista lo avisa.
+
+### Los permisos de cada usuario
+
+En **Usuarios**, la app **Forze** tiene tres selectores. Cada uno habilita algo distinto:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Permiso</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué habilita</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Sin él</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:800,padding:'2px 9px',borderRadius:'999px',background:'#e0f2fe',color:'#0369a1',border:'1px solid #bae6fd'}}>VER</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Abrir la ventana de Forze, ver los códigos y el historial de la habitación.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La ventana muestra "Sin permiso" y los códigos aparecen como ••••••.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:800,padding:'2px 9px',borderRadius:'999px',background:'#fef3c7',color:'#92400e',border:'1px solid #fde68a'}}>EDITAR</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Crear y modificar: check-ins (nuevo, editar, check-out, regenerar código), habitaciones, tarjetas del hotel, códigos y tarjetas de las cerraduras, abrir puertas a distancia.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Insignia "Solo lectura" y esos botones quedan deshabilitados.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:800,padding:'2px 9px',borderRadius:'999px',background:'#fee2e2',color:'#b91c1c',border:'1px solid #fecaca'}}>ELIMINAR</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Borrar una habitación de Forze, un check-in finalizado, una tarjeta del hotel, las tarjetas y códigos de una cerradura, y quitar códigos o tarjetas cargados en un check-in.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Esos botones quedan deshabilitados o no aparecen.</td></tr>
+  </tbody>
+</table>
+
+- **Editar y eliminar necesitan ver.** Con "ver" bloqueado, el usuario no puede hacer nada aunque tenga los otros dos.
+- **Eliminar necesita editar.**
+- **El check-out cuenta como editar**, no como eliminar: cierra el check-in, no lo borra.
+- Si un usuario **no tiene una fila de permisos** para Forze, puede todo. Los administradores bloquean por usuario.
+
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #fde68a',background:'#fffbeb',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>⚠️ El permiso lo cumple el servidor</h4>
+  <p style={{margin:'6px 0'}}>Deshabilitar un botón es una ayuda visual. Aunque alguien intente la acción por otro camino, el servidor la rechaza si el usuario no tiene el permiso.</p>
+</div>
+
+---
+
+## 3. La ventana de Forze
+
+Se abre desde el menú del PMS o directamente en Apex. Tiene una cabecera con el nombre del hotel y seis pestañas:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{background:'#fff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px'}}>
+    <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',gap:'12px',padding:'14px 16px',borderBottom:'1px solid #e2e8f0',flexWrap:'wrap'}}>
+      <div style={{display:'flex',alignItems:'center',gap:'10px'}}><span style={{width:'30px',height:'30px',borderRadius:'8px',border:'1px solid #e2e8f0',display:'inline-flex',alignItems:'center',justifyContent:'center'}}>⟳</span><span style={{fontSize:'22px',fontWeight:700}}>Forze</span></div>
+      <div style={{display:'flex',alignItems:'center',gap:'8px',color:'#64748b',fontSize:'13px'}}>🏢 Hotel Internacional<span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 9px',borderRadius:'999px',background:'#f1f5f9',color:'#475569',border:'1px solid #e2e8f0'}}>Premium</span></div>
+    </div>
+    <div style={{display:'flex',gap:'4px',padding:'8px 12px',flexWrap:'wrap',borderBottom:'1px solid #e2e8f0'}}>
+      <span style={{padding:'6px 12px',borderRadius:'8px',background:'#722320',color:'#fff',fontWeight:700,fontSize:'13px'}}>🛏 Habitaciones</span>
+      <span style={{padding:'6px 12px',borderRadius:'8px',color:'#475569',fontWeight:600,fontSize:'13px'}}>📋 Check-ins</span>
+      <span style={{padding:'6px 12px',borderRadius:'8px',color:'#475569',fontWeight:600,fontSize:'13px'}}>🔒 Cerraduras</span>
+      <span style={{padding:'6px 12px',borderRadius:'8px',color:'#475569',fontWeight:600,fontSize:'13px'}}>📡 Gateways</span>
+      <span style={{padding:'6px 12px',borderRadius:'8px',color:'#475569',fontWeight:600,fontSize:'13px'}}>💳 Tarjetas</span>
+      <span style={{padding:'6px 12px',borderRadius:'8px',color:'#475569',fontWeight:600,fontSize:'13px'}}>📊 Registro de actividad</span>
+    </div>
+  </div>
+</div>
+
+*El botón ⟳ vuelve a pedir todo a Forze. La insignia junto al hotel indica su plan en Forze, y "Solo lectura" si el usuario no tiene permiso de editar.*
+
+En todas las listas:
+
+- **El buscador busca mientras escribís**, en todas las columnas y sin importar tildes ni mayúsculas.
+- **La paginación** es de **25, 50, 100 o 200** filas por página. Cambiar la búsqueda o el tamaño vuelve a la página 1.
+- La lista llega entera en una llamada y se pagina en tu pantalla, así que cambiar de página es instantáneo.
+
+---
+
+## 4. Habitaciones
+
+Es la vista principal: una tarjeta por cada habitación de Forze, ordenadas como en Forze (la 12 antes que la 101). Cada tarjeta cruza lo que dice Forze con lo que Pxsol sabe de la reserva de hoy.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px'}}>
+    <div style={{display:'flex',gap:'8px',marginBottom:'12px',flexWrap:'wrap'}}><span style={{flex:'1 1 220px',border:'1px solid #e2e8f0',borderRadius:'8px',padding:'7px 10px',color:'#94a3b8',background:'#fff'}}>🔍 Buscar habitación, huésped o reserva…</span><span style={{padding:'7px 12px',borderRadius:'8px',background:'#722320',color:'#fff',fontWeight:700}}>＋ Nueva habitación</span></div>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fill,minmax(150px,1fr))',gap:'10px'}}>
+      <div style={{border:'1px solid #e9c9c6',borderLeft:'4px solid #722320',background:'#fbefee',borderRadius:'10px',padding:'10px'}}><div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'6px'}}><b style={{fontSize:'15px'}}>101</b><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 7px',borderRadius:'999px',background:'#722320',color:'#fff'}}>In house</span></div><div style={{marginTop:'6px',fontWeight:600}}>👤 Ana Pérez</div><div style={{color:'#64748b'}}>📅 10 oct - 12 oct · 2 noches</div><div style={{color:'#64748b'}}># Reserva 11783471</div><div style={{textAlign:'right',marginTop:'6px'}}>📋 👁</div></div>
+      <div style={{border:'1px solid #bfdbfe',borderLeft:'4px solid #2563eb',background:'#eff6ff',borderRadius:'10px',padding:'10px'}}><div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'6px'}}><b style={{fontSize:'15px'}}>102</b><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 7px',borderRadius:'999px',background:'#dbeafe',color:'#1d4ed8'}}>Llega hoy</span></div><div style={{marginTop:'6px',fontWeight:600}}>👤 Bruno Díaz</div><div style={{color:'#64748b'}}>📅 12 oct - 14 oct · 2 noches</div><div style={{color:'#64748b'}}># Reserva 11790000</div><div style={{textAlign:'right',marginTop:'6px'}}>📋 👁</div></div>
+      <div style={{border:'1px solid #e2e8f0',background:'#fff',borderRadius:'10px',padding:'10px'}}><div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'6px'}}><b style={{fontSize:'15px'}}>103</b><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 7px',borderRadius:'999px',background:'#fef3c7',color:'#92400e'}}>Check-in programado</span></div><div style={{marginTop:'6px',fontWeight:600}}>👤 Carla Ruiz</div><div style={{color:'#64748b'}}>📅 13 oct - 15 oct · 2 noches</div><div style={{textAlign:'right',marginTop:'6px'}}>📋 👁</div></div>
+      <div style={{border:'1px solid #e2e8f0',background:'#fff',borderRadius:'10px',padding:'10px'}}><div style={{display:'flex',justifyContent:'space-between',alignItems:'flex-start',gap:'6px'}}><b style={{fontSize:'15px'}}>12</b><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 7px',borderRadius:'999px',background:'#f1f5f9',color:'#475569'}}>Libre</span></div><div style={{marginTop:'6px',color:'#64748b'}}>⛓ Sin vincular a Pxsol</div><div style={{textAlign:'right',marginTop:'22px'}}>📋 👁</div></div>
+    </div>
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',marginTop:'12px',color:'#64748b',flexWrap:'wrap',gap:'8px'}}><span>Mostrar <b style={{border:'1px solid #e2e8f0',borderRadius:'6px',padding:'2px 8px',color:'#0f172a'}}>25</b> por página · 1-25 de 48 habitaciones</span><span>" ‹ <b style={{border:'1px solid #e2e8f0',borderRadius:'6px',padding:'2px 8px',color:'#0f172a'}}>1/2</b> › "</span></div>
+  </div>
+</div>
+
+*📋 abre el check-in de la habitación (sección 5). 👁 abre su detalle (sección 6).*
+
+### Los estados de una habitación
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Estado</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué significa</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#722320',color:'#fff'}}>In house</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Hay un huésped alojado: Forze tiene un check-in en curso o Pxsol tiene la reserva in house. La tarjeta se pinta con el color de tu marca.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#dbeafe',color:'#1d4ed8'}}>Llega hoy</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Una reserva de Pxsol entra hoy y todavía no tiene check-in en Forze. Se pinta en azul.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#fef3c7',color:'#92400e'}}>Check-in programado</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Forze ya tiene un check-in cargado que empieza más adelante.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#ffedd5',color:'#9a3412'}}>Salida</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El huésped se va hoy.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{fontSize:'10.5px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#f1f5f9',color:'#475569'}}>Libre</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sin check-in ni reserva hoy.</td></tr>
+  </tbody>
+</table>
+
+- **Huésped, fechas y reserva** salen de Pxsol: es la estadía que cubre hoy la habitación, con el huésped principal (el titular si se aloja en ella).
+- **"Sin vincular a Pxsol"** indica que la habitación de Forze no está asociada a ninguna habitación de Pxsol. Esa habitación no recibe códigos automáticos. Se vincula al crearla (sección 7) o sincronizando desde Marketplace.
+
+---
+
+## 5. El botón "Check-in" de una habitación
+
+El ícono 📋 de cada tarjeta (y el botón "Check-in" del detalle) hace lo que haría Forze:
+
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(200px,1fr))',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #bbf7d0',background:'#f0fdf4',borderRadius:'12px',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13px',color:'#15803d',marginBottom:'6px'}}>✅ Tiene un check-in abierto</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Abre la <b>edición de ese check-in</b>: sumar códigos, tarjetas u otras habitaciones, cambiar horas (sección 8).</div>
+  </div>
+  <div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'12px',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13px',color:'#1d4ed8',marginBottom:'6px'}}>➕ No tiene check-in</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Abre el <b>formulario de uno nuevo</b>: vacío como en Forze, o precargado si hay una reserva de Pxsol hoy (sección 9).</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',background:'#f8fafc',borderRadius:'12px',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13px',color:'#475569',marginBottom:'6px'}}>👁 Sin permiso de editar</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Lleva a la pestaña <b>Check-ins</b> filtrada por esa habitación, solo para ver.</div>
+  </div>
+</div>
+
+Cada click **vuelve a abrir la ventana con la habitación que elegiste**, aunque haya otra abierta o minimizada, y vuelve a pedir los datos. Así nunca editás la habitación equivocada.
+
+---
+
+## 6. Detalle de una habitación
+
+Desde 👁 se abre el **"Editar habitación"** de Forze, con la tarjeta de la habitación arriba:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'14px 16px',background:'#fbfdff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px'}}>
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',gap:'10px',flexWrap:'wrap'}}><b style={{fontSize:'15px'}}>← Editar habitación · 101</b><span style={{display:'flex',gap:'6px',flexWrap:'wrap'}}><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'5px 10px',fontWeight:700}}>📋 Check-in</span><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'5px 10px',fontWeight:700}}>✔ Guardar</span><span style={{background:'#722320',color:'#fff',borderRadius:'7px',padding:'5px 10px',fontWeight:700}}>🔓 Abrir</span><span style={{background:'#dc2626',color:'#fff',borderRadius:'7px',padding:'5px 10px',fontWeight:700}}>🗑 Eliminar</span></span></div>
+    <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:'14px',marginTop:'14px'}}>
+      <div style={{border:'1px solid #e2e8f0',borderRadius:'10px',padding:'12px',background:'#fff'}}><b>Datos de la habitación</b><div style={{color:'#64748b',marginTop:'8px'}}>Nombre</div><div style={{border:'1px solid #e2e8f0',borderRadius:'6px',padding:'5px 8px'}}>101</div><div style={{color:'#64748b',marginTop:'8px'}}>Categoría (Pxsol)</div><div style={{border:'1px solid #e2e8f0',borderRadius:'6px',padding:'5px 8px'}}>Doble Superior</div></div>
+      <div style={{border:'1px solid #e2e8f0',borderRadius:'10px',padding:'12px',background:'#fff'}}><b>Cerraduras</b><div style={{color:'#64748b',marginTop:'8px'}}>Cerradura principal</div><div style={{border:'1px solid #e2e8f0',borderRadius:'6px',padding:'5px 8px'}}>Internacional - 101</div><div style={{color:'#64748b',marginTop:'8px'}}>Asociadas</div><div style={{border:'1px solid #e2e8f0',borderRadius:'6px',padding:'5px 8px',background:'#f8fafc'}}>Entrada · Ascensor</div></div>
+    </div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'10px',padding:'12px',background:'#fff',marginTop:'14px'}}><b>Historial de check-ins</b><div style={{display:'grid',gridTemplateColumns:'1.2fr 1.2fr 1fr .8fr',gap:'8px',marginTop:'8px',color:'#64748b',fontSize:'12px'}}><span>Ingreso</span><span>Salida</span><span>Huésped</span><span>Estado</span></div><div style={{display:'grid',gridTemplateColumns:'1.2fr 1.2fr 1fr .8fr',gap:'8px',marginTop:'6px'}}><span>10/10 12:00</span><span>12/10 12:00</span><span>Ana Pérez</span><span style={{color:'#15803d',fontWeight:700}}>Activo</span></div></div>
+  </div>
+</div>
+
+- **Check-in** - el mismo botón de la sección 5.
+- **Guardar** - guarda el nombre, la categoría y la cerradura principal. Si la habitación está vinculada, **Pxsol manda**: el nombre y las categorías se guardan también en Pxsol, y a Forze viaja la primera categoría como tipo de habitación. Forze no deja cambiar una habitación con un check-in en curso; si pasa, lo avisa sin tocar nada.
+- **Abrir** - apertura remota de la puerta, con confirmación. Necesita que la cerradura esté conectada a un gateway.
+- **Eliminar** - borra la habitación **solo en Forze** y corta el vínculo. La habitación de Pxsol y sus reservas no se tocan. Pide permiso de eliminar.
+- **Historial de check-ins** - todos los check-ins de esa habitación, con las mismas acciones de la pestaña Check-ins (sección 10).
+
+---
+
+## 7. Nueva habitación
+
+**"Nueva habitación"** crea la habitación **solo en Forze**, como hace Forze, y opcionalmente la deja vinculada a una habitación de Pxsol.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'16px',background:'#fff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px',maxWidth:'560px'}}>
+    <div style={{fontSize:'16px',fontWeight:700}}>Nueva habitación</div><div style={{color:'#64748b',marginBottom:'12px'}}>Se crea solo en Forze</div>
+    <div style={{border:'1px solid #bfdbfe',background:'#eff6ff',color:'#1e3a8a',borderRadius:'8px',padding:'9px 11px',marginBottom:'14px'}}>ℹ La habitación se crea solo en Forze. Si la vinculás a una habitación de Pxsol, quedan asociadas para los check-ins, pero su nombre y sus categorías en Pxsol no cambian.</div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Vínculo con Pxsol</div><div style={{color:'#64748b',marginBottom:'6px'}}>Elegí la habitación de Pxsol que abre esta cerradura. Es opcional.</div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>901 ▾</div>
+    <div style={{display:'flex',gap:'6px',marginTop:'8px'}}><span style={{fontSize:'11px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#dbeafe',color:'#1d4ed8'}}>🔗 Vinculada a 901</span><span style={{fontSize:'11px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#f1f5f9',color:'#475569'}}>Suite</span></div>
+    <div style={{borderTop:'1px solid #e2e8f0',margin:'14px 0'}}></div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Datos en Forze</div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginTop:'6px'}}><div><div style={{color:'#475569'}}>Nombre</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>901</div></div><div><div style={{color:'#475569'}}>Tipo de habitación</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>Suite ▾</div></div></div>
+    <div style={{borderTop:'1px solid #e2e8f0',margin:'14px 0'}}></div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Cerradura</div><div style={{color:'#64748b',marginBottom:'6px'}}>Solo aparecen las libres de la cuenta.</div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>Internacional - 901 ▾</div>
+    <div style={{display:'flex',justifyContent:'flex-end',gap:'8px',marginTop:'16px'}}><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'6px 12px',fontWeight:700}}>⊘ Cancelar</span><span style={{background:'#722320',color:'#fff',borderRadius:'7px',padding:'6px 12px',fontWeight:700}}>✔ Crear habitación</span></div>
+  </div>
+</div>
+
+- **Habitación de Pxsol** - solo aparecen las que todavía no están en Forze. Al elegir una se precargan el nombre y el tipo de Forze que coincida con su primera categoría.
+- **El vínculo** es lo que hace que los códigos automáticos de esa habitación de Pxsol lleguen a esta cerradura.
+- **La habitación de Pxsol no se modifica**: ni nombre ni categorías.
+- **Cerradura** - solo las libres de la cuenta. Una cerradura física nueva se empareja primero por Bluetooth en la app TTLock y recién ahí aparece en la lista.
+
+---
+
+## 8. El check-in de la habitación
+
+Es el **"Editar reserva"** de Forze, con el diseño de "Cargar reserva" del plano. Se abre en una ventana lateral:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'16px',background:'#fff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px',maxWidth:'620px'}}>
+    <div style={{fontSize:'16px',fontWeight:700}}>Check-in de la habitación</div><div style={{color:'#64748b',marginBottom:'12px'}}>503</div>
+    <div style={{border:'1px solid #bfdbfe',background:'#eff6ff',color:'#1e3a8a',borderRadius:'8px',padding:'9px 11px',marginBottom:'14px'}}>ℹ Este check-in es de una habitación de la reserva 11982078: los días, las observaciones y el huésped se guardan también en Pxsol; las horas, los accesos y los códigos, solo en Forze.</div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Ingreso a la habitación</div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginTop:'6px'}}><div><div style={{color:'#475569'}}>Ingreso</div><div style={{display:'flex',gap:'6px'}}><span style={{flex:1,border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>29/09/2026</span><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>12:00</span></div></div><div><div style={{color:'#475569'}}>Salida</div><div style={{display:'flex',gap:'6px'}}><span style={{flex:1,border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>30/09/2026</span><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>12:00</span></div></div></div>
+    <div style={{border:'1px solid #bbf7d0',background:'#f0fdf4',color:'#166534',borderRadius:'8px',padding:'7px 10px',marginTop:'8px'}}>✓ La habitación 503 está libre en esas fechas.</div>
+    <div style={{borderTop:'1px solid #e2e8f0',margin:'14px 0'}}></div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Habitación y reserva</div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginTop:'6px'}}><div><div style={{color:'#475569'}}>Nº de reserva</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',background:'#f8fafc',color:'#64748b'}}>11982078</div></div><div><div style={{color:'#475569'}}>Habitación</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',background:'#f8fafc',color:'#64748b'}}>503</div></div></div>
+    <div style={{color:'#475569',marginTop:'8px'}}>Observaciones</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',minHeight:'34px'}}>Llega tarde</div>
+    <div style={{borderTop:'1px solid #e2e8f0',margin:'14px 0'}}></div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Huésped</div><div style={{color:'#64748b'}}>Es el titular de la reserva.</div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginTop:'6px'}}><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>Alejo</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>Suarez</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>30111222</div><div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',color:'#94a3b8'}}>Teléfono</div></div>
+    <div style={{borderTop:'1px solid #e2e8f0',margin:'14px 0'}}></div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Habitaciones y accesos</div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'6px 8px',marginTop:'6px',display:'flex',gap:'6px',flexWrap:'wrap'}}><span style={{fontSize:'11.5px',fontWeight:700,padding:'2px 8px',borderRadius:'6px',background:'#f1f5f9'}}>🔒 503</span><span style={{fontSize:'11.5px',fontWeight:700,padding:'2px 8px',borderRadius:'6px',background:'#f1f5f9'}}>701 ✕</span></div>
+    <div style={{display:'flex',gap:'6px',marginTop:'6px'}}><span style={{fontSize:'11px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#fef3c7',color:'#92400e'}}>🔗 Entrada principal</span></div>
+    <div style={{borderTop:'1px solid #e2e8f0',margin:'14px 0'}}></div>
+    <div style={{fontWeight:700,fontSize:'14.5px'}}>Tarjetas y códigos de teclado</div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',marginTop:'6px'}}>
+      <div><div style={{color:'#475569'}}>Tarjetas</div><div style={{display:'flex',gap:'6px'}}><span style={{flex:1,border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',color:'#94a3b8'}}>Escribí o escaneá</span><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>＋</span></div><div style={{border:'1px solid #bbf7d0',background:'#dcfce7',color:'#166534',borderRadius:'8px',padding:'7px 10px',marginTop:'8px',display:'flex',justifyContent:'space-between'}}><span>💳 Tarjeta 1 <b>2938848281</b></span><span>✕</span></div></div>
+      <div><div style={{color:'#475569'}}>Códigos de teclado</div><div style={{display:'flex',gap:'6px'}}><span style={{flex:1,border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',color:'#94a3b8'}}>4 a 9 dígitos</span><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>＋</span><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px'}}>🔀 Generar</span></div><div style={{border:'1px solid #e9d5ff',background:'#f3e8ff',color:'#6b21a8',borderRadius:'8px',padding:'7px 10px',marginTop:'8px',display:'flex',justifyContent:'space-between'}}><span>⌨ Código 1 <b>471053</b> <span style={{fontSize:'10.5px',background:'#fff',borderRadius:'999px',padding:'1px 6px'}}>Principal</span></span><span>⟳</span></div><div style={{border:'1px solid #e9d5ff',background:'#f3e8ff',color:'#6b21a8',borderRadius:'8px',padding:'7px 10px',marginTop:'6px',display:'flex',justifyContent:'space-between'}}><span>⌨ Código 2 <b>5566</b> <span style={{fontSize:'10.5px',background:'#fff',borderRadius:'999px',padding:'1px 6px'}}>Adicional</span></span><span>✕</span></div></div>
+    </div>
+    <div style={{display:'flex',justifyContent:'flex-end',gap:'8px',marginTop:'16px',borderTop:'1px solid #e2e8f0',paddingTop:'12px'}}><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'6px 12px',fontWeight:700}}>⊘ Cancelar</span><span style={{background:'#722320',color:'#fff',borderRadius:'7px',padding:'6px 12px',fontWeight:700}}>✔ Guardar</span></div>
+  </div>
+</div>
+
+*Códigos en violeta, tarjetas en verde: los mismos colores en todas las pantallas. ⟳ regenera el código principal; ✕ quita un código o una tarjeta.*
+
+### Qué se guarda dónde
+
+Si el check-in **lo creó Pxsol** desde una reserva, la reserva sigue siendo la fuente:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Dato</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Con reserva de Pxsol</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Check-in creado en Forze</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Días</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se mueven en la reserva (y en Forze). Antes avisa si la habitación está ocupada en esas fechas.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo en Forze</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Horas</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo en Forze: marcan desde y hasta cuándo valen los accesos. Si después se mueven los días de la reserva, la hora que pusiste a mano se conserva.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo en Forze</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Nº de reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No se cambia</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No se cambia</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Observaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Son las de la habitación en Pxsol (las de housekeeping)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Comentario del check-in en Forze (500 caracteres)</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Huésped</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Actualiza también el contacto en Pxsol</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo en Forze</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Habitaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se suman otras; la de la reserva queda siempre (🔒)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se eligen libremente</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Códigos y tarjetas</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Quedan registrados en Pxsol y viajan a Forze</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo en Forze</td></tr>
+  </tbody>
+</table>
+
+### Habitaciones y accesos
+
+Como en Forze, a un check-in se le pueden **sumar otras habitaciones**, de la misma u otra reserva: los códigos, tarjetas y la app de ese check-in también las abren. Debajo se ven las **cerraduras asociadas** (entrada, ascensor, áreas comunes) y se eligen las **redes WiFi** del check-in.
+
+### Tarjetas y códigos
+
+- **Tarjetas** - se escriben o se pasan por el lector (el lector escribe el número y aprieta Enter solo). El número es el de la tarjeta en decimal; espacios, ":" y "-" se quitan.
+- **Códigos de teclado** - de 4 a 9 dígitos, escritos o **generados al azar** con "Generar".
+- **El código principal** es el PIN de la reserva. No se quita: se **regenera** con ⟳, con confirmación. El huésped deja de poder abrir con el código anterior. El nuevo reemplaza al viejo también en las habitaciones con las que se compartía. Los adicionales y las tarjetas no cambian.
+- **Si la cerradura rechaza** un código o una tarjeta, se avisa cuál y el resto se guarda igual.
+- **Quitar** un código o una tarjeta requiere el permiso de eliminar.
+
+### Compartir código
+
+En una reserva con varias habitaciones aparece **"Compartir código"**: el código de una habitación puede abrir otra, en **una vía** (el código de los padres abre la de los hijos) o en **doble vía**.
+
+---
+
+## 9. Un check-in nuevo
+
+Cuando la habitación no tiene check-in, se abre el mismo formulario con el título **"Nuevo check-in"** y el botón **"Crear check-in"**. Hay dos casos:
+
+<div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#64748b',marginBottom:'8px'}}>Sin reserva de Pxsol</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>El formulario viene <b>vacío, como en Forze</b>. Se completan fechas, horas, el número de reserva (opcional), huésped, habitaciones, WiFi, códigos y tarjetas. Se crea un check-in de Forze con todo eso.</div>
+  </div>
+  <div style={{border:'1px solid #bbf7d0',borderRadius:'12px',background:'#f0fdf4',padding:'14px 16px'}}>
+    <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#15803d',marginBottom:'8px'}}>Con reserva de Pxsol hoy</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Viene <b>precargado</b>: días y horas, huésped, número de reserva, observaciones y el PIN que ya tenga. Se crea con el <b>PIN de la reserva</b> y queda vinculado, igual que el envío automático. Los días quedan fijos (se cambian desde la reserva); las horas se pueden editar.</div>
+  </div>
+</div>
+
+### "Forze ya no tiene este check-in"
+
+Puede pasar que Pxsol haya enviado el check-in y que después alguien lo haya borrado o cerrado desde la web de Forze. En ese caso la ventana lo avisa y ofrece **"Volver a crear el check-in"**, con los datos de la reserva y **el mismo código**. Es lo que antes resolvía "Enviar a Forze".
+
+---
+
+## 10. Check-ins
+
+La lista de todos los check-ins del hotel, del más nuevo al más viejo, como en Forze.
+
+- **Todos / Eliminados** - la segunda pestaña muestra los que se borraron en Forze, con cuándo y quién.
+- **Filtros** - estado (activo, a futuro, finalizado), habitación y fechas desde/hasta.
+- **Buscador** - por habitación, huésped, código o número de reserva.
+- Desde una habitación se entra con esa habitación ya filtrada.
+
+### Acciones de cada check-in
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Acción</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cuándo está disponible</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Permiso</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#0095ff',fontWeight:700}}>🔒 Ver cerradura</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre que tenga cerraduras</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ver</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#cc8800',fontWeight:700}}>✎ Editar check-in</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Activo o a futuro</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Editar</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#722320',fontWeight:700}}>✕ Check-out</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Activo o a futuro. Es irreversible: borra los accesos de las cerraduras.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Editar</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#dc2626',fontWeight:700}}>🗑 Eliminar</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo finalizado. Pasa a "Eliminados".</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Editar y eliminar</td></tr>
+  </tbody>
+</table>
+
+Las acciones que no aplican se ven en gris.
+
+---
+
+## 11. Cerraduras
+
+Todas las cerraduras de la cuenta, como en la UI de Forze: **nombre, alias, habitación, batería y tipo** (habitación, común o asociada). La batería baja se marca en rojo.
+
+- **Abrir** - apertura remota con confirmación.
+- **Registro** - las últimas aperturas de la cerradura, con quién y cómo abrió.
+- **Tarjetas asociadas** (marrón) y **Códigos asociados** (verde) - lo cargado **hoy** en la cerradura. Se pueden agregar, quitar de a uno o vaciar todo. Quitar y vaciar piden permiso de eliminar.
+
+---
+
+## 12. Gateways
+
+Los equipos que conectan las cerraduras con internet. Para cada uno: **nombre, cuántas cerraduras ve, si está online y su señal**. El detalle de un gateway lista sus cerraduras ordenadas por señal, de la mejor a la peor: sirve para saber por qué una cerradura no responde a la apertura remota.
+
+---
+
+## 13. Tarjetas del hotel
+
+Las tarjetas **maestras, de housekeeping o de mantenimiento**, que abren varias cerraduras a la vez. Es la "Administración de tarjetas" de Forze. Las tarjetas de los huéspedes viven en cada check-in.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'14px 16px',background:'#fff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px'}}>
+    <div style={{display:'flex',gap:'8px',marginBottom:'10px',flexWrap:'wrap'}}><span style={{flex:'1 1 200px',border:'1px solid #e2e8f0',borderRadius:'8px',padding:'7px 10px',color:'#94a3b8'}}>🔍 Buscar por nombre o número de tarjeta…</span><span style={{border:'1px solid #e2e8f0',borderRadius:'8px',padding:'7px 10px',fontWeight:700}}>⟳ Sincronizar con Forze</span><span style={{background:'#722320',color:'#fff',borderRadius:'8px',padding:'7px 10px',fontWeight:700}}>＋ Nueva tarjeta</span></div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1.3fr .8fr 1fr 1.2fr 1fr',gap:'8px',padding:'6px 0',borderBottom:'1px solid #e2e8f0',color:'#64748b',fontSize:'11.5px',fontWeight:700}}><span>Nombre</span><span>Nº de tarjeta</span><span>Cerraduras</span><span>Estado</span><span>Creada</span><span style={{textAlign:'right'}}>Acciones</span></div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1.3fr .8fr 1fr 1.2fr 1fr',gap:'8px',padding:'8px 0',borderBottom:'1px solid #f1f5f9',alignItems:'center'}}><b>Maestra</b><span><span style={{fontFamily:'SFMono-Regular,Menlo,monospace',fontSize:'11.5px',background:'#dbeafe',color:'#1d4ed8',borderRadius:'4px',padding:'1px 5px'}}>2938848281</span></span><span>48</span><span><span style={{fontSize:'11px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#dcfce7',color:'#166534'}}>Activa</span></span><span>27/09/2026 18:51</span><span style={{textAlign:'right'}}>👁 ✎ 🗑</span></div>
+    <div style={{display:'grid',gridTemplateColumns:'1fr 1.3fr .8fr 1fr 1.2fr 1fr',gap:'8px',padding:'8px 0',alignItems:'center'}}><b>Housekeeping 6º</b><span><span style={{fontFamily:'SFMono-Regular,Menlo,monospace',fontSize:'11.5px',background:'#dbeafe',color:'#1d4ed8',borderRadius:'4px',padding:'1px 5px'}}>1941881500</span></span><span>12</span><span><span style={{fontSize:'11px',fontWeight:700,padding:'2px 8px',borderRadius:'999px',background:'#fef3c7',color:'#92400e'}}>Pendiente</span></span><span>-</span><span style={{textAlign:'right'}}>👁 ✎ ⟳ 🗑</span></div>
+  </div>
+</div>
+
+*⟳ en la fila reenvía a Forze una tarjeta que no se activó en alguna cerradura.*
+
+- **Estados** - Activa, Pendiente, Parcial (activa en algunas cerraduras), Con error y Sin registrar.
+- **Nueva tarjeta** - nombre y número; por defecto va a **todas las cerraduras**, o a las que elijas. Si el número ya existe en Forze, se adopta.
+- **Editar** - cambia el nombre y las cerraduras. El número no se cambia.
+- **Ver** - muestra las cerraduras de la tarjeta y los **check-ins que tienen ese número** cargado, con un acceso a verlos en la pestaña Check-ins.
+- **Sincronizar con Forze** - la lista responde al instante con lo guardado en Pxsol y se actualiza sola con Forze por detrás. Este botón la fuerza.
+- Si Forze está caído, se avisa. Si un número de tarjeta en Pxsol es de un **huésped**, también se avisa, para no mezclar tarjetas.
+- Paginación de 25, 50, 100 o 200.
+
+---
+
+## 14. Registro de actividad
+
+Todo lo que pasó en Forze: aperturas, check-ins creados, inicios de sesión, cambios de tarjetas.
+
+- **Métricas** - check-ins activos y vencidos, total de eventos y los de las últimas 24 h, 7 y 30 días.
+- **Gráficos** - eventos por tipo de acción y usuarios más activos, con tooltip y **Descargar PNG**.
+- **Tabla** - fecha, acción, usuario, rol, detalle, IP y dispositivo, con las acciones traducidas.
+- **Búsqueda en vivo** en cualquier columna, combinable con el filtro de acción y de fechas. Forze solo deja un filtro a la vez; acá se combinan.
+- **Exportar a CSV** lo que se ve en la tabla, con los filtros aplicados. Se abre bien en Excel, con tildes.
+- La primera vez carga lo más reciente y completa la historia por detrás; después se actualiza sola con los eventos nuevos.
+
+---
+
+## 15. El envío automático del código
+
+Es lo que hace Pxsol sin que nadie toque nada. Hay dos momentos: **cuándo nace el código** y **cuándo se manda a Forze**.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'18px 16px 14px',margin:'14px 0 4px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{display:'flex',height:'14px',borderRadius:'999px',overflow:'hidden'}}>
+    <div style={{flex:2,background:'#e2e8f0'}} />
+    <div style={{flex:4,background:'#fde68a'}} />
+    <div style={{flex:4,background:'#722320'}} />
+    <div style={{flex:2,background:'#fca5a5'}} />
+  </div>
+  <div style={{display:'flex',fontSize:'11px',color:'#64748b',marginTop:'8px',gap:'4px'}}>
+    <div style={{flex:2}}><div style={{fontWeight:700,color:'#0f172a'}}>Consulta</div>sin código</div>
+    <div style={{flex:4}}><div style={{fontWeight:700,color:'#92400e'}}>Reserva confirmada</div>código generado · Pendiente</div>
+    <div style={{flex:4}}><div style={{fontWeight:700,color:'#722320'}}>Día del check-in → salida</div>enviado a Forze · Activo</div>
+    <div style={{flex:2}}><div style={{fontWeight:700,color:'#b91c1c'}}>Check-out / cancelación</div>Revocado</div>
+  </div>
+</div>
+
+*Con la opción por defecto. La sección 16 explica cómo cambiar cuándo nace el código.*
+
+### Cómo funciona
+
+- Corre **cada hora**. La primera pasada después de la medianoche de cada hotel manda los check-ins del día; las siguientes recuperan lo que haya quedado pendiente.
+- Toma las habitaciones **vinculadas a Forze** de reservas en **venta, check-in o in house** que entran hoy o antes y salen hoy o después.
+- Si un envío falla, se reintenta hasta **5 veces**. Para destrabarlo después, alcanza con abrir el check-in desde el PMS (sección 17).
+- El **código** es de 6 dígitos y **nunca se repite** en la empresa, ni siquiera con códigos viejos o revocados. Si Forze dice que ya está en uso, se genera otro y se reintenta.
+- Si la cerradura rechaza una tarjeta o un código adicional, se reintenta una vez sin perder el check-in.
+
+### Qué datos le manda a Forze
+
+El envío completa casi todo el formulario de check-in de Forze:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Campo de Forze</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué va</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Habitaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La vinculada, más las que recepción haya sumado al check-in</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ingreso y salida</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Los días de la habitación en la reserva, con los horarios de abajo</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Nº de reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El número de la reserva de Pxsol</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Huésped</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El titular si se aloja en esa habitación; si no, el huésped principal. Nombre, apellido, documento y teléfono.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Observaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las de la habitación en Pxsol, sin formato, hasta 500 caracteres</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Códigos de teclado</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El código principal, más los adicionales y compartidos</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Código de la app</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El código principal (nunca el número de reserva)</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Tarjetas</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las asignadas a esa habitación de la reserva</td></tr>
+  </tbody>
+</table>
+
+Si el huésped o las observaciones no se pueden leer, el check-in se manda igual sin esos datos: **nunca se frena el envío del código**.
+
+### Los horarios
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}></th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Por defecto</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Con llegada anticipada / salida tardía</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Ingreso</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>12:00</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>11:00</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Salida</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>12:00</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>15:00</td></tr>
+  </tbody>
+</table>
+
+Son las horas del hotel. Se pueden cambiar a mano en el check-in de la habitación (sección 8), y esa hora se respeta aunque después se muevan los días de la reserva.
+
+### Qué pasa cuando cambia la reserva
+
+- **Cambian las fechas** - se mueven también en Forze.
+- **Se cambia de habitación** - el check-in viejo se revoca y se crea uno en la habitación nueva **con el mismo código**, sus adicionales y sus tarjetas.
+- **Check-out o cancelación** - se revocan el código, los adicionales y las tarjetas.
+
+---
+
+## 16. Cuándo se genera el código
+
+En **Marketplace → Forze → editar la credencial** está el campo **"Generación del código"**:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'16px',background:'#fff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px',maxWidth:'460px'}}>
+    <div style={{color:'#475569',fontWeight:600}}>Generación del código ⓘ</div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'10px',marginTop:'6px',overflow:'hidden'}}>
+      <div style={{padding:'9px 12px',borderBottom:'1px solid #f1f5f9'}}>Al crear la reserva (se envía el día del check-in)</div>
+      <div style={{padding:'9px 12px',borderBottom:'1px solid #f1f5f9'}}>El día del check-in (se genera y se envía ese día)</div>
+      <div style={{padding:'9px 12px',background:'#fbefee',boxShadow:'inset 3px 0 0 #722320',fontWeight:700}}>Unos días antes del check-in ✓</div>
+    </div>
+    <div style={{color:'#475569',fontWeight:600,marginTop:'12px'}}>Días antes del check-in ⓘ</div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'7px 10px',marginTop:'6px',width:'80px'}}>3</div>
+  </div>
+</div>
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Opción</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>El código se genera</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Se envía a Forze</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Al crear la reserva</b> <span style={{fontSize:'10px',fontWeight:800,padding:'2px 8px',borderRadius:'999px',background:'#dcfce7',color:'#15803d',border:'1px solid #bbf7d0'}}>DEFAULT</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cuando nace o se asigna la reserva. Queda "Pendiente" y se puede ver o mandar al huésped antes de llegar.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El día del check-in</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>El día del check-in</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ese mismo día</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ese mismo día</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Unos días antes</b> (1 a 30)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>N días antes del ingreso. El envío automático lo genera cuando la reserva entra en esa ventana.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El día del check-in</td></tr>
+  </tbody>
+</table>
+
+- **El envío a Forze es siempre el día del check-in**, con cualquier opción.
+- Rige desde que se guarda, para las reservas que **todavía no tienen código**. Las que ya lo tienen siguen igual.
+- Si recepción **suma a mano una tarjeta o un código** a una habitación antes de tiempo, el código se crea igual, porque se necesita para guardarlos.
+- Las credenciales que ya existían siguen con la opción por defecto.
+
+---
+
+## 17. En el PMS: la pestaña de habitaciones de la reserva
+
+En la ficha de la reserva, cada habitación muestra su código de Forze y lo demás que abre la puerta:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'16px',background:'#fff',fontFamily:'Open Sans,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13px'}}>
+    <div style={{display:'flex',alignItems:'center',gap:'10px',flexWrap:'wrap'}}>
+      <b style={{fontSize:'15px'}}>Habitación 503</b>
+      <span style={{display:'inline-flex',alignItems:'center',gap:'8px',background:'#dcfce7',color:'#166534',borderRadius:'8px',padding:'6px 10px'}}>📶 <b style={{fontFamily:'SFMono-Regular,Menlo,monospace',letterSpacing:'.2rem',fontSize:'15px'}}>••••••</b> 👁</span>
+      <span style={{display:'inline-flex',alignItems:'center',gap:'4px',background:'#f3e8ff',color:'#6b21a8',borderRadius:'999px',padding:'4px 10px',fontWeight:600,fontSize:'12px'}}>⌨ +2 códigos</span>
+      <span style={{display:'inline-flex',alignItems:'center',gap:'4px',background:'#dcfce7',color:'#166534',borderRadius:'999px',padding:'4px 10px',fontWeight:600,fontSize:'12px'}}>💳 1 tarjeta</span>
+    </div>
+    <div style={{maxWidth:'300px',marginLeft:'auto',marginTop:'12px',border:'1px solid #e2e8f0',borderRadius:'10px',boxShadow:'0 12px 30px rgba(0,0,0,.08)',overflow:'hidden'}}>
+      <div style={{padding:'9px 12px',borderBottom:'1px solid #f1f5f9'}}>🖨 Ficha habitación</div>
+      <div style={{padding:'9px 12px',borderBottom:'1px solid #f1f5f9',background:'#fbefee',boxShadow:'inset 3px 0 0 #722320',fontWeight:700,display:'flex',justifyContent:'space-between'}}><span>📶 Check-in en Forze</span><span style={{fontSize:'9.5px',background:'#111827',color:'#fff',borderRadius:'999px',padding:'1px 6px'}}>FORZE</span></div>
+      <div style={{padding:'9px 12px',borderBottom:'1px solid #f1f5f9',display:'flex',justifyContent:'space-between'}}><span>🕘 Ver historial</span><span style={{fontSize:'9.5px',background:'#111827',color:'#fff',borderRadius:'999px',padding:'1px 6px'}}>FORZE</span></div>
+      <div style={{padding:'9px 12px',color:'#dc2626'}}>🗑 Borrar</div>
+    </div>
+  </div>
+</div>
+
+*La pastilla del código se pinta según su estado. Los chips violeta y verde muestran los otros códigos y las tarjetas; al pasar el mouse dicen cuáles son.*
+
+### La pastilla del código
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Color</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Estado</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{background:'#dcfce7',color:'#166534',borderRadius:'6px',padding:'2px 8px',fontWeight:700}}>Verde</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Activo</b> - enviado a Forze, abre la cerradura durante la estadía</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{background:'#fef9c3',color:'#854d0e',borderRadius:'6px',padding:'2px 8px',fontWeight:700}}>Amarillo</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Pendiente</b> - generado; se envía el día del check-in</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{background:'#fee2e2',color:'#991b1b',borderRadius:'6px',padding:'2px 8px',fontWeight:700}}>Rojo</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Error</b> - el último envío falló; se reintenta solo</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{background:'#f3f4f6',color:'#4b5563',borderRadius:'6px',padding:'2px 8px',fontWeight:700}}>Gris</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Revocado</b> o <b>Sin código</b></td></tr>
+  </tbody>
+</table>
+
+El código está oculto (••••••). El ojo lo muestra y, visible, un click lo copia. Sin permiso de ver, el ojo lo dice.
+
+### "Check-in en Forze"
+
+Reemplaza a los viejos **"Enviar a Forze"** y **"Regenerar código"**. Abre una **ventana lateral** con el check-in de esa habitación de la reserva:
+
+- Si Forze lo tiene abierto, lo **edita**: agregar o quitar códigos, tarjetas y habitaciones, cambiar horas, **regenerar el código principal**.
+- Si todavía no existe (pendiente, con error o antes del día), abre el **alta precargada** con la reserva, aunque el ingreso sea otro día. Al crearla sale con el PIN de la reserva.
+- Si Forze lo perdió, avisa y lo **vuelve a crear con el mismo código**.
+
+Al guardar, la ventana se cierra, aparece "Check-in guardado en Forze" y la pestaña de habitaciones se recarga con esa habitación abierta. Requiere permiso de editar.
+
+**"Ver historial"** sigue igual: todo lo que hizo la integración con esa habitación de la reserva.
+
+---
+
+## 18. En el plano: el detalle de la reserva
+
+En el detalle de una reserva del plano, el bloque **Código Forze** muestra el código, su estado, los otros accesos y un acceso al check-in:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'16px',background:'#fff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'13.5px',maxWidth:'380px'}}>
+    <div style={{fontWeight:700,fontSize:'15px',marginBottom:'10px'}}>Código Forze</div>
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'5px 0'}}><span style={{color:'#64748b'}}>Código de acceso</span><span>🔑 <b style={{letterSpacing:'.15rem'}}>471053</b> 🙈 ⧉</span></div>
+    <div style={{display:'flex',justifyContent:'space-between',alignItems:'center',padding:'5px 0'}}><span style={{color:'#64748b'}}>Estado</span><span style={{fontSize:'11.5px',fontWeight:700,padding:'2px 9px',borderRadius:'999px',background:'#dcfce7',color:'#166534'}}>Activo</span></div>
+    <div style={{color:'#64748b',fontSize:'12px',marginTop:'8px'}}>Otros códigos (2)</div>
+    <div style={{display:'flex',gap:'6px',flexWrap:'wrap',marginTop:'4px'}}><span style={{fontFamily:'SFMono-Regular,Menlo,monospace',fontSize:'12px',background:'#f3e8ff',color:'#6b21a8',borderRadius:'6px',padding:'2px 8px'}}>⌨ 005566</span><span style={{fontFamily:'SFMono-Regular,Menlo,monospace',fontSize:'12px',background:'#f3e8ff',color:'#6b21a8',borderRadius:'6px',padding:'2px 8px'}}>⌨ 112233 · compartido</span></div>
+    <div style={{color:'#64748b',fontSize:'12px',marginTop:'8px'}}>Tarjetas (1)</div>
+    <div style={{display:'flex',gap:'6px',flexWrap:'wrap',marginTop:'4px'}}><span style={{fontFamily:'SFMono-Regular,Menlo,monospace',fontSize:'12px',background:'#dcfce7',color:'#166534',borderRadius:'6px',padding:'2px 8px'}}>💳 …8281 · Maestra</span></div>
+    <div style={{marginTop:'14px'}}><span style={{border:'1px solid #e2e8f0',borderRadius:'7px',padding:'6px 12px',fontWeight:700}}>📋 Ver check-in</span></div>
+  </div>
+</div>
+
+*Los otros códigos y las tarjetas se muestran u ocultan junto con el código principal. De las tarjetas se ven solo los últimos 4 dígitos.*
+
+**"Ver check-in"** reemplaza al botón "Regenerar": cierra el detalle y abre la misma ventana del check-in de la sección 17. El código se regenera desde ahí. Aparece siempre que la habitación esté vinculada, tenga o no código todavía, y pide permiso de editar.
+
+---
+
+## 19. Intercambio de habitaciones
+
+Cuando en el plano se **intercambian dos habitaciones** (swap), el acceso **sigue al huésped**:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'16px',margin:'14px 0 4px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'12.5px'}}>
+  <div style={{display:'grid',gridTemplateColumns:'1fr auto 1fr',gap:'10px',alignItems:'center'}}>
+    <div style={{display:'flex',flexDirection:'column',gap:'8px'}}>
+      <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#64748b'}}>Antes</div>
+      <div style={{border:'1px solid #e2e8f0',borderRadius:'10px',padding:'10px'}}><b>Hab. 1</b> · Ana<div style={{marginTop:'4px'}}><span style={{background:'#f3e8ff',color:'#6b21a8',borderRadius:'6px',padding:'1px 6px'}}>⌨ 123456</span> <span style={{background:'#dcfce7',color:'#166534',borderRadius:'6px',padding:'1px 6px'}}>💳 …8281</span></div></div>
+      <div style={{border:'1px solid #e2e8f0',borderRadius:'10px',padding:'10px'}}><b>Hab. 2</b> · Bruno<div style={{marginTop:'4px'}}><span style={{background:'#f3e8ff',color:'#6b21a8',borderRadius:'6px',padding:'1px 6px'}}>⌨ 654321</span></div></div>
+    </div>
+    <div style={{fontSize:'26px',color:'#722320',fontWeight:800}}>⇄</div>
+    <div style={{display:'flex',flexDirection:'column',gap:'8px'}}>
+      <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#15803d'}}>Después</div>
+      <div style={{border:'1px solid #bbf7d0',background:'#f0fdf4',borderRadius:'10px',padding:'10px'}}><b>Hab. 1</b> · Bruno<div style={{marginTop:'4px'}}><span style={{background:'#f3e8ff',color:'#6b21a8',borderRadius:'6px',padding:'1px 6px'}}>⌨ 654321</span></div></div>
+      <div style={{border:'1px solid #bbf7d0',background:'#f0fdf4',borderRadius:'10px',padding:'10px'}}><b>Hab. 2</b> · Ana<div style={{marginTop:'4px'}}><span style={{background:'#f3e8ff',color:'#6b21a8',borderRadius:'6px',padding:'1px 6px'}}>⌨ 123456</span> <span style={{background:'#dcfce7',color:'#166534',borderRadius:'6px',padding:'1px 6px'}}>💳 …8281</span></div></div>
+    </div>
+  </div>
+</div>
+
+*Ana sigue abriendo con 123456 y su tarjeta, ahora en la habitación 2. Bruno, con lo suyo, en la 1.*
+
+- Viaja **todo**: el código principal, los adicionales, las tarjetas, las horas cargadas a mano y las habitaciones sumadas. Los códigos compartidos se corrigen para que sigan apuntando al huésped correcto.
+- Primero se revocan los dos check-ins viejos y recién después se crean los nuevos, así una habitación nunca queda abriendo para el huésped equivocado.
+- Funciona igual si las dos habitaciones son **de la misma reserva** o de reservas distintas.
+- Si una de las dos no tenía código, se le genera uno en la habitación nueva.
+
+---
+
+## 20. Privacidad y seguridad
+
+- **Los códigos y los números de tarjeta** se muestran solo a quien tiene permiso de ver. A los demás les llegan como ••••••, desde el servidor.
+- **El código de administración de la cerradura** y los datos internos de cada cerradura que entrega Forze **nunca** se guardan ni llegan al navegador.
+- **La credencial de Forze** se guarda cifrada y no se muestra después de cargarla.
+- **Abrir una puerta**, hacer check-out y eliminar piden confirmación.
+- **El registro de la integración** guarda, de las tarjetas, solo los últimos 4 dígitos.
+
+---
+
+## 21. Preguntas frecuentes
+
+<div style={{display:'flex',flexDirection:'column',gap:'10px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>El código de una reserva sigue en "Pendiente"</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Es lo normal hasta el día del check-in: se envía ese día. Si ya es el día y sigue pendiente o en error, abrí "Check-in en Forze" desde la reserva: se crea en el momento.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Una habitación no recibe códigos automáticos</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Revisá que esté vinculada: en Habitaciones no tiene que decir "Sin vincular a Pxsol". Si es una habitación nueva, creala con "Nueva habitación" eligiendo la habitación de Pxsol.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Le quiero dar al huésped un segundo código</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Abrí el check-in de la habitación y agregalo en "Códigos de teclado", escrito o con "Generar". Viaja a Forze al guardar.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>El huésped perdió su código</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>En el check-in, ⟳ junto al código principal lo regenera. El anterior deja de abrir; los adicionales y las tarjetas siguen igual.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>No puedo quitar un código o una tarjeta</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Quitar requiere el permiso de eliminar en la app Forze de Usuarios. El código principal nunca se quita: se regenera.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>"Abrir" no abre la puerta</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>La apertura remota necesita que la cerradura esté conectada a un gateway online. Mirá en Gateways si está online y la señal de esa cerradura.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>La cerradura nueva no aparece para elegir</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Primero se empareja por Bluetooth con la app TTLock. Recién ahí aparece en Cerraduras y en "Nueva habitación". Solo se ofrecen las que no están asignadas a otra habitación.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Quiero que el ingreso en Forze sea a otra hora</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Cambiala en el check-in de la habitación. Esa hora se respeta aunque después se muevan los días de la reserva.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Eliminé una habitación en Forze, ¿se borró en Pxsol?</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>No. Se borra solo en Forze y se corta el vínculo. La habitación de Pxsol y sus reservas siguen igual.</div>
+  </div>
+</div>
+
+---
+
+*Pxsol · Forze en Pxsol · Guía de uso · Octubre 2026*
