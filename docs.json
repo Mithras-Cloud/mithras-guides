@@ -172,7 +172,8 @@
               "motor/integrar_el_motor_en_un_sitio_web_externo",
               "motor/cargo_fijo_adicional",
               "motor/registro_de_cambio_de_moneda",
-              "motor/guia_de_tipos_de_cambio_utilizados_por_pxsol"
+              "motor/guia_de_tipos_de_cambio_utilizados_por_pxsol",
+              "motor/recuperar_compras_abandonadas"
             ]
           },
           {
