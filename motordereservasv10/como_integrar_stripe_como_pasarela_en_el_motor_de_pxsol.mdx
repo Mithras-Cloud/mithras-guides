@@ -1,0 +1,140 @@
+---
+title: "Integración Stripe como Pasarela de Pagos"
+description: "Este proceso detalla la configuración completa para integrar Stripe como pasarela de pagos externa en el sistema. Incluye la instalación del complemento desde el marketplace, la generación y configuración de credenciales de API, y la creación del medio de pago correspondiente para que pueda ser utilizado en el motor de reservas y en el sistema de gestión."
+---
+
+## Instalación y Configuración de Credenciales
+
+Para comenzar con la integración, es necesario instalar el complemento desde el marketplace y configurar las credenciales que conectarán el sistema con la plataforma de pagos externa.
+
+<Steps>
+  <Step title="Buscar la sección de Integraciones">
+    Utilice la barra de búsqueda principal del sistema para localizar la sección de "Integraciones". Escriba el término y seleccione la opción correspondiente en los resultados para ser dirigido al marketplace de aplicaciones.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298863_0_6ac50d2f0da8b.jpg" alt="Barra de búsqueda del sistema con 'integraciones' escrito, mostrando resultados de búsqueda relevantes." />
+    </Frame>
+  </Step>
+
+  <Step title="Instalar la integración de Stripe">
+    Dentro del marketplace, localice la tarjeta correspondiente a la integración que desea instalar y haga clic en el botón **"Instalar"**. A continuación, se mostrará una ventana emergente con los términos y condiciones del servicio. Marque la casilla de aceptación y confirme la instalación para continuar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298863_1_6ac50d2fb1a4b.jpg" alt="Ventana emergente del sistema mostrando los términos y condiciones de instalación de la pasarela de pagos." />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciar la configuración de credenciales">
+    Una vez instalado el complemento, será redirigido a la pantalla de configuración de la integración. Dado que aún no hay credenciales configuradas, haga clic en el botón **"Añadir credencial"** para iniciar el proceso de vinculación.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298864_2_6ac50d3020d5f.jpg" alt="Pantalla de configuración de la pasarela de pagos con el botón 'Añadir credencial' resaltado." />
+    </Frame>
+  </Step>
+
+  <Step title="Elegir 'Stripe Pasarela'">
+    En la pantalla **"Añadir credencial"**, se presentarán diferentes tipos de integración. Seleccione la opción **"Stripe Pasarela"** para configurar la conexión que permitirá procesar pagos directamente a través del motor de reservas y otras herramientas del sistema.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298864_3_6ac50d30670c2.jpg" alt="Pantalla para añadir credencial, mostrando la opción 'Stripe Pasarela' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Generar una clave secreta de API">
+    Acceda al panel de su cuenta en la plataforma de pagos externa (por ejemplo, Stripe). Navegue hasta la sección para desarrolladores y, dentro de esta, a la opción **"Claves de API"**. Haga clic en el botón para crear una nueva clave secreta.
+
+    <Frame>
+      ![Panel de desarrolladores de la plataforma de pagos externa, mostrando el botón para crear una clave secreta de API.](https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298864_4_6ac50d30a864b.jpg)
+    </Frame>
+
+    <Warning>
+      Las claves de API secretas son credenciales sensibles. Nunca las exponga en su código fuente público o las comparta sin las debidas precauciones.
+    </Warning>
+  </Step>
+
+  <Step title="Nombrar y copiar la clave secreta">
+    Asigne un nombre a la nueva clave para identificarla (por ejemplo, "Prueba") y proceda a crearla. La plataforma generará una clave alfanumérica secreta. Copie esta clave en su portapapeles, ya que la necesitará en el siguiente paso para ingresarla en el sistema.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298865_5_6ac50d3110a13.jpg" alt="Ventana emergente en la plataforma de pagos externa mostrando una clave de API secreta recién generada, lista para ser copiada." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresar la clave de API en el sistema">
+    Regrese a la pantalla de configuración de credenciales del sistema. Asigne un nombre a la credencial (por ejemplo, "Pruebas") y pegue la clave de API que copió previamente desde la plataforma de pagos en el campo **"API Key"**.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298865_6_6ac50d3178391.jpg" alt="Formulario de configuración de credenciales del sistema, con un nombre asignado y la clave de API pegada en el campo correspondiente." />
+    </Frame>
+  </Step>
+
+  <Step title="Finalizar y guardar la credencial">
+    Una vez completados los campos de nombre y clave de API, haga clic en el botón **"Añadir"** para guardar la configuración. El sistema validará la clave y, si es correcta, la nueva credencial aparecerá listada en la pantalla de configuración de la integración.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298865_7_6ac50d31cb148.jpg" alt="Formulario de configuración de credenciales con el botón 'Añadir' resaltado para guardar la nueva credencial." />
+    </Frame>
+
+    <Check>
+      Verifique que la nueva credencial aparece listada en la pantalla de configuración de la pasarela para confirmar que se guardó correctamente.
+    </Check>
+  </Step>
+</Steps>
+
+## Creación del Medio de Pago
+
+Con la credencial de Stripe Pasarela ya configurada, el siguiente paso es crear el medio de pago que los clientes utilizarán para realizar sus transacciones.
+
+<Steps>
+  <Step title="Buscar la sección de Medios de Pago">
+    Diríjase nuevamente a la barra de búsqueda principal del sistema. Ingrese "Medios de pago" y seleccione la opción correspondiente para acceder a la configuración de los métodos de pago disponibles.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298866_8_6ac50d324a6c2.jpg" alt="Barra de búsqueda del sistema con 'Medios de pago' escrito, mostrando resultados de búsqueda relevantes." />
+    </Frame>
+  </Step>
+
+  <Step title="Crear un nuevo medio de pago tipo 'Pasarela'">
+    En la pantalla de **"Medios de pago"**, haga clic en el botón **"Crear"**. Se mostrarán diferentes tipos de medios de pago. Seleccione la opción **"Pasarela"** para configurar un método que procese transacciones a través de un proveedor externo.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298866_9_6ac50d329b748.jpg" alt="Pantalla de creación de medios de pago, con la opción 'Pasarela' seleccionada." />
+    </Frame>
+  </Step>
+
+  <Step title="Elegir 'Stripe Pasarela'">
+    Se abrirá una ventana emergente preguntando qué pasarela utilizar. Seleccione la opción **"Stripe Pasarela"**, que ahora está disponible gracias a la integración realizada en los pasos anteriores.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298867_10_6ac50d331d0bc.jpg" alt="Ventana emergente para seleccionar la pasarela de pagos, con 'Stripe Pasarela' destacada como opción." />
+    </Frame>
+  </Step>
+
+  <Step title="Nombrar el medio de pago">
+    Inicie la configuración del nuevo medio de pago. En el primer paso, asigne un nombre que será visible para los clientes en el motor de reservas, como "Stripe". Haga clic en **"Continuar"** para avanzar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298867_11_6ac50d33a72e2.jpg" alt="Primer paso del asistente de configuración del medio de pago, ingresando 'Stripe' como nombre." />
+    </Frame>
+  </Step>
+
+  <Step title="Asociar la credencial de pagos">
+    En el segundo paso de la configuración, el sistema le pedirá que especifique la credencial a utilizar. En el campo "¿Con qué credencial se cobra?", seleccione la credencial que creó anteriormente (en este caso, "Pruebas").
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298867_12_6ac50d33e6c65.jpg" alt="Segundo paso del asistente de configuración del medio de pago, seleccionando la credencial 'Pruebas'." />
+    </Frame>
+  </Step>
+
+  <Step title="Completar la configuración y crear el medio de pago">
+    Continúe a través de los pasos restantes del asistente de configuración, donde podrá definir políticas, comisiones y plantillas de correo electrónico asociadas a este medio de pago. Una vez revisada toda la configuración, haga clic en el botón **"Crear"** para finalizar el proceso.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/10/06/screenshot_1791298868_13_6ac50d3433d50.jpg" alt="Resumen de la configuración del medio de pago, mostrando las opciones antes de la creación final." />
+    </Frame>
+
+    <Check>
+      El medio de pago quedará activo y listo para ser utilizado en el motor de reservas y en el sistema de gestión.
+    </Check>
+  </Step>
+</Steps>
