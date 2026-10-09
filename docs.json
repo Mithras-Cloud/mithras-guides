@@ -468,7 +468,6 @@
               "pms/cambios_de_sabanas",
               "pms/plano_de_ocupacion",
               "pms/integracion_forze",
-              "crm/como_importar_reservas_al_sistema",
               "pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva",
               "pms/link_de_confirmacion_de_reserva"
             ]
@@ -750,12 +749,7 @@
           {
             "group": "Primeros pasos",
             "pages": [
-              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta",
-              "primeros_pasos/como_crear_un_ticket_desde_el_sistema_al_soporte_de_pxsol",
-              "primeros_pasos/como_acceder_al_centro_de_ayuda_desde_pxsol",
-              "configuración_inicial/como_realizar_un_curso_en_la_academia_de_pxsol",
-              "primeros_pasos/proceso_1__configuracion_inicial",
-              "primeros_pasos/proceso_4__gestion_de_reservas"
+              "primeros_pasos/como_ingresar_al_sistema_al_indicar_contrasena_incorrecta"
             ]
           },
           {
@@ -782,12 +776,6 @@
             ]
           },
           {
-            "group": "Plano de mesa",
-            "pages": [
-              "plano_de_mesa/guia_de_uso__aplicacion_plano_de_mesa"
-            ]
-          },
-          {
             "group": "Motor De Reservas V10",
             "pages": []
           },
@@ -808,7 +796,6 @@
               "motordereservasv10/como_crear_un_voucher",
               "motordereservasv10/paquetes-multi-categorias-y-precios-de-plan-tarifario",
               "motordereservasv10/medios_de_pago",
-              "motordereservasv10/acuerdos_tarifas_de_convenio_para_quien_corresponde",
               "motordereservasv10/guia_agente_ia_editor_motor_vx",
               "motordereservasv10/analitica_y_seguimiento_facebook",
               "motordereservasv10/parametros_del_motor_de_reservas",
