@@ -1,0 +1,154 @@
+---
+title: "Como configurar Wompi como Pasarela en PXSOL"
+description: "Esta guía detalla el proceso para configurar la integración de Wompi como pasarela de pago. El procedimiento incluye la instalación de la integración, la obtención y el ingreso de credenciales, y la configuración de webhooks para la comunicación de eventos, paso con el que la credencial queda validada."
+---
+
+## Pasos para la instalación y configuración inicial
+
+Para comenzar la configuración, accede al marketplace de integraciones, donde encontrarás las conexiones con servicios de terceros.
+
+<Steps>
+  <Step title="Accede al marketplace de integraciones">
+    En el menú de búsqueda, escribe "Integraciones" y selecciona la opción correspondiente para ir al marketplace.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/286649960168b81baa412d2a973c86e8c3f8a05ef28.png" alt="Menú de búsqueda con la palabra 'Integraciones' ingresada, mostrando resultados relevantes." />
+    </Frame>
+  </Step>
+
+  <Step title="Instala la integración Wompi">
+    Una vez en el marketplace, busca Wompi y haz clic en el botón **Instalar**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7166249012e937e6cc9dc433d06f63f6f0bdcb9047.png" alt="Listado de integraciones en el marketplace, con el cursor sobre el botón 'Instalar' de Wompi." />
+    </Frame>
+
+    Lee los términos y condiciones. Si estás de acuerdo, marca la casilla de aceptación y confirma la instalación haciendo clic nuevamente en **Instalar** en la ventana modal.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2329030932876307ba4919c69b3b51dee00b867fa82.png" alt="Ventana modal de instalación de Wompi con los términos y condiciones aceptados y el cursor sobre el botón 'Instalar'." />
+    </Frame>
+  </Step>
+
+  <Step title="Prepárate para añadir credenciales">
+    Después de la instalación, serás redirigido a la pantalla de configuración de la integración. Aquí verás la opción para **Añadir credencial**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/197071848380012126fc1b61e133a45ba3e6f30081d.png" alt="Pantalla de configuración de Wompi sin credenciales, con el botón 'Añadir credencial' visible." />
+    </Frame>
+
+    Al hacer clic, se abrirá un formulario. Asegúrate de seleccionar la opción **Wompi Pasarela**, ya que es el tipo de credencial que configurarás. Con esta modalidad, el huésped completa el pago en la página de checkout de Wompi.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/19707184860b4f9c533d9fda908a9f321607212a2dd.png" alt="Formulario para añadir credencial de Wompi, con la opción 'Wompi Pasarela' seleccionada." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Obtención e ingreso de credenciales
+
+Para que la integración funcione, debes obtener las credenciales de API desde la plataforma de Wompi e ingresarlas en el sistema.
+
+<Steps>
+  <Step title="Obtén la llave pública">
+    Accede al panel de Wompi y, en el menú lateral, ingresa a **Desarrollo > Programadores**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14332498096c5d724ebf23b0d4e21be24db695641e4.png" alt="Panel de Wompi con la opción 'Programadores' seleccionada en el menú lateral." />
+    </Frame>
+
+    Localiza y copia la llave pública.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14332498112eba4e7e7607e1fb262f8dbb68c474dd7.png" alt="Panel de desarrolladores de Wompi mostrando la llave pública seleccionada para ser copiada." />
+    </Frame>
+
+    Vuelve al formulario de credencial en tu sistema y pega la llave pública en el campo correspondiente.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28664996272608e36c3dd7b4d7fd156968d2fa4f341.png" alt="Formulario de credencial en el sistema, con la llave pública pegada en su campo designado." />
+    </Frame>
+  </Step>
+
+  <Step title="Obtén la llave privada">
+    En el panel de desarrollador de Wompi, ubica y copia la llave privada.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/197071849592eb48c633c0d2f2195d358971083e515.png" alt="Panel de desarrolladores de Wompi mostrando la llave privada seleccionada para ser copiada." />
+    </Frame>
+
+    Vuelve al formulario de credencial y pega la llave privada en el campo correspondiente.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/286649963363e4b3c1e8f03c707c8a1685641f5874c.png" alt="Formulario de credencial en el sistema, con la llave privada pegada en su campo." />
+    </Frame>
+  </Step>
+
+  <Step title="Obtén el secreto de integridad">
+    En el panel de desarrollador de Wompi, dentro de **Secretos para integración técnica**, encuentra y copia el secreto de integridad.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/7166249092827411404f06c2c5c41ff9e79f907a51.png" alt="Panel de desarrolladores de Wompi mostrando el secreto de integridad seleccionado para ser copiado." />
+    </Frame>
+
+    Completa el resto de los campos del formulario de credencial, incluyendo el nombre de la credencial, y después haz clic en **Añadir**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/21498747312f0fa6d532c75f0058a5517f2ca5797a9.png" alt="Formulario de credencial completado con el nombre, las llaves pública y privada y el secreto de integridad, con el cursor sobre el botón 'Añadir'." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Configuración de Webhooks y validación
+
+El siguiente paso es configurar los webhooks, que permiten a Wompi notificar al sistema de PXSOL sobre el estado de las transacciones. En la modalidad Pasarela, guardar el secreto de eventos es lo que valida la credencial, por lo que este paso es obligatorio para poder usarla.
+
+<Steps>
+  <Step title="Configura los Webhooks">
+    En la lista de credenciales, haz clic en el menú de acciones y selecciona **Configurar Webhooks**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/21498747336ca2b5778db97c2b132ffae35dd52096b.png" alt="Lista de credenciales con el menú de acciones desplegado, mostrando la opción 'Configurar Webhooks'." />
+    </Frame>
+
+    Se abrirá una ventana modal que te mostrará una URL de eventos. Cópiala.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8957811400f647de7db7a448b67f54553d2ccd23f4.png" alt="Ventana modal para configurar webhooks mostrando la URL de eventos y el botón para copiarla." />
+    </Frame>
+
+    En el panel de desarrollador de Wompi pega la URL copiada en la sección de URL de Eventos. Después, guarda los cambios.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/23290309666a076e01d0ded73b5bf189ee137cb1ec1.png" alt="Panel de desarrolladores de Wompi, con la URL de eventos pegada en el campo correspondiente y el botón 'Guardar'." />
+    </Frame>
+
+    Ahora, en el panel de desarrollador, busca y copia el **Secreto de eventos**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5374686852a506b919a6353e35f9f0a3849739a48e.png" alt="Panel de desarrolladores de Wompi mostrando el secreto de eventos seleccionado para ser copiado." />
+    </Frame>
+
+    Vuelve a la ventana modal de configuración de webhooks en tu sistema, pega el secreto de eventos y guarda la configuración.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1791562287018d1db4d41be1baa10b59eec057c3251.png" alt="Ventana modal para configurar webhooks con el secreto de eventos pegado en su campo, con el cursor sobre el botón 'Guardar'." />
+    </Frame>
+  </Step>
+
+  <Step title="Verifica la credencial">
+    Una vez guardado el secreto de eventos, verás que en la lista de credenciales los estados de **Webhooks** y de **validación** aparecen con un icono de verificación verde.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/71662491567bf9e6d3d97629b7108f6e32fcbb74fd.png" alt="Vista de la lista de credenciales con la credencial de Wompi Pasarela validada, indicada por iconos de verificación verdes." />
+    </Frame>
+
+    <Check>
+      ¡Felicitaciones! La integración de Wompi está correctamente configurada y validada. Ya puedes configurar tu medio de pago.
+    </Check>
+
+## Como configurar el medio de pago para Wompi
+
+Te compartimos la siguiente guía para que puedas configurar el medio de pago Wompi de manera sencilla y rápida, para que puedas comenzar a cobrar a tus clientes: https://ayuda.pxsol.com/configuracioninicial/como_configurar_un_medio_de_pago_con_pasarela
+  </Step>
+</Steps>
