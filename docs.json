@@ -29,7 +29,7 @@
               "primeros_pasos/como_acceder_al_centro_de_ayuda_desde_pxsol",
               "primeros_pasos/como_cambiar_la_contrasena_de_mi_usuario",
               "primeros_pasos/como_crear_un_ticket_desde_el_sistema_al_soporte_de_pxsol",
-              "primeros_pasos/proceso_3__gestion_de_consultas",
+              "primeros_pasos/proceso_3_gestion_de_consultas",
               "primeros_pasos/pasos_a_seguir_para_ingresar_a_la_plataforma",
               "primeros_pasos/proceso_4__gestion_de_reservas",
               "primeros_pasos/como_utilizar_el_buscador_de_pxsol",
@@ -285,7 +285,6 @@
               "web/instalacion_de_tu_web_con_pxsol",
               "web/como_delegar_su_dominio_comprado_en_wiroos_a_nuestro_hosting_de_cloudflare",
               "web/guias_autoadministrables_template_nova",
-              "web/guias_autoadministrables_template_seren",
               "web/como_integrar_el_motor_de_roomcloud_en_el_sitio_web_del_hotel",
               "web/guia_interna",
               "web/como_delegar_su_dominio_comprado_en_yachay_a_nuestro_hosting_de_cloudflare",
@@ -493,7 +492,6 @@
               "channel/conexion_autogestionable_con_el_canal_roombeast",
               "channel/en_que_consiste_la_integracion_con_el_pms_arion",
               "channel/conexion_autogestionable_con_el_canal_hotelbeds",
-              "channel/como_activar_o_desactivar_un_canal_de_venta",
               "channel/faq_conexion_difusion_y_mapeo_hacia_canales",
               "channel/conexion_autogestionable_con_el_canal_hyperguest",
               "channel/conexion_autogestionable_del_canal_airbnb",
@@ -517,7 +515,6 @@
               "procesos/como_votar_por_una_sugerencia_de_mejora",
               "procesos/proceso__registrar_un_pago_y_facturar",
               "procesos/como_enviar_enlace_para_web_check_in_manualmente",
-              "procesos/inbox",
               "procesos/proceso__web_check_in",
               "procesos/como_gestionar_una_reserva",
               "procesos/como_gestionar_una_consulta",
@@ -644,7 +641,7 @@
               "agencias_b2b/agencia_hoteles_disponibles_para_acuerdos",
               "agencias_b2b/agencias_como_activar_el_mapeo_automatico_de_politicas",
               "agencias_b2b/agencias_aplicacion_mapeo_de_politicas",
-              "agencias_b2b/agencia__reserva_directo_usuario__mis_reservas",
+              "agencias_b2b/agencia_reserva_directo_usuario_mis_reservas",
               "agencias_b2b/como_puedo_ver_las_reglas_de_negocio_que_se_han_aplicado_a_una_reserva",
               "agencias_b2b/pms_agencias_lista_de_reservas",
               "agencias_b2b/agencia_contenido_dinamico_para_plantillas_de_correos",
@@ -739,8 +736,7 @@
             "pages": [
               "inbox/imap_en_gmail__contrasena_de_aplicacion__guia_rapida",
               "inbox/actualizacion_bandeja_de_entrada",
-              "inbox/como_buscar_correos_electronicos",
-              "inbox/"
+              "inbox/como_buscar_correos_electronicos"
             ]
           },
           {
