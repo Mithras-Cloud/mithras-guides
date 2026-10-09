@@ -882,7 +882,7 @@
     },
     {
       "source": "/agencia-reserva-directo-mis-reservas",
-      "destination": "/agencias_b2b/agencia__reserva_directo_usuario__mis_reservas"
+      "destination": "/agencias_b2b/agencia_reserva_directo_usuario_mis_reservas"
     },
     {
       "source": "/agencias-como-efectuar-un-mapeo-manual-de-politicas",
@@ -926,7 +926,7 @@
     },
     {
       "source": "/ciclo-de-vida-de-una-reserva-plan-free",
-      "destination": "/primeros_pasos/proceso_3__gestion_de_consultas"
+      "destination": "/primeros_pasos/proceso_3_gestion_de_consultas"
     },
     {
       "source": "/cómo",
@@ -1026,7 +1026,7 @@
     },
     {
       "source": "/como-agregar-el-código-de-seguimiento-de-google-tag-manager-a-pxsol",
-      "destination": "/analítica/como_agregar_el_codigo_de_seguimiento_de_google_tag_manager_a_pxsol"
+      "destination": "/analitica/id_google_tag_manager"
     },
     {
       "source": "/cómo-agregar-informes-a-tu-gestor-de-informes",
@@ -1538,7 +1538,7 @@
     },
     {
       "source": "/como-configurar-un-costo-fijo-adicional",
-      "destination": "/motor/como_establecer_un_cargo_fijo_adicional_ejemplo_tarifa_por_limpieza"
+      "destination": "/motor/cargo_fijo_adicional"
     },
     {
       "source": "/como-conseguir-codigo-para-chat-de-facebook",
@@ -1602,7 +1602,7 @@
     },
     {
       "source": "/cómo-crear-un-anuncio",
-      "destination": "/motor/como_crear_un_anuncio"
+      "destination": "/motordereservasv10/como_crear_un_anuncio"
     },
     {
       "source": "/como-crear-un-impuesto",
@@ -1622,7 +1622,7 @@
     },
     {
       "source": "/como-crear-un-voucher",
-      "destination": "/motor/como_crear_un_voucher"
+      "destination": "/motordereservasv10/como_crear_un_voucher"
     },
     {
       "source": "/como-crear-una-nueva-etiqueta",
@@ -2242,7 +2242,7 @@
     },
     {
       "source": "/como-insertar-el-codigo-de-seguimiento-de-google-analytics-en-pxsol",
-      "destination": "/analítica/como_insertar_el_codigo_de_seguimiento_de_google_analytics_en_pxsol"
+      "destination": "/analitica/id_google_analytics"
     },
     {
       "source": "/como-instalar-el-motor-de-reservas-en-un-sitio-web-externo",
@@ -3038,7 +3038,7 @@
     },
     {
       "source": "/es/agencia-reserva-directo-mis-reservas",
-      "destination": "/agencias_b2b/agencia__reserva_directo_usuario__mis_reservas"
+      "destination": "/agencias_b2b/agencia_reserva_directo_usuario_mis_reservas"
     },
     {
       "source": "/es/agencias-como-efectuar-un-mapeo-manual-de-politicas",
@@ -3082,7 +3082,7 @@
     },
     {
       "source": "/es/ciclo-de-vida-de-una-reserva-plan-free",
-      "destination": "/primeros_pasos/proceso_3__gestion_de_consultas"
+      "destination": "/primeros_pasos/proceso_3_gestion_de_consultas"
     },
     {
       "source": "/es/cómo",
@@ -3182,7 +3182,7 @@
     },
     {
       "source": "/es/como-agregar-el-código-de-seguimiento-de-google-tag-manager-a-pxsol",
-      "destination": "/analítica/como_agregar_el_codigo_de_seguimiento_de_google_tag_manager_a_pxsol"
+      "destination": "/analitica/id_google_tag_manager"
     },
     {
       "source": "/es/cómo-agregar-informes-a-tu-gestor-de-informes",
@@ -3694,7 +3694,7 @@
     },
     {
       "source": "/es/como-configurar-un-costo-fijo-adicional",
-      "destination": "/motor/como_establecer_un_cargo_fijo_adicional_ejemplo_tarifa_por_limpieza"
+      "destination": "/motor/cargo_fijo_adicional"
     },
     {
       "source": "/es/como-conseguir-codigo-para-chat-de-facebook",
@@ -3758,7 +3758,7 @@
     },
     {
       "source": "/es/cómo-crear-un-anuncio",
-      "destination": "/motor/como_crear_un_anuncio"
+      "destination": "/motordereservasv10/como_crear_un_anuncio"
     },
     {
       "source": "/es/como-crear-un-impuesto",
@@ -3778,7 +3778,7 @@
     },
     {
       "source": "/es/como-crear-un-voucher",
-      "destination": "/motor/como_crear_un_voucher"
+      "destination": "/motordereservasv10/como_crear_un_voucher"
     },
     {
       "source": "/es/como-crear-una-nueva-etiqueta",
@@ -4398,7 +4398,7 @@
     },
     {
       "source": "/es/como-insertar-el-codigo-de-seguimiento-de-google-analytics-en-pxsol",
-      "destination": "/analítica/como_insertar_el_codigo_de_seguimiento_de_google_analytics_en_pxsol"
+      "destination": "/analitica/id_google_analytics"
     },
     {
       "source": "/es/como-instalar-el-motor-de-reservas-en-un-sitio-web-externo",
@@ -5394,7 +5394,7 @@
     },
     {
       "source": "/es/proceso-5-visualización-de-reporte-de-reservas",
-      "destination": "/primeros_pasos/proceso_5__visualizacion_de_reporte_de_reservas"
+      "destination": "/primeros_pasos/proceso_5_visualizacion_de_reporte_de_reservas"
     },
     {
       "source": "/es/proceso-configuracion-de-campanas",
@@ -5826,7 +5826,7 @@
     },
     {
       "source": "/proceso-5-visualización-de-reporte-de-reservas",
-      "destination": "/primeros_pasos/proceso_5__visualizacion_de_reporte_de_reservas"
+      "destination": "/primeros_pasos/proceso_5_visualizacion_de_reporte_de_reservas"
     },
     {
       "source": "/proceso-configuracion-de-campanas",
