@@ -817,7 +817,8 @@
               "motordereservasv10/analitica_y_seguimiento_facebook",
               "motordereservasv10/parametros_del_motor_de_reservas",
               "motordereservasv10/como_integrar_stripe_como_pasarela_en_el_motor_de_pxsol",
-              "motordereservasv10/como_integrar_wompi_como_procesador_en_el_motor_de_pxsol"
+              "motordereservasv10/como_integrar_wompi_como_procesador_en_el_motor_de_pxsol",
+              "motordereservasv10/como_integrar_wompi_como_pasarela_en_el_motor_de_pxsol"
             ]
           }
         ]
