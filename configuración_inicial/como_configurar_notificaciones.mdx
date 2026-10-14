@@ -1,11 +1,11 @@
 ---
 title: "¿Cómo configurar Notificaciones?"
-description: "En esta guía explicaremos cómo configurar notificaciones."
+description: "En esta guía explicaremos cómo elegir qué avisos recibir por correo, cómo llegan y quién los recibe."
 ---
 
 <Note>
   El correo que selecciones para recibir notificaciones no puede ser el mismo que el correo
-  corporativo vinculado a Pxsol, ya que esto generaría un bucle. El sistema no se lo permitirá.
+  corporativo vinculado a Pxsol, ya que esto generaría un bucle. El sistema no lo permitirá.
 </Note>
 
 <Steps>
@@ -13,69 +13,89 @@ description: "En esta guía explicaremos cómo configurar notificaciones."
     1. Selecciona el ícono de campana ubicado en la esquina superior derecha.
 
     <Frame>
-      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-04-2025-12-46-03-1645-PM.png" alt="Ícono de campana para notificaciones" />
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/01_campana.png" alt="Ícono de campana para notificaciones" />
     </Frame>
 
-    2. Haz clic en el ícono de configuración en la esquina superior derecha.
+    2. Haz clic en el ícono de configuración (engranaje), arriba a la derecha de la lista de notificaciones.
 
     <Frame>
-      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-04-2025-12-43-22-9907-PM.png" alt="Ícono de configuración de notificaciones" />
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/02_engranaje.png" alt="Ícono de configuración de notificaciones" />
     </Frame>
-
   </Step>
 
-  <Step title="Configurar el correo por defecto y tipos de notificación">
-    1. Encontrarás un campo para escribir un correo por defecto y, debajo, una lista de tipos de notificación.
+  <Step title="Revisar los avisos del PMS y el correo principal">
+    1. Arriba encontrarás las opciones del PMS: el **sonido de los avisos** y las **notificaciones push** en el dispositivo que estás usando.
+    2. Más abajo, en **Avisos por correo**, está el **Correo principal**.
 
     <Frame>
-      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-04-2025-12-43-53-6538-PM.png" alt="Campo de correo por defecto y tipos de notificación" />
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/03_correo_principal.png" alt="Sonido de los avisos, notificaciones push y correo principal" />
     </Frame>
 
-    **Correo por defecto:** Las notificaciones que estén habilitadas (botón en verde) y no estén asignadas a ningún usuario, llegarán al correo que ingreses en este campo.
-
-    - Reservas
-    - Consultas
-    - Nuevo email
-    - Búsquedas no exitosas y disparidad
-    - Encargado de calidad
-    - Disponibilidad agotada
-    - Cancelación de reservas
-    - Pagos
-    - Web check in
-    - Tareas
-
+    **Correo principal:** los avisos encendidos que no tengan destinatarios elegidos llegarán a este correo.
   </Step>
 
-  <Step title="Asignar usuarios a notificaciones">
-    1. Para cada tipo de notificación, puedes seleccionar qué usuarios del equipo la recibirán.
+  <Step title="Elegir cómo llega cada aviso">
+    Los avisos están agrupados por tema. Junto a cada uno vas a ver sus opciones:
 
     <Frame>
-      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-04-2025-12-48-45-7135-PM.png" alt="Asignación de usuarios a tipos de notificación" />
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/05c_fila_con_modo.png" alt="Un aviso con sus opciones de envío y sus destinatarios" />
     </Frame>
 
+    * **Al momento:** el correo llega apenas ocurre.
+    * **Resumen diario:** recibes un solo correo a las 7:00 (hora del hotel) con todo lo del día anterior. Está disponible para Nueva reserva, Reserva cancelada, Disponibilidad agotada y Correo nuevo.
+    * **Apagado:** el aviso no se envía por correo.
+
+    <Frame>
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/05_modo_al_momento.png" alt="Opción Al momento seleccionada" />
+
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/05b_modo_resumen_diario.png" alt="Opción Resumen diario seleccionada" />
+
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/06_modo_apagado.png" alt="Opción Apagado seleccionada" />
+    </Frame>
+
+    Estos son los avisos que puedes configurar:
+
+    * **Reservas:** Nueva reserva, Reserva cancelada, Disponibilidad agotada, Confirmaciones de reservas de agencias, Fallas en la asignación automática de habitaciones y Web check-in.
+    * **Consultas y correo:** Consultas y Correo nuevo.
+    * **Pagos y garantías:** Pagos, Garantía actualizada por link de pago y Comprobantes de pago subidos por el huésped.
+    * **Gestión:** Búsquedas no exitosas y disparidad, Encargado de calidad, Tareas y Reporte diario de errores TRA.
+
+    <Tip>
+      Los avisos de **Disponibilidad agotada** se agrupan por categoría y fechas seguidas. Cuando una reserva
+      deja noches sin disponibilidad, el correo de **Nueva reserva** ya las incluye, siempre que los dos avisos
+      vayan a los mismos destinatarios.
+    </Tip>
   </Step>
 
-  <Step title="Habilitar o deshabilitar notificaciones">
-    1. Puedes deshabilitar las notificaciones que no deseas recibir utilizando el siguiente botón:
+  <Step title="Elegir quién recibe cada aviso">
+    1. Debajo de cada aviso encendido verás **Para**, con los destinatarios actuales. Haz clic para desplegar la lista.
 
     <Frame>
-      <img src="https://f.hubspotusercontent40.net/hubfs/7398646/image-Jul-21-2020-01-12-21-25-AM.png" alt="Selector de habilitación de notificación" />
-      <img src="https://7398646.fs1.hubspotusercontent-na1.net/hubfs/7398646/image-png-Aug-04-2025-12-49-09-2293-PM.png" alt="Indicador de notificación habilitada/deshabilitada" />
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/04b_para_destinatarios.png" alt="Destinatarios de un aviso, en la opción Para" />
     </Frame>
 
-    - Verde: Notificación habilitada.
-    - Gris: Notificación deshabilitada.
+    2. Marca los usuarios del equipo que deben recibir el aviso. Puedes usar **Todos** y **Ninguno** para marcar o desmarcar a todos de una vez.
 
+    <Frame>
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/04_tipos_y_destinatarios.png" alt="Lista de usuarios para elegir los destinatarios de un aviso" />
+    </Frame>
+
+    3. Si tienes muchos usuarios, busca por nombre o correo.
+
+    <Frame>
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/08_buscar_destinatarios.png" alt="Búsqueda de destinatarios por nombre o correo" />
+    </Frame>
+
+    Si no eliges a nadie, el aviso llega al correo principal.
   </Step>
 
   <Step title="Guardar cambios">
-    1. Una vez realizada la configuración, presiona el botón "GUARDAR CAMBIOS".
+    1. Una vez realizada la configuración, presiona el botón **Guardar cambios**. Mientras tengas cambios pendientes, verás el aviso «Hay cambios sin guardar».
 
     <Frame>
-      <img src="https://cdn2.hubspot.net/hubfs/7398646/Usuarios/Configuraciones/C%C3%B3mo%20configurar%20Notificaciones/4.png" alt="Botón Guardar Cambios" />
+      <img src="https://guides-assets-public.pxsol.com/notificaciones/como-configurar-notificaciones/07_guardar_cambios.png" alt="Botón Guardar cambios con el aviso de cambios sin guardar" />
     </Frame>
 
     <Check>Has configurado exitosamente tus notificaciones.</Check>
-
   </Step>
 </Steps>
