@@ -1,0 +1,107 @@
+---
+title: "Configuración de Datos de Transferencia en Medios de Pago"
+description: "Esta guía detalla el procedimiento para crear un nuevo medio de pago de tipo 'transferencia bancaria' y configurar los datos de la cuenta que se mostrarán al cliente al finalizar su reserva en el motor. También se ilustra el flujo de reserva desde la perspectiva del cliente, mostrando dónde visualiza la información para realizar el pago y cómo puede adjuntar el comprobante."
+---
+
+<Steps>
+<Step title="Buscá y accedé a los medios de pago">
+  En el buscador principal de tu plataforma, escribí "medios" y seleccioná la opción **Medios de pago** que aparezca en los resultados.
+  
+  <Frame>
+  <img src="/images/medios-pago-buscador.jpg" alt="Vista del buscador principal con el término 'medios' ingresado y el resultado 'Medios de pago' resaltado y seleccionado en la lista." />
+  </Frame>
+</Step>
+
+<Step title="Agregá un nuevo medio de pago">
+  Una vez en la pantalla de Medios de pago, hacé clic en el botón rojo **Agregar medio de pago** para iniciar la creación de uno nuevo.
+  
+  <Frame>
+  <img src="/images/agregar-medio-pago-boton.jpg" alt="Pantalla que muestra el listado de medios de pago existentes, con el cursor sobre el botón rojo 'Agregar medio de pago' al que se le hará clic." />
+  </Frame>
+</Step>
+
+<Step title="Seleccioná 'Transferencia Bancaria' como categoría">
+  En el formulario de creación, abrí el menú desplegable de **Categoría** y elegí la opción **Transferencia Bancaria**.
+  
+  <Frame>
+  <img src="/images/categoria-transferencia-bancaria.jpg" alt="Formulario de creación de un nuevo medio de pago, con el menú desplegable de 'Categoría' abierto y la opción 'Transferencia Bancaria' resaltada y lista para ser seleccionada." />
+  </Frame>
+</Step>
+
+<Step title="Completá los datos para la transferencia">
+  En el campo de texto **Datos para la transferencia**, ingresá toda la información necesaria para que tus clientes puedan realizar la transferencia. Asegurate de incluir:
+  
+  - Nombre del beneficiario/razón social
+  - Nombre del banco
+  - Tipo y número de cuenta (Caja de Ahorro, Cuenta Corriente, CBU/CVU, Alias)
+  - CUIT/CUIL del beneficiario
+  
+  <Tip>
+  Es crucial que los datos estén completos y sean claros para evitar errores en las transferencias. Cuanta más información brindes, más fácil será para el cliente completar el pago.
+  </Tip>
+  
+  <Frame>
+  <img src="/images/datos-transferencia-completos.jpg" alt="Campo de texto 'Datos para la transferencia' siendo completado con información bancaria de ejemplo, incluyendo nombre del banco, tipo de cuenta, número de CBU y CUIT del beneficiario." />
+  </Frame>
+</Step>
+
+<Step title="Configurá las políticas, monedas y puntos de venta">
+  Continuá configurando las secciones restantes del formulario, como las **políticas** asociadas al medio de pago, las **monedas** aceptadas y los **puntos de venta** donde estará disponible esta opción.
+  
+  <Frame>
+  <img src="/images/configurar-politicas-monedas.jpg" alt="Vista del formulario de creación con las secciones de políticas, monedas y puntos de venta siendo configuradas con sus respectivas opciones." />
+  </Frame>
+</Step>
+
+<Step title="Guardá los cambios">
+  Una vez que hayas completado toda la configuración, hacé clic en el botón **Guardar cambios** que se encuentra al final del formulario. Esto guardará el nuevo medio de pago de transferencia bancaria.
+  
+  <Frame>
+  <img src="/images/guardar-cambios-medio-pago.jpg" alt="Cursor haciendo clic en el botón 'Guardar cambios' al final del formulario de configuración del medio de pago." />
+  </Frame>
+</Steps>
+
+## Flujo de reserva del cliente: cómo ve los datos y adjunta el comprobante
+
+Ahora, veamos cómo tus clientes interactuarán con este nuevo medio de pago al momento de hacer una reserva.
+
+<Steps>
+<Step title="Checkout en el motor de reservas">
+  Cuando un cliente llega a la página de checkout de tu motor de reservas, va a ver un resumen de su reserva y las distintas opciones de pago disponibles.
+  
+  <Frame>
+  <img src="/images/checkout-resumen-pagos.jpg" alt="Página de checkout del motor de reservas, mostrando el resumen de la reserva del cliente y las opciones de pago disponibles." />
+  </Frame>
+</Step>
+
+<Step title="Seleccioná 'Transferencia bancaria'">
+  Dentro de las opciones de pago, el cliente debe seleccionar **Transferencia bancaria** usando el botón de radio correspondiente.
+  
+  <Frame>
+  <img src="/images/seleccionar-transferencia-cliente.jpg" alt="Listado de medios de pago en el motor de reservas, con la opción 'Transferencia bancaria' seleccionada mediante un radio button." />
+  </Frame>
+</Step>
+
+<Step title="Confirmá la reserva">
+  Después de elegir la opción de transferencia, el cliente hace clic en el botón **Confirmar Reserva** para finalizar el proceso.
+  
+  <Frame>
+  <img src="/images/confirmar-reserva-cliente.jpg" alt="El cursor se posiciona sobre el botón 'Confirmar Reserva' para que el cliente finalice el proceso de reserva." />
+  </Frame>
+</Step>
+
+<Step title="Visualizá los datos de transferencia y adjuntá el comprobante">
+  Una vez confirmada la reserva, el cliente verá una pantalla de confirmación que incluye el número de reserva y, lo más importante, el recuadro con los **datos bancarios que vos configuraste** para realizar la transferencia.
+  
+  En esta misma pantalla, el cliente encontrará una sección para **Enviar comprobante de pago**, donde podrá adjuntar el archivo de la transferencia haciendo clic en **Elegir archivo(s)**.
+  
+  <Frame>
+  <img src="/images/confirmacion-reserva-datos-bancarios.jpg" alt="Pantalla de confirmación de reserva, mostrando el número de reserva y un recuadro destacado con los datos bancarios configurados para la transferencia, listos para ser utilizados por el cliente." />
+  </Frame>
+  
+  <Frame>
+  <img src="/images/adjuntar-comprobante-cliente.jpg" alt="Detalle de la sección 'Enviar comprobante de pago' en la pantalla de confirmación, con el botón 'Elegir archivo(s)' visible para que el cliente pueda adjuntar el comprobante de su transferencia." />
+  </Frame>
+</Step>
+</Steps>
+
