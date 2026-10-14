@@ -1,0 +1,117 @@
+---
+title: "Request Payment from Guest"
+description: "Learn how to generate and send a secure payment link to guests with an outstanding balance, allowing them to provide credit card details or complete payment. The system automatically updates the reservation and payment status upon completion."
+---
+
+This feature allows you to generate and send a payment link to guests who have an outstanding balance on their reservation. Through this link, guests access a secure page where they can enter their credit card details as a guarantee or make the payment using an integrated payment processor. The system automatically updates the reservation status and payment information once the guest completes the process.
+
+## Sending a Payment Request
+
+<Steps>
+<Step title="Access the Reservation and Initiate Payment Request">
+To start the payment request process, access a reservation that has an outstanding balance. You will find the **"Request Payment"** button within the Payment and Billing section.
+
+<Frame caption="Press the 'Request Payment' button in the Payment and Billing section.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433483_0_6a1f424b74a0d.jpg" alt="Screenshot of a reservation's Payment and Billing section, with the 'Request Payment' button highlighted." />
+</Frame>
+</Step>
+
+<Step title="Select the Reason for the Request">
+Clicking the button opens a pop-up window titled "Request Payment from Guest." In this window, select a reason for the request from the "Reason" dropdown menu. Available options are **"Invalid Card"** or **"No Card on File."** Your choice determines the content of the email body sent to the guest, personalizing the message for the specific circumstance.
+
+<Frame caption="The 'Request Payment from Guest' modal window with the 'Reason' dropdown menu open, showing 'Invalid Card' and 'No Card on File' options.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433484_1_6a1f424c35098.jpg" alt="Screenshot of the 'Request Payment from Guest' modal, showing the 'Reason' dropdown menu with options." />
+</Frame>
+</Step>
+
+<Step title="Verify or Enter the Guest's Email">
+Next, verify that the guest's email address in the "Email" field is correct. This field automatically populates with the email provided during the original reservation process. If the reservation originated from a quote without an associated email, this field will be empty, and you must fill it in manually.
+
+<Frame caption="Email field in the payment request modal window.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433484_2_6a1f424ca4cf8.jpg" alt="Screenshot of the 'Request Payment from Guest' modal, focusing on the email address field." />
+</Frame>
+</Step>
+
+<Step title="Send the Request">
+Once you have selected the reason and confirmed the email, click the **"Send by Email"** button to dispatch the request directly to the guest's email. Alternatively, you can use the **"Copy Link"** button to obtain the payment URL and share it through other means, such as instant messaging services.
+
+<Frame caption="The 'Send by Email' button being pressed in the modal window.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433485_3_6a1f424d07560.jpg" alt="Screenshot of the 'Request Payment from Guest' modal, with the 'Send by Email' button highlighted." />
+</Frame>
+</Step>
+
+<Step title="Confirm and View Request Status">
+After sending the request, the pop-up window closes, and a confirmation message appears on the reservation screen. Additionally, a new "Payment Request Active" status displays. While this request is active, the system prevents you from generating a new request for the same reservation, avoiding duplicate sends. The request remains active until the guest completes the payment or until the end of the day.
+
+<Frame caption="The 'Payment Request Active' status shown in the reservation's payment section.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433485_4_6a1f424d627ee.jpg" alt="Screenshot of a reservation's payment section showing a 'Payment Request Active' status message." />
+</Frame>
+</Steps>
+
+## Guest Payment Process
+
+<Steps>
+<Step title="Access the Payment Link">
+The guest receives an email with the subject "Complete your reservation payment." Within this email, they will find a prominent button labeled **"Add Payment Method,"** which they must click to proceed.
+
+<Frame caption="Email with a blue button labeled 'Add Payment Method'.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433485_5_6a1f424dace65.jpg" alt="Screenshot of an email received by a guest, featuring a prominent 'Add Payment Method' button." />
+</Frame>
+</Step>
+
+<Step title="Complete Reservation Holder Details">
+Upon clicking the button, the guest is redirected to a secure webpage to update their payment method. On this page, they must complete the "Reservation Holder Details," including their document number in the corresponding field.
+
+<Frame caption="Payment method update page with fields for nationality and document number.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433486_6_6a1f424e8abe2.jpg" alt="Screenshot of a secure payment page where the guest enters reservation holder details like document number." />
+</Frame>
+</Step>
+
+<Step title="Select Payment Method">
+Next, in the "How do you want to pay?" section, the guest must select one of the available payment methods. Options may include registering a credit card as a guarantee or paying the outstanding balance through a payment processor. Selecting a processor displays a form for entering card details.
+
+<Frame caption="Payment information section with an online payment method selected.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433486_7_6a1f424edf059.jpg" alt="Screenshot of the payment page showing payment method selection, with an online payment option chosen." />
+</Frame>
+</Step>
+
+<Step title="Enter Card Details and Confirm">
+Once the guest has completed all fields in the payment form, such as card number, cardholder name, expiration date, and security code, they must click the **"Confirm"** button to finalize and process the transaction.
+
+<Frame caption="The 'Confirm' button at the bottom of the payment form.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433487_8_6a1f424f57a60.jpg" alt="Screenshot of the payment form with all credit card details entered and the 'Confirm' button highlighted." />
+</Frame>
+</Step>
+
+<Step title="Payment Confirmation">
+If the payment processes successfully, a confirmation page displays with the message "Thank you for your purchase!" and a summary of the reservation details. This indicates that the balance has been satisfactorily covered.
+
+<Frame caption="Purchase confirmation page with a green checkmark and reservation details.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433487_9_6a1f424fdf861.jpg" alt="Screenshot of a payment confirmation page showing a success message and reservation summary." />
+</Frame>
+</Step>
+</Steps>
+
+## Automatic System Update
+
+<Steps>
+<Step title="Receive Real-time Notification">
+Simultaneously with the guest's payment confirmation, the hotel management system registers the update and issues a real-time notification. This notification, stating "Card Updated," informs staff that the action has been completed. Clicking the notification directs you to the corresponding reservation.
+
+<Frame caption="Pop-up notification in the lower-left corner indicating 'Card Updated'.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433488_10_6a1f42509c351.jpg" alt="Screenshot of a system notification popup showing 'Card Updated' message." />
+</Frame>
+</Step>
+
+<Step title="Verify Reservation Update">
+Within the reservation, the "Payment and Billing" section automatically updates. The amount in "Paid" now matches the "Total Reservation," and the "Outstanding Balance" shows zero. As a result, the **"Request Payment"** button deactivates since there are no pending balances.
+
+<Frame caption="The Payment and Billing section of the reservation showing that the outstanding balance is zero.">
+<img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/06/02/screenshot_1780433345_11_6a1f4251395ff.jpg" alt="Screenshot of a reservation's Payment and Billing section, showing that the 'Outstanding Balance' is zero and the 'Request Payment' button is deactivated." />
+</Frame>
+
+<Check>
+Confirm that the "Outstanding Balance" is zero and the "Request Payment" button is deactivated, indicating successful payment.
+</Check>
+</Step>
+</Steps>
