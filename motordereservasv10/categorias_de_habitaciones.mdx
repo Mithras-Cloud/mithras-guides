@@ -1,0 +1,258 @@
+---
+title: "Categorías de habitaciones"
+description: "La pantalla Categorías, completa: las mismas acciones que la app del PMS, el mismo formulario, las miniaturas y el orden. Suma una sola cosa nueva: el link a..."
+---
+
+```text
+Configuración › Categorías
+```
+
+La pantalla Categorías, completa: las mismas acciones que la app del PMS, el mismo formulario, las miniaturas y el orden. Suma una sola cosa nueva: el link al Motor de Reservas que abre cada habitación, listo para compartir.
+
+Dónde Habitaciones físicas Link al motor
+
+### Configuración › Categorías En su propia pantalla lp.html?roomid\=ID
+
+## Dónde está
+
+Categorías se abre desde el menú de Configuración, en "Categorías (Tipos de Habitaciones)". Los favoritos y links viejos a esta pantalla siguen andando.
+
+Habitaciones Físicas sigue siendo una pantalla aparte y funciona igual que antes.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1432704950461a24bfdc16741b987536e6c905a4529.png" alt="Categorías dentro de Configuración. El selector de Establecimiento de arriba decide de qué hotel son las categorías." />
+</Frame>
+
+Categorías dentro de Configuración. El selector de Establecimiento de arriba decide de qué hotel son las categorías.
+
+## El listado
+
+Muestra las mismas columnas que el PMS, más el link al motor:
+
+Columna Qué muestra
+
+⋮⋮ (asa) Para arrastrar la fila y cambiar el orden.
+
+Nombre La portada de la categoría (su primera foto) y el nombre. Si es una variante, dice "Variante de: …". Si está oculta en la web, "No visible en el motor".
+
+Código El código único (el que ven los canales y las habitaciones físicas).
+
+Detalles El ID de la categoría y, si corresponde, "Tarifa: no editable" / "Disponibilidad: no editable" cuando los toma de la madre.
+
+Combinaciones Cada combinación de huéspedes que se puede vender, como ficha adultos · menores · bebés.
+
+Link en el motor Copiar o abrir el link del Motor de Reservas de esa categoría.
+
+Acciones Editar · Duplicar (sólo staff de Pxsol) · Enviar al principio · Enviar al final · Borrar.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8954405940eb8f113699ccb8cd7876cb05eeb9be10.png" alt="El listado con las cuatro categorías de The Yellow Place. Al pasar el mouse por una parte de la ficha, un tooltip dice qué cuenta: acá, Menores: 0. Cada ficha tiene tres partes: 👤 2 🧍 1 👶 0 = 2 adu" />
+</Frame>
+
+El listado con las cuatro categorías de The Yellow Place. Al pasar el mouse por una parte de la ficha, un tooltip dice qué cuenta: acá, "Menores: 0". Cada ficha tiene tres partes: 👤 2 🧍 1 👶 0 \= 2 adultos, 1 menor, 0 bebés. Las fichas van
+
+ordenadas igual que en el motor (por adultos, después menores, después bebés), así se ve de un vistazo si falta alguna.
+
+## El link al Motor de Reservas
+
+Es lo nuevo que no tenía el PMS. Cada categoría tiene un link que abre el motor directo en esa habitación, para pegar en la web del hotel, en un mail o en redes:
+
+```text
+https://theyellowplace.reservadirecto.com/lp.html ?roomid=168863
+```
+
+La base es la web del punto de venta (el campo URL del POS). Si no tiene una cargada, se usa
+
+```text
+https://<pos>.reservadirecto.com/ .
+```
+
+El número es el ID de la categoría, el mismo que muestra la columna Detalles.
+
+Con disponibilidad para las fechas, el huésped ve el tarifario de esa habitación. Sin disponibilidad, ve igual la ficha, con el aviso y las próximas fechas libres: el link no se rompe nunca.
+
+El link aparece en dos lugares: en la columna "Link en el motor" del listado (copiar / abrir) y arriba de todo en el editor de la categoría, con la URL a la vista.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28654099008450f73406c42ba88c580eb1b77bb8ffe.png" alt="En el editor: la URL completa, con copiar y abrir." />
+</Frame>
+
+En el editor: la URL completa, con copiar y abrir.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1253616832395069ed36f631f0b0c3ea0be2eb80f7a.png" alt="Lo que ve el huésped al abrirlo: el motor directo en la Habitación Doble Superior, con sus fotos en el orden cargado en Categorías." />
+</Frame>
+
+Lo que ve el huésped al abrirlo: el motor directo en la Habitación Doble Superior, con sus fotos en el orden cargado en Categorías.
+
+## Cambiar el orden
+
+El orden del listado es el orden en que el Motor de Reservas y el Plano muestran las categorías. Hay tres formas de cambiarlo, y las tres se guardan en el momento:
+
+Arrastrar la fila desde el asa ⋮⋮ de la izquierda.
+
+Enviar al principio / Enviar al final, desde las acciones de la fila.
+
+Con el teclado: tabular hasta el asa, espacio para tomar la fila, flechas para moverla y espacio para soltarla.
+
+Mientras el cambio viaja al servidor, la fila ya queda en su lugar nuevo. Si el servidor lo rechaza, vuelve adonde estaba y se muestra el error.
+
+## Crear una categoría
+
+"Nueva categoría" abre el formulario completo, con los mismos valores iniciales que el PMS: cama matrimonial, seis combinaciones de uno y dos adultos, visible en la web y en el plano, y todos los tarifarios activados (una categoría sin tarifarios no se puede vender).
+
+Para el staff de Pxsol, antes aparece la elección entre una categoría nueva y una variante, igual que en el PMS. Un hotelero va directo al formulario.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/25072336646dd2873db8ecc29b73c44e1ba2f17249f.png" alt="La elección (sólo Pxsol): categoría desde cero o variante de otra." />
+</Frame>
+
+La elección (sólo Pxsol): categoría desde cero o variante de otra.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/71635247568403b6069b6106a7c3ef32075a23dbd0.png" alt="Al escribir el nombre se genera el código único (acá SUIPRUMCP ) y la URL de la habitación." />
+</Frame>
+
+Al escribir el nombre se genera el código único (acá SUIPRUMCP ) y la URL de la habitación.
+
+El código y la URL se completan solos mientras no los toques. En cuanto escribís uno a mano, se respeta el tuyo. Al editar una categoría que ya existe no cambian nunca solos: cambiar la URL rompería los links que el hotel ya compartió.
+
+## Crear una variante
+
+Una variante es la misma habitación física vendida con otras tarifas, típicamente por cantidad de huéspedes. Hereda de su categoría madre las fotos, la descripción y los tarifarios, por eso esas secciones no aparecen en su editor.
+
+Arranca como copia de la madre, sin código ni URL (tienen que ser únicos) y oculta en la web.
+
+No puede repetir una combinación que ya tenga la madre. Si lo intentás, el formulario lo avisa y no deja agregarla.
+
+En el listado queda marcada "Variante de: …".
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/286540990241218c7097fcf0b5af58b515296266d66.png" alt="Editor de una variante: sin Fotos ni Tarifarios, con una combinación propia de 3 adultos." />
+</Frame>
+
+Editor de una variante: sin Fotos ni Tarifarios, con una combinación propia de 3 adultos.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/107452871343a0646c872b828a650ed9878740300d5.png" alt="La variante en el listado, con su madre y el aviso de que no se ve en el motor." />
+</Frame>
+
+La variante en el listado, con su madre y el aviso de que no se ve en el motor.
+
+## El formulario de edición
+
+Se abre en un panel lateral y el listado queda detrás. Tiene las mismas seis secciones que la app del PMS, en el mismo orden, con un único "Guardar cambios" al pie. Al guardar se publican los cambios en el motor (se limpia la caché del punto de venta), igual que en el PMS.
+
+### 1. Información básica
+
+Nombre, código único y descripción (obligatoria, hasta 2000 caracteres, con contador). El código acepta sólo letras y números y no puede contener a otro código del establecimiento ni estar contenido en él: con DBL cargado no entran DBL2 ni DB . "Generar código único" arma uno a partir del nombre.
+
+### 2. Fotos de la habitación
+
+Se agregan desde la Biblioteca de Archivos (hasta 50 de una vez) y se ordenan arrastrándolas: la primera es la portada en el motor y la galería respeta este orden. No se puede quitar la última foto.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/10745287134f4985db79692001b22fafeb5c8a10de4.png" alt="Fotos numeradas con la portada marcada, y la capacidad con los máximos del establecimiento." />
+</Frame>
+
+Fotos numeradas con la portada marcada, y la capacidad con los máximos del establecimiento.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5372643570ab0b2f51b03bb6081eb01c73f65646b2.png" alt="Agregar fotos abre la Biblioteca de Archivos del hotel." />
+</Frame>
+
+"Agregar fotos" abre la Biblioteca de Archivos del hotel.
+
+### 3. Capacidad
+
+Cantidad de habitaciones de la categoría y máximos de adultos, niños y bebés. Cada campo muestra el tope del establecimiento (por ejemplo, "máx: 6") y las edades salen de su configuración ("menores de 18 años").
+
+### 4. Combinaciones
+
+La tabla de distribuciones que vende el motor. "Agregar combinación" abre tres selectores topados por los máximos del establecimiento. No se aceptan una combinación vacía (0 · 0 · 0), una repetida ni, en una variante, una de la madre. Cada fila se puede editar o quitar, y la tabla se reordena sola.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14327049520570e3a9d3e4325b884d6f69e005be89e.png" alt="La combinación nueva de 3 adultos quedó ordenada al final. ¿Cómo funciona esto? despliega la explicación del PMS." />
+</Frame>
+
+La combinación nueva de 3 adultos quedó ordenada al final. "¿Cómo funciona esto?" despliega la explicación del PMS.
+
+### 5. Características
+
+Tamaño y unidad, tipos de cama, amenities y accesibilidad. "Características avanzadas" despliega el resto:
+
+URL de la habitación (+ "Regenerar URL"), tipos de cama adicionales y vistas desde la habitación (se pueden elegir varias).
+
+Política de fumadores, visibilidad en la web, visible en el Plano de Ocupación y la habitación madre.
+
+Texto de tarifa (singular y plural), el que el motor muestra bajo el precio.
+
+Marcados INT , sólo para el staff de Pxsol: descuento a menores (no aplica / nominal / porcentual) y los bloqueos de edición de tarifa y de disponibilidad.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8954405950cf28853eb5a947742707caf49535f810.png" alt="Camas y amenities con buscador; lo elegido queda como fichas." />
+</Frame>
+
+Camas y amenities con buscador; lo elegido queda como fichas.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/10745287140f40aa62777fb57a8aee67f60b2dd5f43.png" alt="Las avanzadas, incluidos los tres campos INT." />
+</Frame>
+
+Las avanzadas, incluidos los tres campos INT.
+
+Agregar un tipo de cama crea uno nuevo en el catálogo. Ese catálogo es el mismo para todos los establecimientos y un tipo creado no se puede borrar, por eso el aviso aparece antes de escribir. Un nombre repetido se frena en el momento.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2149057428034326376b879191f8b0986ed9d594f13.png" alt="matrimonial ya existe: el formulario lo dice y el botón Agregar queda deshabilitado." />
+</Frame>
+
+"matrimonial" ya existe: el formulario lo dice y el botón Agregar queda deshabilitado.
+
+### 6. Tarifarios
+
+Un switch por plan tarifario, con su moneda y descripción. Hay que dejar al menos uno activado. "Agregar tarifario" abre el alta de planes en otra pestaña, para no perder lo que estás editando; al volver, el botón de actualizar trae el plan nuevo.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26863217850c5ca1e9239e0b7e08160a0642731f8ac.png" alt="Los cuatro planes de The Yellow Place, todos vinculados a la categoría." />
+</Frame>
+
+Los cuatro planes de The Yellow Place, todos vinculados a la categoría.
+
+## Duplicar y borrar
+
+Duplicar está sólo para el staff de Pxsol, como en el PMS. Crea una copia ("… copia") y abre su editor. El código de la copia se arma con un sufijo al azar ( ADR\_1424 ) y queda marcado porque contiene al original: con "Generar código único" se resuelve.
+
+Borrar pide confirmación. El diálogo queda abierto, con un indicador de progreso, hasta que el servidor termina: el borrado puede tardar varios segundos.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/10745287146ef5b01510b78abbb08d8d09cbc9e0f1b.png" alt="La copia abierta para editar, con el aviso del código." />
+</Frame>
+
+La copia abierta para editar, con el aviso del código.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/25072336674184ad708cce7e8b277a4aceb1e461894.png" alt="La confirmación nombra la categoría y avisa qué pasa con las habitaciones físicas." />
+</Frame>
+
+La confirmación nombra la categoría y avisa qué pasa con las habitaciones físicas.
+
+## Publicar y registros
+
+Publicar cambios en la web limpia la caché del punto de venta para que el motor muestre lo último. Guardar una categoría ya lo hace solo; el botón sirve para forzarlo.
+
+Aun así, el cartel de arriba del listado sigue siendo cierto: algunos cambios pueden tardar unos minutos en llegar a todos los sistemas.
+
+Registros abre, en un panel, el historial de cambios de categorías del establecimiento: quién hizo qué y cuándo. Cada entrada abre su detalle con lo que se envió y lo que respondió el servidor.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/268632178656283c50dfa68f1f47b8c6633f1fb6ea4.png" alt="El historial, con todas las acciones de la prueba de hoy." />
+</Frame>
+
+El historial, con todas las acciones de la prueba de hoy.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/161179307192f954d8d57221699be398aaea22d4675.png" alt="El detalle de una edición: lo enviado y la respuesta." />
+</Frame>
+
+El detalle de una edición: lo enviado y la respuesta.
