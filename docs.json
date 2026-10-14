@@ -802,7 +802,8 @@
               "motordereservasv10/como_integrar_stripe_como_pasarela_en_el_motor_de_pxsol",
               "motordereservasv10/como_integrar_wompi_como_procesador_en_el_motor_de_pxsol",
               "motordereservasv10/como_integrar_wompi_como_pasarela_en_el_motor_de_pxsol",
-              "motordereservasv10/adicionales_de_personas"
+              "motordereservasv10/adicionales_de_personas",
+              "motordereservasv10/categorias_de_habitaciones"
             ]
           }
         ]
