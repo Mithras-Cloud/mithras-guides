@@ -1,0 +1,168 @@
+---
+title: "Gestión y Conexión de Dominios"
+description: "Esta funcionalidad te permite conectar un dominio propio a un sitio web creado en la plataforma. Tenés dos métodos principales para esta conexión: uno mediante la configuración de registros CNAME y A, donde mantenés el control de tu panel de DNS externo; y el otro, que es el método recomendado, que consiste en delegar el dominio a los servidores de la plataforma, permitiéndote gestionar todos los registros DNS directamente desde el sistema."
+---
+
+## Conexión de dominio manteniendo DNS externo (Custom Hostname)
+
+<Steps>
+  <Step title="Seleccioná la pestaña 'Custom Hostname'">
+    Con esta opción, apuntás el dominio a la plataforma mediante un registro CNAME, pero la gestión completa de la zona DNS (incluyendo correos y otros servicios) permanece en el panel de tu proveedor de dominio original.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/214240955167ccae5553fe0abd2441755ac8f7bf480.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260729T160813Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=3d2fbf174838020fe6fc6da46ada9568e9ca9d1df6351cfba12427040a2b0812" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Agregá un nuevo dominio">
+    Hacé clic en el botón "+ Agregar dominio" para iniciar el proceso de vinculación. Se va a abrir una ventana emergente para que ingreses la dirección del dominio que querés conectar al sitio.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/107120478665d073d4942122bed45bda3ebc61ed36b.png?X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQI4Y7PQJFLSSFFFR%2F20260729%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20260729T160831Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1200&X-Amz-Signature=e69c6a89fbeb8ec1f05c046f6e03437da927f9154b3b6dc1919ffe0477bf8962" alt="Imagen" />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresá el nombre de dominio">
+    Ingresá el nombre de dominio completo, incluyendo el subdominio 'www', en el campo de texto. Por ejemplo, [`www.hotelfler.com`.](https://www.hotelfler.com.) Después, presioná el botón "Agregar" para confirmar.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247643_2_6a68b79b9ac0c.jpg" alt="Nombre de dominio 'www.hotelfler.com' ingresado en el campo de texto de la ventana emergente." />
+    </Frame>
+  </Step>
+
+  <Step title="Revisá el estado del dominio">
+    El sistema va a agregar el dominio a la lista con un estado inicial de "Pendiente". En este punto, el dominio todavía no está verificado ni apuntando correctamente al sitio. Para seguir, hacé clic en la opción "Ver instrucciones DNS" para obtener los registros necesarios.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247644_3_6a68b79c853b3.jpg" alt="El dominio agregado se muestra en la lista con una etiqueta amarilla que indica 'Pendiente'." />
+    </Frame>
+  </Step>
+
+  <Step title="Copiá las instrucciones DNS">
+    Se va a mostrar una ventana con los registros DNS que tenés que configurar en el panel de tu proveedor de dominio. Estos registros incluyen: un registro TXT para verificar la propiedad del dominio, un registro CNAME para apuntar el subdominio 'www' a la plataforma, y un registro A para apuntar el dominio raíz (sin 'www'). Tenés que copiar estos valores y pegarlos en la zona DNS de tu proveedor.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247644_4_6a68b79ccd02b.jpg" alt="Ventana emergente 'Ver instrucciones DNS' con una lista de registros TXT, CNAME y A para configurar." />
+    </Frame>
+  </Step>
+
+  <Step title="Verificá la configuración del dominio">
+    Una vez que hayas agregado los registros en tu proveedor de dominio y el tiempo de propagación (que puede llevar desde minutos hasta 24 horas) haya pasado, volvé a esta pantalla y hacé clic en "Verificar ahora". El sistema va a comprobar si los registros se configuraron correctamente. Si la verificación es exitosa, el estado del dominio va a cambiar a "Activo".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247645_5_6a68b79d61917.jpg" alt="Botón 'Verificar ahora' junto al estado 'Pendiente' del dominio." />
+    </Frame>
+
+    <Check>
+      ¡Dominio verificado! Cuando el estado cambie a "Activo", tu dominio ya está conectado correctamente a la plataforma.
+    </Check>
+  </Step>
+</Steps>
+
+## Delegación completa del dominio (Recomendado)
+
+<Steps>
+  <Step title="Seleccioná la pestaña 'Delegación de dominio'">
+    Este método es el más recomendado, ya que transfiere la gestión completa de la zona DNS a la plataforma. Aunque el control se delega, vas a poder administrar todos los registros (web, correo, etc.) directamente desde este panel sin necesidad de acceder a tu proveedor de dominio.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247645_6_6a68b79da1f5e.jpg" alt="Pestaña de Delegación de dominio seleccionada en la interfaz principal." />
+    </Frame>
+  </Step>
+
+  <Step title="Iniciá la delegación del dominio">
+    Hacé clic en el botón "+ Delegar dominio" para empezar. Se va a abrir una ventana donde tenés que ingresar el nombre del dominio raíz (sin 'www').
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247645_7_6a68b79dea687.jpg" alt="Ventana emergente 'Delegar dominio' con un campo de texto para ingresar el dominio raíz." />
+    </Frame>
+  </Step>
+
+  <Step title="Ingresá el dominio raíz y creá la zona">
+    Ingresá el dominio raíz en el campo "Dominio raíz", por ejemplo, `hotelfler.com`, y hacé clic en "Crear zona". El sistema va a iniciar un escaneo automático para detectar todos los registros DNS existentes actualmente en ese dominio.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247646_8_6a68b79e6b525.jpg" alt="Nombre de dominio 'hotelfler.com' ingresado y el botón 'Crear zona' a punto de ser presionado." />
+    </Frame>
+  </Step>
+
+  <Step title="Revisá los registros DNS detectados">
+    El sistema va a mostrar una lista de todos los registros DNS detectados (A, CNAME, MX, TXT, etc.). Es importante que revises que todos los registros necesarios, especialmente los de correo electrónico (MX, SPF, DKIM), estén presentes para evitar interrupciones en los servicios. Una vez que hayas revisado, hacé clic en "Revisar los registros, continuar".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247647_9_6a68b79f1a23c.jpg" alt="Lista de registros DNS detectados para el dominio hotelfler.com, incluyendo registros A, CNAME y MX." />
+    </Frame>
+
+    <Warning>
+      ¡Ojo! Asegurate de que todos los registros clave, como los de correo (MX, SPF, DKIM), estén bien listados para no tener problemas con tus servicios después de la delegación.
+    </Warning>
+  </Step>
+
+  <Step title="Cambiá los nameservers en tu registrador">
+    Te van a dar dos servidores de nombres (nameservers). Tenés que ir al panel de administración de tu registrador de dominios y reemplazar los nameservers actuales por los que se muestran en esta pantalla. Este cambio puede tardar hasta 24 horas en propagarse por completo. Una vez que hayas hecho el cambio en tu registrador, hacé clic en "Listo".
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247647_10_6a68b79f7ed59.jpg" alt="Ventana mostrando los dos nameservers de Cloudflare que deben ser configurados en el registrador de dominio." />
+    </Frame>
+
+    <Tip>
+      Si tenés dudas sobre dónde cambiar los nameservers, contactá al soporte técnico de tu registrador de dominios para que te ayuden.
+    </Tip>
+  </Step>
+
+  <Step title="Esperá la delegación del dominio">
+    El dominio va a aparecer en la lista con el estado "Esperando delegación". Este estado se va a mantener hasta que la propagación de los nuevos nameservers se complete y el sistema pueda verificar que el dominio está apuntando correctamente a la plataforma.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247648_11_6a68b7a0606d0.jpg" alt="El dominio hotelfler.com en la lista con una etiqueta amarilla 'Esperando delegación'." />
+    </Frame>
+  </Step>
+</Steps>
+
+## Gestión de un dominio delegado activo
+
+<Steps>
+  <Step title="Accedé a la gestión DNS">
+    Una vez que un dominio fue delegado correctamente y la propagación se completó, su estado va a cambiar a "Activo". Desde esta vista, vas a tener acceso a opciones para gestionar la zona DNS directamente.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247648_12_6a68b7a0d2f6c.jpg" alt="Vista de un dominio activo, plazaparadiso.com, con una etiqueta verde 'Activo'." />
+    </Frame>
+  </Step>
+
+  <Step title="Abrí el gestor de registros DNS">
+    Para administrar los registros, hacé clic en el botón "Gestionar DNS". Esta acción va a abrir una vista detallada de la tabla de registros DNS del dominio, donde vas a poder ver, editar, eliminar y agregar nuevos registros.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247649_13_6a68b7a17ba8e.jpg" alt="Botón 'Gestionar DNS' al lado del dominio activo." />
+    </Frame>
+  </Step>
+
+  <Step title="Registros DNS protegidos">
+    En la tabla de registros DNS, vas a notar que algunos registros, específicamente los que están directamente relacionados con el funcionamiento de tu sitio web en la plataforma, están protegidos. Estos no se pueden modificar ni eliminar para garantizar la estabilidad y conexión del sitio.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247650_14_6a68b7a208218.jpg" alt="Tabla de registros DNS mostrando registros CNAME protegidos, con iconos de candado y sin opciones de edición." />
+    </Frame>
+
+    <Warning>
+      ¡Atención! Los registros esenciales para el funcionamiento del sitio no se pueden modificar ni eliminar. Esto garantiza que tu web siga funcionando sin problemas.
+    </Warning>
+  </Step>
+
+  <Step title="Editá o eliminá registros no protegidos">
+    Los demás registros, como los de correo (MX), paneles externos o aplicaciones de terceros, pueden ser editados o eliminados libremente usando los íconos de lápiz o papelera que se encuentran a la derecha de cada entrada.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247650_15_6a68b7a245743.jpg" alt="Íconos de edición y eliminación junto a un registro de tipo A no protegido." />
+    </Frame>
+  </Step>
+
+  <Step title="Agregá un nuevo registro DNS">
+    Para añadir un nuevo registro, hacé clic en el botón "Agregar registro". Se va a abrir un panel lateral donde vas a poder seleccionar el tipo de registro (A, CNAME, MX, TXT, etc.), ingresar el nombre (o subdominio) y el contenido (valor o destino), y configurar otros parámetros como el TTL. Al guardar, el registro se va a añadir automáticamente a tu zona DNS.
+
+    <Frame>
+      <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/07/28/screenshot_1785247650_16_6a68b7a2eb947.jpg" alt="Panel lateral 'Agregar registro' con campos para seleccionar tipo, nombre y contenido del nuevo registro." />
+    </Frame>
+  </Step>
+</Steps>
