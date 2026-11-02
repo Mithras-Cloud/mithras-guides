@@ -5,19 +5,21 @@ lang: es
 <div style={{borderRadius:'20px',overflow:'hidden',border:'1px solid #e2e8f0',background:'#fff',boxShadow:'0 20px 60px rgba(15,23,42,.12)',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',margin:'0 0 24px'}}>
   <div style={{background:'linear-gradient(135deg,#0f3d36,#175E52 60%,#2f7d6f)',color:'#fff',padding:'46px 40px'}}>
     <div style={{fontSize:'12px',letterSpacing:'.18em',textTransform:'uppercase',color:'#a7d4c8',fontWeight:700}}>Mithras · Guía de uso</div>
-    <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Link de Confirmación de Reserva</div>
-    <div style={{fontSize:'16px',color:'#d7ece6',maxWidth:'600px'}}>La página que le muestra al huésped lo que hay <b>realmente</b> en su reserva hoy: habitaciones, huéspedes, importes y pagos. Cómo funciona, cómo se protege y cómo leer cada dato.</div>
+    <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Link de confirmación de reserva</div>
+    <div style={{fontSize:'16px',color:'#d7ece6',maxWidth:'600px'}}>La página que le muestra al huésped lo que hay <b>realmente</b> en su reserva hoy: habitaciones, huéspedes, importes y pagos. Cómo funciona, cómo se protege y cómo leer cada dato. Para elegir qué datos ve el huésped, mira la guía <b>Configuración del link de confirmación</b>.</div>
     <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Resumen vivo</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Token de acceso</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Habitación por habitación</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Resumen económico</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Consumos y pagos</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Link de pago</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Imprimir</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Configurable por el hotel</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.22)',color:'#ecfdf5'}}>Español · English · Português</span>
     </div>
   </div>
-  <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Septiembre 2026</b></div>
+  <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Noviembre 2026</b></div>
 </div>
 
 ## Contenido
@@ -36,13 +38,15 @@ lang: es
 12. Resumen económico
 13. Consumos y extras
 14. Pagos registrados
-15. Política de cancelación
-16. Pie de página
-17. Siempre actualizada
-18. Idiomas
-19. Imprimir o guardar en PDF
-20. Privacidad: qué nunca muestra
-21. Preguntas frecuentes
+15. Link de pago
+16. Política de cancelación
+17. Pie de página
+18. Siempre actualizada
+19. Idiomas
+20. Imprimir o guardar en PDF
+21. Qué puede ocultar el hotel
+22. Privacidad: qué nunca muestra
+23. Preguntas frecuentes
 
 ---
 
@@ -59,6 +63,11 @@ La clave es que es un **resumen vivo**: no es una foto del momento en que se hiz
 
 La página toma el **color, el logo y los datos de contacto** de tu establecimiento, así que el huésped la reconoce como tuya. Se ve bien en el celular y se puede imprimir.
 
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>⚙️ El hotel elige qué se muestra</h4>
+  <p style={{margin:'6px 0'}}>Por defecto la página muestra todo lo que describe esta guía. Desde <b>Configuración → Link de confirmación</b> el hotel puede ocultar datos, por ejemplo el número de habitación o los pagos. Cómo hacerlo está en la guía <b>Configuración del link de confirmación</b>; aquí, en la sección 21, solo resumimos qué se puede ocultar.</p>
+</div>
+
 ---
 
 ## 2. Confirmación vs. presupuesto original
@@ -69,7 +78,7 @@ Hay dos páginas distintas que el huésped puede recibir. Conviene no confundirl
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Tema</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Presupuesto original</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Confirmación de reserva</th></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Qué muestra</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Lo que se cotizó y compró, tal cual</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El estado actual de la reserva <span style={{fontSize:'10px',fontWeight:800,padding:'2px 8px',borderRadius:'999px',background:'#dcfce7',color:'#15803d',border:'1px solid #bbf7d0'}}>VIVO</span></td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cambia si editás la reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, al recargar</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cambia si editas la reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, al recargar</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Habitaciones y huéspedes</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las categorías cotizadas</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cada habitación asignada, con sus huéspedes y camas</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Consumos y pagos</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>-</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, con saldo pendiente</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sirve para una consulta</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Sí, si tiene presupuesto</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No, solo para reservas</td></tr>
@@ -77,35 +86,35 @@ Hay dos páginas distintas que el huésped puede recibir. Conviene no confundirl
   </tbody>
 </table>
 
-Desde la confirmación el huésped puede abrir el presupuesto con el botón **"Ver presupuesto original"** (ver sección 16), así que con mandar la confirmación alcanza.
+Desde la confirmación el huésped puede abrir el presupuesto con el botón **"Ver presupuesto original"** (ver sección 17), así que con mandar la confirmación alcanza.
 
 ---
 
 ## 3. Cómo le llega el link al huésped
 
-Hay dos caminos. En los dos, **el sistema arma el link completo por vos**, token incluido.
+Hay dos caminos. En los dos, **el sistema arma el link completo por ti**, token incluido.
 
 ### Desde la reserva: "Copiar link confirmación de reserva"
 
-En la ficha de la reserva, dentro de los **links para compartir**, vas a ver **"Copiar link confirmación de reserva"**. Al tocarlo se copia el link listo para pegar en un correo, un WhatsApp o un chat.
+En la ficha de la reserva, dentro de los **links para compartir**, verás **"Copiar link confirmación de reserva"**. Al tocarlo se copia el link listo para pegar en un correo, un WhatsApp o un chat.
 
 <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
   <div style={{padding:'18px 16px',background:'#fbfdff',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{maxWidth:'420px',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',boxShadow:'0 12px 30px rgba(0,0,0,.08)',overflow:'hidden',fontSize:'13px'}}><div style={{padding:'12px 14px',borderBottom:'1px solid #e2e8f0',fontWeight:700,color:'#0f172a'}}>🔗 Links para compartir · Reserva #11845210</div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#0f172a',borderBottom:'1px solid #f1f5f9',background:'#f0f9ff',boxShadow:'inset 3px 0 0 #0ea5e9',fontWeight:700}}><span style={{}}>Copiar link confirmación de reserva</span><span style={{fontSize:'10.5px',fontWeight:800,padding:'2px 9px',borderRadius:'999px',background:'#dcfce7',color:'#15803d',border:'1px solid #bbf7d0'}}>✓ Copiado</span></div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#334155',borderBottom:'1px solid #f1f5f9'}}><span style={{}}>Copiar link presupuesto original</span></div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#334155',borderBottom:'1px solid #f1f5f9'}}><span style={{}}>Copiar link web check-in</span></div><div style={{padding:'11px 14px',display:'flex',justifyContent:'space-between',alignItems:'center',color:'#334155'}}><span style={{}}>Copiar link encuesta</span></div></div></div></div>
 </div>
 
-*El link se copia con el token incluido. Pegalo tal cual: no hace falta agregarle nada.*
+*El link se copia con el token incluido. Pégalo tal cual: no hace falta agregarle nada.*
 
-El botón **solo aparece cuando el link va a funcionar**. Si no lo ves, revisá la sección 21.
+El botón **solo aparece cuando el link va a funcionar**. Si no lo ves, revisa la sección 23.
 
 ### En los correos: la variable `[var_confirmation_v2]`
 
-En las **plantillas de correo** podés insertar la variable **`[var_confirmation_v2]`**. Al enviar el mail, el sistema la reemplaza por el link de confirmación de esa reserva, con su token. Es la forma recomendada de incluirlo en el correo de confirmación, en el recordatorio pre-llegada o en el de bienvenida.
+En las **plantillas de correo** puedes insertar la variable **`[var_confirmation_v2]`**. Al enviar el mail, el sistema la reemplaza por el link de confirmación de esa reserva, con su token. Es la forma recomendada de incluirlo en el correo de confirmación, en el recordatorio pre-llegada o en el de bienvenida.
 
 ### Cómo se ve el link
 
 <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#0f172a',color:'#e2e8f0',padding:'14px 16px',margin:'14px 0 4px',fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12.5px',overflowWrap:'anywhere',lineHeight:1.7}}>
-  <span style={{color:'#94a3b8'}}>https://</span><span style={{color:'#fbbf24'}}>www.hotelcostaazul.com</span><span style={{color:'#94a3b8'}}>/neo_checkout/gracias_v2.php</span><span style={{color:'#94a3b8'}}>?CID=</span><span style={{color:'#34d399'}}>11845210</span><span style={{color:'#94a3b8'}}>&token=</span><span style={{color:'#f472b6'}}>4f9c1e7a0b3d58c2e6a91f04d7b8c3e25a60f1d9b4c7e2a8f03d6b19c5e7a2d4</span>
+  <span style={{color:'#94a3b8'}}>https://</span><span style={{color:'#fbbf24'}}>[www.hotelcostaazul.com](https://www.hotelcostaazul.com)</span><span style={{color:'#94a3b8'}}>/neo_checkout/gracias_v2.php</span><span style={{color:'#94a3b8'}}>?CID=</span><span style={{color:'#34d399'}}>11845210</span><span style={{color:'#94a3b8'}}>&token=</span><span style={{color:'#f472b6'}}>4f9c1e7a0b3d58c2e6a91f04d7b8c3e25a60f1d9b4c7e2a8f03d6b19c5e7a2d4</span>
 </div>
 
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
@@ -114,7 +123,7 @@ En las **plantillas de correo** podés insertar la variable **`[var_confirmation
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#b45309',fontWeight:700}}>Dominio</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La web de tu establecimiento (la del punto de venta). El huésped nunca sale de tu sitio.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#047857',fontWeight:700}}>CID</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El número de la reserva. Es el que aparece como "Reserva #…" en la página.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><span style={{color:'#be185d',fontWeight:700}}>token</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La llave secreta de esta reserva: 64 caracteres. Sin ella, o con una que no corresponde, la página no muestra nada.</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>lng <span style={{color:'#64748b'}}>(opcional)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Fuerza el idioma: <span style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12px',background:'#f1f5f9',borderRadius:'4px',padding:'1px 5px'}}>&lng=en</span> o <span style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12px',background:'#f1f5f9',borderRadius:'4px',padding:'1px 5px'}}>&lng=pt</span>. Ver sección 18.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>lng <span style={{color:'#64748b'}}>(opcional)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Fuerza el idioma: <span style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12px',background:'#f1f5f9',borderRadius:'4px',padding:'1px 5px'}}>&lng=en</span> o <span style={{fontFamily:'SFMono-Regular,Menlo,Consolas,monospace',fontSize:'12px',background:'#f1f5f9',borderRadius:'4px',padding:'1px 5px'}}>&lng=pt</span>. Ver sección 19.</td></tr>
   </tbody>
 </table>
 
@@ -150,7 +159,7 @@ El número de reserva es fácil de adivinar: son correlativos. Si alcanzara con 
 
 ### Cuándo se crea
 
-No tenés que hacer nada: el token se genera solo.
+No tienes que hacer nada: el token se genera solo.
 
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
@@ -162,8 +171,8 @@ No tenés que hacer nada: el token se genera solo.
 </table>
 
 <div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #fde68a',background:'#fffbeb',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
-  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>⚠️ Tratalo como una contraseña</h4>
-  <p style={{margin:'6px 0'}}>Quien tenga el link completo ve la reserva. Mandalo <b>solo al titular</b> (o a quien él indique), no lo publiques y no lo pegues en canales abiertos. <b>Nunca armes el link a mano</b> cambiando el número: usá siempre "Copiar link" o la variable del correo.</p>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>⚠️ Trátalo como una contraseña</h4>
+  <p style={{margin:'6px 0'}}>Quien tenga el link completo ve la reserva. Envíalo <b>solo al titular</b> (o a quien él indique), no lo publiques y no lo pegues en canales abiertos. <b>Nunca armes el link a mano</b> cambiando el número: usa siempre "Copiar link" o la variable del correo.</p>
 </div>
 
 ---
@@ -213,15 +222,15 @@ Si alguna de las cuatro revisiones falla, el huésped ve esta pantalla:
 
 **¿Por qué no dice el motivo?** A propósito. Si la página dijera "esta reserva está cancelada" o "esta reserva venció", cualquiera podría ir probando números y averiguar qué reservas existen y en qué estado están. Con un mensaje único, quien no tiene el link correcto no aprende nada.
 
-Por eso el mensaje invita al huésped a **comunicarse con el establecimiento**: vos sí podés ver el motivo en el PMS.
+Por eso el mensaje invita al huésped a **comunicarse con el establecimiento**: tú sí puedes ver el motivo en el PMS.
 
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Lo que ves en el PMS</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Por qué no abre</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué hacer</th></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La reserva está cancelada / caída</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No hay nada que confirmar</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Es correcto que no abra</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Todavía es una consulta</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Aún no es reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Mandá el presupuesto; cuando se confirme, la confirmación</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El check-out fue hace más de 7 días</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El link venció</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si el huésped necesita el detalle, enviáselo desde el PMS</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La reserva está bien</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El link llegó incompleto o fue modificado</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Volvé a copiarlo con "Copiar link confirmación de reserva" y reenviálo</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Todavía es una consulta</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Aún no es reserva</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Envía el presupuesto; cuando se confirme, la confirmación</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El check-out fue hace más de 7 días</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El link venció</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si el huésped necesita el detalle, envíaselo desde el PMS</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La reserva está bien</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El link llegó incompleto o fue modificado</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Vuelve a copiarlo con "Copiar link confirmación de reserva" y reenvíalo</td></tr>
   </tbody>
 </table>
 
@@ -243,14 +252,18 @@ Así se ve la confirmación completa de una reserva de ejemplo: **2 habitaciones
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Bloque</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cuándo aparece</th></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cabecera, título, titular, estadía, resumen económico</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cabecera, título, estadía, resumen económico</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Titular</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre, salvo que el hotel oculte sus tres datos</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Habitaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva tiene habitaciones</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Consumos y extras</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si hay consumos cargados y el hotel usa el PMS de Pxsol</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Pagos registrados</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si hay al menos un pago</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Link de pago</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva tiene un link o QR de pago y queda saldo pendiente</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Política de cancelación</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva tiene una política asociada</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ver presupuesto original</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si la reserva nació de un presupuesto</td></tr>
   </tbody>
 </table>
+
+Además, cualquier bloque o dato que el hotel haya ocultado en la configuración no aparece, aunque tenga algo para mostrar (sección 21).
 
 ---
 
@@ -266,7 +279,7 @@ Así se ve la confirmación completa de una reserva de ejemplo: **2 habitaciones
 - **Logo, nombre, dirección y teléfono** - salen de la ficha del establecimiento. Si falta alguno, simplemente no se muestra.
 - **Color de marca** - la franja superior y los botones usan el **color del tema de tu punto de venta**. Si no hay uno configurado, se usa un verde por defecto. Si tu color es muy claro, el texto de los botones pasa a oscuro automáticamente para que se lea.
 - **Ir al sitio web** - lleva a la web de tu hotel. En cadenas, marketplaces y agencias lleva al sitio del punto de venta.
-- **Imprimir** - abre la impresión del navegador (sección 19).
+- **Imprimir** - abre la impresión del navegador (sección 20).
 - La pestaña del navegador muestra **"Hotel Costa Azul - Confirmación de reserva #11845210"** y el ícono de tu marca.
 
 ### Título y estado de pago
@@ -291,9 +304,9 @@ Debajo de la cabecera va el título con el número de reserva y una etiqueta con
   <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',marginBottom:'12px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'12px'}}>Titular</div><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(150px,1fr))',gap:'12px 18px'}}><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Titular</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>Laura Gómez</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Email</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>laura.gomez@correo.com</div></div><div style={{minWidth:'0'}}><div style={{fontSize:'12px',color:'#66716c'}}>Teléfono</div><div style={{fontSize:'15px',fontWeight:650,marginTop:'1px'}}>+54 9 261 555-0123</div></div></div></div></div></div>
 </div>
 
-Nombre y apellido del titular, su **email** y su **teléfono**, tal como están cargados en la reserva. Si alguno está vacío, no aparece.
+Nombre y apellido del titular, su **email** y su **teléfono**, tal como están cargados en la reserva. Si alguno está vacío, o el hotel lo ocultó, no aparece.
 
-Si el huésped te avisa que un dato está mal, corregilo en la reserva: la próxima vez que abra el link ya lo ve bien.
+Si el huésped te avisa que un dato está mal, corrígelo en la reserva: la próxima vez que abra el link ya lo ve bien.
 
 ---
 
@@ -334,7 +347,7 @@ Una tarjeta por cada habitación de la reserva, con todo lo que el huésped nece
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Dato</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué muestra</th></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Habitación</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El nombre o número de la habitación asignada.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Habitación</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El nombre o número de la habitación asignada. Si el hotel oculta el número, en su lugar aparece la categoría (por ejemplo, "Habitación Suite").</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Categoría</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La categoría con la que se vendió. Si hiciste un upgrade, acá sigue diciendo lo que el huésped compró.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Huéspedes</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cuántas personas hay cargadas en esa habitación (adultos + niños + bebés).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Ingreso / Salida</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Las fechas de <b>esa</b> habitación. Pueden diferir de las de la reserva si una habitación entra o sale otro día. Si una misma habitación aparece dos veces (estadía partida), cada tarjeta tiene sus fechas.</td></tr>
@@ -413,13 +426,44 @@ Si cargaste consumos en los folios de la reserva, el huésped los ve uno por uno
 - Cada pago se muestra en su propia moneda. Si una reserva en USD recibió un pago en pesos, ese pago dice ARS.
 
 <div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
-  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 Cuidá la descripción de los pagos</h4>
-  <p style={{margin:'6px 0'}}>El huésped lee literalmente el detalle que escribiste al registrar el pago. Usá descripciones claras ("Seña 50% - Transferencia") y evitá notas internas.</p>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 Cuida la descripción de los pagos</h4>
+  <p style={{margin:'6px 0'}}>El huésped lee literalmente el detalle que escribiste al registrar el pago. Usa descripciones claras ("Seña 50% - Transferencia") y evita notas internas.</p>
 </div>
 
 ---
 
-## 15. Política de cancelación
+## 15. Link de pago
+
+Si la reserva tiene asignado un **medio de pago de tipo link o QR**, con su dirección cargada, y **queda saldo pendiente**, la página le muestra al huésped cómo pagarlo:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
+  <div style={{padding:'18px 16px',background:'#f3f5f4',color:'#1e2724',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'14px',lineHeight:1.5}}><div style={{maxWidth:'680px',margin:'0 auto'}}><div style={{background:'#fff',border:'1px solid #e3e7e4',borderRadius:'12px',padding:'18px 20px',boxShadow:'0 1px 3px rgba(30,39,36,.05)'}}><div style={{fontSize:'11px',fontWeight:700,letterSpacing:'.09em',textTransform:'uppercase',color:'#66716c',marginBottom:'10px'}}>Paga con este link</div><span style={{display:'inline-flex',alignItems:'center',gap:'7px',background:'#175E52',color:'#fff',borderRadius:'8px',padding:'9px 16px',fontSize:'13.5px',fontWeight:700}}>Ir a pagar</span><div style={{fontSize:'12.5px',color:'#66716c',marginTop:'10px'}}>Al pagar, ingresa el importe indicado en el resumen de tu reserva.</div><div style={{fontSize:'12px',color:'#66716c',marginTop:'8px'}}>Si el botón no abre el link, ingresa desde:<br/><span style={{color:'#175E52',textDecoration:'underline',overflowWrap:'anywhere'}}>https://pagos.ejemplo.com/hotelcostaazul</span></div></div></div></div>
+</div>
+
+*Con un medio de tipo link se ve el botón "Ir a pagar"; con uno de tipo QR, el código para escanear con la cámara del teléfono.*
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Medio de pago de la reserva</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué ve el huésped</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Link de pago</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>"Paga con este link"</b> y el botón <b>"Ir a pagar"</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>QR de pago</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>"Paga escaneando este código"</b> y el código QR.</td></tr>
+  </tbody>
+</table>
+
+- En los dos casos se muestra también la dirección escrita, por si el botón no abre o el código no se puede escanear.
+- El link **no lleva el importe**: por eso la página le recuerda al huésped que ingrese el monto del resumen de su reserva (sección 12).
+- Cuando el saldo llega a cero, el bloque desaparece solo.
+- **No se imprime**: el link de pago es para usar en pantalla.
+
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 El link es el que cargó el hotel</h4>
+  <p style={{margin:'6px 0'}}>La página no genera links de pago: muestra el que tiene cargado el medio de pago de la reserva. Si el huésped dice que el link no funciona, revisa ese medio de pago en el PMS.</p>
+</div>
+
+---
+
+## 16. Política de cancelación
 
 <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
@@ -430,7 +474,7 @@ Muestra el **nombre** y el **texto** de la política de cancelación asociada a 
 
 ---
 
-## 16. Pie de página
+## 17. Pie de página
 
 <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
   <div style={{height:'26px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span></div>
@@ -445,14 +489,14 @@ Muestra el **nombre** y el **texto** de la política de cancelación asociada a 
 
 ---
 
-## 17. Siempre actualizada
+## 18. Siempre actualizada
 
 Esta es la diferencia más importante con las confirmaciones de antes. La página **no guarda una copia**: cada vez que se abre, lee la reserva **como está en ese momento**.
 
 <div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(240px,1fr))',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
     <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#64748b',marginBottom:'8px'}}>Lunes · en el PMS</div>
-    <div style={{fontSize:'12.5px',color:'#334155'}}>Pasás la reserva de la hab. <b>101</b> a la <b>305</b>, agregás un niño y registrás la seña.</div>
+    <div style={{fontSize:'12.5px',color:'#334155'}}>Pasas la reserva de la hab. <b>101</b> a la <b>305</b>, agregas un niño y registras la seña.</div>
   </div>
   <div style={{border:'1px solid #bbf7d0',borderRadius:'12px',background:'#f0fdf4',padding:'14px 16px'}}>
     <div style={{fontSize:'11px',fontWeight:800,letterSpacing:'.08em',textTransform:'uppercase',color:'#15803d',marginBottom:'8px'}}>Lunes · el huésped recarga</div>
@@ -471,14 +515,14 @@ Qué se refleja al recargar:
 
 <div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #bae6fd',background:'#f0f9ff',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>💡 Los huéspedes siempre cuadran</h4>
-  <p style={{margin:'6px 0'}}>La cantidad de huéspedes se cuenta habitación por habitación, a partir de cómo está armada la reserva <b>hoy</b>, no de lo que se cargó al crearla. Si agregás o quitás huéspedes en una habitación, el total de la estadía se ajusta solo.</p>
+  <p style={{margin:'6px 0'}}>La cantidad de huéspedes se cuenta habitación por habitación, a partir de cómo está armada la reserva <b>hoy</b>, no de lo que se cargó al crearla. Si agregas o quitas huéspedes en una habitación, el total de la estadía se ajusta solo.</p>
 </div>
 
-**No hace falta volver a mandar el link** después de un cambio: el mismo link muestra lo nuevo. Si querés avisarle al huésped, alcanza con decirle que lo vuelva a abrir.
+**No hace falta volver a mandar el link** después de un cambio: el mismo link muestra lo nuevo. Si quieres avisarle al huésped, alcanza con decirle que lo vuelva a abrir.
 
 ---
 
-## 18. Idiomas
+## 19. Idiomas
 
 La página está en **español, inglés y portugués**: títulos, etiquetas, fechas ("12 oct 2026", "12 Oct 2026", "12 out 2026") y formato de números.
 
@@ -489,26 +533,53 @@ El idioma se elige así, en este orden:
 3. El **idioma de tu punto de venta**.
 4. Español, si ninguno de los anteriores es uno de los tres.
 
-Para mandarle el link en otro idioma a un huésped puntual, agregá `&lng=en` (o `&lng=pt`) al final del link copiado. Lo que carga el hotel en texto libre (nombre de la política, descripción de consumos y pagos, régimen) se muestra tal como está cargado.
+Para mandarle el link en otro idioma a un huésped puntual, agrega `&lng=en` (o `&lng=pt`) al final del link copiado. Lo que carga el hotel en texto libre (nombre de la política, descripción de consumos y pagos, régimen) se muestra tal como está cargado.
 
 ---
 
-## 19. Imprimir o guardar en PDF
+## 20. Imprimir o guardar en PDF
 
 El botón **Imprimir** de la cabecera abre la impresión del navegador. Desde ahí el huésped puede imprimir en papel o elegir **"Guardar como PDF"**.
 
 La versión impresa está preparada para eso:
 
 - **Se imprime**: cabecera con logo y datos del hotel, titular, estadía, habitaciones, resumen económico, consumos, pagos, política de cancelación y la fecha de "Información actualizada al".
-- **No se imprime**: los botones (Ir al sitio web, Imprimir, Ver presupuesto), el pie legal, WhatsApp y el chat.
+- **No se imprime**: los botones (Ir al sitio web, Imprimir, Ver presupuesto), el link de pago, el pie legal, WhatsApp y el chat.
 - Fondo blanco, sin sombras, y cada tarjeta se mantiene entera en una página cuando es posible.
 - Sin el encabezado y pie automáticos del navegador (fecha, URL): así **el token no queda impreso** en el papel.
 
 ---
 
-## 20. Privacidad: qué nunca muestra
+## 21. Qué puede ocultar el hotel
+
+Todo lo que describe esta guía es lo que se ve **por defecto**. Desde **Configuración → Link de confirmación**, el hotel puede ocultar datos sueltos o bloques enteros. La configuración es por establecimiento y aplica a todos los links, también a los de reservas confirmadas antes del cambio.
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Bloque</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Se puede ocultar</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Se muestra siempre</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Titular</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Nombre, email y teléfono</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>-</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Estadía</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Huéspedes, régimen, llegada anticipada y salida tardía</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Fechas y noches</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Habitaciones</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Número de habitación, categoría, huéspedes, camas, régimen, precio por noche, precio de llegada anticipada / salida tardía y total</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La habitación (por número o por categoría)</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Resumen económico</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Desglose, precio promedio por noche y promociones aplicadas</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Total, pagado y saldo</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Consumos, Pagos, Link de pago, Política</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El bloque entero</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>-</td></tr>
+  </tbody>
+</table>
+
+El caso más pedido es **ocultar el número de habitación** hasta el check-in: el huésped ve la categoría en su lugar, también en la tabla de consumos, y el número ni siquiera llega a la página.
+
+<div style={{borderRadius:'12px',padding:'14px 16px',margin:'14px 0',border:'1px solid #fde68a',background:'#fffbeb',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <h4 style={{margin:'0 0 6px',fontSize:'14px'}}>⚠️ Los textos escritos a mano se muestran tal cual</h4>
+  <p style={{margin:'6px 0'}}>Si ocultaste el número de habitación pero en el detalle de un pago alguien escribió "Seña Suite 22", ese texto se ve igual. Evita escribir el número en esos campos, u oculta el bloque de pagos.</p>
+</div>
+
+Paso a paso, permisos y la pantalla de configuración: guía **Configuración del link de confirmación**.
+
+---
+
+## 22. Privacidad: qué nunca muestra
 
 - **Datos de tarjeta**: nunca. Ni números, ni vencimientos, ni tokens de tarjeta.
+- **Lo que el hotel ocultó**: no se envía a la página. No aparece ni siquiera mirando el código fuente (sección 21).
 - **Consultas**: nunca. Solo reservas.
 - **Reservas canceladas o vencidas**: no se muestran.
 - **Motivo del rechazo**: no se le dice a quien abre un link inválido (sección 6).
@@ -517,16 +588,16 @@ La versión impresa está preparada para eso:
 
 ---
 
-## 21. Preguntas frecuentes
+## 23. Preguntas frecuentes
 
 <div style={{display:'flex',flexDirection:'column',gap:'10px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
     <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>No me aparece "Copiar link confirmación de reserva"</div>
-    <div style={{fontSize:'12.5px',color:'#475569'}}>El botón solo se ofrece cuando el link va a abrir. Revisá que: la reserva <b>no sea una consulta</b> ni esté cancelada; que <b>tenga presupuesto</b>; y, si es un <b>voucher</b>, que tenga al menos una habitación.</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>El botón solo se ofrece cuando el link va a abrir. Revisa que: la reserva <b>no sea una consulta</b> ni esté cancelada; que <b>tenga presupuesto</b>; y, si es un <b>voucher</b>, que tenga al menos una habitación.</div>
   </div>
   <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
     <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>El huésped dice que el link no abre</div>
-    <div style={{fontSize:'12.5px',color:'#475569'}}>Mirá la reserva en el PMS: ¿está cancelada? ¿es todavía una consulta? ¿pasaron más de 7 días desde la salida? Si nada de eso aplica, el link llegó cortado: volvé a copiarlo y reenviálo. Ver la tabla de la sección 6.</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Mira la reserva en el PMS: ¿está cancelada? ¿es todavía una consulta? ¿pasaron más de 7 días desde la salida? Si nada de eso aplica, el link llegó cortado: vuelve a copiarlo y reenvíalo. Ver la tabla de la sección 6.</div>
   </div>
   <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
     <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>"Noches" dice 4 pero la estadía es de 2 noches</div>
@@ -546,14 +617,22 @@ La versión impresa está preparada para eso:
   </div>
   <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
     <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Hice un cambio y el huésped no lo ve</div>
-    <div style={{fontSize:'12.5px',color:'#475569'}}>Pedile que recargue la página. Si "Información actualizada al" no muestra la hora de tu cambio, verificá que se haya guardado en la reserva.</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Pídele que recargue la página. Si "Información actualizada al" no muestra la hora de tu cambio, verifica que se haya guardado en la reserva.</div>
   </div>
   <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
-    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>¿Puedo mandar el link sin el token, que es más corto?</div>
-    <div style={{fontSize:'12.5px',color:'#475569'}}>No. En cuanto la reserva tiene token, el link sin él no abre. Si el largo molesta, usá un acortador de links sobre el link completo.</div>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>Al huésped no le aparece un dato que esta guía describe</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Puede estar oculto en <b>Configuración → Link de confirmación</b>. Revisa ahí antes de buscar otro motivo. Ver sección 21.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>No aparece el link de pago</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>Aparece solo si el medio de pago de la reserva es de tipo link o QR, tiene la dirección cargada y queda saldo pendiente. Ver sección 15.</div>
+  </div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'14px 16px'}}>
+    <div style={{fontWeight:800,fontSize:'13.5px',marginBottom:'6px'}}>¿Puedo enviar el link sin el token, que es más corto?</div>
+    <div style={{fontSize:'12.5px',color:'#475569'}}>No. En cuanto la reserva tiene token, el link sin él no abre. Si el largo molesta, usa un acortador de links sobre el link completo.</div>
   </div>
 </div>
 
 ---
 
-*Mithras · Link de Confirmación de Reserva · Guía de uso · Septiembre 2026*
+*Mithras · Link de confirmación de reserva · Guía de uso · Noviembre 2026*
