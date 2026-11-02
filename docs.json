@@ -474,7 +474,8 @@
               "pms/como_emitir_una_nota_de_credito_dentro_de_una_reserva",
               "pms/filtrar_ordenar_columnas_y_guardar_vistas_en_la_lista_de_reservas",
               "pms/link_de_confirmacion_de_reserva",
-              "pms/configuracion_del_link_de_confirmacion"
+              "pms/configuracion_del_link_de_confirmacion",
+              "pms/campos_de_cargar_reserva"
             ]
           },
           {
