@@ -1,0 +1,80 @@
+---
+title: "¿Cómo integrar Izipay como pasarela de pago? - Perú"
+description: "Este procedimiento detalla cómo configurar Izipay como pasarela de pago, para que el huésped complete la operación en la página segura de Izipay. Al momento de pagar se lo redirige al sitio de Izipay y regresa a tu motor de reservas."
+---
+
+<Note>
+  Esta funcionalidad está disponible para establecimientos ubicados en Perú, en soles o dólares. Se usa en el motor de reservas y en los links de pago de **Solicitar cobro**. No está disponible en **Cobrar reserva**.
+</Note>
+
+Antes de comenzar, ten a mano las credenciales del botón de pagos que te entrega Izipay: código de comercio, clave API botón de pagos, clave hash y clave pública Izipay. También necesitas el RUC de tu empresa.
+
+**1. Instala Izipay**
+
+Desde el buscador, ingresa a **Integraciones**. Busca **Izipay** y selecciona **Instalar**. En la tarjeta puedes ver el costo de la integración.
+
+![Tarjeta de Izipay en Integraciones, con el botón Instalar resaltado](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/107633515921b709a7ce7ef6c924abae9920e7166f2.jpg)
+
+**2. Confirma la instalación**
+
+En la ventana **Instalar Izipay**, revisa el aviso con el costo y los términos y condiciones. Marca **Acepto los términos y condiciones del contrato** y presiona **Sí, instalar**. Se abre el listado de credenciales de Izipay.
+
+![Ventana Instalar Izipay, con los términos aceptados y el botón Sí, instalar resaltado](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/25114487076035c9d6d9a6330c07f94084abd8e6d50.jpg)
+
+**3. Crea una nueva credencial**
+
+Presiona **Añadir credencial**. Se abre una ventana lateral para cargar los datos de la conexión.
+
+![Listado de credenciales de Izipay vacío, con el botón Añadir credencial resaltado](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/197328112961a7999edcaf7b8a6fc46ca58312bbc75.jpg)
+
+**4. Selecciona el punto de venta y el nombre de la credencial**
+
+En **Punto de venta**, selecciona el punto de venta al que se asocia la credencial. Cada punto de venta gestiona sus propias credenciales y transacciones de pago.
+
+En **Nombre de credencial**, ingresa un nombre que te permita reconocerla después, por ejemplo "Izipay - Pasarela".
+
+![Formulario con el punto de venta y el nombre de la credencial resaltados](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/23320595194c145c3f73e40ba16129dc28772678f49.jpg)
+
+**5. Completa los datos de Izipay**
+
+Copia cada dato desde las credenciales que te entrega Izipay:
+
+| Campo                        | Dónde encontrarlo                                                                                                                                              |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Código de comercio**       | Figura como "código del comercio".                                                                                                                             |
+| **Clave API botón de pagos** | Figura como "clave API nuevo botón de pagos", en la sección "para invocar API token sesión".                                                                   |
+| **Clave Hash**               | Figura como "clave hash", en la sección "para verificación de firma".                                                                                          |
+| **Clave pública Izipay**     | Figura como "clave pública Izipay", en la sección "clave para uso de APIs". Cópiala completa, desde -----BEGIN PUBLIC KEY----- hasta -----END PUBLIC KEY-----. |
+| **RUC**                      | El RUC de tu empresa: 11 dígitos, sin guiones ni espacios.                                                                                                     |
+
+![Formulario completo con datos de ejemplo y el botón Añadir resaltado](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14351135520989785b3a32eb5de5223d1066cee0ad5.jpg)
+
+**6. Guarda la credencial y crea el medio de pago**
+
+Presiona **Añadir**. Aparece el mensaje **Credencial creada correctamente** y se abre la ventana **¡Felicitaciones! Ya puedes cobrar con Izipay**.
+
+Presiona **Crear medio de pago activo** para crearlo con la configuración recomendada. Si prefieres definir cada opción, selecciona **Prefiero configurarlo yo**.
+
+Si cerraste la ventana con **Ahora no**, puedes volver a abrirla desde **Sin medio de pago · Crear en 1 clic**, debajo del nombre de la credencial.
+
+![Ventana Felicitaciones, con el botón Crear medio de pago activo resaltado](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8969459710e68c3150d3d0cd06481a98f3402853f7.jpg)
+
+**7. Revisa el medio de pago**
+
+Aparece **¡Listo! Izipay ya está activo**. El medio de pago queda **Activo** y primero en tu lista. Selecciona **Revisar** para comprobar que la configuración sea la que necesitas.
+
+<Warning>
+  Revisa que la moneda de la cuenta recaudadora coincida con la que tu código de comercio tiene afiliada en Izipay.
+</Warning>
+
+![Ventana ¡Listo! Izipay ya está activo, con las opciones Revisar, Cerrar e Ir a medios de pago](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1614502749644209262086b47822b93ac02ecc3a9db.jpg)
+
+**8. Envía la URL de notificaciones a Izipay**
+
+En el listado de credenciales, copia la **URL de notificaciones (IPN)** y envíasela a Izipay para que la configuren.
+
+![Credencial en el listado, con el botón Copiar de la URL de notificaciones resaltado](https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/5381675838bf8d783b9fdd094943c3071a32ff5467.jpg)
+
+<Tip>
+  ¡Listo! Izipay ya está disponible como medio de pago.
+</Tip>
