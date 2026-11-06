@@ -476,7 +476,8 @@
               "pms/link_de_confirmacion_de_reserva",
               "pms/configuracion_del_link_de_confirmacion",
               "pms/campos_de_cargar_reserva",
-              "pms/cargar_reserva"
+              "pms/cargar_reserva",
+              "pms/como_imprimir_la_ficha_de_registro__v1"
             ]
           },
           {
