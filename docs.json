@@ -486,7 +486,8 @@
               "pms/informes_nova_exportar_e_imprimir_un_informe",
               "pms/informes_nova_como_crear_graficos_desde_un_informe",
               "pms/informes_nova_como_moverse_dentro_de_un_informe",
-              "pms/informes_nova_columnas_filtros_periodo_y_valores"
+              "pms/informes_nova_columnas_filtros_periodo_y_valores",
+              "pms/informes_nova_quien_puede_ver_cada_informe"
             ]
           },
           {
