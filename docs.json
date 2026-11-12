@@ -482,7 +482,8 @@
               "pms/informes_nova_mis_informes_y_catalogo",
               "pms/informes_nova_informe_de_ocupacion_adr_y_revpar",
               "pms/informes_nova_paneles",
-              "pms/informes_nova_vistas_guardadas"
+              "pms/informes_nova_vistas_guardadas",
+              "pms/informes_nova_exportar_e_imprimir_un_informe"
             ]
           },
           {
