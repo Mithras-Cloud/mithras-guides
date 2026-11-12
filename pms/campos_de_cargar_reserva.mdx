@@ -1,5 +1,6 @@
 ---
-title: "Campos de Cargar Reserva"
+title: Campos de Cargar Reserva
+description: Guía de uso de Campos de Cargar Reserva - elige qué datos pide el formulario de Cargar reserva y cuáles son obligatorios. Qué controla cada campo, quién puede usarla, cómo impacta al cargar una reserva y qué necesita el establecimiento.
 lang: es
 ---
 
@@ -10,8 +11,8 @@ lang: es
     <div style={{fontSize:'16px',color:'#cbd5e1',maxWidth:'580px'}}>Elige qué datos pide tu equipo cuando carga una reserva y cuáles no se pueden dejar vacíos. Lo que no cambies queda como siempre.</div>
 
     <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
-      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>13 campos configurables</span>
-      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Niños y bebés</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>15 campos configurables</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Niños, bebés, camas y tarifa</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>No pedir · Opcional · Obligatorio</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Vista previa del formulario</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Permisos Ver y Editar</span>
@@ -52,7 +53,7 @@ Así cada hotel tiene un formulario a su medida: más corto donde sobra, más es
 
 Cómo se usa el formulario para cargar una reserva (habitaciones, tarifas, day use, períodos) está en la guía **Cargar reserva**. Esta guía es solo de su configuración.
 
-<div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#1e3a8a',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Si no configuras nada, el formulario se ve igual que siempre.</b> Todos los campos vienen visibles y opcionales, salvo <b>Niños</b> y <b>Bebés</b>, que vienen apagados: solo cambia lo que tú cambies. La configuración es por establecimiento y reemplaza la antigua carga básica / avanzada.</div>
+<div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#1e3a8a',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Si no configuras nada, el formulario se ve igual que siempre.</b> Todos los campos vienen visibles y opcionales, salvo <b>Niños</b> y <b>Bebés</b>, que vienen apagados, y <b>Al menos una cama</b>, que viene obligatorio: solo cambia lo que tú cambies. La configuración es por establecimiento y reemplaza la antigua carga básica / avanzada.</div>
 
 ***
 
@@ -200,7 +201,7 @@ La pantalla tiene dos partes: a la izquierda, **una tarjeta por cada parte del f
 Lo que vas a encontrar:
 
 * **Campos fijos, en gris y con candado.** Nombre, apellido, país, fechas de la estadía y la cantidad de huéspedes de cada habitación se piden siempre. Si pasas el mouse sobre "Obligatorio", te dice por qué.
-* **Un selector por campo**, con tres opciones: **No pedir**, **Opcional** y **Obligatorio** (ver la sección 6).
+* **Un selector por campo**, con tres opciones: **No pedir**, **Opcional** y **Obligatorio**. Algunos campos muestran solo dos (ver la sección 6).
 * **Contador por tarjeta.** Si una parte tiene campos obligatorios, su tarjeta muestra cuántos (por ejemplo, **2 obligatorios**).
 * **Así queda el formulario.** Todos los campos de cada parte, con el color de su estado: rojo obligatorio, azul opcional, negro no se pide.
 
@@ -228,6 +229,8 @@ Cada campo configurable está en uno de estos tres estados. El color es el mismo
 </div>
 
 Cuatro campos no tienen la opción **Obligatorio**, porque nunca quedan vacíos: **Facturar a**, **Reserva de grupo**, **Niños** y **Bebés** (estos dos arrancan en 0). En ellos el selector muestra solo **No pedir** y **Pedir**.
+
+Al revés, **Tarifa** y **Al menos una cama** se piden siempre (la tarifa y las camas son parte de cada habitación), así que no tienen **No pedir**: el selector muestra solo **Opcional** y **Obligatorio**.
 
 ***
 
@@ -271,6 +274,8 @@ Cuatro campos no tienen la opción **Obligatorio**, porque nunca quedan vacíos:
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top',color:'#64748b'}}>🔒 <b>Huéspedes</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cuántas personas ocupan cada habitación. Sin niños ni bebés es la cantidad de huéspedes; con alguno de los dos prendido pasa a llamarse <b>Adultos</b>.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre obligatorio</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Niños</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Separa a los niños de los adultos en cada habitación. Arranca en 0. <b>Viene apagado.</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No pedir · Pedir</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Bebés</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Separa a los bebés de los adultos en cada habitación. Arranca en 0. <b>Viene apagado.</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No pedir · Pedir</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con qué arranca la tarifa de cada habitación: <b>Plan tarifario</b> (de fábrica: se precarga la tarifa de cada noche del tarifario, convertida a la moneda de la reserva) o <b>Manual</b> (la escribe recepción). Los impuestos salen siempre de la cascada plan tarifario → punto de venta → establecimiento → empresa. En <b>Obligatorio</b> no deja cargar una habitación con tarifa en 0; <b>arranca opcional</b>: déjala así si cargas cortesías, staff o canjes con tarifa 0.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Opcional · Obligatorio · Arranca en Plan tarifario o Manual</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Al menos una cama</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cada habitación debe tener al menos una cama, grande o chica (no se puede dejar en 0 grandes y 0 chicas). <b>Arranca obligatorio.</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Opcional · Obligatorio</td></tr>
   </tbody>
 </table>
 
@@ -356,6 +361,24 @@ Con **Niños**, **Bebés** o los dos en "Pedir", en cada habitación el campo **
 
 La reserva se crea con esa distribución, así no hay que editar la habitación después para pasar a alguien a niño. La tarifa no cambia: es por habitación y por noche.
 
+### Camas y tarifa: se controlan al cargar cada habitación
+
+**Al menos una cama** viene obligatorio: si una habitación queda con 0 camas grandes y 0 chicas, la reserva no se carga y aparece el aviso *"Cada habitación debe tener al menos 1 cama (grande o chica)."* Pásalo a **Opcional** si cargas habitaciones sin camas, por ejemplo una sala o una cochera.
+
+En **Tarifa**, **Arranca en** elige si Cargar reserva precarga la tarifa del plan tarifario (**Plan tarifario**, la opción de fábrica) o si recepción la escribe (**Manual**). Quien carga la reserva puede cambiarla igual en el selector **Tarifa** de los datos de la reserva. Si el hotel no tiene planes tarifarios, arranca en **Manual**.
+
+Con **Plan tarifario**, Cargar reserva respeta la configuración del hotel:
+
+- Arranca con el **tarifario maestro** del establecimiento (se configura en **Establecimientos**); si no tiene, con el primero de la lista.
+- La reserva arranca en la **moneda por defecto** del punto de venta, aunque el tarifario esté en otra, y ofrece solo sus **monedas disponibles**. La tarifa del plan se convierte con la cotización del punto de venta y se redondea con sus **decimales**.
+- La tarifa del plan se ve en todas las habitaciones de la lista, elegidas o no, para comparar antes de elegir.
+
+Los **impuestos** no dependen de esta opción: con **Plan tarifario** o con **Manual** salen del plan tarifario y, si no los tiene, del punto de venta, el establecimiento o la empresa. Eso también decide si la tarifa que se escribe es **sin impuestos** (plan NET: el IVA se suma) o **con impuestos** (plan FINAL). La barra del pie de Cargar reserva muestra el **Total con impuestos** y su desglose para que recepción lo vea antes de cargar.
+
+**Tarifa** viene opcional. Si la pones en **Obligatorio**, una habitación con tarifa en 0 no se carga y aparece el aviso *"Cada habitación debe tener una tarifa mayor a 0."* Déjalo opcional si cargas cortesías, staff o canjes con tarifa 0.
+
+Al agregar una habitación, llega con **2 huéspedes** y **1 cama grande**, así que la regla de las camas ya se cumple sin tocar nada. Se puede cambiar en sus detalles.
+
 ### "Facturar a" sin pedir: se factura al huésped
 
 Con **Facturar a** en "No pedir", la reserva se factura siempre al huésped, sea un contacto existente o uno nuevo.
@@ -383,7 +406,7 @@ Los cambios **no se aplican hasta que guardas**. Al pie de la pantalla hay una b
 * **Si algo falla al guardar**, aparece el aviso **"No pudimos guardar los cambios. Inténtalo de nuevo."** y la ventana queda abierta con lo que habías elegido, para que vuelvas a intentarlo.
 * **Descartar** vuelve los campos a lo último que guardaste.
 
-Si vuelves a dejar todo en **Opcional** y guardas, el formulario queda otra vez como al principio.
+Para volver al formulario de siempre, deja todos los campos en **Opcional**, salvo **Niños** y **Bebés** en **No pedir** y **Al menos una cama** en **Obligatorio**, y guarda.
 
 ***
 
@@ -406,7 +429,7 @@ Si vuelves a dejar todo en **Opcional** y guardas, el formulario queda otra vez 
 ## 11. Preguntas frecuentes
 
 **¿Tengo que configurar algo para que Cargar reserva siga como antes?**
-No. Sin configuración, todos los campos aparecen y son opcionales, y cada habitación pide solo la cantidad de huéspedes, como siempre.
+No. Sin configuración, todos los campos aparecen y son opcionales, y cada habitación pide la cantidad de huéspedes y al menos una cama, como siempre.
 
 **¿Qué pasó con la carga básica y la avanzada?**
 Las reemplaza esta configuración: en lugar de elegir entre dos formularios fijos, eliges campo por campo qué pedir.
@@ -428,6 +451,18 @@ Porque con el país se calculan los impuestos y el Tax Free de la reserva. Por e
 
 **¿Cómo hago para que se carguen niños y bebés?**
 Pon **Niños**, **Bebés** o los dos en **Pedir**, en la tarjeta Habitaciones, y guarda. Desde ese momento cada habitación de Cargar reserva separa adultos, niños y bebés (ver la sección 8).
+
+**No me deja cargar una habitación con 0 camas.**
+**Al menos una cama** viene obligatorio. Agrega una cama grande o chica, o pásalo a **Opcional** en la tarjeta Habitaciones si cargas habitaciones sin camas.
+
+**¿Por qué Cargar reserva arranca con un tarifario y una moneda en particular?**
+El tarifario es el maestro del establecimiento y la moneda es la moneda por defecto del punto de venta. Si el tarifario está en otra moneda, su tarifa se convierte con la cotización del punto de venta. Recepción puede elegir otro tarifario u otra moneda en el formulario.
+
+**Con Tarifa «Manual», ¿la tarifa que escribe recepción incluye los impuestos?**
+Depende del plan tarifario de la reserva: con un plan NET es sin impuestos y se suma el IVA; con uno FINAL ya los incluye. El **Total con impuestos** de la barra del pie lo muestra antes de cargar.
+
+**¿Cómo evito que se carguen reservas con tarifa en 0?**
+Pon **Tarifa** en **Obligatorio**, en la tarjeta Habitaciones, y guarda. Si cargas cortesías, staff o canjes en 0, déjalo en **Opcional**.
 
 **Un usuario no ve la app en Configuración.**
 Necesita el permiso **Ver** de **Campos de Cargar Reserva** en su usuario (ver la sección 4). Los administradores del hotel la ven siempre.
