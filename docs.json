@@ -1557,6 +1557,10 @@
       "destination": "/motor/cargo_fijo_adicional"
     },
     {
+      "source": "/cómo-configurar-una-sucursal-para-poder-facturar",
+      "destination": "/pms/como_configurar_una_sucursal_para_poder_facturar_nuevo"
+    },
+    {
       "source": "/como-conseguir-codigo-para-chat-de-facebook",
       "destination": "/motor/como_conseguir_codigo_para_chat_de_facebook"
     },
@@ -3711,6 +3715,10 @@
     {
       "source": "/es/como-configurar-un-costo-fijo-adicional",
       "destination": "/motor/cargo_fijo_adicional"
+    },
+    {
+      "source": "/es/cómo-configurar-una-sucursal-para-poder-facturar",
+      "destination": "/pms/como_configurar_una_sucursal_para_poder_facturar_nuevo"
     },
     {
       "source": "/es/como-conseguir-codigo-para-chat-de-facebook",
