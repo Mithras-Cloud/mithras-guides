@@ -481,7 +481,8 @@
               "pms/app_de_inicio",
               "pms/informes_nova_mis_informes_y_catalogo",
               "pms/informes_nova_informe_de_ocupacion_adr_y_revpar",
-              "pms/informes_nova_paneles"
+              "pms/informes_nova_paneles",
+              "pms/informes_nova_vistas_guardadas"
             ]
           },
           {
