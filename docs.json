@@ -479,7 +479,8 @@
               "pms/cargar_reserva",
               "pms/como_imprimir_la_ficha_de_registro__v1",
               "pms/app_de_inicio",
-              "pms/informes_nova_mis_informes_y_catalogo"
+              "pms/informes_nova_mis_informes_y_catalogo",
+              "pms/informes_nova_informe_de_ocupacion_adr_y_revpar"
             ]
           },
           {
