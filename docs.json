@@ -478,7 +478,8 @@
               "pms/campos_de_cargar_reserva",
               "pms/cargar_reserva",
               "pms/como_imprimir_la_ficha_de_registro__v1",
-              "pms/app_de_inicio"
+              "pms/app_de_inicio",
+              "pms/informes_nova_mis_informes_y_catalogo"
             ]
           },
           {
