@@ -1,6 +1,4 @@
 ---
-title: Cargar reserva
-description: Guía de uso del nuevo Cargar reserva — el formulario para cargar una reserva a mano desde el plano de ocupación, la lista de reservas o el menú. Huésped, datos de la reserva, habitaciones, tarifas e impuestos del plan tarifario, day use, niños y bebés, períodos distintos por habitación y la confirmación con el desglose antes de cargar.
 lang: es
 ---
 
@@ -172,7 +170,7 @@ Si el buscador dice *"No encontramos contactos. Completá los datos para crear u
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Moneda</b> {'*'}</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La moneda de la reserva. Viene la <b>moneda por defecto</b> de tu punto de venta, aunque el tarifario esté en otra, y ofrece las <b>monedas disponibles</b> que tiene habilitadas. Si el tarifario está en otra moneda, aparece la cotización (por ejemplo, <i>1 USD = 1570 ARS</i>): con Tarifa <b>Plan tarifario</b>, la tarifa del plan se convierte con esa cotización. Si cambias la moneda, se vuelve a convertir.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Idioma</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El idioma de la reserva, para los mails y la confirmación del huésped. Viene el de tu punto de venta.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Instancia</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nueva</b>, <b>Confirmada</b> o <b>Arribos</b>. Si el ingreso es hoy o antes, se propone <b>Arribos</b>; si es futuro, <b>Nueva</b>. Si la cambias a mano, se respeta.</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con <b>Plan tarifario</b> (la opción por defecto) la tarifa de cada noche se precarga del tarifario elegido, convertida a la moneda de la reserva; con <b>Manual</b> la escribes tú (sección 10). Con qué opción arranca lo elige tu hotel en <b>Campos de Cargar Reserva</b>. Los impuestos son siempre los del plan tarifario y, si no tiene, los del punto de venta, el establecimiento o la empresa. Con Manual puedes elegir si se suman a la tarifa o ya están incluidos con <b>Sumar impuestos a la tarifa</b> (sección 10).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con <b>Plan tarifario</b> (la opción por defecto) la tarifa de cada noche se precarga del tarifario elegido, convertida a la moneda de la reserva; con <b>Manual</b> la escribes tú (sección 10). Con qué opción arranca lo elige tu hotel en <b>Campos de Cargar Reserva</b>. Los impuestos son siempre los del plan tarifario y, si no tiene, los del punto de venta, el establecimiento o la empresa. Con <b>Sumar impuestos a la tarifa</b> puedes elegir, en cada reserva, si se suman a la tarifa o ya están incluidos (sección 10).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Facturar a</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Por defecto, el <b>huésped titular</b>. Para facturar a otra persona, a una empresa o a una agencia, quita al titular y búscala. El enlace <b>Facturar al huésped titular</b> lo vuelve atrás.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Reserva de grupo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Un interruptor para marcarla como grupal.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Código externo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El código de la reserva en otro sistema (una agencia, un channel manager).</td></tr>
@@ -315,7 +313,7 @@ Los impuestos salen del **plan tarifario** elegido y, si el plan no los tiene, d
 
 Cada opción del **Tarifario** muestra si es NET o FINAL. Si el plan tiene impuestos en 0 %, la reserva va sin impuestos y la tarifa que cargas es la final. El aviso de la tarjeta Habitaciones lo recuerda, y su enlace **Cambiarlo en el selector de tarifa** te lleva al selector **Tarifa** de los datos de la reserva.
 
-<div style={{border:'1px solid #fde68a',background:'#fffbeb',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#78350f',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Cambio desde el 12/11/2026.</b> Antes, Cargar reserva tomaba los impuestos de la configuración general de la <b>empresa</b>. Ahora los toma del <b>plan tarifario</b>, como el motor de reservas. Si tu empresa tiene los impuestos incluidos y tu plan es NET, la tarifa que escribes se toma sin impuestos y se les suman, salvo que apagues <b>Sumar impuestos a la tarifa</b>.</div>
+<div style={{border:'1px solid #fde68a',background:'#fffbeb',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#78350f',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Cambio desde el 12/11/2026.</b> Antes, Cargar reserva tomaba los impuestos de la configuración general de la <b>empresa</b>. Ahora los toma del <b>plan tarifario</b>, como el motor de reservas. Si tu empresa tiene los impuestos incluidos y tu plan es NET, la tarifa se toma sin impuestos y se les suman, salvo que apagues <b>Sumar impuestos a la tarifa</b>.</div>
 
 Debajo de las habitaciones, antes de cargar, el formulario dice qué impuesto se aplica, de dónde sale y cómo se va a cargar la reserva:
 
@@ -337,7 +335,9 @@ El switch **Sumar impuestos a la tarifa** arranca como dice el plan, igual que e
   </tbody>
 </table>
 
-Con Tarifa **Manual** puedes cambiarlo para esa reserva: por ejemplo, apagarlo con un plan NET si tienes el precio final, o prenderlo con un plan FINAL si escribiste la tarifa sin impuestos. El switch queda marcado **Manual**, un aviso explica qué cambiaste y el total se recalcula al momento. Si eliges otro plan tarifario, el switch vuelve a lo que dice el plan nuevo.
+Puedes cambiarlo para esa reserva, con Tarifa **Plan tarifario** o con **Manual**: por ejemplo, apagarlo con un plan NET si la tarifa es el precio final, o prenderlo con un plan FINAL si la tarifa es sin impuestos. Se respeta lo que elijas: el switch queda marcado **Manual**, un aviso explica qué cambiaste y el total se recalcula al momento. Si eliges otro plan tarifario, el switch vuelve a lo que dice el plan nuevo.
+
+Tu hotel puede elegir con qué arranca el switch en **Campos de Cargar Reserva**, con la opción **Sumar impuestos a la tarifa**: **Según el plan** (de fábrica), **Siempre sumar** o **Siempre incluidos**. Por ejemplo, con **Siempre incluidos** el switch arranca apagado en todas las reservas aunque el plan sea NET, y la tarifa que cargas queda como precio final. Un aviso lo recuerda, y puedes cambiarlo igual en cada reserva.
 
 Así se ve si apagas el switch con un plan NET porque tienes el precio final:
 
@@ -345,10 +345,10 @@ Así se ve si apagas el switch con un plan NET porque tienes el precio final:
   <div style={{display:'flex',alignItems:'center',gap:'8px'}}><span style={{width:'30px',height:'17px',borderRadius:'999px',background:'#cbd5e1',display:'inline-flex',alignItems:'center',justifyContent:'flex-start',padding:'2px',boxSizing:'border-box'}}><span style={{width:'13px',height:'13px',borderRadius:'50%',background:'#fff',display:'inline-block'}}></span></span><b>Sumar impuestos a la tarifa</b><span style={{fontSize:'10.5px',fontWeight:700,padding:'1px 7px',borderRadius:'6px',border:'1px solid #e2e8f0',color:'#b45309'}}>Manual</span></div>
   <div style={{marginTop:'10px',color:'#64748b'}}>ⓘ Impuestos: 10,5 % del plan tarifario «Mejor tarifa». Es NET: la tarifa es sin impuestos y se le suman.</div>
   <div style={{marginTop:'6px',fontWeight:700}}>Se cargará así: PEN 220,00, con PEN 20,90 de impuestos incluidos (sin impuestos: PEN 199,10).</div>
-  <div style={{marginTop:'8px',border:'1px solid #fde68a',background:'#fffbeb',borderRadius:'8px',padding:'8px 10px',color:'#78350f'}}>Cambiaste lo que indica el plan: es NET, pero en esta reserva la tarifa que escribiste ya incluye los impuestos.</div>
+  <div style={{marginTop:'8px',border:'1px solid #fde68a',background:'#fffbeb',borderRadius:'8px',padding:'8px 10px',color:'#78350f'}}>Cambiaste lo que indica el plan: es NET, pero en esta reserva la tarifa ya incluye los impuestos.</div>
 </div>
 
-Con Tarifa **Plan tarifario** el switch muestra lo que dice el plan y no se puede cambiar: la tarifa llega como la vende el plan. Si el plan no tiene impuestos, no aparece.
+Por ejemplo, con Tarifa **Plan tarifario** y un plan NET que vende la noche a USD 200, el switch arranca prendido y se carga USD 200 + USD 42 de IVA = USD 242. Si apagas el switch, esos USD 200 se toman como precio final: USD 165,29 + USD 34,71 de IVA = USD 200. Si el plan no tiene impuestos, el switch no aparece.
 
 ### Total con impuestos y desglose
 
@@ -439,7 +439,7 @@ Antes de cargarla se abre **Revisa la reserva antes de cargarla**, con qué impu
   <div style={{marginTop:'16px',display:'flex',justifyContent:'flex-end',gap:'8px'}}><span style={{border:'1px solid #e2e8f0',borderRadius:'8px',padding:'7px 13px',fontWeight:600}}>Volver a revisar</span><span style={{background:'#0f172a',color:'#fff',borderRadius:'8px',padding:'7px 13px',fontWeight:600}}>Confirmar y cargar</span></div>
 </div>
 
-En este ejemplo el plan es NET y se escribió 135.000: si 135.000 era el precio final, toca **Volver a revisar**, apaga **Sumar impuestos a la tarifa** (con Tarifa **Manual**) y el total queda en 135.000.
+En este ejemplo el plan es NET y se escribió 135.000: si 135.000 era el precio final, toca **Volver a revisar**, apaga **Sumar impuestos a la tarifa** y el total queda en 135.000.
 
 ### Si falta algo
 
@@ -498,6 +498,7 @@ El formulario se adapta a cada hotel desde **Configuración → Campos de Cargar
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Hacer obligatorio</b> un campo</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Exigir el email o el documento: la reserva no se carga sin ellos.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Pedir niños y bebés</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Separar adultos, niños y bebés en cada habitación (sección 9). Vienen apagados.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Elegir con qué Tarifa arranca</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Plan tarifario</b> (de fábrica) o <b>Manual</b> (sección 10).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Elegir con qué arranca Sumar impuestos a la tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Según el plan</b> (de fábrica), <b>Siempre sumar</b> o <b>Siempre incluidos</b>, para los hoteles que siempre cargan el precio final (sección 10).</td></tr>
   </tbody>
 </table>
 
@@ -531,19 +532,19 @@ Del plan tarifario elegido, para la categoría, las fechas y los huéspedes de e
 Depende del plan tarifario: si es **NET**, la tarifa es sin impuestos y se le suma el IVA; si es **FINAL**, ya los incluye. Vale también con Tarifa **Manual**, igual que en el motor de reservas, salvo que cambies **Sumar impuestos a la tarifa** para esa reserva. El formulario dice qué impuesto se aplica, y el desglose del **Total con impuestos** en la barra del pie muestra cómo se va a cargar (sección 10).
 
 **El total con impuestos no coincide con lo que esperaba.**
-Revisa si el plan tarifario es NET o FINAL y la moneda de la reserva. Los impuestos son los del plan tarifario elegido, no los de la empresa: si escribiste el precio final con un plan NET, se le sumó el IVA. Con Tarifa **Manual**, apaga **Sumar impuestos a la tarifa** o escribe la tarifa sin impuestos. El desglose muestra la tarifa sin impuestos, el IVA y el total tal como se van a cargar.
+Revisa si el plan tarifario es NET o FINAL y la moneda de la reserva. Los impuestos son los del plan tarifario elegido, no los de la empresa: si escribiste el precio final con un plan NET, se le sumó el IVA. Apaga **Sumar impuestos a la tarifa** o escribe la tarifa sin impuestos. El desglose muestra la tarifa sin impuestos, el IVA y el total tal como se van a cargar.
 
 **Antes cargaba el precio final y ahora se me suma el IVA, ¿qué cambió?**
-Desde el 12/11/2026 los impuestos salen del plan tarifario elegido, como en el motor de reservas, y no de la configuración general de la empresa. Si tu plan es NET, la tarifa se toma sin impuestos. Si tienes el precio final, con Tarifa **Manual** apaga **Sumar impuestos a la tarifa** o escribe la tarifa sin impuestos. El formulario y la confirmación te muestran el total antes de cargar.
+Desde el 12/11/2026 los impuestos salen del plan tarifario elegido, como en el motor de reservas, y no de la configuración general de la empresa. Si tu plan es NET, la tarifa se toma sin impuestos. Si tienes el precio final, apaga **Sumar impuestos a la tarifa** o escribe la tarifa sin impuestos. El formulario y la confirmación te muestran el total antes de cargar.
 
 **¿Puedo cambiar Sumar impuestos a la tarifa con Tarifa Plan tarifario?**
-No: con la tarifa del plan, la reserva se carga como la vende el plan. Para cambiarlo, elige Tarifa **Manual**.
+Sí. Con **Plan tarifario** o con **Manual**, el switch arranca como dice el plan y puedes cambiarlo para esa reserva: se respeta lo que elijas.
 
 **Cambié de plan tarifario y el switch volvió a como estaba.**
 Es así a propósito: al elegir otro plan, el switch vuelve a lo que dice el plan nuevo. Si lo necesitas distinto, cámbialo otra vez.
 
 **¿Qué hago si tengo que vender siempre con el precio final?**
-Si siempre cargas el precio con impuestos incluidos, conviene que el plan tarifario sea FINAL. Ten en cuenta que ese cambio también modifica cómo se muestra la tarifa en el motor de reservas y en los canales; consúltalo con Soporte de Pxsol antes de hacerlo.
+Pídele a un administrador del hotel que, en **Campos de Cargar Reserva**, ponga **Sumar impuestos a la tarifa** en **Siempre incluidos**. Así el switch arranca apagado en todas las reservas y la tarifa que cargas queda con los impuestos incluidos, sin tocar el plan tarifario ni el motor de reservas.
 
 **¿Por qué viene elegido ese tarifario?**
 Es el tarifario maestro de tu establecimiento, el que se configura en Establecimientos. Puedes elegir otro.
