@@ -1,6 +1,4 @@
 ---
-title: Campos de Cargar Reserva
-description: Guía de uso de Campos de Cargar Reserva - elige qué datos pide el formulario de Cargar reserva y cuáles son obligatorios. Qué controla cada campo, quién puede usarla, cómo impacta al cargar una reserva y qué necesita el establecimiento.
 lang: es
 ---
 
@@ -16,6 +14,7 @@ lang: es
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>No pedir · Opcional · Obligatorio</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Vista previa del formulario</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Permisos Ver y Editar</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.18)',color:'#e2e8f0'}}>Impuestos: según el plan o siempre incluidos</span>
     </div>
   </div>
 
@@ -274,8 +273,9 @@ Al revés, **Tarifa** y **Al menos una cama** se piden siempre (la tarifa y las 
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top',color:'#64748b'}}>🔒 <b>Huéspedes</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cuántas personas ocupan cada habitación. Sin niños ni bebés es la cantidad de huéspedes; con alguno de los dos prendido pasa a llamarse <b>Adultos</b>.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre obligatorio</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Niños</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Separa a los niños de los adultos en cada habitación. Arranca en 0. <b>Viene apagado.</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No pedir · Pedir</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Bebés</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Separa a los bebés de los adultos en cada habitación. Arranca en 0. <b>Viene apagado.</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>No pedir · Pedir</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con qué arranca la tarifa de cada habitación: <b>Plan tarifario</b> (de fábrica: se precarga la tarifa de cada noche del tarifario, convertida a la moneda de la reserva) o <b>Manual</b> (la escribe recepción). Los impuestos salen siempre de la cascada plan tarifario → punto de venta → establecimiento → empresa. En <b>Obligatorio</b> no deja cargar una habitación con tarifa en 0; <b>arranca opcional</b>: déjala así si cargas cortesías, staff o canjes con tarifa 0.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Opcional · Obligatorio · Arranca en Plan tarifario o Manual</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con qué arranca la tarifa de cada habitación: <b>Plan tarifario</b> (de fábrica: se precarga la tarifa de cada noche del tarifario, convertida a la moneda de la reserva) o <b>Manual</b> (la escribe recepción). Los impuestos salen siempre de la cascada plan tarifario → punto de venta → establecimiento → empresa; con <b>Sumar impuestos a la tarifa</b>, recepción puede elegir en cada reserva si se suman a la tarifa o ya están incluidos. En <b>Obligatorio</b> no deja cargar una habitación con tarifa en 0; <b>arranca opcional</b>: déjala así si cargas cortesías, staff o canjes con tarifa 0.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Opcional · Obligatorio · Arranca en Plan tarifario o Manual</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Al menos una cama</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cada habitación debe tener al menos una cama, grande o chica (no se puede dejar en 0 grandes y 0 chicas). <b>Arranca obligatorio.</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Opcional · Obligatorio</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Sumar impuestos a la tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con qué arranca el switch <b>Sumar impuestos a la tarifa</b> en Cargar reserva. <b>Según el plan</b> (de fábrica): prendido con un plan NET, que suma los impuestos, y apagado con uno FINAL. <b>Siempre sumar</b>: la tarifa que se carga es sin impuestos y se le suman. <b>Siempre incluidos</b>: la tarifa que se carga ya trae los impuestos, aunque el plan sea NET. No se oculta ni es obligatorio, y recepción lo puede cambiar en cada reserva.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Según el plan · Siempre sumar · Siempre incluidos</td></tr>
   </tbody>
 </table>
 
@@ -373,7 +373,25 @@ Con **Plan tarifario**, Cargar reserva respeta la configuración del hotel:
 - La reserva arranca en la **moneda por defecto** del punto de venta, aunque el tarifario esté en otra, y ofrece solo sus **monedas disponibles**. La tarifa del plan se convierte con la cotización del punto de venta y se redondea con sus **decimales**.
 - La tarifa del plan se ve en todas las habitaciones de la lista, elegidas o no, para comparar antes de elegir.
 
-Los **impuestos** no dependen de esta opción: con **Plan tarifario** o con **Manual** salen del plan tarifario y, si no los tiene, del punto de venta, el establecimiento o la empresa. Eso también decide si la tarifa que se escribe es **sin impuestos** (plan NET: el IVA se suma) o **con impuestos** (plan FINAL). La barra del pie de Cargar reserva muestra el **Total con impuestos** y su desglose para que recepción lo vea antes de cargar.
+Los **impuestos** no dependen de esta opción: con **Plan tarifario** o con **Manual** salen del plan tarifario y, si no los tiene, del punto de venta, el establecimiento o la empresa. Eso también decide si la tarifa que se escribe es **sin impuestos** (plan NET: el IVA se suma) o **con impuestos** (plan FINAL). Recepción puede cambiarlo para una reserva con el switch **Sumar impuestos a la tarifa**, con Plan tarifario o con Manual: arranca como dice el plan (prendido con NET, apagado con FINAL) y se respeta lo que elija. Cargar reserva muestra qué impuesto se aplica, cómo se va a cargar (tarifa sin impuestos + impuestos = total) y, al tocar **Cargar reserva**, una confirmación con el desglose.
+
+En **Sumar impuestos a la tarifa** eliges con qué arranca ese switch en Cargar reserva. Si en tu hotel siempre cargan el precio final con los impuestos incluidos, elige **Siempre incluidos**: el switch arranca apagado en todas las reservas, aunque el plan sea NET, y Cargar reserva avisa *"Tu hotel configuró «Siempre incluidos» en Campos de Cargar Reserva: el plan es NET, pero la tarifa ya incluye los impuestos."* Quien carga la reserva lo puede cambiar igual para esa reserva.
+
+Para que tu equipo cargue siempre el precio final, con los impuestos incluidos:
+
+1. Abre **Configuración → Campos de Cargar Reserva** (o **Configurar campos** desde Cargar reserva).
+2. En la tarjeta **Habitaciones**, busca **Sumar impuestos a la tarifa**.
+3. En **Con qué arranca «Sumar impuestos a la tarifa»**, elige **Siempre incluidos**.
+4. Toca **Guardar**.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{display:'flex',flexWrap:'wrap',justifyContent:'space-between',alignItems:'center',gap:'10px',padding:'12px 14px'}}>
+    <div style={{maxWidth:'420px'}}><div style={{fontSize:'12px',fontWeight:600,color:'#0f172a'}}>Sumar impuestos a la tarifa</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Con qué arranca el switch en Cargar reserva. Recepción lo puede cambiar en cada reserva.</div></div>
+    <div style={{display:'flex',alignItems:'center',gap:'6px'}}><span style={{fontSize:'10.5px',color:'#64748b'}}>Por defecto</span><span style={{display:'inline-flex',background:'#f1f5f9',borderRadius:'8px',padding:'3px'}}><span style={{fontSize:'10.5px',padding:'4px 8px',color:'#64748b'}}>Según el plan</span><span style={{fontSize:'10.5px',padding:'4px 8px',color:'#64748b'}}>Siempre sumar</span><span style={{fontSize:'10.5px',padding:'4px 8px',borderRadius:'6px',background:'#fff',color:'#0f172a',fontWeight:600,boxShadow:'0 1px 2px rgba(15,23,42,.1)'}}>Siempre incluidos</span></span></div>
+  </div>
+</div>
+
+Desde ahí, en todas las reservas el switch arranca apagado y la tarifa que se carga (la del plan o la que escribe recepción) queda como precio final: por ejemplo, 135.000 se cargan como 135.000, con el IVA adentro. No cambia el plan tarifario, así que el motor de reservas y los canales siguen igual. Para volver al comportamiento de fábrica, elige **Según el plan**.
 
 **Tarifa** viene opcional. Si la pones en **Obligatorio**, una habitación con tarifa en 0 no se carga y aparece el aviso *"Cada habitación debe tener una tarifa mayor a 0."* Déjalo opcional si cargas cortesías, staff o canjes con tarifa 0.
 
@@ -459,7 +477,10 @@ Pon **Niños**, **Bebés** o los dos en **Pedir**, en la tarjeta Habitaciones, y
 El tarifario es el maestro del establecimiento y la moneda es la moneda por defecto del punto de venta. Si el tarifario está en otra moneda, su tarifa se convierte con la cotización del punto de venta. Recepción puede elegir otro tarifario u otra moneda en el formulario.
 
 **Con Tarifa «Manual», ¿la tarifa que escribe recepción incluye los impuestos?**
-Depende del plan tarifario de la reserva: con un plan NET es sin impuestos y se suma el IVA; con uno FINAL ya los incluye. El **Total con impuestos** de la barra del pie lo muestra antes de cargar.
+Depende del plan tarifario de la reserva: con un plan NET es sin impuestos y se suma el IVA; con uno FINAL ya los incluye. Recepción lo puede cambiar para esa reserva con **Sumar impuestos a la tarifa**, y el formulario y la confirmación muestran el total antes de cargar.
+
+**Siempre cargamos el precio final, con los impuestos incluidos. ¿Hay que apagar el switch en cada reserva?**
+No. En **Sumar impuestos a la tarifa** elige **Siempre incluidos** y guarda: el switch arranca apagado en todas las reservas y la tarifa que se carga queda como precio final.
 
 **¿Cómo evito que se carguen reservas con tarifa en 0?**
 Pon **Tarifa** en **Obligatorio**, en la tarjeta Habitaciones, y guarda. Si cargas cortesías, staff o canjes en 0, déjalo en **Opcional**.
