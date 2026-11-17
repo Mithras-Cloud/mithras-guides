@@ -1,0 +1,97 @@
+---
+title: "Cómo derivar conversaciones a un agente humano"
+description: "GUÍA · CONVERSACIONES"
+---
+
+GUÍA · CONVERSACIONES
+
+Configurá la derivación a humano para que, cuando un huésped pida hablar con alguien, la conversación llegue a la persona correcta y el bot deje de responder.
+
+Cuando un huésped pide hablar con una persona, o el bot no puede resolver lo que le preguntan, el bot puede pasarle la conversación a alguien de tu equipo. Vos decidís a quién, en qué canales y en qué horarios.
+
+Cuando el bot deriva:
+
+Le avisa al huésped que lo va a atender una persona del equipo. Asigna la conversación a esa persona, que pasa a figurar como responsable. La persona recibe una notificación: "Tu bot te derivó una conversación", con un acceso directo al chat. El bot deja de responder en esa conversación, para que la siga la persona.
+
+Nota Funciona con el bot de respuesta automática de Conversaciones y con Pxsol IA. Los dos usan la misma configuración.
+
+## Paso 1. Creá la automatización
+
+1. Entrá a Ajustes → Automatizaciones.
+2. Hacé clic en Crear.
+3. Elegí Derivación a humano.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/35898506444ef45c540dfa52f4012329a232632d5f.png" alt="Captura: Paso 1. Creá la automatización" />
+</Frame>
+
+## Paso 2. Elegí a quién se deriva
+
+Poné un nombre que reconozcas en el listado (por ejemplo, "Derivación a recepción") y completá:
+
+1. Canal: dónde aplica la derivación (WhatsApp, widget de tu web, etc.).
+2. Derivación: elegí Derivar a un agente. Con No derivar, el bot se queda con la conversación y no ofrece pasarla a una persona.
+3. Agentes: quiénes pueden recibirla. Si elegís varios, las conversaciones se reparten entre ellos. Si lo dejás vacío, la puede recibir cualquier agente del equipo.
+4. Solo agentes en línea: con esta opción prendida, el bot solo deriva a quien esté en línea en ese momento.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26923879830ced9341d3fb7d98debcf8d48077eec3c.png" alt="Captura: Paso 2. Elegí a quién se deriva" />
+</Frame>
+
+## Paso 3. Definí horarios y guardá
+
+1. En Horarios podés limitar la derivación a ciertos días y horas (por ejemplo, el horario de la recepción). Si no agregás ninguno, deriva a cualquier hora.
+2. Revisá el resumen: te dice en una frase qué va a pasar.
+3. Hacé clic en Agregar.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28718805152e70cf741149ef2f313d90f6fbe509212.png" alt="Captura: Paso 3. Definí horarios y guardá" />
+</Frame>
+
+## Paso 4. Encendé la automatización
+
+En el listado de Automatizaciones, prendé el interruptor de la derivación que creaste.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28718805168e8c1c70489ff119c4956406d257fd8d7.png" alt="Captura: Paso 4. Encendé la automatización" />
+</Frame>
+
+## Paso 5. Ponete en línea
+
+Si activaste Solo agentes en línea, cada persona indica si está disponible desde su perfil (arriba a la derecha):
+
+En línea (verde): el bot te puede derivar conversaciones. Fuera de línea (rojo): el bot no te deriva.
+
+<Frame>
+  <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/197441785537e4b683a19877d2f5e25f015663310b8.png" alt="Captura: Paso 5. Ponete en línea" />
+</Frame>
+
+## Qué pasa en cada caso
+
+Situación Qué hace el bot
+
+Hay alguien disponible Asigna la conversación a esa persona, le
+
+avisa al huésped y deja de responder. La persona recibe la notificación.
+
+No hay nadie en línea (con Solo agentes en La conversación queda sin asignar para el
+
+línea prendido) equipo y el bot le avisa al huésped que le
+
+van a responder apenas haya alguien disponible.
+
+No hay derivación configurada, está El bot no ofrece pasar con una persona ni
+
+apagada, está en No derivar o es fuera del promete que alguien va a responder. Si el
+
+horario huésped lo pide, le explica que en este momento no puede pasarlo y le comparte
+
+los datos de contacto del hotel.
+
+Consejo Para no perderte ninguna derivación, activá las notificaciones de Conversaciones en tu navegador o en la app.
+
+## Preguntas frecuentes
+
+¿Puedo tener una derivación distinta para cada canal o horario? Sí. Creá una automatización de derivación para cada caso. Se aplican en el orden del listado: podés arrastrarlas para cambiar la prioridad.
+
+¿El bot vuelve a responder después de derivar? No, mientras la conversación tenga una persona asignada. Si la conversación quedó sin asignar porque no había nadie en línea, el bot puede seguir atendiendo al huésped hasta que alguien del equipo la tome.
