@@ -735,7 +735,8 @@
               "integraciones/como_integrar_mercado_pago_como_pasarela_de_pago_oauth_argentina",
               "integraciones/como_integrar_mercado_pago_como_procesador_de_pago_oauth_argentina",
               "integraciones/forze_en_pxsol",
-              "integraciones/como_integrar_mercado_pago_point_oauth"
+              "integraciones/como_integrar_mercado_pago_point_oauth",
+              "integraciones/como_integrar_mercado_pago_qr_oauth"
             ]
           },
           {
