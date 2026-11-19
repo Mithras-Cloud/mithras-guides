@@ -1,0 +1,103 @@
+---
+title: "¿Cómo integrar Mercado Pago Point? – OAuth"
+description: "Este procedimiento detalla cómo conectar el equipo Mercado Pago Point de tu establecimiento con PXSOL por OAuth, para cobrar reservas con tarjeta desde Cobrar reserva. El huésped paga en el equipo y el pago queda registrado en la reserva."
+---
+
+<Note>
+Esta funcionalidad está disponible para cuentas de Mercado Pago de Argentina, en pesos. Mercado Pago Point se usa solo en **Cobrar reserva**: no se ofrece a los huéspedes en el motor de reservas ni en los links de pago.
+</Note>
+
+Antes de comenzar, ten a mano el acceso a la cuenta de Mercado Pago del establecimiento. El equipo Point debe estar vinculado a esa cuenta, encendido y con conexión a internet.
+
+<Steps>
+  <Step title="Abre la configuración de Mercado Pago">
+    Desde el buscador, ingresa a **Integraciones**. Busca la integración **Mercado Pago (RECOMENDADA)** y selecciona **Configurar**. Se abre el listado de credenciales. Presiona **Añadir credencial**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/14360738824d98f15532fac5aeb4fc76f1201f8d4b7.png" alt="Página Mercado Pago con el botón Añadir credencial resaltado" />
+    </Frame>
+  </Step>
+
+  <Step title="Elige Mercado Pago Point">
+    En la ventana **Añadir credencial de Mercado Pago**, en **Tipo de integración**, selecciona **Mercado Pago Point**.
+
+    En **Punto de venta**, selecciona el punto de venta al que se asocia la credencial. Luego, en **Nombre de credencial**, ingresa un nombre que te permita reconocerla después, por ejemplo "Point Recepción".
+
+    Haz clic en **Generar enlace de autorización de Mercado Pago**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26926385310a3d14fe10902680a756d76097a48e743.png" alt="Formulario con Mercado Pago Point seleccionado, el punto de venta, el nombre de la credencial y el botón Generar enlace de autorización de Mercado Pago resaltado" />
+    </Frame>
+  </Step>
+
+  <Step title="Abre o copia el enlace de autorización">
+    El enlace aparece en el campo **Enlace de autorización** y vence a los 10 minutos. Si vence, presiona **Regenerar enlace**.
+
+    * **Abrir en pestaña nueva**: si en este navegador tienes iniciada la sesión de la cuenta de Mercado Pago del establecimiento.
+    * **Copiar enlace**: para abrirlo en otro navegador o enviárselo a quien administra la cuenta de Mercado Pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/3590184708d19af272f4ec7ad82100f4c3ad309e5d.png" alt="Enlace de autorización con los botones Copiar enlace y Abrir en pestaña nueva resaltados" />
+    </Frame>
+
+    <Warning>
+    Autoriza con la cuenta de Mercado Pago a la que está vinculado el equipo Point. Si tienes varias cuentas de Mercado Pago, verifica cuál está abierta antes de continuar: con otra cuenta, el equipo no aparece en el paso 5.
+    </Warning>
+  </Step>
+
+  <Step title="Autoriza la conexión en Mercado Pago">
+    Mercado Pago muestra la pantalla de autorización, con el detalle de los permisos que solicita. Revísalos y haz clic en **Autorizar**. Mercado Pago confirma la autorización y te lleva de vuelta a PXSOL. La credencial aparece en el listado con la etiqueta **OAuth Point**.
+  </Step>
+
+  <Step title="Elige el equipo Point">
+    Se abre la ventana **Elija el Point para cobrar**, con los equipos de la cuenta de Mercado Pago. Cada uno muestra su modelo, su número de serie y si está en **Modo integrado** o en **Modo normal**. Si la cuenta tiene un solo equipo, ya aparece seleccionado. Si no ves tu equipo, presiona **Actualizar lista**.
+
+    Selecciona el equipo y presiona **Usar este Point**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/71803694209c229dbb70d379f740b8ac41e881d1bc.png" alt="Ventana Elija el Point para cobrar con el equipo seleccionado, el aviso Reinicie el Point para aplicar el cambio y el botón Usar este Point resaltado" />
+    </Frame>
+
+    <Note>
+    Al elegir el equipo, PXSOL lo pasa a **modo integrado**: los cobros se envían desde PXSOL y el botón **Cobrar** del equipo Point queda bloqueado. En esta versión se usa un equipo Point por establecimiento.
+    </Note>
+  </Step>
+
+  <Step title="Revisa el medio de pago creado">
+    La ventana confirma **¡Felicitaciones! Ya puedes cobrar con Mercado Pago Point**. PXSOL crea el medio de pago **Mercado Pago Point** en la categoría **Presencial**, activo y con la configuración recomendada: todos los puntos de venta y solo en **Cobrar reserva**. Presiona **Entendido** para cerrar la ventana, o **Editar el medio de pago** si quieres cambiar algo.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/26926385340e14f18343d81e63cd312fd035c67d206.png" alt="Ventana Felicitaciones con el medio de pago Mercado Pago Point creado, la configuración recomendada y el aviso para reiniciar el Point" />
+    </Frame>
+
+    <Warning>
+    Reinicia el equipo Point antes del primer cobro. El cambio a modo integrado se aplica recién después de reiniciarlo.
+    </Warning>
+  </Step>
+
+  <Step title="Cobra una reserva con el Point">
+    Abre la reserva y presiona **Cobrar reserva**. En **Cuenta**, presiona **Cambiar** y elige **Mercado Pago Point**. Revisa el monto en **A cobrar** y presiona **Enviar al Point**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/215411082726f87e97eb84d14698b443d5afbba0209.png" alt="Cobrar Reserva con la cuenta Mercado Pago Point y el botón Enviar al Point" />
+    </Frame>
+
+    PXSOL muestra **Esperando el pago**. Pídele al huésped que acerque o inserte la tarjeta en el equipo Point. Cuando el huésped paga, la pantalla muestra **Pago aprobado** y el pago queda registrado en la reserva.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/10770554142ed6f9212a4a438ec1103789132efa51c.png" alt="Pantalla Esperando el pago del cobro con el Point" />
+    </Frame>
+
+    Si el pago se rechaza, la pantalla muestra **Rechazado** y el **Motivo**, por ejemplo **Fondos insuficientes**. Presiona **Enviar de nuevo** para que el huésped intente con otra tarjeta.
+
+    <Note>
+    Para cancelar un cobro que todavía no se pagó, presiona **Cancelar cobro**. Si Mercado Pago no permite cancelarlo desde PXSOL, la pantalla te pide que lo canceles tocando la **X** en el equipo Point.
+
+    Si Mercado Pago no puede confirmar el resultado, la pantalla muestra **Falta confirmar**. Mira la pantalla del equipo Point: si muestra el comprobante, el pago se aprobó. Presiona **El Point lo aprobó** o **El Point lo rechazó** según lo que muestre.
+    </Note>
+  </Step>
+</Steps>
+
+<Tip>
+¡Listo! Tu equipo Mercado Pago Point ya está conectado con PXSOL. Para cobrar, abre la reserva, entra en **Cobrar reserva** y elige **Mercado Pago Point**.
+</Tip>
