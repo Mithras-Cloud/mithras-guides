@@ -1,0 +1,97 @@
+---
+title: "¿Cómo integrar Mercado Pago QR? – OAuth"
+description: "Este procedimiento detalla cómo conectar Mercado Pago QR con PXSOL por OAuth, para cobrar reservas desde Cobrar reserva con un código QR que el huésped escanea con la app de Mercado Pago. El pago queda registrado en la reserva."
+---
+
+<Note>
+Esta funcionalidad está disponible para cuentas de Mercado Pago de Argentina, en pesos. Mercado Pago QR se usa solo en **Cobrar reserva**: no se ofrece a los huéspedes en el motor de reservas ni en los links de pago.
+</Note>
+
+Antes de comenzar, ten a mano el acceso a la cuenta de Mercado Pago del establecimiento. PXSOL crea en esa cuenta una sucursal y una caja con su código QR, que puedes imprimir y dejar en el mostrador.
+
+<Steps>
+  <Step title="Abre la configuración de Mercado Pago">
+    Desde el buscador, ingresa a **Integraciones**. Busca la integración **Mercado Pago (RECOMENDADA)** y selecciona **Configurar**. Se abre el listado de credenciales. Presiona **Añadir credencial**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28721477712aba3888303b765ed03b94167d1a2d8e3.png" alt="Página Mercado Pago con el botón Añadir credencial resaltado" />
+    </Frame>
+  </Step>
+
+  <Step title="Elige Mercado Pago QR">
+    En la ventana **Añadir credencial de Mercado Pago**, en **Tipo de integración**, selecciona **Mercado Pago QR**.
+
+    En **Punto de venta**, selecciona el punto de venta al que se asocia la credencial. Luego, en **Nombre de credencial**, ingresa un nombre que te permita reconocerla después, por ejemplo "QR Recepción".
+
+    Haz clic en **Generar enlace de autorización de Mercado Pago**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/35901847161527278b27ab924de30103b5ec9ba0bd.png" alt="Formulario con Mercado Pago QR seleccionado, el punto de venta, el nombre de la credencial y el botón Generar enlace de autorización de Mercado Pago resaltado" />
+    </Frame>
+  </Step>
+
+  <Step title="Abre o copia el enlace de autorización">
+    El enlace aparece en el campo **Enlace de autorización** y vence a los 10 minutos. Si vence, presiona **Regenerar enlace**.
+
+    * **Abrir en pestaña nueva**: si en este navegador tienes iniciada la sesión de la cuenta de Mercado Pago del establecimiento.
+    * **Copiar enlace**: para abrirlo en otro navegador o enviárselo a quien administra la cuenta de Mercado Pago.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/718036943605629db9b9cc3e62ce0c00bd24c0a161.png" alt="Enlace de autorización con los botones Copiar enlace y Abrir en pestaña nueva resaltados" />
+    </Frame>
+
+    <Warning>
+    El enlace debe abrirse con la sesión iniciada en la cuenta de Mercado Pago que va a recibir los pagos. Si tienes varias cuentas de Mercado Pago, verifica cuál está abierta antes de continuar.
+    </Warning>
+  </Step>
+
+  <Step title="Autoriza la conexión en Mercado Pago">
+    Mercado Pago muestra la pantalla de autorización, con el detalle de los permisos que solicita. Revísalos y haz clic en **Autorizar**. Mercado Pago confirma la autorización y te lleva de vuelta a PXSOL. La credencial aparece en el listado con la etiqueta **OAuth QR**.
+  </Step>
+
+  <Step title="Carga los datos de la sucursal">
+    Se abre la ventana **Configure el QR para cobrar**. En **Datos de la sucursal**, PXSOL completa los datos con la información de tu establecimiento: **Nombre de la sucursal**, **Caja** ("Recepción"), **Calle**, **Número**, **Provincia** y **Ciudad o departamento**. Revísalos, corrige lo que haga falta y presiona **Guardar sucursal**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/21541108308eb8e0f210617d68b6d682a296d871e2b.png" alt="Ventana Configure el QR para cobrar con los datos de la sucursal completos y el botón Guardar sucursal resaltado" />
+    </Frame>
+
+    <Note>
+    Si la cuenta de Mercado Pago ya tiene un código QR, la ventana pregunta **¿Qué QR va a usar?**. Elige el que quieras usar y presiona **Usar este QR**, o elige **Crear uno nuevo** para cargar los datos de la sucursal. Ese QR solo podrá cobrar montos generados desde PXSOL.
+    </Note>
+  </Step>
+
+  <Step title="Revisa el medio de pago creado y descarga el QR">
+    La ventana confirma **¡Felicitaciones! Ya puedes cobrar con Mercado Pago QR**. PXSOL crea el medio de pago **Mercado Pago QR** en la categoría **Presencial**, activo y con la configuración recomendada: todos los puntos de venta y solo en **Cobrar reserva**.
+
+    En **QR del mostrador** está el código de tu caja. Presiona **Descargar para imprimir** y déjalo impreso en el mostrador. Presiona **Entendido** para cerrar la ventana, o **Editar el medio de pago** si quieres cambiar algo.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/1974601596077dda8bdba204f528fa906e24e5493b4.png" alt="Ventana Felicitaciones con el medio de pago Mercado Pago QR creado y el QR del mostrador con el enlace Descargar para imprimir" />
+    </Frame>
+  </Step>
+
+  <Step title="Cobra una reserva con el QR">
+    Abre la reserva y presiona **Cobrar reserva**. En **Cuenta**, presiona **Cambiar** y elige **Mercado Pago QR**. Revisa el monto en **A cobrar** y presiona **Generar QR**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/71803694443d0d351ad3bae6c1487a19d2d64d7297.png" alt="Cobrar Reserva con la cuenta Mercado Pago QR y el botón Generar QR" />
+    </Frame>
+
+    PXSOL muestra **Esperando el pago** con un código QR en pantalla. El huésped puede escanear el QR del mostrador o el código de la pantalla con la app de Mercado Pago, y paga el monto exacto del cobro. Cuando paga, la pantalla muestra **Pago aprobado** y el pago queda registrado en la reserva.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/8975461805abe7a99baac2b9b829891c60d8a31202.png" alt="Pantalla Esperando el pago con el código QR, el monto y el comprobante del cobro" />
+    </Frame>
+
+    <Note>
+    Si el huésped no paga, presiona **Cancelar QR**: no se cobra nada y el código deja de servir para ese cobro. Si la tarjeta del huésped se rechaza en la app de Mercado Pago, PXSOL sigue en **Esperando el pago**: el huésped puede intentar con otro medio en la app, o puedes cancelar el cobro.
+
+    Cada QR del mostrador tiene un solo cobro a la vez. Si ya tiene otro cobro cargado, PXSOL te lo avisa y te ofrece **Cancelar ese cobro y generar este**.
+    </Note>
+  </Step>
+</Steps>
+
+<Tip>
+¡Listo! Mercado Pago QR ya está conectado con PXSOL. Para cobrar, abre la reserva, entra en **Cobrar reserva** y elige **Mercado Pago QR**.
+</Tip>
