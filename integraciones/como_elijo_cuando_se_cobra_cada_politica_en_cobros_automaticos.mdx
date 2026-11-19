@@ -1,0 +1,115 @@
+---
+title: "¿Cómo elijo cuándo se cobra cada política en Cobros automáticos?"
+description: "Cómo revisar lo que Pay leyó de cada política de cancelación y guardar el plan que define cuánto y cuándo se cobra cada reserva en Cobros automáticos de PXSOL Pay."
+---
+
+En **Cobros automáticos** de PXSOL Pay, cada política de cancelación necesita un plan de cobro: define cuánto se cobra y cuándo, por ejemplo todo al reservar, o una parte al reservar y el resto antes de llegar. Pay, el asistente de PXSOL Pay, lee el texto de cada política y, cuando puede, te propone un plan, pero no guarda nada. Cada plan se guarda recién cuando abres la política, revisas su texto y presionas **Guardar plan**.
+
+<Note>
+Sin plan guardado no se programa ningún cobro para las reservas de esa política. El plan se aplica a las reservas nuevas y a las que entraron desde que activaste Cobros automáticos, si todavía no llegaron.
+</Note>
+
+<Steps>
+  <Step title="Ingresa a Planes por política">
+
+    En el menú del PMS, ingresa a **PXSOL Pay**. Selecciona **Cobros automáticos** y abre la pestaña **Planes por política**. El número de la pestaña muestra cuántas políticas ya tienen su plan guardado, incluidas las que se guardaron sin cobro automático. Las políticas **No disponible** no se cuentan.
+
+    Si en Cobros automáticos ves el aviso **Ninguna política tiene plan guardado** o **Hay políticas sin plan guardado**, presiona **Revisar planes** para ir directo a esta pestaña.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/28721572992ea64a4eadfe05a2d8d3f03a269e8d6d2.png" alt="Pestaña Planes por política con el resumen de Pay y una fila por política" />
+    </Frame>
+  </Step>
+
+  <Step title="Mira el estado de cada política">
+
+    Arriba, Pay resume lo que encontró, por ejemplo «Pay revisó sus 4 políticas: 1 configurada, 2 listas, 1 para revisar». Debajo hay una fila por política, con su estado:
+
+    | Estado | Qué significa |
+    | --- | --- |
+    | **Lista** | Pay dedujo el plan del texto de la política y el texto coincide con su configuración. Todavía no está guardado: revísalo y guárdalo. |
+    | **Para revisar** | Pay no pudo deducir cuándo cobrar, o propone un plan pero el texto y la configuración de la política no coinciden, o la política cambió después de guardar su plan. |
+    | **Configurada** | La política tiene un plan guardado. |
+    | **Sin cobro automático** | La política se guardó sin plan, por ejemplo con **Quitar plan**: sus reservas no se cobran solas. |
+    | **No disponible** | El texto dice que la tarifa se paga en cuotas, y el cobro automático es en un solo pago. |
+  </Step>
+
+  <Step title="Abre la política y revisa su texto">
+
+    Cada fila muestra en una línea el plan propuesto o guardado. Selecciona la fila de la política, o **Revisar y guardar** en una política **Lista**. Arriba aparece lo que Pay concluyó y **Ver el texto de la política**: ábrelo y comprueba que el plan coincida con lo que dice el texto. En las políticas **Lista**, el texto ya aparece abierto y el modelo que Pay propone ya está elegido.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/17950983120b7c9776cde4bf15bec357345d2889569.png" alt="Política Lista abierta, con el texto de la política y los seis modelos de cobro" />
+    </Frame>
+  </Step>
+
+  <Step title="Elige el modelo de cobro">
+
+    Elige uno de los seis modelos y completa lo que te pide:
+
+    | Modelo | Qué te pide |
+    | --- | --- |
+    | **Todo al reservar** | Nada más: se cobra el total apenas entra la reserva. |
+    | **Una parte al reservar y el resto antes de llegar** | El porcentaje que se cobra al reservar (de 1 a 99) y cuántos días antes de la llegada se cobra el resto (de 1 a 365). |
+    | **Todo unos días antes de llegar** | Cuántos días antes de la llegada se cobra el total (de 1 a 365). |
+    | **La primera noche al reservar y el resto al llegar** | Nada más. |
+    | **Todo al llegar** | Nada más: se cobra el total el día de llegada. |
+    | **Armar otro** | Hasta cuatro cobros. En el primero eliges cuánto (**Todo**, **Un porcentaje** o **La primera noche**) y cuándo (**Al reservar**, **Días antes de la llegada**, **Al llegar** o **Al irse**). Si el primero es un porcentaje, con **Agregar otro cobro** sumas otro. Salvo que el primero sea **Todo**, el último cobro es siempre **El resto**, y después de **La primera noche** solo puede seguir **El resto**. |
+  </Step>
+
+  <Step title="Revisa «Así se va a cobrar»">
+
+    Debajo de los modelos, **Así se va a cobrar** muestra el plan sobre una reserva de ejemplo de $ 100.000 y 4 noches: cuánto se cobra y cuándo. Si falta un dato o hay un error, el aviso aparece ahí mismo, por ejemplo «El porcentaje tiene que estar entre 1 y 99» o «Cada cobro tiene que ser después del anterior».
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/2692647469505016133a0c2e75fb4375234cca7e90c.png" alt="Así se va a cobrar, Si cancela o no se presenta, Qué hace Pay y el botón Guardar plan" />
+    </Frame>
+  </Step>
+
+  <Step title="Revisa qué pasa si el huésped cancela o no se presenta">
+
+    En **Si cancela o no se presenta** ves las reglas de cancelación de tu política. Esa parte no se cambia aquí: la define tu política en el PMS. En **Qué hace Pay** se explica cómo actúa ante una cancelación o un no-show:
+
+    - Cancela solo los cobros pendientes.
+    - Si corresponde una penalidad, la deja en **Requiere atención** para que la cobres o la descartes.
+    - Si ya se cobró de más, te avisa cuánto habría que devolver. Nunca devuelve dinero solo.
+  </Step>
+
+  <Step title="Guarda el plan">
+
+    Presiona **Guardar plan**. Aparece el mensaje «[nombre de la política]: plan guardado. Queda en Historial de cambios.» y la política pasa a **Configurada**. Si prefieres no guardar, presiona **Cancelar**: la fila se cierra sin cambios.
+
+    <Warning>
+    Los cobros ya programados mantienen su fecha. Si cambias el plan, al llegar esa fecha se hace el cobro que sigue igual, el que cambió pasa a **Requiere atención** y el que el plan ya no tiene se cancela. Si corriges la política, los cobros de ese plan programados antes de que vuelvas a guardarlo pasan a **Requiere atención** al llegar su fecha.
+    </Warning>
+  </Step>
+
+  <Step title="Corrige la política si el texto y la configuración no coinciden">
+
+    Cuando el texto de una política dice una cosa y su configuración otra, la fila muestra la diferencia, por ejemplo «El texto permite cancelar sin cargo hasta 72 horas antes, pero la configuración lo permite hasta 4 días antes.», y el botón **Corregir la política**. Al presionarlo se abre esa política en **Políticas**. Después de guardarla, al cerrar el editor vuelves a **Planes por política** y Pay la lee de nuevo. Si cierras el editor sin guardar, te quedas en **Políticas**: para volver, ingresa otra vez a **PXSOL Pay** > **Cobros automáticos** > **Planes por política**.
+
+    En una política **No disponible**, el botón se llama **Ir a la política**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/89754915703f211e599c2aba28708e1e4dd0d69969.png" alt="Política Para revisar con la diferencia entre el texto y la configuración y el botón Corregir la política" />
+    </Frame>
+  </Step>
+
+  <Step title="Quita un plan cuando ya no lo necesites">
+
+    Abre una política con plan guardado y presiona **Quitar plan**. Confirma con **Sí, quitar**. Las reservas nuevas dejan de programarse, los cobros pendientes del plan se cancelan al llegar su fecha y la política pasa a **Sin cobro automático**.
+  </Step>
+
+  <Step title="Pídele ayuda a Pay">
+
+    También puedes presionar **Preguntarle a Pay** y pedirle, por ejemplo, «Ayúdame a armar el plan de cobro de la política No reembolsable». Cuando Pay puede deducir el plan de la política, responde con un **Borrador del plan de cobro** y el botón **Abrir el plan**, que abre la fila de esa política con el borrador cargado. Si no puede, te pregunta qué cobrar y cuándo. Cierra la ventana de Pay para ver la fila completa. Nada se guarda hasta que lo revises y presiones **Guardar plan**.
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/16155884826803b797c033e03deaa24774561635cc9.png" alt="Respuesta de Pay con el Borrador del plan de cobro y el botón Abrir el plan" />
+    </Frame>
+  </Step>
+</Steps>
+
+<Tip>
+¡Listo! Con Cobros automáticos en **Activo**, las reservas de cada política se cobran según el plan que guardaste.
+</Tip>
