@@ -1,0 +1,89 @@
+---
+title: "Integración con Flexxus"
+description: "Alcance y funcionalidades de la integración entre Pxsol y el ERP Flexxus: envío automático de facturas y notas de crédito."
+---
+
+## ¿Qué es?
+
+La integración con Flexxus conecta Pxsol con tu sistema de gestión (ERP) Flexxus. Cada vez que emitís una factura o una nota de crédito en Pxsol, el comprobante se copia automáticamente a Flexxus, con su cliente y su forma de pago. Así evitás cargar dos veces la misma información.
+
+## ¿Cómo funciona?
+
+1. Facturás en Pxsol como siempre. El comprobante se emite ante ARCA desde Pxsol.
+2. Unos instantes después, Pxsol envía ese comprobante a Flexxus.
+3. El comprobante queda en Flexxus con el mismo tipo, número, fecha, cliente, importe y forma de pago.
+
+No tenés que hacer nada distinto al facturar: el envío es automático.
+
+## Alcance
+
+* **Países:** disponible para hoteles de Argentina.
+* **Comprobantes que se envían:** Facturas A, B y C, y Notas de Crédito A, B y C.
+* **Moneda:** comprobantes en pesos argentinos.
+* **Sentido:** la información viaja solo de Pxsol hacia Flexxus.
+* **Emisión fiscal:** la factura se sigue emitiendo en Pxsol. Flexxus la recibe ya emitida, con su CAE, y no vuelve a emitirla.
+* **Desde cuándo:** se envían los comprobantes emitidos a partir de la activación. Los anteriores no se migran.
+
+## Funcionalidades
+
+### Envío automático de facturas y notas de crédito
+
+Cada comprobante fiscal emitido en Pxsol se registra en Flexxus sin intervención manual, respetando el punto de venta y la numeración.
+
+### Clientes
+
+* Si el cliente ya existe en Flexxus (se busca por CUIT o DNI), el comprobante se asocia a ese cliente.
+* Si no existe, Pxsol lo da de alta en Flexxus con los datos del comprobante.
+* Los consumidores finales sin identificar se registran en un cliente genérico ("Consumidor Final") que se define al configurar la integración.
+
+### Formas de pago
+
+El comprobante llega a Flexxus con la forma de pago registrada en Pxsol:
+
+* **Efectivo.**
+* **Tarjeta de crédito o débito,** según la tarjeta con la que se cobró (Visa, Mastercard, American Express, Naranja, Cabal, Maestro, entre otras).
+* **Transferencia bancaria.**
+* **Cuenta corriente:** el comprobante se registra a cuenta corriente del cliente, sin cobro.
+
+Si un comprobante se cobró con más de un medio de pago, cada cobro viaja por separado.
+
+### Reintentos y control de duplicados
+
+* Si Flexxus no está disponible en el momento, Pxsol reintenta el envío automáticamente.
+* Antes de enviar, Pxsol verifica que el comprobante no exista ya en Flexxus, para no duplicarlo.
+* Si un comprobante no se pudo enviar, nuestro equipo de Soporte puede reenviarlo una vez corregido el motivo.
+
+## A tener en cuenta
+
+* **Detalle del comprobante:** llega a Flexxus como un único concepto por el total (por ejemplo, "Servicios de hotelería"), no con el detalle ítem por ítem.
+* **Notas de crédito:** se registran en Flexxus sin vincular a la factura original. El comprobante de origen queda indicado en los comentarios.
+* **Cobro al facturar:** registrá el cobro antes de emitir la factura o inmediatamente después. Si al momento del envío no hay un cobro cargado, se toma la forma de pago indicada en el comprobante y, si no hay ninguna, se registra como efectivo.
+* **Tipo de tarjeta:** al registrar un cobro con tarjeta, indicá cuál es. Si no se indica, el cobro se registra en Flexxus como Visa (o Visa Débito, si es con débito).
+* **Cuotas:** Pxsol no registra la cantidad de cuotas, por lo que los pagos con tarjeta se informan en un pago.
+* **Transferencias:** se registran en la cuenta bancaria en pesos definida para la integración.
+* **Medios de pago sin equivalencia:** si un medio de pago de Pxsol no tiene equivalente en Flexxus (por ejemplo, cheque), el comprobante se registra como efectivo.
+* **Moneda:** los comprobantes se registran en Flexxus en pesos. Si facturás en otra moneda, consultanos antes de activar la integración.
+* **Cambios posteriores:** si modificás el cobro en Pxsol después del envío, el cambio no se refleja en Flexxus.
+* **Documento del cliente:** cuando el cliente está identificado, cargá su CUIT o DNI correctamente. Sin documento, Flexxus rechaza el comprobante.
+* **Control de los envíos:** los comprobantes enviados se ven directamente en tu Flexxus. Si alguno no aparece, escribinos a Soporte: revisamos el motivo y lo reenviamos.
+
+## Qué no incluye
+
+* Notas de débito.
+* Comprobantes no fiscales (proformas, recibos, comprobantes internos) y otros tipos de factura distintos de A, B y C.
+* Conversión de comprobantes emitidos en moneda extranjera.
+* Sincronización desde Flexxus hacia Pxsol (clientes, artículos, precios o stock).
+* Envío de comprobantes anteriores a la activación.
+
+## Cómo se activa
+
+La habilitación y la configuración las realiza el equipo de Pxsol. Para hacerlo vamos a necesitar que nos pases, con ayuda de tu referente de Flexxus:
+
+* Los datos de acceso a tu Flexxus.
+* El depósito con el que se registran los comprobantes.
+* La equivalencia entre tus puntos de venta de Pxsol y los de Flexxus.
+* El cliente genérico para consumidores finales.
+* Los datos por defecto para dar de alta clientes nuevos (provincia, localidad y zona).
+* La cuenta bancaria en la que se registran las transferencias.
+
+Para solicitar la activación, o si un comprobante no aparece en Flexxus, escribinos a Soporte.
