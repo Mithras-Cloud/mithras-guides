@@ -9,7 +9,7 @@ Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuracionini
   <Step title="Abre el asistente y elige 'Link de pago' o 'QR'">
     En la tabla de medios de pago, pulsa **Crear**. El asistente te pregunta cómo paga el huésped y muestra las seis categorías disponibles.
 
-    **Link de pago** y **QR** son el mismo medio con dos presentaciones: en los dos cargas un link de cobro tuyo y el huésped lo recibe **al confirmar la reserva, no en el checkout**. Con Link de pago le llega el enlace para que pague desde cualquier dispositivo; con QR le mostramos un código que escanea con su celular.
+    **Link de pago** y **QR** son el mismo medio con dos presentaciones, y el huésped lo recibe **al confirmar la reserva, no en el checkout**. Con Link de pago le llega el enlace para que pague desde cualquier dispositivo; con QR le mostramos un código que escanea con su celular: la imagen del QR que te dio tu banco o billetera, o uno que dibujamos a partir de tu link.
 
     Elige el que quieras crear. El resto del asistente es idéntico en los dos, así que esta guía sirve para ambos.
 
@@ -34,16 +34,27 @@ Esta guía es parte de [¿Cómo gestionar los medios de pago?](/configuracionini
     </Frame>
   </Step>
 
-  <Step title="Carga el link de cobro">
-    Es el link que genera tu proveedor de cobros. La pregunta cambia de redacción según la categoría: en Link de pago dice **¿A qué link enviamos al huésped?** y en QR **¿Con qué link se genera el código QR?**. Se carga el mismo tipo de link y, en el QR, el sistema dibuja el código a partir de él.
-
-    Es obligatorio: sin el link el huésped no tiene nada que abrir para pagar. Si lo dejas vacío, el medio se le sigue ofreciendo pero al confirmar no recibe nada, y la tabla lo marca como **Sin URL**.
-
-    Una diferencia del QR que conviene tener presente: **el código no lleva el monto**. El huésped lo escanea e ingresa él mismo el importe de su reserva.
+  <Step title="Carga el link de cobro o la imagen del QR">
+    **En Link de pago** la pregunta es **¿A qué link enviamos al huésped?**: carga el link que genera tu proveedor de cobros. Es opcional: si lo dejas vacío, el medio se sigue ofreciendo, pero al confirmar el huésped no recibe ningún link y el pago se coordina directamente con el establecimiento.
 
     <Frame>
       <img src="https://files-public-web.s3-us-west-2.amazonaws.com/1978/video_screenshots/2026/09/22/screenshot_1790092460_3_6ab2a4acefe0e.jpg" alt="Campo de texto rotulado '¿A qué link enviamos al huésped?' con la URL 'link.com/test' ingresada." />
     </Frame>
+
+    **En QR** la pregunta es **¿Cómo le mostramos el código QR al huésped?** y tiene dos opciones:
+
+    - **Subo la imagen del QR**: la que te dio tu banco o billetera. Arrastra la imagen o haz clic para elegirla (PNG, JPG o WEBP, hasta 5 MB). Cuando termina de subir ves una miniatura con **Cambiar** y **Quitar**. El huésped la ve tal cual en la confirmación de la reserva, en el link de pago y en el correo. Es la opción que viene elegida en un QR nuevo.
+    - **Lo generamos con un link**: carga el link de cobro en **¿Con qué link se genera el código QR?** y el sistema dibuja el código a partir de él.
+
+    Si un QR tiene imagen y eliges **Lo generamos con un link**, al guardar se quita la imagen. La revisión lo avisa con «Se quita la imagen del QR».
+
+    <Frame>
+      <img src="https://files-public-web.s3.us-west-2.amazonaws.com/1978/company/library/user/10771148562524c065f254ec4a92ac00db40aeff121.png" alt="Pregunta '¿Cómo le mostramos el código QR al huésped?' con la opción 'Subo la imagen del QR' elegida y la miniatura de la imagen subida con los botones 'Cambiar' y 'Quitar'." />
+    </Frame>
+
+    <Note>
+      El código QR **no lleva el monto**: el huésped lo escanea e ingresa él mismo el importe de su reserva.
+    </Note>
   </Step>
 
   <Step title="Aplica un recargo o un descuento">
