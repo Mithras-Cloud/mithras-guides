@@ -490,7 +490,8 @@
               "pms/informes_nova_como_moverse_dentro_de_un_informe",
               "pms/informes_nova_columnas_filtros_periodo_y_valores",
               "pms/informes_nova_quien_puede_ver_cada_informe",
-              "pms/editar_reserva"
+              "pms/editar_reserva",
+              "pms/reservas_de_grupo"
             ]
           },
           {
