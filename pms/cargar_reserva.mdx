@@ -1,4 +1,6 @@
 ---
+title: Cargar reserva
+description: Guía de uso del nuevo Cargar reserva — el formulario para cargar una reserva a mano desde el plano de ocupación, la lista de reservas o el menú. Huésped, datos de la reserva, habitaciones, tarifas e impuestos del plan tarifario, day use, niños y bebés, períodos distintos por habitación, titular empresa o agencia, reserva de grupo con nombre, promociones y cargos del producto, mail de confirmación y la confirmación con el desglose antes de cargar.
 lang: es
 ---
 
@@ -17,6 +19,9 @@ lang: es
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#e0e7ff'}}>Campos configurables</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#e0e7ff'}}>Impuestos del plan tarifario</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#e0e7ff'}}>Confirmación con desglose</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#e0e7ff'}}>Titular empresa o agencia · NUEVO</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#e0e7ff'}}>Promociones y cargos · NUEVO</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#e0e7ff'}}>Mail de confirmación · NUEVO</span>
     </div>
   </div>
   <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Noviembre 2026</b></div>
@@ -139,6 +144,21 @@ Si el huésped ya estuvo en el hotel, no lo cargues de nuevo: usa **Buscar conta
 
 Al elegir un contacto se completan solos el nombre, el apellido, el email, el documento, el país, el teléfono y la provincia. El contacto queda en una tarjeta con una **X** para quitarlo, y quitarlo limpia los datos del huésped.
 
+El buscador también encuentra **empresas y agencias**. Cada resultado muestra su tipo con el color del PMS: **rojo persona**, **azul empresa** y **verde agencia**. Los contactos en lista negra llevan una calavera.
+
+### El titular es una empresa o agencia — NUEVO
+
+Para una reserva corporativa o de una agencia ya no hace falta inventar una persona titular: busca la **empresa o agencia** y elígela. La tarjeta dice **Titular empresa o agencia** y el formulario deja de pedir nombre y apellido:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{padding:'16px',background:'#f8fafc',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'12.5px',color:'#0f172a'}}><div style={{display:'flex',alignItems:'center',gap:'10px',border:'1px solid #bfdbfe',borderRadius:'10px',background:'#fff',padding:'8px 12px'}}><span style={{width:'26px',height:'26px',borderRadius:'50%',background:'#dbeafe',color:'#1d4ed8',display:'flex',alignItems:'center',justifyContent:'center'}}>🏢</span><div style={{flex:1}}><div style={{fontWeight:700}}>Viajes del Sur S.A.</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Titular empresa o agencia</div></div><span style={{color:'#64748b'}}>✕</span></div><div style={{fontSize:'11px',color:'#64748b',marginTop:'8px'}}>La reserva queda a nombre de la empresa o agencia, se le factura y no cuenta como huésped. Los huéspedes se cargan después en la reserva.</div></div>
+</div>
+
+- La reserva queda **a nombre de la empresa o agencia** y se le **factura** (Facturar a arranca con ella).
+- **No cuenta como huésped**: no ocupa lugar en ninguna habitación. Los huéspedes se cargan después, en la reserva.
+- En la ficha, la cabecera muestra su **razón social** con su ícono y color, y se puede cambiar el titular más adelante desde **Editar reserva** (guía **Editar reserva**).
+- Si la reserva además es de un grupo, prende **Reserva de grupo**: **Usar «razón social»** completa el nombre del grupo con un clic (sección 6).
+
 ### Cargar un huésped nuevo
 
 Si el buscador dice *"No encontramos contactos. Completá los datos para crear uno nuevo."*, completa los campos a mano: el contacto se crea al cargar la reserva.
@@ -171,8 +191,8 @@ Si el buscador dice *"No encontramos contactos. Completá los datos para crear u
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Idioma</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El idioma de la reserva, para los mails y la confirmación del huésped. Viene el de tu punto de venta.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Instancia</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nueva</b>, <b>Confirmada</b> o <b>Arribos</b>. Si el ingreso es hoy o antes, se propone <b>Arribos</b>; si es futuro, <b>Nueva</b>. Si la cambias a mano, se respeta.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Con <b>Plan tarifario</b> (la opción por defecto) la tarifa de cada noche se precarga del tarifario elegido, convertida a la moneda de la reserva; con <b>Manual</b> la escribes tú (sección 10). Con qué opción arranca lo elige tu hotel en <b>Campos de Cargar Reserva</b>. Los impuestos son siempre los del plan tarifario y, si no tiene, los del punto de venta, el establecimiento o la empresa. Con <b>Sumar impuestos a la tarifa</b> puedes elegir, en cada reserva, si se suman a la tarifa o ya están incluidos (sección 10).</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Facturar a</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Por defecto, el <b>huésped titular</b>. Para facturar a otra persona, a una empresa o a una agencia, quita al titular y búscala. El enlace <b>Facturar al huésped titular</b> lo vuelve atrás.</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Reserva de grupo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Un interruptor para marcarla como grupal.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Facturar a</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Por defecto, el <b>titular</b>. Para facturar a otra persona, a una empresa o a una agencia, quita al titular y búscala: el buscador muestra el tipo de cada contacto con su color. El enlace <b>Facturar al huésped titular</b> lo vuelve atrás. Si el mutador elegido tiene configurado a quién facturar, se usa ese contacto; si ese contacto ya no existe, se factura al titular.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Reserva de grupo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Un interruptor para marcarla como grupal. Al prenderlo aparece <b>Nombre del grupo</b> (opcional, hasta 150 caracteres): la reserva sale de grupo y con su nombre, que se ve en el plano, la ficha y la lista de reservas. Con un titular empresa o agencia, <b>Usar «razón social»</b> lo completa. Arranca siempre apagado. Todo sobre grupos: guía <b>Reservas de grupo</b>.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Código externo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El código de la reserva en otro sistema (una agencia, un channel manager).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Fecha de bloqueo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Hasta cuándo se mantiene la reserva, con su inventario bloqueado, si el huésped no paga ni la garantiza. Va de hoy hasta el ingreso; tiene un botón <b>Quitar</b>.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Notas de la reserva</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Comentarios internos para tu equipo. El huésped no los ve.</td></tr>
@@ -299,6 +319,18 @@ La barra del pie muestra la **Tarifa total** de la reserva, que se calcula sola:
 
 <div style={{border:'1px solid #bbf7d0',background:'#f0fdf4',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#14532d',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Atajo: escribe el total.</b> La <b>Tarifa total</b> también se puede editar. Si escribes un importe ahí, se reparte en partes iguales como tarifa diaria entre las habitaciones elegidas. Con varios períodos, se reparte entre todas las noches de todas las habitaciones. Es útil cuando le pasaste al huésped un precio cerrado por toda la estadía.</div>
 
+### Promociones y cargos del producto — NUEVO
+
+Si tu hotel los prendió en **Campos de Cargar Reserva** (vienen apagados), Cargar reserva aplica **las mismas promociones automáticas y cargos del producto que el motor de reservas**, según el plan tarifario, las fechas y la ocupación de cada habitación:
+
+- **Promociones automáticas.** Cada habitación muestra debajo de la tarifa, en **Promociones**, la que le corresponde con su descuento (en una promo de noches gratis, por ejemplo *"1 noche gratis"*), y se actualiza en vivo si cambias la tarifa, las fechas o los huéspedes. Con la tarifa del plan se aplica sola; si no la quieres, apaga **Aplicar promoción**. Con tarifa manual se aplica solo si prendes **Aplicar promoción**, y se recalcula sobre el precio que escribiste (una noche gratis vale lo que la tarifa que cargaste).
+- **Cargos del producto.** Limpieza, tasa municipal y los demás cargos configurados en **Cargos y extras** se suman solos, con cualquier tarifa, y se ven en cada habitación como *"Cargos: …"*.
+- **Promociones optativas.** Si el hotel ofrece adicionales en el motor (estacionamiento, late check-out, cena…) que aplican a las habitaciones elegidas, aparece el bloque **Promociones optativas** con su precio para esta estadía. Tilda las que pidió el huésped y, si la promoción lo permite, elige cuántas unidades con **+** y **−**. Nunca se aplican solas, y este bloque aparece aunque las promociones automáticas estén apagadas.
+
+Al cargar, todo queda en el presupuesto de la reserva con su detalle, igual que una reserva del motor, y **descuenta el cupo** de la promoción. La confirmación lo muestra línea por línea (sección 12).
+
+<div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#1e3a8a',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Las estadísticas de Promociones ahora separan los canales.</b> En la app <b>Promociones</b>, las estadísticas muestran por separado las ventas del <b>Motor</b> y las de <b>Otros canales (Cargar reserva, mostrador)</b>. El porcentaje de ventas del motor se calcula solo con las del motor.</div>
+
 ### Impuestos
 
 Los impuestos salen del **plan tarifario** elegido y, si el plan no los tiene, del **punto de venta**, el **establecimiento** o la **empresa**, en ese orden, igual que en el motor de reservas. De ahí sale también si la tarifa diaria **incluye** los impuestos o **no**:
@@ -337,7 +369,7 @@ El switch **Sumar impuestos a la tarifa** arranca como dice el plan, igual que e
 
 Puedes cambiarlo para esa reserva, con Tarifa **Plan tarifario** o con **Manual**: por ejemplo, apagarlo con un plan NET si la tarifa es el precio final, o prenderlo con un plan FINAL si la tarifa es sin impuestos. Se respeta lo que elijas: el switch queda marcado **Manual**, un aviso explica qué cambiaste y el total se recalcula al momento. Si eliges otro plan tarifario, el switch vuelve a lo que dice el plan nuevo.
 
-Tu hotel puede elegir con qué arranca el switch en **Campos de Cargar Reserva**, con la opción **Sumar impuestos a la tarifa**: **Según el plan** (de fábrica), **Siempre sumar** o **Siempre incluidos**. Por ejemplo, con **Siempre incluidos** el switch arranca apagado en todas las reservas aunque el plan sea NET, y la tarifa que cargas queda como precio final. Un aviso lo recuerda, y puedes cambiarlo igual en cada reserva.
+Tu hotel puede elegir con qué arranca el switch en **Campos de Cargar Reserva**, con la opción **Sumar impuestos a la tarifa**: **Según el plan** (de fábrica), **Prendido: se suman** o **Apagado: ya incluidos**. Por ejemplo, con **Apagado: ya incluidos** el switch arranca apagado en todas las reservas aunque el plan sea NET, y la tarifa que cargas queda como precio final. Un aviso lo recuerda, y puedes cambiarlo igual en cada reserva.
 
 Así se ve si apagas el switch con un plan NET porque tienes el precio final:
 
@@ -441,6 +473,16 @@ Antes de cargarla se abre **Revisa la reserva antes de cargarla**, con qué impu
 
 En este ejemplo el plan es NET y se escribió 135.000: si 135.000 era el precio final, toca **Volver a revisar**, apaga **Sumar impuestos a la tarifa** y el total queda en 135.000.
 
+Con promociones o cargos, el desglose los muestra antes de los impuestos: **Tarifa**, **Promoción aplicada: nombre** (en verde, restando), **Cargo: nombre** y **Subtotal sin impuestos**. Las promociones optativas elegidas también se listan.
+
+### Mail de confirmación — NUEVO
+
+En la misma confirmación está el interruptor **Enviar mail de confirmación al cliente**. Si lo prendes, al cargar la reserva el huésped recibe el mail de confirmación:
+
+- Con la **plantilla del mutador** elegido en la reserva. Si el mutador no tiene plantilla, con la del **punto de venta**.
+- Si el huésped no tiene email cargado, el interruptor lo avisa: *"El huésped no tiene email cargado."*
+- Arranca **apagado**. Si tu hotel quiere mandarlo siempre, puede hacer que arranque prendido desde **Campos de Cargar Reserva → Mail de confirmación al cliente**. Recepción lo puede cambiar en cada reserva.
+
 ### Si falta algo
 
 La reserva no se carga: aparece un aviso con lo primero que falta y el campo queda marcado en rojo.
@@ -498,7 +540,9 @@ El formulario se adapta a cada hotel desde **Configuración → Campos de Cargar
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Hacer obligatorio</b> un campo</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Exigir el email o el documento: la reserva no se carga sin ellos.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Pedir niños y bebés</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Separar adultos, niños y bebés en cada habitación (sección 9). Vienen apagados.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Elegir con qué Tarifa arranca</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Plan tarifario</b> (de fábrica) o <b>Manual</b> (sección 10).</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Elegir con qué arranca Sumar impuestos a la tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Según el plan</b> (de fábrica), <b>Siempre sumar</b> o <b>Siempre incluidos</b>, para los hoteles que siempre cargan el precio final (sección 10).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Elegir con qué arranca Sumar impuestos a la tarifa</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Según el plan</b> (de fábrica), <b>Prendido: se suman</b> o <b>Apagado: ya incluidos</b>, para los hoteles que siempre cargan el precio final (sección 10).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Aplicar promociones y cargos</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Promociones automáticas</b> (No aplicar / Con la tarifa del plan) y <b>Cargos del producto</b> (No aplicar / Aplicar). Vienen apagados (sección 10).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Mandar el mail de confirmación de fábrica</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Mail de confirmación al cliente</b>: Apagado (de fábrica) o Prendido (sección 12).</td></tr>
   </tbody>
 </table>
 
@@ -526,7 +570,19 @@ No. Carga una sola reserva con dos períodos: uno por habitación (sección 11).
 Porque la Tarifa está en **Manual**, porque la habitación no tiene categoría, o porque no hay tarifa del plan para esa habitación (al elegirla, el formulario dice por qué): escribe el precio acordado con el huésped. También puedes escribir la Tarifa total y se reparte entre las habitaciones (sección 10).
 
 **¿De dónde sale la tarifa diaria que aparece sola?**
-Del plan tarifario elegido, para la categoría, las fechas y los huéspedes de esa habitación (sin promociones), convertida a la moneda de la reserva. Si la cambias a mano, se carga con tu precio.
+Del plan tarifario elegido, para la categoría, las fechas y los huéspedes de esa habitación, convertida a la moneda de la reserva. Las promociones y los cargos se muestran aparte, debajo de la tarifa, si tu hotel los prendió (sección 10). Si la cambias a mano, se carga con tu precio.
+
+**No veo las promociones ni los cargos que tengo en el motor.**
+Vienen apagados. Un administrador los prende en **Campos de Cargar Reserva**, tarjeta Habitaciones: **Promociones automáticas** en *Con la tarifa del plan* y **Cargos del producto** en *Aplicar*. Las promociones optativas se ven siempre que haya alguna que aplique.
+
+**Escribí la tarifa a mano y no se aplicó la promoción.**
+Con tarifa manual la promoción se aplica solo si prendes **Aplicar promoción** en la habitación; se recalcula sobre tu precio.
+
+**¿La reserva le llega al huésped por mail?**
+Solo si prendes **Enviar mail de confirmación al cliente** en la confirmación. Sale con la plantilla del mutador o, si no tiene, la del punto de venta.
+
+**La reserva es de una empresa, ¿qué pongo en nombre y apellido?**
+Nada: busca la empresa o agencia en el buscador del huésped y elígela. Queda de titular, se le factura y no cuenta como huésped (sección 5).
 
 **¿La tarifa que escribo incluye los impuestos?**
 Depende del plan tarifario: si es **NET**, la tarifa es sin impuestos y se le suma el IVA; si es **FINAL**, ya los incluye. Vale también con Tarifa **Manual**, igual que en el motor de reservas, salvo que cambies **Sumar impuestos a la tarifa** para esa reserva. El formulario dice qué impuesto se aplica, y el desglose del **Total con impuestos** en la barra del pie muestra cómo se va a cargar (sección 10).
@@ -544,7 +600,7 @@ Sí. Con **Plan tarifario** o con **Manual**, el switch arranca como dice el pla
 Es así a propósito: al elegir otro plan, el switch vuelve a lo que dice el plan nuevo. Si lo necesitas distinto, cámbialo otra vez.
 
 **¿Qué hago si tengo que vender siempre con el precio final?**
-Pídele a un administrador del hotel que, en **Campos de Cargar Reserva**, ponga **Sumar impuestos a la tarifa** en **Siempre incluidos**. Así el switch arranca apagado en todas las reservas y la tarifa que cargas queda con los impuestos incluidos, sin tocar el plan tarifario ni el motor de reservas.
+Pídele a un administrador del hotel que, en **Campos de Cargar Reserva**, ponga **Sumar impuestos a la tarifa** en **Apagado: ya incluidos**. Así el switch arranca apagado en todas las reservas y la tarifa que cargas queda con los impuestos incluidos, sin tocar el plan tarifario ni el motor de reservas.
 
 **¿Por qué viene elegido ese tarifario?**
 Es el tarifario maestro de tu establecimiento, el que se configura en Establecimientos. Puedes elegir otro.
