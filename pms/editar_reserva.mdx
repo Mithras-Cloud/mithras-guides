@@ -8,7 +8,7 @@ lang: es
   <div style={{background:'linear-gradient(135deg,#052e16,#14532d 60%,#15803d)',color:'#fff',padding:'46px 40px'}}>
     <div style={{fontSize:'12px',letterSpacing:'.18em',textTransform:'uppercase',color:'#86efac',fontWeight:700}}>Mithras · Guía de uso</div>
     <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Editar reserva</div>
-    <div style={{fontSize:'16px',color:'#dcfce7',maxWidth:'600px'}}>Corrige una reserva ya cargada sin tocar lo que no cambiaste: el contacto, el titular, el grupo, el plan tarifario o la política. Solo se guarda lo que modificas.</div>
+    <div style={{fontSize:'16px',color:'#dcfce7',maxWidth:'600px'}}>Corrige una reserva ya cargada sin tocar lo que no cambiaste: el email del titular, el titular, el grupo, el plan tarifario o la política. Solo se guarda lo que modificas.</div>
     <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Solo guarda lo que cambias</span>
       <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Cambiar titular</span>
@@ -42,14 +42,14 @@ lang: es
 
 ## 1. Qué es y qué cambió
 
-**Editar reserva** es la ventana para corregir los datos de una reserva que ya está cargada: el email que se escribió mal, el teléfono, el titular, el origen, el grupo, el plan tarifario o la política de cancelación.
+**Editar reserva** es la ventana para corregir los datos de una reserva que ya está cargada: el email que se escribió mal, el titular, el origen, el grupo, el plan tarifario o la política de cancelación.
 
 Reemplaza a la edición anterior del PMS. Lo más importante que cambia:
 
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Antes</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Ahora</th></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Guardar volvía a calcular los importes y marcaba la reserva como editada, aunque solo hubieras corregido un mail.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Solo se guarda lo que cambias.</b> Corregir un dato de contacto no toca importes, folios ni la ocupación.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Guardar volvía a calcular los importes aunque solo hubieras corregido un mail.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Solo se guarda lo que cambias.</b> Corregir el email del titular no toca importes, folios ni la ocupación.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Para cambiar el plan tarifario o la política había que volver a presupuestar.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se cambian desde la tarjeta <b>Plan tarifario y política</b>, y tú eliges si se aplican las tarifas nuevas o se mantienen las actuales (sección 9).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El titular tenía que ser una persona.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Puede ser una <b>persona, una empresa o una agencia</b>, y se cambia con un clic desde <b>Cambiar</b> (sección 6).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Una reserva de grupo era solo un sí/no.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Tiene <b>nombre del grupo</b>, <b>color</b> en el plano y puedes elegir qué nombre muestra el plano (sección 8).</td></tr>
@@ -120,7 +120,7 @@ Se abre en una ventana lateral llamada **Editar reserva**, con la reserva ya car
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Parte</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué tiene</th></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Titular</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Quién es el titular, el botón <b>Cambiar</b> y sus datos de contacto (secciones 5 y 6).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Titular</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Quién es el titular, el botón <b>Cambiar</b> y su email (secciones 5 y 6).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Reserva</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Saldo, código externo, tipo de reserva y grupo, fechas, huéspedes, origen y el resto de los datos (secciones 7 y 8).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Plan tarifario y política</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El plan tarifario y la política de cancelación de la reserva (sección 9).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Barra del pie</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Al guardar se actualiza:</b> la lista de lo que cambiaste, y el botón <b>Guardar cambios</b> (sección 10).</td></tr>
@@ -139,18 +139,18 @@ Arriba de la tarjeta se ve **quién es el titular**, con un ícono y un color se
   <div style={{border:'1px solid #bbf7d0',borderRadius:'12px',overflow:'hidden',background:'#fff'}}><div style={{padding:'8px 12px',background:'#dcfce7',fontSize:'11px',fontWeight:800,color:'#15803d',letterSpacing:'.04em',textTransform:'uppercase'}}>Agencia</div><div style={{padding:'12px',fontSize:'12px',color:'#0f172a'}}>Se ve su <b>razón social</b>. No se piden nombre ni apellido.</div></div>
 </div>
 
-Debajo están los datos de contacto de la reserva:
+Debajo está el email al que va la comunicación de la reserva, y sus copias:
 
 <table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
   <tbody>
     <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Campo</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué es</th></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Saludo, Nombre y Apellido</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si el titular está vinculado a un contacto, el nombre y el apellido se editan desde su ficha de contacto. Si es una empresa o agencia, no aparecen: la razón social se edita desde su ficha.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Email principal</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>A donde llegan los correos de la reserva.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>CC</b> <span style={{color:'#64748b'}}>(?)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Copia visible: los correos de la reserva también le llegan a esta dirección, y el huésped ve que se le envió. Se suma desde <b>Agregar:</b>.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>CCO</b> <span style={{color:'#64748b'}}>(?)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Copia oculta: los correos también le llegan, pero nadie más lo ve. Útil para la agencia o el área comercial.</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Teléfono y País</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Para contactarlo. El país se busca en una lista.</td></tr>
   </tbody>
 </table>
+
+El nombre, el teléfono y el país del titular son datos del contacto, no de la reserva: se cambian desde su ficha de contacto (botón **Ver** del titular, en la ficha de la reserva) y valen para todas sus reservas. Desde acá, del titular solo se corrige el email o se cambia el titular completo (sección 6).
 
 ---
 
@@ -189,7 +189,7 @@ Si el titular que sale **ya hizo check-in**, antes de cambiarlo aparece el aviso
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>¿Qué tipo de reserva es?</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Individual</b> (una persona o una familia) o <b>De grupo</b>. De grupo suma el nombre, el color y el nombre en el plano (sección 8).</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Fechas y distribución de huéspedes</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo mientras la reserva no tiene habitaciones asignadas. Con habitaciones, se editan desde <b>Habitaciones y huéspedes</b>, habitación por habitación. Una consulta presupuestada cambia de fechas con un presupuesto nuevo.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Idioma</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El de los mails y la confirmación del huésped.</td></tr>
-    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Mutadores</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El origen de la reserva (antes se llamaba Etiqueta).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Mutadores</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El origen de la reserva.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Punto de venta</b> y <b>Establecimiento</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Dónde se vendió y en qué establecimiento está. <b>Cambiar el establecimiento recalcula los importes</b>: el resumen lo avisa antes de guardar.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Fecha límite de bloqueo</b> <span style={{color:'#64748b'}}>(?)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Hasta esa fecha la reserva sigue activa y con las habitaciones bloqueadas aunque el huésped no haya pagado ni dado una garantía. Si llega sin pago ni garantía, vence y libera el inventario. Tiene <b>Quitar</b>.</td></tr>
     <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Late check-out</b> y <b>Tax Free</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Interruptores. Late check-out se ve sin habitaciones asignadas; con habitaciones, va en cada habitación. Tax Free muestra el desglose en Pagos y Facturación.</td></tr>
@@ -248,8 +248,8 @@ La barra del pie lista **qué se va a guardar** a medida que editas. Si no cambi
 
 Al tocar **Guardar cambios** aparece *"Los cambios se guardaron correctamente"* y:
 
-- Se guardan **solo los campos que cambiaste**. Corregir un mail, el teléfono, la fecha límite u otro dato de contacto **no recalcula importes** ni saca la reserva del pase automático de preventa a venta.
-- La reserva se marca como **editada** solo si cambió la estadía.
+- Se guardan **solo los campos que cambiaste**. Corregir el email, la fecha límite o las copias **no recalcula importes** ni saca la reserva del pase automático de preventa a venta.
+- Cada cambio queda en el historial de la reserva con el usuario que lo hizo.
 - La ocupación se actualiza solo si cambiaste el titular o los huéspedes.
 - **El plano, la cabecera y la lista de reservas se actualizan solos**, también en las pantallas que tu equipo tiene abiertas.
 
