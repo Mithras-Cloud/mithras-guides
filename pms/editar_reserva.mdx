@@ -1,0 +1,307 @@
+---
+title: Editar reserva
+description: Guía de uso del nuevo Editar reserva — la ventana para corregir los datos de una reserva ya cargada desde Apex o desde el lápiz del PMS. Titular y contacto, cambio de titular (persona, empresa o agencia), tipo de reserva y nombre del grupo, nombre en el plano, código externo, saldo a la vista, plan tarifario y política sin volver a presupuestar, y qué se guarda (solo lo que cambias).
+lang: es
+---
+
+<div style={{borderRadius:'20px',overflow:'hidden',border:'1px solid #e2e8f0',background:'#fff',boxShadow:'0 20px 60px rgba(15,23,42,.12)',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',margin:'0 0 24px'}}>
+  <div style={{background:'linear-gradient(135deg,#052e16,#14532d 60%,#15803d)',color:'#fff',padding:'46px 40px'}}>
+    <div style={{fontSize:'12px',letterSpacing:'.18em',textTransform:'uppercase',color:'#86efac',fontWeight:700}}>Mithras · Guía de uso</div>
+    <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Editar reserva</div>
+    <div style={{fontSize:'16px',color:'#dcfce7',maxWidth:'600px'}}>Corrige una reserva ya cargada sin tocar lo que no cambiaste: el contacto, el titular, el grupo, el plan tarifario o la política. Solo se guarda lo que modificas.</div>
+    <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Solo guarda lo que cambias</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Cambiar titular</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Persona, empresa o agencia</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Nombre y color del grupo</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Plan tarifario y política</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Saldo a la vista</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#dcfce7'}}>Código externo</span>
+    </div>
+  </div>
+  <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Noviembre 2026</b></div>
+</div>
+
+## Contenido
+
+1. Qué es y qué cambió
+2. Qué necesita tu establecimiento
+3. Cómo abrirlo
+4. La ventana
+5. Titular y contacto
+6. Cambiar el titular
+7. Datos de la reserva
+8. Reserva de grupo: nombre, color y nombre en el plano
+9. Plan tarifario y política, sin volver a presupuestar
+10. Guardar: qué se actualiza
+11. Saldo pendiente al hacer check-out
+12. Lo que no se edita acá
+13. Preguntas frecuentes
+
+---
+
+## 1. Qué es y qué cambió
+
+**Editar reserva** es la ventana para corregir los datos de una reserva que ya está cargada: el email que se escribió mal, el teléfono, el titular, el origen, el grupo, el plan tarifario o la política de cancelación.
+
+Reemplaza a la edición anterior del PMS. Lo más importante que cambia:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Antes</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Ahora</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Guardar volvía a calcular los importes y marcaba la reserva como editada, aunque solo hubieras corregido un mail.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Solo se guarda lo que cambias.</b> Corregir un dato de contacto no toca importes, folios ni la ocupación.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Para cambiar el plan tarifario o la política había que volver a presupuestar.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se cambian desde la tarjeta <b>Plan tarifario y política</b>, y tú eliges si se aplican las tarifas nuevas o se mantienen las actuales (sección 9).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El titular tenía que ser una persona.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Puede ser una <b>persona, una empresa o una agencia</b>, y se cambia con un clic desde <b>Cambiar</b> (sección 6).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Una reserva de grupo era solo un sí/no.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Tiene <b>nombre del grupo</b>, <b>color</b> en el plano y puedes elegir qué nombre muestra el plano (sección 8).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Para ver cuánto debía la reserva había que ir a Pagos.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La ventana muestra el <b>total, lo cobrado y el saldo pendiente</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El código externo no se podía corregir.</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se edita en la tarjeta <b>Reserva</b>.</td></tr>
+  </tbody>
+</table>
+
+Tiene el mismo formato que **Cargar reserva**: tarjetas, un **?** con la explicación de los campos que generan dudas (CC, CCO, fecha límite) y una barra fija al pie con el resumen de lo que se va a guardar.
+
+---
+
+## 2. Qué necesita tu establecimiento
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Desde</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué edición se abre</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Apex</b> (ficha de la reserva)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Siempre el nuevo Editar reserva.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>PMS</b> (lápiz de la reserva)</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El nuevo Editar reserva si tienes activa la vista <b>Habitaciones y huéspedes</b> (Reservas v2). Si no, sigue abriendo la edición anterior.</td></tr>
+  </tbody>
+</table>
+
+<div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#1e3a8a',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Habitaciones y huéspedes ahora es por usuario.</b> El interruptor está en la cabecera de la reserva: cada usuario elige si trabaja con la vista nueva o vuelve a las pestañas Ocupación, Huéspedes y Folio, sin cambiarle la vista al resto del equipo. Si un usuario no eligió nada, vale lo que tenga configurado la empresa.</div>
+
+Quién puede editar no cambia: lo sigue decidiendo el permiso de edición de reservas de cada usuario.
+
+---
+
+## 3. Cómo abrirlo
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Dónde</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cómo</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Ficha de la reserva en Apex</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Botón <b>Editar</b> de la barra de acciones.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Reserva en el PMS</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El <b>lápiz</b> de la reserva (con Habitaciones y huéspedes activo).</td></tr>
+  </tbody>
+</table>
+
+Se abre en una ventana lateral llamada **Editar reserva**, con la reserva ya cargada. Arriba dice: *"Cambia los datos de la reserva. Solo se guarda lo que modifiques."*
+
+---
+
+## 4. La ventana
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'30px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{width:'9px',height:'9px',borderRadius:'50%',background:'#cbd5e1',display:'inline-block'}}></span><span style={{marginLeft:'10px',fontSize:'11.5px',fontWeight:700,color:'#334155'}}>Editar reserva</span></div>
+  <div style={{padding:'16px',background:'#f8fafc',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'12.5px',color:'#0f172a',display:'flex',flexDirection:'column',gap:'10px'}}>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',overflow:'hidden'}}>
+      <div style={{display:'flex',gap:'10px',alignItems:'center',padding:'11px 14px',borderBottom:'1px solid #e2e8f0'}}><span style={{width:'28px',height:'28px',borderRadius:'8px',background:'#dbeafe',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'13px',flex:'none'}}>👤</span><div><div style={{fontSize:'12.5px',fontWeight:700}}>Titular</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Quién hizo la reserva y cómo contactarlo.</div></div></div>
+      <div style={{padding:'12px 14px',display:'flex',alignItems:'center',gap:'10px'}}><span style={{width:'26px',height:'26px',borderRadius:'50%',background:'#dbeafe',color:'#1d4ed8',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'12px'}}>🏢</span><div style={{flex:1}}><div style={{fontWeight:700}}>Viajes del Sur S.A.</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Empresa</div></div><span style={{fontSize:'11.5px',fontWeight:600,padding:'5px 11px',borderRadius:'8px',border:'1px solid #e2e8f0'}}>Cambiar</span></div>
+    </div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',overflow:'hidden'}}>
+      <div style={{display:'flex',gap:'10px',alignItems:'center',padding:'11px 14px',borderBottom:'1px solid #e2e8f0'}}><span style={{width:'28px',height:'28px',borderRadius:'8px',background:'#e0e7ff',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'13px',flex:'none'}}>📅</span><div><div style={{fontSize:'12.5px',fontWeight:700}}>Reserva</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Fechas, huéspedes y de dónde vino.</div></div></div>
+      <div style={{padding:'12px 14px',display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'8px'}}>
+        <div style={{border:'1px solid #e2e8f0',borderRadius:'8px',padding:'7px 9px'}}><div style={{fontSize:'10px',color:'#64748b'}}>Total</div><div style={{fontWeight:700}}>ARS 840.000</div></div>
+        <div style={{border:'1px solid #e2e8f0',borderRadius:'8px',padding:'7px 9px'}}><div style={{fontSize:'10px',color:'#64748b'}}>Cobrado</div><div style={{fontWeight:700}}>ARS 300.000</div></div>
+        <div style={{border:'1px solid #fecaca',background:'#fef2f2',borderRadius:'8px',padding:'7px 9px'}}><div style={{fontSize:'10px',color:'#b91c1c'}}>Saldo pendiente</div><div style={{fontWeight:700,color:'#b91c1c'}}>ARS 540.000</div></div>
+      </div>
+    </div>
+    <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',overflow:'hidden'}}>
+      <div style={{display:'flex',gap:'10px',alignItems:'center',padding:'11px 14px'}}><span style={{width:'28px',height:'28px',borderRadius:'8px',background:'#dcfce7',display:'flex',alignItems:'center',justifyContent:'center',fontSize:'13px',flex:'none'}}>🏷️</span><div><div style={{fontSize:'12.5px',fontWeight:700}}>Plan tarifario y política</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Cambia el plan o la política sin volver a presupuestar.</div></div></div>
+    </div>
+    <div style={{display:'flex',alignItems:'center',justifyContent:'space-between',gap:'10px',border:'1px solid #e2e8f0',borderRadius:'12px',background:'#fff',padding:'10px 14px',boxShadow:'0 8px 24px rgba(15,23,42,.08)'}}><div style={{fontSize:'11px',color:'#64748b'}}>Al guardar se actualiza: <b style={{color:'#0f172a'}}>Email principal, Mutadores</b></div><span style={{background:'#0f172a',color:'#fff',borderRadius:'8px',padding:'7px 13px',fontSize:'12px',fontWeight:600,whiteSpace:'nowrap'}}>Guardar cambios</span></div>
+  </div>
+</div>
+*Tres tarjetas y la barra fija al pie con el resumen de lo que se va a guardar.*
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Parte</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué tiene</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Titular</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Quién es el titular, el botón <b>Cambiar</b> y sus datos de contacto (secciones 5 y 6).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Reserva</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Saldo, código externo, tipo de reserva y grupo, fechas, huéspedes, origen y el resto de los datos (secciones 7 y 8).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Plan tarifario y política</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El plan tarifario y la política de cancelación de la reserva (sección 9).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Barra del pie</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Al guardar se actualiza:</b> la lista de lo que cambiaste, y el botón <b>Guardar cambios</b> (sección 10).</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 5. Titular y contacto
+
+Arriba de la tarjeta se ve **quién es el titular**, con un ícono y un color según el tipo, los mismos del PMS:
+
+<div style={{display:'grid',gridTemplateColumns:'repeat(3,1fr)',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #fecaca',borderRadius:'12px',overflow:'hidden',background:'#fff'}}><div style={{padding:'8px 12px',background:'#fee2e2',fontSize:'11px',fontWeight:800,color:'#b91c1c',letterSpacing:'.04em',textTransform:'uppercase'}}>Persona</div><div style={{padding:'12px',fontSize:'12px',color:'#0f172a'}}>Un huésped. Se ve su nombre y apellido.</div></div>
+  <div style={{border:'1px solid #bfdbfe',borderRadius:'12px',overflow:'hidden',background:'#fff'}}><div style={{padding:'8px 12px',background:'#dbeafe',fontSize:'11px',fontWeight:800,color:'#1d4ed8',letterSpacing:'.04em',textTransform:'uppercase'}}>Empresa</div><div style={{padding:'12px',fontSize:'12px',color:'#0f172a'}}>Se ve su <b>razón social</b>. No se piden nombre ni apellido.</div></div>
+  <div style={{border:'1px solid #bbf7d0',borderRadius:'12px',overflow:'hidden',background:'#fff'}}><div style={{padding:'8px 12px',background:'#dcfce7',fontSize:'11px',fontWeight:800,color:'#15803d',letterSpacing:'.04em',textTransform:'uppercase'}}>Agencia</div><div style={{padding:'12px',fontSize:'12px',color:'#0f172a'}}>Se ve su <b>razón social</b>. No se piden nombre ni apellido.</div></div>
+</div>
+
+Debajo están los datos de contacto de la reserva:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Campo</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué es</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Saludo, Nombre y Apellido</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Si el titular está vinculado a un contacto, el nombre y el apellido se editan desde su ficha de contacto. Si es una empresa o agencia, no aparecen: la razón social se edita desde su ficha.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Email principal</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>A donde llegan los correos de la reserva.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>CC</b> <span style={{color:'#64748b'}}>(?)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Copia visible: los correos de la reserva también le llegan a esta dirección, y el huésped ve que se le envió. Se suma desde <b>Agregar:</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>CCO</b> <span style={{color:'#64748b'}}>(?)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Copia oculta: los correos también le llegan, pero nadie más lo ve. Útil para la agencia o el área comercial.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Teléfono y País</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Para contactarlo. El país se busca en una lista.</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 6. Cambiar el titular
+
+Toca **Cambiar**, junto al titular. Se abre el buscador de contactos: busca a la persona, empresa o agencia, o crea una nueva eligiendo su tipo. El cambio **se guarda en el momento**.
+
+<div style={{border:'1px solid #fde68a',background:'#fffbeb',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#78350f',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Primero guarda o descarta.</b> Si cambiaste otros campos y todavía no guardaste, Cambiar te pide: <i>"Guarda o descarta los cambios antes de cambiar el titular."</i></div>
+
+Qué pasa según a quién elijas:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Eliges</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué pasa</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Una empresa o agencia</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Queda de titular <b>sin sumarse a los huéspedes</b> y se vincula en el campo Empresa o Agencia de la reserva. De una empresa a otra, se reemplaza; de empresa a agencia, quedan las dos vinculadas. Los huéspedes que ya estaban siguen igual.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Alguien que ya está en la reserva</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Se <b>intercambian</b>: el elegido pasa a titular y el titular anterior sigue como huésped.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Una persona nueva</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Reemplaza a la persona titular y entra <b>sin check-in ni datos del viaje</b>: no hereda los del que sale.</td></tr>
+  </tbody>
+</table>
+
+Si el titular que sale **ya hizo check-in**, antes de cambiarlo aparece el aviso **"El titular ya hizo check-in"**: *"… sale de la reserva y se borra su check-in. Quien entra lo hace sin check-in ni datos del viaje."* Confirma solo si es lo que quieres.
+
+**Facturar a** pasa al titular nuevo, salvo que alguien lo haya cambiado a mano antes: en ese caso se respeta.
+
+<div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#1e3a8a',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Las mismas reglas en todos lados.</b> <b>Cambiar</b> de la cabecera de la ficha, <b>Cambiar huésped</b> de la pestaña Huéspedes y el cambio de titular del PMS hacen exactamente lo mismo. En el PMS, primero pregunta si el nuevo titular ya es contacto de la reserva y muestra los huéspedes, la empresa y la agencia en tarjetas de colores (rojo persona, azul empresa, verde agencia).</div>
+
+---
+
+## 7. Datos de la reserva
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Campo</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué es</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Total · Cobrado · Saldo pendiente</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Los mismos importes de la cabecera de la reserva. El saldo pendiente va resaltado; si no hay, dice <b>Sin saldo pendiente</b>. Son de lectura: se cobran desde Pagos.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Código externo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El número de la reserva en el canal o en el sistema de la agencia.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>¿Qué tipo de reserva es?</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Individual</b> (una persona o una familia) o <b>De grupo</b>. De grupo suma el nombre, el color y el nombre en el plano (sección 8).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Fechas y distribución de huéspedes</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Solo mientras la reserva no tiene habitaciones asignadas. Con habitaciones, se editan desde <b>Habitaciones y huéspedes</b>, habitación por habitación. Una consulta presupuestada cambia de fechas con un presupuesto nuevo.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Idioma</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El de los mails y la confirmación del huésped.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Mutadores</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El origen de la reserva (antes se llamaba Etiqueta).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Punto de venta</b> y <b>Establecimiento</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Dónde se vendió y en qué establecimiento está. <b>Cambiar el establecimiento recalcula los importes</b>: el resumen lo avisa antes de guardar.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Fecha límite de bloqueo</b> <span style={{color:'#64748b'}}>(?)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Hasta esa fecha la reserva sigue activa y con las habitaciones bloqueadas aunque el huésped no haya pagado ni dado una garantía. Si llega sin pago ni garantía, vence y libera el inventario. Tiene <b>Quitar</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Late check-out</b> y <b>Tax Free</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Interruptores. Late check-out se ve sin habitaciones asignadas; con habitaciones, va en cada habitación. Tax Free muestra el desglose en Pagos y Facturación.</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 8. Reserva de grupo: nombre, color y nombre en el plano
+
+Con **De grupo** elegido aparecen tres campos. Están explicados en detalle en la guía **Reservas de grupo**.
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Campo</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué es</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nombre del grupo</b> <span style={{color:'#64748b'}}>(opcional)</span></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Por ejemplo, <i>Contingente Colegio San José</i>. Si el titular es una empresa o agencia, <b>Usar «razón social»</b> lo completa con un clic.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Color del grupo en el plano</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Automático</b> (la «A») o uno de los 20 colores. El badge GRP toma ese color en todas las reservas del grupo.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nombre en el plano</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Qué nombre muestra la pastilla de esta reserva: <b>Automático: nombre del grupo</b>, <b>Según la configuración del plano</b>, <b>Titular</b> o <b>Huésped de la habitación</b>. Lo que elijas acá le gana a la configuración del plano.</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 9. Plan tarifario y política, sin volver a presupuestar
+
+La tarjeta **Plan tarifario y política** tiene dos campos: **Plan tarifario** y **Política de cancelación**.
+
+**Para cambiar solo la política**, elige otra y guarda. La política nueva es la que usan la cancelación gratuita y el cobro con penalidad, y se recalcula hasta cuándo se puede cancelar sin cargo.
+
+**Al cambiar el plan tarifario**, se carga la política del plan nuevo (*"Se cargó la política del plan nuevo. Podés elegir otra."*) y, si la reserva tiene habitaciones, aparece la pregunta **¿Qué hacemos con las tarifas?**:
+
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px',margin:'14px 0',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <div style={{border:'1px solid #bbf7d0',borderRadius:'12px',overflow:'hidden',background:'#fff'}}><div style={{padding:'8px 12px',background:'#f0fdf4',fontSize:'11px',fontWeight:800,color:'#15803d',letterSpacing:'.04em',textTransform:'uppercase'}}>Aplicar las tarifas del plan nuevo</div><div style={{padding:'12px',fontSize:'12px',color:'#0f172a'}}>Se recalculan las noches <b>de hoy en adelante</b>. Las que ya pasaron conservan su precio.</div></div>
+  <div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff'}}><div style={{padding:'8px 12px',background:'#f8fafc',fontSize:'11px',fontWeight:800,color:'#334155',letterSpacing:'.04em',textTransform:'uppercase'}}>Mantener las tarifas actuales</div><div style={{padding:'12px',fontSize:'12px',color:'#0f172a'}}>Cambian el plan y la política. <b>Los precios quedan como están.</b></div></div>
+</div>
+
+Con **Aplicar**, antes de guardar ves una vista previa por habitación:
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'12px'}}>
+  <div style={{display:'grid',gridTemplateColumns:'2fr 1fr 1fr',padding:'8px 12px',background:'#f8fafc',color:'#64748b',fontWeight:700,fontSize:'11px'}}><span>Habitación</span><span style={{textAlign:'right'}}>Ahora</span><span style={{textAlign:'right'}}>Con el plan nuevo</span></div>
+  <div style={{display:'grid',gridTemplateColumns:'2fr 1fr 1fr',padding:'8px 12px',borderTop:'1px solid #e2e8f0'}}><span>101 · Doble Superior</span><span style={{textAlign:'right'}}>ARS 255.000</span><span style={{textAlign:'right',fontWeight:700}}>ARS 228.000</span></div>
+  <div style={{display:'grid',gridTemplateColumns:'2fr 1fr 1fr',padding:'8px 12px',borderTop:'1px solid #e2e8f0'}}><span>102 · Doble Superior</span><span style={{textAlign:'right'}}>ARS 255.000</span><span style={{textAlign:'right',fontWeight:700}}>ARS 228.000</span></div>
+  <div style={{display:'grid',gridTemplateColumns:'2fr 1fr 1fr',padding:'8px 12px',borderTop:'1px solid #e2e8f0',fontWeight:800}}><span>Total desde hoy</span><span style={{textAlign:'right'}}>ARS 510.000</span><span style={{textAlign:'right'}}>ARS 456.000</span></div>
+</div>
+*Lo que suman hoy las noches que faltan y lo que sumarían con el plan nuevo.*
+
+- Si el plan nuevo **no tiene tarifa** para las fechas de una habitación, esa habitación queda como está.
+- Si la reserva no tiene noches por delante, no hay nada para recalcular: se cambian el plan y la política.
+- Hasta que elijas una opción no se puede guardar: *"Elegí qué hacer con las tarifas."*
+
+---
+
+## 10. Guardar: qué se actualiza
+
+La barra del pie lista **qué se va a guardar** a medida que editas. Si no cambiaste nada, dice: *"Todavía no hay cambios. Edita un campo y aquí verás qué se va a guardar."*
+
+Al tocar **Guardar cambios** aparece *"Los cambios se guardaron correctamente"* y:
+
+- Se guardan **solo los campos que cambiaste**. Corregir un mail, el teléfono, la fecha límite u otro dato de contacto **no recalcula importes** ni saca la reserva del pase automático de preventa a venta.
+- La reserva se marca como **editada** solo si cambió la estadía.
+- La ocupación se actualiza solo si cambiaste el titular o los huéspedes.
+- **El plano, la cabecera y la lista de reservas se actualizan solos**, también en las pantallas que tu equipo tiene abiertas.
+
+Si algo falla: *"No se pudieron guardar los cambios. Inténtalo de nuevo."* y la ventana queda abierta con lo que habías cargado.
+
+---
+
+## 11. Saldo pendiente al hacer check-out
+
+Cuando una reserva tiene saldo sin cobrar, el check-out lo avisa en rojo antes de confirmar: *"La reserva tiene saldo sin cobrar: ARS 540.000"*.
+
+- Aparece en el check-out por habitación, en **Mover a Check-out** de Apex y en los botones de check-out de la vista anterior del PMS.
+- **Avisa, no bloquea**: si el huésped paga después o se pasa a cuenta corriente, se puede hacer el check-out igual. **Finalizar** sigue pidiendo el PIN con saldo, como siempre.
+
+---
+
+## 12. Lo que no se edita acá
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Dónde</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Fechas, habitaciones y huéspedes de una reserva con habitaciones</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Habitaciones y huéspedes</b>, o estirando la reserva en el plano.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Importes de una noche o de un ítem</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Folio (Pagos y Facturación). Desde acá solo cambian al aplicar las tarifas de otro plan.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Nombre, documento o razón social del contacto</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La ficha del contacto (<b>Ver</b>).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Una reserva gestionada por la agencia vendedora</td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La ventana lo avisa: los cambios los hace la agencia.</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 13. Preguntas frecuentes
+
+**Corregí el email y no cambió nada más, ¿está bien?**
+Sí. Desde ahora Editar reserva guarda solo lo que cambias: los importes, los folios y la ocupación quedan como estaban.
+
+**El lápiz del PMS me sigue abriendo la edición anterior.**
+Tu usuario tiene apagada la vista **Habitaciones y huéspedes**. Préndela con el interruptor de la cabecera de la reserva.
+
+**Cambié el plan tarifario pero los precios no cambiaron.**
+Elegiste **Mantener las tarifas actuales**, o el plan nuevo no tiene tarifa para esas fechas. Para recalcular, vuelve a cambiar el plan y elige **Aplicar las tarifas del plan nuevo**.
+
+**¿Al aplicar las tarifas nuevas se cambian las noches que ya pasaron?**
+No. Solo las de hoy en adelante.
+
+**Puse una empresa de titular y no aparece en Huéspedes.**
+Es lo esperado: una empresa o agencia es titular y se le factura, pero no se aloja. Los huéspedes se cargan aparte.
+
+**Cambié el titular y el nuevo no tiene el check-in del anterior.**
+Es a propósito: quien entra no hereda el check-in ni los datos del viaje del que sale. Si ya está en el hotel, hazle check-in.
+
+**No puedo cambiar las fechas.**
+La reserva tiene habitaciones asignadas: las fechas se cambian desde **Habitaciones y huéspedes** o estirando la reserva en el plano.
+
+**¿El aviso de saldo me impide hacer el check-out?**
+No. Solo avisa. Finalizar con saldo sigue pidiendo el PIN.
