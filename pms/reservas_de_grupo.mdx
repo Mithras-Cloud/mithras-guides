@@ -53,7 +53,7 @@ Una **reserva de grupo** es una reserva marcada como grupal: un contingente, un 
     </td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>
       • <b>Nombre del grupo</b>, desde que se carga.<br/>
       • <b>Color por grupo</b> en el badge GRP, sin repetirse entre grupos que coinciden en fechas.<br/>
-      • El plano puede mostrar el <b>nombre del grupo</b> en la pastilla.<br/>
+      • La pastilla muestra sola el <b>nombre del grupo</b>; sin nombre, lo que diga la configuración del plano.<br/>
       • <b>Búsqueda por nombre del grupo</b> en el plano y en la lista.<br/>
       • Columna y filtro <b>Nombre del grupo</b> en la lista de reservas.<br/>
       • <b>Titular empresa o agencia</b>, sin cargar a una persona.
@@ -129,7 +129,7 @@ Cada pastilla de una reserva de grupo lleva el badge **GRP**. Ahora el badge tie
 
 ### El nombre del grupo en la pastilla
 
-En la configuración del plano, **Nombre en la pastilla** suma la opción **Nombre del grupo**: las reservas con nombre de grupo lo muestran en todas sus habitaciones, y las demás siguen con el huésped de la habitación.
+Una reserva de grupo con nombre lo muestra **sola** en todas sus pastillas: no hay que configurar nada. Si no tiene nombre, o se lo quitas en **Editar reserva**, la pastilla vuelve a lo que tengas en la configuración del plano (**Nombre en la pastilla**: **Huésped de la habitación** o **Titular de la reserva**).
 
 Además, cada reserva puede elegir su propio nombre en **Editar reserva → Nombre en el plano**, y esa elección le gana a la configuración del plano:
 
@@ -203,7 +203,7 @@ El buscador del plano encuentra las reservas **por el nombre del grupo**, con so
 ## 9. Configuración del hotel
 
 - **Campos de Cargar Reserva → Reserva → Reserva de grupo**: **Pedir** (de fábrica) o **No pedir**. Con No pedir, el formulario no la muestra.
-- **Configuración del plano → Nombre en la pastilla**: **Huésped de la habitación**, **Titular de la reserva** o **Nombre del grupo**.
+- **Configuración del plano → Nombre en la pastilla**: **Huésped de la habitación** o **Titular de la reserva**. Vale para las reservas sin nombre de grupo (o que eligieron «Según la configuración del plano»).
 
 ---
 
@@ -219,7 +219,7 @@ Con **Automático**, los grupos que coinciden en fechas toman colores distintos;
 Ponles el mismo **Nombre del grupo**: comparten color en el plano y el buscador las trae juntas.
 
 **El plano sigue mostrando el huésped y no el grupo.**
-Elige **Nombre del grupo** en **Nombre en la pastilla** de la configuración del plano, o **Automático: nombre del grupo** en **Nombre en el plano** de esa reserva. Si la reserva tiene elegido **Huésped de la habitación** o **Titular**, esa elección gana.
+Revisa que la reserva tenga **Nombre del grupo** cargado y, en **Editar reserva → Nombre en el plano**, **Automático: nombre del grupo**. Si eligió **Según la configuración del plano**, **Titular** o **Huésped de la habitación**, esa elección gana.
 
 **¿Que el titular sea una empresa marca la reserva como de grupo?**
 No. Prende **Reserva de grupo** cuando corresponda.
