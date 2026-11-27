@@ -1,0 +1,228 @@
+---
+title: Reservas de grupo
+description: Guía de uso de las reservas de grupo — cómo se carga una reserva de grupo con su nombre, cómo se identifica en el plano (nombre, badge GRP con color propio, búsqueda), en la ficha, en la lista de reservas y en los informes, y las herramientas para grupos grandes (reservar por categoría, asignar después, períodos por habitación, titular empresa o agencia, política de grupos).
+lang: es
+---
+
+<div style={{borderRadius:'20px',overflow:'hidden',border:'1px solid #e2e8f0',background:'#fff',boxShadow:'0 20px 60px rgba(15,23,42,.12)',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',margin:'0 0 24px'}}>
+  <div style={{background:'linear-gradient(135deg,#3b0764,#6b21a8 60%,#9333ea)',color:'#fff',padding:'46px 40px'}}>
+    <div style={{fontSize:'12px',letterSpacing:'.18em',textTransform:'uppercase',color:'#e9d5ff',fontWeight:700}}>Mithras · Guía de uso</div>
+    <div style={{fontSize:'42px',lineHeight:1.08,fontWeight:800,margin:'12px 0 8px'}}>Reservas de grupo</div>
+    <div style={{fontSize:'16px',color:'#f3e8ff',maxWidth:'600px'}}>Contingentes, colegios, equipos, eventos y empresas: cárgalos con su nombre, encuéntralos de un vistazo en el plano y búscalos en la lista. Todo lo que el sistema hace por los grupos, en un solo lugar.</div>
+    <div style={{display:'flex',flexWrap:'wrap',gap:'8px',marginTop:'24px'}}>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#f3e8ff'}}>Nombre del grupo · NUEVO</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#f3e8ff'}}>Color por grupo · NUEVO</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#f3e8ff'}}>Nombre en el plano · NUEVO</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#f3e8ff'}}>Búsqueda por grupo · NUEVO</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#f3e8ff'}}>Reservar por categoría</span>
+      <span style={{fontSize:'11px',fontWeight:700,padding:'4px 10px',borderRadius:'999px',background:'rgba(255,255,255,.1)',border:'1px solid rgba(255,255,255,.2)',color:'#f3e8ff'}}>Titular empresa o agencia</span>
+    </div>
+  </div>
+  <div style={{padding:'20px 40px',color:'#64748b',fontSize:'12.5px'}}>Guía de uso · <b style={{color:'#0f172a'}}>Noviembre 2026</b></div>
+</div>
+
+## Contenido
+
+1. Qué es una reserva de grupo
+2. Cargar una reserva de grupo
+3. Editar el grupo de una reserva
+4. El grupo en el plano de ocupación
+5. El grupo en la ficha de la reserva
+6. El grupo en la lista de reservas
+7. Herramientas para grupos grandes
+8. El grupo en los informes
+9. Configuración del hotel
+10. Preguntas frecuentes
+
+---
+
+## 1. Qué es una reserva de grupo
+
+Una **reserva de grupo** es una reserva marcada como grupal: un contingente, un colegio, un equipo deportivo, un evento o el personal de una empresa. Se identifica por el **grupo** además de por el titular, así tu equipo la reconoce en el plano, la ficha y la lista sin abrirla.
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Ya existía</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Nuevo</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>
+      • Marcar la reserva como de grupo (sí/no).<br/>
+      • Badge <b>GRP</b> en el plano.<br/>
+      • Columna Grupo en los informes.<br/>
+      • Reservar por categoría y asignar después.<br/>
+      • Períodos distintos por habitación.<br/>
+      • Plantilla de política <b>Grupos</b>.
+    </td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>
+      • <b>Nombre del grupo</b>, desde que se carga.<br/>
+      • <b>Color por grupo</b> en el badge GRP, sin repetirse entre grupos que coinciden en fechas.<br/>
+      • El plano puede mostrar el <b>nombre del grupo</b> en la pastilla.<br/>
+      • <b>Búsqueda por nombre del grupo</b> en el plano y en la lista.<br/>
+      • Columna y filtro <b>Nombre del grupo</b> en la lista de reservas.<br/>
+      • <b>Titular empresa o agencia</b>, sin cargar a una persona.
+    </td></tr>
+  </tbody>
+</table>
+
+<div style={{border:'1px solid #bfdbfe',background:'#eff6ff',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#1e3a8a',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Antes, muchos hoteles cargaban el nombre del grupo como si fuera el titular</b> (por ejemplo, «GRUPO VALINOR VIAJES»). Ya no hace falta: el titular puede ser la persona que reserva, o la empresa o agencia, y el grupo tiene su propio nombre.</div>
+
+---
+
+## 2. Cargar una reserva de grupo
+
+En **Cargar reserva** (desde el plano, la lista de reservas, el menú o el PMS), en **Datos de la reserva**:
+
+1. Prende **Reserva de grupo**.
+2. Escribe el **Nombre del grupo** (opcional, hasta 150 caracteres). Por ejemplo, *Contingente Colegio San José*. Puedes dejarlo vacío y completarlo después.
+3. Si el titular es una **empresa o agencia**, aparece **Usar «razón social»**: completa el nombre con un clic.
+4. Elige las habitaciones (o resérvalas **por categoría**, ver la sección 7) y carga la reserva.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{height:'30px',background:'#f1f5f9',borderBottom:'1px solid #e2e8f0',display:'flex',alignItems:'center',gap:'5px',padding:'0 10px'}}><span style={{marginLeft:'4px',fontSize:'11.5px',fontWeight:700,color:'#334155'}}>Cargar reserva · Datos de la reserva</span></div>
+  <div style={{padding:'16px',background:'#f8fafc',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'12.5px',color:'#0f172a'}}>
+    <div style={{border:'1px solid #e9d5ff',borderRadius:'12px',background:'#fff',padding:'12px 14px'}}>
+      <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}><div><div style={{fontWeight:700}}>Reserva de grupo</div><div style={{fontSize:'10.5px',color:'#64748b'}}>Identifica la reserva por el grupo además de por el titular. El nombre se ve en la reserva y en el PMS.</div></div><span style={{width:'34px',height:'20px',borderRadius:'999px',background:'#0f172a',display:'inline-block',position:'relative'}}><span style={{position:'absolute',right:'2px',top:'2px',width:'16px',height:'16px',borderRadius:'50%',background:'#fff'}} /></span></div>
+      <div style={{fontSize:'11px',fontWeight:600,marginTop:'10px'}}>Nombre del grupo <span style={{color:'#64748b',fontWeight:400}}>opcional</span><div style={{border:'1px solid #e2e8f0',borderRadius:'6px',marginTop:'3px',padding:'5px 8px',fontWeight:400}}>Contingente Colegio San José</div></div>
+      <div style={{fontSize:'10.5px',color:'#64748b',marginTop:'4px'}}>Puedes dejarlo vacío y completarlo después.</div>
+    </div>
+  </div>
+</div>
+
+<div style={{border:'1px solid #fde68a',background:'#fffbeb',borderRadius:'10px',padding:'12px 16px',margin:'14px 0',fontSize:'13px',color:'#78350f',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}><b>Reserva de grupo arranca siempre apagada.</b> Que el titular sea una empresa o agencia no convierte a la reserva en grupal: lo decides tú.</div>
+
+Si tu hotel no ve **Reserva de grupo** en el formulario, está en **No pedir** en **Campos de Cargar Reserva** (sección 9).
+
+---
+
+## 3. Editar el grupo de una reserva
+
+En **Editar reserva**, en la tarjeta **Reserva**, **¿Qué tipo de reserva es?** permite pasar de **Individual** a **De grupo** (y al revés). Con **De grupo** aparecen:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Campo</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Para qué sirve</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nombre del grupo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Cargarlo, cambiarlo o borrarlo.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Color del grupo en el plano</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El color del badge GRP: <b>Automático</b> o uno de los 20 colores (sección 4).</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nombre en el plano</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Qué nombre muestra la pastilla de esa reserva (sección 4).</td></tr>
+  </tbody>
+</table>
+
+También puedes prender o apagar **Reserva de grupo** con el interruptor de la cabecera de la ficha. En la edición anterior del PMS, el nombre del grupo también se carga desde **Datos de la reserva**.
+
+---
+
+## 4. El grupo en el plano de ocupación
+
+### El badge GRP, con un color por grupo
+
+Cada pastilla de una reserva de grupo lleva el badge **GRP**. Ahora el badge tiene **el color de su grupo**, y al pasar el mouse dice **Grupo: nombre**.
+
+<div style={{border:'1px solid #e2e8f0',borderRadius:'12px',overflow:'hidden',background:'#fff',margin:'14px 0 4px'}}>
+  <div style={{padding:'16px',background:'#f8fafc',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif',fontSize:'11.5px',display:'grid',gridTemplateColumns:'60px 1fr',gap:'4px',alignItems:'center'}}>
+    <b>101</b><div style={{background:'#dbeafe',border:'1px solid #93c5fd',borderRadius:'6px',padding:'4px 8px',display:'flex',gap:'6px',alignItems:'center'}}><span style={{background:'#7c3aed',color:'#fff',fontSize:'9.5px',fontWeight:800,padding:'1px 5px',borderRadius:'4px'}}>GRP</span>Colegio San José</div>
+    <b>102</b><div style={{background:'#dbeafe',border:'1px solid #93c5fd',borderRadius:'6px',padding:'4px 8px',display:'flex',gap:'6px',alignItems:'center'}}><span style={{background:'#7c3aed',color:'#fff',fontSize:'9.5px',fontWeight:800,padding:'1px 5px',borderRadius:'4px'}}>GRP</span>Colegio San José</div>
+    <b>103</b><div style={{background:'#dbeafe',border:'1px solid #93c5fd',borderRadius:'6px',padding:'4px 8px',display:'flex',gap:'6px',alignItems:'center'}}><span style={{background:'#ea580c',color:'#fff',fontSize:'9.5px',fontWeight:800,padding:'1px 5px',borderRadius:'4px'}}>GRP</span>Club Atlético Norte</div>
+    <b>104</b><div style={{background:'#fff',border:'1px solid #e2e8f0',borderRadius:'6px',padding:'4px 8px'}}>Gómez Laura</div>
+  </div>
+</div>
+*Dos grupos en las mismas fechas: cada uno con su color.*
+
+- Con **Automático**, el color se asigna solo al marcar la reserva como de grupo: **las reservas con el mismo nombre comparten color**, y un grupo nuevo toma un color que no esté usando otro grupo en esas fechas. Nunca queda blanco.
+- Si quieres otro, elígelo en **Editar reserva → Color del grupo en el plano**, entre 20 colores.
+
+### El nombre del grupo en la pastilla
+
+En la configuración del plano, **Nombre en la pastilla** suma la opción **Nombre del grupo**: las reservas con nombre de grupo lo muestran en todas sus habitaciones, y las demás siguen con el huésped de la habitación.
+
+Además, cada reserva puede elegir su propio nombre en **Editar reserva → Nombre en el plano**, y esa elección le gana a la configuración del plano:
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Opción</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué muestra la pastilla</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Automático: nombre del grupo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>El nombre del grupo. Si no tiene, o lo borras, vuelve a la configuración del plano.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Según la configuración del plano</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Lo mismo que el resto de las reservas, aunque esta tenga nombre de grupo.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Titular</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Quien hizo la reserva, en todas sus habitaciones.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Huésped de la habitación</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Quien se aloja en cada habitación; si no hay nadie cargado, el titular.</td></tr>
+  </tbody>
+</table>
+
+La tarjeta de **reservas sin habitación** sigue la misma regla.
+
+### Buscar el grupo en el plano
+
+El buscador del plano encuentra las reservas **por el nombre del grupo**, con solo una parte: *colegio* encuentra todas las reservas de *Colegio San José* y las resalta.
+
+---
+
+## 5. El grupo en la ficha de la reserva
+
+- La fila **Reserva de grupo** muestra el nombre del grupo, y su globo **Grupo** también.
+- La cabecera del PMS muestra el nombre del grupo junto al titular (si coincide con la razón social del titular, no se repite).
+- Si el titular es una empresa o agencia, se ve su razón social con su ícono y color: azul empresa, verde agencia.
+- En **Huéspedes**, el titular de un grupo que no ocupa habitación no cuenta para el aviso de huéspedes cargados de más.
+
+---
+
+## 6. El grupo en la lista de reservas
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Cómo</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Columna Nombre del grupo</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Súmala desde el selector de columnas. Tiene su filtro.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Buscador</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Escribe el nombre del grupo, o una parte, y trae todas sus reservas.</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 7. Herramientas para grupos grandes
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Herramienta</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Para qué</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Reservar por categoría</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>En Cargar reserva → Habitaciones → <b>Por categoría</b>: reserva, por ejemplo, 12 dobles y 3 triples sin elegir cuáles. Ocupan cupo desde que se cargan y se asignan más cerca del ingreso desde el plano, con <b>Asignar habitación</b> o <b>Auto asignar</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Períodos por habitación</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Parte del grupo llega antes o se queda más: cada período con sus fechas y sus habitaciones, en la misma reserva.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Titular empresa o agencia</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>La reserva queda a nombre de la empresa o agencia, se le factura y no cuenta como huésped. Los huéspedes se cargan después.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Política «Grupos»</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Plantilla de política para grupos y eventos: el cargo sube a medida que se acerca la fecha. Se puede asignar a la reserva desde <b>Editar reserva → Plan tarifario y política</b>, sin volver a presupuestar.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Nombre del grupo como nombre en el plano</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Mientras no se cargan los huéspedes, el plano muestra el grupo en todas sus habitaciones (sección 4).</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 8. El grupo en los informes
+
+<table style={{width:'100%',borderCollapse:'collapse',margin:'10px 0',fontSize:'12.5px',fontFamily:'-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif'}}>
+  <tbody>
+    <tr><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Dónde</th><th style={{textAlign:'left',padding:'7px 9px',borderBottom:'1px solid #e2e8f0',background:'#f8fafc',fontSize:'11px',textTransform:'uppercase',letterSpacing:'.04em',color:'#64748b'}}>Qué se ve</th></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Informe de <b>Reservas</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Columna <b>Grupo</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Informe por noche</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}>Columna <b>Grupos</b>.</td></tr>
+    <tr><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Informe gerencial</b></td><td style={{padding:'7px 9px',borderBottom:'1px solid #e2e8f0',verticalAlign:'top'}}><b>Habitaciones de grupo</b> por día.</td></tr>
+  </tbody>
+</table>
+
+---
+
+## 9. Configuración del hotel
+
+- **Campos de Cargar Reserva → Reserva → Reserva de grupo**: **Pedir** (de fábrica) o **No pedir**. Con No pedir, el formulario no la muestra.
+- **Configuración del plano → Nombre en la pastilla**: **Huésped de la habitación**, **Titular de la reserva** o **Nombre del grupo**.
+
+---
+
+## 10. Preguntas frecuentes
+
+**Cargué la reserva de grupo sin nombre. ¿Cómo se lo agrego?**
+Desde **Editar reserva → Nombre del grupo**. Al guardar, el plano, la ficha y la lista se actualizan solos.
+
+**Dos grupos tienen el mismo color.**
+Con **Automático**, los grupos que coinciden en fechas toman colores distintos; dos grupos con el **mismo nombre** comparten color a propósito. Si quieres otro, elígelo en **Editar reserva → Color del grupo en el plano**.
+
+**Tengo el grupo dividido en varias reservas, ¿cómo las relaciono?**
+Ponles el mismo **Nombre del grupo**: comparten color en el plano y el buscador las trae juntas.
+
+**El plano sigue mostrando el huésped y no el grupo.**
+Elige **Nombre del grupo** en **Nombre en la pastilla** de la configuración del plano, o **Automático: nombre del grupo** en **Nombre en el plano** de esa reserva. Si la reserva tiene elegido **Huésped de la habitación** o **Titular**, esa elección gana.
+
+**¿Que el titular sea una empresa marca la reserva como de grupo?**
+No. Prende **Reserva de grupo** cuando corresponda.
+
+**¿El nombre del grupo llega a los canales o al motor?**
+No. Es un dato interno del hotel.
